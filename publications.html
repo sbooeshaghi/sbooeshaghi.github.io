@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-6P1ZQ0CC8F"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-6P1ZQ0CC8F");
+    </script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>
+      <a href="index.html">Home</a>
+      <a href="blog.html">Blog</a>
+      <a href="publications.html">Publications</a>
+      <a href="links.html">Links</a>
+    </p>
+    <h1>Publications</h1>
+    <ol reversed>
+      <div>
+        <li>
+          <h3>Quantifying orthogonal barcodes for sequence census assays</h3>
+        </li>
+        <p>
+          <i>bioRxiv (2022-10-10)</i>
+          <a href="https://doi.org/10.1101/2022.10.09.511501" target="_blank"
+            >https://doi.org/10.1101/2022.10.09.511501</a
+          >
+        </p>
+        <p>
+          <b>(102 words)</b> Orthogonal barcoding in single-cell genomics has
+          made it possible to simultaneously measure numerous attributes of
+          cells. We extended kallisto bustools to quantify orthogonal barcoding
+          assays such as 10x Feature Barcoding, CiteSeq, Multiseq, and
+          single-cell CRISPR screens. Our tool, called kite, is accurate and 48
+          times faster than state-of-the-art methods while requiring only a
+          fifth of the memory. It has already been used in numerous projects by
+          others. We also introduced a set of quality control metrics, and
+          accompanying tool (qcbc), for validating barcode designs. qcbc
+          provides a method for assay developers to address the problem of
+          ambiguous mapping barcodes prior to experimentation.
+        </p>
+      </div>
+      <div>
+        <li>
+          <h3>
+            Pseudoalignment facilitates assignment of error-prone Ultima
+            Genomics reads
+          </h3>
+        </li>
+        <p>
+          <i>bioRxiv (2022-08-29)</i>
+          <a href="https://doi.org/10.1101/2022.06.04.494845" target="_blank"
+            >https://doi.org/10.1101/2022.06.04.494845</a
+          >
+        </p>
+        <p>
+          <b>(101 words)</b> The expiration of Illumina patents has spurred the
+          development of new sequencing assays and the launch of new sequencing
+          companies. One of these is Ultima Genomics, which recently published
+          articles showcasing its technology. We benchmarked and compared
+          single-cell RNA-sequencing data generated with Illumina and Ultima
+          Genomics sequencers and found some exaggerations in claims made by the
+          company. Specifically, we found high error rates in and near
+          homopolymer stretches in Ultima data that led to erroneous
+          quantification of some genes. We propose pseudoalignment as a method
+          to compensate for these errors and show that it outperforms standard
+          read alignment for this application.
+        </p>
+      </div>
+      <div>
+        <li><h3>Metadata retrieval from sequence databases with ffq</h3></li>
+        <p>
+          <i>bioRxiv (2022-05-26)</i>
+          <a href="https://doi.org/10.1101/2022.05.18.492548" target="_blank"
+            >https://doi.org/10.1101/2022.05.18.492548</a
+          >
+        </p>
+        <p>
+          <b>(102 words)</b> The accessing of data and metadata from the
+          sequence read archive (SRA) and other genomics databases has been
+          cumbersome, and a source of frustration for many biologists seeking to
+          leverage published data in their work. We developed a command-line
+          tool, called ffq, for querying user- generated data and metadata from
+          sequence databases such as GEO, SRA, NCBI, EMBL-EBI, DDBJ, and ENCODE.
+          ffq enables users to quickly and easily find FASTQ files associated
+          with a paper or accession, and greatly simplifies and organizes the
+          process of downloading data. This tool currently has 400 stars on
+          GitHub and is downloaded ~200 times per week.
+        </p>
+      </div>
+      <div>
+        <li>
+          <h3>Depth normalization for single-cell genomics count data</h3>
+        </li>
+        <p>
+          <i>bioRxiv (2022-05-06)</i>
+          <a href="https://doi.org/10.1101/2022.05.06.490859" target="_blank"
+            >https://doi.org/10.1101/2022.05.06.490859</a
+          >
+        </p>
+        <p>
+          <b>(90 words)</b> Single-cell count data normalization is a requisite
+          for accurate interpretation of analysis results. However, a menagerie
+          of methods has created confusion in the field, and there is
+          disagreement about what methods to use in practice. We benchmarked
+          widely used methods for normalizing scRNAseq data on 526 datasets in
+          order to understand their performance and limits. We found tradeoffs
+          between effective depth-normalization, variance stabilization, and
+          monotonicity. We also found that the proportional fitting (PF)
+          transformation followed by log(1 + X) can benefit from an additional
+          PF with minimal loss to variance stabilization.
+        </p>
+      </div>
+      <div>
+        <li>
+          <h3>
+            A transcriptomic and epigenomic cell atlas of the mouse primary
+            motor cortex
+          </h3>
+        </li>
+        <p>
+          <i>Nature (2021-10-06)</i>
+          <a href="https://doi.org/10.1038/s41586-021-03500-8" target="_blank"
+            >https://doi.org/10.1038/s41586-021-03500-8
+          </a>
+        </p>
+        <p>
+          <b>(77 words)</b> The BRAIN Initiative Cell Census Network (BICCN) has
+          been tasked with identifying and cataloging cell types in the human
+          and mouse brain. Working with researchers from many institutions, we
+          produced a transcriptomic atlas of the mouse primary motor cortex. To
+          do so, we developed computational and statistical methods to integrate
+          multimodal data. The resulting reference atlas is a comprehensive
+          molecular and genomic account of the diverse neuronal and non-neuronal
+          cell types in the mouse primary motor cortex.
+        </p>
+      </div>
+      <div>
+        <li>
+          <h3>
+            A multimodal cell census and atlas of the mammalian primary motor
+            cortex
+          </h3>
+        </li>
+        <p>
+          <i>Nature (2021-10-06)</i>
+          <a href="https://doi.org/10.1038/s41586-021-03950-0" target="_blank"
+            >https://doi.org/10.1038/s41586-021-03950-0
+          </a>
+        </p>
+        <p>
+          <b>(72 words)</b> As the initial product of the BRAIN Initiative Cell
+          Census Network (BICCN), we produced a multimodal cell atlas of the
+          mammalian primary motor cortex. This was achieved by coordinated
+          large-scale analyses of single-cell transcriptomes, chromatin
+          accessibility, DNA methylomes, spatially resolved single-cell
+          transcriptomes, and morphological and electrophysiological
+          measurements. Cross-modal analysis provided evidence for the
+          transcriptomic, epigenomic and gene regulatory basis of neuronal
+          phenotypes, establishing a unifying and mechanistic framework of
+          neuronal cell-type organization.
+        </p>
+      </div>
+      <div>
+        <li>
+          <h3>
+            Isoform cell-type specificity in the mouse primary motor cortex
+          </h3>
+        </li>
+        <p>
+          <i>Nature (2021-10-06)</i>
+          <a href="https://doi.org/10.1038/s41586-021-03969-3" target="_blank"
+            >https://doi.org/10.1038/s41586-021-03969-3
+          </a>
+        </p>
+        <p>
+          <b>(79 words)</b> The proliferation of single-cell modalities
+          necessitates computational techniques for integrative analysis. Using
+          spatial, gene, and isoform single-cell RNA-sequencing, we validated an
+          integration approach and applied it to produce the first-ever
+          spatially-resolved isoform atlas of the mouse primary motor cortex as
+          part of the BRAIN Initiative Cell Census Network (BICCN). Our results
+          highlight the use of multiple RNA- seq modalities to describe the
+          complex molecular composition of cell types in the brain and provide a
+          reference for further functional analysis.
+        </p>
+      </div>
+      <div>
+        <li>
+          <h3>
+            Massively scaled-up testing for SARS-CoV-2 RNA via next-generation
+            sequencing of pooled and barcoded nasal and saliva samples
+          </h3>
+        </li>
+        <p>
+          <i>Nature Biomedical Engineering (2021-07-01)</i>
+          <a href="https://doi.org/10.1038/s41551-021-00754-5" target="_blank"
+            >https://doi.org/10.1038/s41551-021-00754-5
+          </a>
+        </p>
+        <p>
+          <b>(104 words)</b> Supply chain limitations during the COVID-19
+          pandemic have driven up the cost of COVID-19 diagnostics. This places
+          a priority on high throughput approaches for diagnostics. We produced
+          a COVID-19 diagnostic assay using next-generation sequencing of pooled
+          samples. This assay, called SwabSeq, enables the testing of thousands
+          of nasal or saliva samples for SARS-CoV-2 RNA in a single run without
+          the need for RNA extraction. SwabSeq has an analytical sensitivity and
+          specificity comparable to or better than traditional qPCR tests, and
+          can be rapidly adapted for the detection of other pathogens. SwabSeq
+          is currently deployed at UCLA and Caltech for their COVID-19
+          surveillance testing program.
+        </p>
+      </div>
+      <div>
+        <li>
+          <h3>
+            Low-cost, scalable, and automated fluid sampling for fluidics
+            applications
+          </h3>
+        </li>
+        <p>
+          <i>HardwareX (2021-05-31)</i>
+          <a href="https://doi.org/10.1016/j.ohx.2021.e00201" target="_blank"
+            >https://doi.org/10.1016/j.ohx.2021.e00201</a
+          >
+        </p>
+        <p>
+          <b>(89 words)</b> Current commercial systems for long-time-course
+          microfluidics experiments are costly and close-source, limiting the
+          scale of experimentation and hardware customization. To address this,
+          we have developed a low-cost, modular, and automated fluid sampling
+          device for scalable fluidic applications called colosseum. The
+          colosseum fraction collector uses a single motor, and can be built for
+          less than $100, demonstrating a cost savings of ~10x compared to
+          commercial alternatives. Colosseum uses off-the- shelf and 3D-printed
+          components and can be assembled in less than an hour making it
+          accessible to researchers in low-resource environments.
+        </p>
+      </div>
+      <div>
+        <li>
+          <h3>
+            Modular, efficient and constant-memory single-cell RNA-seq
+            preprocessing
+          </h3>
+        </li>
+        <p>
+          <i>Nature Biotechnology (2021-04-01)</i>
+          <a href="https://doi.org/10.1038/s41587-021-00870-2" target="_blank"
+            >https://doi.org/10.1038/s41587-021-00870-2</a
+          >
+        </p>
+        <p>
+          <b>(99 words)</b> State-of-the-art tools for single-cell
+          RNA-sequencing preprocessing are memory intensive and slow; requiring
+          upwards of 100GB of RAM and up to a day of processing time for a
+          standard experiment (~10k cells, ~600 million reads). These resource
+          requirements translate to high costs and excessive wait time. To
+          address this, we developed the kallisto bustools workflow for
+          single-cell RNA-sequencing preprocessing. Our workflow outperforms
+          state-of-the-art tools with speed improvements of up to 50x and memory
+          improvements up to 9x with minimal accuracy tradeoffs. The kallisto
+          bustools workflow has been cited 199 times and has been used for a
+          number of large projects.
+        </p>
+      </div>
+      <div>
+        <li>
+          <h3>
+            Benchmarking of lightweight-mapping based single-cell RNA-seq
+            pre-processing
+          </h3>
+        </li>
+        <p>
+          <i>bioRxiv (2021-03-03)</i>
+          <a href="https://doi.org/10.1101/2021.01.25.428188" target="_blank"
+            >https://doi.org/10.1101/2021.01.25.428188</a
+          >
+        </p>
+        <p>
+          <b>(56 words)</b> Recent developments of comparable tools for
+          preprocessing single-cell RNA-sequencing data necessitate a coherent
+          evaluation and benchmark of methods. We compared two
+          lightweight-mapping tools that have been developed for pre-processing
+          single-cell RNA-seq data, and found that they produce similar results.
+          We also found that to the extent that there are differences, they are
+          inconsequential for downstream analysis.
+        </p>
+      </div>
+      <div>
+        <li>
+          <h3>
+            Normalization of single-cell RNA-seq counts by log (x+ 1) or log (1+
+            x)
+          </h3>
+        </li>
+        <p>
+          <i>Bioinformatics (2021-03-02)</i>
+          <a
+            href="https://doi.org/10.1093/bioinformatics/btab085"
+            target="_blank"
+            >https://doi.org/10.1093/bioinformatics/btab085</a
+          >
+        </p>
+        <p>
+          <b>(52 words)</b> Analysis of lowly expressed genes in single-cell
+          RNA-sequencing can produce misleading results when standard
+          normalization techniques are applied. To demonstrate this, we took
+          single-cell RNA- sequencing data from young and old mice and showed
+          how the application of log(1+x) combined with differential expression
+          of ACE2 incorrectly failed to find statistically significant
+          differences.
+        </p>
+      </div>
+      <div>
+        <li>
+          <h3>
+            Reliable and accurate diagnostics from highly multiplexed sequencing
+            assays
+          </h3>
+        </li>
+        <p>
+          <i>Nature Scientific Reports (2020-12-10)</i>
+          <a href="https://doi.org/10.1038/s41598-020-78942-7" target="_blank"
+            >https://doi.org/10.1038/s41598-020-78942-7</a
+          >
+        </p>
+        <p>
+          <b>(94 words)</b> The COVID-19 pandemic resulted in the development of
+          numerous high-throughput assays that leveraged next generation
+          sequencing for diagnostics. These assays require fast data
+          preprocessing for fast turnaround times. To achieve this, we developed
+          and validated a computational workflow based on kallisto bustools to
+          quickly, accurately and reliably process high-throughput sequencing
+          data. We showed that our workflow is effective at processing data from
+          all recently proposed COVID-19 sequencing-based diagnostic tests, and
+          is generally applicable to any diagnostic multiplexed sequencing
+          assay. This workflow was used at the University of Arizona to process
+          their COVID-19 diagnostic data.
+        </p>
+      </div>
+      <div>
+        <li>
+          <h3>
+            Markedly heterogeneous COVID-19 testing plans among US colleges and
+            universities
+          </h3>
+        </li>
+        <p>
+          <i>MedRxiv (2020-08-11)</i>
+          <a href="https://doi.org/10.1101/2020.08.09.20171223" target="_blank"
+            >https://doi.org/10.1101/2020.08.09.20171223</a
+          >
+        </p>
+        <p>
+          <b>(100 words)</b> During the COVID-19 pandemic, universities in the
+          US were faced with managing in-person learning with minimal, and often
+          incoherent, guidelines. To contribute to an evaluation of university
+          preparedness for the COVID-19 pandemic, we assessed COVID-19 on-campus
+          testing. We examined testing plans at more than 500 colleges and
+          universities throughout the US, and collated statistics, as well as
+          narratives from publicly facing websites. We discovered a highly
+          variable and muddled state of COVID-19 testing plans among US
+          institutions of higher education and highlighted cases of divergence
+          between university testing plans and public health best practices, as
+          well as potential bioethical issues.
+        </p>
+      </div>
+      <div>
+        <li><h3>Decrease in ACE2 mRNA expression in aged mouse lung</h3></li>
+        <p>
+          <i>bioRxiv (2020-04-05)</i>
+          <a href="https://doi.org/10.1101/2020.04.02.021451" target="_blank"
+            >https://doi.org/10.1101/2020.04.02.021451</a
+          >
+        </p>
+        <p>
+          <b>(69 words)</b> COVID-19 mortality has been reported higher in older
+          individuals and one hypothesis is age-related variation in ACE2, a
+          receptor for SARS-CoV-2 viral entry. To study this question of
+          age-related changes in ACE2, we analyzed single-cell RNAseq data in
+          mouse lung and showed that 24-month old mice had significantly reduced
+          ACE2 mRNA expression relative to 3-month old mice. We find that these
+          differences appear to be localized to ciliated cells.
+        </p>
+      </div>
+      <div>
+        <li>
+          <h3>
+            Principles of open source bioinstrumentation applied to the poseidon
+            syringe pump system
+          </h3>
+        </li>
+        <p>
+          <i>Nature Scientific Reports (2019-08-27)</i>
+          <a href="https://doi.org/10.1038/s41598-019-48815-9" target="_blank"
+            >https://doi.org/10.1038/s41598-019-48815-9</a
+          >
+        </p>
+        <p>
+          <b>(68 words)</b> Instrumentation to perform single-cell
+          RNA-sequencing experiments is costly and limits the scale of
+          experimentation. To address this, we have developed an open-source
+          syringe pump and microscope system called poseidon. The system of
+          three syringe pumps and microscope costs less than $400, and can be
+          assembled in under an hour. Importantly, poseidon reduces costs of
+          experimentation by up to 25x while demonstrating similar accuracy and
+          precision to commercial alternatives.
+        </p>
+      </div>
+      <div>
+        <li>
+          <h3>
+            Thermo-electrochemical generator: energy harvesting &
+            thermoregulation for liquid cooling applications
+          </h3>
+        </li>
+        <p>
+          <i>Sustainable Energy & Fuels (2017-06-08)</i>
+          <a href="https://doi.org/10.1039/C7SE00161D" target="_blank"
+            >https://doi.org/10.1039/C7SE00161D</a
+          >
+        </p>
+        <p>
+          <b>(44 words)</b> Heat exchangers cool industrial systems by rejecting
+          waste heat to a thermal reservoir despite the heat's energetic
+          potential. To convert waste heat into useable electric energy, we
+          develop, build, and test a liquid-cooling heat exchanger that uses
+          thermelectrics to convert waste heat into electricity.
+        </p>
+      </div>
+    </ol>
+    <!-- <div>
+      <h3>Title</h3>
+      <p><i>Journal (1995-01-01)</i> <a href="" target="_blank"></a></p>
+      <p><b>(XX words)</b></p>
+    </div> -->
+  </body>
+</html>
