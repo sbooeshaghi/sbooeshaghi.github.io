@@ -17,9 +17,17 @@ a, a:hover, a:visited, a:active {
     color: inherit;
    }
 a:hover {border-bottom: 1px dotted red; color: red;}
-
+a[target="_blank"]:after {
+  content: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAQElEQVR42qXKwQkAIAxDUUdxtO6/RBQkQZvSi8I/pL4BoGw/XPkh4XigPmsUgh0626AjRsgxHTkUThsG2T/sIlzdTsp52kSS1wAAAABJRU5ErkJggg==);
+  margin: 0 3px 0 5px
+}
 /* #profPic {display:inline-block;margin-right:10px;}  */
 #socialLinks {display:inline-block;} 
+#card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 img {
     max-width: 100%;
     display: inline-block;
