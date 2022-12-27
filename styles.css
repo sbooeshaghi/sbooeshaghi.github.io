@@ -1,7 +1,7 @@
+
 body {
-    width: 50%;
-    margin: 0 auto;
-}
+    font-family: 'Verdana', sans-serif;
+  }
 
 blockquote {
     margin: 0;
@@ -17,13 +17,46 @@ a, a:hover, a:visited, a:active {
     color: inherit;
    }
 a:hover {border-bottom: 1px dotted red; color: red;}
-/* blockquote p::before {
-    content: '\201C';
+
+/* #profPic {display:inline-block;margin-right:10px;}  */
+#socialLinks {display:inline-block;} 
+img {
+    max-width: 100%;
+    display: inline-block;
+  }
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    body {
+        width: 95%;
+        font-size: 1.2em;
+        margin-left: auto;
+        margin-right: auto;    
+    }
 }
 
-blockquote p::after {
-    content: '\201D';
-} */
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    body {
+        width: 85%;
+        font-size: 1.1em;
+        margin-left: auto;
+        margin-right: auto;    
+    }
+}
 
-#profPic {display:inline-block;margin-right:10px;} 
-#socialLinks {display:inline-block;} 
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    body {
+        font-size: 1em;
+        width: 700px;
+        margin-left: auto;
+        margin-right: auto;    
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+/* @media only screen and (min-width: 992px) {...} */
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+/* @media only screen and (min-width: 1200px) {...} */
