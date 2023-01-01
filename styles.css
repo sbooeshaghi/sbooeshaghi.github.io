@@ -21,17 +21,23 @@ a[target="_blank"]:after {
   content: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAQElEQVR42qXKwQkAIAxDUUdxtO6/RBQkQZvSi8I/pL4BoGw/XPkh4XigPmsUgh0626AjRsgxHTkUThsG2T/sIlzdTsp52kSS1wAAAABJRU5ErkJggg==);
   margin: 0 3px 0 5px
 }
-
-img {
-    max-width: 100%;
-    display: inline-block;
-  }
-
-#authorInfo ul {
-    list-style-type: none; /* Remove bullets */
-    padding: 0; /* Remove padding */
-    margin: 0; /* Remove margins */
+#card {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
+
+.button {
+    text-decoration: none;
+    background-color: #EEEEEE;
+    color: #333333;
+    padding: 2px 6px 2px 6px;
+    border-top: 1px solid #CCCCCC;
+    border-right: 1px solid #333333;
+    border-bottom: 1px solid #333333;
+    border-left: 1px solid #CCCCCC;
+    margin: 3px;
+  }
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
@@ -39,12 +45,6 @@ img {
         width: 95%;
         margin-left: auto;
         margin-right: auto;    
-    }
-    #card {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
     }
     #card ul {
         font-size: 0.8em;
@@ -58,12 +58,7 @@ img {
         margin-left: auto;
         margin-right: auto;    
     }
-    #card {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-    }
+
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
