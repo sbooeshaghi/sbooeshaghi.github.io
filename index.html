@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <!-- Google tag (gtag.js) -->
     <script
       async
@@ -15,16 +19,21 @@
 
       gtag("config", "G-6P1ZQ0CC8F");
     </script>
+
+    <!-- Scripts -->
     <script src="script.js"></script>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+
+    <!-- Title -->
+    <title>Sina Booeshaghi</title>
+
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="styles.css" />
+    <!-- Academic Icons -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css"
     />
+    <!-- Font Awesome Icons -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
@@ -34,6 +43,7 @@
     />
   </head>
   <body>
+    <!-- Navbar -->
     <p>
       <a href="index.html">Home</a>
       <a href="blog.html">Blog</a>
@@ -42,122 +52,146 @@
     </p>
 
     <marquee>¡bienvenidos! welcome! !خوش آمدی </marquee>
-    <img
-      src="img/3dscan-nobg.png"
-      alt="3d scan of Sina's head using an xBox Kinect"
-      style="max-width: 150px; display: block; margin: auto"
-    />
-    <div id="card">
-      <h3 style="text-align: center">A. Sina Booeshaghi</h3>
-      <div style="display: flex; justify-content: center">
-        <ul
-          style="
-            list-style-type: none; /* Remove bullets */
-            padding: 0; /* Remove padding */
-            margin: 0; /* Remove margins */
-          "
-        >
-          <li>🖋 Postdoctoral Scholar</li>
-          <li>
-            📖
-            <a href="https://www.bbe.caltech.edu/" target="_blank"
-              >Division of Biology and Biological Engineering</a
-            >,<br />
-            🏛
-            <a href="https://www.caltech.edu/" target="_blank"
-              >California Institute of Technology</a
-            >,<br />
-            📍 1200 E California Blvd, Pasadena, CA 91125, USA
-          </li>
-        </ul>
+
+    <!-- Author card -->
+    <div id="authorCard">
+      <img
+        src="img/3dscan-nobg.png"
+        alt="3d scan of Sina's head using an xBox Kinect"
+        style="max-width: 150px; display: block; margin: auto"
+      />
+      <!-- <button class="copy-text">copy</button> -->
+      <div id="authorInfo">
+        <h3 style="text-align: center" id="creditName">A. Sina Booeshaghi</h3>
+        <div id="affiliation_0" style="display: flex; justify-content: center">
+          <ul
+            style="
+              list-style-type: none; /* Remove bullets */
+              padding: 0; /* Remove padding */
+              margin: 0; /* Remove margins */
+            "
+          >
+            <li id="title_0">🖋 Postdoctoral Scholar</li>
+            <li id="department_0">
+              📖
+              <a href="https://www.bbe.caltech.edu/" target="_blank"
+                >Division of Biology and Biological Engineering</a
+              >,
+            </li>
+            <li id="institute_0">
+              🏛
+              <a href="https://www.caltech.edu/" target="_blank"
+                >California Institute of Technology</a
+              >,
+            </li>
+            <li id="address_0">
+              📍 1200 E California Blvd, Pasadena, CA 91125, USA
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
 
-    <p>
-      I study single-cell genomics technologies and develop computational and
-      hardware tools to produce and analyze sequencing data with
-      <a href="https://pachterlab.github.io/" target="_blank"
-        >Professor Lior Pachter</a
-      >. I
-      <a href="https://www.youtube.com/watch?v=xD-lZGE1fEg" target="_blank"
-        >received my PhD</a
+    <!-- Description -->
+    <div id="description">
+      <p>
+        I study single-cell genomics technologies and develop computational and
+        hardware tools to produce and analyze sequencing data with
+        <a href="https://pachterlab.github.io/" target="_blank"
+          >Professor Lior Pachter</a
+        >. I
+        <a href="https://www.youtube.com/watch?v=xD-lZGE1fEg" target="_blank"
+          >received my PhD</a
+        >
+        in Mechanical Engineering from Caltech in 2022 and my B.S. in Mechanical
+        Engineering and in Mathematics from MIT in 2017. While in undergrad I
+        ran
+        <a href="https://www.youtube.com/watch?v=pori8ewqIgE" target="_blank"
+          >Tea with Teachers</a
+        >, MIT-ASME, and
+        <a href="http://xfair.io/" target="_blank"
+          >xFair - MIT's Spring Career Fair</a
+        >. I also participated in research projects under
+        <a href="http://drl.mit.edu/" target="_blank">Professor Evelyn Wang</a>,
+        <a href="http://nest.gatech.edu/" target="_blank"
+          >Professor Baratunde Cola</a
+        >, &
+        <a href="http://mseas.mit.edu/" target="_blank"
+          >Professor Pierre Lermusiaux</a
+        >. I am an engineer and applied mathematician by training and I enjoy
+        biking, hiking, and photography.
+      </p>
+    </div>
+
+    <!-- Links -->
+    <div id="links">
+      <a
+        id="link_0"
+        style="display: block; text-align: center"
+        class="button"
+        href="https://orcid.org/0000-0002-6442-4502"
+        target="_blank"
+        ><i class="ai ai-orcid"></i> Orcid</a
       >
-      in Mechanical Engineering from Caltech in 2022 and my B.S. in Mechanical
-      Engineering and in Mathematics from MIT in 2017. While in undergrad I ran
-      <a href="https://www.youtube.com/watch?v=pori8ewqIgE" target="_blank"
-        >Tea with Teachers</a
-      >, MIT-ASME, and
-      <a href="http://xfair.io/" target="_blank"
-        >xFair - MIT's Spring Career Fair</a
-      >. I also participated in research projects under
-      <a href="http://drl.mit.edu/" target="_blank">Professor Evelyn Wang</a>,
-      <a href="http://nest.gatech.edu/" target="_blank"
-        >Professor Baratunde Cola</a
-      >, &
-      <a href="http://mseas.mit.edu/" target="_blank"
-        >Professor Pierre Lermusiaux</a
-      >. I am an engineer and applied mathematician by training and I enjoy
-      biking, hiking, and photography.
-    </p>
-
-    <a
-      style="display: block; text-align: center"
-      class="button"
-      href="https://orcid.org/0000-0002-6442-4502"
-      target="_blank"
-      ><i class="ai ai-orcid"></i> Orcid</a
-    >
-    <a
-      style="display: block; text-align: center"
-      class="button"
-      href="https://twitter.com/sinabooeshaghi"
-      target="_blank"
-      ><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a
-    >
-    <a
-      style="display: block; text-align: center"
-      class="button"
-      href="https://github.com/sbooeshaghi"
-      target="_blank"
-      ><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a
-    >
-    <a
-      style="display: block; text-align: center"
-      class="button"
-      href="https://www.youtube.com/channel/UCR-VwpR0FCDkftWb4M1AeJg"
-      target="_blank"
-      ><i class="fab fa-fw fa-youtube" aria-hidden="true"></i> YouTube</a
-    >
-    <a
-      style="display: block; text-align: center"
-      class="button"
-      href="https://www.linkedin.com/in/sinaboo/"
-      target="_blank"
-      ><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn</a
-    >
-    <a
-      style="display: block; text-align: center"
-      class="button"
-      href="https://www.instagram.com/booosina/"
-      target="_blank"
-      ><i class="fab fa-fw fa-instagram" aria-hidden="true"></i> Instagram</a
-    >
-    <a
-      style="display: block; text-align: center"
-      class="button"
-      href="https://scholar.google.com/citations?user=1das_jsAAAAJ"
-      target="_blank"
-      ><i class="ai ai-google-scholar"></i> Google Scholar</a
-    >
-    <a
-      style="display: block; text-align: center"
-      class="button"
-      href="https://mathgenealogy.org/id.php?id=284917"
-      target="_blank"
-    >
-      <i class="fa-solid fa-tree"></i> Mathematics Genealogy Project</a
-    >
-
+      <a
+        id="link_1"
+        style="display: block; text-align: center"
+        class="button"
+        href="https://twitter.com/sinabooeshaghi"
+        target="_blank"
+        ><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i>
+        Twitter</a
+      >
+      <a
+        id="link_2"
+        style="display: block; text-align: center"
+        class="button"
+        href="https://github.com/sbooeshaghi"
+        target="_blank"
+        ><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a
+      >
+      <a
+        id="link_3"
+        style="display: block; text-align: center"
+        class="button"
+        href="https://www.youtube.com/channel/UCR-VwpR0FCDkftWb4M1AeJg"
+        target="_blank"
+        ><i class="fab fa-fw fa-youtube" aria-hidden="true"></i> YouTube</a
+      >
+      <a
+        id="link_4"
+        style="display: block; text-align: center"
+        class="button"
+        href="https://www.linkedin.com/in/sinaboo/"
+        target="_blank"
+        ><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn</a
+      >
+      <a
+        id="link_5"
+        style="display: block; text-align: center"
+        class="button"
+        href="https://www.instagram.com/booosina/"
+        target="_blank"
+        ><i class="fab fa-fw fa-instagram" aria-hidden="true"></i> Instagram</a
+      >
+      <a
+        id="link_6"
+        style="display: block; text-align: center"
+        class="button"
+        href="https://scholar.google.com/citations?user=1das_jsAAAAJ"
+        target="_blank"
+        ><i class="ai ai-google-scholar"></i> Google Scholar</a
+      >
+      <a
+        id="link_7"
+        style="display: block; text-align: center"
+        class="button"
+        href="https://mathgenealogy.org/id.php?id=284917"
+        target="_blank"
+      >
+        <i class="fa-solid fa-tree"></i> Mathematics Genealogy Project</a
+      >
+    </div>
     <p><i>Last updated: 2023-01-01</i></p>
   </body>
 </html>
