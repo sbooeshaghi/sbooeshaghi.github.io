@@ -3,8 +3,16 @@
 // (which should be a <button>), execute the copy command:
 document.addEventListener("DOMContentLoaded", function () {
   document.querySelector(".copy-text").addEventListener("click", () => {
-    const textToCopy = document.getElementById("creditName").innerText;
-    navigator.clipboard.writeText(textToCopy).then(
+    // four things
+    // department
+    // institute
+    // address
+    const creditName = document.getElementById("creditName").innerText;
+    const department = document.getElementById("department_0").innerText;
+    const institute = document.getElementById("institute_0").innerText;
+    const address = document.getElementById("address_0").innerText;
+    const affil = `${department}, ${institute}, ${address}`;
+    navigator.clipboard.writeText(affil).then(
       function () {
         /* clipboard successfully set */
         window.alert("Success! The text was copied to your clipboard");

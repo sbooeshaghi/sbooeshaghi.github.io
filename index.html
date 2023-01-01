@@ -55,14 +55,17 @@
 
     <!-- Author card -->
     <div id="authorCard">
+      <!-- Author photo -->
       <img
         src="img/3dscan-nobg.png"
         alt="3d scan of Sina's head using an xBox Kinect"
         style="max-width: 150px; display: block; margin: auto"
       />
-      <!-- <button class="copy-text">copy</button> -->
       <div id="authorInfo">
+        <!-- Credit Name -->
         <h3 style="text-align: center" id="creditName">A. Sina Booeshaghi</h3>
+
+        <!-- Affiliation 0 -->
         <div id="affiliation_0" style="display: flex; justify-content: center">
           <ul
             style="
@@ -71,23 +74,34 @@
               margin: 0; /* Remove margins */
             "
           >
-            <li id="title_0">🖋 Postdoctoral Scholar</li>
-            <li id="department_0">
+            <!-- Affiliation 0: Title -->
+            <li>🖋 <span id="title_0"> Postdoctoral Scholar</span></li>
+
+            <!-- Affiliation 0: Department -->
+            <li>
               📖
-              <a href="https://www.bbe.caltech.edu/" target="_blank"
-                >Division of Biology and Biological Engineering</a
-              >,
+              <span id="department_0"
+                >Division of Biology and Biological Engineering</span
+              >
             </li>
-            <li id="institute_0">
+
+            <!-- Affiliation 0: Institute -->
+            <li>
               🏛
-              <a href="https://www.caltech.edu/" target="_blank"
-                >California Institute of Technology</a
-              >,
+              <span id="institute_0">California Institute of Technology</span>
             </li>
-            <li id="address_0">
-              📍 1200 E California Blvd, Pasadena, CA 91125, USA
+
+            <!-- Affiliation 0: Address -->
+            <li>
+              📍
+              <span id="address_0"
+                >1200 E California Blvd, Pasadena, CA 91125, USA</span
+              >
             </li>
           </ul>
+        </div>
+        <div style="display: flex; justify-content: center">
+          <button class="copy-text">copy affiliation</button>
         </div>
       </div>
     </div>
