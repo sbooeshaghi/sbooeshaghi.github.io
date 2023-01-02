@@ -43,14 +43,6 @@
     />
   </head>
   <body>
-    <!-- Navbar -->
-    <p>
-      <a href="index.html">Home</a>
-      <a href="blog.html">Blog</a>
-      <a href="publications.html">Publications</a>
-      <a href="links.html">Links</a>
-    </p>
-
     <marquee>¡bienvenidos! welcome! !خوش آمدی </marquee>
 
     <!-- Author card -->
@@ -63,7 +55,10 @@
       />
       <div id="authorInfo">
         <!-- Credit Name -->
-        <h3 style="text-align: center" id="creditName">A. Sina Booeshaghi</h3>
+        <h3 style="text-align: center">
+          <span id="creditName">A. Sina Booeshaghi</span>,
+          <span id="degree">Ph.D.</span>
+        </h3>
 
         <!-- Affiliation 0 -->
         <div id="affiliation_0" style="display: flex; justify-content: center">
@@ -109,9 +104,13 @@
     <!-- Description -->
     <div id="description">
       <p>
-        I study single-cell genomics technologies and develop computational and
-        hardware tools to produce and analyze sequencing data with
-        <a href="https://pachterlab.github.io/" target="_blank"
+        I study the impact of climate change on organismal health by developing
+        algorithms, hardware, and code to identify and analyze molecular
+        indicators of organismal health. My work consists of producing and
+        analyzing sequencing data generated with single-cell genomics assays. In
+        my free time, I enjoy biking, hiking, and photography.
+
+        <!-- <a href="https://pachterlab.github.io/" target="_blank"
           >Professor Lior Pachter</a
         >. I
         <a href="https://www.youtube.com/watch?v=xD-lZGE1fEg" target="_blank"
@@ -133,7 +132,7 @@
         <a href="http://mseas.mit.edu/" target="_blank"
           >Professor Pierre Lermusiaux</a
         >. I am an engineer and applied mathematician by training and I enjoy
-        biking, hiking, and photography.
+        biking, hiking, and photography. -->
       </p>
     </div>
 
@@ -143,9 +142,31 @@
         id="link_0"
         style="display: block; text-align: center"
         class="button"
+        href="publications.html"
+        ><i class="fa fa-book"></i> Publications</a
+      >
+      <a
+        id="link_0"
+        style="display: block; text-align: center"
+        class="button"
+        href="blog.html"
+        ><i class="fa fa-comment"></i> Blog</a
+      >
+      <a
+        id="link_0"
+        style="display: block; text-align: center"
+        class="button"
         href="https://orcid.org/0000-0002-6442-4502"
         target="_blank"
         ><i class="ai ai-orcid"></i> Orcid</a
+      >
+      <a
+        id="link_0"
+        style="display: block; text-align: center"
+        class="button"
+        href="blog.html"
+        target="_blank"
+        ><i class="fa fa-chain"></i> Links</a
       >
       <a
         id="link_1"
