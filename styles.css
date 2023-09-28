@@ -7,10 +7,12 @@ blockquote {
     margin: 0;
 }
 
-blockquote p {
+blockquote p, blockquote pre {
     padding: 15px;
     background: #eee;
     border-radius: 5px;
+    font-family: 'Courier New', monospace;
+    overflow: auto;
 }
 
 a, a:hover, a:visited, a:active {
