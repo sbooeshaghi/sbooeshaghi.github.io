@@ -102,18 +102,53 @@ span[style*="width"] {
   justify-content: center;
 }
 
+#links {
+  margin-top: 1.25rem;
+}
+
+#siteLinks {
+  display: grid;
+  gap: 0.45rem;
+}
+
+#externalLinks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.4rem;
+  margin-top: 0.75rem;
+  padding: 0.6rem;
+  background: #f7f7f7;
+  border: 1px solid #d8d8d8;
+}
+
 .button {
-  display: block;
-  text-align: center;
   text-decoration: none;
-  background-color: #eee;
   color: #333;
-  padding: 2px 6px;
+  background-color: #eee;
   border-top: 1px solid #ccc;
   border-right: 1px solid #333;
   border-bottom: 1px solid #333;
   border-left: 1px solid #ccc;
-  margin: 3px;
+}
+
+.site-link {
+  display: block;
+  padding: 0.45rem 0.6rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.external-link {
+  display: inline-flex;
+  flex: 0 1 auto;
+  align-items: center;
+  justify-content: center;
+  gap: 0.2rem;
+  padding: 0.25rem 0.45rem;
+  font-size: 0.9rem;
+  background-color: #fdfdfd;
+  text-align: center;
 }
 
 @media only screen and (max-width: 600px) {
@@ -123,5 +158,10 @@ span[style*="width"] {
 
   #authorInfo ul {
     font-size: 0.85em;
+  }
+
+  #externalLinks {
+    gap: 0.35rem;
+    padding: 0.5rem;
   }
 }
