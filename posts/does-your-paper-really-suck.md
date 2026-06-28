@@ -4,7 +4,7 @@ date: 2026-06-27
 summary: "A critique of QED Science's AI-generated paper-quality score, its validation studies, and evidence of geographic bias in its public rankings."
 ---
 
-Oded Rachevi, at QED Science, believes that if your paper is not in the top 1% of their QED score then it ["sucks"](https://x.com/qedScience/status/2070119903693078850?s=20). But what is this QED score and what is its purpose? Does it really measure scientific quality? If a paper is not in the 1% does it really suck?
+Oded Rechavi, at QED Science, believes that if your paper is not in the top 1% of their QED score then it ["sucks"](https://x.com/qedScience/status/2070119903693078850?s=20). But what is this QED score and what is its purpose? Does it really measure scientific quality? If a paper is not in the 1% does it really suck?
 
 ![Screenshot of a QED Science post congratulating a paper for making the top 1% of the QED preprint ranking system.](img_qed_score/qed-science-response.png)
 
