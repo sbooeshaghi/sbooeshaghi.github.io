@@ -60,4 +60,6 @@ As an informal experiment, I submitted the QED white paper to QED itself. The sy
 
 [QED review report for the QED Score white paper](qed-score-review-report.pdf)
 
+![Screenshot of the QED review report showing a QED score of 46 for the QED Score white paper.](img_qed_score/qed-score-report-score.png)
+
 The QED score remains unvalidated. The white paper's three case studies do not demonstrate that it is a more accurate or less biased measure of scientific quality than existing approaches, and the released rankings exhibit statistically significant geographic bias. Moreover, the authors explicitly acknowledge that "precision of ranking within the top 1% has not been independently validated," despite presenting the top 1% as the central output of the system. By the standards the authors apply to others, this is poor quality science. Should scientists trust a score whose own validation does not meet the standards it claims to enforce?
