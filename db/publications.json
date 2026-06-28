@@ -1,6 +1,217 @@
 [
   {
-    "title": "Quantitative assessment of single-cell RNA-seq clustering with CONCORDEX",
+    "title": "The impact of package selection and versioning on single-cell RNA-seq analysis",
+    "links": [
+      {
+        "doi": "https://doi.org/10.1016/j.cels.2026.101560",
+        "date": "2026-04",
+        "name": "Cell Systems"
+      },
+      {
+        "doi": "https://doi.org/10.1101/2024.04.04.588111",
+        "date": "2024-04-05",
+        "name": "bioRxiv"
+      }
+    ],
+    "summary": "Single-cell RNA-seq analysis depends on rapidly changing software packages and package versions. This study evaluates how those choices can affect downstream analysis results, emphasizing the need to track computational environments and compare workflows carefully."
+  },
+  {
+    "title": "Systematic cell-type resolved transcriptomes of 8 tissues in 8 lab and wild-derived mouse strains capture global and local expression variation",
+    "links": [
+      {
+        "doi": "https://doi.org/10.1016/j.xgen.2025.101108",
+        "date": "2026-04",
+        "name": "Cell Genomics"
+      },
+      {
+        "doi": "https://doi.org/10.1101/2025.04.21.649844",
+        "date": "2025-04-24",
+        "name": "bioRxiv"
+      }
+    ],
+    "summary": "This study profiles cell-type-resolved transcriptomes across multiple tissues and mouse strains to characterize how expression varies globally and locally across genetic backgrounds."
+  },
+  {
+    "title": "Verifying LLM-extracted text with token alignment",
+    "links": [
+      {
+        "doi": "https://doi.org/10.64898/2026.02.06.704502",
+        "date": "2026-02-10",
+        "name": "bioRxiv"
+      }
+    ],
+    "summary": "Large language models can extract structured text from documents, but their outputs need verification. This preprint describes a token-alignment approach for checking extracted text against source material."
+  },
+  {
+    "title": "Science should be machine-readable",
+    "links": [
+      {
+        "doi": "https://doi.org/10.64898/2026.01.30.702911",
+        "date": "2026-02-02",
+        "name": "bioRxiv"
+      }
+    ],
+    "summary": "This perspective argues for scientific communication and data practices that make research outputs easier for computers to parse, verify, reuse, and connect."
+  },
+  {
+    "title": "Long-read sequencing transcriptome quantification with lr-kallisto",
+    "links": [
+      {
+        "doi": "https://doi.org/10.1371/journal.pcbi.1013692",
+        "date": "2025-12-01",
+        "name": "PLOS Computational Biology"
+      },
+      {
+        "doi": "https://doi.org/10.1101/2024.07.19.604364",
+        "date": "2024-07-19",
+        "name": "bioRxiv"
+      }
+    ],
+    "summary": "Long-read RNA sequencing can resolve transcript isoforms but requires efficient quantification methods. This work introduces lr-kallisto for transcriptome quantification from long-read sequencing data."
+  },
+  {
+    "title": "Determining gene specificity from multivariate single-cell RNA sequencing data",
+    "links": [
+      {
+        "doi": "https://doi.org/10.1101/2025.11.21.689845",
+        "date": "2025-11-24",
+        "name": "bioRxiv"
+      }
+    ],
+    "summary": "This preprint develops methods for determining gene specificity from multivariate single-cell RNA sequencing data, addressing how genes vary across cell types and biological contexts."
+  },
+  {
+    "title": "Single-Nucleus Analysis of Human White Adipose Tissue Reveals Adipocyte Subsets with Distinct Metabolic Profiles",
+    "links": [
+      {
+        "doi": "https://doi.org/10.1101/2025.09.14.673351",
+        "date": "2025-09-16",
+        "name": "bioRxiv"
+      }
+    ],
+    "summary": "Single-nucleus profiling of human white adipose tissue is used to identify adipocyte subsets and relate those subsets to distinct metabolic profiles."
+  },
+  {
+    "title": "Comparative survey-based study of noninvasive saliva collection devices",
+    "links": [
+      {
+        "doi": "https://doi.org/10.1115/1.4067232",
+        "date": "2025-06-01",
+        "name": "Journal of Medical Devices"
+      },
+      {
+        "doi": "https://doi.org/10.1101/2023.10.31.23297784",
+        "date": "2023-10-31",
+        "name": "medRxiv"
+      }
+    ],
+    "summary": "This study compares noninvasive saliva collection devices using survey-based evidence, evaluating design and usability considerations for saliva-based sampling."
+  },
+  {
+    "title": "kallisto, bustools and kb-python for quantifying bulk, single-cell and single-nucleus RNA-seq",
+    "links": [
+      {
+        "doi": "https://doi.org/10.1038/s41596-024-01057-0",
+        "date": "2024-10-10",
+        "name": "Nature Protocols"
+      },
+      {
+        "doi": "https://doi.org/10.1101/2023.11.21.568164",
+        "date": "2023-11-22",
+        "name": "bioRxiv"
+      }
+    ],
+    "summary": "This protocol describes how to use kallisto, bustools, and kb-python to quantify bulk, single-cell, and single-nucleus RNA-seq datasets with efficient and reproducible workflows."
+  },
+  {
+    "title": "Deciphering the impact of genomic variation on function",
+    "links": [
+      {
+        "doi": "https://doi.org/10.1038/s41586-024-07510-0",
+        "date": "2024-09-05",
+        "name": "Nature"
+      }
+    ],
+    "summary": "The IGVF Consortium describes approaches and resources for understanding how genomic variation affects molecular and cellular function."
+  },
+  {
+    "title": "A machine-readable specification for genomics assays",
+    "links": [
+      {
+        "doi": "https://doi.org/10.1093/bioinformatics/btae168",
+        "date": "2024-03-29",
+        "name": "Bioinformatics"
+      },
+      {
+        "doi": "https://doi.org/10.1101/2023.03.17.533215",
+        "date": "2023-03-21",
+        "name": "bioRxiv"
+      }
+    ],
+    "summary": "Sequencing-based genomics assays produce sequencing reads with a variety of synthetic and biological features. Often base-pair-level annotations of these sequencing reads are hard to find, incomplete, or are altogether missing from the associated data inhibiting uniform preprocessing. To overcome this, we developed seqspec, a machine readable specification and associated command-line tool for annotating sequencing reads. seqspec is general and applicable to all genomics-based assays and facilitates standardization of preprocessing, tracking, and comparison of genomics assays."
+  },
+  {
+    "title": "Algorithms for a Commons Cell Atlas",
+    "links": [
+      {
+        "doi": "https://doi.org/10.1101/2024.03.23.586413",
+        "date": "2024-03-26",
+        "name": "bioRxiv"
+      }
+    ],
+    "summary": "This preprint outlines computational ideas and algorithms for constructing and querying a commons cell atlas from large-scale single-cell data."
+  },
+  {
+    "title": "A human commons cell atlas reveals cell type specificity for OAS1 isoforms",
+    "links": [
+      {
+        "doi": "https://doi.org/10.1101/2024.03.23.586412",
+        "date": "2024-03-24",
+        "name": "bioRxiv"
+      }
+    ],
+    "summary": "This study uses a human commons cell atlas to examine cell-type specificity of OAS1 isoforms across integrated single-cell datasets."
+  },
+  {
+    "title": "Quantifying orthogonal barcodes for sequence census assays",
+    "links": [
+      {
+        "doi": "https://doi.org/10.1093/bioadv/vbad181",
+        "date": "2024-01-05",
+        "name": "Bioinformatics Advances"
+      },
+      {
+        "doi": "https://doi.org/10.1101/2022.10.09.511501",
+        "date": "2022-10-10",
+        "name": "bioRxiv"
+      }
+    ],
+    "summary": "Orthogonal barcoding in single-cell genomics has made it possible to simultaneously measure numerous attributes of cells. We extended kallisto bustools to quantify orthogonal barcoding assays such as 10x Feature Barcoding, CiteSeq, Multiseq, and single-cell CRISPR screens. Our tool, called kite, is accurate and 48 times faster than state-of-the-art methods while requiring only a fifth of the memory. It has already been used in numerous projects by others. We also introduced a set of quality control metrics, and accompanying tool (qcbc), for validating barcode designs. qcbc provides a method for assay developers to address the problem of ambiguous mapping barcodes prior to experimentation."
+  },
+  {
+    "title": "Universal preprocessing of single-cell genomics data",
+    "links": [
+      {
+        "doi": "https://doi.org/10.1101/2023.09.14.543267",
+        "date": "2023-09-15",
+        "name": "bioRxiv"
+      }
+    ],
+    "summary": "This preprint presents a framework for universal preprocessing of single-cell genomics data, aiming to standardize workflows across assays and data types."
+  },
+  {
+    "title": "Voyager: exploratory single-cell genomics data analysis with geospatial statistics",
+    "links": [
+      {
+        "doi": "https://doi.org/10.1101/2023.07.20.549945",
+        "date": "2023-07-22",
+        "name": "bioRxiv"
+      }
+    ],
+    "summary": "Voyager applies geospatial statistics to exploratory single-cell genomics analysis, providing tools for working with spatially resolved biological data."
+  },
+  {
+    "title": "Characterization of spatial homogeneous regions in tissues with concordex",
     "links": [
       {
         "doi": "https://doi.org/10.1101/2023.06.28.546949",
@@ -8,7 +219,7 @@
         "name": "bioRxiv"
       }
     ],
-    "summary": "Evaluating the clustering of single-cell RNA sequencing data relies on the kNN graph through two dimensional embeddings produced with tSNE and UMAP. These two dimensional embeddings often fail to preserve local and global structure making it improper to rely on them as tools for assessing clustering quality. To overcome this challenge we develop the CONCORDEX measure, a quantity based on neighbors of cell types in a kNN graph, that more accurately and consistently enables clustering. We show how CONCORDEX performs on simulated data and illustrate its use on real data."
+    "summary": "Spatial omics data can contain regions of tissue with distinct molecular organization. This work extends the concordex framework to characterize spatially homogeneous regions in tissues by measuring neighborhood concordance in spatial genomics data."
   },
   {
     "title": "Assessing the multimodal tradeoff",
@@ -22,26 +233,20 @@
     "summary": "Multi-modal single-cell genomics assays quantify genomic features, such as gene expression and chromatin accessibility in the same cell. While single-cell registration can help better understand the coordination of distinct biological processes, an assessment of the multimodal and unimodal tradeoff has not yet been undertaken. To understand this tradeoff, we develop a snATAK, a preprocessing workflow for chromatin accessibility and \u201cmultiome\u201d assays. We show concordance with state-of-the-art, and demonstrate improved speed and runtime. Using snATAK we find that multimodal ATAC/RNA yields fewer peaks detected per cell, lower library complexity, and increased technical noise when compared to their unimodal counterparts. Additionally, we show that registered multimodal data can be used to find allele-concordance between the ATAC and RNA parts of 10x Multiome and SHARE-seqV2 data."
   },
   {
-    "title": "A machine-readable specification for genomics assays",
+    "title": "Metadata retrieval from sequence databases with ffq",
     "links": [
       {
-        "doi": "https://doi.org/10.1101/2023.03.17.533215",
-        "date": "2023-03-21",
+        "doi": "https://doi.org/10.1093/bioinformatics/btac667",
+        "date": "2023-01-05",
+        "name": "Bioinformatics"
+      },
+      {
+        "doi": "https://doi.org/10.1101/2022.05.18.492548",
+        "date": "2022-05-26",
         "name": "bioRxiv"
       }
     ],
-    "summary": "Sequencing-based genomics assays produce sequencing reads with a variety of synthetic and biological features. Often base-pair-level annotations of these sequencing reads are hard to find, incomplete, or are altogether missing from the associated data inhibiting uniform preprocessing. To overcome this, we developed seqspec, a machine readable specification and associated command-line tool for annotating sequencing reads. seqspec is general and applicable to all genomics-based assays and facilitates standardization of preprocessing, tracking, and comparison of genomics assays."
-  },
-  {
-    "title": "Quantifying orthogonal barcodes for sequence census assays",
-    "links": [
-      {
-        "doi": "https://doi.org/10.1101/2022.10.09.511501",
-        "date": "2022-10-10",
-        "name": "bioRxiv"
-      }
-    ],
-    "summary": "Orthogonal barcoding in single-cell genomics has made it possible to simultaneously measure numerous attributes of cells. We extended kallisto bustools to quantify orthogonal barcoding assays such as 10x Feature Barcoding, CiteSeq, Multiseq, and single-cell CRISPR screens. Our tool, called kite, is accurate and 48 times faster than state-of-the-art methods while requiring only a fifth of the memory. It has already been used in numerous projects by others. We also introduced a set of quality control metrics, and accompanying tool (qcbc), for validating barcode designs. qcbc provides a method for assay developers to address the problem of ambiguous mapping barcodes prior to experimentation."
+    "summary": "The accessing of data and metadata from the sequence read archive (SRA) and other genomics databases has been cumbersome, and a source of frustration for many biologists seeking to leverage published data in their work. We developed a command-line tool, called ffq, for querying user- generated data and metadata from sequence databases such as GEO, SRA, NCBI, EMBL-EBI, DDBJ, and ENCODE. ffq enables users to quickly and easily find FASTQ files associated with a paper or accession, and greatly simplifies and organizes the process of downloading data. This tool currently has 400 stars on GitHub and is downloaded ~200 times per week."
   },
   {
     "title": "Pseudoalignment facilitates assignment of error-prone Ultima Genomics reads",
@@ -55,23 +260,7 @@
     "summary": "The expiration of Illumina patents has spurred the development of new sequencing assays and the launch of new sequencing companies. One of these is Ultima Genomics, which recently published articles showcasing its technology. We benchmarked and compared single-cell RNA-sequencing data generated with Illumina and Ultima Genomics sequencers and found some exaggerations in claims made by the company. Specifically, we found high error rates in and near homopolymer stretches in Ultima data that led to erroneous quantification of some genes. We propose pseudoalignment as a method to compensate for these errors and show that it outperforms standard read alignment for this application."
   },
   {
-    "title": "Metadata retrieval from sequence databases with ffq",
-    "links": [
-      {
-        "doi": "https://doi.org/10.1101/2022.05.18.492548",
-        "date": "2022-05-26",
-        "name": "bioRxiv"
-      },
-      {
-        "doi": "https://doi.org/10.1093/bioinformatics/btac667",
-        "date": "2023-01-05",
-        "name": "Bioinformatics"
-      }
-    ],
-    "summary": "The accessing of data and metadata from the sequence read archive (SRA) and other genomics databases has been cumbersome, and a source of frustration for many biologists seeking to leverage published data in their work. We developed a command-line tool, called ffq, for querying user- generated data and metadata from sequence databases such as GEO, SRA, NCBI, EMBL-EBI, DDBJ, and ENCODE. ffq enables users to quickly and easily find FASTQ files associated with a paper or accession, and greatly simplifies and organizes the process of downloading data. This tool currently has 400 stars on GitHub and is downloaded ~200 times per week."
-  },
-  {
-    "title": "Depth normalization for single-cell genomics count data",
+    "title": "Normalization for sampled count data",
     "links": [
       {
         "doi": "https://doi.org/10.1101/2022.05.06.490859",
@@ -209,6 +398,11 @@
         "doi": "https://doi.org/10.1038/s41598-019-48815-9",
         "date": "2019-08-27",
         "name": "Nature Scientific Reports"
+      },
+      {
+        "doi": "https://doi.org/10.1038/s41598-023-42035-y",
+        "date": "2023-09-08",
+        "name": "Correction"
       }
     ],
     "summary": "Instrumentation to perform single-cell RNA-sequencing experiments is costly and limits the scale of experimentation. To address this, we have developed an open-source syringe pump and microscope system called poseidon. The system of three syringe pumps and microscope costs less than $400, and can be assembled in under an hour. Importantly, poseidon reduces costs of experimentation by up to 25x while demonstrating similar accuracy and precision to commercial alternatives."

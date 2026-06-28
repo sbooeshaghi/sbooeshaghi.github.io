@@ -20,43 +20,90 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Selected publications by A. Sina Booeshaghi."
+      content="Selected works by A. Sina Booeshaghi."
     />
     <link rel="stylesheet" href="styles.css" />
-    <title>Publications | Sina Booeshaghi</title>
+    <title>Works | Sina Booeshaghi</title>
     <script>
-      function formatPublication(publication) {
-        return `
-        <div>
-        <li>
-          <h3>
-            ${publication.title}
-          </h3>
-        </li>
-        ${publication.links
-          .map((link) => {
-            return `
-          <p>
-            <a href="${link.doi}" target="_blank" rel="noopener"
-              ><i>${link.name} (${link.date})</i></a
-            >
-          </p>
-          `;
-          })
-          .join("")}
-        <p>
-          <b>(${publication.summary.trim().split(" ").length} words)</b> ${
-          publication.summary
+      const dateFormatter = new Intl.DateTimeFormat("en", {
+        month: "short",
+        day: "numeric",
+        year: "numeric",
+      });
+      const monthFormatter = new Intl.DateTimeFormat("en", {
+        month: "short",
+        year: "numeric",
+      });
+
+      function escapeHTML(value) {
+        return String(value)
+          .replace(/&/g, "&amp;")
+          .replace(/</g, "&lt;")
+          .replace(/>/g, "&gt;")
+          .replace(/"/g, "&quot;")
+          .replace(/'/g, "&#39;");
+      }
+
+      function formatDate(date) {
+        const parts = date.split("-").map(Number);
+
+        if (parts.length === 1) {
+          return date;
         }
-        </p>
-      </div>
+
+        if (parts.length === 2) {
+          return monthFormatter.format(new Date(parts[0], parts[1] - 1, 1));
+        }
+
+        return dateFormatter.format(
+          new Date(parts[0], parts[1] - 1, parts[2])
+        );
+      }
+
+      function formatPublication(publication) {
+        const summary = publication.summary.trim();
+        const wordCount = summary.split(/\s+/).length;
+
+        return `
+          <li class="publication-item">
+            <article class="publication-card">
+              <h2 class="publication-title">${escapeHTML(
+                publication.title
+              )}</h2>
+              <div class="publication-links" aria-label="Work links">
+                ${publication.links
+                  .map((link) => {
+                    return `
+                      <a
+                        class="publication-link"
+                        href="${escapeHTML(link.doi)}"
+                        target="_blank"
+                        rel="noopener"
+                      >
+                        <span>${escapeHTML(link.name)}</span>
+                        <time datetime="${escapeHTML(link.date)}">${formatDate(
+                      link.date
+                    )}</time>
+                      </a>
+                    `;
+                  })
+                  .join("")}
+              </div>
+              <p class="publication-summary">
+                <span class="publication-word-count">${wordCount} words</span>
+                ${escapeHTML(summary)}
+              </p>
+            </article>
+          </li>
         `;
       }
+
       function formatPublications(publications) {
         return publications.map(formatPublication).join("");
       }
+
       document.addEventListener("DOMContentLoaded", () => {
-        fetch("db/publications.json")
+        fetch("db/publications.json", { cache: "no-store" })
           .then((response) => response.json())
           .then((publications) => {
             document.getElementById("publicationList").innerHTML =
@@ -69,7 +116,7 @@
     <p>
       <a href="index.html">Home</a>
     </p>
-    <h1>Publications</h1>
-    <ol reversed id="publicationList"></ol>
+    <h1>Works</h1>
+    <ol reversed class="publication-list" id="publicationList"></ol>
   </body>
 </html>

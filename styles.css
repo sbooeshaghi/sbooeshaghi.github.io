@@ -209,6 +209,79 @@ span[style*="width"] {
   line-height: 1.4;
 }
 
+.publication-list {
+  display: grid;
+  gap: 0.8rem;
+  margin: 1rem 0 0;
+  padding-left: 1.5rem;
+}
+
+.publication-item {
+  padding-left: 0.15rem;
+}
+
+.publication-item::marker {
+  color: #777;
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.publication-card {
+  padding: 0.8rem 0.85rem;
+  background: #fafafa;
+  border-top: 1px solid #ddd;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  border-left: 3px solid #d0d0d0;
+}
+
+.publication-title {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.35;
+}
+
+.publication-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.45rem;
+}
+
+.publication-link {
+  display: inline-block;
+  padding-bottom: 0.02rem;
+  color: #0645ad;
+  font-size: 0.82rem;
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+}
+
+.publication-link time {
+  color: inherit;
+}
+
+.publication-link:hover {
+  color: red;
+  border-bottom-color: red;
+}
+
+.publication-summary {
+  margin: 0.6rem 0 0;
+  color: #333;
+  font-size: 0.92rem;
+  line-height: 1.45;
+}
+
+.publication-word-count {
+  display: inline-block;
+  margin-right: 0.35rem;
+  color: #666;
+  font-size: 0.78rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
 @media only screen and (max-width: 600px) {
   body {
     width: calc(100% - 1rem);
@@ -224,6 +297,14 @@ span[style*="width"] {
   }
 
   .post-card {
+    padding: 0.65rem 0.7rem;
+  }
+
+  .publication-list {
+    padding-left: 1.15rem;
+  }
+
+  .publication-card {
     padding: 0.65rem 0.7rem;
   }
 }
