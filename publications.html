@@ -18,8 +18,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Selected publications by A. Sina Booeshaghi."
+    />
     <link rel="stylesheet" href="styles.css" />
-    <title>Document</title>
+    <title>Publications | Sina Booeshaghi</title>
     <script>
       function formatPublication(publication) {
         return `
@@ -33,7 +37,7 @@
           .map((link) => {
             return `
           <p>
-            <a href=${link.doi} target="_blank"
+            <a href="${link.doi}" target="_blank" rel="noopener"
               ><i>${link.name} (${link.date})</i></a
             >
           </p>

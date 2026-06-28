@@ -18,16 +18,21 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Links and quotes collected by A. Sina Booeshaghi."
+    />
     <link rel="stylesheet" href="styles.css" />
-    <title>Document</title>
+    <title>Links & Quotes | Sina Booeshaghi</title>
     <script>
       function formatLink(link) {
         return `
       <li>
-        <a
-          href="${link.url}"
-          target="_blank"
-          >${link.title}</a
+          <a
+            href="${link.url}"
+            target="_blank"
+            rel="noopener"
+            >${link.title}</a
         >
       </li>
         `;
