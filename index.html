@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Personal website of A. Sina Booeshaghi, a single-cell genomics researcher."
+      content="Personal website of A. Sina Booeshaghi, a single-cell genomics researcher interested in AI for biology."
     />
 
     <!-- Google tag (gtag.js) -->
@@ -22,38 +22,6 @@
       gtag("js", new Date());
 
       gtag("config", "G-6P1ZQ0CC8F");
-    </script>
-
-    <!-- Scripts -->
-    <script>
-      // get the text from the DOM Element:
-      // when someone clicks on the <a class="copy-text"> element
-      // (which should be a <button>), execute the copy command:
-      document.addEventListener("DOMContentLoaded", function () {
-        document.querySelector(".copy-text").addEventListener("click", () => {
-          // four things
-          // department
-          // institute
-          // address
-          const creditName = document.getElementById("creditName").innerText;
-          const department = document.getElementById("department_0").innerText;
-          const institute = document.getElementById("institute_0").innerText;
-          const address = document.getElementById("address_0").innerText;
-          const affil = `${department}, ${institute}, ${address}`;
-          navigator.clipboard.writeText(affil).then(
-            function () {
-              /* clipboard successfully set */
-              window.alert("Success! The text was copied to your clipboard");
-            },
-            function () {
-              /* clipboard write failed */
-              window.alert(
-                "Opps! Your browser does not support the Clipboard API"
-              );
-            }
-          );
-        });
-      });
     </script>
 
     <!-- Title -->
@@ -126,9 +94,6 @@
             </li>
           </ul>
         </div>
-        <div style="display: flex; justify-content: center">
-          <button class="copy-text">copy affiliation</button>
-        </div>
       </div>
     </div>
 
@@ -136,8 +101,11 @@
     <div id="description">
       <p>
         I study and develop single-cell genomics technologies. I am interested
-        in robust and repeatable genomics measurements that have real clinical
-        impact. In my free time, I enjoy biking, hiking, and photography.
+        in robust and repeatable biological measurements, and in using AI to
+        help scientists organize, evaluate, and interpret biological data. I
+        care about work that is useful in practice and has real clinical
+        impact. In my free time, I enjoy biking, hiking, salsa dancing, and
+        photography.
 
         <!-- <a href="https://pachterlab.github.io/" target="_blank"
           >Professor Lior Pachter</a
