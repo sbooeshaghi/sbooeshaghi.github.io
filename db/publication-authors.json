@@ -1,0 +1,4927 @@
+{
+  "generatedAt": "2026-07-05T00:58:53.068Z",
+  "sources": [
+    "Crossref DOI metadata with cross-version and cross-work ORCID backfill"
+  ],
+  "works": {
+    "the-impact-of-package-selection-and-versioning-on-single-cell-rna-seq-analysis": {
+      "title": "The impact of package selection and versioning on single-cell RNA-seq analysis",
+      "versions": [
+        {
+          "name": "Cell Systems",
+          "doi": "10.1016/j.cels.2026.101560",
+          "date": "2026-04",
+          "authors": [
+            {
+              "name": "Joseph M. Rich",
+              "orcid": "https://orcid.org/0000-0003-1400-8479"
+            },
+            {
+              "name": "Lambda Moses",
+              "orcid": "https://orcid.org/0000-0002-7092-9427"
+            },
+            {
+              "name": "Pétur Helgi Einarsson",
+              "orcid": "https://orcid.org/0000-0002-1665-7459"
+            },
+            {
+              "name": "Kayla Jackson",
+              "orcid": "https://orcid.org/0000-0001-6483-0108"
+            },
+            {
+              "name": "Laura Luebbert",
+              "orcid": "https://orcid.org/0000-0003-1379-2927"
+            },
+            {
+              "name": "A. Sina Booeshaghi",
+              "orcid": "https://orcid.org/0000-0002-6442-4502"
+            },
+            {
+              "name": "Sindri Antonsson",
+              "orcid": "https://orcid.org/0009-0005-0779-6923"
+            },
+            {
+              "name": "Delaney K. Sullivan",
+              "orcid": "https://orcid.org/0000-0002-8359-6705"
+            },
+            {
+              "name": "Nicolas Bray",
+              "orcid": "https://orcid.org/0000-0002-4143-8194"
+            },
+            {
+              "name": "Páll Melsted",
+              "orcid": "https://orcid.org/0000-0002-8418-6724"
+            },
+            {
+              "name": "Lior Pachter",
+              "orcid": "https://orcid.org/0000-0002-9164-6231"
+            }
+          ]
+        },
+        {
+          "name": "bioRxiv",
+          "doi": "10.1101/2024.04.04.588111",
+          "date": "2024-04-05",
+          "authors": [
+            {
+              "name": "Joseph M Rich",
+              "orcid": "https://orcid.org/0000-0003-1400-8479"
+            },
+            {
+              "name": "Lambda Moses",
+              "orcid": "https://orcid.org/0000-0002-7092-9427"
+            },
+            {
+              "name": "Pétur Helgi Einarsson",
+              "orcid": "https://orcid.org/0000-0002-1665-7459"
+            },
+            {
+              "name": "Kayla Jackson",
+              "orcid": "https://orcid.org/0000-0001-6483-0108"
+            },
+            {
+              "name": "Laura Luebbert",
+              "orcid": "https://orcid.org/0000-0003-1379-2927"
+            },
+            {
+              "name": "A. Sina Booeshaghi",
+              "orcid": "https://orcid.org/0000-0002-6442-4502"
+            },
+            {
+              "name": "Sindri Antonsson",
+              "orcid": "https://orcid.org/0009-0005-0779-6923"
+            },
+            {
+              "name": "Delaney K. Sullivan",
+              "orcid": "https://orcid.org/0000-0002-8359-6705"
+            },
+            {
+              "name": "Nicolas Bray",
+              "orcid": "https://orcid.org/0000-0002-4143-8194"
+            },
+            {
+              "name": "Páll Melsted",
+              "orcid": "https://orcid.org/0000-0002-8418-6724"
+            },
+            {
+              "name": "Lior Pachter",
+              "orcid": "https://orcid.org/0000-0002-9164-6231"
+            }
+          ]
+        }
+      ]
+    },
+    "systematic-cell-type-resolved-transcriptomes-of-8-tissues-in-8-lab-and-wild-derived-mouse-strains-capture-global-and-local-expression-variation": {
+      "title": "Systematic cell-type resolved transcriptomes of 8 tissues in 8 lab and wild-derived mouse strains capture global and local expression variation",
+      "versions": [
+        {
+          "name": "Cell Genomics",
+          "doi": "10.1016/j.xgen.2025.101108",
+          "date": "2026-04",
+          "authors": [
+            {
+              "name": "Elisabeth Rebboah",
+              "orcid": "https://orcid.org/0000-0003-2273-0189"
+            },
+            {
+              "name": "Ryan Weber",
+              "orcid": "https://orcid.org/0000-0003-2044-9297"
+            },
+            {
+              "name": "Elnaz Abdollahzadeh",
+              "orcid": "https://orcid.org/0009-0005-1330-9183"
+            },
+            {
+              "name": "Nikhila Swarna",
+              "orcid": "https://orcid.org/0000-0003-3300-0114"
+            },
+            {
+              "name": "Delaney K. Sullivan",
+              "orcid": "https://orcid.org/0000-0002-8359-6705"
+            },
+            {
+              "name": "Diane Trout",
+              "orcid": "https://orcid.org/0000-0002-4928-5532"
+            },
+            {
+              "name": "Fairlie Reese",
+              "orcid": "https://orcid.org/0000-0002-9240-0102"
+            },
+            {
+              "name": "Heidi Yahan Liang",
+              "orcid": "https://orcid.org/0000-0002-6190-9723"
+            },
+            {
+              "name": "Ghassan Filimban",
+              "orcid": "https://orcid.org/0000-0002-2612-2554"
+            },
+            {
+              "name": "Parvin Mahdipoor"
+            },
+            {
+              "name": "Margaret Duffield",
+              "orcid": "https://orcid.org/0009-0009-1860-7269"
+            },
+            {
+              "name": "Romina Mojaverzargar",
+              "orcid": "https://orcid.org/0009-0004-9176-2154"
+            },
+            {
+              "name": "Erisa Taghizadeh",
+              "orcid": "https://orcid.org/0009-0001-6677-9921"
+            },
+            {
+              "name": "Negar Fattahi",
+              "orcid": "https://orcid.org/0009-0001-9222-0793"
+            },
+            {
+              "name": "Negar Mojgani",
+              "orcid": "https://orcid.org/0009-0000-1846-2332"
+            },
+            {
+              "name": "Haoran Zhang",
+              "orcid": "https://orcid.org/0009-0007-5669-8320"
+            },
+            {
+              "name": "Rebekah K. Loving",
+              "orcid": "https://orcid.org/0000-0001-8725-0376"
+            },
+            {
+              "name": "Maria Carilli",
+              "orcid": "https://orcid.org/0000-0002-8977-7224"
+            },
+            {
+              "name": "A. Sina Booeshaghi",
+              "orcid": "https://orcid.org/0000-0002-6442-4502"
+            },
+            {
+              "name": "Shimako Kawauchi",
+              "orcid": "https://orcid.org/0000-0002-8577-4763"
+            },
+            {
+              "name": "Ingileif B. Hallgrímsdóttir",
+              "orcid": "https://orcid.org/0000-0002-4710-0047"
+            },
+            {
+              "name": "Brian A. Williams",
+              "orcid": "https://orcid.org/0000-0003-3253-611X"
+            },
+            {
+              "name": "Grant R. MacGregor",
+              "orcid": "https://orcid.org/0000-0001-7598-9501"
+            },
+            {
+              "name": "Lior Pachter",
+              "orcid": "https://orcid.org/0000-0002-9164-6231"
+            },
+            {
+              "name": "Barbara J. Wold",
+              "orcid": "https://orcid.org/0000-0003-3235-8130"
+            },
+            {
+              "name": "Ali Mortazavi",
+              "orcid": "https://orcid.org/0000-0002-4259-6362"
+            }
+          ]
+        },
+        {
+          "name": "bioRxiv",
+          "doi": "10.1101/2025.04.21.649844",
+          "date": "2025-04-24",
+          "authors": [
+            {
+              "name": "Elisabeth Rebboah",
+              "orcid": "https://orcid.org/0000-0003-2273-0189"
+            },
+            {
+              "name": "Ryan Weber",
+              "orcid": "https://orcid.org/0000-0003-2044-9297"
+            },
+            {
+              "name": "Elnaz Abdollahzadeh",
+              "orcid": "https://orcid.org/0009-0005-1330-9183"
+            },
+            {
+              "name": "Nikhila Swarna",
+              "orcid": "https://orcid.org/0000-0003-3300-0114"
+            },
+            {
+              "name": "Delaney K. Sullivan",
+              "orcid": "https://orcid.org/0000-0002-8359-6705"
+            },
+            {
+              "name": "Diane Trout",
+              "orcid": "https://orcid.org/0000-0002-4928-5532"
+            },
+            {
+              "name": "Fairlie Reese",
+              "orcid": "https://orcid.org/0000-0002-9240-0102"
+            },
+            {
+              "name": "Heidi Yahan Liang",
+              "orcid": "https://orcid.org/0000-0002-6190-9723"
+            },
+            {
+              "name": "Ghassan Filimban",
+              "orcid": "https://orcid.org/0000-0002-2612-2554"
+            },
+            {
+              "name": "Parvin Mahdipoor"
+            },
+            {
+              "name": "Margaret Duffield",
+              "orcid": "https://orcid.org/0009-0009-1860-7269"
+            },
+            {
+              "name": "Romina Mojaverzargar",
+              "orcid": "https://orcid.org/0009-0004-9176-2154"
+            },
+            {
+              "name": "Erisa Taghizadeh",
+              "orcid": "https://orcid.org/0009-0001-6677-9921"
+            },
+            {
+              "name": "Negar Fattahi",
+              "orcid": "https://orcid.org/0009-0001-9222-0793"
+            },
+            {
+              "name": "Negar Mojgani",
+              "orcid": "https://orcid.org/0009-0000-1846-2332"
+            },
+            {
+              "name": "Haoran Zhang",
+              "orcid": "https://orcid.org/0009-0007-5669-8320"
+            },
+            {
+              "name": "Rebekah K. Loving",
+              "orcid": "https://orcid.org/0000-0001-8725-0376"
+            },
+            {
+              "name": "Maria Carilli",
+              "orcid": "https://orcid.org/0000-0002-8977-7224"
+            },
+            {
+              "name": "A. Sina Booeshaghi",
+              "orcid": "https://orcid.org/0000-0002-6442-4502"
+            },
+            {
+              "name": "Shimako Kawauchi",
+              "orcid": "https://orcid.org/0000-0002-8577-4763"
+            },
+            {
+              "name": "Ingileif B. Hallgrímsdóttir",
+              "orcid": "https://orcid.org/0000-0002-4710-0047"
+            },
+            {
+              "name": "Brian A. Williams",
+              "orcid": "https://orcid.org/0000-0003-3253-611X"
+            },
+            {
+              "name": "Grant R. MacGregor",
+              "orcid": "https://orcid.org/0000-0001-7598-9501"
+            },
+            {
+              "name": "Lior Pachter",
+              "orcid": "https://orcid.org/0000-0002-9164-6231"
+            },
+            {
+              "name": "Barbara J. Wold",
+              "orcid": "https://orcid.org/0000-0003-3235-8130"
+            },
+            {
+              "name": "Ali Mortazavi",
+              "orcid": "https://orcid.org/0000-0002-4259-6362"
+            }
+          ]
+        }
+      ]
+    },
+    "verifying-llm-extracted-text-with-token-alignment": {
+      "title": "Verifying LLM-extracted text with token alignment",
+      "versions": [
+        {
+          "name": "bioRxiv",
+          "doi": "10.64898/2026.02.06.704502",
+          "date": "2026-02-10",
+          "authors": [
+            {
+              "name": "A. Sina Booeshaghi",
+              "orcid": "https://orcid.org/0000-0002-6442-4502"
+            },
+            {
+              "name": "Aaron Streets",
+              "orcid": "https://orcid.org/0000-0002-3909-8389"
+            }
+          ]
+        }
+      ]
+    },
+    "science-should-be-machine-readable": {
+      "title": "Science should be machine-readable",
+      "versions": [
+        {
+          "name": "bioRxiv",
+          "doi": "10.64898/2026.01.30.702911",
+          "date": "2026-02-02",
+          "authors": [
+            {
+              "name": "A. Sina Booeshaghi",
+              "orcid": "https://orcid.org/0000-0002-6442-4502"
+            },
+            {
+              "name": "Laura Luebbert",
+              "orcid": "https://orcid.org/0000-0003-1379-2927"
+            },
+            {
+              "name": "Lior Pachter",
+              "orcid": "https://orcid.org/0000-0002-9164-6231"
+            }
+          ]
+        }
+      ]
+    },
+    "long-read-sequencing-transcriptome-quantification-with-lr-kallisto": {
+      "title": "Long-read sequencing transcriptome quantification with lr-kallisto",
+      "versions": [
+        {
+          "name": "PLOS Computational Biology",
+          "doi": "10.1371/journal.pcbi.1013692",
+          "date": "2025-12-01",
+          "authors": [
+            {
+              "name": "Rebekah K. Loving",
+              "orcid": "https://orcid.org/0000-0001-8725-0376"
+            },
+            {
+              "name": "Delaney K. Sullivan",
+              "orcid": "https://orcid.org/0000-0002-8359-6705"
+            },
+            {
+              "name": "Fairlie Reese",
+              "orcid": "https://orcid.org/0000-0002-9240-0102"
+            },
+            {
+              "name": "Elisabeth Rebboah",
+              "orcid": "https://orcid.org/0000-0003-2273-0189"
+            },
+            {
+              "name": "Jasmine Sakr",
+              "orcid": "https://orcid.org/0000-0002-4470-3192"
+            },
+            {
+              "name": "Narges Rezaie",
+              "orcid": "https://orcid.org/0000-0001-9326-9954"
+            },
+            {
+              "name": "Heidi Y. Liang",
+              "orcid": "https://orcid.org/0000-0002-6190-9723"
+            },
+            {
+              "name": "Ghassan Filimban",
+              "orcid": "https://orcid.org/0000-0002-2612-2554"
+            },
+            {
+              "name": "Shimako Kawauchi",
+              "orcid": "https://orcid.org/0000-0002-8577-4763"
+            },
+            {
+              "name": "A. Sina Booeshaghi",
+              "orcid": "https://orcid.org/0000-0002-6442-4502"
+            },
+            {
+              "name": "Páll Melsted",
+              "orcid": "https://orcid.org/0000-0002-8418-6724"
+            },
+            {
+              "name": "Conrad Oakes",
+              "orcid": "https://orcid.org/0000-0002-8936-055X"
+            },
+            {
+              "name": "Diane Trout",
+              "orcid": "https://orcid.org/0000-0002-4928-5532"
+            },
+            {
+              "name": "Brian A. Williams",
+              "orcid": "https://orcid.org/0000-0003-3253-611X"
+            },
+            {
+              "name": "Grant R. MacGregor",
+              "orcid": "https://orcid.org/0000-0001-7598-9501"
+            },
+            {
+              "name": "Barbara J. Wold",
+              "orcid": "https://orcid.org/0000-0003-3235-8130"
+            },
+            {
+              "name": "Ali Mortazavi",
+              "orcid": "https://orcid.org/0000-0002-4259-6362"
+            },
+            {
+              "name": "Lior Pachter",
+              "orcid": "https://orcid.org/0000-0002-9164-6231"
+            }
+          ]
+        },
+        {
+          "name": "bioRxiv",
+          "doi": "10.1101/2024.07.19.604364",
+          "date": "2024-07-19",
+          "authors": [
+            {
+              "name": "Rebekah K. Loving",
+              "orcid": "https://orcid.org/0000-0001-8725-0376"
+            },
+            {
+              "name": "Delaney K. Sullivan",
+              "orcid": "https://orcid.org/0000-0002-8359-6705"
+            },
+            {
+              "name": "A. Sina Booeshagi",
+              "orcid": "https://orcid.org/0000-0002-6442-4502"
+            },
+            {
+              "name": "Fairlie Reese",
+              "orcid": "https://orcid.org/0000-0002-9240-0102"
+            },
+            {
+              "name": "Elisabeth Rebboah",
+              "orcid": "https://orcid.org/0000-0003-2273-0189"
+            },
+            {
+              "name": "Jasmine Sakr",
+              "orcid": "https://orcid.org/0000-0002-4470-3192"
+            },
+            {
+              "name": "Narges Rezaie",
+              "orcid": "https://orcid.org/0000-0001-9326-9954"
+            },
+            {
+              "name": "Heidi Y. Liang",
+              "orcid": "https://orcid.org/0000-0002-6190-9723"
+            },
+            {
+              "name": "Ghassan Filimban",
+              "orcid": "https://orcid.org/0000-0002-2612-2554"
+            },
+            {
+              "name": "Shimako Kawauchi",
+              "orcid": "https://orcid.org/0000-0002-8577-4763"
+            },
+            {
+              "name": "Conrad Oakes",
+              "orcid": "https://orcid.org/0000-0002-8936-055X"
+            },
+            {
+              "name": "Diane Trout",
+              "orcid": "https://orcid.org/0000-0002-4928-5532"
+            },
+            {
+              "name": "Brian A. Williams",
+              "orcid": "https://orcid.org/0000-0003-3253-611X"
+            },
+            {
+              "name": "Grant MacGregor",
+              "orcid": "https://orcid.org/0000-0001-7598-9501"
+            },
+            {
+              "name": "Barbara J. Wold",
+              "orcid": "https://orcid.org/0000-0003-3235-8130"
+            },
+            {
+              "name": "Ali Mortazavi",
+              "orcid": "https://orcid.org/0000-0002-4259-6362"
+            },
+            {
+              "name": "Lior Pachter",
+              "orcid": "https://orcid.org/0000-0002-9164-6231"
+            }
+          ]
+        }
+      ]
+    },
+    "determining-gene-specificity-from-multivariate-single-cell-rna-sequencing-data": {
+      "title": "Determining gene specificity from multivariate single-cell RNA sequencing data",
+      "versions": [
+        {
+          "name": "bioRxiv",
+          "doi": "10.1101/2025.11.21.689845",
+          "date": "2025-11-24",
+          "authors": [
+            {
+              "name": "Nikhila P. Swarna",
+              "orcid": "https://orcid.org/0000-0003-3300-0114"
+            },
+            {
+              "name": "A. Sina Booeshaghi",
+              "orcid": "https://orcid.org/0000-0002-6442-4502"
+            },
+            {
+              "name": "Elisabeth Rebboah",
+              "orcid": "https://orcid.org/0000-0003-2273-0189"
+            },
+            {
+              "name": "M. Grace Gordon",
+              "orcid": "https://orcid.org/0000-0003-4321-9187"
+            },
+            {
+              "name": "Pooja Kathail",
+              "orcid": "https://orcid.org/0000-0001-8860-0753"
+            },
+            {
+              "name": "Taibo Li",
+              "orcid": "https://orcid.org/0000-0002-6624-9293"
+            },
+            {
+              "name": "Marcus Alvarez"
+            },
+            {
+              "name": "Chun Jimmie Ye",
+              "orcid": "https://orcid.org/0000-0001-6560-3783"
+            },
+            {
+              "name": "Barbara Wold",
+              "orcid": "https://orcid.org/0000-0003-3235-8130"
+            },
+            {
+              "name": "Ali Mortazavi",
+              "orcid": "https://orcid.org/0000-0002-4259-6362"
+            },
+            {
+              "name": "Lior Pachter",
+              "orcid": "https://orcid.org/0000-0002-9164-6231"
+            }
+          ]
+        }
+      ]
+    },
+    "single-nucleus-analysis-of-human-white-adipose-tissue-reveals-adipocyte-subsets-with-distinct-metabolic-profiles": {
+      "title": "Single-Nucleus Analysis of Human White Adipose Tissue Reveals Adipocyte Subsets with Distinct Metabolic Profiles",
+      "versions": [
+        {
+          "name": "bioRxiv",
+          "doi": "10.1101/2025.09.14.673351",
+          "date": "2025-09-16",
+          "authors": [
+            {
+              "name": "Vissarion Efthymiou",
+              "orcid": "https://orcid.org/0000-0003-4327-7977"
+            },
+            {
+              "name": "Adhideb Ghosh"
+            },
+            {
+              "name": "Sean D. Kodani"
+            },
+            {
+              "name": "Xavier Caubit"
+            },
+            {
+              "name": "Laurent Fasano"
+            },
+            {
+              "name": "Waqar Ali"
+            },
+            {
+              "name": "Lindsay S. Poulos"
+            },
+            {
+              "name": "Henrique Camara",
+              "orcid": "https://orcid.org/0000-0001-7300-1416"
+            },
+            {
+              "name": "Anushka Gupta"
+            },
+            {
+              "name": "Yasmine Belaidouni"
+            },
+            {
+              "name": "A. Sina Booeshaghi",
+              "orcid": "https://orcid.org/0000-0002-6442-4502"
+            },
+            {
+              "name": "Shiyi Yang"
+            },
+            {
+              "name": "Ruchir Rastogi"
+            },
+            {
+              "name": "Farnaz Shamsi"
+            },
+            {
+              "name": "Ashley Vernon"
+            },
+            {
+              "name": "Aaron Streets",
+              "orcid": "https://orcid.org/0000-0002-3909-8389"
+            },
+            {
+              "name": "Yu-Hua Tseng",
+              "orcid": "https://orcid.org/0000-0003-2053-9559"
+            },
+            {
+              "name": "Mary Elizabeth Patti"
+            }
+          ]
+        }
+      ]
+    },
+    "comparative-survey-based-study-of-noninvasive-saliva-collection-devices": {
+      "title": "Comparative survey-based study of noninvasive saliva collection devices",
+      "versions": [
+        {
+          "name": "Journal of Medical Devices",
+          "doi": "10.1115/1.4067232",
+          "date": "2025-06-01",
+          "authors": [
+            {
+              "name": "Yeokyoung (Anne) Kil",
+              "orcid": "https://orcid.org/0000-0002-1235-7379"
+            },
+            {
+              "name": "Ali S. Booeshaghi",
+              "orcid": "https://orcid.org/0000-0002-6442-4502"
+            },
+            {
+              "name": "Lior S. Pachter",
+              "orcid": "https://orcid.org/0000-0002-9164-6231"
+            }
+          ]
+        },
+        {
+          "name": "medRxiv",
+          "doi": "10.1101/2023.10.31.23297784",
+          "date": "2023-10-31",
+          "authors": [
+            {
+              "name": "Yeokyoung (Anne) Kil",
+              "orcid": "https://orcid.org/0000-0002-1235-7379"
+            },
+            {
+              "name": "Ali S. Booeshaghi",
+              "orcid": "https://orcid.org/0000-0002-6442-4502"
+            },
+            {
+              "name": "Lior S. Pachter",
+              "orcid": "https://orcid.org/0000-0002-9164-6231"
+            }
+          ]
+        }
+      ]
+    },
+    "kallisto-bustools-and-kb-python-for-quantifying-bulk-single-cell-and-single-nucleus-rna-seq": {
+      "title": "kallisto, bustools and kb-python for quantifying bulk, single-cell and single-nucleus RNA-seq",
+      "versions": [
+        {
+          "name": "Nature Protocols",
+          "doi": "10.1038/s41596-024-01057-0",
+          "date": "2024-10-10",
+          "authors": [
+            {
+              "name": "Delaney K. Sullivan",
+              "orcid": "https://orcid.org/0000-0002-8359-6705"
+            },
+            {
+              "name": "Kyung Hoi Min",
+              "orcid": "https://orcid.org/0000-0003-0894-4017"
+            },
+            {
+              "name": "Kristján Eldjárn Hjörleifsson",
+              "orcid": "https://orcid.org/0000-0002-7851-1818"
+            },
+            {
+              "name": "Laura Luebbert",
+              "orcid": "https://orcid.org/0000-0003-1379-2927"
+            },
+            {
+              "name": "Guillaume Holley"
+            },
+            {
+              "name": "Lambda Moses",
+              "orcid": "https://orcid.org/0000-0002-7092-9427"
+            },
+            {
+              "name": "Johan Gustafsson",
+              "orcid": "https://orcid.org/0000-0001-5072-2659"
+            },
+            {
+              "name": "Nicolas L. Bray",
+              "orcid": "https://orcid.org/0000-0002-4143-8194"
+            },
+            {
+              "name": "Harold Pimentel",
+              "orcid": "https://orcid.org/0000-0001-8556-2499"
+            },
+            {
+              "name": "A. Sina Booeshaghi",
+              "orcid": "https://orcid.org/0000-0002-6442-4502"
+            },
+            {
+              "name": "Páll Melsted",
+              "orcid": "https://orcid.org/0000-0002-8418-6724"
+            },
+            {
+              "name": "Lior Pachter",
+              "orcid": "https://orcid.org/0000-0002-9164-6231"
+            }
+          ]
+        },
+        {
+          "name": "bioRxiv",
+          "doi": "10.1101/2023.11.21.568164",
+          "date": "2023-11-22",
+          "authors": [
+            {
+              "name": "Delaney K. Sullivan",
+              "orcid": "https://orcid.org/0000-0002-8359-6705"
+            },
+            {
+              "name": "Kyung Hoi (Joseph) Min",
+              "orcid": "https://orcid.org/0000-0003-0894-4017"
+            },
+            {
+              "name": "Kristján Eldjárn Hjörleifsson",
+              "orcid": "https://orcid.org/0000-0002-7851-1818"
+            },
+            {
+              "name": "Laura Luebbert",
+              "orcid": "https://orcid.org/0000-0003-1379-2927"
+            },
+            {
+              "name": "Guillaume Holley"
+            },
+            {
+              "name": "Lambda Moses",
+              "orcid": "https://orcid.org/0000-0002-7092-9427"
+            },
+            {
+              "name": "Johan Gustafsson",
+              "orcid": "https://orcid.org/0000-0001-5072-2659"
+            },
+            {
+              "name": "Nicolas L. Bray",
+              "orcid": "https://orcid.org/0000-0002-4143-8194"
+            },
+            {
+              "name": "Harold Pimentel",
+              "orcid": "https://orcid.org/0000-0001-8556-2499"
+            },
+            {
+              "name": "A. Sina Booeshaghi",
+              "orcid": "https://orcid.org/0000-0002-6442-4502"
+            },
+            {
+              "name": "Páll Melsted",
+              "orcid": "https://orcid.org/0000-0002-8418-6724"
+            },
+            {
+              "name": "Lior Pachter",
+              "orcid": "https://orcid.org/0000-0002-9164-6231"
+            }
+          ]
+        }
+      ]
+    },
+    "deciphering-the-impact-of-genomic-variation-on-function": {
+      "title": "Deciphering the impact of genomic variation on function",
+      "versions": [
+        {
+          "name": "Nature",
+          "doi": "10.1038/s41586-024-07510-0",
+          "date": "2024-09-05",
+          "authors": [
+            {
+              "name": "IGVF Consortium"
+            },
+            {
+              "name": "Writing group (ordered by contribution)"
+            },
+            {
+              "name": "Jesse M. Engreitz",
+              "orcid": "https://orcid.org/0000-0002-5754-1719"
+            },
+            {
+              "name": "Heather A. Lawson"
+            },
+            {
+              "name": "Harinder Singh",
+              "orcid": "https://orcid.org/0000-0002-6330-8526"
+            },
+            {
+              "name": "Lea M. Starita"
+            },
+            {
+              "name": "Gary C. Hon"
+            },
+            {
+              "name": "Hannah Carter"
+            },
+            {
+              "name": "Nidhi Sahni"
+            },
+            {
+              "name": "Timothy E. Reddy"
+            },
+            {
+              "name": "Xihong Lin"
+            },
+            {
+              "name": "Yun Li"
+            },
+            {
+              "name": "Nikhil V. Munshi"
+            },
+            {
+              "name": "Maria H. Chahrour"
+            },
+            {
+              "name": "Alan P. Boyle"
+            },
+            {
+              "name": "Benjamin C. Hitz"
+            },
+            {
+              "name": "Ali Mortazavi",
+              "orcid": "https://orcid.org/0000-0002-4259-6362"
+            },
+            {
+              "name": "Mark Craven"
+            },
+            {
+              "name": "Karen L. Mohlke"
+            },
+            {
+              "name": "Luca Pinello"
+            },
+            {
+              "name": "Ting Wang"
+            },
+            {
+              "name": "Steering Committee Co-Chairs (alphabetical by last name)"
+            },
+            {
+              "name": "Anshul Kundaje"
+            },
+            {
+              "name": "Feng Yue"
+            },
+            {
+              "name": "Code of Conduct Committee (alphabetical by last name)"
+            },
+            {
+              "name": "Sarah Cody"
+            },
+            {
+              "name": "Nina P. Farrell"
+            },
+            {
+              "name": "Michael I. Love"
+            },
+            {
+              "name": "Lara A. Muffley"
+            },
+            {
+              "name": "Michael J. Pazin"
+            },
+            {
+              "name": "Fairlie Reese",
+              "orcid": "https://orcid.org/0000-0002-9240-0102"
+            },
+            {
+              "name": "Eric Van Buren"
+            },
+            {
+              "name": "Working Group and Focus Group Co-Chairs (alphabetical by last name)"
+            },
+            {
+              "name": "Catalog"
+            },
+            {
+              "name": "Kushal K. Dey"
+            },
+            {
+              "name": "Characterization"
+            },
+            {
+              "name": "Martin Kircher"
+            },
+            {
+              "name": "Computational Analysis, Modeling, and Prediction"
+            },
+            {
+              "name": "Jian Ma"
+            },
+            {
+              "name": "Predrag Radivojac"
+            },
+            {
+              "name": "Project Design"
+            },
+            {
+              "name": "Brunilda Balliu"
+            },
+            {
+              "name": "Mapping"
+            },
+            {
+              "name": "Brian A. Williams",
+              "orcid": "https://orcid.org/0000-0003-3253-611X"
+            },
+            {
+              "name": "Networks"
+            },
+            {
+              "name": "Danwei Huangfu"
+            },
+            {
+              "name": "Standards and Pipelines"
+            },
+            {
+              "name": "Cardiometabolic"
+            },
+            {
+              "name": "Chong Y. Park"
+            },
+            {
+              "name": "Thomas Quertermous"
+            },
+            {
+              "name": "Cellular Programs and Networks"
+            },
+            {
+              "name": "Jishnu Das"
+            },
+            {
+              "name": "Coding Variants"
+            },
+            {
+              "name": "Michael A. Calderwood"
+            },
+            {
+              "name": "Douglas M. Fowler"
+            },
+            {
+              "name": "Marc Vidal"
+            },
+            {
+              "name": "CRISPR"
+            },
+            {
+              "name": "Lucas Ferreira"
+            },
+            {
+              "name": "Defining and Systematizing Function"
+            },
+            {
+              "name": "Sean D. Mooney"
+            },
+            {
+              "name": "Vikas Pejaver"
+            },
+            {
+              "name": "Enumerating Variants"
+            },
+            {
+              "name": "Jingjing Zhao"
+            },
+            {
+              "name": "Evolution"
+            },
+            {
+              "name": "Steven Gazal"
+            },
+            {
+              "name": "Evan Koch"
+            },
+            {
+              "name": "Steven K. Reilly"
+            },
+            {
+              "name": "Shamil Sunyaev"
+            },
+            {
+              "name": "Imaging"
+            },
+            {
+              "name": "Anne E. Carpenter"
+            },
+            {
+              "name": "Immune"
+            },
+            {
+              "name": "Jason D. Buenrostro"
+            },
+            {
+              "name": "Christina S. Leslie"
+            },
+            {
+              "name": "Rachel E. Savage"
+            },
+            {
+              "name": "Impact on Diverse Populations"
+            },
+            {
+              "name": "Stefanija Giric"
+            },
+            {
+              "name": "iPSC"
+            },
+            {
+              "name": "Chongyuan Luo"
+            },
+            {
+              "name": "Kathrin Plath"
+            },
+            {
+              "name": "MPRA"
+            },
+            {
+              "name": "Alejandro Barrera"
+            },
+            {
+              "name": "Max Schubach"
+            },
+            {
+              "name": "Noncoding Variants"
+            },
+            {
+              "name": "Andreas R. Gschwind"
+            },
+            {
+              "name": "Jill E. Moore"
+            },
+            {
+              "name": "Neuro"
+            },
+            {
+              "name": "Nadav Ahituv"
+            },
+            {
+              "name": "Phenotypic Impact and Function"
+            },
+            {
+              "name": "S. Stephen Yi"
+            },
+            {
+              "name": "QTL/Statgen"
+            },
+            {
+              "name": "Ingileif Hallgrimsdottir",
+              "orcid": "https://orcid.org/0000-0002-4710-0047"
+            },
+            {
+              "name": "Kyle J. Gaulton"
+            },
+            {
+              "name": "Saori Sakaue"
+            },
+            {
+              "name": "Single Cell"
+            },
+            {
+              "name": "Sina Booeshaghi",
+              "orcid": "https://orcid.org/0000-0002-6442-4502"
+            },
+            {
+              "name": "Eugenio Mattei"
+            },
+            {
+              "name": "Surag Nair"
+            },
+            {
+              "name": "Lior Pachter",
+              "orcid": "https://orcid.org/0000-0002-9164-6231"
+            },
+            {
+              "name": "Austin T. Wang"
+            },
+            {
+              "name": "Characterization Awards (contact PI, MPIs (alphabetical by last name), other members (alphabetical by last name))"
+            },
+            {
+              "name": "UM1HG011966"
+            },
+            {
+              "name": "Jay Shendure"
+            },
+            {
+              "name": "Vikram Agarwal"
+            },
+            {
+              "name": "Andrew Blair"
+            },
+            {
+              "name": "Theofilos Chalkiadakis"
+            },
+            {
+              "name": "Florence M. Chardon"
+            },
+            {
+              "name": "Pyaree M. Dash"
+            },
+            {
+              "name": "Chengyu Deng"
+            },
+            {
+              "name": "Nobuhiko Hamazaki"
+            },
+            {
+              "name": "Pia Keukeleire"
+            },
+            {
+              "name": "Connor Kubo"
+            },
+            {
+              "name": "Jean-Benoît Lalanne"
+            },
+            {
+              "name": "Thorben Maass"
+            },
+            {
+              "name": "Beth Martin"
+            },
+            {
+              "name": "Troy A. McDiarmid"
+            },
+            {
+              "name": "Mai Nobuhara"
+            },
+            {
+              "name": "Nicholas F. Page"
+            },
+            {
+              "name": "Sam Regalado"
+            },
+            {
+              "name": "Jasmine Sims"
+            },
+            {
+              "name": "Aki Ushiki"
+            },
+            {
+              "name": "UM1HG011969"
+            },
+            {
+              "name": "Sabrina M. Best"
+            },
+            {
+              "name": "Gabe Boyle"
+            },
+            {
+              "name": "Nathan Camp"
+            },
+            {
+              "name": "Silvia Casadei"
+            },
+            {
+              "name": "Estelle Y. Da"
+            },
+            {
+              "name": "Moez Dawood"
+            },
+            {
+              "name": "Samantha C. Dawson"
+            },
+            {
+              "name": "Shawn Fayer"
+            },
+            {
+              "name": "Audrey Hamm"
+            },
+            {
+              "name": "Richard G. James"
+            },
+            {
+              "name": "Gail P. Jarvik"
+            },
+            {
+              "name": "Abbye E. McEwen"
+            },
+            {
+              "name": "Nick Moore"
+            },
+            {
+              "name": "Sriram Pendyala"
+            },
+            {
+              "name": "Nicholas A. Popp"
+            },
+            {
+              "name": "Mason Post"
+            },
+            {
+              "name": "Alan F. Rubin"
+            },
+            {
+              "name": "Nahum T. Smith"
+            },
+            {
+              "name": "Jeremy Stone"
+            },
+            {
+              "name": "Malvika Tejura"
+            },
+            {
+              "name": "Ziyu R. Wang"
+            },
+            {
+              "name": "Melinda K. Wheelock"
+            },
+            {
+              "name": "Ivan Woo"
+            },
+            {
+              "name": "Brendan D. Zapp"
+            },
+            {
+              "name": "UM1HG011972"
+            },
+            {
+              "name": "Dulguun Amgalan"
+            },
+            {
+              "name": "Aradhana Aradhana"
+            },
+            {
+              "name": "Sophia M. Arana"
+            },
+            {
+              "name": "Michael C. Bassik"
+            },
+            {
+              "name": "Julia R. Bauman"
+            },
+            {
+              "name": "Asmita Bhattacharya"
+            },
+            {
+              "name": "Xiangmeng Shawn Cai"
+            },
+            {
+              "name": "Ziwei Chen"
+            },
+            {
+              "name": "Stephanie Conley"
+            },
+            {
+              "name": "Salil Deshpande"
+            },
+            {
+              "name": "Benjamin R. Doughty"
+            },
+            {
+              "name": "Peter P. Du"
+            },
+            {
+              "name": "James A. Galante"
+            },
+            {
+              "name": "Casey Gifford"
+            },
+            {
+              "name": "William J. Greenleaf"
+            },
+            {
+              "name": "Katherine Guo"
+            },
+            {
+              "name": "Revant Gupta"
+            },
+            {
+              "name": "Sarasa Isobe"
+            },
+            {
+              "name": "Evelyn Jagoda"
+            },
+            {
+              "name": "Nimit Jain"
+            },
+            {
+              "name": "Hank Jones"
+            },
+            {
+              "name": "Helen Y. Kang"
+            },
+            {
+              "name": "Samuel H. Kim"
+            },
+            {
+              "name": "YeEun Kim"
+            },
+            {
+              "name": "Sandy Klemm"
+            },
+            {
+              "name": "Ramen Kundu"
+            },
+            {
+              "name": "Soumya Kundu"
+            },
+            {
+              "name": "Mauro Lago-Docampo"
+            },
+            {
+              "name": "Yannick C. Lee-Yow"
+            },
+            {
+              "name": "Roni Levin-Konigsberg"
+            },
+            {
+              "name": "Daniel Y. Li"
+            },
+            {
+              "name": "Dominik Lindenhofer"
+            },
+            {
+              "name": "X. Rosa Ma"
+            },
+            {
+              "name": "Georgi K. Marinov"
+            },
+            {
+              "name": "Gabriella E. Martyn"
+            },
+            {
+              "name": "Chloe V. McCreery"
+            },
+            {
+              "name": "Eyal Metzl-Raz"
+            },
+            {
+              "name": "Joao P. Monteiro"
+            },
+            {
+              "name": "Michael T. Montgomery"
+            },
+            {
+              "name": "Kristy S. Mualim"
+            },
+            {
+              "name": "Chad Munger"
+            },
+            {
+              "name": "Glen Munson"
+            },
+            {
+              "name": "Tri C. Nguyen"
+            },
+            {
+              "name": "Trieu Nguyen"
+            },
+            {
+              "name": "Brian T. Palmisano"
+            },
+            {
+              "name": "Anusri Pampari"
+            },
+            {
+              "name": "Marlene Rabinovitch"
+            },
+            {
+              "name": "Markus Ramste"
+            },
+            {
+              "name": "Judhajeet Ray"
+            },
+            {
+              "name": "Kevin R. Roy"
+            },
+            {
+              "name": "Oriane M. Rubio"
+            },
+            {
+              "name": "Julia M. Schaepe"
+            },
+            {
+              "name": "Gavin Schnitzler"
+            },
+            {
+              "name": "Jacob Schreiber"
+            },
+            {
+              "name": "Disha Sharma"
+            },
+            {
+              "name": "Maya U. Sheth"
+            },
+            {
+              "name": "Huitong Shi"
+            },
+            {
+              "name": "Vasundhara Singh"
+            },
+            {
+              "name": "Riya Sinha"
+            },
+            {
+              "name": "Lars M. Steinmetz"
+            },
+            {
+              "name": "Jason Tan"
+            },
+            {
+              "name": "Anthony Tan"
+            },
+            {
+              "name": "Josh Tycko"
+            },
+            {
+              "name": "Raeline C. Valbuena"
+            },
+            {
+              "name": "Valeh Valiollah Pour Amiri"
+            },
+            {
+              "name": "Mariëlle J. F. M. van Kooten"
+            },
+            {
+              "name": "Alun Vaughan-Jackson"
+            },
+            {
+              "name": "Anthony Venida"
+            },
+            {
+              "name": "Chad S. Weldy"
+            },
+            {
+              "name": "Matthew D. Worssam"
+            },
+            {
+              "name": "Fan Xia"
+            },
+            {
+              "name": "David Yao"
+            },
+            {
+              "name": "Tony Zeng"
+            },
+            {
+              "name": "Quanyi Zhao"
+            },
+            {
+              "name": "Ronghao Zhou"
+            },
+            {
+              "name": "UM1HG011989"
+            },
+            {
+              "name": "Zitong Sam Chen"
+            },
+            {
+              "name": "Beth A. Cimini"
+            },
+            {
+              "name": "Georges Coppin"
+            },
+            {
+              "name": "Atina G. Coté"
+            },
+            {
+              "name": "Marzieh Haghighi"
+            },
+            {
+              "name": "Tong Hao"
+            },
+            {
+              "name": "David E. Hill"
+            },
+            {
+              "name": "Jessica Lacoste"
+            },
+            {
+              "name": "Florent Laval"
+            },
+            {
+              "name": "Chloe Reno"
+            },
+            {
+              "name": "Frederick P. Roth"
+            },
+            {
+              "name": "Shantanu Singh"
+            },
+            {
+              "name": "Kerstin Spirohn-Fitzgerald"
+            },
+            {
+              "name": "Mikko Taipale"
+            },
+            {
+              "name": "Tanisha Teelucksingh"
+            },
+            {
+              "name": "Maxime Tixhon"
+            },
+            {
+              "name": "Anupama Yadav"
+            },
+            {
+              "name": "Zhipeng Yang"
+            },
+            {
+              "name": "UM1HG011996"
+            },
+            {
+              "name": "W. Lee Kraus"
+            },
+            {
+              "name": "Daniel A. Armendariz"
+            },
+            {
+              "name": "Ashley E. Dederich"
+            },
+            {
+              "name": "Ashlesha Gogate"
+            },
+            {
+              "name": "Lauretta El Hayek"
+            },
+            {
+              "name": "Sean C. Goetsch"
+            },
+            {
+              "name": "Kiran Kaur"
+            },
+            {
+              "name": "Hyung Bum Kim"
+            },
+            {
+              "name": "Melissa K. McCoy"
+            },
+            {
+              "name": "Mpathi Z. Nzima"
+            },
+            {
+              "name": "Carlos A. Pinzón-Arteaga"
+            },
+            {
+              "name": "Bruce A. Posner"
+            },
+            {
+              "name": "Daniel A. Schmitz"
+            },
+            {
+              "name": "Sushama Sivakumar"
+            },
+            {
+              "name": "Anjana Sundarrajan"
+            },
+            {
+              "name": "Lei Wang"
+            },
+            {
+              "name": "Yihan Wang"
+            },
+            {
+              "name": "Jun Wu"
+            },
+            {
+              "name": "Lin Xu"
+            },
+            {
+              "name": "Jian Xu"
+            },
+            {
+              "name": "Leqian Yu"
+            },
+            {
+              "name": "Yanfeng Zhang"
+            },
+            {
+              "name": "Huan Zhao"
+            },
+            {
+              "name": "Qinbo Zhou"
+            },
+            {
+              "name": "UM1HG012003"
+            },
+            {
+              "name": "Hyejung Won"
+            },
+            {
+              "name": "Jessica L. Bell"
+            },
+            {
+              "name": "K. Alaine Broadaway"
+            },
+            {
+              "name": "Katherine N. Degner"
+            },
+            {
+              "name": "Amy S. Etheridge"
+            },
+            {
+              "name": "Beverly H. Koller"
+            },
+            {
+              "name": "Won Mah"
+            },
+            {
+              "name": "Wancen Mu"
+            },
+            {
+              "name": "Kimberly D. Ritola"
+            },
+            {
+              "name": "Jonathan D. Rosen"
+            },
+            {
+              "name": "Sarah A. Schoenrock"
+            },
+            {
+              "name": "Rachel A. Sharp"
+            },
+            {
+              "name": "UM1HG012010"
+            },
+            {
+              "name": "Daniel Bauer"
+            },
+            {
+              "name": "Guillaume Lettre"
+            },
+            {
+              "name": "Richard Sherwood"
+            },
+            {
+              "name": "Basheer Becerra"
+            },
+            {
+              "name": "Logan J. Blaine"
+            },
+            {
+              "name": "Eric Che"
+            },
+            {
+              "name": "Matthew J. Francoeur"
+            },
+            {
+              "name": "Ellie N. Gibbs"
+            },
+            {
+              "name": "Nahye Kim"
+            },
+            {
+              "name": "Emily M. King"
+            },
+            {
+              "name": "Benjamin P. Kleinstiver"
+            },
+            {
+              "name": "Estelle Lecluze"
+            },
+            {
+              "name": "Zhijian Li"
+            },
+            {
+              "name": "Zain M. Patel"
+            },
+            {
+              "name": "Quang Vinh Phan"
+            },
+            {
+              "name": "Jayoung Ryu"
+            },
+            {
+              "name": "Marlena L. Starr"
+            },
+            {
+              "name": "Ting Wu"
+            },
+            {
+              "name": "UM1HG012053"
+            },
+            {
+              "name": "Charles A. Gersbach"
+            },
+            {
+              "name": "Gregory E. Crawford"
+            },
+            {
+              "name": "Andrew S. Allen"
+            },
+            {
+              "name": "William H. Majoros"
+            },
+            {
+              "name": "Nahid Iglesias"
+            },
+            {
+              "name": "Ruhi Rai"
+            },
+            {
+              "name": "Revathy Venukuttan"
+            },
+            {
+              "name": "Boxun Li"
+            },
+            {
+              "name": "Taylor Anglen"
+            },
+            {
+              "name": "Lexi R. Bounds"
+            },
+            {
+              "name": "Marisa C. Hamilton"
+            },
+            {
+              "name": "Siyan Liu"
+            },
+            {
+              "name": "Sean R. McCutcheon"
+            },
+            {
+              "name": "Christian D. McRoberts Amador"
+            },
+            {
+              "name": "Samuel J. Reisman"
+            },
+            {
+              "name": "Maria A. ter Weele"
+            },
+            {
+              "name": "Josephine C. Bodle"
+            },
+            {
+              "name": "Helen L. Streff"
+            },
+            {
+              "name": "Keith Siklenka"
+            },
+            {
+              "name": "Kari Strouse"
+            },
+            {
+              "name": "Mapping Awards (contact PI, MPIs (alphabetical by last name), other members (alphabetical by last name))"
+            },
+            {
+              "name": "UM1HG011986"
+            },
+            {
+              "name": "Bradley E. Bernstein"
+            },
+            {
+              "name": "Juliana Babu"
+            },
+            {
+              "name": "Guillermo Barreto Corona"
+            },
+            {
+              "name": "Kevin Dong"
+            },
+            {
+              "name": "Fabiana M. Duarte"
+            },
+            {
+              "name": "Neva C. Durand"
+            },
+            {
+              "name": "Charles B. Epstein"
+            },
+            {
+              "name": "Kaili Fan"
+            },
+            {
+              "name": "Elizabeth Gaskell"
+            },
+            {
+              "name": "Amelia W. Hall"
+            },
+            {
+              "name": "Alexandra M. Ham"
+            },
+            {
+              "name": "Mei K. Knudson"
+            },
+            {
+              "name": "Noam Shoresh"
+            },
+            {
+              "name": "Siddarth Wekhande"
+            },
+            {
+              "name": "Cassandra M. White"
+            },
+            {
+              "name": "Wang Xi"
+            },
+            {
+              "name": "UM1HG012076"
+            },
+            {
+              "name": "Ansuman T. Satpathy"
+            },
+            {
+              "name": "M. Ryan Corces"
+            },
+            {
+              "name": "Serena H. Chang"
+            },
+            {
+              "name": "Iris M. Chin"
+            },
+            {
+              "name": "James M. Gardner"
+            },
+            {
+              "name": "Zachary A. Gardell"
+            },
+            {
+              "name": "Jacob C. Gutierrez"
+            },
+            {
+              "name": "Alia W. Johnson"
+            },
+            {
+              "name": "Lucas Kampman"
+            },
+            {
+              "name": "Maya Kasowski"
+            },
+            {
+              "name": "Caleb A. Lareau"
+            },
+            {
+              "name": "Vincent Liu"
+            },
+            {
+              "name": "Leif S. Ludwig"
+            },
+            {
+              "name": "Christopher S. McGinnis"
+            },
+            {
+              "name": "Shreya Menon"
+            },
+            {
+              "name": "Anita Qualls"
+            },
+            {
+              "name": "Katalin Sandor"
+            },
+            {
+              "name": "Adam W. Turner"
+            },
+            {
+              "name": "Chun J. Ye",
+              "orcid": "https://orcid.org/0000-0001-6560-3783"
+            },
+            {
+              "name": "Yajie Yin"
+            },
+            {
+              "name": "Wenxi Zhang"
+            },
+            {
+              "name": "UM1HG012077"
+            },
+            {
+              "name": "Barbara J. Wold",
+              "orcid": "https://orcid.org/0000-0003-3235-8130"
+            },
+            {
+              "name": "Maria Carilli",
+              "orcid": "https://orcid.org/0000-0002-8977-7224"
+            },
+            {
+              "name": "Dayeon Cheong"
+            },
+            {
+              "name": "Ghassan Filibam"
+            },
+            {
+              "name": "Kim Green"
+            },
+            {
+              "name": "Shimako Kawauchi",
+              "orcid": "https://orcid.org/0000-0002-8577-4763"
+            },
+            {
+              "name": "Charlene Kim"
+            },
+            {
+              "name": "Heidi Liang",
+              "orcid": "https://orcid.org/0000-0002-6190-9723"
+            },
+            {
+              "name": "Rebekah Loving",
+              "orcid": "https://orcid.org/0000-0001-8725-0376"
+            },
+            {
+              "name": "Laura Luebbert",
+              "orcid": "https://orcid.org/0000-0003-1379-2927"
+            },
+            {
+              "name": "Grant MacGregor",
+              "orcid": "https://orcid.org/0000-0001-7598-9501"
+            },
+            {
+              "name": "Angel G. Merchan",
+              "orcid": "https://orcid.org/0000-0001-7420-8697"
+            },
+            {
+              "name": "Elisabeth Rebboah",
+              "orcid": "https://orcid.org/0000-0003-2273-0189"
+            },
+            {
+              "name": "Narges Rezaie",
+              "orcid": "https://orcid.org/0000-0001-9326-9954"
+            },
+            {
+              "name": "Jasmine Sakr",
+              "orcid": "https://orcid.org/0000-0002-4470-3192"
+            },
+            {
+              "name": "Delaney K. Sullivan",
+              "orcid": "https://orcid.org/0000-0002-8359-6705"
+            },
+            {
+              "name": "Nikki Swarna"
+            },
+            {
+              "name": "Diane Trout",
+              "orcid": "https://orcid.org/0000-0002-4928-5532"
+            },
+            {
+              "name": "Sean Upchurch"
+            },
+            {
+              "name": "Ryan Weber",
+              "orcid": "https://orcid.org/0000-0003-2044-9297"
+            },
+            {
+              "name": "Predictive Modeling Awards (contact PI, MPIs (alphabetical by last name), other members (alphabetical by last name))"
+            },
+            {
+              "name": "U01HG011952"
+            },
+            {
+              "name": "Christopher P. Castro"
+            },
+            {
+              "name": "Elysia Chou"
+            },
+            {
+              "name": "Fan Feng"
+            },
+            {
+              "name": "Andre Guerra"
+            },
+            {
+              "name": "Yuanhao Huang"
+            },
+            {
+              "name": "Linghua Jiang"
+            },
+            {
+              "name": "Jie Liu"
+            },
+            {
+              "name": "Ryan E. Mills"
+            },
+            {
+              "name": "Weizhou Qian"
+            },
+            {
+              "name": "Tingting Qin"
+            },
+            {
+              "name": "Maureen A. Sartor"
+            },
+            {
+              "name": "Rintsen N. Sherpa"
+            },
+            {
+              "name": "Jinhao Wang"
+            },
+            {
+              "name": "Yiqun Wang"
+            },
+            {
+              "name": "Joshua D. Welch",
+              "orcid": "https://orcid.org/0000-0002-5869-2391"
+            },
+            {
+              "name": "Zhenhao Zhang"
+            },
+            {
+              "name": "Nanxiang Zhao"
+            },
+            {
+              "name": "U01HG011967"
+            },
+            {
+              "name": "Sayan Mukherjee"
+            },
+            {
+              "name": "C. David Page"
+            },
+            {
+              "name": "Shannon Clarke"
+            },
+            {
+              "name": "Richard W. Doty"
+            },
+            {
+              "name": "Yuncheng Duan"
+            },
+            {
+              "name": "Raluca Gordan"
+            },
+            {
+              "name": "Kuei-Yueh Ko"
+            },
+            {
+              "name": "Shengyu Li"
+            },
+            {
+              "name": "Boyao Li"
+            },
+            {
+              "name": "Alexander Thomson"
+            },
+            {
+              "name": "U01HG012009"
+            },
+            {
+              "name": "Soumya Raychaudhuri"
+            },
+            {
+              "name": "Alkes Price"
+            },
+            {
+              "name": "Thahmina A. Ali"
+            },
+            {
+              "name": "Arun Durvasula"
+            },
+            {
+              "name": "Manolis Kellis"
+            },
+            {
+              "name": "U01HG012022"
+            },
+            {
+              "name": "Lilia M. Iakoucheva"
+            },
+            {
+              "name": "Tulika Kakati"
+            },
+            {
+              "name": "Yile Chen"
+            },
+            {
+              "name": "Mariam Benazouz"
+            },
+            {
+              "name": "Shantanu Jain"
+            },
+            {
+              "name": "Daniel Zeiberg"
+            },
+            {
+              "name": "M. Clara De Paolis Kaluza"
+            },
+            {
+              "name": "Michelle Velyunskiy"
+            },
+            {
+              "name": "U01HG012039"
+            },
+            {
+              "name": "Audrey Gasch"
+            },
+            {
+              "name": "Kunling Huang"
+            },
+            {
+              "name": "Yiyang Jin"
+            },
+            {
+              "name": "Qiongshi Lu"
+            },
+            {
+              "name": "Jiacheng Miao"
+            },
+            {
+              "name": "Michael Ohtake"
+            },
+            {
+              "name": "Eduardo Scopel"
+            },
+            {
+              "name": "Robert D. Steiner"
+            },
+            {
+              "name": "Yuriy Sverchkov"
+            },
+            {
+              "name": "U01HG012064"
+            },
+            {
+              "name": "Zhiping Weng"
+            },
+            {
+              "name": "Manuel Garber"
+            },
+            {
+              "name": "Yu Fu"
+            },
+            {
+              "name": "Natalie Haas"
+            },
+            {
+              "name": "Xihao Li"
+            },
+            {
+              "name": "Nishigandha Phalke"
+            },
+            {
+              "name": "Shuo C. Shan"
+            },
+            {
+              "name": "Nicole Shedd"
+            },
+            {
+              "name": "Tianxiong Yu"
+            },
+            {
+              "name": "Yi Zhang"
+            },
+            {
+              "name": "Hufeng Zhou"
+            },
+            {
+              "name": "U01HG012069"
+            },
+            {
+              "name": "Alexis Battle"
+            },
+            {
+              "name": "Livnat Jerby"
+            },
+            {
+              "name": "Eran Kotler"
+            },
+            {
+              "name": "Andrew R. Marderstein"
+            },
+            {
+              "name": "Stephen B. Montgomery"
+            },
+            {
+              "name": "AkshatKumar Nigam"
+            },
+            {
+              "name": "Evin M. Padhi"
+            },
+            {
+              "name": "Aman Patel"
+            },
+            {
+              "name": "Jonathan Pritchard"
+            },
+            {
+              "name": "Ivy Raine"
+            },
+            {
+              "name": "Vivekanandan Ramalingam"
+            },
+            {
+              "name": "Kameron B. Rodrigues"
+            },
+            {
+              "name": "Jacob M. Schreiber"
+            },
+            {
+              "name": "Arpita Singhal"
+            },
+            {
+              "name": "Network Projects (contact PI, MPIs (alphabetical by last name), other members (alphabetical by last name))"
+            },
+            {
+              "name": "U01HG012041"
+            },
+            {
+              "name": "Marisa Abundis"
+            },
+            {
+              "name": "Deepa Bisht"
+            },
+            {
+              "name": "Trirupa Chakraborty"
+            },
+            {
+              "name": "Jingyu Fan"
+            },
+            {
+              "name": "David R. Hall"
+            },
+            {
+              "name": "Zarifeh H. Rarani"
+            },
+            {
+              "name": "Abhinav K. Jain"
+            },
+            {
+              "name": "Babita Kaundal"
+            },
+            {
+              "name": "Swapnil Keshari"
+            },
+            {
+              "name": "Daniel McGrail"
+            },
+            {
+              "name": "Nicholas A. Pease"
+            },
+            {
+              "name": "Vivian F. Yi"
+            },
+            {
+              "name": "U01HG012047"
+            },
+            {
+              "name": "Hao Wu"
+            },
+            {
+              "name": "Sreeram Kannan"
+            },
+            {
+              "name": "Hongjun Song"
+            },
+            {
+              "name": "Jingli Cai"
+            },
+            {
+              "name": "Ziyue Gao"
+            },
+            {
+              "name": "Ronni Kurzion"
+            },
+            {
+              "name": "Julia I. Leu"
+            },
+            {
+              "name": "Fan Li"
+            },
+            {
+              "name": "Dongming Liang"
+            },
+            {
+              "name": "Guo-li Ming"
+            },
+            {
+              "name": "Kiran Musunuru"
+            },
+            {
+              "name": "Qi Qiu"
+            },
+            {
+              "name": "Junwei Shi"
+            },
+            {
+              "name": "Yijing Su"
+            },
+            {
+              "name": "Sarah Tishkoff"
+            },
+            {
+              "name": "Ning Xie"
+            },
+            {
+              "name": "Qian Yang"
+            },
+            {
+              "name": "Wenli Yang"
+            },
+            {
+              "name": "Hongjie Zhang"
+            },
+            {
+              "name": "Zhijian Zhang"
+            },
+            {
+              "name": "U01HG012051"
+            },
+            {
+              "name": "Michael A. Beer"
+            },
+            {
+              "name": "Anna-Katerina Hadjantonakis"
+            },
+            {
+              "name": "Sharon Adeniyi"
+            },
+            {
+              "name": "Hyein Cho"
+            },
+            {
+              "name": "Ronald Cutler"
+            },
+            {
+              "name": "Rachel A. Glenn"
+            },
+            {
+              "name": "David Godovich"
+            },
+            {
+              "name": "Nan Hu"
+            },
+            {
+              "name": "Svetlana Jovanic"
+            },
+            {
+              "name": "Renhe Luo"
+            },
+            {
+              "name": "Jin Woo Oh"
+            },
+            {
+              "name": "Milad Razavi-Mohseni"
+            },
+            {
+              "name": "Dustin Shigaki"
+            },
+            {
+              "name": "Simone Sidoli"
+            },
+            {
+              "name": "Thomas Vierbuchen"
+            },
+            {
+              "name": "Xianming Wang"
+            },
+            {
+              "name": "Breanna Williams"
+            },
+            {
+              "name": "Jielin Yan"
+            },
+            {
+              "name": "Dapeng Yang"
+            },
+            {
+              "name": "Yunxiao Yang"
+            },
+            {
+              "name": "U01HG012059"
+            },
+            {
+              "name": "Maike Sander"
+            },
+            {
+              "name": "Bing Ren",
+              "orcid": "https://orcid.org/0000-0002-5435-1127"
+            },
+            {
+              "name": "Weronika Bartosik"
+            },
+            {
+              "name": "Hannah S. Indralingam"
+            },
+            {
+              "name": "Adam Klie"
+            },
+            {
+              "name": "Hannah Mummey"
+            },
+            {
+              "name": "Mei-Lin Okino"
+            },
+            {
+              "name": "Gaowei Wang"
+            },
+            {
+              "name": "Nathan R. Zemke"
+            },
+            {
+              "name": "Kai Zhang"
+            },
+            {
+              "name": "Han Zhu"
+            },
+            {
+              "name": "U01HG012079"
+            },
+            {
+              "name": "Noah Zaitlen"
+            },
+            {
+              "name": "Jason Ernst"
+            },
+            {
+              "name": "Justin Langerman"
+            },
+            {
+              "name": "Terence Li"
+            },
+            {
+              "name": "Yu Sun"
+            },
+            {
+              "name": "U01HG012103"
+            },
+            {
+              "name": "Alexander Y. Rudensky"
+            },
+            {
+              "name": "Preethi K. Periyakoil"
+            },
+            {
+              "name": "Vianne R. Gao"
+            },
+            {
+              "name": "Melanie H. Smith"
+            },
+            {
+              "name": "Norman M. Thomas"
+            },
+            {
+              "name": "Laura T. Donlin"
+            },
+            {
+              "name": "Amit Lakhanpal"
+            },
+            {
+              "name": "Kaden M. Southard"
+            },
+            {
+              "name": "Rico C. Ardy"
+            },
+            {
+              "name": "Data and Administrative Coordinating Center Awards (contact PI, MPIs (alphabetical by last name), other members (alphabetical by last name))"
+            },
+            {
+              "name": "U24HG012012"
+            },
+            {
+              "name": "J. Michael Cherry"
+            },
+            {
+              "name": "Mark B. Gerstein"
+            },
+            {
+              "name": "Kalina Andreeva"
+            },
+            {
+              "name": "Pedro R. Assis"
+            },
+            {
+              "name": "Beatrice Borsari"
+            },
+            {
+              "name": "Eric Douglass"
+            },
+            {
+              "name": "Shengcheng Dong"
+            },
+            {
+              "name": "Idan Gabdank"
+            },
+            {
+              "name": "Keenan Graham"
+            },
+            {
+              "name": "Otto Jolanki"
+            },
+            {
+              "name": "Jennifer Jou"
+            },
+            {
+              "name": "Meenakshi S. Kagda"
+            },
+            {
+              "name": "Jin-Wook Lee"
+            },
+            {
+              "name": "Mingjie Li"
+            },
+            {
+              "name": "Khine Lin"
+            },
+            {
+              "name": "Stuart R. Miyasato"
+            },
+            {
+              "name": "Joel Rozowsky"
+            },
+            {
+              "name": "Corinn Small"
+            },
+            {
+              "name": "Emma Spragins"
+            },
+            {
+              "name": "Forrest Y. Tanaka"
+            },
+            {
+              "name": "Ian M. Whaling"
+            },
+            {
+              "name": "Ingrid A. Youngworth"
+            },
+            {
+              "name": "Cricket A. Sloan"
+            },
+            {
+              "name": "U24HG012070"
+            },
+            {
+              "name": "Eddie Belter"
+            },
+            {
+              "name": "Xintong Chen"
+            },
+            {
+              "name": "Rex L. Chisholm"
+            },
+            {
+              "name": "Patricia Dickson"
+            },
+            {
+              "name": "Changxu Fan"
+            },
+            {
+              "name": "Lucinda Fulton"
+            },
+            {
+              "name": "Daofeng Li"
+            },
+            {
+              "name": "Tina Lindsay"
+            },
+            {
+              "name": "Yu Luan"
+            },
+            {
+              "name": "Yuan Luo"
+            },
+            {
+              "name": "Huijue Lyu"
+            },
+            {
+              "name": "Xiaowen Ma"
+            },
+            {
+              "name": "Juan Macias-Velasco"
+            },
+            {
+              "name": "Karen H. Miga"
+            },
+            {
+              "name": "Kara Quaid"
+            },
+            {
+              "name": "Nathan Stitziel"
+            },
+            {
+              "name": "Barbara E. Stranger"
+            },
+            {
+              "name": "Chad Tomlinson"
+            },
+            {
+              "name": "Juan Wang"
+            },
+            {
+              "name": "Wenjin Zhang"
+            },
+            {
+              "name": "Bo Zhang"
+            },
+            {
+              "name": "Guoyan Zhao"
+            },
+            {
+              "name": "Xiaoyu Zhuo"
+            },
+            {
+              "name": "IGVF Affiliate Member Projects (contact PIs, other members (alphabetical by last name))"
+            },
+            {
+              "name": "Brennand lab"
+            },
+            {
+              "name": "Kristen Brennand"
+            },
+            {
+              "name": "Ciccia lab"
+            },
+            {
+              "name": "Alberto Ciccia"
+            },
+            {
+              "name": "Samuel B. Hayward"
+            },
+            {
+              "name": "Jen-Wei Huang"
+            },
+            {
+              "name": "Giuseppe Leuzzi"
+            },
+            {
+              "name": "Angelo Taglialatela"
+            },
+            {
+              "name": "Tanay Thakar"
+            },
+            {
+              "name": "Alina Vaitsiankova"
+            },
+            {
+              "name": "Dey lab"
+            },
+            {
+              "name": "Gazal lab"
+            },
+            {
+              "name": "Artem Kim"
+            },
+            {
+              "name": "Grimes lab"
+            },
+            {
+              "name": "H. Leighton Grimes"
+            },
+            {
+              "name": "Nathan Salomonis"
+            },
+            {
+              "name": "Gupta lab"
+            },
+            {
+              "name": "Rajat Gupta"
+            },
+            {
+              "name": "Shi Fang"
+            },
+            {
+              "name": "Vivian Lee-Kim"
+            },
+            {
+              "name": "Heinig lab"
+            },
+            {
+              "name": "Matthias Heinig"
+            },
+            {
+              "name": "Corinna Losert"
+            },
+            {
+              "name": "Jones lab"
+            },
+            {
+              "name": "Thouis R. Jones"
+            },
+            {
+              "name": "Elisa Donnard"
+            },
+            {
+              "name": "Maddie Murphy"
+            },
+            {
+              "name": "Elizabeth Roberts"
+            },
+            {
+              "name": "Susie Song"
+            },
+            {
+              "name": "Moore lab"
+            },
+            {
+              "name": "Mostafavi lab"
+            },
+            {
+              "name": "Sara Mostafavi"
+            },
+            {
+              "name": "Alexander Sasse"
+            },
+            {
+              "name": "Anna Spiro"
+            },
+            {
+              "name": "Pennacchio and Visel lab"
+            },
+            {
+              "name": "Len A. Pennacchio"
+            },
+            {
+              "name": "Momoe Kato"
+            },
+            {
+              "name": "Michael Kosicki"
+            },
+            {
+              "name": "Brandon Mannion"
+            },
+            {
+              "name": "Neil Slaven"
+            },
+            {
+              "name": "Axel Visel"
+            },
+            {
+              "name": "Pollard lab"
+            },
+            {
+              "name": "Katherine S. Pollard"
+            },
+            {
+              "name": "Shiron Drusinsky"
+            },
+            {
+              "name": "Sean Whalen"
+            },
+            {
+              "name": "Ray lab"
+            },
+            {
+              "name": "John Ray"
+            },
+            {
+              "name": "Ingrid A. Harten"
+            },
+            {
+              "name": "Ching-Huang Ho"
+            },
+            {
+              "name": "Reilly lab"
+            },
+            {
+              "name": "Sanjana lab"
+            },
+            {
+              "name": "Neville E. Sanjana"
+            },
+            {
+              "name": "Christina Caragine"
+            },
+            {
+              "name": "John A. Morris"
+            },
+            {
+              "name": "Seruggia lab"
+            },
+            {
+              "name": "Davide Seruggia"
+            },
+            {
+              "name": "Ana Patricia Kutschat"
+            },
+            {
+              "name": "Sandra Wittibschlager"
+            },
+            {
+              "name": "Xu lab"
+            },
+            {
+              "name": "Han Xu"
+            },
+            {
+              "name": "Rongjie Fu"
+            },
+            {
+              "name": "Wei He"
+            },
+            {
+              "name": "Liang Zhang"
+            },
+            {
+              "name": "Yi lab"
+            },
+            {
+              "name": "Daniel Osorio"
+            },
+            {
+              "name": "NHGRI Program Management (alphabetical by last name)"
+            },
+            {
+              "name": "Zo Bly"
+            },
+            {
+              "name": "Stephanie Calluori"
+            },
+            {
+              "name": "Daniel A. Gilchrist"
+            },
+            {
+              "name": "Carolyn M. Hutter"
+            },
+            {
+              "name": "Stephanie A. Morris"
+            },
+            {
+              "name": "Ella K. Samer"
+            }
+          ]
+        }
+      ]
+    },
+    "a-machine-readable-specification-for-genomics-assays": {
+      "title": "A machine-readable specification for genomics assays",
+      "versions": [
+        {
+          "name": "Bioinformatics",
+          "doi": "10.1093/bioinformatics/btae168",
+          "date": "2024-03-29",
+          "authors": [
+            {
+              "name": "Ali Sina Booeshaghi",
+              "orcid": "https://orcid.org/0000-0002-6442-4502"
+            },
+            {
+              "name": "Xi Chen",
+              "orcid": "https://orcid.org/0000-0003-2648-3146"
+            },
+            {
+              "name": "Lior Pachter",
+              "orcid": "https://orcid.org/0000-0002-9164-6231"
+            }
+          ]
+        },
+        {
+          "name": "bioRxiv",
+          "doi": "10.1101/2023.03.17.533215",
+          "date": "2023-03-21",
+          "authors": [
+            {
+              "name": "A. Sina Booeshaghi",
+              "orcid": "https://orcid.org/0000-0002-6442-4502"
+            },
+            {
+              "name": "Xi Chen",
+              "orcid": "https://orcid.org/0000-0003-2648-3146"
+            },
+            {
+              "name": "Lior Pachter",
+              "orcid": "https://orcid.org/0000-0002-9164-6231"
+            }
+          ]
+        }
+      ]
+    },
+    "algorithms-for-a-commons-cell-atlas": {
+      "title": "Algorithms for a Commons Cell Atlas",
+      "versions": [
+        {
+          "name": "bioRxiv",
+          "doi": "10.1101/2024.03.23.586413",
+          "date": "2024-03-26",
+          "authors": [
+            {
+              "name": "A. Sina Booeshaghi",
+              "orcid": "https://orcid.org/0000-0002-6442-4502"
+            },
+            {
+              "name": "Ángel Galvez-Merchán",
+              "orcid": "https://orcid.org/0000-0001-7420-8697"
+            },
+            {
+              "name": "Lior Pachter",
+              "orcid": "https://orcid.org/0000-0002-9164-6231"
+            }
+          ]
+        }
+      ]
+    },
+    "a-human-commons-cell-atlas-reveals-cell-type-specificity-for-oas1-isoforms": {
+      "title": "A human commons cell atlas reveals cell type specificity for OAS1 isoforms",
+      "versions": [
+        {
+          "name": "bioRxiv",
+          "doi": "10.1101/2024.03.23.586412",
+          "date": "2024-03-24",
+          "authors": [
+            {
+              "name": "Ángel Galvez-Merchán",
+              "orcid": "https://orcid.org/0000-0001-7420-8697"
+            },
+            {
+              "name": "A. Sina Booeshaghi",
+              "orcid": "https://orcid.org/0000-0002-6442-4502"
+            },
+            {
+              "name": "Lior Pachter",
+              "orcid": "https://orcid.org/0000-0002-9164-6231"
+            }
+          ]
+        }
+      ]
+    },
+    "quantifying-orthogonal-barcodes-for-sequence-census-assays": {
+      "title": "Quantifying orthogonal barcodes for sequence census assays",
+      "versions": [
+        {
+          "name": "Bioinformatics Advances",
+          "doi": "10.1093/bioadv/vbad181",
+          "date": "2024-01-05",
+          "authors": [
+            {
+              "name": "A Sina Booeshaghi",
+              "orcid": "https://orcid.org/0000-0002-6442-4502"
+            },
+            {
+              "name": "Kyung Hoi (Joseph) Min",
+              "orcid": "https://orcid.org/0000-0003-0894-4017"
+            },
+            {
+              "name": "Jase Gehring",
+              "orcid": "https://orcid.org/0000-0002-3894-9495"
+            },
+            {
+              "name": "Lior Pachter",
+              "orcid": "https://orcid.org/0000-0002-9164-6231"
+            }
+          ]
+        },
+        {
+          "name": "bioRxiv",
+          "doi": "10.1101/2022.10.09.511501",
+          "date": "2022-10-10",
+          "authors": [
+            {
+              "name": "A. Sina Booeshaghi",
+              "orcid": "https://orcid.org/0000-0002-6442-4502"
+            },
+            {
+              "name": "Kyung Hoi (Joseph) Min",
+              "orcid": "https://orcid.org/0000-0003-0894-4017"
+            },
+            {
+              "name": "Jase Gehring",
+              "orcid": "https://orcid.org/0000-0002-3894-9495"
+            },
+            {
+              "name": "Lior Pachter",
+              "orcid": "https://orcid.org/0000-0002-9164-6231"
+            }
+          ]
+        }
+      ]
+    },
+    "universal-preprocessing-of-single-cell-genomics-data": {
+      "title": "Universal preprocessing of single-cell genomics data",
+      "versions": [
+        {
+          "name": "bioRxiv",
+          "doi": "10.1101/2023.09.14.543267",
+          "date": "2023-09-15",
+          "authors": [
+            {
+              "name": "A. Sina Booeshaghi",
+              "orcid": "https://orcid.org/0000-0002-6442-4502"
+            },
+            {
+              "name": "Delaney K. Sullivan",
+              "orcid": "https://orcid.org/0000-0002-8359-6705"
+            },
+            {
+              "name": "Lior Pachter",
+              "orcid": "https://orcid.org/0000-0002-9164-6231"
+            }
+          ]
+        }
+      ]
+    },
+    "voyager-exploratory-single-cell-genomics-data-analysis-with-geospatial-statistics": {
+      "title": "Voyager: exploratory single-cell genomics data analysis with geospatial statistics",
+      "versions": [
+        {
+          "name": "bioRxiv",
+          "doi": "10.1101/2023.07.20.549945",
+          "date": "2023-07-22",
+          "authors": [
+            {
+              "name": "Lambda Moses",
+              "orcid": "https://orcid.org/0000-0002-7092-9427"
+            },
+            {
+              "name": "Pétur Helgi Einarsson",
+              "orcid": "https://orcid.org/0000-0002-1665-7459"
+            },
+            {
+              "name": "Kayla Jackson",
+              "orcid": "https://orcid.org/0000-0001-6483-0108"
+            },
+            {
+              "name": "Laura Luebbert",
+              "orcid": "https://orcid.org/0000-0003-1379-2927"
+            },
+            {
+              "name": "A. Sina Booeshaghi",
+              "orcid": "https://orcid.org/0000-0002-6442-4502"
+            },
+            {
+              "name": "Sindri Antonsson",
+              "orcid": "https://orcid.org/0009-0005-0779-6923"
+            },
+            {
+              "name": "Nicolas Bray",
+              "orcid": "https://orcid.org/0000-0002-4143-8194"
+            },
+            {
+              "name": "Páll Melsted",
+              "orcid": "https://orcid.org/0000-0002-8418-6724"
+            },
+            {
+              "name": "Lior Pachter",
+              "orcid": "https://orcid.org/0000-0002-9164-6231"
+            }
+          ]
+        }
+      ]
+    },
+    "characterization-of-spatial-homogeneous-regions-in-tissues-with-concordex": {
+      "title": "Characterization of spatial homogeneous regions in tissues with concordex",
+      "versions": [
+        {
+          "name": "bioRxiv",
+          "doi": "10.1101/2023.06.28.546949",
+          "date": "2023-06-30",
+          "authors": [
+            {
+              "name": "Kayla C. Jackson",
+              "orcid": "https://orcid.org/0000-0001-6483-0108"
+            },
+            {
+              "name": "A. Sina Booeshaghi",
+              "orcid": "https://orcid.org/0000-0002-6442-4502"
+            },
+            {
+              "name": "Ángel Gálvez-Merchán",
+              "orcid": "https://orcid.org/0000-0001-7420-8697"
+            },
+            {
+              "name": "Lambda Moses",
+              "orcid": "https://orcid.org/0000-0002-7092-9427"
+            },
+            {
+              "name": "Tara Chari",
+              "orcid": "https://orcid.org/0000-0002-6953-4313"
+            },
+            {
+              "name": "Alexandra Kim"
+            },
+            {
+              "name": "Orhan Hosten-Mittermaier",
+              "orcid": "https://orcid.org/0009-0002-7959-929X"
+            },
+            {
+              "name": "Lior Pachter",
+              "orcid": "https://orcid.org/0000-0002-9164-6231"
+            }
+          ]
+        }
+      ]
+    },
+    "assessing-the-multimodal-tradeoff": {
+      "title": "Assessing the multimodal tradeoff",
+      "versions": [
+        {
+          "name": "bioRxiv",
+          "doi": "10.1101/2021.12.08.471788",
+          "date": "2023-04-18",
+          "authors": [
+            {
+              "name": "A. Sina Booeshaghi",
+              "orcid": "https://orcid.org/0000-0002-6442-4502"
+            },
+            {
+              "name": "Fan Gao",
+              "orcid": "https://orcid.org/0000-0001-6832-3402"
+            },
+            {
+              "name": "Lior Pachter",
+              "orcid": "https://orcid.org/0000-0002-9164-6231"
+            }
+          ]
+        }
+      ]
+    },
+    "metadata-retrieval-from-sequence-databases-with-ffq": {
+      "title": "Metadata retrieval from sequence databases with ffq",
+      "versions": [
+        {
+          "name": "Bioinformatics",
+          "doi": "10.1093/bioinformatics/btac667",
+          "date": "2023-01-05",
+          "authors": [
+            {
+              "name": "Ángel Gálvez-Merchán",
+              "orcid": "https://orcid.org/0000-0001-7420-8697"
+            },
+            {
+              "name": "Kyung Hoi (Joseph) Min",
+              "orcid": "https://orcid.org/0000-0003-0894-4017"
+            },
+            {
+              "name": "Lior Pachter",
+              "orcid": "https://orcid.org/0000-0002-9164-6231"
+            },
+            {
+              "name": "A Sina Booeshaghi",
+              "orcid": "https://orcid.org/0000-0002-6442-4502"
+            }
+          ]
+        },
+        {
+          "name": "bioRxiv",
+          "doi": "10.1101/2022.05.18.492548",
+          "date": "2022-05-26",
+          "authors": [
+            {
+              "name": "Ángel Gálvez-Merchán",
+              "orcid": "https://orcid.org/0000-0001-7420-8697"
+            },
+            {
+              "name": "Kyung Hoi (Joseph) Min",
+              "orcid": "https://orcid.org/0000-0003-0894-4017"
+            },
+            {
+              "name": "Lior Pachter",
+              "orcid": "https://orcid.org/0000-0002-9164-6231"
+            },
+            {
+              "name": "A. Sina Booeshaghi",
+              "orcid": "https://orcid.org/0000-0002-6442-4502"
+            }
+          ]
+        }
+      ]
+    },
+    "pseudoalignment-facilitates-assignment-of-error-prone-ultima-genomics-reads": {
+      "title": "Pseudoalignment facilitates assignment of error-prone Ultima Genomics reads",
+      "versions": [
+        {
+          "name": "bioRxiv",
+          "doi": "10.1101/2022.06.04.494845",
+          "date": "2022-08-29",
+          "authors": [
+            {
+              "name": "A. Sina Booeshaghi",
+              "orcid": "https://orcid.org/0000-0002-6442-4502"
+            },
+            {
+              "name": "Lior Pachter",
+              "orcid": "https://orcid.org/0000-0002-9164-6231"
+            }
+          ]
+        }
+      ]
+    },
+    "normalization-for-sampled-count-data": {
+      "title": "Normalization for sampled count data",
+      "versions": [
+        {
+          "name": "bioRxiv",
+          "doi": "10.1101/2022.05.06.490859",
+          "date": "2022-05-06",
+          "authors": [
+            {
+              "name": "A. Sina Booeshaghi",
+              "orcid": "https://orcid.org/0000-0002-6442-4502"
+            },
+            {
+              "name": "Ingileif B. Hallgrímsdóttir",
+              "orcid": "https://orcid.org/0000-0002-4710-0047"
+            },
+            {
+              "name": "Ángel Gálvez-Merchán",
+              "orcid": "https://orcid.org/0000-0001-7420-8697"
+            },
+            {
+              "name": "Lior Pachter",
+              "orcid": "https://orcid.org/0000-0002-9164-6231"
+            }
+          ]
+        }
+      ]
+    },
+    "a-transcriptomic-and-epigenomic-cell-atlas-of-the-mouse-primary-motor-cortex": {
+      "title": "A transcriptomic and epigenomic cell atlas of the mouse primary motor cortex",
+      "versions": [
+        {
+          "name": "Nature",
+          "doi": "10.1038/s41586-021-03500-8",
+          "date": "2021-10-06",
+          "authors": [
+            {
+              "name": "Zizhen Yao",
+              "orcid": "https://orcid.org/0000-0002-9361-5607"
+            },
+            {
+              "name": "Hanqing Liu"
+            },
+            {
+              "name": "Fangming Xie"
+            },
+            {
+              "name": "Stephan Fischer"
+            },
+            {
+              "name": "Ricky S. Adkins",
+              "orcid": "https://orcid.org/0000-0002-7983-5486"
+            },
+            {
+              "name": "Andrew I. Aldridge",
+              "orcid": "https://orcid.org/0000-0003-1962-8802"
+            },
+            {
+              "name": "Seth A. Ament",
+              "orcid": "https://orcid.org/0000-0001-6443-7509"
+            },
+            {
+              "name": "Anna Bartlett"
+            },
+            {
+              "name": "M. Margarita Behrens",
+              "orcid": "https://orcid.org/0000-0002-7168-8186"
+            },
+            {
+              "name": "Koen Van den Berge"
+            },
+            {
+              "name": "Darren Bertagnolli"
+            },
+            {
+              "name": "Hector Roux de Bézieux",
+              "orcid": "https://orcid.org/0000-0002-1489-8339"
+            },
+            {
+              "name": "Tommaso Biancalani",
+              "orcid": "https://orcid.org/0000-0001-9104-9755"
+            },
+            {
+              "name": "A. Sina Booeshaghi",
+              "orcid": "https://orcid.org/0000-0002-6442-4502"
+            },
+            {
+              "name": "Héctor Corrada Bravo"
+            },
+            {
+              "name": "Tamara Casper"
+            },
+            {
+              "name": "Carlo Colantuoni"
+            },
+            {
+              "name": "Jonathan Crabtree",
+              "orcid": "https://orcid.org/0000-0002-7286-5690"
+            },
+            {
+              "name": "Heather Creasy",
+              "orcid": "https://orcid.org/0000-0002-1369-6882"
+            },
+            {
+              "name": "Kirsten Crichton"
+            },
+            {
+              "name": "Megan Crow",
+              "orcid": "https://orcid.org/0000-0002-1172-5897"
+            },
+            {
+              "name": "Nick Dee"
+            },
+            {
+              "name": "Elizabeth L. Dougherty"
+            },
+            {
+              "name": "Wayne I. Doyle"
+            },
+            {
+              "name": "Sandrine Dudoit",
+              "orcid": "https://orcid.org/0000-0002-6069-8629"
+            },
+            {
+              "name": "Rongxin Fang"
+            },
+            {
+              "name": "Victor Felix"
+            },
+            {
+              "name": "Olivia Fong"
+            },
+            {
+              "name": "Michelle Giglio",
+              "orcid": "https://orcid.org/0000-0001-7628-5565"
+            },
+            {
+              "name": "Jeff Goldy"
+            },
+            {
+              "name": "Mike Hawrylycz",
+              "orcid": "https://orcid.org/0000-0002-5741-8024"
+            },
+            {
+              "name": "Brian R. Herb"
+            },
+            {
+              "name": "Ronna Hertzano"
+            },
+            {
+              "name": "Xiaomeng Hou"
+            },
+            {
+              "name": "Qiwen Hu"
+            },
+            {
+              "name": "Jayaram Kancherla"
+            },
+            {
+              "name": "Matthew Kroll"
+            },
+            {
+              "name": "Kanan Lathia"
+            },
+            {
+              "name": "Yang Eric Li",
+              "orcid": "https://orcid.org/0000-0001-6997-6018"
+            },
+            {
+              "name": "Jacinta D. Lucero"
+            },
+            {
+              "name": "Chongyuan Luo"
+            },
+            {
+              "name": "Anup Mahurkar",
+              "orcid": "https://orcid.org/0000-0002-4999-2296"
+            },
+            {
+              "name": "Delissa McMillen"
+            },
+            {
+              "name": "Naeem M. Nadaf"
+            },
+            {
+              "name": "Joseph R. Nery",
+              "orcid": "https://orcid.org/0000-0003-0153-5659"
+            },
+            {
+              "name": "Thuc Nghi Nguyen",
+              "orcid": "https://orcid.org/0000-0002-6466-5883"
+            },
+            {
+              "name": "Sheng-Yong Niu"
+            },
+            {
+              "name": "Vasilis Ntranos"
+            },
+            {
+              "name": "Joshua Orvis"
+            },
+            {
+              "name": "Julia K. Osteen",
+              "orcid": "https://orcid.org/0000-0001-7058-3297"
+            },
+            {
+              "name": "Thanh Pham",
+              "orcid": "https://orcid.org/0000-0002-4738-5062"
+            },
+            {
+              "name": "Antonio Pinto-Duarte",
+              "orcid": "https://orcid.org/0000-0002-2215-7653"
+            },
+            {
+              "name": "Olivier Poirion"
+            },
+            {
+              "name": "Sebastian Preissl",
+              "orcid": "https://orcid.org/0000-0001-8971-5616"
+            },
+            {
+              "name": "Elizabeth Purdom",
+              "orcid": "https://orcid.org/0000-0001-9455-7990"
+            },
+            {
+              "name": "Christine Rimorin"
+            },
+            {
+              "name": "Davide Risso"
+            },
+            {
+              "name": "Angeline C. Rivkin"
+            },
+            {
+              "name": "Kimberly Smith",
+              "orcid": "https://orcid.org/0000-0002-3142-1970"
+            },
+            {
+              "name": "Kelly Street"
+            },
+            {
+              "name": "Josef Sulc"
+            },
+            {
+              "name": "Valentine Svensson"
+            },
+            {
+              "name": "Michael Tieu"
+            },
+            {
+              "name": "Amy Torkelson"
+            },
+            {
+              "name": "Herman Tung",
+              "orcid": "https://orcid.org/0000-0002-0812-3318"
+            },
+            {
+              "name": "Eeshit Dhaval Vaishnav",
+              "orcid": "https://orcid.org/0000-0003-3720-8051"
+            },
+            {
+              "name": "Charles R. Vanderburg"
+            },
+            {
+              "name": "Cindy van Velthoven",
+              "orcid": "https://orcid.org/0000-0001-5120-4546"
+            },
+            {
+              "name": "Xinxin Wang",
+              "orcid": "https://orcid.org/0000-0001-6393-2276"
+            },
+            {
+              "name": "Owen R. White"
+            },
+            {
+              "name": "Z. Josh Huang",
+              "orcid": "https://orcid.org/0000-0003-0592-028X"
+            },
+            {
+              "name": "Peter V. Kharchenko",
+              "orcid": "https://orcid.org/0000-0002-6036-5875"
+            },
+            {
+              "name": "Lior Pachter",
+              "orcid": "https://orcid.org/0000-0002-9164-6231"
+            },
+            {
+              "name": "John Ngai"
+            },
+            {
+              "name": "Aviv Regev",
+              "orcid": "https://orcid.org/0000-0003-3293-3158"
+            },
+            {
+              "name": "Bosiljka Tasic",
+              "orcid": "https://orcid.org/0000-0002-6861-4506"
+            },
+            {
+              "name": "Joshua D. Welch",
+              "orcid": "https://orcid.org/0000-0002-5869-2391"
+            },
+            {
+              "name": "Jesse Gillis"
+            },
+            {
+              "name": "Evan Z. Macosko",
+              "orcid": "https://orcid.org/0000-0002-2794-5165"
+            },
+            {
+              "name": "Bing Ren",
+              "orcid": "https://orcid.org/0000-0002-5435-1127"
+            },
+            {
+              "name": "Joseph R. Ecker",
+              "orcid": "https://orcid.org/0000-0001-5799-5895"
+            },
+            {
+              "name": "Hongkui Zeng",
+              "orcid": "https://orcid.org/0000-0002-0326-5878"
+            },
+            {
+              "name": "Eran A. Mukamel",
+              "orcid": "https://orcid.org/0000-0003-3203-9535"
+            }
+          ]
+        }
+      ]
+    },
+    "a-multimodal-cell-census-and-atlas-of-the-mammalian-primary-motor-cortex": {
+      "title": "A multimodal cell census and atlas of the mammalian primary motor cortex",
+      "versions": [
+        {
+          "name": "Nature",
+          "doi": "10.1038/s41586-021-03950-0",
+          "date": "2021-10-06",
+          "authors": [
+            {
+              "name": "BRAIN Initiative Cell Census Network (BICCN)"
+            },
+            {
+              "name": "BRAIN Initiative Cell Census Network (BICCN) Corresponding authors"
+            },
+            {
+              "name": "Edward M. Callaway"
+            },
+            {
+              "name": "Hong-Wei Dong"
+            },
+            {
+              "name": "Joseph R. Ecker",
+              "orcid": "https://orcid.org/0000-0001-5799-5895"
+            },
+            {
+              "name": "Michael J. Hawrylycz"
+            },
+            {
+              "name": "Z. Josh Huang",
+              "orcid": "https://orcid.org/0000-0003-0592-028X"
+            },
+            {
+              "name": "Ed S. Lein"
+            },
+            {
+              "name": "John Ngai"
+            },
+            {
+              "name": "Pavel Osten"
+            },
+            {
+              "name": "Bing Ren",
+              "orcid": "https://orcid.org/0000-0002-5435-1127"
+            },
+            {
+              "name": "Andreas Savas Tolias"
+            },
+            {
+              "name": "Owen White"
+            },
+            {
+              "name": "Hongkui Zeng",
+              "orcid": "https://orcid.org/0000-0002-0326-5878"
+            },
+            {
+              "name": "Xiaowei Zhuang"
+            },
+            {
+              "name": "BICCN contributing principal investigators"
+            },
+            {
+              "name": "Giorgio A. Ascoli"
+            },
+            {
+              "name": "M. Margarita Behrens",
+              "orcid": "https://orcid.org/0000-0002-7168-8186"
+            },
+            {
+              "name": "Jerold Chun"
+            },
+            {
+              "name": "Guoping Feng"
+            },
+            {
+              "name": "James C. Gee"
+            },
+            {
+              "name": "Satrajit S. Ghosh"
+            },
+            {
+              "name": "Yaroslav O. Halchenko"
+            },
+            {
+              "name": "Ronna Hertzano"
+            },
+            {
+              "name": "Byung Kook Lim"
+            },
+            {
+              "name": "Maryann E. Martone"
+            },
+            {
+              "name": "Lydia Ng"
+            },
+            {
+              "name": "Lior Pachter",
+              "orcid": "https://orcid.org/0000-0002-9164-6231"
+            },
+            {
+              "name": "Alexander J. Ropelewski"
+            },
+            {
+              "name": "Timothy L. Tickle"
+            },
+            {
+              "name": "X. William Yang"
+            },
+            {
+              "name": "Kun Zhang"
+            },
+            {
+              "name": "Principal manuscript editors"
+            },
+            {
+              "name": "Manuscript writing and figure generation"
+            },
+            {
+              "name": "Trygve E. Bakken"
+            },
+            {
+              "name": "Philipp Berens"
+            },
+            {
+              "name": "Tanya L. Daigle"
+            },
+            {
+              "name": "Julie A. Harris"
+            },
+            {
+              "name": "Nikolas L. Jorstad"
+            },
+            {
+              "name": "Brian E. Kalmbach"
+            },
+            {
+              "name": "Dmitry Kobak"
+            },
+            {
+              "name": "Yang Eric Li",
+              "orcid": "https://orcid.org/0000-0001-6997-6018"
+            },
+            {
+              "name": "Hanqing Liu"
+            },
+            {
+              "name": "Katherine S. Matho"
+            },
+            {
+              "name": "Eran A. Mukamel",
+              "orcid": "https://orcid.org/0000-0003-3203-9535"
+            },
+            {
+              "name": "Maitham Naeemi"
+            },
+            {
+              "name": "Federico Scala"
+            },
+            {
+              "name": "Pengcheng Tan"
+            },
+            {
+              "name": "Jonathan T. Ting"
+            },
+            {
+              "name": "Fangming Xie"
+            },
+            {
+              "name": "Meng Zhang"
+            },
+            {
+              "name": "Zhuzhu Zhang"
+            },
+            {
+              "name": "Jingtian Zhou"
+            },
+            {
+              "name": "Brian Zingg"
+            },
+            {
+              "name": "Analysis coordination"
+            },
+            {
+              "name": "Integrated data analysis"
+            },
+            {
+              "name": "Ethan Armand"
+            },
+            {
+              "name": "Zizhen Yao",
+              "orcid": "https://orcid.org/0000-0002-9361-5607"
+            },
+            {
+              "name": "scRNA-seq and snRNA-seq data generation and processing"
+            },
+            {
+              "name": "Darren Bertagnolli"
+            },
+            {
+              "name": "Tamara Casper"
+            },
+            {
+              "name": "Kirsten Crichton"
+            },
+            {
+              "name": "Nick Dee"
+            },
+            {
+              "name": "Dinh Diep"
+            },
+            {
+              "name": "Song-Lin Ding"
+            },
+            {
+              "name": "Weixiu Dong"
+            },
+            {
+              "name": "Elizabeth L. Dougherty"
+            },
+            {
+              "name": "Olivia Fong"
+            },
+            {
+              "name": "Melissa Goldman"
+            },
+            {
+              "name": "Jeff Goldy"
+            },
+            {
+              "name": "Rebecca D. Hodge"
+            },
+            {
+              "name": "Lijuan Hu"
+            },
+            {
+              "name": "C. Dirk Keene"
+            },
+            {
+              "name": "Fenna M. Krienen"
+            },
+            {
+              "name": "Matthew Kroll"
+            },
+            {
+              "name": "Blue B. Lake"
+            },
+            {
+              "name": "Kanan Lathia"
+            },
+            {
+              "name": "Sten Linnarsson"
+            },
+            {
+              "name": "Christine S. Liu"
+            },
+            {
+              "name": "Evan Z. Macosko",
+              "orcid": "https://orcid.org/0000-0002-2794-5165"
+            },
+            {
+              "name": "Steven A. McCarroll"
+            },
+            {
+              "name": "Delissa McMillen"
+            },
+            {
+              "name": "Naeem M. Nadaf"
+            },
+            {
+              "name": "Thuc Nghi Nguyen",
+              "orcid": "https://orcid.org/0000-0002-6466-5883"
+            },
+            {
+              "name": "Carter R. Palmer"
+            },
+            {
+              "name": "Thanh Pham",
+              "orcid": "https://orcid.org/0000-0002-4738-5062"
+            },
+            {
+              "name": "Nongluk Plongthongkum"
+            },
+            {
+              "name": "Nora M. Reed"
+            },
+            {
+              "name": "Aviv Regev",
+              "orcid": "https://orcid.org/0000-0003-3293-3158"
+            },
+            {
+              "name": "Christine Rimorin"
+            },
+            {
+              "name": "William J. Romanow"
+            },
+            {
+              "name": "Steven Savoia"
+            },
+            {
+              "name": "Kimberly Siletti"
+            },
+            {
+              "name": "Kimberly Smith",
+              "orcid": "https://orcid.org/0000-0002-3142-1970"
+            },
+            {
+              "name": "Josef Sulc"
+            },
+            {
+              "name": "Bosiljka Tasic",
+              "orcid": "https://orcid.org/0000-0002-6861-4506"
+            },
+            {
+              "name": "Michael Tieu"
+            },
+            {
+              "name": "Amy Torkelson"
+            },
+            {
+              "name": "Herman Tung",
+              "orcid": "https://orcid.org/0000-0002-0812-3318"
+            },
+            {
+              "name": "Cindy T. J. van Velthoven",
+              "orcid": "https://orcid.org/0000-0001-5120-4546"
+            },
+            {
+              "name": "Charles R. Vanderburg"
+            },
+            {
+              "name": "Anna Marie Yanny"
+            },
+            {
+              "name": "ATAC-seq data generation and processing"
+            },
+            {
+              "name": "Rongxin Fang"
+            },
+            {
+              "name": "Xiaomeng Hou"
+            },
+            {
+              "name": "Jacinta D. Lucero"
+            },
+            {
+              "name": "Julia K. Osteen",
+              "orcid": "https://orcid.org/0000-0001-7058-3297"
+            },
+            {
+              "name": "Antonio Pinto-Duarte",
+              "orcid": "https://orcid.org/0000-0002-2215-7653"
+            },
+            {
+              "name": "Olivier Poirion"
+            },
+            {
+              "name": "Sebastian Preissl",
+              "orcid": "https://orcid.org/0000-0001-8971-5616"
+            },
+            {
+              "name": "Xinxin Wang",
+              "orcid": "https://orcid.org/0000-0001-6393-2276"
+            },
+            {
+              "name": "Methylcytosine data production and analysis"
+            },
+            {
+              "name": "Andrew I. Aldridge",
+              "orcid": "https://orcid.org/0000-0003-1962-8802"
+            },
+            {
+              "name": "Anna Bartlett"
+            },
+            {
+              "name": "Lara Boggeman"
+            },
+            {
+              "name": "Carolyn O’Connor"
+            },
+            {
+              "name": "Rosa G. Castanon"
+            },
+            {
+              "name": "Huaming Chen"
+            },
+            {
+              "name": "Conor Fitzpatrick"
+            },
+            {
+              "name": "Chongyuan Luo"
+            },
+            {
+              "name": "Joseph R. Nery",
+              "orcid": "https://orcid.org/0000-0003-0153-5659"
+            },
+            {
+              "name": "Michael Nunn"
+            },
+            {
+              "name": "Angeline C. Rivkin"
+            },
+            {
+              "name": "Wei Tian"
+            },
+            {
+              "name": "Epi-retro-seq data generation and processing"
+            },
+            {
+              "name": "Bertha Dominguez"
+            },
+            {
+              "name": "Tony Ito-Cole"
+            },
+            {
+              "name": "Matthew Jacobs"
+            },
+            {
+              "name": "Xin Jin"
+            },
+            {
+              "name": "Cheng-Ta Lee"
+            },
+            {
+              "name": "Kuo-Fen Lee"
+            },
+            {
+              "name": "Paula Assakura Miyazaki"
+            },
+            {
+              "name": "Yan Pang"
+            },
+            {
+              "name": "Mohammad Rashid"
+            },
+            {
+              "name": "Jared B. Smith"
+            },
+            {
+              "name": "Minh Vu"
+            },
+            {
+              "name": "Elora Williams"
+            },
+            {
+              "name": "‘Omics data analysis"
+            },
+            {
+              "name": "Tommaso Biancalani",
+              "orcid": "https://orcid.org/0000-0001-9104-9755"
+            },
+            {
+              "name": "A. Sina Booeshaghi",
+              "orcid": "https://orcid.org/0000-0002-6442-4502"
+            },
+            {
+              "name": "Megan Crow",
+              "orcid": "https://orcid.org/0000-0002-1172-5897"
+            },
+            {
+              "name": "Sandrine Dudoit",
+              "orcid": "https://orcid.org/0000-0002-6069-8629"
+            },
+            {
+              "name": "Stephan Fischer"
+            },
+            {
+              "name": "Jesse Gillis"
+            },
+            {
+              "name": "Qiwen Hu"
+            },
+            {
+              "name": "Peter V. Kharchenko",
+              "orcid": "https://orcid.org/0000-0002-6036-5875"
+            },
+            {
+              "name": "Sheng-Yong Niu"
+            },
+            {
+              "name": "Vasilis Ntranos"
+            },
+            {
+              "name": "Elizabeth Purdom",
+              "orcid": "https://orcid.org/0000-0001-9455-7990"
+            },
+            {
+              "name": "Davide Risso"
+            },
+            {
+              "name": "Hector Roux de Bézieux",
+              "orcid": "https://orcid.org/0000-0002-1489-8339"
+            },
+            {
+              "name": "Saroja Somasundaram"
+            },
+            {
+              "name": "Kelly Street"
+            },
+            {
+              "name": "Valentine Svensson"
+            },
+            {
+              "name": "Eeshit Dhaval Vaishnav",
+              "orcid": "https://orcid.org/0000-0003-3720-8051"
+            },
+            {
+              "name": "Koen Van den Berge"
+            },
+            {
+              "name": "Joshua D. Welch",
+              "orcid": "https://orcid.org/0000-0002-5869-2391"
+            },
+            {
+              "name": "Tracing and connectivity data generation"
+            },
+            {
+              "name": "Xu An"
+            },
+            {
+              "name": "Helen S. Bateup"
+            },
+            {
+              "name": "Ian Bowman"
+            },
+            {
+              "name": "Rebecca K. Chance"
+            },
+            {
+              "name": "Nicholas N. Foster"
+            },
+            {
+              "name": "William Galbavy"
+            },
+            {
+              "name": "Hui Gong"
+            },
+            {
+              "name": "Lin Gou"
+            },
+            {
+              "name": "Joshua T. Hatfield"
+            },
+            {
+              "name": "Houri Hintiryan"
+            },
+            {
+              "name": "Karla E. Hirokawa"
+            },
+            {
+              "name": "Gukhan Kim"
+            },
+            {
+              "name": "Daniel J. Kramer"
+            },
+            {
+              "name": "Anan Li"
+            },
+            {
+              "name": "Xiangning Li"
+            },
+            {
+              "name": "Qingming Luo"
+            },
+            {
+              "name": "Rodrigo Muñoz-Castañeda"
+            },
+            {
+              "name": "David A. Stafford"
+            },
+            {
+              "name": "Morphology data generation and reconstruction"
+            },
+            {
+              "name": "Zhao Feng"
+            },
+            {
+              "name": "Xueyan Jia"
+            },
+            {
+              "name": "Shengdian Jiang"
+            },
+            {
+              "name": "Tao Jiang"
+            },
+            {
+              "name": "Xiuli Kuang"
+            },
+            {
+              "name": "Rachael Larsen"
+            },
+            {
+              "name": "Phil Lesnar"
+            },
+            {
+              "name": "Yaoyao Li"
+            },
+            {
+              "name": "Yuanyuan Li"
+            },
+            {
+              "name": "Lijuan Liu"
+            },
+            {
+              "name": "Hanchuan Peng"
+            },
+            {
+              "name": "Lei Qu"
+            },
+            {
+              "name": "Miao Ren"
+            },
+            {
+              "name": "Zongcai Ruan"
+            },
+            {
+              "name": "Elise Shen"
+            },
+            {
+              "name": "Yuanyuan Song"
+            },
+            {
+              "name": "Wayne Wakeman"
+            },
+            {
+              "name": "Peng Wang"
+            },
+            {
+              "name": "Yimin Wang"
+            },
+            {
+              "name": "Yun Wang"
+            },
+            {
+              "name": "Lulu Yin"
+            },
+            {
+              "name": "Jing Yuan"
+            },
+            {
+              "name": "Sujun Zhao"
+            },
+            {
+              "name": "Xuan Zhao"
+            },
+            {
+              "name": "OLST/STPT and other data generation"
+            },
+            {
+              "name": "Arun Narasimhan"
+            },
+            {
+              "name": "Ramesh Palaniswamy"
+            },
+            {
+              "name": "Morphology, connectivity and imaging analysis"
+            },
+            {
+              "name": "Samik Banerjee"
+            },
+            {
+              "name": "Liya Ding"
+            },
+            {
+              "name": "Dhananjay Huilgol"
+            },
+            {
+              "name": "Bingxing Huo"
+            },
+            {
+              "name": "Hsien-Chi Kuo"
+            },
+            {
+              "name": "Sophie Laturnus"
+            },
+            {
+              "name": "Xu Li"
+            },
+            {
+              "name": "Partha P. Mitra"
+            },
+            {
+              "name": "Judith Mizrachi"
+            },
+            {
+              "name": "Quanxin Wang"
+            },
+            {
+              "name": "Peng Xie"
+            },
+            {
+              "name": "Feng Xiong"
+            },
+            {
+              "name": "Yang Yu"
+            },
+            {
+              "name": "Spatially resolved single-cell transcriptomics (MERFISH)"
+            },
+            {
+              "name": "Stephen W. Eichhorn"
+            },
+            {
+              "name": "Multimodal profiling (Patch-seq)"
+            },
+            {
+              "name": "Jim Berg"
+            },
+            {
+              "name": "Matteo Bernabucci"
+            },
+            {
+              "name": "Yves Bernaerts"
+            },
+            {
+              "name": "Cathryn René Cadwell"
+            },
+            {
+              "name": "Jesus Ramon Castro"
+            },
+            {
+              "name": "Rachel Dalley"
+            },
+            {
+              "name": "Leonard Hartmanis"
+            },
+            {
+              "name": "Gregory D. Horwitz"
+            },
+            {
+              "name": "Xiaolong Jiang"
+            },
+            {
+              "name": "Andrew L. Ko"
+            },
+            {
+              "name": "Elanine Miranda"
+            },
+            {
+              "name": "Shalaka Mulherkar"
+            },
+            {
+              "name": "Philip R. Nicovich"
+            },
+            {
+              "name": "Scott F. Owen"
+            },
+            {
+              "name": "Rickard Sandberg"
+            },
+            {
+              "name": "Staci A. Sorensen"
+            },
+            {
+              "name": "Zheng Huan Tan"
+            },
+            {
+              "name": "Transgenic tools"
+            },
+            {
+              "name": "Shona Allen"
+            },
+            {
+              "name": "Dirk Hockemeyer"
+            },
+            {
+              "name": "Angus Y. Lee"
+            },
+            {
+              "name": "Matthew B. Veldman"
+            },
+            {
+              "name": "NeMO archive and analytics"
+            },
+            {
+              "name": "Ricky S. Adkins",
+              "orcid": "https://orcid.org/0000-0002-7983-5486"
+            },
+            {
+              "name": "Seth A. Ament",
+              "orcid": "https://orcid.org/0000-0001-6443-7509"
+            },
+            {
+              "name": "Héctor Corrada Bravo"
+            },
+            {
+              "name": "Robert Carter"
+            },
+            {
+              "name": "Apaala Chatterjee"
+            },
+            {
+              "name": "Carlo Colantuoni"
+            },
+            {
+              "name": "Jonathan Crabtree",
+              "orcid": "https://orcid.org/0000-0002-7286-5690"
+            },
+            {
+              "name": "Heather Creasy",
+              "orcid": "https://orcid.org/0000-0002-1369-6882"
+            },
+            {
+              "name": "Victor Felix"
+            },
+            {
+              "name": "Michelle Giglio",
+              "orcid": "https://orcid.org/0000-0001-7628-5565"
+            },
+            {
+              "name": "Brian R. Herb"
+            },
+            {
+              "name": "Jayaram Kancherla"
+            },
+            {
+              "name": "Anup Mahurkar",
+              "orcid": "https://orcid.org/0000-0002-4999-2296"
+            },
+            {
+              "name": "Carrie McCracken"
+            },
+            {
+              "name": "Lance Nickel"
+            },
+            {
+              "name": "Dustin Olley"
+            },
+            {
+              "name": "Joshua Orvis"
+            },
+            {
+              "name": "Michael Schor"
+            },
+            {
+              "name": "Brain Image Library (BIL) archive"
+            },
+            {
+              "name": "Greg Hood"
+            },
+            {
+              "name": "DANDI archive"
+            },
+            {
+              "name": "Benjamin Dichter"
+            },
+            {
+              "name": "Michael Grauer"
+            },
+            {
+              "name": "Brian Helba"
+            },
+            {
+              "name": "Brain Cell Data Center (BCDC)"
+            },
+            {
+              "name": "Anita Bandrowski"
+            },
+            {
+              "name": "Nikolaos Barkas"
+            },
+            {
+              "name": "Benjamin Carlin"
+            },
+            {
+              "name": "Florence D. D’Orazi"
+            },
+            {
+              "name": "Kylee Degatano"
+            },
+            {
+              "name": "Thomas H. Gillespie"
+            },
+            {
+              "name": "Farzaneh Khajouei"
+            },
+            {
+              "name": "Kishori Konwar"
+            },
+            {
+              "name": "Carol Thompson"
+            },
+            {
+              "name": "Project management"
+            },
+            {
+              "name": "Kathleen Kelly"
+            },
+            {
+              "name": "Stephanie Mok"
+            },
+            {
+              "name": "Susan Sunkin"
+            }
+          ]
+        }
+      ]
+    },
+    "isoform-cell-type-specificity-in-the-mouse-primary-motor-cortex": {
+      "title": "Isoform cell-type specificity in the mouse primary motor cortex",
+      "versions": [
+        {
+          "name": "Nature",
+          "doi": "10.1038/s41586-021-03969-3",
+          "date": "2021-10-06",
+          "authors": [
+            {
+              "name": "A. Sina Booeshaghi",
+              "orcid": "https://orcid.org/0000-0002-6442-4502"
+            },
+            {
+              "name": "Zizhen Yao",
+              "orcid": "https://orcid.org/0000-0002-9361-5607"
+            },
+            {
+              "name": "Cindy van Velthoven",
+              "orcid": "https://orcid.org/0000-0001-5120-4546"
+            },
+            {
+              "name": "Kimberly Smith",
+              "orcid": "https://orcid.org/0000-0002-3142-1970"
+            },
+            {
+              "name": "Bosiljka Tasic",
+              "orcid": "https://orcid.org/0000-0002-6861-4506"
+            },
+            {
+              "name": "Hongkui Zeng",
+              "orcid": "https://orcid.org/0000-0002-0326-5878"
+            },
+            {
+              "name": "Lior Pachter",
+              "orcid": "https://orcid.org/0000-0002-9164-6231"
+            }
+          ]
+        }
+      ]
+    },
+    "massively-scaled-up-testing-for-sars-cov-2-rna-via-next-generation-sequencing-of-pooled-and-barcoded-nasal-and-saliva-samples": {
+      "title": "Massively scaled-up testing for SARS-CoV-2 RNA via next-generation sequencing of pooled and barcoded nasal and saliva samples",
+      "versions": [
+        {
+          "name": "Nature Biomedical Engineering",
+          "doi": "10.1038/s41551-021-00754-5",
+          "date": "2021-07-01",
+          "authors": [
+            {
+              "name": "Joshua S. Bloom",
+              "orcid": "https://orcid.org/0000-0002-7241-1648"
+            },
+            {
+              "name": "Laila Sathe",
+              "orcid": "https://orcid.org/0000-0003-1016-3295"
+            },
+            {
+              "name": "Chetan Munugala"
+            },
+            {
+              "name": "Eric M. Jones"
+            },
+            {
+              "name": "Molly Gasperini"
+            },
+            {
+              "name": "Nathan B. Lubock"
+            },
+            {
+              "name": "Fauna Yarza",
+              "orcid": "https://orcid.org/0000-0002-2512-6182"
+            },
+            {
+              "name": "Erin M. Thompson"
+            },
+            {
+              "name": "Kyle M. Kovary"
+            },
+            {
+              "name": "Jimin Park"
+            },
+            {
+              "name": "Dawn Marquette",
+              "orcid": "https://orcid.org/0000-0002-3964-7683"
+            },
+            {
+              "name": "Stephania Kay"
+            },
+            {
+              "name": "Mark Lucas"
+            },
+            {
+              "name": "TreQuan Love"
+            },
+            {
+              "name": "A. Sina Booeshaghi",
+              "orcid": "https://orcid.org/0000-0002-6442-4502"
+            },
+            {
+              "name": "Oliver F. Brandenberg"
+            },
+            {
+              "name": "Longhua Guo"
+            },
+            {
+              "name": "James Boocock"
+            },
+            {
+              "name": "Myles Hochman"
+            },
+            {
+              "name": "Scott W. Simpkins",
+              "orcid": "https://orcid.org/0000-0002-5997-2838"
+            },
+            {
+              "name": "Isabella Lin"
+            },
+            {
+              "name": "Nathan LaPierre"
+            },
+            {
+              "name": "Duke Hong"
+            },
+            {
+              "name": "Yi Zhang"
+            },
+            {
+              "name": "Gabriel Oland",
+              "orcid": "https://orcid.org/0000-0002-6941-3060"
+            },
+            {
+              "name": "Bianca Judy Choe"
+            },
+            {
+              "name": "Sukantha Chandrasekaran"
+            },
+            {
+              "name": "Evann E. Hilt"
+            },
+            {
+              "name": "Manish J. Butte",
+              "orcid": "https://orcid.org/0000-0002-4490-5595"
+            },
+            {
+              "name": "Robert Damoiseaux"
+            },
+            {
+              "name": "Clifford Kravit"
+            },
+            {
+              "name": "Aaron R. Cooper"
+            },
+            {
+              "name": "Yi Yin"
+            },
+            {
+              "name": "Lior Pachter",
+              "orcid": "https://orcid.org/0000-0002-9164-6231"
+            },
+            {
+              "name": "Omai B. Garner"
+            },
+            {
+              "name": "Jonathan Flint"
+            },
+            {
+              "name": "Eleazar Eskin"
+            },
+            {
+              "name": "Chongyuan Luo"
+            },
+            {
+              "name": "Sriram Kosuri",
+              "orcid": "https://orcid.org/0000-0002-4661-0600"
+            },
+            {
+              "name": "Leonid Kruglyak",
+              "orcid": "https://orcid.org/0000-0002-8065-3057"
+            },
+            {
+              "name": "Valerie A. Arboleda",
+              "orcid": "https://orcid.org/0000-0002-9687-9122"
+            }
+          ]
+        }
+      ]
+    },
+    "low-cost-scalable-and-automated-fluid-sampling-for-fluidics-applications": {
+      "title": "Low-cost, scalable, and automated fluid sampling for fluidics applications",
+      "versions": [
+        {
+          "name": "HardwareX",
+          "doi": "10.1016/j.ohx.2021.e00201",
+          "date": "2021-05-31",
+          "authors": [
+            {
+              "name": "A. Sina Booeshaghi",
+              "orcid": "https://orcid.org/0000-0002-6442-4502"
+            },
+            {
+              "name": "Yeokyoung (Anne) Kil",
+              "orcid": "https://orcid.org/0000-0002-1235-7379"
+            },
+            {
+              "name": "Kyung Hoi (Joseph) Min",
+              "orcid": "https://orcid.org/0000-0003-0894-4017"
+            },
+            {
+              "name": "Jase Gehring",
+              "orcid": "https://orcid.org/0000-0002-3894-9495"
+            },
+            {
+              "name": "Lior Pachter",
+              "orcid": "https://orcid.org/0000-0002-9164-6231"
+            }
+          ]
+        }
+      ]
+    },
+    "modular-efficient-and-constant-memory-single-cell-rna-seq-preprocessing": {
+      "title": "Modular, efficient and constant-memory single-cell RNA-seq preprocessing",
+      "versions": [
+        {
+          "name": "Nature Biotechnology",
+          "doi": "10.1038/s41587-021-00870-2",
+          "date": "2021-04-01",
+          "authors": [
+            {
+              "name": "Páll Melsted",
+              "orcid": "https://orcid.org/0000-0002-8418-6724"
+            },
+            {
+              "name": "A. Sina Booeshaghi",
+              "orcid": "https://orcid.org/0000-0002-6442-4502"
+            },
+            {
+              "name": "Lauren Liu"
+            },
+            {
+              "name": "Fan Gao",
+              "orcid": "https://orcid.org/0000-0001-6832-3402"
+            },
+            {
+              "name": "Lambda Lu"
+            },
+            {
+              "name": "Kyung Hoi Min",
+              "orcid": "https://orcid.org/0000-0003-0894-4017"
+            },
+            {
+              "name": "Eduardo da Veiga Beltrame",
+              "orcid": "https://orcid.org/0000-0002-1529-9207"
+            },
+            {
+              "name": "Kristján Eldjárn Hjörleifsson",
+              "orcid": "https://orcid.org/0000-0002-7851-1818"
+            },
+            {
+              "name": "Jase Gehring",
+              "orcid": "https://orcid.org/0000-0002-3894-9495"
+            },
+            {
+              "name": "Lior Pachter",
+              "orcid": "https://orcid.org/0000-0002-9164-6231"
+            }
+          ]
+        }
+      ]
+    },
+    "benchmarking-of-lightweight-mapping-based-single-cell-rna-seq-pre-processing": {
+      "title": "Benchmarking of lightweight-mapping based single-cell RNA-seq pre-processing",
+      "versions": [
+        {
+          "name": "bioRxiv",
+          "doi": "10.1101/2021.01.25.428188",
+          "date": "2021-03-03",
+          "authors": [
+            {
+              "name": "A. Sina Booeshaghi",
+              "orcid": "https://orcid.org/0000-0002-6442-4502"
+            },
+            {
+              "name": "Lior Pachter",
+              "orcid": "https://orcid.org/0000-0002-9164-6231"
+            }
+          ]
+        }
+      ]
+    },
+    "normalization-of-single-cell-rna-seq-counts-by-log-x-1-or-log-1-x": {
+      "title": "Normalization of single-cell RNA-seq counts by log (x+ 1) or log (1+ x)",
+      "versions": [
+        {
+          "name": "Bioinformatics",
+          "doi": "10.1093/bioinformatics/btab085",
+          "date": "2021-03-02",
+          "authors": [
+            {
+              "name": "A Sina Booeshaghi",
+              "orcid": "https://orcid.org/0000-0002-6442-4502"
+            },
+            {
+              "name": "Lior Pachter",
+              "orcid": "https://orcid.org/0000-0002-9164-6231"
+            }
+          ]
+        }
+      ]
+    },
+    "reliable-and-accurate-diagnostics-from-highly-multiplexed-sequencing-assays": {
+      "title": "Reliable and accurate diagnostics from highly multiplexed sequencing assays",
+      "versions": [
+        {
+          "name": "Nature Scientific Reports",
+          "doi": "10.1038/s41598-020-78942-7",
+          "date": "2020-12-10",
+          "authors": [
+            {
+              "name": "A. Sina Booeshaghi",
+              "orcid": "https://orcid.org/0000-0002-6442-4502"
+            },
+            {
+              "name": "Nathan B. Lubock"
+            },
+            {
+              "name": "Aaron R. Cooper"
+            },
+            {
+              "name": "Scott W. Simpkins",
+              "orcid": "https://orcid.org/0000-0002-5997-2838"
+            },
+            {
+              "name": "Joshua S. Bloom",
+              "orcid": "https://orcid.org/0000-0002-7241-1648"
+            },
+            {
+              "name": "Jase Gehring",
+              "orcid": "https://orcid.org/0000-0002-3894-9495"
+            },
+            {
+              "name": "Laura Luebbert",
+              "orcid": "https://orcid.org/0000-0003-1379-2927"
+            },
+            {
+              "name": "Sri Kosuri"
+            },
+            {
+              "name": "Lior Pachter",
+              "orcid": "https://orcid.org/0000-0002-9164-6231"
+            }
+          ]
+        }
+      ]
+    },
+    "markedly-heterogeneous-covid-19-testing-plans-among-us-colleges-and-universities": {
+      "title": "Markedly heterogeneous COVID-19 testing plans among US colleges and universities",
+      "versions": [
+        {
+          "name": "MedRxiv",
+          "doi": "10.1101/2020.08.09.20171223",
+          "date": "2020-08-11",
+          "authors": [
+            {
+              "name": "A. Sina Booeshaghi",
+              "orcid": "https://orcid.org/0000-0002-6442-4502"
+            },
+            {
+              "name": "Fayth Tan",
+              "orcid": "https://orcid.org/0000-0002-2160-5311"
+            },
+            {
+              "name": "Benjamin Renton"
+            },
+            {
+              "name": "Zackary Berger",
+              "orcid": "https://orcid.org/0000-0002-5871-0342"
+            },
+            {
+              "name": "Lior Pachter",
+              "orcid": "https://orcid.org/0000-0002-9164-6231"
+            }
+          ]
+        }
+      ]
+    },
+    "decrease-in-ace2-mrna-expression-in-aged-mouse-lung": {
+      "title": "Decrease in ACE2 mRNA expression in aged mouse lung",
+      "versions": [
+        {
+          "name": "bioRxiv",
+          "doi": "10.1101/2020.04.02.021451",
+          "date": "2020-04-05",
+          "authors": [
+            {
+              "name": "A. Sina Booeshaghi",
+              "orcid": "https://orcid.org/0000-0002-6442-4502"
+            },
+            {
+              "name": "Lior Pachter",
+              "orcid": "https://orcid.org/0000-0002-9164-6231"
+            }
+          ]
+        }
+      ]
+    },
+    "principles-of-open-source-bioinstrumentation-applied-to-the-poseidon-syringe-pump-system": {
+      "title": "Principles of open source bioinstrumentation applied to the poseidon syringe pump system",
+      "versions": [
+        {
+          "name": "Nature Scientific Reports",
+          "doi": "10.1038/s41598-019-48815-9",
+          "date": "2019-08-27",
+          "authors": [
+            {
+              "name": "A. Sina Booeshaghi",
+              "orcid": "https://orcid.org/0000-0002-6442-4502"
+            },
+            {
+              "name": "Eduardo da Veiga Beltrame",
+              "orcid": "https://orcid.org/0000-0002-1529-9207"
+            },
+            {
+              "name": "Dylan Bannon"
+            },
+            {
+              "name": "Jase Gehring",
+              "orcid": "https://orcid.org/0000-0002-3894-9495"
+            },
+            {
+              "name": "Lior Pachter",
+              "orcid": "https://orcid.org/0000-0002-9164-6231"
+            }
+          ]
+        },
+        {
+          "name": "Correction",
+          "doi": "10.1038/s41598-023-42035-y",
+          "date": "2023-09-08",
+          "authors": [
+            {
+              "name": "A. Sina Booeshaghi",
+              "orcid": "https://orcid.org/0000-0002-6442-4502"
+            },
+            {
+              "name": "Eduardo da Veiga Beltrame",
+              "orcid": "https://orcid.org/0000-0002-1529-9207"
+            },
+            {
+              "name": "Dylan Bannon"
+            },
+            {
+              "name": "Jase Gehring",
+              "orcid": "https://orcid.org/0000-0002-3894-9495"
+            },
+            {
+              "name": "Lior Pachter",
+              "orcid": "https://orcid.org/0000-0002-9164-6231"
+            }
+          ]
+        }
+      ]
+    },
+    "thermo-electrochemical-generator-energy-harvesting-and-thermoregulation-for-liquid-cooling-applications": {
+      "title": "Thermo-electrochemical generator: energy harvesting & thermoregulation for liquid cooling applications",
+      "versions": [
+        {
+          "name": "Sustainable Energy & Fuels",
+          "doi": "10.1039/C7SE00161D",
+          "date": "2017-06-08",
+          "authors": [
+            {
+              "name": "Ali Hussain Kazim"
+            },
+            {
+              "name": "A. Sina Booeshaghi",
+              "orcid": "https://orcid.org/0000-0002-6442-4502"
+            },
+            {
+              "name": "Sai T. Stephens"
+            },
+            {
+              "name": "Baratunde A. Cola",
+              "orcid": "https://orcid.org/0000-0003-1268-9573"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -7,11 +7,19 @@ const scriptDir = path.dirname(fileURLToPath(import.meta.url));
 const rootDir = path.resolve(scriptDir, "..");
 const publicationsPath = path.join(rootDir, "db", "publications.json");
 const citedByPath = path.join(rootDir, "db", "cited-by.json");
+const publicationAuthorsPath = path.join(
+  rootDir,
+  "db",
+  "publication-authors.json"
+);
 const worksDir = path.join(rootDir, "works");
 
 const publications = JSON.parse(fs.readFileSync(publicationsPath, "utf8"));
 const citedByData = fs.existsSync(citedByPath)
   ? JSON.parse(fs.readFileSync(citedByPath, "utf8"))
+  : { works: {} };
+const publicationAuthorsData = fs.existsSync(publicationAuthorsPath)
+  ? JSON.parse(fs.readFileSync(publicationAuthorsPath, "utf8"))
   : { works: {} };
 
 function escapeHTML(value) {
@@ -47,6 +55,10 @@ function doiFromURL(value) {
 
 function citationLink(citation) {
   return citation.link || "";
+}
+
+function doiLink(doi) {
+  return `https://doi.org/${doiFromURL(doi)}`;
 }
 
 function fallbackBibTeX(link, publication, index) {
@@ -199,6 +211,74 @@ function renderBibTeX(publication) {
     .join("");
 }
 
+function authorVersions(slug) {
+  return publicationAuthorsData.works?.[slug]?.versions || [];
+}
+
+function renderAuthor(author) {
+  const name = escapeHTML(author.name);
+
+  if (!author.orcid) {
+    return name;
+  }
+
+  return `<a href="${escapeHTML(
+    author.orcid
+  )}" target="_blank" rel="noopener" title="ORCID">${name}</a>`;
+}
+
+function renderAuthors(slug) {
+  const versions = authorVersions(slug);
+
+  if (!versions.length) {
+    return `
+      <section class="authors-section" data-author-version-count="0">
+        <h2>Authors</h2>
+        <p class="author-empty">No author metadata found for this work.</p>
+      </section>`;
+  }
+
+  return `
+      <section
+        class="authors-section"
+        data-author-version-count="${versions.length}"
+      >
+        <h2>Authors</h2>
+        ${versions
+          .map((version) => {
+            const authors = version.authors || [];
+
+            return `
+        <section
+          class="author-version"
+          data-author-count="${authors.length}"
+        >
+          <h3>
+            <a href="${escapeHTML(
+              doiLink(version.doi)
+            )}" target="_blank" rel="noopener">${escapeHTML(version.name)}</a>
+            ${
+              version.date
+                ? `<time datetime="${escapeHTML(version.date)}">${escapeHTML(
+                    version.date
+                  )}</time>`
+                : ""
+            }
+          </h3>
+          <ul class="author-list">
+            ${authors
+              .map(
+                (author) => `
+            <li>${renderAuthor(author)}</li>`
+              )
+              .join("")}
+          </ul>
+        </section>`;
+          })
+          .join("")}
+      </section>`;
+}
+
 function citedByRows(slug) {
   return citedByData.works?.[slug]?.cited_by || [];
 }
@@ -283,6 +363,8 @@ function renderPage(publication) {
         <h2>Summary</h2>
         <p>${summary}</p>
       </section>
+
+      ${renderAuthors(slug)}
 
       <section>
         <h2>BibTeX</h2>

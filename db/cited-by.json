@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-05T00:45:26.633Z",
+  "generatedAt": "2026-07-05T00:59:06.708Z",
   "note": "Minimal citation table data generated from db/citations.json and db/google-scholar-citations.json. Each cited_by row intentionally contains only the fields needed to render and later annotate the Works pages.",
   "sources": [
     "OpenAlex",
