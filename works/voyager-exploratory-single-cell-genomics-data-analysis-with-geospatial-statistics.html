@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-6P1ZQ0CC8F"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-6P1ZQ0CC8F");
+    </script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Voyager applies geospatial statistics to exploratory single-cell genomics analysis, providing tools for working with spatially resolved biological data." />
+    <link rel="stylesheet" href="../styles.css" />
+    
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        document.querySelectorAll(".copy-bibtex-button").forEach((button) => {
+          button.addEventListener("click", async () => {
+            const box = button.closest(".bibtex-box");
+            const code = box ? box.querySelector("code") : null;
+            const bibtex = code ? code.textContent : "";
+            const previousText = button.textContent;
+            const markStatus = (text) => {
+              button.textContent = text;
+              window.setTimeout(() => {
+                button.textContent = previousText;
+              }, 1200);
+            };
+            const copyWithSelection = () => {
+              const textarea = document.createElement("textarea");
+              textarea.value = bibtex;
+              textarea.setAttribute("readonly", "");
+              textarea.style.position = "fixed";
+              textarea.style.left = "0";
+              textarea.style.top = "0";
+              textarea.style.width = "1px";
+              textarea.style.height = "1px";
+              textarea.style.opacity = "0";
+              textarea.style.pointerEvents = "none";
+              document.body.appendChild(textarea);
+              textarea.focus({ preventScroll: true });
+              textarea.select();
+              textarea.setSelectionRange(0, textarea.value.length);
+              const copied = document.execCommand("copy");
+              textarea.remove();
+              return copied;
+            };
+
+            try {
+              if (navigator.clipboard && navigator.clipboard.writeText) {
+                await navigator.clipboard.writeText(bibtex);
+                markStatus("Copied");
+                return;
+              }
+
+              if (copyWithSelection()) {
+                markStatus("Copied");
+                return;
+              }
+            } catch {
+              let copied = false;
+
+              try {
+                copied = copyWithSelection();
+              } catch {
+                copied = false;
+              }
+
+              if (copied) {
+                markStatus("Copied");
+                return;
+              }
+            }
+
+            markStatus("Copy failed");
+          });
+        });
+      });
+    </script>
+    <title>Voyager: exploratory single-cell genomics data analysis with geospatial statistics | Works | Sina Booeshaghi</title>
+  </head>
+  <body>
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="../index.html">Home</a>
+      <span aria-hidden="true">/</span>
+      <a href="../publications.html">Works</a>
+      <span aria-hidden="true">/</span>
+      <span class="breadcrumb-current" title="Voyager: exploratory single-cell genomics data analysis with geospatial statistics">Voyager: exploratory single-cell genomics data analysis with geo...</span>
+    </nav>
+    <article class="work-page">
+      <h1>Voyager: exploratory single-cell genomics data analysis with geospatial statistics</h1>
+      <div class="publication-links work-links" aria-label="Work links">
+        
+        <a class="publication-link" href="https://doi.org/10.1101/2023.07.20.549945" target="_blank" rel="noopener">
+          <span>bioRxiv</span>
+          <time datetime="2023-07-22">2023-07-22</time>
+        </a>
+      </div>
+
+      <section>
+        <h2>Summary</h2>
+        <p>Voyager applies geospatial statistics to exploratory single-cell genomics analysis, providing tools for working with spatially resolved biological data.</p>
+      </section>
+
+      <section>
+        <h2>BibTeX</h2>
+        
+        <section class="bibtex-entry">
+          <h3>bioRxiv</h3>
+          <div class="bibtex-box">
+            <button
+              class="copy-bibtex-button"
+              type="button"
+              aria-label="Copy BibTeX for bioRxiv"
+            >
+              Copy BibTeX
+            </button>
+            <pre><code>@article{Moses_2023,
+  TITLE     = {Voyager: exploratory single-cell genomics data analysis with geospatial statistics},
+  URL       = {http://dx.doi.org/10.1101/2023.07.20.549945},
+  DOI       = {10.1101/2023.07.20.549945},
+  PUBLISHER = {openRxiv},
+  AUTHOR    = {Moses, Lambda and Einarsson, Pétur Helgi and Jackson, Kayla and Luebbert, Laura and Booeshaghi, A. Sina and Antonsson, Sindri and Bray, Nicolas and Melsted, Páll and Pachter, Lior},
+  YEAR      = {2023}
+}</code></pre>
+          </div>
+        </section>
+      </section>
+
+      <section>
+        <h2>Citing Works</h2>
+        <p class="citation-source-note">
+          67 citing works found in citation data generated 2026-07-05. Citation relationships are sourced from OpenAlex, Semantic Scholar, Google Scholar.
+        </p>
+        <table class="citation-table">
+          <thead>
+            <tr>
+              <th>Title</th>
+              <th>Year</th>
+              <th>Summary</th>
+            </tr>
+          </thead>
+          <tbody>
+            
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1186/s13059-026-03937-y" target="_blank" rel="noopener">A technical comparison of spatial transcriptomics platforms across six cancer types</a></td>
+              <td class="citation-year"><time datetime="2026">2026</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include function, image-based, package, platforms, runmoransi, visiumhd, voyager.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1016/j.patter.2026.101542" target="_blank" rel="noopener">Bridging annotated microscopy imaging data and analysis method development for scientific discovery</a></td>
+              <td class="citation-year"><time datetime="2026">2026</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include bioconductor, carried, community, complementary, efforts, project, spatialfeatureex-periment.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1016/j.stem.2026.02.010" target="_blank" rel="noopener">Decoding the spatiotemporal development of the blood-brain barrier in human cortex.</a></td>
+              <td class="citation-year"><time datetime="2026">2026</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1093/bib/bbag176" target="_blank" rel="noopener">Estimating tumour immune infiltration: methodological convergence across histology and spatial technologies</a></td>
+              <td class="citation-year"><time datetime="2026">2026</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include spatial, awiderangeofintegratedtoolkits, implementing, including, omics, scfeatures, spiat, spicyr.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.64898/2026.06.10.731352" target="_blank" rel="noopener">Metastatic Osteosarcoma is Characterized by Loss of Osteoblastic Lineage Fidelity</a></td>
+              <td class="citation-year"><time datetime="2026">2026</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include adapted, biologically, function, genes, highly, identify, implementation, independent.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.64898/2026.02.09.704806" target="_blank" rel="noopener">Parsimonious cell co-localization scoring for spatial transcriptomics</a></td>
+              <td class="citation-year"><time datetime="2026">2026</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1093/gigascience/giag006" target="_blank" rel="noopener">SpaceBF: spatial coexpression analysis using Bayesian fused approaches in spatial omics datasets</a></td>
+              <td class="citation-year"><time datetime="2026">2026</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include voyager, applies, considers, differ, directly, essentially, include, liana.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1093/bioadv/vbag163" target="_blank" rel="noopener">spammR: an R package designed for analysis and integration of spatial multi-omic measurements</a></td>
+              <td class="citation-year"><time datetime="2026">2026</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include incorporation, analysis, bankhead, direct, format, geojson, improve, moses.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1016/j.celrep.2025.116877" target="_blank" rel="noopener">Spatially resolved molecular sex differences at single-cell resolution in the adult human ventromedial and arcuate hypothalamus</a></td>
+              <td class="citation-year"><time datetime="2026">2026</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.64898/2026.02.16.706245" target="_blank" rel="noopener">Wayfarer: A multiscale framework for spatial analysis of tumor progression</a></td>
+              <td class="citation-year"><time datetime="2026">2026</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include normalized.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2025.03.27.641500" target="_blank" rel="noopener">A factor-based analysis of individual human microglia uncovers regulators of an Alzheimer-related transcriptional signature</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1038/s41576-025-00845-y" target="_blank" rel="noopener">Cell-type deconvolution methods for spatial transcriptomics</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1186/s13059-025-03624-4" target="_blank" rel="noopener">Comparison of spatial transcriptomics technologies using tumor cryosections</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1002/1878-0261.70100" target="_blank" rel="noopener">Decrypting cancer&#39;s spatial code: from single cells to tissue niches</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include voyager, adapted, adopters, allowing, amongst, approaches, athena, cally.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2025.04.04.647246" target="_blank" rel="noopener">Epigenetic memory astrocytes are likely an artifact of immune cell contamination</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include package, scanpy, based, calculated, calculations, change, changes, choice.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2025.11.02.25338804" target="_blank" rel="noopener">Exon Proteogenomic Abundance Predicts Advanced Heart Failure in Titin Cardiomyopathy</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2025.02.24.640007" target="_blank" rel="noopener">Geospatially informed representation of spatial genomics data with SpatialFeatureExperiment</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include analysis, exploratory, fields, object, results, similarly, spatial, store.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1038/s41592-025-02817-w" target="_blank" rel="noopener">Giotto Suite: a multiscale and technology-agnostic spatial multiomics analysis ecosystem</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include giotto, bioconductor, spatial, omics, suite, provides, seurat, spatialexperiment.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1093/nar/gkaf870" target="_blank" rel="noopener">Harnessing the potential of spatial statistics for spatial omics data with pasta</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include voyager, analysis, lattice, pattern, point, bioconductor, compute, conducted.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1016/j.cell.2025.11.031" target="_blank" rel="noopener">Hepatic adaptation to chronic metabolic stress primes tumorigenesis</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2025.09.24.678189" target="_blank" rel="noopener">Integrative Spatial Modelling of Cellular Plasticity using Graph Neural Networks and Geostatistics</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include applies, cannot, effects, extrinsic, geospatial, highlighting, integrative, interpretable.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2025.07.10.664141" target="_blank" rel="noopener">Kandinsky: enabling neighbourhood analysis of spatial omics data for functional insights on cell ecosystems</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include lafzi, varrone, co-expression, kojima, palla, patterns, agrawal, analysis.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2025.03.12.642799" target="_blank" rel="noopener">LN’s t -Test: A Principled Approach to t -Testing in Single-Cell RNA Sequencing</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include average, computed, directly, however, inflation, introduce, logarithmic, means.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1038/s41540-025-00512-2" target="_blank" rel="noopener">Modeling the dynamics of EMT reveals genes associated with pan-cancer intermediate states and plasticity</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include added, avoid, division, pseudocount.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1038/s41698-025-00897-7" target="_blank" rel="noopener">Multimodal spatial proteomic profiling in acute myeloid leukemia</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include local, spatial, adapting, aggregates, bcells, bivariate, cabrita, computed.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2025.11.20.688607" target="_blank" rel="noopener">Orchestrating Spatial Transcriptomics Analysis with Bioconductor</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include python, spatial, transcriptomics, additional, analysis, capacity, convert, existing.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1038/s41588-025-02119-z" target="_blank" rel="noopener">Quantitative characterization of tissue states using multiomics and ecological spatial analysis</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include analyses, based, cellular, defined, distance, local, nearest, neighborhoods.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2025.03.29.646124" target="_blank" rel="noopener">SpaceBF: Spatial coexpression analysis using Bayesian Fused approaches in spatial omics datasets</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include voyager, application, considers, different, direct, essentially, formulation, implements.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.64898/2025.12.24.696336" target="_blank" rel="noopener">SpaceTrooper : a quality control framework for imaging-based spatial omics data</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2025.08.26.672472" target="_blank" rel="noopener">spammR: an R package designed for analysis and integration of spatial multi-omic measurements</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include incorporation, analysis, bankhead, direct, format, geojson, improve, microscope.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2025.10.27.684518" target="_blank" rel="noopener">Spatial Dependence and Heterogeneity in Molecular Imaging: Moran Quadrant Maps Enable Advanced Spatial-Statistical Analysis</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include spatial, analysis, developed, expression, promote, software, statistics, tools.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2025.05.09.653178" target="_blank" rel="noopener">Spatial epigenomic niches underlie glioblastoma cell state plasticity</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1016/j.immuni.2025.09.018" target="_blank" rel="noopener">Spatial immune profiling defines a subset of human gliomas with functional tertiary lymphoid structures</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1016/j.tig.2025.05.002" target="_blank" rel="noopener">Spatial omics enters the microscopic realm: opportunities and challenges</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1007/978-1-0716-4276-4_5" target="_blank" rel="noopener">Spatial-Omics Methods and Applications</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1093/bib/bbaf657" target="_blank" rel="noopener">SpaTM: topic models for inferring spatially informed transcriptional programs</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include package, spatial, assess, bivariate, co-expression, communication, contributes, elation.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2025.01.24.634726" target="_blank" rel="noopener">SpaTM: Topic Models for Inferring Spatially Informed Transcriptional Programs</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1038/s41587-025-02811-9" target="_blank" rel="noopener">Standardized metrics for assessment and reproducibility of imaging-based spatial transcriptomics datasets</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2025.10.14.682049" target="_blank" rel="noopener">The origin and molecular evolution of the mammalian liver cell architecture</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2025.06.16.658716" target="_blank" rel="noopener">The Spatial Atlas of Human Anatomy (SAHA): A Multimodal Subcellular-Resolution Reference Across Human Organs</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.3389/fbinf.2024.1336257" target="_blank" rel="noopener">A perspective on FAIR quality control in multiplexed imaging data processing</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2024.05.21.593407" target="_blank" rel="noopener">Benchmarking of spatial transcriptomics platforms across six cancer types</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1146/annurev-pathmechdis-111523-023417" target="_blank" rel="noopener">Challenges and Opportunities in the Clinical Translation of High-Resolution Spatial Transcriptomics</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include address, biases, capture, carry, challenges, computational, datasets, development.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2024.04.03.586404" target="_blank" rel="noopener">Comparison of spatial transcriptomics technologies using tumor cryosections</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2024.12.27.628014" target="_blank" rel="noopener">Dendritic cells type 1 control the formation, maintenance, and function of tertiary lymphoid structures in cancer</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2024.10.03.616309" target="_blank" rel="noopener">Modeling the dynamics of EMT reveals genes associated with pan-cancer intermediate states and plasticity</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1016/j.cell.2024.05.055" target="_blank" rel="noopener">Open-ST: High-resolution spatial transcriptomics in 3D</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1016/j.xpro.2024.103521" target="_blank" rel="noopener">Protocol for high-resolution 3D spatial transcriptomics using Open-ST</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2024.07.23.604776" target="_blank" rel="noopener">Rapid and memory-efficient analysis and quality control of large spatial transcriptomics datasets</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1093/bioinformatics/btae412" target="_blank" rel="noopener">SEraster: a rasterization preprocessing framework for scalable spatial omics data analysis</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include giotto, object, analysis, built, corresponding, dries, exploratory, infra-structures.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1016/j.trac.2024.118109" target="_blank" rel="noopener">Single-cell spatial (scs) omics: Recent developments in data analysis</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include autocorrelation, combination, correlation, grows, includes, locations, metric, moran.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1038/s41588-024-01961-x" target="_blank" rel="noopener">Spatial and single-nucleus transcriptomic analysis of genetic and sporadic forms of Alzheimer’s disease</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2024.12.28.630505" target="_blank" rel="noopener">Spatially informed phenotyping by cyclic-in-situ-hybridization identifies novel fibroblast populations and their pathogenic niches in systemic sclerosis</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2024.12.07.627362" target="_blank" rel="noopener">Spatially-resolved molecular sex differences at single cell resolution in the adult human ventromedial and arcuate hypothalamus</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1186/s13059-024-03428-y" target="_blank" rel="noopener">SpottedPy quantifies relationships between spatial transcriptomic hotspots and uncovers environmental cues of epithelial-mesenchymal plasticity in breast cancer</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2024.04.04.588111" target="_blank" rel="noopener">The impact of package selection and versioning on single-cell RNA-seq analysis</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include analyses, however, identical, observed, otherwise, packages, performing, seemingly.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2023.12.13.571385" target="_blank" rel="noopener">A Comparative Analysis of Imaging-Based Spatial Transcriptomics Platforms</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1145/3637459" target="_blank" rel="noopener">From Geospatial to Spatial -Omics</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include spatial, analysis, bioconductor, geospatial, infrastructure, omics, package, transcriptomics.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2023.11.26.568752" target="_blank" rel="noopener">Giotto Suite: a multi-scale and technology-agnostic spatial multi-omics analysis ecosystem</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1093/bioinformatics/btad550" target="_blank" rel="noopener">MoleculeExperiment enables consistent infrastructure for molecule-resolved spatial omics data in bioconductor</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2023.09.14.557736" target="_blank" rel="noopener">Monkeybread: A Python toolkit for the analysis of cellular niches in single-cell resolution spatial transcriptomics data</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2023.12.22.572554" target="_blank" rel="noopener">Open-ST: High-resolution spatial transcriptomics in 3D</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2023.07.24.550282" target="_blank" rel="noopener">Spatial and single-nucleus transcriptomic analysis of genetic and sporadic forms of Alzheimer’s Disease</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2023.12.20.572627" target="_blank" rel="noopener">SpottedPy quantifies relationships between spatial transcriptomic hotspots and uncovers new environmental cues of epithelial-mesenchymal plasticity in cancer</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1007/978-1-0716-4566-6_1" target="_blank" rel="noopener">Bioconductor’s Computational Ecosystem for Genomic Data Science in Cancer</a></td>
+              <td class="citation-year"><time datetime="2012">2012</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://www.semanticscholar.org/paper/3907083377cbbec290f52bbcb7a5bc62ed7461f2" target="_blank" rel="noopener">Comparison of spatial transcriptomics technologies across six cancer types</a></td>
+              <td class="citation-year"></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://www.semanticscholar.org/paper/b994488ed0062b72a09548d11c897246a4f1ea98" target="_blank" rel="noopener">SpottedPy quantifies relationships between spatial transcriptomic hotspots and 1 uncovers new environmental cues of epithelial-mesenchymal plasticity in cancer</a></td>
+              <td class="citation-year"></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include spatial, recently, transcriptomic, various, voyager, within, analyse, analysis.</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </article>
+  </body>
+</html>

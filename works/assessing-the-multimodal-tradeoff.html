@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-6P1ZQ0CC8F"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-6P1ZQ0CC8F");
+    </script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Multi-modal single-cell genomics assays quantify genomic features, such as gene expression and chromatin accessibility in the same cell. While single-cell registration can help better understand the coordination of distinct biological processes, an assessment of the multimodal and unimodal tradeoff has not yet been undertaken. To understand this tradeoff, we develop a snATAK, a preprocessing workflow for chromatin accessibility and “multiome” assays. We show concordance with state-of-the-art, and demonstrate improved speed and runtime. Using snATAK we find that multimodal ATAC/RNA yields fewer peaks detected per cell, lower library complexity, and increased technical noise when compared to their unimodal counterparts. Additionally, we show that registered multimodal data can be used to find allele-concordance between the ATAC and RNA parts of 10x Multiome and SHARE-seqV2 data." />
+    <link rel="stylesheet" href="../styles.css" />
+    
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        document.querySelectorAll(".copy-bibtex-button").forEach((button) => {
+          button.addEventListener("click", async () => {
+            const box = button.closest(".bibtex-box");
+            const code = box ? box.querySelector("code") : null;
+            const bibtex = code ? code.textContent : "";
+            const previousText = button.textContent;
+            const markStatus = (text) => {
+              button.textContent = text;
+              window.setTimeout(() => {
+                button.textContent = previousText;
+              }, 1200);
+            };
+            const copyWithSelection = () => {
+              const textarea = document.createElement("textarea");
+              textarea.value = bibtex;
+              textarea.setAttribute("readonly", "");
+              textarea.style.position = "fixed";
+              textarea.style.left = "0";
+              textarea.style.top = "0";
+              textarea.style.width = "1px";
+              textarea.style.height = "1px";
+              textarea.style.opacity = "0";
+              textarea.style.pointerEvents = "none";
+              document.body.appendChild(textarea);
+              textarea.focus({ preventScroll: true });
+              textarea.select();
+              textarea.setSelectionRange(0, textarea.value.length);
+              const copied = document.execCommand("copy");
+              textarea.remove();
+              return copied;
+            };
+
+            try {
+              if (navigator.clipboard && navigator.clipboard.writeText) {
+                await navigator.clipboard.writeText(bibtex);
+                markStatus("Copied");
+                return;
+              }
+
+              if (copyWithSelection()) {
+                markStatus("Copied");
+                return;
+              }
+            } catch {
+              let copied = false;
+
+              try {
+                copied = copyWithSelection();
+              } catch {
+                copied = false;
+              }
+
+              if (copied) {
+                markStatus("Copied");
+                return;
+              }
+            }
+
+            markStatus("Copy failed");
+          });
+        });
+      });
+    </script>
+    <title>Assessing the multimodal tradeoff | Works | Sina Booeshaghi</title>
+  </head>
+  <body>
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="../index.html">Home</a>
+      <span aria-hidden="true">/</span>
+      <a href="../publications.html">Works</a>
+      <span aria-hidden="true">/</span>
+      <span class="breadcrumb-current" title="Assessing the multimodal tradeoff">Assessing the multimodal tradeoff</span>
+    </nav>
+    <article class="work-page">
+      <h1>Assessing the multimodal tradeoff</h1>
+      <div class="publication-links work-links" aria-label="Work links">
+        
+        <a class="publication-link" href="https://doi.org/10.1101/2021.12.08.471788" target="_blank" rel="noopener">
+          <span>bioRxiv</span>
+          <time datetime="2023-04-18">2023-04-18</time>
+        </a>
+      </div>
+
+      <section>
+        <h2>Summary</h2>
+        <p>Multi-modal single-cell genomics assays quantify genomic features, such as gene expression and chromatin accessibility in the same cell. While single-cell registration can help better understand the coordination of distinct biological processes, an assessment of the multimodal and unimodal tradeoff has not yet been undertaken. To understand this tradeoff, we develop a snATAK, a preprocessing workflow for chromatin accessibility and “multiome” assays. We show concordance with state-of-the-art, and demonstrate improved speed and runtime. Using snATAK we find that multimodal ATAC/RNA yields fewer peaks detected per cell, lower library complexity, and increased technical noise when compared to their unimodal counterparts. Additionally, we show that registered multimodal data can be used to find allele-concordance between the ATAC and RNA parts of 10x Multiome and SHARE-seqV2 data.</p>
+      </section>
+
+      <section>
+        <h2>BibTeX</h2>
+        
+        <section class="bibtex-entry">
+          <h3>bioRxiv</h3>
+          <div class="bibtex-box">
+            <button
+              class="copy-bibtex-button"
+              type="button"
+              aria-label="Copy BibTeX for bioRxiv"
+            >
+              Copy BibTeX
+            </button>
+            <pre><code>@article{Booeshaghi_2021,
+  TITLE     = {Assessing the multimodal tradeoff},
+  URL       = {http://dx.doi.org/10.1101/2021.12.08.471788},
+  DOI       = {10.1101/2021.12.08.471788},
+  PUBLISHER = {openRxiv},
+  AUTHOR    = {Booeshaghi, A. Sina and Gao, Fan and Pachter, Lior},
+  YEAR      = {2021}
+}</code></pre>
+          </div>
+        </section>
+      </section>
+
+      <section>
+        <h2>Citing Works</h2>
+        <p class="citation-source-note">
+          15 citing works found in citation data generated 2026-07-05. Citation relationships are sourced from OpenAlex, Semantic Scholar, Google Scholar.
+        </p>
+        <table class="citation-table">
+          <thead>
+            <tr>
+              <th>Title</th>
+              <th>Year</th>
+              <th>Summary</th>
+            </tr>
+          </thead>
+          <tbody>
+            
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.64898/2026.04.28.721317" target="_blank" rel="noopener">CHAMPOLLION: Robust Multi-Omics Integration via Inverse Optimal Transport Using Paired Cells</a></td>
+              <td class="citation-year"><time datetime="2026">2026</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1186/s13059-026-04062-6" target="_blank" rel="noopener">Experimental and computational methods for allelic imbalance analysis from single-nucleus RNA-seq data</a></td>
+              <td class="citation-year"><time datetime="2026">2026</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include scrna-seq, smart-seq2, advantage, although, below, built, details, directed.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://search.proquest.com/openview/4dab93a473ac016dbf774c9a468b2c78/1?pq-origsite=gscholar&amp;cbl=18750&amp;diss=y" target="_blank" rel="noopener">Methods for Efficient Processing and Uncertainty-Aware Analysis of High Throughput Genomics and Transcriptomics Data</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2025.01.04.631299" target="_blank" rel="noopener">Single-cell multiomics data integration and generation with scPairing</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1016/j.crmeth.2025.101211" target="_blank" rel="noopener">Single-cell multiomics data integration and generation with scPairing</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2024.01.25.577262" target="_blank" rel="noopener">A biophysical model for ATAC-seq data analysis</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1093/bioinformatics/btaf234" target="_blank" rel="noopener">Alevin-fry-atac enables rapid and memory frugal mapping of single-cell ATAC-seq data using virtual colors for accurate genomic pseudoalignment</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include mapping, approaches, atac-seq, booeshaghi, caching, frequently, further, lightweight.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1103/physreve.110.064405" target="_blank" rel="noopener">Biophysical model for joint analysis of chromatin and RNA sequencing data</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2024.08.13.607784" target="_blank" rel="noopener">Experimental and Computational Methods for Allelic Imbalance Analysis from Single-Nucleus RNA-seq Data</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1038/s41596-024-01057-0" target="_blank" rel="noopener">kallisto, bustools and kb-python for quantifying bulk, single-cell and single-nucleus RNA-seq</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include analysis, assays, detection, alignment, applications, atac-seq, barcode-based, cells.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1242/dev.202077" target="_blank" rel="noopener">Craniofacial developmental biology in the single-cell era</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://www.semanticscholar.org/paper/2ad32831f4d77dab1cd7e8392316a050b80fe4f1" target="_blank" rel="noopener">Graph Modeling for Genomics and Epidemiology</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1093/bioinformatics/btae300" target="_blank" rel="noopener">Scalable integration of multiomic single-cell data using generative adversarial networks</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include analysis, availability, booeshaghi, challenging, despite, informative, lance, methods.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2023.09.14.543267" target="_blank" rel="noopener">Universal preprocessing of single-cell genomics data</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://www.biorxiv.org/content/10.1101/2022.12.02.518832.abstract" target="_blank" rel="noopener">Accurate quantification of single-cell and single-nucleus RNA-seq transcripts using distinguishing flanking k-mers</a></td>
+              <td class="citation-year"><time datetime="2022">2022</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </article>
+  </body>
+</html>

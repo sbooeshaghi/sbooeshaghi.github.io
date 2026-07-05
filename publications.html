@@ -60,16 +60,36 @@
         );
       }
 
-      function formatPublication(publication) {
+      function slugify(value) {
+        return String(value)
+          .normalize("NFKD")
+          .replace(/[\u0300-\u036f]/g, "")
+          .toLowerCase()
+          .replace(/&/g, " and ")
+          .replace(/[^a-z0-9]+/g, "-")
+          .replace(/^-+|-+$/g, "");
+      }
+
+      function citationCountFor(publication, citedByData) {
+        return (
+          citedByData.works?.[slugify(publication.title)]?.cited_by?.length || 0
+        );
+      }
+
+      function formatPublication(publication, citedByData) {
         const summary = publication.summary.trim();
         const wordCount = summary.split(/\s+/).length;
+        const pageHref = `works/${slugify(publication.title)}.html`;
+        const citationCount = citationCountFor(publication, citedByData);
 
         return `
           <li class="publication-item">
             <article class="publication-card">
-              <h2 class="publication-title">${escapeHTML(
-                publication.title
-              )}</h2>
+              <h2 class="publication-title">
+                <a class="publication-page-link" href="${escapeHTML(
+                  pageHref
+                )}">${escapeHTML(publication.title)}</a>
+              </h2>
               <div class="publication-links" aria-label="Work links">
                 ${publication.links
                   .map((link) => {
@@ -89,8 +109,11 @@
                   })
                   .join("")}
               </div>
-              <p class="publication-summary">
+              <div class="publication-meta">
+                <span class="publication-citation-count">Citations: ${citationCount}</span>
                 <span class="publication-word-count">${wordCount} words</span>
+              </div>
+              <p class="publication-summary">
                 ${escapeHTML(summary)}
               </p>
             </article>
@@ -98,24 +121,33 @@
         `;
       }
 
-      function formatPublications(publications) {
-        return publications.map(formatPublication).join("");
+      function formatPublications(publications, citedByData) {
+        return publications
+          .map((publication) => formatPublication(publication, citedByData))
+          .join("");
       }
 
       document.addEventListener("DOMContentLoaded", () => {
-        fetch("db/publications.json", { cache: "no-store" })
-          .then((response) => response.json())
-          .then((publications) => {
+        Promise.all([
+          fetch("db/publications.json", { cache: "no-store" }).then(
+            (response) => response.json()
+          ),
+          fetch("db/cited-by.json", { cache: "no-store" }).then((response) =>
+            response.json()
+          ),
+        ]).then(([publications, citedByData]) => {
             document.getElementById("publicationList").innerHTML =
-              formatPublications(publications);
+              formatPublications(publications, citedByData);
           });
       });
     </script>
   </head>
   <body>
-    <p>
+    <nav class="breadcrumb" aria-label="Breadcrumb">
       <a href="index.html">Home</a>
-    </p>
+      <span aria-hidden="true">/</span>
+      <span class="breadcrumb-current">Works</span>
+    </nav>
     <h1>Works</h1>
     <ol reversed class="publication-list" id="publicationList"></ol>
   </body>

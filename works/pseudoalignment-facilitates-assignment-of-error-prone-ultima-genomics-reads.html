@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-6P1ZQ0CC8F"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-6P1ZQ0CC8F");
+    </script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="The expiration of Illumina patents has spurred the development of new sequencing assays and the launch of new sequencing companies. One of these is Ultima Genomics, which recently published articles showcasing its technology. We benchmarked and compared single-cell RNA-sequencing data generated with Illumina and Ultima Genomics sequencers and found some exaggerations in claims made by the company. Specifically, we found high error rates in and near homopolymer stretches in Ultima data that led to erroneous quantification of some genes. We propose pseudoalignment as a method to compensate for these errors and show that it outperforms standard read alignment for this application." />
+    <link rel="stylesheet" href="../styles.css" />
+    
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        document.querySelectorAll(".copy-bibtex-button").forEach((button) => {
+          button.addEventListener("click", async () => {
+            const box = button.closest(".bibtex-box");
+            const code = box ? box.querySelector("code") : null;
+            const bibtex = code ? code.textContent : "";
+            const previousText = button.textContent;
+            const markStatus = (text) => {
+              button.textContent = text;
+              window.setTimeout(() => {
+                button.textContent = previousText;
+              }, 1200);
+            };
+            const copyWithSelection = () => {
+              const textarea = document.createElement("textarea");
+              textarea.value = bibtex;
+              textarea.setAttribute("readonly", "");
+              textarea.style.position = "fixed";
+              textarea.style.left = "0";
+              textarea.style.top = "0";
+              textarea.style.width = "1px";
+              textarea.style.height = "1px";
+              textarea.style.opacity = "0";
+              textarea.style.pointerEvents = "none";
+              document.body.appendChild(textarea);
+              textarea.focus({ preventScroll: true });
+              textarea.select();
+              textarea.setSelectionRange(0, textarea.value.length);
+              const copied = document.execCommand("copy");
+              textarea.remove();
+              return copied;
+            };
+
+            try {
+              if (navigator.clipboard && navigator.clipboard.writeText) {
+                await navigator.clipboard.writeText(bibtex);
+                markStatus("Copied");
+                return;
+              }
+
+              if (copyWithSelection()) {
+                markStatus("Copied");
+                return;
+              }
+            } catch {
+              let copied = false;
+
+              try {
+                copied = copyWithSelection();
+              } catch {
+                copied = false;
+              }
+
+              if (copied) {
+                markStatus("Copied");
+                return;
+              }
+            }
+
+            markStatus("Copy failed");
+          });
+        });
+      });
+    </script>
+    <title>Pseudoalignment facilitates assignment of error-prone Ultima Genomics reads | Works | Sina Booeshaghi</title>
+  </head>
+  <body>
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="../index.html">Home</a>
+      <span aria-hidden="true">/</span>
+      <a href="../publications.html">Works</a>
+      <span aria-hidden="true">/</span>
+      <span class="breadcrumb-current" title="Pseudoalignment facilitates assignment of error-prone Ultima Genomics reads">Pseudoalignment facilitates assignment of error-prone Ultima Gen...</span>
+    </nav>
+    <article class="work-page">
+      <h1>Pseudoalignment facilitates assignment of error-prone Ultima Genomics reads</h1>
+      <div class="publication-links work-links" aria-label="Work links">
+        
+        <a class="publication-link" href="https://doi.org/10.1101/2022.06.04.494845" target="_blank" rel="noopener">
+          <span>bioRxiv</span>
+          <time datetime="2022-08-29">2022-08-29</time>
+        </a>
+      </div>
+
+      <section>
+        <h2>Summary</h2>
+        <p>The expiration of Illumina patents has spurred the development of new sequencing assays and the launch of new sequencing companies. One of these is Ultima Genomics, which recently published articles showcasing its technology. We benchmarked and compared single-cell RNA-sequencing data generated with Illumina and Ultima Genomics sequencers and found some exaggerations in claims made by the company. Specifically, we found high error rates in and near homopolymer stretches in Ultima data that led to erroneous quantification of some genes. We propose pseudoalignment as a method to compensate for these errors and show that it outperforms standard read alignment for this application.</p>
+      </section>
+
+      <section>
+        <h2>BibTeX</h2>
+        
+        <section class="bibtex-entry">
+          <h3>bioRxiv</h3>
+          <div class="bibtex-box">
+            <button
+              class="copy-bibtex-button"
+              type="button"
+              aria-label="Copy BibTeX for bioRxiv"
+            >
+              Copy BibTeX
+            </button>
+            <pre><code>@article{Booeshaghi_2022,
+  TITLE     = {Pseudoalignment facilitates assignment of error-prone Ultima Genomics reads},
+  URL       = {http://dx.doi.org/10.1101/2022.06.04.494845},
+  DOI       = {10.1101/2022.06.04.494845},
+  PUBLISHER = {openRxiv},
+  AUTHOR    = {Booeshaghi, A. Sina and Pachter, Lior},
+  YEAR      = {2022}
+}</code></pre>
+          </div>
+        </section>
+      </section>
+
+      <section>
+        <h2>Citing Works</h2>
+        <p class="citation-source-note">
+          7 citing works found in citation data generated 2026-07-05. Citation relationships are sourced from OpenAlex, Semantic Scholar, Google Scholar.
+        </p>
+        <table class="citation-table">
+          <thead>
+            <tr>
+              <th>Title</th>
+              <th>Year</th>
+              <th>Summary</th>
+            </tr>
+          </thead>
+          <tbody>
+            
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.64898/2026.03.11.710846" target="_blank" rel="noopener">Multi-modal benchmarking of the Ultima UG100 and Illumina NovaSeq sequencing platforms using clinically relevant FFPE tissues</a></td>
+              <td class="citation-year"><time datetime="2026">2026</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include against, assignments, benchmarking, biological, chemistry, clinically, complex, conclusions.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1093/bib/bbad248" target="_blank" rel="noopener">From contigs towards chromosomes: automatic improvement of long read assemblies (ILRA)</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include address, around, booeshaghi, breakthroughs, chromosomes, errors, generate, genomics.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2022.10.09.511501" target="_blank" rel="noopener">Quantifying orthogonal barcodes for sequence census assays</a></td>
+              <td class="citation-year"><time datetime="2022">2022</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1093/bioadv/vbad181" target="_blank" rel="noopener">Quantifying orthogonal barcodes for sequence census assays</a></td>
+              <td class="citation-year"><time datetime="2022">2022</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include booeshaghi, homopolymers, pachter, sequencing, alleviate, distribution, errors, fewer.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1089/genbio.2022.29050.jle" target="_blank" rel="noopener">Ultima Unveiling: Big Black Box Sparks Preprint Debate</a></td>
+              <td class="citation-year"><time datetime="2022">2022</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://www.biorxiv.org/content/10.1101/2021.07.30.454413.abstract" target="_blank" rel="noopener">From contigs to chromosomes: automatic Improvement of Long Read Assemblies (ILRA)</a></td>
+              <td class="citation-year"><time datetime="2021">2021</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2021.07.30.454413" target="_blank" rel="noopener">From contigs towards chromosomes: automatic Improvement of Long Read Assemblies (ILRA)</a></td>
+              <td class="citation-year"><time datetime="2021">2021</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </article>
+  </body>
+</html>

@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-6P1ZQ0CC8F"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-6P1ZQ0CC8F");
+    </script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="The IGVF Consortium describes approaches and resources for understanding how genomic variation affects molecular and cellular function." />
+    <link rel="stylesheet" href="../styles.css" />
+    
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        document.querySelectorAll(".copy-bibtex-button").forEach((button) => {
+          button.addEventListener("click", async () => {
+            const box = button.closest(".bibtex-box");
+            const code = box ? box.querySelector("code") : null;
+            const bibtex = code ? code.textContent : "";
+            const previousText = button.textContent;
+            const markStatus = (text) => {
+              button.textContent = text;
+              window.setTimeout(() => {
+                button.textContent = previousText;
+              }, 1200);
+            };
+            const copyWithSelection = () => {
+              const textarea = document.createElement("textarea");
+              textarea.value = bibtex;
+              textarea.setAttribute("readonly", "");
+              textarea.style.position = "fixed";
+              textarea.style.left = "0";
+              textarea.style.top = "0";
+              textarea.style.width = "1px";
+              textarea.style.height = "1px";
+              textarea.style.opacity = "0";
+              textarea.style.pointerEvents = "none";
+              document.body.appendChild(textarea);
+              textarea.focus({ preventScroll: true });
+              textarea.select();
+              textarea.setSelectionRange(0, textarea.value.length);
+              const copied = document.execCommand("copy");
+              textarea.remove();
+              return copied;
+            };
+
+            try {
+              if (navigator.clipboard && navigator.clipboard.writeText) {
+                await navigator.clipboard.writeText(bibtex);
+                markStatus("Copied");
+                return;
+              }
+
+              if (copyWithSelection()) {
+                markStatus("Copied");
+                return;
+              }
+            } catch {
+              let copied = false;
+
+              try {
+                copied = copyWithSelection();
+              } catch {
+                copied = false;
+              }
+
+              if (copied) {
+                markStatus("Copied");
+                return;
+              }
+            }
+
+            markStatus("Copy failed");
+          });
+        });
+      });
+    </script>
+    <title>Deciphering the impact of genomic variation on function | Works | Sina Booeshaghi</title>
+  </head>
+  <body>
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="../index.html">Home</a>
+      <span aria-hidden="true">/</span>
+      <a href="../publications.html">Works</a>
+      <span aria-hidden="true">/</span>
+      <span class="breadcrumb-current" title="Deciphering the impact of genomic variation on function">Deciphering the impact of genomic variation on function</span>
+    </nav>
+    <article class="work-page">
+      <h1>Deciphering the impact of genomic variation on function</h1>
+      <div class="publication-links work-links" aria-label="Work links">
+        
+        <a class="publication-link" href="https://doi.org/10.1038/s41586-024-07510-0" target="_blank" rel="noopener">
+          <span>Nature</span>
+          <time datetime="2024-09-05">2024-09-05</time>
+        </a>
+      </div>
+
+      <section>
+        <h2>Summary</h2>
+        <p>The IGVF Consortium describes approaches and resources for understanding how genomic variation affects molecular and cellular function.</p>
+      </section>
+
+      <section>
+        <h2>BibTeX</h2>
+        
+        <section class="bibtex-entry">
+          <h3>Nature</h3>
+          <div class="bibtex-box">
+            <button
+              class="copy-bibtex-button"
+              type="button"
+              aria-label="Copy BibTeX for Nature"
+            >
+              Copy BibTeX
+            </button>
+            <pre><code>@article{2024, title={Deciphering the impact of genomic variation on function}, volume={633}, ISSN={1476-4687}, url={http://dx.doi.org/10.1038/s41586-024-07510-0}, DOI={10.1038/s41586-024-07510-0}, number={8028}, journal={Nature}, publisher={Springer Science and Business Media LLC}, author={ and Engreitz, Jesse M. and Lawson, Heather A. and Singh, Harinder and Starita, Lea M. and Hon, Gary C. and Carter, Hannah and Sahni, Nidhi and Reddy, Timothy E. and Lin, Xihong and Li, Yun and Munshi, Nikhil V. and Chahrour, Maria H. and Boyle, Alan P. and Hitz, Benjamin C. and Mortazavi, Ali and Craven, Mark and Mohlke, Karen L. and Pinello, Luca and Wang, Ting and Kundaje, Anshul and Yue, Feng and Cody, Sarah and Farrell, Nina P. and Love, Michael I. and Muffley, Lara A. and Pazin, Michael J. and Reese, Fairlie and Van Buren, Eric and Dey, Kushal K. and Kircher, Martin and Ma, Jian and Radivojac, Predrag and Balliu, Brunilda and Williams, Brian A. and Huangfu, Danwei and Park, Chong Y. and Quertermous, Thomas and Das, Jishnu and Calderwood, Michael A. and Fowler, Douglas M. and Vidal, Marc and Ferreira, Lucas and Mooney, Sean D. and Pejaver, Vikas and Zhao, Jingjing and Gazal, Steven and Koch, Evan and Reilly, Steven K. and Sunyaev, Shamil and Carpenter, Anne E. and Buenrostro, Jason D. and Leslie, Christina S. and Savage, Rachel E. and Giric, Stefanija and Luo, Chongyuan and Plath, Kathrin and Barrera, Alejandro and Schubach, Max and Gschwind, Andreas R. and Moore, Jill E. and Ahituv, Nadav and Yi, S. Stephen and Hallgrimsdottir, Ingileif and Gaulton, Kyle J. and Sakaue, Saori and Booeshaghi, Sina and Mattei, Eugenio and Nair, Surag and Pachter, Lior and Wang, Austin T. and Shendure, Jay and Agarwal, Vikram and Blair, Andrew and Chalkiadakis, Theofilos and Chardon, Florence M. and Dash, Pyaree M. and Deng, Chengyu and Hamazaki, Nobuhiko and Keukeleire, Pia and Kubo, Connor and Lalanne, Jean-Benoît and Maass, Thorben and Martin, Beth and McDiarmid, Troy A. and Nobuhara, Mai and Page, Nicholas F. and Regalado, Sam and Sims, Jasmine and Ushiki, Aki and Best, Sabrina M. and Boyle, Gabe and Camp, Nathan and Casadei, Silvia and Da, Estelle Y. and Dawood, Moez and Dawson, Samantha C. and Fayer, Shawn and Hamm, Audrey and James, Richard G. and Jarvik, Gail P. and McEwen, Abbye E. and Moore, Nick and Pendyala, Sriram and Popp, Nicholas A. and Post, Mason and Rubin, Alan F. and Smith, Nahum T. and Stone, Jeremy and Tejura, Malvika and Wang, Ziyu R. and Wheelock, Melinda K. and Woo, Ivan and Zapp, Brendan D. and Amgalan, Dulguun and Aradhana, Aradhana and Arana, Sophia M. and Bassik, Michael C. and Bauman, Julia R. and Bhattacharya, Asmita and Cai, Xiangmeng Shawn and Chen, Ziwei and Conley, Stephanie and Deshpande, Salil and Doughty, Benjamin R. and Du, Peter P. and Galante, James A. and Gifford, Casey and Greenleaf, William J. and Guo, Katherine and Gupta, Revant and Isobe, Sarasa and Jagoda, Evelyn and Jain, Nimit and Jones, Hank and Kang, Helen Y. and Kim, Samuel H. and Kim, YeEun and Klemm, Sandy and Kundu, Ramen and Kundu, Soumya and Lago-Docampo, Mauro and Lee-Yow, Yannick C. and Levin-Konigsberg, Roni and Li, Daniel Y. and Lindenhofer, Dominik and Ma, X. Rosa and Marinov, Georgi K. and Martyn, Gabriella E. and McCreery, Chloe V. and Metzl-Raz, Eyal and Monteiro, Joao P. and Montgomery, Michael T. and Mualim, Kristy S. and Munger, Chad and Munson, Glen and Nguyen, Tri C. and Nguyen, Trieu and Palmisano, Brian T. and Pampari, Anusri and Rabinovitch, Marlene and Ramste, Markus and Ray, Judhajeet and Roy, Kevin R. and Rubio, Oriane M. and Schaepe, Julia M. and Schnitzler, Gavin and Schreiber, Jacob and Sharma, Disha and Sheth, Maya U. and Shi, Huitong and Singh, Vasundhara and Sinha, Riya and Steinmetz, Lars M. and Tan, Jason and Tan, Anthony and Tycko, Josh and Valbuena, Raeline C. and Amiri, Valeh Valiollah Pour and van Kooten, Mariëlle J. F. M. and Vaughan-Jackson, Alun and Venida, Anthony and Weldy, Chad S. and Worssam, Matthew D. and Xia, Fan and Yao, David and Zeng, Tony and Zhao, Quanyi and Zhou, Ronghao and Chen, Zitong Sam and Cimini, Beth A. and Coppin, Georges and Coté, Atina G. and Haghighi, Marzieh and Hao, Tong and Hill, David E. and Lacoste, Jessica and Laval, Florent and Reno, Chloe and Roth, Frederick P. and Singh, Shantanu and Spirohn-Fitzgerald, Kerstin and Taipale, Mikko and Teelucksingh, Tanisha and Tixhon, Maxime and Yadav, Anupama and Yang, Zhipeng and Kraus, W. Lee and Armendariz, Daniel A. and Dederich, Ashley E. and Gogate, Ashlesha and El Hayek, Lauretta and Goetsch, Sean C. and Kaur, Kiran and Kim, Hyung Bum and McCoy, Melissa K. and Nzima, Mpathi Z. and Pinzón-Arteaga, Carlos A. and Posner, Bruce A. and Schmitz, Daniel A. and Sivakumar, Sushama and Sundarrajan, Anjana and Wang, Lei and Wang, Yihan and Wu, Jun and Xu, Lin and Xu, Jian and Yu, Leqian and Zhang, Yanfeng and Zhao, Huan and Zhou, Qinbo and Won, Hyejung and Bell, Jessica L. and Broadaway, K. Alaine and Degner, Katherine N. and Etheridge, Amy S. and Koller, Beverly H. and Mah, Won and Mu, Wancen and Ritola, Kimberly D. and Rosen, Jonathan D. and Schoenrock, Sarah A. and Sharp, Rachel A. and Bauer, Daniel and Lettre, Guillaume and Sherwood, Richard and Becerra, Basheer and Blaine, Logan J. and Che, Eric and Francoeur, Matthew J. and Gibbs, Ellie N. and Kim, Nahye and King, Emily M. and Kleinstiver, Benjamin P. and Lecluze, Estelle and Li, Zhijian and Patel, Zain M. and Phan, Quang Vinh and Ryu, Jayoung and Starr, Marlena L. and Wu, Ting and Gersbach, Charles A. and Crawford, Gregory E. and Allen, Andrew S. and Majoros, William H. and Iglesias, Nahid and Rai, Ruhi and Venukuttan, Revathy and Li, Boxun and Anglen, Taylor and Bounds, Lexi R. and Hamilton, Marisa C. and Liu, Siyan and McCutcheon, Sean R. and McRoberts Amador, Christian D. and Reisman, Samuel J. and ter Weele, Maria A. and Bodle, Josephine C. and Streff, Helen L. and Siklenka, Keith and Strouse, Kari and Bernstein, Bradley E. and Babu, Juliana and Corona, Guillermo Barreto and Dong, Kevin and Duarte, Fabiana M. and Durand, Neva C. and Epstein, Charles B. and Fan, Kaili and Gaskell, Elizabeth and Hall, Amelia W. and Ham, Alexandra M. and Knudson, Mei K. and Shoresh, Noam and Wekhande, Siddarth and White, Cassandra M. and Xi, Wang and Satpathy, Ansuman T. and Corces, M. Ryan and Chang, Serena H. and Chin, Iris M. and Gardner, James M. and Gardell, Zachary A. and Gutierrez, Jacob C. and Johnson, Alia W. and Kampman, Lucas and Kasowski, Maya and Lareau, Caleb A. and Liu, Vincent and Ludwig, Leif S. and McGinnis, Christopher S. and Menon, Shreya and Qualls, Anita and Sandor, Katalin and Turner, Adam W. and Ye, Chun J. and Yin, Yajie and Zhang, Wenxi and Wold, Barbara J. and Carilli, Maria and Cheong, Dayeon and Filibam, Ghassan and Green, Kim and Kawauchi, Shimako and Kim, Charlene and Liang, Heidi and Loving, Rebekah and Luebbert, Laura and MacGregor, Grant and Merchan, Angel G. and Rebboah, Elisabeth and Rezaie, Narges and Sakr, Jasmine and Sullivan, Delaney K. and Swarna, Nikki and Trout, Diane and Upchurch, Sean and Weber, Ryan and Castro, Christopher P. and Chou, Elysia and Feng, Fan and Guerra, Andre and Huang, Yuanhao and Jiang, Linghua and Liu, Jie and Mills, Ryan E. and Qian, Weizhou and Qin, Tingting and Sartor, Maureen A. and Sherpa, Rintsen N. and Wang, Jinhao and Wang, Yiqun and Welch, Joshua D. and Zhang, Zhenhao and Zhao, Nanxiang and Mukherjee, Sayan and Page, C. David and Clarke, Shannon and Doty, Richard W. and Duan, Yuncheng and Gordan, Raluca and Ko, Kuei-Yueh and Li, Shengyu and Li, Boyao and Thomson, Alexander and Raychaudhuri, Soumya and Price, Alkes and Ali, Thahmina A. and Dey, Kushal K. and Durvasula, Arun and Kellis, Manolis and Iakoucheva, Lilia M. and Kakati, Tulika and Chen, Yile and Benazouz, Mariam and Jain, Shantanu and Zeiberg, Daniel and De Paolis Kaluza, M. Clara and Velyunskiy, Michelle and Gasch, Audrey and Huang, Kunling and Jin, Yiyang and Lu, Qiongshi and Miao, Jiacheng and Ohtake, Michael and Scopel, Eduardo and Steiner, Robert D. and Sverchkov, Yuriy and Weng, Zhiping and Garber, Manuel and Fu, Yu and Haas, Natalie and Li, Xihao and Phalke, Nishigandha and Shan, Shuo C. and Shedd, Nicole and Yu, Tianxiong and Zhang, Yi and Zhou, Hufeng and Battle, Alexis and Jerby, Livnat and Kotler, Eran and Kundu, Soumya and Marderstein, Andrew R. and Montgomery, Stephen B. and Nigam, AkshatKumar and Padhi, Evin M. and Patel, Aman and Pritchard, Jonathan and Raine, Ivy and Ramalingam, Vivekanandan and Rodrigues, Kameron B. and Schreiber, Jacob M. and Singhal, Arpita and Sinha, Riya and Wang, Austin T. and Abundis, Marisa and Bisht, Deepa and Chakraborty, Trirupa and Fan, Jingyu and Hall, David R. and Rarani, Zarifeh H. and Jain, Abhinav K. and Kaundal, Babita and Keshari, Swapnil and McGrail, Daniel and Pease, Nicholas A. and Yi, Vivian F. and Wu, Hao and Kannan, Sreeram and Song, Hongjun and Cai, Jingli and Gao, Ziyue and Kurzion, Ronni and Leu, Julia I. and Li, Fan and Liang, Dongming and Ming, Guo-li and Musunuru, Kiran and Qiu, Qi and Shi, Junwei and Su, Yijing and Tishkoff, Sarah and Xie, Ning and Yang, Qian and Yang, Wenli and Zhang, Hongjie and Zhang, Zhijian and Beer, Michael A. and Hadjantonakis, Anna-Katerina and Adeniyi, Sharon and Cho, Hyein and Cutler, Ronald and Glenn, Rachel A. and Godovich, David and Hu, Nan and Jovanic, Svetlana and Luo, Renhe and Oh, Jin Woo and Razavi-Mohseni, Milad and Shigaki, Dustin and Sidoli, Simone and Vierbuchen, Thomas and Wang, Xianming and Williams, Breanna and Yan, Jielin and Yang, Dapeng and Yang, Yunxiao and Sander, Maike and Gaulton, Kyle J. and Ren, Bing and Bartosik, Weronika and Indralingam, Hannah S. and Klie, Adam and Mummey, Hannah and Okino, Mei-Lin and Wang, Gaowei and Zemke, Nathan R. and Zhang, Kai and Zhu, Han and Zaitlen, Noah and Ernst, Jason and Langerman, Justin and Li, Terence and Sun, Yu and Rudensky, Alexander Y. and Periyakoil, Preethi K. and Gao, Vianne R. and Smith, Melanie H. and Thomas, Norman M. and Donlin, Laura T. and Lakhanpal, Amit and Southard, Kaden M. and Ardy, Rico C. and Cherry, J. Michael and Gerstein, Mark B. and Andreeva, Kalina and Assis, Pedro R. and Borsari, Beatrice and Douglass, Eric and Dong, Shengcheng and Gabdank, Idan and Graham, Keenan and Jolanki, Otto and Jou, Jennifer and Kagda, Meenakshi S. and Lee, Jin-Wook and Li, Mingjie and Lin, Khine and Miyasato, Stuart R. and Rozowsky, Joel and Small, Corinn and Spragins, Emma and Tanaka, Forrest Y. and Whaling, Ian M. and Youngworth, Ingrid A. and Sloan, Cricket A. and Belter, Eddie and Chen, Xintong and Chisholm, Rex L. and Dickson, Patricia and Fan, Changxu and Fulton, Lucinda and Li, Daofeng and Lindsay, Tina and Luan, Yu and Luo, Yuan and Lyu, Huijue and Ma, Xiaowen and Macias-Velasco, Juan and Miga, Karen H. and Quaid, Kara and Stitziel, Nathan and Stranger, Barbara E. and Tomlinson, Chad and Wang, Juan and Zhang, Wenjin and Zhang, Bo and Zhao, Guoyan and Zhuo, Xiaoyu and Brennand, Kristen and Ciccia, Alberto and Hayward, Samuel B. and Huang, Jen-Wei and Leuzzi, Giuseppe and Taglialatela, Angelo and Thakar, Tanay and Vaitsiankova, Alina and Dey, Kushal K. and Ali, Thahmina A. and Kim, Artem and Grimes, H. Leighton and Salomonis, Nathan and Gupta, Rajat and Fang, Shi and Lee-Kim, Vivian and Heinig, Matthias and Losert, Corinna and Jones, Thouis R. and Donnard, Elisa and Murphy, Maddie and Roberts, Elizabeth and Song, Susie and Mostafavi, Sara and Sasse, Alexander and Spiro, Anna and Pennacchio, Len A. and Kato, Momoe and Kosicki, Michael and Mannion, Brandon and Slaven, Neil and Visel, Axel and Pollard, Katherine S. and Drusinsky, Shiron and Whalen, Sean and Ray, John and Harten, Ingrid A. and Ho, Ching-Huang and Sanjana, Neville E. and Caragine, Christina and Morris, John A. and Seruggia, Davide and Kutschat, Ana Patricia and Wittibschlager, Sandra and Xu, Han and Fu, Rongjie and He, Wei and Zhang, Liang and Osorio, Daniel and Bly, Zo and Calluori, Stephanie and Gilchrist, Daniel A. and Hutter, Carolyn M. and Morris, Stephanie A. and Samer, Ella K.}, year={2024}, month=Sept, pages={47–57} }</code></pre>
+          </div>
+        </section>
+      </section>
+
+      <section>
+        <h2>Citing Works</h2>
+        <p class="citation-source-note">
+          110 citing works found in citation data generated 2026-07-05. Citation relationships are sourced from OpenAlex, Semantic Scholar, Google Scholar.
+        </p>
+        <table class="citation-table">
+          <thead>
+            <tr>
+              <th>Title</th>
+              <th>Year</th>
+              <th>Summary</th>
+            </tr>
+          </thead>
+          <tbody>
+            
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.64898/2026.02.14.705848" target="_blank" rel="noopener">A scalable approach to resolving variants of uncertain significance</a></td>
+              <td class="citation-year"><time datetime="2026">2026</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.3390/genes17070763" target="_blank" rel="noopener">Advances in Functional Genomics for Human Health</a></td>
+              <td class="citation-year"><time datetime="2026">2026</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1093/genetics/iyag024" target="_blank" rel="noopener">Beyond Mendel: a call to revisit the genotype–phenotype map through new experimental paradigms</a></td>
+              <td class="citation-year"><time datetime="2026">2026</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1038/s41569-025-01223-1" target="_blank" rel="noopener">Cardiac epigenome in heart development and disease</a></td>
+              <td class="citation-year"><time datetime="2026">2026</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1002/advs.202516332" target="_blank" rel="noopener">Causal Prediction of TP53 Variant Pathogenicity Using a Perturbation‐Informed Protein Language Model</a></td>
+              <td class="citation-year"><time datetime="2026">2026</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include causal, challenging, complexity, crucial, diseases, genetic, highly, identifying.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1038/s41588-026-02619-6" target="_blank" rel="noopener">Decoding common and rare noncoding variant effects across cellular and developmental contexts</a></td>
+              <td class="citation-year"><time datetime="2026">2026</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1093/bib/bbag311" target="_blank" rel="noopener">Decoding disease and therapy through multiomics integration and systems analysis</a></td>
+              <td class="citation-year"><time datetime="2026">2026</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include analyses, capture, cellular, changes, dna-level, downstream, effects, expression.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.64898/2026.02.15.26346353" target="_blank" rel="noopener">Distinguishing causal from tagging enhancers using single-cell multiome data</a></td>
+              <td class="citation-year"><time datetime="2026">2026</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1093/bioinformatics/btag066" target="_blank" rel="noopener">Dogme: a nextflow pipeline for reprocessing nanopore RNA and DNA modifications</a></td>
+              <td class="citation-year"><time datetime="2026">2026</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1038/s41588-025-02487-6" target="_blank" rel="noopener">Engineering AI co-scientists for statistical genetics applications</a></td>
+              <td class="citation-year"><time datetime="2026">2026</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1016/j.xhgg.2026.100630" target="_blank" rel="noopener">Functional genomic analysis reveals HAVCR1 as the key regulator of 5q33.3 locus linked to hyperlipidemia</a></td>
+              <td class="citation-year"><time datetime="2026">2026</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include advancing, critical, efforts, findings, genomic, medicine, personalized, targets.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.64898/2026.03.03.708783" target="_blank" rel="noopener">Genome-wide maps of transcription factor footprints identify noncoding variants rewiring gene regulatory networks</a></td>
+              <td class="citation-year"><time datetime="2026">2026</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.64898/2026.03.30.715055" target="_blank" rel="noopener">High-throughput biochemical phenotyping of SHP2 variants reveals the molecular basis of diseases and allosteric drug inhibition</a></td>
+              <td class="citation-year"><time datetime="2026">2026</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.64898/2026.01.11.698865" target="_blank" rel="noopener">High-throughput mapping of 6,888 RAD51D variants identifies distinct biochemical functions needed for homologous recombination and olaparib response</a></td>
+              <td class="citation-year"><time datetime="2026">2026</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1016/j.ajhg.2026.02.009" target="_blank" rel="noopener">Higher eQTL power reveals signals that boost GWAS colocalization</a></td>
+              <td class="citation-year"><time datetime="2026">2026</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.64898/2026.05.26.726248" target="_blank" rel="noopener">Human Proteome-wide Mechanistic Interpretation of Missense Variants through Protein Feature Enrichment Score</a></td>
+              <td class="citation-year"><time datetime="2026">2026</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.64898/2026.04.02.716195" target="_blank" rel="noopener">Hybrid crosses reveal a cell-type-specific landscape of mouse regulatory variation</a></td>
+              <td class="citation-year"><time datetime="2026">2026</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include variation, function, genomic, central, consortium, downstream, expression, humans.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1016/j.cels.2026.101618" target="_blank" rel="noopener">Immune BioGraphy: A tale of graphical approaches in systems and virtual immunology</a></td>
+              <td class="citation-year"><time datetime="2026">2026</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1038/s41525-026-00552-5" target="_blank" rel="noopener">Inherited burden for disease predisposition in diverse populations</a></td>
+              <td class="citation-year"><time datetime="2026">2026</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include accurate, carrier-frequency, cationofnon-coding, consortiumwillimprovetheclassi, efforts, estimates, function, genomic.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1016/j.immuni.2026.04.002" target="_blank" rel="noopener">Mechanisms of inflammatory bowel diseases: Insights from human genetics and chemical biology</a></td>
+              <td class="citation-year"><time datetime="2026">2026</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1038/s41467-026-69918-8" target="_blank" rel="noopener">Nucleotide-resolution mapping of regulatory elements via allelic readout of tiled base editing</a></td>
+              <td class="citation-year"><time datetime="2026">2026</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include context, regulatory, across, chromatin, crispr-based, developmental, disease, explore.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.64898/2026.05.22.727199" target="_blank" rel="noopener">PerturbPlan: An analytical framework for designing Perturb-seq experiments</a></td>
+              <td class="citation-year"><time datetime="2026">2026</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include consortium, alleles, assays, cells, central, consortia, crispr, encode4.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.64898/2026.03.04.709254" target="_blank" rel="noopener">Predicting how perturbations reshape cellular trajectories with PerturbGen</a></td>
+              <td class="citation-year"><time datetime="2026">2026</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1038/s41576-025-00915-1" target="_blank" rel="noopener">Proteoform medicine: characterizing and targeting protein forms in human disease</a></td>
+              <td class="citation-year"><time datetime="2026">2026</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1016/j.gde.2025.102431" target="_blank" rel="noopener">Recent advances in the neurogenomics of autism spectrum disorder</a></td>
+              <td class="citation-year"><time datetime="2026">2026</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.64898/2026.03.07.710282" target="_blank" rel="noopener">Reprogramming of neuronal genome function and phenotype by astrocytes</a></td>
+              <td class="citation-year"><time datetime="2026">2026</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.64898/2026.04.20.719714" target="_blank" rel="noopener">Retracing and rewriting the evolutionary trajectories of mammalian developmental enhancers</a></td>
+              <td class="citation-year"><time datetime="2026">2026</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1016/j.xgen.2025.101108" target="_blank" rel="noopener">Systematic cell-type resolved transcriptomes of 8 tissues in 8 lab and wild-derived mouse strains capture global and local expression variation</a></td>
+              <td class="citation-year"><time datetime="2026">2026</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1056/evidra2400377" target="_blank" rel="noopener">The Landscape of Genetically Driven Immune Disorders</a></td>
+              <td class="citation-year"><time datetime="2026">2026</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1079/9781800626324.0009" target="_blank" rel="noopener">The Theileria parva Genome</a></td>
+              <td class="citation-year"><time datetime="2026">2026</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1016/j.gde.2025.102374" target="_blank" rel="noopener">Addressing missing context in regulatory variation across primate evolution</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include functional, genomic, regulatory, accessibility, across, annotate, assays, chromatin.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.71423/aimed.20250102" target="_blank" rel="noopener">Advancements in Gene Structure Prediction:Innovation and Prospects of Deep Learning Models Apply in Multi-species</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1016/j.ajhg.2025.01.018" target="_blank" rel="noopener">An evolving understanding of multiple causal variants underlying genetic association signals</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2025.09.16.676677" target="_blank" rel="noopener">An unbiased survey of distal element-gene regulatory interactions with direct-capture targeted Perturb-seq</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1016/j.jgg.2025.03.013" target="_blank" rel="noopener">Annotation and assessment of functional variants in livestock through epigenomic data</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1145/3711896.3736846" target="_blank" rel="noopener">Are Your Fairness Metrics Accurate? A Semi-Supervised Approach to Improving Fairness Estimates Under Sample Selection Bias</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1016/j.stemcr.2025.102713" target="_blank" rel="noopener">Benchmarking and optimizing Perturb-seq in differentiating human pluripotent stem cells</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2025.01.21.633969" target="_blank" rel="noopener">Benchmarking and optimizing Perturb-seq in differentiating human pluripotent stem cells</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1016/j.gim.2025.101402" target="_blank" rel="noopener">Calibration of additional computational tools expands ClinGen recommendation options for variant classification with PP3/BP4 criteria</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2025.01.22.634424" target="_blank" rel="noopener">Causal modeling of gene effects from regulators to programs to traits: integration of genetic associations and Perturb-seq</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1038/s41586-025-09866-3" target="_blank" rel="noopener">Causal modelling of gene effects from regulators to programs to traits</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include cells, although, critical, erythrocyte, expect, experimental, framework, generation.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2025.04.23.649973" target="_blank" rel="noopener">Cell cycle-coupled transcriptional network orchestrates human B cell fate bifurcation</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2025.04.23.650307" target="_blank" rel="noopener">cellSTAAR: Incorporating single-cell-sequencing-based functional data to boost power in rare variant association testing of non-coding regions</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1038/s41592-025-02919-5" target="_blank" rel="noopener">cellSTAAR: incorporating single-cell-sequencing-based functional data to boost power in rare variant association testing of noncoding regions</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include approaches, based, coming, computational, consortium, efforts, element-to-gene, experiments.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1038/s41586-025-09096-7" target="_blank" rel="noopener">Comprehensive benchmarking of somatic mutation detection by the SMaHT Network</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include consortium, variation, consequences, developmental, understand, access, assemblies, cells.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.3390/dna5040057" target="_blank" rel="noopener">CRISPR-Based Transcriptional Regulation: Technologies, Applications, and Future Directions</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include genomic, impact, variation, beyond, characterize, clinical, component, consortium.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1016/j.tcb.2025.05.001" target="_blank" rel="noopener">Decoding human cardiovascular development and disease through single-cell transcriptomic and epigenomic profiling</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2025.05.08.652986" target="_blank" rel="noopener">Developing a general AI model for integrating diverse genomic modalities and comprehensive genomic knowledge</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include genomic, model, architecture, collection, datasets, developed, diverse, extensive.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1093/nar/gkaf1269" target="_blank" rel="noopener">Developing a general AI model for integrating diverse genomic modalities and comprehensive genomic knowledge</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1038/s41574-025-01132-w" target="_blank" rel="noopener">Diabetes mellitus polygenic risk scores: heterogeneity and clinical translation</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2025.04.15.25325899" target="_blank" rel="noopener">Dissecting the genetic complexity of myalgic encephalomyelitis/chronic fatigue syndrome via deep learning-powered genome analysis</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include variants, across, challenge, coding, compared, conditions, different, dynamics.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2025.06.04.657941" target="_blank" rel="noopener">Dogme: A nextflow pipeline for reprocessing nanopore RNA and DNA modifications</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include large, analyzed, consortia, encode, number, process, repeat, samples.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1016/j.ijbiomac.2025.140089" target="_blank" rel="noopener">dsDAP: An efficient method for high-abundance DNA-encoded library construction in mammalian cells</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1093/nar/gkaf1217" target="_blank" rel="noopener">FAVOR 2.0: A reengineered functional annotation of variants online resource for interpreting genomic variation</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include atlas, candidate, catlas, chromatin-accessibility, comprehensive, contributed, crispr, database.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1016/j.xhgg.2025.100532" target="_blank" rel="noopener">Fine mapping regulatory variants by characterizing native CpG methylation with nanopore long-read sequencing</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2025.04.29.651326" target="_blank" rel="noopener">Gene-based calibration of high-throughput functional assays for clinical variant classification</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include assays, clinic, deployed, evidence, functional, generate, including, increasing.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1016/j.molmed.2025.02.002" target="_blank" rel="noopener">Genetic causes of obesity: mapping a path forward</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1093/nargab/lqaf157" target="_blank" rel="noopener">Genome region aware CADD thresholds for noncoding variant prioritization</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1007/s00018-025-05936-x" target="_blank" rel="noopener">Genomic variation of human microRNAs and its association with functional features</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include across, biological, cellular, changes, diversity, driven, functions, genomic.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2025.08.05.668745" target="_blank" rel="noopener">Higher eQTL power reveals signals that boost GWAS colocalization</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1158/0008-5472.can-25-0482" target="_blank" rel="noopener">Illuminating the Noncoding Genome in Cancer Using Artificial Intelligence</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include genomic, consortium, function, impact, variation, across, article, cellular.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.48550/arxiv.2509.20702" target="_blank" rel="noopener">Incorporating LLM Embeddings for Variation Across the Human Genome</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include consortium, embeddings, international, genetic, variants, million, schizophrenia, dataset.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1007/978-3-031-85600-6_1" target="_blank" rel="noopener">Introduction to Python</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1093/eurheartj/ehaf581" target="_blank" rel="noopener">LIPA , a risk locus for coronary artery disease: decoding the variant-to-function relationship</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1142/9789819824755_0053" target="_blank" rel="noopener">Literature-driven extraction and computational prediction of causal statements linking genetic variants to biological processes, pathways and phenotypes</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include causal, along, biological, cannot, disease, downstream, establish, events.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1371/journal.pcbi.1013692" target="_blank" rel="noopener">Long-read sequencing transcriptome quantification with lr-kallisto</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2025.02.18.638922" target="_blank" rel="noopener">Mapping the regulatory effects of common and rare non-coding variants across cellular and developmental contexts in the brain and heart</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include causal, confirming, consortium, cost-intensive, effects, essential, experiments, perturbation.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1186/s13059-025-03476-y" target="_blank" rel="noopener">MaveDB 2024: a curated community database with over seven million variant effects from multiplexed functional assays</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2025.11.15.25336228" target="_blank" rel="noopener">MaveMD: A functional data resource for genomic medicine</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2025.06.10.658806" target="_blank" rel="noopener">MitoDelta: identifying mitochondrial DNA deletions at cell-type resolution from single-cell RNA sequencing data</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1186/s12864-025-11931-0" target="_blank" rel="noopener">MitoDelta: identifying mitochondrial DNA deletions at cell-type resolution from single-cell RNA sequencing data</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include alternative, approaches, developed, dogma-seq, including, issue, maester, mitosv-seq.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.64898/2025.12.03.692191" target="_blank" rel="noopener">MosaicSim: A Novel Mosaic Variant Simulator Reveals Diminishing Returns of Ultra-High Coverage for Mosaic Variant Detection</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1038/s41576-025-00870-x" target="_blank" rel="noopener">Multiplexed assays of variant effect for clinical variant interpretation</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1038/s41588-025-02173-7" target="_blank" rel="noopener">Near-complete Middle Eastern genomes refine autozygosity and enhance disease-causing and population-specific variant discovery</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1007/s10489-025-06378-5" target="_blank" rel="noopener">Non-local modeling of enhancer-promoter interactions, a correspondence on “LOCO-EPI: Leave-one-chromosome-out (LOCO) as a benchmarking paradigm for deep learning based prediction of enhancer-promoter interactions”</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include development, enhancer-promoter, formation, further, intense, interactions, models, under.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.64898/2025.12.20.695738" target="_blank" rel="noopener">Predicting interaction-specific protein–protein interaction perturbations by missense variants with MutPred-PPI</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include consortium, experimental, function, furthermore, generated, genomic, impact, interaction.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1186/s12915-025-02348-y" target="_blank" rel="noopener">Prediction of human pathogenic start loss variants based on self-supervised contrastive learning</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include variants, affect, benign, development, diseases, effects, function, minor.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2025.04.22.650035" target="_blank" rel="noopener">Programmatic design and editing of cis-regulatory elements</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include advances, alongside, amount, development, editing, ge-36, increasingly, learning.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2025.05.11.653354" target="_blank" rel="noopener">Pseudoassembly of k-mers</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include consortium, multiple, ability, conducted, evaluated, experiments, identity, infer.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1038/s41588-025-02210-5" target="_blank" rel="noopener">Realizing the promise of genome-wide association studies for effector gene prediction</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1016/j.mtbio.2025.102047" target="_blank" rel="noopener">Recent advances in phototherapy-based nanomedicine of lymphoma</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include alterations, classification, crucial, genomic, lymphoma, pathogenesis.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1016/j.cirep.2025.200208" target="_blank" rel="noopener">The association of single nucleotide polymorphisms in tumor necrosis factor 3 with susceptibility/resistance of Magallana gigas to Halomonas sp. 7T</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include activity, expression, function, impact, polymorphisms, protein, sequence, significantly.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1038/s41588-025-02121-5" target="_blank" rel="noopener">The Farm Animal Genotype–Tissue Expression (FarmGTEx) Project</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include variants, addition, application, available, biomedical, closely, collaborate, common.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1172/jci187998" target="_blank" rel="noopener">The hematopoietic stem cell MYB enhancer is essential for and recurrently amplified during T cell leukemogenesis</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include reporter, assays, effects, regulatory, activation, activity, always, assay.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1093/nar/gkaf1341" target="_blank" rel="noopener">The IGVF catalog—from genetic variation to function</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include function, genomic, variation, causal, consortium, created, established, genome.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2025.09.25.678548" target="_blank" rel="noopener">Uniform processing and analysis of IGVF massively parallel reporter assay data with MPRAsnakeflow</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include consortium, engreitz, function, genome, genomic, variation, across, address.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1161/atvbaha.125.319221" target="_blank" rel="noopener">Using Genomics to Develop Personalized Cardiovascular Treatments</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1186/s12859-025-06065-9" target="_blank" rel="noopener">Using individual barcodes to increase quantification power of massively parallel reporter assays</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1111/andr.13753" target="_blank" rel="noopener">Utility of exome sequencing in primary spermatogenic disorders: from research to diagnostics</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1093/nar/gkaf387" target="_blank" rel="noopener">WashU Epigenome Browser update 2025</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include datasets, encode, annotation, biccn, collections, community, consortia, contributed.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1016/j.molcel.2025.03.004" target="_blank" rel="noopener">Widespread variation in molecular interactions and regulatory properties among transcription factor isoforms</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include accurate, alternative, characterizing, consortia, disease, effect, effects, focused.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://www.biorxiv.org/content/10.1101/2024.03.23.586413.abstract" target="_blank" rel="noopener">Algorithms for a Commons Cell Atlas</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2024.02.06.578787" target="_blank" rel="noopener">Annotation and assessment of functional variants in regulatory regions using epigenomic data in farm animals</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2024.09.17.611902" target="_blank" rel="noopener">Calibration of additional computational tools expands ClinGen recommendation options for variant classification with PP3/BP4 criteria</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include benignity, clinical, computational, context, evidence, however, improvements, pathogenicity.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2024.09.09.612085" target="_blank" rel="noopener">CRISPR-CLEAR: Nucleotide-Resolution Mapping of Regulatory Elements via Allelic Readout of Tiled Base Editing</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include context, regulatory, across, chromatin, crispr-based, developmental, disease, explore.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://www.cell.com/trends/genetics/abstract/S0168-9525(24)00074-X" target="_blank" rel="noopener">Discovering mechanisms of human genetic variation and controlling cell states at scale</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2024.09.27.614715" target="_blank" rel="noopener">Fine Mapping Regulatory Variants by Characterizing Native CpG Methylation with Nanopore Long-Read Sequencing</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include arise, association, beyond, causal, challenges, consortium, disequilibrium, easily.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1038/s41467-024-50708-z" target="_blank" rel="noopener">Gapped-kmer sequence modeling robustly identifies regulatory vocabularies and distal enhancers conserved between evolutionarily distant mammals</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1145/3637460" target="_blank" rel="noopener">Harnessing the power of statistics and machine learning in the era of biobank-scale whole-genome sequencing and multi-omics studies</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1038/s41467-026-72185-2" target="_blank" rel="noopener">Integrating common and rare variants improves polygenic risk prediction across diverse populations</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://jscholarship.library.jhu.edu/items/a698a507-be5f-4e8f-9f3f-94679a44acf4" target="_blank" rel="noopener">Learning the sequence determinants of mammalian transcriptional gene regulation across cell-types</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2024.11.23.624931" target="_blank" rel="noopener">Mapping enhancer-gene regulatory interactions from single-cell data</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1016/j.gde.2024.102256" target="_blank" rel="noopener">Massively parallel approaches for characterizing noncoding functional variation in human evolution</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2024.11.20.24317557" target="_blank" rel="noopener">Molecular convergence of risk variants for congenital heart defects leveraging a regulatory map of the human fetal heart</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1093/bioadv/vbaf106" target="_blank" rel="noopener">Perspective on recent developments and challenges in regulatory and systems genomics</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include genomics, availability, bottleneck, characterized, consortium, datasets, expression, forward.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1021/acs.jproteome.4c00567" target="_blank" rel="noopener">PhoXplex: Combining Phospho-enrichable Cross-Linking with Isobaric Labeling for Quantitative Proteome-Wide Mapping of Protein Interfaces</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1097/mol.0000000000000966" target="_blank" rel="noopener">The breadth and impact of the Global Lipids Genetics Consortium</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include advancement, assembled, biology, celltypesand, community, different, diseaseacross, facilitating.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1038/s41431-024-01566-2" target="_blank" rel="noopener">Workshop report: the clinical application of data from multiplex assays of variant effect (MAVEs), 12 July 2023</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.48550/arxiv.2305.17583" target="_blank" rel="noopener">On Neural Networks as Infinite Tree-Structured Probabilistic Graphical Models</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://www.semanticscholar.org/paper/790d20817fc6cf4446981c760881fea54d2bbd75" target="_blank" rel="noopener">BRIEF REPORT Calibration of additional computational tools expands ClinGen recommendation options for variant classi ﬁ cation with PP3/BP4 criteria</a></td>
+              <td class="citation-year"></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include 15-19, benignity, clinical, computational, context, evidence, however, improvements.</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </article>
+  </body>
+</html>

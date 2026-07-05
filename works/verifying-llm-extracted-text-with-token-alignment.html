@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-6P1ZQ0CC8F"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-6P1ZQ0CC8F");
+    </script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Large language models can extract structured text from documents, but their outputs need verification. This preprint describes a token-alignment approach for checking extracted text against source material." />
+    <link rel="stylesheet" href="../styles.css" />
+    
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        document.querySelectorAll(".copy-bibtex-button").forEach((button) => {
+          button.addEventListener("click", async () => {
+            const box = button.closest(".bibtex-box");
+            const code = box ? box.querySelector("code") : null;
+            const bibtex = code ? code.textContent : "";
+            const previousText = button.textContent;
+            const markStatus = (text) => {
+              button.textContent = text;
+              window.setTimeout(() => {
+                button.textContent = previousText;
+              }, 1200);
+            };
+            const copyWithSelection = () => {
+              const textarea = document.createElement("textarea");
+              textarea.value = bibtex;
+              textarea.setAttribute("readonly", "");
+              textarea.style.position = "fixed";
+              textarea.style.left = "0";
+              textarea.style.top = "0";
+              textarea.style.width = "1px";
+              textarea.style.height = "1px";
+              textarea.style.opacity = "0";
+              textarea.style.pointerEvents = "none";
+              document.body.appendChild(textarea);
+              textarea.focus({ preventScroll: true });
+              textarea.select();
+              textarea.setSelectionRange(0, textarea.value.length);
+              const copied = document.execCommand("copy");
+              textarea.remove();
+              return copied;
+            };
+
+            try {
+              if (navigator.clipboard && navigator.clipboard.writeText) {
+                await navigator.clipboard.writeText(bibtex);
+                markStatus("Copied");
+                return;
+              }
+
+              if (copyWithSelection()) {
+                markStatus("Copied");
+                return;
+              }
+            } catch {
+              let copied = false;
+
+              try {
+                copied = copyWithSelection();
+              } catch {
+                copied = false;
+              }
+
+              if (copied) {
+                markStatus("Copied");
+                return;
+              }
+            }
+
+            markStatus("Copy failed");
+          });
+        });
+      });
+    </script>
+    <title>Verifying LLM-extracted text with token alignment | Works | Sina Booeshaghi</title>
+  </head>
+  <body>
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="../index.html">Home</a>
+      <span aria-hidden="true">/</span>
+      <a href="../publications.html">Works</a>
+      <span aria-hidden="true">/</span>
+      <span class="breadcrumb-current" title="Verifying LLM-extracted text with token alignment">Verifying LLM-extracted text with token alignment</span>
+    </nav>
+    <article class="work-page">
+      <h1>Verifying LLM-extracted text with token alignment</h1>
+      <div class="publication-links work-links" aria-label="Work links">
+        
+        <a class="publication-link" href="https://doi.org/10.64898/2026.02.06.704502" target="_blank" rel="noopener">
+          <span>bioRxiv</span>
+          <time datetime="2026-02-10">2026-02-10</time>
+        </a>
+      </div>
+
+      <section>
+        <h2>Summary</h2>
+        <p>Large language models can extract structured text from documents, but their outputs need verification. This preprint describes a token-alignment approach for checking extracted text against source material.</p>
+      </section>
+
+      <section>
+        <h2>BibTeX</h2>
+        
+        <section class="bibtex-entry">
+          <h3>bioRxiv</h3>
+          <div class="bibtex-box">
+            <button
+              class="copy-bibtex-button"
+              type="button"
+              aria-label="Copy BibTeX for bioRxiv"
+            >
+              Copy BibTeX
+            </button>
+            <pre><code>@article{Booeshaghi_2026,
+  TITLE     = {Verifying LLM-extracted text with token alignment},
+  URL       = {http://dx.doi.org/10.64898/2026.02.06.704502},
+  DOI       = {10.64898/2026.02.06.704502},
+  PUBLISHER = {openRxiv},
+  AUTHOR    = {Booeshaghi, A. Sina and Streets, Aaron},
+  YEAR      = {2026}
+}</code></pre>
+          </div>
+        </section>
+      </section>
+
+      <section>
+        <h2>Citing Works</h2>
+        <p class="citation-source-note">
+          0 citing works found in citation data generated 2026-07-05. Citation relationships are sourced from OpenAlex, Semantic Scholar, Google Scholar.
+        </p>
+        <table class="citation-table">
+          <thead>
+            <tr>
+              <th>Title</th>
+              <th>Year</th>
+              <th>Summary</th>
+            </tr>
+          </thead>
+          <tbody>
+            
+            <tr class="citation-empty">
+              <td colspan="3">No citing works found in the current citation data.</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </article>
+  </body>
+</html>

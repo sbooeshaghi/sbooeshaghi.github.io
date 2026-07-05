@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-6P1ZQ0CC8F"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-6P1ZQ0CC8F");
+    </script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Sequencing-based genomics assays produce sequencing reads with a variety of synthetic and biological features. Often base-pair-level annotations of these sequencing reads are hard to find, incomplete, or are altogether missing from the associated data inhibiting uniform preprocessing. To overcome this, we developed seqspec, a machine readable specification and associated command-line tool for annotating sequencing reads. seqspec is general and applicable to all genomics-based assays and facilitates standardization of preprocessing, tracking, and comparison of genomics assays." />
+    <link rel="stylesheet" href="../styles.css" />
+    
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        document.querySelectorAll(".copy-bibtex-button").forEach((button) => {
+          button.addEventListener("click", async () => {
+            const box = button.closest(".bibtex-box");
+            const code = box ? box.querySelector("code") : null;
+            const bibtex = code ? code.textContent : "";
+            const previousText = button.textContent;
+            const markStatus = (text) => {
+              button.textContent = text;
+              window.setTimeout(() => {
+                button.textContent = previousText;
+              }, 1200);
+            };
+            const copyWithSelection = () => {
+              const textarea = document.createElement("textarea");
+              textarea.value = bibtex;
+              textarea.setAttribute("readonly", "");
+              textarea.style.position = "fixed";
+              textarea.style.left = "0";
+              textarea.style.top = "0";
+              textarea.style.width = "1px";
+              textarea.style.height = "1px";
+              textarea.style.opacity = "0";
+              textarea.style.pointerEvents = "none";
+              document.body.appendChild(textarea);
+              textarea.focus({ preventScroll: true });
+              textarea.select();
+              textarea.setSelectionRange(0, textarea.value.length);
+              const copied = document.execCommand("copy");
+              textarea.remove();
+              return copied;
+            };
+
+            try {
+              if (navigator.clipboard && navigator.clipboard.writeText) {
+                await navigator.clipboard.writeText(bibtex);
+                markStatus("Copied");
+                return;
+              }
+
+              if (copyWithSelection()) {
+                markStatus("Copied");
+                return;
+              }
+            } catch {
+              let copied = false;
+
+              try {
+                copied = copyWithSelection();
+              } catch {
+                copied = false;
+              }
+
+              if (copied) {
+                markStatus("Copied");
+                return;
+              }
+            }
+
+            markStatus("Copy failed");
+          });
+        });
+      });
+    </script>
+    <title>A machine-readable specification for genomics assays | Works | Sina Booeshaghi</title>
+  </head>
+  <body>
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="../index.html">Home</a>
+      <span aria-hidden="true">/</span>
+      <a href="../publications.html">Works</a>
+      <span aria-hidden="true">/</span>
+      <span class="breadcrumb-current" title="A machine-readable specification for genomics assays">A machine-readable specification for genomics assays</span>
+    </nav>
+    <article class="work-page">
+      <h1>A machine-readable specification for genomics assays</h1>
+      <div class="publication-links work-links" aria-label="Work links">
+        
+        <a class="publication-link" href="https://doi.org/10.1093/bioinformatics/btae168" target="_blank" rel="noopener">
+          <span>Bioinformatics</span>
+          <time datetime="2024-03-29">2024-03-29</time>
+        </a>
+        <a class="publication-link" href="https://doi.org/10.1101/2023.03.17.533215" target="_blank" rel="noopener">
+          <span>bioRxiv</span>
+          <time datetime="2023-03-21">2023-03-21</time>
+        </a>
+      </div>
+
+      <section>
+        <h2>Summary</h2>
+        <p>Sequencing-based genomics assays produce sequencing reads with a variety of synthetic and biological features. Often base-pair-level annotations of these sequencing reads are hard to find, incomplete, or are altogether missing from the associated data inhibiting uniform preprocessing. To overcome this, we developed seqspec, a machine readable specification and associated command-line tool for annotating sequencing reads. seqspec is general and applicable to all genomics-based assays and facilitates standardization of preprocessing, tracking, and comparison of genomics assays.</p>
+      </section>
+
+      <section>
+        <h2>BibTeX</h2>
+        
+        <section class="bibtex-entry">
+          <h3>Bioinformatics</h3>
+          <div class="bibtex-box">
+            <button
+              class="copy-bibtex-button"
+              type="button"
+              aria-label="Copy BibTeX for Bioinformatics"
+            >
+              Copy BibTeX
+            </button>
+            <pre><code>@article{Booeshaghi_2024,
+  TITLE     = {A machine-readable specification for genomics assays},
+  VOLUME    = {40},
+  ISSN      = {1367-4811},
+  URL       = {http://dx.doi.org/10.1093/bioinformatics/btae168},
+  DOI       = {10.1093/bioinformatics/btae168},
+  NUMBER    = {4},
+  JOURNAL   = {Bioinformatics},
+  PUBLISHER = {Oxford University Press (OUP)},
+  AUTHOR    = {Booeshaghi, Ali Sina and Chen, Xi and Pachter, Lior},
+  EDITOR    = {Kendziorski, Christina},
+  YEAR      = {2024}
+}</code></pre>
+          </div>
+        </section>
+        <section class="bibtex-entry">
+          <h3>bioRxiv</h3>
+          <div class="bibtex-box">
+            <button
+              class="copy-bibtex-button"
+              type="button"
+              aria-label="Copy BibTeX for bioRxiv"
+            >
+              Copy BibTeX
+            </button>
+            <pre><code>@article{Booeshaghi_2023,
+  TITLE     = {A machine-readable specification for genomics assays},
+  URL       = {http://dx.doi.org/10.1101/2023.03.17.533215},
+  DOI       = {10.1101/2023.03.17.533215},
+  PUBLISHER = {openRxiv},
+  AUTHOR    = {Booeshaghi, A. Sina and Chen, Xi and Pachter, Lior},
+  YEAR      = {2023}
+}</code></pre>
+          </div>
+        </section>
+      </section>
+
+      <section>
+        <h2>Citing Works</h2>
+        <p class="citation-source-note">
+          17 citing works found in citation data generated 2026-07-05. Citation relationships are sourced from OpenAlex, Semantic Scholar, Google Scholar.
+        </p>
+        <table class="citation-table">
+          <thead>
+            <tr>
+              <th>Title</th>
+              <th>Year</th>
+              <th>Summary</th>
+            </tr>
+          </thead>
+          <tbody>
+            
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1093/bioinformatics/btag182" target="_blank" rel="noopener">Harvesting more reads from single-cell combinatorial barcoding data with scarecrow</a></td>
+              <td class="citation-year"><time datetime="2026">2026</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1186/s12964-025-02128-9" target="_blank" rel="noopener">Basal cell adhesion molecule (BCAM) promotes mesothelial-to-mesenchymal transition and tumor angiogenesis through paracrine signaling</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include barcodes, published, retrieved.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2025.10.17.683067" target="_blank" rel="noopener">Harvesting more reads from single-cell combinatorial barcoding data with scarecrow</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2025.01.17.633678" target="_blank" rel="noopener">Mouse Single-Cell Long-Read Splicing Atlas by Ouro-Seq</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5272584" target="_blank" rel="noopener">Open Contracting in the US Public Sector: Converting Procurements from Documents to Data</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2025.09.03.674039" target="_blank" rel="noopener">Reference-based variant detection with varseek</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2024.03.23.586413" target="_blank" rel="noopener">Algorithms for a Commons Cell Atlas</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1093/plcell/koae003" target="_blank" rel="noopener">Best practices for the execution, analysis, and data storage of plant single-cell/nucleus transcriptomics</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include booeshaghi, enhance, filtering, furthermore, future, genomic, pipelines, preprocessing.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1093/bioinformatics/btae331" target="_blank" rel="noopener">Flexible parsing, interpretation, and editing of technical sequences with splitcode</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include adapters, barcodes, booeshaghi, constructs, contain, identifiers, including, indices.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1038/s41596-024-01057-0" target="_blank" rel="noopener">kallisto, bustools and kb-python for quantifying bulk, single-cell and single-nucleus RNA-seq</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include genomic, matrices, specification, kallisto, seqspec, abundance, assay, assays.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1002/ctm2.1604" target="_blank" rel="noopener">Reciprocal crosstalk between Th17 and mesothelial cells promotes metastasis‐associated adhesion of ovarian cancer cells</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include panel, targeted, 13766899704717, article, attachments, based, becton, below.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2023.03.20.533521" target="_blank" rel="noopener">Flexible parsing, interpretation, and editing of technical sequences with splitcode</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2023.11.21.568164" target="_blank" rel="noopener">kallisto, bustools, and kb-python for quantifying bulk, single-cell, and single-nucleus RNA-seq</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include assays, contains, machine-readable, option, range, seqspec, sequencing, specifications.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1093/bioinformatics/btad614" target="_blank" rel="noopener">simpleaf : a simple, flexible, and scalable framework for single-cell data processing using alevin-fry</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2023.03.28.534653" target="_blank" rel="noopener">simpleaf: A simple, flexible, and scalable framework for single-cell transcriptomics data processing using alevin-fry</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include assays, categorizing, community, developing, documenting, efforts, existing, general.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2023.09.14.543267" target="_blank" rel="noopener">Universal preprocessing of single-cell genomics data</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2021.12.08.471788" target="_blank" rel="noopener">Assessing the multimodal tradeoff</a></td>
+              <td class="citation-year"><time datetime="2021">2021</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </article>
+  </body>
+</html>

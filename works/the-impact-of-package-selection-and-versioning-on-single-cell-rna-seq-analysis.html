@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-6P1ZQ0CC8F"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-6P1ZQ0CC8F");
+    </script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Single-cell RNA-seq analysis depends on rapidly changing software packages and package versions. This study evaluates how those choices can affect downstream analysis results, emphasizing the need to track computational environments and compare workflows carefully." />
+    <link rel="stylesheet" href="../styles.css" />
+    
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        document.querySelectorAll(".copy-bibtex-button").forEach((button) => {
+          button.addEventListener("click", async () => {
+            const box = button.closest(".bibtex-box");
+            const code = box ? box.querySelector("code") : null;
+            const bibtex = code ? code.textContent : "";
+            const previousText = button.textContent;
+            const markStatus = (text) => {
+              button.textContent = text;
+              window.setTimeout(() => {
+                button.textContent = previousText;
+              }, 1200);
+            };
+            const copyWithSelection = () => {
+              const textarea = document.createElement("textarea");
+              textarea.value = bibtex;
+              textarea.setAttribute("readonly", "");
+              textarea.style.position = "fixed";
+              textarea.style.left = "0";
+              textarea.style.top = "0";
+              textarea.style.width = "1px";
+              textarea.style.height = "1px";
+              textarea.style.opacity = "0";
+              textarea.style.pointerEvents = "none";
+              document.body.appendChild(textarea);
+              textarea.focus({ preventScroll: true });
+              textarea.select();
+              textarea.setSelectionRange(0, textarea.value.length);
+              const copied = document.execCommand("copy");
+              textarea.remove();
+              return copied;
+            };
+
+            try {
+              if (navigator.clipboard && navigator.clipboard.writeText) {
+                await navigator.clipboard.writeText(bibtex);
+                markStatus("Copied");
+                return;
+              }
+
+              if (copyWithSelection()) {
+                markStatus("Copied");
+                return;
+              }
+            } catch {
+              let copied = false;
+
+              try {
+                copied = copyWithSelection();
+              } catch {
+                copied = false;
+              }
+
+              if (copied) {
+                markStatus("Copied");
+                return;
+              }
+            }
+
+            markStatus("Copy failed");
+          });
+        });
+      });
+    </script>
+    <title>The impact of package selection and versioning on single-cell RNA-seq analysis | Works | Sina Booeshaghi</title>
+  </head>
+  <body>
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="../index.html">Home</a>
+      <span aria-hidden="true">/</span>
+      <a href="../publications.html">Works</a>
+      <span aria-hidden="true">/</span>
+      <span class="breadcrumb-current" title="The impact of package selection and versioning on single-cell RNA-seq analysis">The impact of package selection and versioning on single-cell RN...</span>
+    </nav>
+    <article class="work-page">
+      <h1>The impact of package selection and versioning on single-cell RNA-seq analysis</h1>
+      <div class="publication-links work-links" aria-label="Work links">
+        
+        <a class="publication-link" href="https://doi.org/10.1016/j.cels.2026.101560" target="_blank" rel="noopener">
+          <span>Cell Systems</span>
+          <time datetime="2026-04">2026-04</time>
+        </a>
+        <a class="publication-link" href="https://doi.org/10.1101/2024.04.04.588111" target="_blank" rel="noopener">
+          <span>bioRxiv</span>
+          <time datetime="2024-04-05">2024-04-05</time>
+        </a>
+      </div>
+
+      <section>
+        <h2>Summary</h2>
+        <p>Single-cell RNA-seq analysis depends on rapidly changing software packages and package versions. This study evaluates how those choices can affect downstream analysis results, emphasizing the need to track computational environments and compare workflows carefully.</p>
+      </section>
+
+      <section>
+        <h2>BibTeX</h2>
+        
+        <section class="bibtex-entry">
+          <h3>Cell Systems</h3>
+          <div class="bibtex-box">
+            <button
+              class="copy-bibtex-button"
+              type="button"
+              aria-label="Copy BibTeX for Cell Systems"
+            >
+              Copy BibTeX
+            </button>
+            <pre><code>@article{Rich_2026,
+  TITLE     = {The impact of package selection and versioning on single-cell RNA-seq analysis},
+  VOLUME    = {17},
+  ISSN      = {2405-4712},
+  URL       = {http://dx.doi.org/10.1016/j.cels.2026.101560},
+  DOI       = {10.1016/j.cels.2026.101560},
+  NUMBER    = {4},
+  JOURNAL   = {Cell Systems},
+  PUBLISHER = {Elsevier BV},
+  AUTHOR    = {Rich, Joseph M. and Moses, Lambda and Einarsson, Pétur Helgi and Jackson, Kayla and Luebbert, Laura and Booeshaghi, A. Sina and Antonsson, Sindri and Sullivan, Delaney K. and Bray, Nicolas and Melsted, Páll and Pachter, Lior},
+  YEAR      = {2026},
+  PAGES     = {101560}
+}</code></pre>
+          </div>
+        </section>
+        <section class="bibtex-entry">
+          <h3>bioRxiv</h3>
+          <div class="bibtex-box">
+            <button
+              class="copy-bibtex-button"
+              type="button"
+              aria-label="Copy BibTeX for bioRxiv"
+            >
+              Copy BibTeX
+            </button>
+            <pre><code>@article{Rich_2024,
+  TITLE     = {The impact of package selection and versioning on single-cell RNA-seq analysis},
+  URL       = {http://dx.doi.org/10.1101/2024.04.04.588111},
+  DOI       = {10.1101/2024.04.04.588111},
+  PUBLISHER = {openRxiv},
+  AUTHOR    = {Rich, Joseph M and Moses, Lambda and Einarsson, Pétur Helgi and Jackson, Kayla and Luebbert, Laura and Booeshaghi, A. Sina and Antonsson, Sindri and Sullivan, Delaney K. and Bray, Nicolas and Melsted, Páll and Pachter, Lior},
+  YEAR      = {2024}
+}</code></pre>
+          </div>
+        </section>
+      </section>
+
+      <section>
+        <h2>Citing Works</h2>
+        <p class="citation-source-note">
+          51 citing works found in citation data generated 2026-07-05. Citation relationships are sourced from OpenAlex, Semantic Scholar, Google Scholar.
+        </p>
+        <table class="citation-table">
+          <thead>
+            <tr>
+              <th>Title</th>
+              <th>Year</th>
+              <th>Summary</th>
+            </tr>
+          </thead>
+          <tbody>
+            
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.64898/2026.05.01.722166" target="_blank" rel="noopener">Building computational benchmarks: an Omnibenchmark reimplementation of a single-cell preprocessing pipeline evaluation</a></td>
+              <td class="citation-year"><time datetime="2026">2026</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include analyses, analysis, considerable, downstream, implementation, introduce, particular, pointed.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1016/j.celrep.2026.117407" target="_blank" rel="noopener">Consensus Pituitary Atlas, a scalable resource for annotation, novel marker discovery, and analyses in mouse pituitary gland research.</a></td>
+              <td class="citation-year"><time datetime="2026">2026</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.64898/2026.04.23.720468" target="_blank" rel="noopener">Defining Cell Types through Maximally Informative Biological Atlases</a></td>
+              <td class="citation-year"><time datetime="2026">2026</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include abstractions, aspects, broader, capture, cellular, diversity, labels, remain.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.64898/2026.02.14.705879" target="_blank" rel="noopener">Evaluating Single-Cell Perturbation Response Models Is Far from Straightforward</a></td>
+              <td class="citation-year"><time datetime="2026">2026</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include clustering, consistent, differences, louvain, observed, obtained, prior, reports.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://search.proquest.com/openview/e037d73b36dfe9efdc749a5b2ce18864/1?pq-origsite=gscholar&amp;cbl=18750&amp;diss=y" target="_blank" rel="noopener">From Subjective to Principled Single-Cell Data Analysis: Evaluating Annotation Behavior, Optimizing Integration, and Benchmarking Visualization Pipelines</a></td>
+              <td class="citation-year"><time datetime="2026">2026</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1016/j.gde.2026.102451" target="_blank" rel="noopener">Integrating multiomic layers to decode psychiatric disease mechanisms.</a></td>
+              <td class="citation-year"><time datetime="2026">2026</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1038/s41587-025-02965-6" target="_blank" rel="noopener">Mapping isoforms and regulatory mechanisms from spatial transcriptomics data with SPLISOSM</a></td>
+              <td class="citation-year"><time datetime="2026">2026</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://scholar.google.com/scholar?q=Multi-omic%20and%20Single-Cell%20approaches%20for%20elucidating%20cell%20biology%20and%20pathobiology%20of%20lung%20disease" target="_blank" rel="noopener">Multi-omic and Single-Cell approaches for elucidating cell biology and pathobiology of lung disease</a></td>
+              <td class="citation-year"><time datetime="2026">2026</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2022.05.06.490859" target="_blank" rel="noopener">Normalization for sampled count data</a></td>
+              <td class="citation-year"><time datetime="2026">2026</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.64898/2026.06.05.730084" target="_blank" rel="noopener">scFAIR Consortium: a decentralized hub for single-cell RNA-Seq data standardization and unification</a></td>
+              <td class="citation-year"><time datetime="2026">2026</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1016/j.insi.2026.100322" target="_blank" rel="noopener">Single-cell landscape of autophagy in the metastatic ovarian tumor microenvironment: A cell-type-specific perspective</a></td>
+              <td class="citation-year"><time datetime="2026">2026</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://tesidottorato.depositolegale.it/handle/20.500.14242/366161" target="_blank" rel="noopener">Sviluppo di metodi efficienti e scalabili per l&#39;analisi di dati omici in biologia del cancro</a></td>
+              <td class="citation-year"><time datetime="2026">2026</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.3389/fimmu.2025.1693784" target="_blank" rel="noopener">Tumor heterogeneity assessment using single-cell RNA sequencing (scRNA-seq): applications in lung cancer for diagnosis and treatment</a></td>
+              <td class="citation-year"><time datetime="2026">2026</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://search.proquest.com/openview/c883f8dc3d4411975c95c8d9e80e98cc/1?pq-origsite=gscholar&amp;cbl=18750&amp;diss=y" target="_blank" rel="noopener">A biophysical approach to normalization and trajectory inference in single-cell RNA sequencing data analysis</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2025.05.02.651907" target="_blank" rel="noopener">A computational framework for mapping isoform landscape and regulatory mechanisms from spatial transcriptomics data</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include additional, biases, common, distort, introduce, observations, pseudo-counts, relationships.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1007/s12311-025-01809-y" target="_blank" rel="noopener">A Gene-Expression Based Comparison of Murine and Human Inhibitory Interneurons in the Cerebellar Cortex and Nuclei</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1007/978-1-0716-4583-3_11" target="_blank" rel="noopener">An Optimized SPLiT-Seq Protocol for Insects</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1093/bioinformatics/btag288" target="_blank" rel="noopener">anndataR improves interoperability between R and Python in single-cell transcriptomics</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include basic, differences, different, ecosystems, functionality, implementation, produce, results.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.3390/cells14171315" target="_blank" rel="noopener">Artificial Intelligence in Ocular Transcriptomics: Applications of Unsupervised and Supervised Learning</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2025.10.28.681564" target="_blank" rel="noopener">Benchmarking large-scale single-cell RNA-seq analysis</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.32388/i17ppm" target="_blank" rel="noopener">CAFE: An Integrated Web App for High-Dimensional Analysis and Visualisation in Spectral Flow Cytometry</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1093/bioinformatics/btaf176" target="_blank" rel="noopener">CAFE: an integrated web app for high-dimensional analysis and visualization in spectral flow cytometry</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include calculation, containers, crashes, docker, drawbacks, higher, however, including.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1016/j.celrep.2025.116458" target="_blank" rel="noopener">Combined somatic mutation and transcriptome analysis reveals region-specific differences in clonal architecture in human cortex</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include seurat, datasets, objects, produced.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2025.10.28.685060" target="_blank" rel="noopener">Consensus Pituitary Atlas, a scalable resource for annotation, novel marker discovery and analyses in pituitary gland research</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2025.04.04.645979" target="_blank" rel="noopener">Dynamic transcriptional heterogeneity in pituitary corticotrophs</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.14740/wjon2610" target="_blank" rel="noopener">E2F5 Overexpression in Laryngeal Squamous Cell Carcinoma: Associations With Neutrophil Extracellular Traps in the Tumor Microenvironment</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1093/nargab/lqaf049" target="_blank" rel="noopener">Exploring the latent space of transcriptomic data with topic modeling</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include different, alternative, approaches, biases, comparable, identify, performances, presence.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1186/s41065-025-00528-y" target="_blank" rel="noopener">Global trends in machine learning applications for single-cell transcriptomics research</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include analysis, assist, developed, interactively, online, perform, platforms, result.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1146/annurev-biodatasci-101424-121439" target="_blank" rel="noopener">Mapping, Modeling, and Reprogramming Cell-Fate Decision-Making Systems</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.5306/wjco.v16.i7.108666" target="_blank" rel="noopener">Nitidine chloride may mediate its antitumor effects by targeting kinesin family member 20A in colorectal cancer cells</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2025.08.20.671270" target="_blank" rel="noopener">On the benchmarking of clustering algorithms and hyperparameter influence for cell type detection in single-cell RNA sequencing data</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include algorithm, described, differs, implementation, important, louvain, scanpy, seurat.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.48550/arxiv.2509.03761" target="_blank" rel="noopener">Optimizing alluvial plots</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include greedy, problem, alluvial, bipartite, clustering, compare, considered, described.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.3389/fbinf.2025.1554010" target="_blank" rel="noopener">Primer on machine learning applications in brain immunology</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2025.02.03.636129" target="_blank" rel="noopener">Principled PCA separates signal from noise in omics count data</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include biological, discoveries, erences, example, experiment, false, interpretations, noise.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1080/16078454.2025.2452701" target="_blank" rel="noopener">Prognostic significance of neutrophil extracellular trap-related genes in childhood acute lymphoblastic leukemia: insights from multi-omics and in vitro experiment</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include createseuratobject, filter, function, package, preprocess, seurat.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1021/acs.jproteome.5c00178" target="_blank" rel="noopener">PSCS: Unified Sharing of Single-Cell Omics Data, Analyses, and Results</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2025.05.11.653354" target="_blank" rel="noopener">Pseudoassembly of k-mers</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include scanpy, analysis, component, constructed, coordinates, default, genes, graphs.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1093/bioadv/vbaf321" target="_blank" rel="noopener">REDAC: RNA-seq expression data analysis chatbot</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include analysis, seurat, spatial, addition, address, analytical, demands, expression.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1177/18758592251390255" target="_blank" rel="noopener">The overexpression of HOXC6 in LUSC and pan-squamous cell carcinomas indicates the coexistence of nuclear division regulatory mechanisms</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2025.04.09.648005" target="_blank" rel="noopener">Unexpected XIST Expression in Male Hearts Associates with Disease</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include addition, arbitrary, assignment, choices, control, differences, drastic, highly.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1093/nar/gkae1137" target="_blank" rel="noopener">Accurate quantification of nascent and mature RNAs from single-cell and single-nucleus RNA-seq</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include analysis, count, different, matrices, affect, approach, clustering, described.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1093/nar/gkae552" target="_blank" rel="noopener">Assessing the impact of transcriptomics data analysis pipelines on downstream functional enrichment results</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1186/s13059-024-03304-9" target="_blank" rel="noopener">Beyond benchmarking and towards predictive models of dataset-specific single-cell RNA-seq pipeline performance</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include analysis, approximate, consistent, doubt, extent, pipelines, python, r-based.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1371/journal.pcbi.1013658" target="_blank" rel="noopener">Building a continuous benchmarking ecosystem in bioinformatics</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include method, alternative, cases, changes, compared, however, illustrate, imagine.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2024.12.03.626714" target="_blank" rel="noopener">CAFE: An Integrated Web App for High-Dimensional Analysis and Visualization in Spectral Flow Cytometry</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2024.12.20.629764" target="_blank" rel="noopener">Comparison and evaluation of methods to infer gene regulatory networks from multimodal single-cell data</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2024.07.30.605714" target="_blank" rel="noopener">Distributed Collaboration for Data, Analysis Pipelines, and Results in Single-Cell Omics</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2024.08.10.607413" target="_blank" rel="noopener">Impacts of Cell Ranger versions on Chromium gene expression data</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2024.08.13.607508" target="_blank" rel="noopener">Single-Molecule Barcoding Technology for Single-Cell Genomics</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1093/noajnl/vdae218" target="_blank" rel="noopener">Sonic hedgehog medulloblastoma cells in co-culture with cerebellar organoids converge towards in vivo malignant cell states</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include models, patient, tumors, better, co-culture, confirming, conventional, corrects.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://www.diva-portal.org/smash/record.jsf?pid=diva2:1905206" target="_blank" rel="noopener">Spatial analysis of tissue transcriptomes in health and disease</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </article>
+  </body>
+</html>

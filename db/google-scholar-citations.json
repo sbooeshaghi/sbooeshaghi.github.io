@@ -1,0 +1,561 @@
+{
+  "note": "Manual citation overlay from user-provided Google Scholar cited-by tranches. These rows are treated as Google Scholar-confirmed citation relationships and are merged with API citation data at page-generation time.",
+  "works": {
+    "comparative-survey-based-study-of-noninvasive-saliva-collection-devices": {
+      "cited_by": [
+        {
+          "title": "A novel non-invasive technique for glucose detection in saliva through direct IV measurements using rGO/GOx-modified planar electrodes",
+          "link": "https://www.sciencedirect.com/science/article/pii/S1572665726004261",
+          "year": 2026,
+          "summary": ""
+        },
+        {
+          "title": "Engineering and Computational Tools for Salivary Biomedicine",
+          "link": "https://search.proquest.com/openview/3d18269153671e898e7743e097b432ee/1?pq-origsite=gscholar&cbl=18750&diss=y",
+          "year": 2025,
+          "summary": ""
+        }
+      ]
+    },
+    "deciphering-the-impact-of-genomic-variation-on-function": {
+      "cited_by": [
+        {
+          "title": "Systematic cell-type resolved transcriptomes of 8 tissues in 8 lab and wild-derived mouse strains capture global and local expression variation",
+          "link": "https://doi.org/10.1016/j.xgen.2025.101108",
+          "year": 2026,
+          "summary": ""
+        },
+        {
+          "title": "Long-read sequencing transcriptome quantification with lr-kallisto",
+          "link": "https://doi.org/10.1371/journal.pcbi.1013692",
+          "year": 2025,
+          "summary": ""
+        },
+        {
+          "title": "Utility of exome sequencing in primary spermatogenic disorders: from research to diagnostics",
+          "link": "https://doi.org/10.1111/andr.13753",
+          "year": 2025,
+          "summary": ""
+        },
+        {
+          "title": "Algorithms for a Commons Cell Atlas",
+          "link": "https://www.biorxiv.org/content/10.1101/2024.03.23.586413.abstract",
+          "year": 2024,
+          "summary": ""
+        },
+        {
+          "title": "Annotation and assessment of functional variants in regulatory regions using epigenomic data in farm animals",
+          "link": "https://doi.org/10.1101/2024.02.06.578787",
+          "year": 2024,
+          "summary": ""
+        },
+        {
+          "title": "Discovering mechanisms of human genetic variation and controlling cell states at scale",
+          "link": "https://www.cell.com/trends/genetics/abstract/S0168-9525(24)00074-X",
+          "year": 2024,
+          "summary": ""
+        },
+        {
+          "title": "Gapped-kmer sequence modeling robustly identifies regulatory vocabularies and distal enhancers conserved between evolutionarily distant mammals",
+          "link": "https://doi.org/10.1038/s41467-024-50708-z",
+          "year": 2024,
+          "summary": ""
+        },
+        {
+          "title": "Harnessing the power of statistics and machine learning in the era of biobank-scale whole-genome sequencing and multi-omics studies",
+          "link": "https://doi.org/10.1145/3637460",
+          "year": 2024,
+          "summary": ""
+        },
+        {
+          "title": "Learning the sequence determinants of mammalian transcriptional gene regulation across cell-types",
+          "link": "https://jscholarship.library.jhu.edu/items/a698a507-be5f-4e8f-9f3f-94679a44acf4",
+          "year": 2024,
+          "summary": ""
+        },
+        {
+          "title": "Massively parallel approaches for characterizing noncoding functional variation in human evolution",
+          "link": "https://doi.org/10.1016/j.gde.2024.102256",
+          "year": 2024,
+          "summary": ""
+        },
+        {
+          "title": "Workshop report: the clinical application of data from multiplex assays of variant effect (MAVEs), 12 July 2023",
+          "link": "https://doi.org/10.1038/s41431-024-01566-2",
+          "year": 2024,
+          "summary": ""
+        }
+      ]
+    },
+    "low-cost-scalable-and-automated-fluid-sampling-for-fluidics-applications": {
+      "cited_by": [
+        {
+          "title": "3D-Printed Liquid Handling Robot for the Development of Automated Analytical Methods",
+          "link": "https://www.scielo.br/j/jbchs/a/66VMwpchNXChJQn4mZKss8S/?lang=en",
+          "year": 2025,
+          "summary": ""
+        },
+        {
+          "title": "Characterization and Design of Nickel-Binding Proteins Towards Metal Recovery Applications",
+          "link": "https://search.proquest.com/openview/09ee56c23d5b116f1abb62e4657f1626/1?pq-origsite=gscholar&cbl=18750&diss=y",
+          "year": 2023,
+          "summary": ""
+        }
+      ]
+    },
+    "quantifying-orthogonal-barcodes-for-sequence-census-assays": {
+      "cited_by": [
+        {
+          "title": "Learning from high-dimensional measurements",
+          "link": "https://search.proquest.com/openview/4829446377c2ddf0bac1eca2315a197d/1?pq-origsite=gscholar&cbl=18750&diss=y",
+          "year": 2025,
+          "summary": ""
+        }
+      ]
+    },
+    "a-machine-readable-specification-for-genomics-assays": {
+      "cited_by": [
+        {
+          "title": "Open Contracting in the US Public Sector: Converting Procurements from Documents to Data",
+          "link": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5272584",
+          "year": 2025,
+          "summary": ""
+        }
+      ]
+    },
+    "characterization-of-spatial-homogeneous-regions-in-tissues-with-concordex": {
+      "cited_by": [
+        {
+          "title": "Beyond benchmarking: an expert-guided consensus approach to spatially aware clustering",
+          "link": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12262716/",
+          "year": 2025,
+          "summary": ""
+        },
+        {
+          "title": "GASTON-Mix: a unified model of spatial gradients and domains using spatial mixture-of-experts",
+          "link": "https://academic.oup.com/bioinformatics/article-abstract/41/Supplement_1/i523/8199348",
+          "year": 2025,
+          "summary": ""
+        },
+        {
+          "title": "TissueFormer: a neural network for labeling tissue from grouped single-cell RNA profiles",
+          "link": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12393424/",
+          "year": 2025,
+          "summary": ""
+        }
+      ]
+    },
+    "a-human-commons-cell-atlas-reveals-cell-type-specificity-for-oas1-isoforms": {
+      "cited_by": [
+        {
+          "title": "A genome-scale CRISPRi perturbation atlas of human induced pluripotent stem cells",
+          "link": "https://www.nature.com/articles/s41587-026-03199-w",
+          "year": 2026,
+          "summary": ""
+        },
+        {
+          "title": "Consensus Pituitary Atlas, a scalable resource for annotation, novel marker discovery, and analyses in mouse pituitary gland research",
+          "link": "https://www.cell.com/cell-reports/fulltext/S2211-1247(26)00485-7",
+          "year": 2026,
+          "summary": ""
+        },
+        {
+          "title": "From Cells to Selves and Back: Human Neurodiversity at Single-Cell Resolution",
+          "link": "https://journals.physiology.org/doi/abs/10.1152/physiol.00010.2025",
+          "year": 2026,
+          "summary": ""
+        },
+        {
+          "title": "Gene regulatory networks: from correlative models to causal explanations",
+          "link": "https://www.nature.com/articles/s41576-026-00939-1",
+          "year": 2026,
+          "summary": ""
+        },
+        {
+          "title": "A perturbation cell atlas of human induced pluripotent stem cells",
+          "link": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11580897/",
+          "year": 2024,
+          "summary": ""
+        },
+        {
+          "title": "GENCODE: massively expanding the lncRNA catalog through capture long-read RNA sequencing",
+          "link": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11565817/",
+          "year": 2024,
+          "summary": ""
+        },
+        {
+          "title": "Improved Sequencing and Informatics Approaches for Technical Obstacles in Single-Cell RNA-seq Analysis",
+          "link": "https://search.proquest.com/openview/0519176169378ff774d4639bc473585e/1?pq-origsite=gscholar&cbl=18750&diss=y",
+          "year": 2024,
+          "summary": ""
+        }
+      ]
+    },
+    "benchmarking-of-lightweight-mapping-based-single-cell-rna-seq-pre-processing": {
+      "cited_by": [
+        {
+          "title": "Statistical analysis supports pervasive RNA subcellular localization and alternative 3'UTR regulation",
+          "link": "https://elifesciences.org/articles/87517",
+          "year": 2024,
+          "summary": ""
+        },
+        {
+          "title": "Accurate quantification of single-cell and single-nucleus RNA-seq transcripts using distinguishing flanking k-mers",
+          "link": "https://www.biorxiv.org/content/10.1101/2022.12.02.518832.abstract",
+          "year": 2022,
+          "summary": ""
+        }
+      ]
+    },
+    "pseudoalignment-facilitates-assignment-of-error-prone-ultima-genomics-reads": {
+      "cited_by": [
+        {
+          "title": "From contigs to chromosomes: automatic Improvement of Long Read Assemblies (ILRA)",
+          "link": "https://www.biorxiv.org/content/10.1101/2021.07.30.454413.abstract",
+          "year": 2021,
+          "summary": ""
+        }
+      ]
+    },
+    "systematic-cell-type-resolved-transcriptomes-of-8-tissues-in-8-lab-and-wild-derived-mouse-strains-capture-global-and-local-expression-variation": {
+      "cited_by": [
+        {
+          "title": "Cell-Type Deconvolution and Candidate Gene Prioritization in Cardiac Complex Trait Genetics",
+          "link": "https://search.proquest.com/openview/b3aa2bf0c1f4546bad99fcabc6918096/1?pq-origsite=gscholar&cbl=18750&diss=y",
+          "year": 2026,
+          "summary": ""
+        },
+        {
+          "title": "Computational Methods for Long-Read Functional Genomics in the Age of Agentic AI",
+          "link": "https://search.proquest.com/openview/0d9fa6b9d5d1fbb2c5f1c533bfc9331f/1?pq-origsite=gscholar&cbl=18750&diss=y",
+          "year": 2026,
+          "summary": ""
+        }
+      ]
+    },
+    "assessing-the-multimodal-tradeoff": {
+      "cited_by": [
+        {
+          "title": "Methods for Efficient Processing and Uncertainty-Aware Analysis of High Throughput Genomics and Transcriptomics Data",
+          "link": "https://search.proquest.com/openview/4dab93a473ac016dbf774c9a468b2c78/1?pq-origsite=gscholar&cbl=18750&diss=y",
+          "year": 2025,
+          "summary": ""
+        },
+        {
+          "title": "A biophysical model for ATAC-seq data analysis",
+          "link": "https://doi.org/10.1101/2024.01.25.577262",
+          "year": 2024,
+          "summary": ""
+        },
+        {
+          "title": "Accurate quantification of single-cell and single-nucleus RNA-seq transcripts using distinguishing flanking k-mers",
+          "link": "https://www.biorxiv.org/content/10.1101/2022.12.02.518832.abstract",
+          "year": 2022,
+          "summary": ""
+        }
+      ]
+    },
+    "decrease-in-ace2-mrna-expression-in-aged-mouse-lung": {
+      "cited_by": [
+        {
+          "title": "Vitamin D Is Rich in Benefits That Are a Priority in The Disease: Literature Review",
+          "link": "https://scholar.google.com/scholar?q=%22Vitamin+D+Is+Rich+in+Benefits+That+Are+a+Priority+in+The+Disease%3A+Literature+Review%22",
+          "year": 2025,
+          "summary": ""
+        },
+        {
+          "title": "SARS-CoV-2 infections, impaired tissue, and metabolic health: pathophysiology and potential therapeutics",
+          "link": "https://www.benthamdirect.com/content/journals/mrmc/10.2174/1389557522666220201154845",
+          "year": 2022,
+          "summary": ""
+        },
+        {
+          "title": "The aging lung face to COVID-19",
+          "link": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9272231/",
+          "year": 2022,
+          "summary": ""
+        },
+        {
+          "title": "SARS-CoV-2 pandemic in a sweet era: parallels between unhealthy aging and a life with chronic fructose intake",
+          "link": "https://www.researchgate.net/profile/Adrian-Hernandez-Diazcouder/publication/342914912_SARS-CoV-2_pandemic_in_a_sweet_era_parallels_between_unhealthy_aging_and_a_life_with_chronic_fructose_intake/links/5f0d1b26a6fdcca32ae983db/SARS-CoV-2-pandemic-in-a-sweet-era-parallels-between-unhealthy-aging-and-a-life-with-chronic-fructose-intake.pdf",
+          "year": 2020,
+          "summary": ""
+        }
+      ]
+    },
+    "reliable-and-accurate-diagnostics-from-highly-multiplexed-sequencing-assays": {
+      "cited_by": [
+        {
+          "title": "Empowering Science with the World's First High Accuracy and High Throughput Functional Assay",
+          "link": "https://search.proquest.com/openview/b48499dca1d8ff86860f77da740ffff5/1?pq-origsite=gscholar&cbl=18750&diss=y",
+          "year": 2025,
+          "summary": ""
+        },
+        {
+          "title": "Benchmark of pre-processing pipelines of single cell RNA sequencing data",
+          "link": "https://openaccess.uoc.edu/handle/10609/148591",
+          "year": 2023,
+          "summary": ""
+        },
+        {
+          "title": "SwabSeq: A sequencing-based platform for high-throughput SARS-CoV-2 testing",
+          "link": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10810734/",
+          "year": 2021,
+          "summary": ""
+        },
+        {
+          "title": "ApharSeq: an extraction-free early-pooling protocol for massively multiplexed SARS-CoV-2 detection",
+          "link": "https://www.medrxiv.org/content/10.1101/2020.08.08.20170746.abstract",
+          "year": 2020,
+          "summary": ""
+        },
+        {
+          "title": "LAMP-Seq: population-scale COVID-19 diagnostics using combinatorial barcoding",
+          "link": "https://doi.org/10.1101/2020.04.06.025635",
+          "year": 2020,
+          "summary": ""
+        }
+      ]
+    },
+    "long-read-sequencing-transcriptome-quantification-with-lr-kallisto": {
+      "cited_by": [
+        {
+          "title": "Computational Methods for Long-Read Functional Genomics in the Age of Agentic AI",
+          "link": "https://search.proquest.com/openview/0d9fa6b9d5d1fbb2c5f1c533bfc9331f/1?pq-origsite=gscholar&cbl=18750&diss=y",
+          "year": 2026,
+          "summary": ""
+        },
+        {
+          "title": "Nuclear Speckles Regulate Splicing During Muscle Stem Cell Activation and Aging",
+          "link": "https://scholar.google.com/scholar?q=Nuclear%20Speckles%20Regulate%20Splicing%20During%20Muscle%20Stem%20Cell%20Activation%20and%20Aging",
+          "year": 2026,
+          "summary": ""
+        }
+      ]
+    },
+    "markedly-heterogeneous-covid-19-testing-plans-among-us-colleges-and-universities": {
+      "cited_by": [
+        {
+          "title": "Communicating Effectively During a Health Crisis: A Critical Examination of Communication Breakdowns During the COVID-19 Pandemic",
+          "link": "https://scholar.google.com/scholar?q=Communicating%20Effectively%20During%20a%20Health%20Crisis%3A%20A%20Critical%20Examination%20of%20Communication%20Breakdowns%20During%20the%20COVID-19%20Pandemic",
+          "year": 2024,
+          "summary": ""
+        },
+        {
+          "title": "Infectious Disease Modelling",
+          "link": "https://www.scienceopen.com/document_file/0c983a4e-5577-4af1-99a8-f0aa7d97e713/PubMedCentral/0c983a4e-5577-4af1-99a8-f0aa7d97e713.pdf",
+          "year": 2024,
+          "summary": ""
+        },
+        {
+          "title": "Pandemic politics: Exploring the intersection of state political affiliation and public universities' COVID-19 policies and messaging.",
+          "link": "https://scholar.google.com/scholar?q=Pandemic%20politics%3A%20Exploring%20the%20intersection%20of%20state%20political%20affiliation%20and%20public%20universities'%20COVID-19%20policies%20and%20messaging.",
+          "year": 2023,
+          "summary": ""
+        },
+        {
+          "title": "Reaching adolescents and young adults with accessible health services: Applications to HIV, contraception, and COVID-19",
+          "link": "https://search.proquest.com/openview/4e3a5ed0adbbec8bdb513a59bad537c3/1?pq-origsite=gscholar&cbl=18750&diss=y",
+          "year": 2022,
+          "summary": ""
+        },
+        {
+          "title": "Effects of COVID-19 Policy and Communication on Pandemic Control in US Colleges-An Empirical Study Through the Lens of Online Social Media",
+          "link": "https://aisel.aisnet.org/mwais2021/13/",
+          "year": 2021,
+          "summary": ""
+        }
+      ]
+    },
+    "the-impact-of-package-selection-and-versioning-on-single-cell-rna-seq-analysis": {
+      "cited_by": [
+        {
+          "title": "From Subjective to Principled Single-Cell Data Analysis: Evaluating Annotation Behavior, Optimizing Integration, and Benchmarking Visualization Pipelines",
+          "link": "https://search.proquest.com/openview/e037d73b36dfe9efdc749a5b2ce18864/1?pq-origsite=gscholar&cbl=18750&diss=y",
+          "year": 2026,
+          "summary": ""
+        },
+        {
+          "title": "Multi-omic and Single-Cell approaches for elucidating cell biology and pathobiology of lung disease",
+          "link": "https://scholar.google.com/scholar?q=Multi-omic%20and%20Single-Cell%20approaches%20for%20elucidating%20cell%20biology%20and%20pathobiology%20of%20lung%20disease",
+          "year": 2026,
+          "summary": ""
+        },
+        {
+          "title": "Sviluppo di metodi efficienti e scalabili per l'analisi di dati omici in biologia del cancro",
+          "link": "https://tesidottorato.depositolegale.it/handle/20.500.14242/366161",
+          "year": 2026,
+          "summary": ""
+        },
+        {
+          "title": "A biophysical approach to normalization and trajectory inference in single-cell RNA sequencing data analysis",
+          "link": "https://search.proquest.com/openview/c883f8dc3d4411975c95c8d9e80e98cc/1?pq-origsite=gscholar&cbl=18750&diss=y",
+          "year": 2025,
+          "summary": ""
+        },
+        {
+          "title": "Spatial analysis of tissue transcriptomes in health and disease",
+          "link": "https://www.diva-portal.org/smash/record.jsf?pid=diva2:1905206",
+          "year": 2024,
+          "summary": ""
+        }
+      ]
+    },
+    "metadata-retrieval-from-sequence-databases-with-ffq": {
+      "cited_by": [
+        {
+          "title": "The ChIP-FRiP pipeline quantifies co-binding and reveals how antibody background contributes to cohesin ChIP-seq patterns",
+          "link": "https://scholar.google.com/scholar?q=The%20ChIP-FRiP%20pipeline%20quantifies%20co-binding%20and%20reveals%20how%20antibody%20background%20contributes%20to%20cohesin%20ChIP-seq%20patterns",
+          "year": 2026,
+          "summary": ""
+        },
+        {
+          "title": "Comparative Multi-omics Study Across Diverse Species: Integrative Mapping of the Dog Epigenome and Development of a Centralized Resource Acquisition System",
+          "link": "https://s-space.snu.ac.kr/handle/10371/228513",
+          "year": 2025,
+          "summary": ""
+        },
+        {
+          "title": "Effect of single-cell RNA sequencing parameters on cluster stability",
+          "link": "https://scholar.sun.ac.za/server/api/core/bitstreams/96923c6b-8a47-4fd8-b1f4-f0ac85d63083/content",
+          "year": 2025,
+          "summary": ""
+        },
+        {
+          "title": "Immunoinformatic-Based Design of a Multi-Epitope Vaccine Against Heartland Virus.",
+          "link": "https://search.ebscohost.com/login.aspx?direct=true&profile=ehost&scope=site&authtype=crawler&jrnl=09738916&AN=187989896",
+          "year": 2025,
+          "summary": ""
+        },
+        {
+          "title": "svArcher: A Reproducible Structural Variant Calling Pipeline for Plant Genomes",
+          "link": "https://search.proquest.com/openview/8e9949dae5a0161c89db4e6bb1990663/1?pq-origsite=gscholar&cbl=18750&diss=y",
+          "year": 2025,
+          "summary": ""
+        },
+        {
+          "title": "Сучасні методи викладання іноземних мов у дистанційному форматі: адаптація до викликів воєнного стану",
+          "link": "https://dspace.uzhnu.edu.ua/items/e6879894-945f-44fd-ab4a-8d79292f912e",
+          "year": 2024,
+          "summary": ""
+        },
+        {
+          "title": "Palidis: fast discovery of novel insertion sequences",
+          "link": "https://scholar.google.com/scholar?q=Palidis%3A%20fast%20discovery%20of%20novel%20insertion%20sequences",
+          "year": 2023,
+          "summary": ""
+        },
+        {
+          "title": "Systematic Examination of Epigenomic Regulation of Neuronal Plasticity",
+          "link": "https://search.proquest.com/openview/8fa0c0da71feb11d8ab9ca3eff166c05/1?pq-origsite=gscholar&cbl=18750&diss=y",
+          "year": 2022,
+          "summary": ""
+        }
+      ]
+    },
+    "normalization-for-sampled-count-data": {
+      "cited_by": [
+        {
+          "title": "From Subjective to Principled Single-Cell Data Analysis: Evaluating Annotation Behavior, Optimizing Integration, and Benchmarking Visualization Pipelines",
+          "link": "https://search.proquest.com/openview/e037d73b36dfe9efdc749a5b2ce18864/1?pq-origsite=gscholar&cbl=18750&diss=y",
+          "year": 2026,
+          "summary": ""
+        },
+        {
+          "title": "Linker histone variant H1-0 dysregulation in ETV6:: RUNX1+ preleukemia and B cell acute lymphoblastic leukemia",
+          "link": "https://docserv.uni-duesseldorf.de/servlets/DerivateServlet/Derivate-74616",
+          "year": 2025,
+          "summary": ""
+        },
+        {
+          "title": "BacSC: A general workflow for bacterial single-cell RNA sequencing data analysis",
+          "link": "https://scholar.google.com/scholar?q=BacSC%3A%20A%20general%20workflow%20for%20bacterial%20single-cell%20RNA%20sequencing%20data%20analysis",
+          "year": 2024,
+          "summary": ""
+        },
+        {
+          "title": "Experimental Design of Single Cell Sequencing Experiments",
+          "link": "https://www.repository.cam.ac.uk/items/f6cbb732-6657-451c-9587-a6e25e1247a1",
+          "year": 2024,
+          "summary": ""
+        },
+        {
+          "title": "Distinguishing biophysical stochasticity from technical noise in single-cell RNA sequencing using Monod",
+          "link": "https://scholar.google.com/scholar?q=Distinguishing%20biophysical%20stochasticity%20from%20technical%20noise%20in%20single-cell%20RNA%20sequencing%20using%20Monod",
+          "year": 2023,
+          "summary": ""
+        },
+        {
+          "title": "Le séquençage de transcrits sur cellule unique appliqué à l'étude des mécanismes de formation et de résolution de la fibrose pulmonaire",
+          "link": "https://theses.hal.science/tel-04234539/",
+          "year": 2023,
+          "summary": ""
+        },
+        {
+          "title": "Mapping Transcriptomes in Tissues",
+          "link": "https://www.diva-portal.org/smash/record.jsf?pid=diva2:1752949",
+          "year": 2023,
+          "summary": ""
+        },
+        {
+          "title": "Stochastic foundations for single-cell RNA sequencing",
+          "link": "https://search.proquest.com/openview/9b01393b59220a61ee018759229543ba/1?pq-origsite=gscholar&cbl=18750&diss=y",
+          "year": 2023,
+          "summary": ""
+        },
+        {
+          "title": "SIMS: Scalable, Interpretable Machine Learning for Single-Cell Annotation",
+          "link": "https://search.proquest.com/openview/4e872305538c4b237fc33196b6f7d94b/1?pq-origsite=gscholar&cbl=18750&diss=y",
+          "year": 2022,
+          "summary": ""
+        }
+      ]
+    },
+    "thermo-electrochemical-generator-energy-harvesting-and-thermoregulation-for-liquid-cooling-applications": {
+      "cited_by": [
+        {
+          "title": "Energy harvesting techniques for low-powered IoT and WSN devices",
+          "link": "https://doi.org/10.1201/9781003671466-2",
+          "year": 2026,
+          "summary": ""
+        },
+        {
+          "title": "Multi-Carrier Thermal Transport in Electronic and Energy Conversion Devices",
+          "link": "https://arxiv.org/abs/2502.10664",
+          "year": 2025,
+          "summary": ""
+        },
+        {
+          "title": "Conceptualization, Thermodynamics, Kinetics, and Prototyping of Continuous Electrochemical Refrigeration",
+          "link": "https://search.proquest.com/openview/ba7355f4bb26810a71158daed5c1c6a5/1?pq-origsite=gscholar&cbl=18750&diss=y",
+          "year": 2021,
+          "summary": ""
+        },
+        {
+          "title": "The quest for high-efficiency thermoelectric generators for extracting electricity from waste heat",
+          "link": "https://doi.org/10.1007/s11837-021-04976-5",
+          "year": 2021,
+          "summary": ""
+        },
+        {
+          "title": "Multifunctional Electrochemistry and Molecular Designs for Energy Storage and Conversion",
+          "link": "https://search.proquest.com/openview/1bbacb19b1d14cac202813a0943fd918/1?pq-origsite=gscholar&cbl=18750&diss=y",
+          "year": 2020,
+          "summary": ""
+        },
+        {
+          "title": "熱電気化学発電の強制対流冷却への統合",
+          "link": "https://www.jstage.jst.go.jp/article/tse/28/3/28_15/_article/-char/ja/",
+          "year": 2020,
+          "summary": ""
+        },
+        {
+          "title": "ПРИМЕНЕНИЕ ТЕРМОЭЛЕКТРОХИМИЧЕСКИХ ЯЧЕЕК ДЛЯ ЭЛЕКТРОПИТАНИЯ БЕСПРОВОДНЫХ ДАТЧИКОВ",
+          "link": "https://www.sstu.ru/upload/medialibrary/ee2/Voprosy-elektrotekhnologii-_2_23_-2019-.pdf.pdf#page=58",
+          "year": 2019,
+          "summary": ""
+        }
+      ]
+    }
+  }
+}

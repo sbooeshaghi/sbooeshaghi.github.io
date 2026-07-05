@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-6P1ZQ0CC8F"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-6P1ZQ0CC8F");
+    </script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="The COVID-19 pandemic resulted in the development of numerous high-throughput assays that leveraged next generation sequencing for diagnostics. These assays require fast data preprocessing for fast turnaround times. To achieve this, we developed and validated a computational workflow based on kallisto bustools to quickly, accurately and reliably process high-throughput sequencing data. We showed that our workflow is effective at processing data from all recently proposed COVID-19 sequencing-based diagnostic tests, and is generally applicable to any diagnostic multiplexed sequencing assay. This workflow was used at the University of Arizona to process their COVID-19 diagnostic data." />
+    <link rel="stylesheet" href="../styles.css" />
+    
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        document.querySelectorAll(".copy-bibtex-button").forEach((button) => {
+          button.addEventListener("click", async () => {
+            const box = button.closest(".bibtex-box");
+            const code = box ? box.querySelector("code") : null;
+            const bibtex = code ? code.textContent : "";
+            const previousText = button.textContent;
+            const markStatus = (text) => {
+              button.textContent = text;
+              window.setTimeout(() => {
+                button.textContent = previousText;
+              }, 1200);
+            };
+            const copyWithSelection = () => {
+              const textarea = document.createElement("textarea");
+              textarea.value = bibtex;
+              textarea.setAttribute("readonly", "");
+              textarea.style.position = "fixed";
+              textarea.style.left = "0";
+              textarea.style.top = "0";
+              textarea.style.width = "1px";
+              textarea.style.height = "1px";
+              textarea.style.opacity = "0";
+              textarea.style.pointerEvents = "none";
+              document.body.appendChild(textarea);
+              textarea.focus({ preventScroll: true });
+              textarea.select();
+              textarea.setSelectionRange(0, textarea.value.length);
+              const copied = document.execCommand("copy");
+              textarea.remove();
+              return copied;
+            };
+
+            try {
+              if (navigator.clipboard && navigator.clipboard.writeText) {
+                await navigator.clipboard.writeText(bibtex);
+                markStatus("Copied");
+                return;
+              }
+
+              if (copyWithSelection()) {
+                markStatus("Copied");
+                return;
+              }
+            } catch {
+              let copied = false;
+
+              try {
+                copied = copyWithSelection();
+              } catch {
+                copied = false;
+              }
+
+              if (copied) {
+                markStatus("Copied");
+                return;
+              }
+            }
+
+            markStatus("Copy failed");
+          });
+        });
+      });
+    </script>
+    <title>Reliable and accurate diagnostics from highly multiplexed sequencing assays | Works | Sina Booeshaghi</title>
+  </head>
+  <body>
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="../index.html">Home</a>
+      <span aria-hidden="true">/</span>
+      <a href="../publications.html">Works</a>
+      <span aria-hidden="true">/</span>
+      <span class="breadcrumb-current" title="Reliable and accurate diagnostics from highly multiplexed sequencing assays">Reliable and accurate diagnostics from highly multiplexed sequen...</span>
+    </nav>
+    <article class="work-page">
+      <h1>Reliable and accurate diagnostics from highly multiplexed sequencing assays</h1>
+      <div class="publication-links work-links" aria-label="Work links">
+        
+        <a class="publication-link" href="https://doi.org/10.1038/s41598-020-78942-7" target="_blank" rel="noopener">
+          <span>Nature Scientific Reports</span>
+          <time datetime="2020-12-10">2020-12-10</time>
+        </a>
+      </div>
+
+      <section>
+        <h2>Summary</h2>
+        <p>The COVID-19 pandemic resulted in the development of numerous high-throughput assays that leveraged next generation sequencing for diagnostics. These assays require fast data preprocessing for fast turnaround times. To achieve this, we developed and validated a computational workflow based on kallisto bustools to quickly, accurately and reliably process high-throughput sequencing data. We showed that our workflow is effective at processing data from all recently proposed COVID-19 sequencing-based diagnostic tests, and is generally applicable to any diagnostic multiplexed sequencing assay. This workflow was used at the University of Arizona to process their COVID-19 diagnostic data.</p>
+      </section>
+
+      <section>
+        <h2>BibTeX</h2>
+        
+        <section class="bibtex-entry">
+          <h3>Nature Scientific Reports</h3>
+          <div class="bibtex-box">
+            <button
+              class="copy-bibtex-button"
+              type="button"
+              aria-label="Copy BibTeX for Nature Scientific Reports"
+            >
+              Copy BibTeX
+            </button>
+            <pre><code>@article{Booeshaghi_2020,
+  TITLE     = {Reliable and accurate diagnostics from highly multiplexed sequencing assays},
+  VOLUME    = {10},
+  ISSN      = {2045-2322},
+  URL       = {http://dx.doi.org/10.1038/s41598-020-78942-7},
+  DOI       = {10.1038/s41598-020-78942-7},
+  NUMBER    = {1},
+  JOURNAL   = {Scientific Reports},
+  PUBLISHER = {Springer Science and Business Media LLC},
+  AUTHOR    = {Booeshaghi, A. Sina and Lubock, Nathan B. and Cooper, Aaron R. and Simpkins, Scott W. and Bloom, Joshua S. and Gehring, Jase and Luebbert, Laura and Kosuri, Sri and Pachter, Lior},
+  YEAR      = {2020}
+}</code></pre>
+          </div>
+        </section>
+      </section>
+
+      <section>
+        <h2>Citing Works</h2>
+        <p class="citation-source-note">
+          21 citing works found in citation data generated 2026-07-05. Citation relationships are sourced from OpenAlex, Semantic Scholar, Google Scholar.
+        </p>
+        <table class="citation-table">
+          <thead>
+            <tr>
+              <th>Title</th>
+              <th>Year</th>
+              <th>Summary</th>
+            </tr>
+          </thead>
+          <tbody>
+            
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1016/j.diagmicrobio.2026.117519" target="_blank" rel="noopener">Automated implementation of the SwabSeq COVID-19 diagnostic assay on the opentrons flex liquid-handling robot</a></td>
+              <td class="citation-year"><time datetime="2026">2026</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://search.proquest.com/openview/b48499dca1d8ff86860f77da740ffff5/1?pq-origsite=gscholar&amp;cbl=18750&amp;diss=y" target="_blank" rel="noopener">Empowering Science with the World&#39;s First High Accuracy and High Throughput Functional Assay</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.2139/ssrn.5251898" target="_blank" rel="noopener">The Gigaassay: A Combined High Throughput and Highly Accurate Platform for Variant Classification</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1109/jsait.2023.3294423" target="_blank" rel="noopener">Bee Identification Problem for DNA Strands</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include approach, barcode, codebook, demonstrating, different, experiments, feasibility, later.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://openaccess.uoc.edu/handle/10609/148591" target="_blank" rel="noopener">Benchmark of pre-processing pipelines of single cell RNA sequencing data</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1109/jsait.2023.3296077" target="_blank" rel="noopener">Efficient Algorithms for the Bee-Identification Problem</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include experiments, groups, later, performed, procedures, similar, validated.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1021/acssensors.3c00857" target="_blank" rel="noopener">Highly Flexible Deep-Learning-Based Automatic Analysis for Graphically Encoded Hydrogel Microparticles</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1016/b978-0-12-822824-1.00011-0" target="_blank" rel="noopener">Molecular testing in emerging infectious diseases</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1093/bioadv/vbad181" target="_blank" rel="noopener">Quantifying orthogonal barcodes for sequence census assays</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1109/isit50566.2022.9834414" target="_blank" rel="noopener">Bee Identification Problem for DNA Strands</a></td>
+              <td class="citation-year"><time datetime="2022">2022</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include applications, based, interest, pooled, storage, survey, testing, viral.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1038/s41598-022-06901-5" target="_blank" rel="noopener">Evaluation of Swab-Seq as a scalable, sensitive assay for community surveillance of SARS-CoV-2 infection</a></td>
+              <td class="citation-year"><time datetime="2022">2022</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2022.10.09.511501" target="_blank" rel="noopener">Quantifying orthogonal barcodes for sequence census assays</a></td>
+              <td class="citation-year"><time datetime="2022">2022</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1126/scitranslmed.abj2266" target="_blank" rel="noopener">Early sample tagging and pooling enables simultaneous SARS-CoV-2 detection and variant sequencing</a></td>
+              <td class="citation-year"><time datetime="2021">2021</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1109/isit45174.2021.9518112" target="_blank" rel="noopener">Efficient Bee Identification</a></td>
+              <td class="citation-year"><time datetime="2021">2021</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1038/s41587-021-00966-9" target="_blank" rel="noopener">LAMP-Seq enables sensitive, multiplexed COVID-19 diagnostics using molecular barcoding</a></td>
+              <td class="citation-year"><time datetime="2021">2021</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1038/s41551-021-00754-5" target="_blank" rel="noopener">Massively scaled-up testing for SARS-CoV-2 RNA via next-generation sequencing of pooled and barcoded nasal and saliva samples</a></td>
+              <td class="citation-year"><time datetime="2021">2021</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include swabseq, analysis, anticipate, bustools, computationally, continued, development, efficient.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10810734/" target="_blank" rel="noopener">SwabSeq: A sequencing-based platform for high-throughput SARS-CoV-2 testing</a></td>
+              <td class="citation-year"><time datetime="2021">2021</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1038/s41467-020-19258-y" target="_blank" rel="noopener">An enhanced isothermal amplification assay for viral detection</a></td>
+              <td class="citation-year"><time datetime="2020">2020</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://www.medrxiv.org/content/10.1101/2020.08.08.20170746.abstract" target="_blank" rel="noopener">ApharSeq: an extraction-free early-pooling protocol for massively multiplexed SARS-CoV-2 detection</a></td>
+              <td class="citation-year"><time datetime="2020">2020</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2020.04.06.025635" target="_blank" rel="noopener">LAMP-Seq: population-scale COVID-19 diagnostics using combinatorial barcoding</a></td>
+              <td class="citation-year"><time datetime="2020">2020</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2020.08.04.20167874" target="_blank" rel="noopener">Swab-Seq: A high-throughput platform for massively scaled up SARS-CoV-2 testing</a></td>
+              <td class="citation-year"><time datetime="2020">2020</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </article>
+  </body>
+</html>

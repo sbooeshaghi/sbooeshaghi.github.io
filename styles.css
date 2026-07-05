@@ -30,6 +30,19 @@ a:hover {
   color: red;
 }
 
+.breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin: 1rem 0;
+  color: #555;
+  font-size: 0.86rem;
+}
+
+.breadcrumb-current {
+  color: #333;
+}
+
 img,
 svg,
 video,
@@ -278,6 +291,18 @@ span[style*="width"] {
   line-height: 1.35;
 }
 
+.publication-page-link {
+  color: #0645ad;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.12em;
+}
+
+.publication-page-link:hover {
+  color: red;
+  border-bottom: 0;
+}
+
 .publication-links {
   display: flex;
   flex-wrap: wrap;
@@ -303,6 +328,15 @@ span[style*="width"] {
   border-bottom-color: red;
 }
 
+.publication-meta {
+  display: grid;
+  gap: 0.1rem;
+  margin-top: 0.55rem;
+  color: #666;
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
 .publication-summary {
   margin: 0.6rem 0 0;
   color: #333;
@@ -311,12 +345,108 @@ span[style*="width"] {
 }
 
 .publication-word-count {
-  display: inline-block;
-  margin-right: 0.35rem;
-  color: #666;
-  font-size: 0.78rem;
-  font-weight: 700;
   white-space: nowrap;
+}
+
+.publication-citation-count {
+  white-space: nowrap;
+}
+
+.work-page h1 {
+  margin-bottom: 0.55rem;
+  font-size: 1.55rem;
+  line-height: 1.25;
+}
+
+.work-links {
+  margin: 0 0 1.25rem;
+}
+
+.bibtex-entry h3 {
+  margin-bottom: 0.35rem;
+  color: #444;
+  font-size: 0.92rem;
+}
+
+.bibtex-entry pre {
+  margin-top: 0;
+  padding-top: 2.4rem;
+  font-size: 0.82rem;
+}
+
+.bibtex-box {
+  position: relative;
+}
+
+.copy-bibtex-button {
+  position: absolute;
+  top: 0.45rem;
+  right: 0.45rem;
+  z-index: 1;
+  padding: 0.15rem 0.45rem;
+  color: #333;
+  background-color: #fdfdfd;
+  border-top: 1px solid #ccc;
+  border-right: 1px solid #333;
+  border-bottom: 1px solid #333;
+  border-left: 1px solid #ccc;
+  font: inherit;
+  font-size: 0.74rem;
+  cursor: pointer;
+}
+
+.copy-bibtex-button:hover,
+.copy-bibtex-button:focus {
+  color: red;
+}
+
+.copy-bibtex-button:focus-visible {
+  outline: 2px solid #333;
+  outline-offset: 2px;
+}
+
+.citation-table {
+  width: 100%;
+  margin-top: 0.6rem;
+}
+
+.citation-source-note {
+  margin: 0.35rem 0 0;
+  color: #555;
+  font-size: 0.86rem;
+}
+
+.citation-table th,
+.citation-table td {
+  padding: 0.45rem 0.55rem;
+  border: 1px solid #d8d8d8;
+  font-size: 0.9rem;
+  text-align: left;
+}
+
+.citation-table th {
+  background: #f5f5f5;
+}
+
+.citation-table a {
+  color: #0645ad;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.12em;
+}
+
+.citation-table a:hover {
+  color: red;
+  border-bottom: 0;
+}
+
+.citation-year {
+  white-space: nowrap;
+}
+
+.citation-empty td {
+  color: #666;
+  font-style: italic;
 }
 
 @media only screen and (max-width: 600px) {
@@ -343,5 +473,14 @@ span[style*="width"] {
 
   .publication-card {
     padding: 0.65rem 0.7rem;
+  }
+
+  .work-page h1 {
+    font-size: 1.3rem;
+  }
+
+  .citation-table th,
+  .citation-table td {
+    padding: 0.4rem;
   }
 }

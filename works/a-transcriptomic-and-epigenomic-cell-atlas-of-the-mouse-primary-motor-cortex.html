@@ -1,0 +1,2218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-6P1ZQ0CC8F"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-6P1ZQ0CC8F");
+    </script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="The BRAIN Initiative Cell Census Network (BICCN) has been tasked with identifying and cataloging cell types in the human and mouse brain. Working with researchers from many institutions, we produced a transcriptomic atlas of the mouse primary motor cortex. To do so, we developed computational and statistical methods to integrate multimodal data. The resulting reference atlas is a comprehensive molecular and genomic account of the diverse neuronal and non-neuronal cell types in the mouse primary motor cortex." />
+    <link rel="stylesheet" href="../styles.css" />
+    
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        document.querySelectorAll(".copy-bibtex-button").forEach((button) => {
+          button.addEventListener("click", async () => {
+            const box = button.closest(".bibtex-box");
+            const code = box ? box.querySelector("code") : null;
+            const bibtex = code ? code.textContent : "";
+            const previousText = button.textContent;
+            const markStatus = (text) => {
+              button.textContent = text;
+              window.setTimeout(() => {
+                button.textContent = previousText;
+              }, 1200);
+            };
+            const copyWithSelection = () => {
+              const textarea = document.createElement("textarea");
+              textarea.value = bibtex;
+              textarea.setAttribute("readonly", "");
+              textarea.style.position = "fixed";
+              textarea.style.left = "0";
+              textarea.style.top = "0";
+              textarea.style.width = "1px";
+              textarea.style.height = "1px";
+              textarea.style.opacity = "0";
+              textarea.style.pointerEvents = "none";
+              document.body.appendChild(textarea);
+              textarea.focus({ preventScroll: true });
+              textarea.select();
+              textarea.setSelectionRange(0, textarea.value.length);
+              const copied = document.execCommand("copy");
+              textarea.remove();
+              return copied;
+            };
+
+            try {
+              if (navigator.clipboard && navigator.clipboard.writeText) {
+                await navigator.clipboard.writeText(bibtex);
+                markStatus("Copied");
+                return;
+              }
+
+              if (copyWithSelection()) {
+                markStatus("Copied");
+                return;
+              }
+            } catch {
+              let copied = false;
+
+              try {
+                copied = copyWithSelection();
+              } catch {
+                copied = false;
+              }
+
+              if (copied) {
+                markStatus("Copied");
+                return;
+              }
+            }
+
+            markStatus("Copy failed");
+          });
+        });
+      });
+    </script>
+    <title>A transcriptomic and epigenomic cell atlas of the mouse primary motor cortex | Works | Sina Booeshaghi</title>
+  </head>
+  <body>
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="../index.html">Home</a>
+      <span aria-hidden="true">/</span>
+      <a href="../publications.html">Works</a>
+      <span aria-hidden="true">/</span>
+      <span class="breadcrumb-current" title="A transcriptomic and epigenomic cell atlas of the mouse primary motor cortex">A transcriptomic and epigenomic cell atlas of the mouse primary...</span>
+    </nav>
+    <article class="work-page">
+      <h1>A transcriptomic and epigenomic cell atlas of the mouse primary motor cortex</h1>
+      <div class="publication-links work-links" aria-label="Work links">
+        
+        <a class="publication-link" href="https://doi.org/10.1038/s41586-021-03500-8" target="_blank" rel="noopener">
+          <span>Nature</span>
+          <time datetime="2021-10-06">2021-10-06</time>
+        </a>
+      </div>
+
+      <section>
+        <h2>Summary</h2>
+        <p>The BRAIN Initiative Cell Census Network (BICCN) has been tasked with identifying and cataloging cell types in the human and mouse brain. Working with researchers from many institutions, we produced a transcriptomic atlas of the mouse primary motor cortex. To do so, we developed computational and statistical methods to integrate multimodal data. The resulting reference atlas is a comprehensive molecular and genomic account of the diverse neuronal and non-neuronal cell types in the mouse primary motor cortex.</p>
+      </section>
+
+      <section>
+        <h2>BibTeX</h2>
+        
+        <section class="bibtex-entry">
+          <h3>Nature</h3>
+          <div class="bibtex-box">
+            <button
+              class="copy-bibtex-button"
+              type="button"
+              aria-label="Copy BibTeX for Nature"
+            >
+              Copy BibTeX
+            </button>
+            <pre><code>@article{Yao_2021,
+  TITLE     = {A transcriptomic and epigenomic cell atlas of the mouse primary motor cortex},
+  VOLUME    = {598},
+  ISSN      = {1476-4687},
+  URL       = {http://dx.doi.org/10.1038/s41586-021-03500-8},
+  DOI       = {10.1038/s41586-021-03500-8},
+  NUMBER    = {7879},
+  JOURNAL   = {Nature},
+  PUBLISHER = {Springer Science and Business Media LLC},
+  AUTHOR    = {Yao, Zizhen and Liu, Hanqing and Xie, Fangming and Fischer, Stephan and Adkins, Ricky S. and Aldridge, Andrew I. and Ament, Seth A. and Bartlett, Anna and Behrens, M. Margarita and Van den Berge, Koen and Bertagnolli, Darren and de Bézieux, Hector Roux and Biancalani, Tommaso and Booeshaghi, A. Sina and Bravo, Héctor Corrada and Casper, Tamara and Colantuoni, Carlo and Crabtree, Jonathan and Creasy, Heather and Crichton, Kirsten and Crow, Megan and Dee, Nick and Dougherty, Elizabeth L. and Doyle, Wayne I. and Dudoit, Sandrine and Fang, Rongxin and Felix, Victor and Fong, Olivia and Giglio, Michelle and Goldy, Jeff and Hawrylycz, Mike and Herb, Brian R. and Hertzano, Ronna and Hou, Xiaomeng and Hu, Qiwen and Kancherla, Jayaram and Kroll, Matthew and Lathia, Kanan and Li, Yang Eric and Lucero, Jacinta D. and Luo, Chongyuan and Mahurkar, Anup and McMillen, Delissa and Nadaf, Naeem M. and Nery, Joseph R. and Nguyen, Thuc Nghi and Niu, Sheng-Yong and Ntranos, Vasilis and Orvis, Joshua and Osteen, Julia K. and Pham, Thanh and Pinto-Duarte, Antonio and Poirion, Olivier and Preissl, Sebastian and Purdom, Elizabeth and Rimorin, Christine and Risso, Davide and Rivkin, Angeline C. and Smith, Kimberly and Street, Kelly and Sulc, Josef and Svensson, Valentine and Tieu, Michael and Torkelson, Amy and Tung, Herman and Vaishnav, Eeshit Dhaval and Vanderburg, Charles R. and van Velthoven, Cindy and Wang, Xinxin and White, Owen R. and Huang, Z. Josh and Kharchenko, Peter V. and Pachter, Lior and Ngai, John and Regev, Aviv and Tasic, Bosiljka and Welch, Joshua D. and Gillis, Jesse and Macosko, Evan Z. and Ren, Bing and Ecker, Joseph R. and Zeng, Hongkui and Mukamel, Eran A.},
+  YEAR      = {2021},
+  PAGES     = {103-110}
+}</code></pre>
+          </div>
+        </section>
+      </section>
+
+      <section>
+        <h2>Citing Works</h2>
+        <p class="citation-source-note">
+          411 citing works found in citation data generated 2026-07-05. Citation relationships are sourced from OpenAlex, Semantic Scholar, Google Scholar.
+        </p>
+        <table class="citation-table">
+          <thead>
+            <tr>
+              <th>Title</th>
+              <th>Year</th>
+              <th>Summary</th>
+            </tr>
+          </thead>
+          <tbody>
+            
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.64898/2026.04.14.717814" target="_blank" rel="noopener">A Community Standard Multispecies Cell Atlas of the Basal Ganglia</a></td>
+              <td class="citation-year"><time datetime="2026">2026</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include spatial, across, additionally, adult, analysis, characterized, chromatin, classification.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1093/g3journal/jkag026" target="_blank" rel="noopener">A comprehensive benchmarking study on computational tools for cross-omics label transfer from single-cell RNA to ATAC data</a></td>
+              <td class="citation-year"><time datetime="2026">2026</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include 2021b, brain, cortex, datasets, including, kidney, motor, mouse.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.64898/2026.04.30.722039" target="_blank" rel="noopener">A layered standards framework for integrating single-cell and spatial omics data into brain cell atlases</a></td>
+              <td class="citation-year"><time datetime="2026">2026</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include jorstad, close, gabitto, hodge, johansen, schmitz, siletti, tasic.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1038/s41467-026-69001-2" target="_blank" rel="noopener">A molecularly defined basalo-prefrontal-thalamic circuit regulates sensory and affective dimensions of pain in male mice</a></td>
+              <td class="citation-year"><time datetime="2026">2026</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1371/journal.pcbi.1014106" target="_blank" rel="noopener">A multimodal spatial atlas of transcriptomic, morphological, and electrophysiological cell type densities in the mouse brain</a></td>
+              <td class="citation-year"><time datetime="2026">2026</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1073/pnas.2531946123" target="_blank" rel="noopener">A silent Kv channel subunit shapes PV neuron action potential waveform and short-term synaptic plasticity during high-frequency firing</a></td>
+              <td class="citation-year"><time datetime="2026">2026</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1038/s41590-026-02472-z" target="_blank" rel="noopener">A transcriptomic microglia taxonomy across mouse and human pathologies</a></td>
+              <td class="citation-year"><time datetime="2026">2026</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include disease, markers, reference, annotations, associated, avoid, azimuth, based.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1016/j.isci.2026.114700" target="_blank" rel="noopener">Aberrant mRNA splicing and impaired hippocampal neurogenesis in Grin2b mutant mice</a></td>
+              <td class="citation-year"><time datetime="2026">2026</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1093/bib/bbaf723" target="_blank" rel="noopener">Advances and challenges in single-cell RNA sequencing data analysis: a comprehensive review</a></td>
+              <td class="citation-year"><time datetime="2026">2026</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1016/j.celrep.2025.116621" target="_blank" rel="noopener">Angiopoietin-2 aggravates Alzheimer’s disease by promoting blood-brain barrier dysfunction and neuroinflammation</a></td>
+              <td class="citation-year"><time datetime="2026">2026</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1080/17460441.2026.2689746" target="_blank" rel="noopener">Are patient-derived models of amyotrophic lateral sclerosis a game changer for novel drug discovery?</a></td>
+              <td class="citation-year"><time datetime="2026">2026</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.64898/2026.06.09.730164" target="_blank" rel="noopener">Astroglial Dysfunction in Models of CDKL5 Deficiency Disorder</a></td>
+              <td class="citation-year"><time datetime="2026">2026</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1038/s41593-025-02188-7" target="_blank" rel="noopener">Base barrier cells provide compartmentalization of choroid plexus, brain and CSF</a></td>
+              <td class="citation-year"><time datetime="2026">2026</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.48550/arxiv.2601.00277" target="_blank" rel="noopener">Benchmarking Preprocessing and Integration Methods in Single-Cell Genomics</a></td>
+              <td class="citation-year"><time datetime="2026">2026</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include mouse, adult, analyzes, atlas, cortex, dataset, epigenomic, formation.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1007/978-981-95-6786-7_25" target="_blank" rel="noopener">Benchmarking Preprocessing and Integration Methods in Single-Cell Genomics</a></td>
+              <td class="citation-year"><time datetime="2026">2026</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.3390/genes17070745" target="_blank" rel="noopener">Brain Spatial Genomics Atlases</a></td>
+              <td class="citation-year"><time datetime="2026">2026</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.4208/csiam-ls.so-2025-0032" target="_blank" rel="noopener">BRIDGE: An Interpretable Framework for Transcriptome-Scale Completion of Panel-Limited Spatial Transcriptomics</a></td>
+              <td class="citation-year"><time datetime="2026">2026</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include https, mouse, 35077, analysis, archive, available, biccn, biological.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.64898/2026.06.02.729566" target="_blank" rel="noopener">Cellpin enables reference-based imputation and denoising of spatial transcriptomes</a></td>
+              <td class="citation-year"><time datetime="2026">2026</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include datasets, diverse, five-fold, held-out, origins, paired, performed, prediction.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1093/bioinformatics/btag092" target="_blank" rel="noopener">CIRCE: a scalable Python package to predict cis-regulatory DNA interactions from single-cell chromatin accessibility data</a></td>
+              <td class="citation-year"><time datetime="2026">2026</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include applied, cells, cicero, cusanovich, datasets, high-resolution, hundreds, large.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.3389/fnins.2026.1773103" target="_blank" rel="noopener">Context-tuned strategies for marker selection precision in neuronal studies</a></td>
+              <td class="citation-year"><time datetime="2026">2026</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.64898/2026.04.23.720468" target="_blank" rel="noopener">Defining Cell Types through Maximally Informative Biological Atlases</a></td>
+              <td class="citation-year"><time datetime="2026">2026</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include abstractions, aspects, broader, capture, cellular, diversity, labels, remain.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.7554/elife.109861" target="_blank" rel="noopener">Dual-feature selectivity enables bidirectional coding in visual cortical neurons</a></td>
+              <td class="citation-year"><time datetime="2026">2026</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.7554/elife.109861.1" target="_blank" rel="noopener">Dual-feature selectivity enables bidirectional coding in visual cortical neurons</a></td>
+              <td class="citation-year"><time datetime="2026">2026</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.7554/elife.109861.2" target="_blank" rel="noopener">Dual-feature selectivity enables bidirectional coding in visual cortical neurons</a></td>
+              <td class="citation-year"><time datetime="2026">2026</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.64898/2026.04.28.721177" target="_blank" rel="noopener">Evolution of songbird vocal imitation involved multiple cellular innovations</a></td>
+              <td class="citation-year"><time datetime="2026">2026</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include annotations, azimuth, biohpc, broad, cell-class, cellxgene, classification, cortex.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1016/j.ymthe.2026.03.027" target="_blank" rel="noopener">Identification of a therapeutic threshold for AAV-STXBP1 gene therapy in a rodent model of STXBP1 developmental and epileptic encephalopathy</a></td>
+              <td class="citation-year"><time datetime="2026">2026</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1016/j.ccell.2025.12.020" target="_blank" rel="noopener">IGSF11-VISTA is a critical and targetable immune checkpoint axis in diffuse midline glioma</a></td>
+              <td class="citation-year"><time datetime="2026">2026</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1016/j.crmeth.2026.101346" target="_blank" rel="noopener">Integrating single-cell and single-nucleus datasets improves bulk RNA-seq deconvolution</a></td>
+              <td class="citation-year"><time datetime="2026">2026</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include across, datasets, deconvolution, findings, improve, performance, removing, revealed.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.64898/2026.03.06.710160" target="_blank" rel="noopener">MapMyCells: High-performance mapping of unlabeled cell-by-gene data to reference brain taxonomies</a></td>
+              <td class="citation-year"><time datetime="2026">2026</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include accessibility, assays, atac-seq, cell-type, chromatin, construction, dynamics, epigenomic.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1038/s41467-026-70523-y" target="_blank" rel="noopener">mist: a hierarchical Bayesian framework for detecting differential DNA methylation dynamics in single-cell data</a></td>
+              <td class="citation-year"><time datetime="2026">2026</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1109/tcbbio.2026.3682485" target="_blank" rel="noopener">Multi-Omics Graph Attention Network for Key Gene Prediction in Triple-Negative Breast Cancer</a></td>
+              <td class="citation-year"><time datetime="2026">2026</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.64898/2026.04.28.719500" target="_blank" rel="noopener">Multimodal alignments of in vivo imaging and spatial biology datasets at cellular resolution</a></td>
+              <td class="citation-year"><time datetime="2026">2026</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.64898/2026.05.04.722812" target="_blank" rel="noopener">MUSE enables cross-species multi-omics integration that incorporates transcriptional regulatory modules</a></td>
+              <td class="citation-year"><time datetime="2026">2026</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include clearly, clusters, distinct, known, level, lineages, neuronal, populations.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.64898/2026.06.11.731560" target="_blank" rel="noopener">Odor preference maps to cohesive transcriptional domains in the olfactory bulb</a></td>
+              <td class="citation-year"><time datetime="2026">2026</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1002/advs.202524392" target="_blank" rel="noopener">PAIR: Reconstructing Single‐Cell Open‐Chromatin Landscapes for Transcription Factor Regulome Mapping</a></td>
+              <td class="citation-year"><time datetime="2026">2026</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.64898/2026.06.04.730253" target="_blank" rel="noopener">PRIME: scalable, robust inference of mechanistic cell states from multimodal single-cell counts via probability generating functions</a></td>
+              <td class="citation-year"><time datetime="2026">2026</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include dataset, datasets, mouse, adenocarcinoma, advantages, analysis, comparative, computation.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.64898/2026.02.26.705527" target="_blank" rel="noopener">Protein-guided RNA barcoding links transcriptomes to synaptic architecture</a></td>
+              <td class="citation-year"><time datetime="2026">2026</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1038/s41586-025-09996-8" target="_blank" rel="noopener">Pyramidal neurons proportionately alter cortical interneuron subtypes</a></td>
+              <td class="citation-year"><time datetime="2026">2026</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.64898/2026.02.21.707167" target="_blank" rel="noopener">Reconstructing multi-scale tissue spatial architecture from single-cell RNA-seq with REMAP</a></td>
+              <td class="citation-year"><time datetime="2026">2026</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.64898/2026.05.01.722077" target="_blank" rel="noopener">Resilience to neuronal hyperactivity and restoration of the neuroimmune interactome and decision-making by blocking fibrin in a model of Alzheimer’s disease</a></td>
+              <td class="citation-year"><time datetime="2026">2026</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.21203/rs.3.rs-9134976/v1" target="_blank" rel="noopener">Single-cell multiomics reveals microglia–neuron granulin signaling associated with brain aging</a></td>
+              <td class="citation-year"><time datetime="2026">2026</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1038/s41467-026-70497-x" target="_blank" rel="noopener">Single-cell spatial map of cis-regulatory elements for disease-related genes in the macaque cortex</a></td>
+              <td class="citation-year"><time datetime="2026">2026</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1016/j.neurot.2026.e00841" target="_blank" rel="noopener">Single-dose psilocybin promotes cell-type-specific changes of neurons in the orbitofrontal cortex</a></td>
+              <td class="citation-year"><time datetime="2026">2026</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.21203/rs.3.rs-9504119/v1" target="_blank" rel="noopener">Single-Nucleus Transcriptomics Analysis Identifies Sex-Dichotomous Pathological Axes in Alzheimer’s Disease: Female Homeostatic Failure versus Male Neuroimmune Activation</a></td>
+              <td class="citation-year"><time datetime="2026">2026</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.3389/fncel.2026.1713437" target="_blank" rel="noopener">Single-nucleus transcriptomics identifies cell cycle and synaptic pathway dysregulation during OPC-to-glioma progression</a></td>
+              <td class="citation-year"><time datetime="2026">2026</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1186/s13041-026-01311-4" target="_blank" rel="noopener">Tbx1 heterozygosity in the oligodendrocyte lineage shifts myelinated axon composition in the mouse fimbria without behavioral impairments</a></td>
+              <td class="citation-year"><time datetime="2026">2026</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.21203/rs.3.rs-9327970/v1" target="_blank" rel="noopener">Tbx1 Heterozygosity in the Oligodendrocyte Lineage Shifts Myelinated Axon Composition in the Mouse Fimbria Without Behavioral Impairments</a></td>
+              <td class="citation-year"><time datetime="2026">2026</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.64898/2026.01.07.698249" target="_blank" rel="noopener">Temporal single-cell atlas of full-length Huntington’s disease mouse model defines stage-specific signatures of corticostriatal dysfunction</a></td>
+              <td class="citation-year"><time datetime="2026">2026</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.64898/2026.06.02.729594" target="_blank" rel="noopener">The molecular asynchrony of single cells</a></td>
+              <td class="citation-year"><time datetime="2026">2026</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include 024672, annotation, dataset, mapmycells, performed, published, reference-mapping, results.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1038/s41467-025-68059-8" target="_blank" rel="noopener">Uncovering the molecular logic of cortical wiring between neuronal subtypes across development through ligand–receptor inference</a></td>
+              <td class="citation-year"><time datetime="2026">2026</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include clusters, 2021b, cell-type, cells, dataset, supplementary, advantage, allenref21.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1016/j.celrep.2026.117469" target="_blank" rel="noopener">Whole-neuron morphology and genetic identity define cell types and reveal principles of brain-wide connectivity</a></td>
+              <td class="citation-year"><time datetime="2026">2026</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1016/j.celrep.2025.116167" target="_blank" rel="noopener">A consensus definition for deep layer 6 excitatory neurons in mouse somatosensory, visual, and motor cortex</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1186/s12974-025-03437-z" target="_blank" rel="noopener">A molecular brain atlas reveals cellular shifts during the repair phase of stroke</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include types, expression, marker, matched, snrnaseq, adult, cortices, datasets.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2025.08.22.671771" target="_blank" rel="noopener">A molecularly defined basalo-prefrontal-thalamic circuit regulates sensory and affective dimensions of pain in male mice</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2025.11.06.686832" target="_blank" rel="noopener">A silent Kv channel subunit shapes PV neuron action potential waveform and short-term synaptic plasticity during high-frequency firing</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1016/j.cell.2025.05.002" target="_blank" rel="noopener">A suite of enhancer AAVs and transgenic mouse lines for genetic access to cortical cell types</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1109/bibm66473.2025.11357194" target="_blank" rel="noopener">ACID: Improving Ambiguous Cell Type Annotation in Spatial Transcriptomics</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include mouse, brain, dataset, scrna-seq, axolotl, breast, cancer, cortex.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1111/acel.70233" target="_blank" rel="noopener">Age‐Associated Transcriptomic and Epigenetic Alterations in Mouse Hippocampus</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include addition, adult, allowed, analysis, atac-sequencing, atlas, brain, cis-regulatory.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2025.02.11.637559" target="_blank" rel="noopener">Annotation Comparison Explorer (ACE): connecting brain cell types across studies of health and Alzheimer’s Disease</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include disease, zenodo, 14624012, abundance, across, active, although, alzheimer.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1109/ijcnn64981.2025.11227921" target="_blank" rel="noopener">Biologically Informed procedure for Feature Summarization in Spatial Transcriptomics</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include atlas, collected, contributes, cortex, large, location, predicted, sequencing.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2025.11.21.689724" target="_blank" rel="noopener">Cannabis-enriched oral Actinomyces induces anxiety-like behavior via impairing mitochondria and GABA signaling</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1186/s13059-025-03847-5" target="_blank" rel="noopener">Cell type-specific inference from bulk RNA-sequencing data by integrating single-cell reference profiles via EPIC-unmix</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1126/sciadv.adv2067" target="_blank" rel="noopener">Cell type–specific 3D-genome organization and transcription regulation in the brain</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1093/nar/gkaf295" target="_blank" rel="noopener">Cell-cycle dependence of bursty gene expression: insights from fitting mechanistic models to single-cell RNA-seq data</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1016/j.xgen.2025.100986" target="_blank" rel="noopener">Cell-type-specific dysregulation of gene expression due to Chd8 haploinsufficiency during mouse cortical development</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1016/j.neuron.2025.08.006" target="_blank" rel="noopener">Cell-type-specific enrichment of somatic aneuploidy in the mammalian brain</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1038/s41467-025-67890-3" target="_blank" rel="noopener">CellScope: high-performance cell atlas workflow with tree-structured representation</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include dataset, applied, brain, capability, cellscope, cellular, cortex, data-sets.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1016/b978-0-443-23720-1.00026-5" target="_blank" rel="noopener">Cholecystokinin in the central and peripheral nervous system</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2025.11.28.691133" target="_blank" rel="noopener">Chromatin Disruption After Prenatal Hypoxia Predicts Lasting Neuron Deficits</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2025.09.23.678054" target="_blank" rel="noopener">CIRCE: a scalable Python package to predict cis-regulatory DNA interactions from single-cell chromatin accessibility data</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2025.02.24.639959" target="_blank" rel="noopener">Cluster replicability in single-cell and single-nucleus atlases of the mouse brain</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1016/j.patter.2025.101323" target="_blank" rel="noopener">Combined statistical-biophysical modeling links ion channel genes to physiology of cortical neuron types</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include types, additionally, anatomical, applied, cortex, cortical, dataset, decade.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1093/brain/awaf275" target="_blank" rel="noopener">Connectomic and behavioural alterations in creatine transporter deficiency are partially normalized by gene therapy</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include alterations, across, affect, cellular, expression, gabaergic, heterogeneity, interneurons.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1038/s41467-025-59954-1" target="_blank" rel="noopener">Corticothalamic neurons in motor cortex have a permissive role in motor execution</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include annotations, atlas, cells, clusters, concordance, demonstrated, different, during.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.3390/antiox14070781" target="_blank" rel="noopener">CRISPR/Cas9 and iPSC-Based Therapeutic Approaches in Alzheimer’s Disease</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include ability, added, advantage, atlas, behind, brain, cellular, development.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.64898/2025.12.15.694496" target="_blank" rel="noopener">Cross-species consensus atlas of the primate basal ganglia</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1016/j.xgen.2024.100739" target="_blank" rel="noopener">CSI-GEP: A GPU-based unsupervised machine learning approach for recovering gene expression programs in atlas-scale single-cell RNA-seq data</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include color, intensityrepresentsthenumberofoverlappinggenesbetweenthetop100geneweightsoneachgepand100markergenesreportedbythepreviousstudy.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.48550/arxiv.2511.05810" target="_blank" rel="noopener">DiagnoLLM: A Hybrid Bayesian Neural Language Framework for Interpretable Disease Diagnosis</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include tasic, clinical, cohorts, complexity, covariance, diagnostic, higher, impractical.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1186/s13619-025-00223-3" target="_blank" rel="noopener">Dissecting endothelial cell heterogeneity with new tools</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include brain, approach, barrier, blood, cells, complex, endothelial, function.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1016/j.pneurobio.2025.102841" target="_blank" rel="noopener">Distinct Layer 6b transcriptomic subtypes parcellate the cortical mantle</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2025.07.16.665209" target="_blank" rel="noopener">Dual-feature selectivity enables bidirectional coding in visual cortical neurons</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include brain, cells, comparable, density, despite, diversity, excitatory, exhibit.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1016/j.csbj.2025.10.002" target="_blank" rel="noopener">Epitranscriptomic and expression profiling in Riccia fluitans across diverse environmental conditions</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include accuracy, algorithms, basecalling, compared, continuous, detection, enhanced, furthermore.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1016/j.xgen.2025.100879" target="_blank" rel="noopener">Evaluating methods for the prediction of cell-type-specific enhancers in the mammalian cortex</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1126/sciadv.adw0424" target="_blank" rel="noopener">Excitotoxic neuronal death requires superoxide entry into neurons through volume-regulated anion channels</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include expressed, neurons, widely, brain, lrrc8a, requisite, subunit, subunits.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1007/978-3-032-05141-7_24" target="_blank" rel="noopener">GE2Hist: Generating Histology Images from Single-Cell Gene Expression via Cross-Modal Generative Network</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.48550/arxiv.2510.04315" target="_blank" rel="noopener">GenAR: Next-Scale Autoregressive Generation for Spatial Gene Expression Prediction</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1186/s13059-025-03773-6" target="_blank" rel="noopener">High-precision cell-type mapping and annotation of single-cell spatial transcriptomics with STAMapper</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2025.01.08.631859" target="_blank" rel="noopener">High-precision cell-type mapping and annotation of single-cell spatial transcriptomics with STAMapper</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2025.01.13.632744" target="_blank" rel="noopener">Highly accurate reference and method selection for universal cross-dataset cell type annotation with CAMUS</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/gr.280821.125" target="_blank" rel="noopener">Highly accurate reference and method selection for universal cross–data set cell type annotation with CAMUS</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include 2023a, datasets, methods, cortex, distinct, liver, luecken, obtained.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1038/s41586-025-08852-z" target="_blank" rel="noopener">Immune checkpoint TIM-3 regulates microglia and Alzheimer’s disease</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1038/s41467-025-62115-z" target="_blank" rel="noopener">Inhibition mediated by group III metabotropic glutamate receptors regulates habenula activity and defensive behaviors</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include areas, associative, atlas, available, brain, broad, cortical, cortices.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2025.05.08.652699" target="_blank" rel="noopener">Integrated Classification of Cortical Cells and Quantitative Projectomic Mapping Unveil Organizational Principles of Brain-Wide Connectomes at Single Cell Level</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include across, areas, category, consistent, cortical, diversity, findings, further.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1016/j.neuron.2025.03.016" target="_blank" rel="noopener">Integrating endocannabinoid signaling, CCK interneurons, and hippocampal circuit dynamics in behaving animals</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include cells, expressed, gamma, marker, mouse, selectively, single-cell, sncg-flp.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1016/j.cell.2025.04.035" target="_blank" rel="noopener">Integrating reproductive states and social cues in the control of sociosexual behaviors</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2025.10.17.683151" target="_blank" rel="noopener">Intersection of transient cell states with stable cell types in hippocampus</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include along, anatomical, differences, functional, hippocampus, hypothesized, observe, specialization.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.7554/elife.109663" target="_blank" rel="noopener">Intersection of transient cell states with stable cell types in hippocampus</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.7554/elife.109663.1" target="_blank" rel="noopener">Intersection of transient cell states with stable cell types in hippocampus</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1016/j.neures.2025.03.009" target="_blank" rel="noopener">Lateralized local circuit tuning in female mouse auditory cortex</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include interneurons, oxytocin, cortex, cortical, depolarizes, directly, evoked, express.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1038/s41594-025-01657-8" target="_blank" rel="noopener">Midkine attenuates amyloid-β fibril assembly and plaque formation</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2025.03.20.644383" target="_blank" rel="noopener">Midkine Attenuates Aβ Fibril Assembly and Amyloid Plaque Formation</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1038/s41592-025-02832-x" target="_blank" rel="noopener">Monod: model-based discovery and integration through fitting stochastic transcriptional dynamics to single-cell sequencing data</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include brain, generated, mouse, allen, compared, gabaergic, glutamatergic, institute.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2025.07.11.664268" target="_blank" rel="noopener">Motor learning drives region-specific transcriptomic remodeling in the motor cortex and dorsal striatum</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1007/978-981-96-7067-3_4" target="_blank" rel="noopener">Multiresolution Insights into Single-Cell Landscapes: Integrating Genomics, Epigenomics, and Proteomics for Brain Studies</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1016/b978-0-443-13492-0.00001-3" target="_blank" rel="noopener">Multivalent cannabinoid epigenotoxicities and multigenerational aging</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2025.11.29.691308" target="_blank" rel="noopener">multiVIB: A unified probabilistic contrastive learning framework for atlas-scale integration of single-cell multi-omics data</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.64898/2025.12.18.695250" target="_blank" rel="noopener">Neocortical temporal patterning by a two-layered regulatory network</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1038/s41467-025-63725-3" target="_blank" rel="noopener">Neural xenografts contribute to long-term recovery in stroke via molecular graft-host crosstalk</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include mouse, neurons, reference, types, atlases, brain, cation, cell-type.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.21203/rs.3.rs-7421061/v1" target="_blank" rel="noopener">New genetic tools for central and peripheral vascular endothelia</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include cells, addition, adult, analysis, areas, combining, cortical, dataset.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1038/s41592-025-02814-z" target="_blank" rel="noopener">Nicheformer: a foundation model for single-cell and spatial omics</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include attention, genes, layers, across, brain, datasets, random, analyzed.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1038/s10038-025-01418-x" target="_blank" rel="noopener">NOL10 variant disrupts ribosome biogenesis and underlies hippocampal sclerosis</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2025.06.01.657261" target="_blank" rel="noopener">Novel mouse model reveals neurodevelopmental origin of PMM2-CDG brain pathology</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include annotation, based, canonical, cerebellum, cortex, genes, marker, previously.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1007/s12264-025-01496-z" target="_blank" rel="noopener">Nr4a2, A Key Factor Controlling the Development and Functional Maintenance of Forebrain Car3 Neurons</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2024.12.31.630879" target="_blank" rel="noopener">Nurr1 orchestrates claustrum development and functionality</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1002/advs.202508999" target="_blank" rel="noopener">Nurr1 Orchestrates Claustrum Development and Functionality</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include neurons, annotation, azimuth, cells, cortex, mouse, reference, available.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1038/s41467-025-65066-7" target="_blank" rel="noopener">Omnireg-gpt: a high-efficiency foundation model for comprehensive genomic sequence understanding</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1038/s41467-025-60360-w" target="_blank" rel="noopener">Projection-TAGs enable multiplex projection tracing and multi-modal profiling of projection neurons</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include snrna-seq, detection, express, projection-tag, assay, cells, efficient, false.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1038/s43588-025-00824-7" target="_blank" rel="noopener">Quantifying batch effects for individual genes in single-cell data</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include supplementary.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2025.11.25.689803" target="_blank" rel="noopener">Scalable integration and prediction of unpaired single-cell and spatial multi-omics via regularized disentanglement</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include cells, cortex, motor, mouse, primary, single-cell, spatial, accumulation.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.64898/2025.12.01.691565" target="_blank" rel="noopener">scMOBA: A conversational single-cell Multi-Omics Brain Agent across species</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.48550/arxiv.2510.24987" target="_blank" rel="noopener">scMRDR: A scalable and flexible framework for unpaired single-cell multi-omics data integration</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include available, cortex, datasets, evaluate, motor, mouse, primary, scmrdr.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1109/bibm66473.2025.11356172" target="_blank" rel="noopener">Scotd: Single-Cell Cross-Modality Translation for Unpaired Data Through Optimal Transport-Conditioned Diffusion</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include acquisition, difficult, easily, introducing, missing, noise, values.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1186/s10194-025-02203-z" target="_blank" rel="noopener">Selective loss and transcriptional reprogramming of Nox4+ GABAergic neurons in the trigeminal nucleus caudalis of NTG-induced chronic migraine model</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include activity, address, advances, approach, cellular, composition, explore, method.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1523/eneuro.0589-24.2025" target="_blank" rel="noopener">Selective Targeting of a Defined Subpopulation of Corticospinal Neurons Using a Novel Klhl14-Cre Mouse Line Enables Molecular and Anatomical Investigations through Development into Maturity</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include datasets, expression, klhl14, sequencing, tasic, absent, access, adult.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2025.08.06.668931" target="_blank" rel="noopener">Single Cell Multiomics Across Nine Mammals Reveals Cell Type Specific Regulatory Conservation in the Brain</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2025.05.29.656780" target="_blank" rel="noopener">Single-cell Characterization of DNA Hydroxymethylation of the Mouse Brain During Aging</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1038/s41592-025-02632-3" target="_blank" rel="noopener">Single-cell parallel analysis of DNA damage and transcriptome reveals selective genome vulnerability</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include reference, mapping, dataset, index, performed, results, snrna-seq, validate.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2025.06.03.657577" target="_blank" rel="noopener">Single-cell spatial map of cis-regulatory elements for disease-related genes in the macaque cortex</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2025.11.28.691138" target="_blank" rel="noopener">snRNA-seq of Huntington’s disease mice reveals vulnerability profiles of cortical cell types</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include annotation, atlas, biccn, cortex, integrated, motor, mouse, primary.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2025.01.04.631330" target="_blank" rel="noopener">Spatial dissimilarity analysis in single cell transcriptomics</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1016/j.crmeth.2025.101141" target="_blank" rel="noopener">Spatial dissimilarity analysis in single-cell transcriptomics</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2025.07.03.662904" target="_blank" rel="noopener">SpatialMap: A Scalable Deep Learning Method for Cell Typing in Subcellular Spatial Transcriptomics</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include dataset, matched, reference, sequencing, single-nucleus, snrna-seq, utilized.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1016/j.xinn.2025.101220" target="_blank" rel="noopener">stSCI: A multi-task learning framework for integrative analysis of single-cell and spatial transcriptomics data</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1016/j.isci.2025.113712" target="_blank" rel="noopener">TAOK2 controls synaptic plasticity and anxiety via ERK and calcium signaling</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2025.07.23.666342" target="_blank" rel="noopener">The misplaced mouse Pax6 interneuron subclass: A cross-species transcriptomic reassignment</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include atlases, absent, annotated, comprehensive, consistently, conspicuously, datasets, including.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1038/s41467-025-56292-0" target="_blank" rel="noopener">The transcriptional response of cortical neurons to concussion reveals divergent fates after injury</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include annotated, assign, cortex, mapped, motor, mouse, nuclei, reference.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1016/j.biopsych.2025.06.010" target="_blank" rel="noopener">The Use of Single-Cell and Spatial Omics to Study Copy Number Variants</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2025.08.17.670735" target="_blank" rel="noopener">TissueFormer: a neural network for labeling tissue from grouped single-cell RNA profiles</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include 2021b, abundance, areas, cortex, example, types, 2021a, across.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1038/s41586-025-08710-y" target="_blank" rel="noopener">Towards multimodal foundation models in molecular cell biology</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1038/s41587-024-02533-4" target="_blank" rel="noopener">Uniform volumetric single-cell processing for organ-scale molecular phenotyping</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include supplementary, video, neurons, antibody, labeling, modifications, nucleus, populations.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2025.09.15.676416" target="_blank" rel="noopener">Whole-brain clearing reveals region- and cell type-specific imbalances in inhibitory neurons in a mouse model for Kleefstra Syndrome</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.3389/fncir.2024.1436915" target="_blank" rel="noopener">A brief history of somatostatin interneuron taxonomy or: how many somatostatin subtypes are there, really?</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include cortex, gabaergic, motor, tasic, types, visual, 2021a, 2021b.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2024.02.01.578507" target="_blank" rel="noopener">A Comprehensive Benchmarking Study on Computational Tools for Cross-omics Label Transfer from Single-cell RNA to ATAC Data</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2024.11.04.621933" target="_blank" rel="noopener">A consensus definition for deep layer 6 excitatory neurons in mouse neocortex</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1038/s41592-023-02139-9" target="_blank" rel="noopener">A fast, scalable and versatile tool for analysis of single-cell omics data</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2024.08.21.608971" target="_blank" rel="noopener">A molecular brain atlas reveals cellular shifts during the repair phase of stroke</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include types, expression, marker, matched, snrnaseq, adult, cortices, datasets.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://www.semanticscholar.org/paper/96be19824a9e34424c5dab8207a5e1ee7eb307b8" target="_blank" rel="noopener">A Novel Method for Clustering Cellular Data to Improve Classification</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2024.12.30.630728" target="_blank" rel="noopener">A quantitative spatial atlas of transcriptomic, morphological, and electrophysiological cell type densities in the mouse brain</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1016/j.cell.2024.10.050" target="_blank" rel="noopener">A spatially resolved multi-omic single-cell atlas of soybean development</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2024.07.03.601616" target="_blank" rel="noopener">A spatially resolved multiomic single-cell atlas of soybean development</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2024.06.10.597244" target="_blank" rel="noopener">A suite of enhancer AAVs and transgenic mouse lines for genetic access to cortical cell types</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include based, cortex, genes, label, marker, mouse, selected, specific.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1016/j.neures.2024.09.003" target="_blank" rel="noopener">Adaptive circuits for action and value information in rodent operant learning</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2024.09.05.611100" target="_blank" rel="noopener">Age-associated transcriptomic and epigenetic alterations in mouse hippocampus</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1038/s41592-024-02365-9" target="_blank" rel="noopener">Biophysical modeling with variational autoencoders for bimodal, single-cell RNA sequencing data</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include cells, brain, therefore, allen, annotations, applied, archive, barcodes.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1038/s43588-024-00689-2" target="_blank" rel="noopener">Biophysically interpretable inference of cell types from multimodal sequencing data</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include clusters, clustering, dataset, methods, obtained, 10xgenomics, algorithms, analyses.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1016/j.csbj.2024.11.038" target="_blank" rel="noopener">BrainCellR: A precise cell type nomenclature pipeline for comparative analysis across brain single-cell datasets</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2024.08.14.608000" target="_blank" rel="noopener">Cell type-specific dysregulation of gene expression due to Chd8 haploinsufficiency during mouse cortical development</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2024.01.10.574820" target="_blank" rel="noopener">Cell-cycle dependence of bursty gene expression: insights from fitting mechanistic models to single-cell RNA-seq data</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2024.05.23.595514" target="_blank" rel="noopener">Cell-type specific inference from bulk RNA-sequencing data by integrating single cell reference profiles via EPIC-unmix</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include cells, cortex, datasets, motor, mouse, primary, tasic.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.21203/rs.3.rs-4979032/v1" target="_blank" rel="noopener">Cell-type specific inference from bulk RNA-sequencing data by integrating single cell reference profiles via EPIC-unmix</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1093/cercor/bhae290" target="_blank" rel="noopener">Cholinergic modulation of interhemispheric inhibition in the mouse motor cortex</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2024.02.05.579044" target="_blank" rel="noopener">Cholinergic modulation of interhemispheric inhibition in the mouse motor cortex</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2024.05.07.592424" target="_blank" rel="noopener">Collagen I is a critical organizer of scarring and CNS regeneration failure</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include neurons, receptors, attention, binding, caudal, collagen, considering, cortical.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.26873/svr-1920-2024" target="_blank" rel="noopener">COMPARATIVE ANALYSIS OF REFERENCE-BASED CELL TYPE MAPPING AND MANUAL ANNOTATION IN SINGLE CELL RNA SEQUENCING ANALYSIS</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include annotation, approaches, automated, azimuth, different, difficult, emphasizes, importance.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1609/aaai.v38i14.29453" target="_blank" rel="noopener">Comprehensive View Embedding Learning for Single-Cell Multimodal Integration</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include cells, measured, mouse, snatac-seq, technology, yao-2021.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2024.01.12.575377" target="_blank" rel="noopener">Connectomic and behavioral alterations in creatine transporter deficiency are partially normalized by gene therapy</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include alterations, across, affect, cellular, expression, gabaergic, heterogeneity, interneurons.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1016/j.jlr.2024.100716" target="_blank" rel="noopener">Creation of a novel zebrafish model with low DHA status to study the role of maternal nutrition during neurodevelopment</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2024.07.30.605803" target="_blank" rel="noopener">Creation of a novel zebrafish model with low DHA status to study the role of maternal nutrition during neurodevelopment</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1002/wrna.1865" target="_blank" rel="noopener">Deciphering brain cellular and behavioral mechanisms: Insights from single‐cell and spatial RNA sequencing</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include analyzing, approaches, brain, categorization, cells, classification, close, connectomic.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1016/j.cell.2024.08.051" target="_blank" rel="noopener">Decoding the brain: From neural representations to mechanistic models</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1186/s13040-024-00391-z" target="_blank" rel="noopener">Deep learning-based approaches for multi-omics data integration and analysis</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/gr.278253.123" target="_blank" rel="noopener">Differences in molecular sampling and data processing explain variation among single-cell and single-nucleus RNA-seq experiments</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include cortex, mouse, generated, analysis, dataset, large, address, analyzed.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1523/jneurosci.0302-23.2023" target="_blank" rel="noopener">Divergent Learning-Related Transcriptional States of Cortical Glutamatergic Neurons</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1038/s41467-024-48868-z" target="_blank" rel="noopener">DOT: a flexible multi-objective optimization framework for transferring features across single-cell and spatial omics</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1038/s41587-024-02447-1" target="_blank" rel="noopener">Droplet Hi-C enables scalable, single-cell profiling of chromatin architecture in heterogeneous tissues</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1016/j.cobeha.2024.101437" target="_blank" rel="noopener">Dynamics of neural activity in early nervous system evolution</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include neural, ancient, function, functional, fundamental, markers, nervous, neuropeptides.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2024.10.14.618338" target="_blank" rel="noopener">Epigenetic and 3D genome reprogramming during the aging of human hippocampus</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1016/b978-0-443-18516-8.00001-6" target="_blank" rel="noopener">Epigenetics and multiple sclerosis</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2024.08.30.610466" target="_blank" rel="noopener">Estrus-Tracking Cortical Neurons Integrate Social cues and Reproductive states to Adaptively Control Sexually Dimorphic Sociosexual Behaviors</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2024.08.21.609075" target="_blank" rel="noopener">Evaluating Methods for the Prediction of Cell Type-Specific Enhancers in the Mammalian Cortex</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.3389/fnmol.2024.1365978" target="_blank" rel="noopener">Expression characteristics and potential function of non-coding RNA in mouse cortical cells</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include 2021a, genes, kozareva, marker, ncrnas, particular, previously, providing.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1038/s41598-024-74732-7" target="_blank" rel="noopener">Functional diversities within neurons and astrocytes in the adult rat auditory cortex revealed by single-nucleus RNA sequencing</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include guidance, neurons, projection, called, captured, cells, chandelier, cluster.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2024.04.16.589831" target="_blank" rel="noopener">Functional diversities within neurons and astrocytes in the adult rat auditory cortex revealed by single-nucleus RNA sequencing</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include erbb4, interneuron, marker, neurons, accord, adarb2, along, called.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1093/bib/bbae576" target="_blank" rel="noopener">Graph domain adaptation–based framework for gene expression enhancement and cell type identification in large-scale spatially resolved transcriptomics</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2024.08.03.606484" target="_blank" rel="noopener">High-throughput gene expression analysis with TempO-LINC sensitively resolves complex brain, lung and kidney heterogeneity at single-cell resolution</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include allen, annotation, automated, brain, cells, classification, clusters, identification.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1038/s41598-024-82736-6" target="_blank" rel="noopener">High-throughput gene expression analysis with TempO-LINC sensitively resolves complex brain, lung and kidney heterogeneity at single-cell resolution</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1002/2211-5463.13904" target="_blank" rel="noopener">Hippocampal tau‐induced GRIN3A deficiency in Alzheimer&#39;s disease</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1093/cei/uxae077" target="_blank" rel="noopener">Implementing distinct spatial proteogenomic technologies: opportunities, challenges, and key considerations</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include snrna-seq, although, clustering, comparable, comparing, concordance, conversely, degree.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2024.09.11.612421" target="_blank" rel="noopener">Inhibition mediated by group III mGluRs regulates habenula activity and defensive behaviors</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1093/bib/bbae052" target="_blank" rel="noopener">Innovative super-resolution in spatial transcriptomics: a transformer model exploiting histology images and spatial gene expression</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include atlas, batch, biccn, biomolecular, brain, census, deconvolution, effects.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1038/s41586-024-08108-2" target="_blank" rel="noopener">Leptin-activated hypothalamic BNC2 neurons acutely suppress food intake</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1016/j.neuron.2024.04.021" target="_blank" rel="noopener">Making Ramón y Cajal proud: Development of cell identity and diversity in the cerebral cortex</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1038/s41467-024-46437-y" target="_blank" rel="noopener">Mapping human tissues with highly multiplexed RNA in situ hybridization</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1016/j.cell.2024.04.050" target="_blank" rel="noopener">Massively parallel in vivo Perturb-seq reveals cell-type-specific transcriptional networks in cortical development</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1038/s41586-024-07895-y" target="_blank" rel="noopener">Molecular programs guiding arealization of descending cortical pathways</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1007/s00424-024-02923-2" target="_blank" rel="noopener">Multimodal cortical neuronal cell type classification</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include neurons, although, cortex, cortical, cytoarchitectonic, defined, interestingly, lacks.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1007/s12264-023-01160-4" target="_blank" rel="noopener">Multimodal Nature of the Single-cell Primate Brain Atlas: Morphology, Transcriptome, Electrophysiology, and Connectivity</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2024.04.03.588020" target="_blank" rel="noopener">Neural xenografts contribute to long-term recovery in stroke via molecular graft-host crosstalk</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1016/j.neures.2024.03.004" target="_blank" rel="noopener">Neuronal subtype-specific transcriptomic changes in the cerebral neocortex associated with sleep pressure</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2024.04.15.589472" target="_blank" rel="noopener">Nicheformer: a foundation model for single-cell and spatial omics</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.2139/ssrn.4803291" target="_blank" rel="noopener">Nicheformer: A Foundation Model for Single-Cell and Spatial Omics</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1038/s41467-024-54973-w" target="_blank" rel="noopener">NiCo identifies extrinsic drivers of cell state modulation by niche covariation analysis</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include accessed, corresponding, cortex, merfish, motor, mouse, primary, scrna-seq.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2024.12.04.626890" target="_blank" rel="noopener">Pareto Optimality Reveals an Atlas of Cellular Archetypes</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1038/s41592-024-02496-z" target="_blank" rel="noopener">Probe set selection for targeted spatial transcriptomics</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include atlas, genes, correlation, dataset, expressed, marrow, cortex, datasets.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2024.04.24.590975" target="_blank" rel="noopener">Projection-TAGs enable multiplex projection tracing and multi-modal profiling of projection neurons</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2024.01.07.573163" target="_blank" rel="noopener">Psilocybin Promotes Cell-Type-Specific Changes in the Orbitofrontal Cortex Revealed by Single-Nucleus RNA-seq</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2024.07.20.604399" target="_blank" rel="noopener">Pyramidal neurons proportionately alter the identity and survival of specific cortical interneuron subtypes</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.21203/rs.3.rs-4774421/v1" target="_blank" rel="noopener">Pyramidal neurons proportionately alter the identity and survival of specific cortical interneuron subtypes</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include annotated, datasets, downloaded, previous, processed, publications, re-annotated, scrna-seq.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.7324/japs.2025.211186" target="_blank" rel="noopener">Reference materials for DNA-based diagnostics testing; principles, comparative analysis, contemporary applications, and future recommendation in Indonesia</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include certain, commission, european, genetic, irmm-of, markers, materials, measurements.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/cshperspect.a041509" target="_blank" rel="noopener">Reimagining Cortical Connectivity by Deconstructing Its Molecular Logic into Building Blocks</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1038/s41467-024-47418-x" target="_blank" rel="noopener">scButterfly: a versatile single-cell cross-modality translation method via dual-aligned variational autoencoders</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include dataset, cortex, datasets, kidney, motor, mouse, muscle, pancreas.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2024.02.26.582051" target="_blank" rel="noopener">scConfluence : single-cell diagonal integration with regularized Inverse Optimal Transport on weakly connected features</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1038/s41467-024-51382-x" target="_blank" rel="noopener">scConfluence: single-cell diagonal integration with regularized Inverse Optimal Transport on weakly connected features</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include neurons, classi, corresponding, cortex, cortico, different, extra, intra.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1186/s13059-024-03410-8" target="_blank" rel="noopener">scCTS: identifying the cell type-specific marker genes from population-level single-cell RNA-seq</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include auroc, based, biccn, brain, census, change, curve, deconvolution.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1109/bibm62325.2024.10822086" target="_blank" rel="noopener">scKADE: Single-Cell Multi-Omics Integration with Kolmogorov-Arnold Deep Embedding</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include datasets, along, benchmark, experiments, including, ma-2020, multiome, muto-2021.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2024.12.10.627648" target="_blank" rel="noopener">Selective Targeting of a Defined Subpopulation of Corticospinal Neurons using a Novel Klhl14-Cre Mouse Line Enables Molecular and Anatomical Investigations through Development into Maturity</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.36468/pharmaceutical-sciences.spl.869" target="_blank" rel="noopener">Single Cell Ribonucleic Acid Sequencing Analysis Reveals Potential Autophagy-Related Signatures in Heart Failure</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1016/j.bpj.2024.04.034" target="_blank" rel="noopener">Spectral neural approximations for models of transcriptional dynamics</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2024.09.09.612115" target="_blank" rel="noopener">Spontaneously regenerative corticospinal neurons in mice</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.7554/elife.87517.2" target="_blank" rel="noopener">Statistical analysis supports pervasive RNA subcellular localization and alternative 3&#39; UTR regulation</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1038/s41592-024-02366-8" target="_blank" rel="noopener">Studying RNA dynamics from single-cell RNA sequencing snapshots</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1038/s44318-024-00148-8" target="_blank" rel="noopener">Targeting neuronal epigenomes for brain rejuvenation</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include neurons, based, methylation, patterns, subtypes, types, brain, contributes.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1038/s41587-024-02193-4" target="_blank" rel="noopener">The covariance environment defines cellular niches for spatial inference</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1071/rd23212" target="_blank" rel="noopener">The future of equine semen analysis</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1038/s41380-024-02620-7" target="_blank" rel="noopener">The single-cell opioid responses in the context of HIV (SCORCH) consortium</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include accessibility, cells, chromatin, concordant, derived, elements, epigenomic, expression.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2024.02.26.581939" target="_blank" rel="noopener">The transcriptional response of cortical neurons to concussion reveals divergent fates after injury</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1016/j.cell.2024.07.041" target="_blank" rel="noopener">Thyroid hormone remodels cortex to coordinate body-wide metabolism and exploration</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include dataset, assigned, cells, control, cortex, motor, algorithm, analyzed.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1016/j.cels.2024.05.001" target="_blank" rel="noopener">Tissue module discovery in single-cell-resolution spatial transcriptomics data via cell-cell interaction-aware cell embedding</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1186/s12993-024-00240-3" target="_blank" rel="noopener">Transcriptome analysis identifies an ASD-Like phenotype in oligodendrocytes and microglia from C58/J amygdala that is dependent on sex and sociability</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include canonical, annotated, annotation, clusters, cortex, expression, genes, identifying.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2024.01.15.575733" target="_blank" rel="noopener">Transcriptome Analysis Identifies An ASD-Like Phenotype In Oligodendrocytes And Microglia From C58/J Amygdala That Is Dependent On Sex and Sociability</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1016/j.neuron.2024.09.003" target="_blank" rel="noopener">Transcriptomic cell-type specificity of local cortical circuits</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/gr.279640.124" target="_blank" rel="noopener">Understanding isoform expression by pairing long-read sequencing with single-cell and spatial transcriptomics</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1038/s41586-024-07221-6" target="_blank" rel="noopener">Whole-cortex in situ sequencing reveals input-dependent area identity</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include supplementary, types, neurons, expression, previous, across, compared, correct.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1126/science.adf7044" target="_blank" rel="noopener">A comparative atlas of single-cell chromatin accessibility in the human brain</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include andhigh-throughputimagingexperimentshaveproduced, areas, brain, comprehensive, detailedcelltaxonomiesformouseandhu-manbrains, leading, molecular, scrna-seq.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1038/s41588-023-01572-y" target="_blank" rel="noopener">A global view of aging and Alzheimer’s pathogenesis-associated cell population dynamics and molecular signatures in human and mouse brains</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include annotated, based, clusters, co-embedded, datasets, overlapped, published, seurat.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1371/journal.pbio.3002133" target="_blank" rel="noopener">A guide to the BRAIN Initiative Cell Census Network data ecosystem</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include single-cell, biccn, single-nucleus, types, atac-seq, bar-seq, defined, epi-retro-seq.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1038/s41586-023-06812-z" target="_blank" rel="noopener">A high-resolution transcriptomic and spatial atlas of cell types in the whole mouse brain</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2023.03.06.531121" target="_blank" rel="noopener">A high-resolution transcriptomic and spatial atlas of cell types in the whole mouse brain</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1523/eneuro.0456-22.2023" target="_blank" rel="noopener">A History of Repeated Alcohol Intoxication Promotes Cognitive Impairment and Gene Expression Signatures of Disease Progression in the 3xTg Mouse Model of Alzheimer’s Disease</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include assignment, azimuth, eneuro, 0456-22, according, assigning, cells, confidently.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2023.03.06.531348" target="_blank" rel="noopener">A molecularly defined and spatially resolved cell atlas of the whole mouse brain</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1038/s41598-023-33448-w" target="_blank" rel="noopener">An unbiased AAV-STARR-seq screen revealing the enhancer activity map of genomic regions in the mouse brain in vivo</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1523/jneurosci.0811-22.2023" target="_blank" rel="noopener">Anatomical Diversity of the Adult Corticospinal Tract Revealed by Single-Cell Transcriptional Profiling</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1007/s11538-023-01213-9" target="_blank" rel="noopener">Assessing Markovian and Delay Models for Single-Nucleus RNA Sequencing</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2023.01.13.523995" target="_blank" rel="noopener">Biophysical modeling with variational autoencoders for bimodal, single-cell RNA sequencing data</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2023.09.17.558131" target="_blank" rel="noopener">Biophysically Interpretable Inference of Cell Types from Multimodal Sequencing Data</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1126/sciadv.adf5672" target="_blank" rel="noopener">Brain rhythms control microglial response and cytokine expression via NF-κB signaling</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1109/jstars.2023.3316302" target="_blank" rel="noopener">Brain-Inspired Remote Sensing Foundation Models and Open Problems: A Comprehensive Survey</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include analyzed, cells, cortex, highly, identi, individual, instance, motor.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1109/jstars.2023.3247455" target="_blank" rel="noopener">Brain-Inspired Remote Sensing Interpretation: A Comprehensive Survey</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include analyzed, brain, characterized, constructed, cortex, developmental, diversity, interneurons.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1016/j.neuron.2023.08.004" target="_blank" rel="noopener">Brain-region-specific changes in neurons and glia and dysregulation of dopamine signaling in Grin2a mutant mice</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2023.11.08.566209" target="_blank" rel="noopener">BrainCellR: A Precise Cell Type Nomenclature R Package for Comparative Analysis Across Brain Single-Cell Datasets</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2023.12.18.572285" target="_blank" rel="noopener">Cell type-specific enrichment of somatic aneuploidy in the mammalian brain</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include previously, reported.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1186/s40478-023-01533-w" target="_blank" rel="noopener">Cell-specific vulnerability to metabolic failure: the crucial role of parvalbumin expressing neurons in creatine transporter deficiency</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2023.12.04.570024" target="_blank" rel="noopener">Cell-type-specific 3D-genome organization and transcription regulation in the brain</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1016/j.isci.2023.105992" target="_blank" rel="noopener">Chrna5 and lynx prototoxins identify acetylcholine super-responder subplate neurons</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2023.03.02.530774" target="_blank" rel="noopener">Combined statistical-biophysical modeling links ion channel genes to physiology of cortical neuron types</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2023.04.08.536119" target="_blank" rel="noopener">Comparative single cell epigenomic analysis of gene regulatory programs in the rodent and primate neocortex</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2023.08.02.551637" target="_blank" rel="noopener">Compound models and Pearson residuals for single-cell RNA-seq data without UMIs</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include tasic, types, splicing, variants, complex, detect, often, profiling.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1038/s41586-023-06819-6" target="_blank" rel="noopener">Conserved and divergent gene regulatory programs of the mammalian neocortex</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include supplementary, tables, brain, cells, datasets, mapping, marmoset, mouse.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1016/j.neuron.2023.09.019" target="_blank" rel="noopener">Deep scRNA sequencing reveals a broadly applicable Regeneration Classifier and implicates antioxidant response in corticospinal axon regeneration</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include approaches, cortex, drawbacks, forebrain, however, jessaetal, neuronal, neurons.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1523/jneurosci.1878-22.2023" target="_blank" rel="noopener">Diminished Neuronal ESCRT-0 Function Exacerbates AMPA Receptor Derangement and Accelerates Prion-Induced Neurodegeneration</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1126/sciadv.adi0074" target="_blank" rel="noopener">Disruption of the autism gene and chromatin regulator KDM5A alters hippocampal cell identity</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include brain, circuitry, demonstrated, diversity, electrophysiological, epigenomic, including, levels.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.48550/arxiv.2301.01682" target="_blank" rel="noopener">DOT: Fast Cell Type Decomposition of Spatial Omics by Optimal Transport</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include scrna-seq, across, annotations, atlas, cells, comes, common, contains.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1038/s41594-023-01060-1" target="_blank" rel="noopener">Droplet-based single-cell joint profiling of histone modifications and transcriptomes</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1038/s41573-023-00847-7" target="_blank" rel="noopener">Drug targeting in psychiatric disorders — how to overcome the loss in translation?</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include types, across, animal, atlases, brain, brains, characterize, circuits.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1016/j.cell.2023.08.005" target="_blank" rel="noopener">Early Alzheimer’s disease pathology in human cortex involves transient cell states</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.21203/rs.3.rs-3185942/v1" target="_blank" rel="noopener">Elovanoids are neural resiliency epigenomic regulators targeting histone modifications, DNA methylation, tau phosphorylation, telomere integrity, senescence programming, and dendrite integrity</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1186/s13059-023-03139-w" target="_blank" rel="noopener">ENGEP: advancing spatial transcriptomics with accurate unmeasured gene expression prediction</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include datasets, expression, layers, reference, scrna-seq, seven, single-cell, single-nucleus.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.3389/fncel.2023.1292822" target="_blank" rel="noopener">Excitatory subtypes of the lateral amygdala neurons are differentially involved in regulation of synaptic plasticity and excitation/inhibition balance in aversive learning in mice</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include kawaguchi, patterns, carter, cells, defelipe, excitatory, farinas, heterogeneous.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1111/bph.16298" target="_blank" rel="noopener">Extracellular ATP inhibits excitatory synaptic input on parvalbumin positive interneurons and attenuates gamma oscillations via P2X4 receptors</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include allen, brain, compared, expression, hippocampus, institute, interneuron, pvins.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.21203/rs.3.rs-2485985/v1" target="_blank" rel="noopener">Fast model-free standardization and integration of single-cell transcriptomics data</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include across, mouse, platforms, scrna-seq, studies, 22-26, 27-30, 32-35.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1002/9781119860914.ch11" target="_blank" rel="noopener">Generation of Projection Neuron Diversity in the Neocortex</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1523/eneuro.0204-23.2023" target="_blank" rel="noopener">Genetically Defined Subtypes of Somatostatin-Containing Cortical Interneurons</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1016/j.semcancer.2023.06.006" target="_blank" rel="noopener">Harnessing computational spatial omics to explore the spatial biology intricacies</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1007/s00216-023-04555-4" target="_blank" rel="noopener">Histone H4 proteoforms and post-translational modifications in the Mus musculus brain with quantitative comparison of ages and brain regions</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1038/s41593-022-01222-2" target="_blank" rel="noopener">Insights into Alzheimer’s disease from single-cell genomic approaches</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.3390/ijms24076772" target="_blank" rel="noopener">Integrative Analysis of Single-Cell and Bulk Sequencing Data Depicting the Expression and Function of P2ry12 in Microglia Post Ischemia–Reperfusion Injury</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1002/9781119860914.ch21" target="_blank" rel="noopener">Mammalian Cortical Regional Specification</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1002/advs.202305449" target="_blank" rel="noopener">Mapping Cell Atlases at the Single‐Cell Level</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2023.08.16.553610" target="_blank" rel="noopener">Mapping Human Tissues with Highly Multiplexed RNA in situ Hybridization</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1038/s42003-023-04820-3" target="_blank" rel="noopener">MASI enables fast model-free standardization and integration of single-cell transcriptomics data</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2023.09.18.558077" target="_blank" rel="noopener">Massively parallel in vivo Perturb-seq reveals cell type-specific transcriptional networks in cortical development</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include cells, expression, single, aav-crispr-mediated, adult, analysis, atlas, binding.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2023.06.30.547258" target="_blank" rel="noopener">Mitigating autocorrelation during spatially resolved transcriptomics data analysis</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include single-cell, atlases, creation, enabled, leverage, multiple, sequencing, single-nucleus.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1093/bib/bbad313" target="_blank" rel="noopener">Multimodal deep learning approaches for single-cell multi-omics data integration</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include mouse, scatac-seq, scrna-seq, gsm3271040, snare-seq, gse140203, gse151302, methylation.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.3389/fpsyt.2023.1182535" target="_blank" rel="noopener">Perturbation of 3D nuclear architecture, epigenomic dysregulation and aging, and cannabinoid synaptopathy reconfigures conceptualization of cannabinoid pathophysiology: part 1–aging and epigenomics</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include during, erentiation, including, absence, boundary, brain, brought, cancers.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1038/s41467-023-37392-1" target="_blank" rel="noopener">Predictive and robust gene selection for spatial transcriptomics</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1038/s41380-023-02018-x" target="_blank" rel="noopener">Probing neural circuit mechanisms in Alzheimer’s disease using novel technologies</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include applied, approaches, concert, diagrams, identities, large, locations, neuronal.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.21203/rs.3.rs-2588274/v1" target="_blank" rel="noopener">Probing regenerative heterogeneity of corticospinal neurons with scRNA-Seq</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.48550/arxiv.2306.01929" target="_blank" rel="noopener">Recent Advances of Local Mechanisms in Computer Vision: A Survey and Outlook of Recent Work</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include contain, cortex, motor, multimodal, neuronal, primary, process, real-world.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1016/j.xgen.2023.100342" target="_blank" rel="noopener">Robust enhancer-gene regulation identified by single-cell transcriptomes and epigenomes</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1093/database/baad035" target="_blank" rel="noopener">scBrainMap: a landscape for cell types and associated genetic markers in the brain</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include cells, combining, cortex, datasets, discovery, excitatory, information, inhibitory.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1093/jmcb/mjad003" target="_blank" rel="noopener">scHi-CSim: a flexible simulator that generates high-fidelity single-cell Hi-C data for benchmarking</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1038/s41467-023-36066-2" target="_blank" rel="noopener">scMoMaT jointly performs single cell mosaic integration and multi-modal bio-marker detection</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include cluster, excitatory, foxp2, neuron, annotate, batch, cells, measures.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1016/j.cell.2023.02.023" target="_blank" rel="noopener">Single substitution in H3.3G34 alters DNMT3A recruitment to cause progressive neurodegeneration</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1038/s41586-023-06824-9" target="_blank" rel="noopener">Single-cell analysis of chromatin accessibility in the adult mouse brain</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1126/science.adf5357" target="_blank" rel="noopener">Single-cell DNA methylation and 3D genome architecture in the human brain</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include cell-type, cg-differentially, ch-and, delineate, genes, identified, methylated, methylation.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1038/s41586-023-06805-y" target="_blank" rel="noopener">Single-cell DNA methylome and 3D multi-omic atlas of the adult mouse brain</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include supplementary, cluster, datasets, labels, table, transcriptome, accessibility, across.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2023.04.16.536509" target="_blank" rel="noopener">Single-cell DNA Methylome and 3D Multi-omic Atlas of the Adult Mouse Brain</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include detected, total, bismarck, blank, calculate, cell-by-cef, cells, components.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1016/j.xgen.2023.100454" target="_blank" rel="noopener">Single-cell methylation analysis of brain tissue prioritizes mutations that alter transcription</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include genetic, access, array-based, assays, behavior, brain, c57bl, catalogs.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1016/j.cell.2023.06.009" target="_blank" rel="noopener">Single-cell spatial transcriptome reveals cell-type organization in the macaque cortex</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1038/s41593-023-01452-y" target="_blank" rel="noopener">Single-nucleus genomics in outbred rats with divergent cocaine addiction-like behaviors reveals changes in amygdala GABAergic inhibition</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include chromatin, dataset, single-nucleus, snatac-seq, snrna-seq, supplementary, accessibility, accessible.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2023.09.11.557221" target="_blank" rel="noopener">SnapATAC2: a fast, scalable and versatile tool for analysis of single-cell omics data</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.7554/elife.87517" target="_blank" rel="noopener">Statistical analysis supports pervasive RNA subcellular localization and alternative 3&#39; UTR regulation</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.7554/elife.87517.1" target="_blank" rel="noopener">Statistical analysis supports pervasive RNA subcellular localization and alternative 3’ UTR regulation</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1016/j.conb.2023.102725" target="_blank" rel="noopener">The brain&#39;s dark transcriptome: Sequencing RNA in distal compartments of neurons and glia</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2023.03.06.531307" target="_blank" rel="noopener">The cell type composition of the adult mouse brain revealed by single cell and spatial genomics</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include advances, algorithm, atlases, brain, broader, cerebellum, clustering, coarsely.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2023.04.18.537375" target="_blank" rel="noopener">The covariance environment defines cellular niches for spatial inference</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.33915/etd.12253" target="_blank" rel="noopener">The Diversity and Synaptic Connectivity of Somatostatin-Containing Inhibitory Interneurons in the Somatosensory (Barrel) Cortex</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1038/s41586-023-06818-7" target="_blank" rel="noopener">The molecular cytoarchitecture of the adult mouse brain</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include cerebellum, clustering, cortex, motor, published, algorithm, class, classes.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2023.08.10.552874" target="_blank" rel="noopener">Thyroid hormone rewires cortical circuits to coordinate body-wide metabolism and exploratory drive</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1002/9781119860914.ch16" target="_blank" rel="noopener">Towards the Transcriptionally based Classification of L6b in the Adult Mouse Brain</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1126/science.adf6812" target="_blank" rel="noopener">Transcriptomic cytoarchitecture reveals principles of human neocortex organization</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include across, cortex, neurons, areal, except, excitatory, expression, inhibitory.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/gad.350597.123" target="_blank" rel="noopener">Uncovering a mammalian neural-specific poly(A) binding protein with unique properties</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.3390/genes14030771" target="_blank" rel="noopener">Unraveling Psychiatric Disorders through Neural Single-Cell Transcriptomics Approaches</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.21203/rs.3.rs-2249309/v1" target="_blank" rel="noopener">A Benchmark of Pre-processing Effect on Single Cell RNA Sequencing Integration Methods</a></td>
+              <td class="citation-year"><time datetime="2022">2022</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2022.11.09.515833" target="_blank" rel="noopener">A comparative atlas of single-cell chromatin accessibility in the human brain</a></td>
+              <td class="citation-year"><time datetime="2022">2022</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2022.09.28.509825" target="_blank" rel="noopener">A global view of aging and Alzheimer’s pathogenesis-associated cell population dynamics and molecular signatures in the human and mouse brains</a></td>
+              <td class="citation-year"><time datetime="2022">2022</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://www.semanticscholar.org/paper/a7a99dd1e2fc9cdc59f834d969de12841619a29d" target="_blank" rel="noopener">analysis supports pervasive RNA subcellular localization and alternative 3’ UTR regulation.</a></td>
+              <td class="citation-year"><time datetime="2022">2022</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include erential, subcellular, associated, cell-type, cell-types, corresponding, cxcl14, datasets.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2022.11.15.516665" target="_blank" rel="noopener">Brain region-specific changes in neurons and glia and dysregulation of dopamine signaling in Grin2a mutant mice</a></td>
+              <td class="citation-year"><time datetime="2022">2022</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1093/hmg/ddac195" target="_blank" rel="noopener">Building integrative functional maps of gene regulation</a></td>
+              <td class="citation-year"><time datetime="2022">2022</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1038/s41593-022-01057-x" target="_blank" rel="noopener">Candelabrum cells are ubiquitous cerebellar cortex interneurons with specialized circuit properties</a></td>
+              <td class="citation-year"><time datetime="2022">2022</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1038/s41598-022-14192-z" target="_blank" rel="noopener">Cell type matching in single-cell RNA-sequencing data using FR-Match</a></td>
+              <td class="citation-year"><time datetime="2022">2022</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include cells, mouse, reference, matching, query, datasets, dataset, finish.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.3390/mi13030480" target="_blank" rel="noopener">Characterization of Active Electrode Yield for Intracortical Arrays: Awake versus Anesthesia</a></td>
+              <td class="citation-year"><time datetime="2022">2022</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include layers, across, cells, cortex, cortical, density, differences, different.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1038/s41576-022-00509-1" target="_blank" rel="noopener">Characterizing cis-regulatory elements using single-cell epigenomics</a></td>
+              <td class="citation-year"><time datetime="2022">2022</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2022.06.20.496737" target="_blank" rel="noopener">Chrna5 and lynx prototoxins identify acetylcholine super-responder subplate neurons</a></td>
+              <td class="citation-year"><time datetime="2022">2022</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2022.09.08.506493" target="_blank" rel="noopener">Cocaine addiction-like behaviors are associated with long-term changes in gene regulation, energy metabolism, and GABAergic inhibition within the amygdala</a></td>
+              <td class="citation-year"><time datetime="2022">2022</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2022.10.27.514084" target="_blank" rel="noopener">Comparing 10x Genomics single-cell 3’ and 5’ assay in short-and long-read sequencing</a></td>
+              <td class="citation-year"><time datetime="2022">2022</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include across, allowed, analysis, blood, brain, complex, deeper, expression.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1093/eep/dvac012" target="_blank" rel="noopener">Congenital anomaly epidemiological correlates of Δ8THC across USA 2003–16: panel regression and causal inferential study</a></td>
+              <td class="citation-year"><time datetime="2022">2022</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include neuronal, specification, array, brain, development, epigenome, expansion, formation.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1007/s12031-022-02040-8" target="_blank" rel="noopener">Cortical VIP+ Interneurons in the Upper and Deeper Layers Are Transcriptionally Distinct</a></td>
+              <td class="citation-year"><time datetime="2022">2022</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include scrnaseq, interneurons, analyze, cortex, cxcl14, further, genomics, journal.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2022.09.20.508799" target="_blank" rel="noopener">Corticothalamic Neurons in Motor Cortex Have a Permissive Role in Motor Execution</a></td>
+              <td class="citation-year"><time datetime="2022">2022</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.52202/068431-1160" target="_blank" rel="noopener">Cross-Linked Unified Embedding for cross-modality representation learning</a></td>
+              <td class="citation-year"><time datetime="2022">2022</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include complex, great, in-silico, inner, integration, provide, systems, therefore.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2022.08.01.502392" target="_blank" rel="noopener">Differences in molecular sampling and data processing explain variation among single-cell and single-nucleus RNA-seq experiments</a></td>
+              <td class="citation-year"><time datetime="2022">2022</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1093/cercor/bhac195" target="_blank" rel="noopener">Differential effects of group III metabotropic glutamate receptors on spontaneous inhibitory synaptic currents in spine-innervating double bouquet and parvalbumin-expressing dendrite-targeting GABAergic interneurons in human neocortex</a></td>
+              <td class="citation-year"><time datetime="2022">2022</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include binding, cauli, families, kubota, lewis, primates, proteins, rodents.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2022.03.05.483105" target="_blank" rel="noopener">Differential effects of group III metabotropic glutamate receptors on spontaneous inhibitory synaptic currents in spine-innervating double bouquet and parvalbumin-expressing dendrite-targeting GABAergic interneurons in human neocortex</a></td>
+              <td class="citation-year"><time datetime="2022">2022</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1038/s41593-022-01022-8" target="_blank" rel="noopener">Dissection of artifactual and confounding glial signatures by single-cell sequencing of mouse and human brain</a></td>
+              <td class="citation-year"><time datetime="2022">2022</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1016/j.nbd.2022.105674" target="_blank" rel="noopener">Dopaminergic modulation of primary motor cortex: From cellular and synaptic mechanisms underlying motor learning to cognitive symptoms in Parkinson’s disease</a></td>
+              <td class="citation-year"><time datetime="2022">2022</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2022.11.30.518285" target="_blank" rel="noopener">Epigenomic complexity of the human brain revealed by single-cell DNA methylomes and 3D genome structures</a></td>
+              <td class="citation-year"><time datetime="2022">2022</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1002/dneu.22879" target="_blank" rel="noopener">Evaluation of advances in cortical development using model systems</a></td>
+              <td class="citation-year"><time datetime="2022">2022</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1016/j.neuron.2022.04.031" target="_blank" rel="noopener">Global and subtype-specific modulation of cortical inhibitory neurons regulated by acetylcholine during motor learning</a></td>
+              <td class="citation-year"><time datetime="2022">2022</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2022.03.23.485448" target="_blank" rel="noopener">Global Spatial Transcriptome of Macaque Brain at Single-Cell Resolution</a></td>
+              <td class="citation-year"><time datetime="2022">2022</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include types, 2021a, 2021b, aldinger, analyses, bakken, brain, cerebellum.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.3389/fnins.2022.858427" target="_blank" rel="noopener">Glucocorticoid Receptor-Regulated Enhancers Play a Central Role in the Gene Regulatory Networks Underlying Drug Addiction</a></td>
+              <td class="citation-year"><time datetime="2022">2022</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include family, members, bella, zhang, ziffra.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1145/3534678.3539213" target="_blank" rel="noopener">Graph Neural Networks for Multimodal Single-Cell Data Integration</a></td>
+              <td class="citation-year"><time datetime="2022">2022</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include autoencoder, cobolt, embedding, joint, multimodal, variant, variational, acquired.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1038/s42255-022-00657-y" target="_blank" rel="noopener">HypoMap—a unified single-cell gene expression atlas of the murine hypothalamus</a></td>
+              <td class="citation-year"><time datetime="2022">2022</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1038/s41467-022-34590-1" target="_blank" rel="noopener">Identification of visual cortex cell types and species differences using single-cell RNA sequencing</a></td>
+              <td class="citation-year"><time datetime="2022">2022</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2022.03.16.484643" target="_blank" rel="noopener">Integration and querying of multimodal single-cell data with PoE-VAE</a></td>
+              <td class="citation-year"><time datetime="2022">2022</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1038/s41467-022-34857-7" target="_blank" rel="noopener">Interpretable and tractable models of transcriptional noise for the rational design of single-molecule quantification experiments</a></td>
+              <td class="citation-year"><time datetime="2022">2022</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include allen, brain, datasets, generated, independent, institute, mouse.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1093/bib/bbac541" target="_blank" rel="noopener">Learning single-cell chromatin accessibility profiles using meta-analytic marker genes</a></td>
+              <td class="citation-year"><time datetime="2022">2022</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1016/j.bpr.2022.100097" target="_blank" rel="noopener">Length biases in single-cell RNA sequencing of pre-mRNA</a></td>
+              <td class="citation-year"><time datetime="2022">2022</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include generated, allen, brain, genomics, institute, seven, summarized, table.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1021/acs.chemrev.2c00212" target="_blank" rel="noopener">Microfluidics for Neuronal Cell and Circuit Engineering</a></td>
+              <td class="citation-year"><time datetime="2022">2022</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://www.semanticscholar.org/paper/266b33159a8591212663f0ed590d027595724e48" target="_blank" rel="noopener">Modular cell type organization of cortical areas revealed by in situ sequencing</a></td>
+              <td class="citation-year"><time datetime="2022">2022</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2022.05.31.494253" target="_blank" rel="noopener">Molecular specification of cortico-brainstem versus corticospinal projection neurons in development</a></td>
+              <td class="citation-year"><time datetime="2022">2022</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2022.06.11.495771" target="_blank" rel="noopener">Monod : model-based discovery and integration through fitting stochastic transcriptional dynamics to single-cell sequencing data</a></td>
+              <td class="citation-year"><time datetime="2022">2022</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2022.10.21.513201" target="_blank" rel="noopener">MorphNet Predicts Cell Morphology from Single-Cell Gene Expression</a></td>
+              <td class="citation-year"><time datetime="2022">2022</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include association, agranular, anterior, cingulate, cortex, ectohinal, entorhinal, insular.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1038/s41467-022-30977-2" target="_blank" rel="noopener">Morphological pseudotime ordering and fate mapping reveal diversification of cerebellar inhibitory interneurons</a></td>
+              <td class="citation-year"><time datetime="2022">2022</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1038/s41587-022-01284-4" target="_blank" rel="noopener">Multi-omics single-cell data integration and regulatory inference with graph-linked embedding</a></td>
+              <td class="citation-year"><time datetime="2022">2022</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include datasets, along, generated, gold-standard, multiome, nephron, recent, scatac-seq.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.3389/fncel.2021.814012" target="_blank" rel="noopener">Neurophysiology of the Developing Cerebral Cortex: What We Have Learned and What We Need to Know</a></td>
+              <td class="citation-year"><time datetime="2022">2022</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include analysis, cortex, identified, motor, mouse, neuronal, primary, recent.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1093/bioinformatics/btac149" target="_blank" rel="noopener">NewWave : a scalable R/Bioconductor package for the dimensionality reduction and batch effect removal of single-cell RNA-seq data</a></td>
+              <td class="citation-year"><time datetime="2022">2022</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1159/000525019" target="_blank" rel="noopener">Organizational Conservation and Flexibility in the Evolution of Birdsong and Avian Motor Control</a></td>
+              <td class="citation-year"><time datetime="2022">2022</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include characterizations, focus, generating, hippocampus, mammalian, neocortex, strong, thorough.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1038/s41586-022-05495-2" target="_blank" rel="noopener">Patterned cPCDH expression regulates the fine organization of the neocortex</a></td>
+              <td class="citation-year"><time datetime="2022">2022</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2022.05.13.491738" target="_blank" rel="noopener">Predictive and robust gene selection for spatial transcriptomics</a></td>
+              <td class="citation-year"><time datetime="2022">2022</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.3389/fncel.2022.1025012" target="_blank" rel="noopener">Recent advances in deciphering oligodendrocyte heterogeneity with single-cell transcriptomics</a></td>
+              <td class="citation-year"><time datetime="2022">2022</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include atlas, cortex, detailed, epigenomic, including, massive, motor, mouse.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.7554/elife.73520" target="_blank" rel="noopener">Robust and annotation-free analysis of alternative splicing across diverse cell types in mice</a></td>
+              <td class="citation-year"><time datetime="2022">2022</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.21203/rs.3.rs-2022586/v1" target="_blank" rel="noopener">scMoMaT: a unified framework for single cell mosaic integration and multi-modal bio-marker detection</a></td>
+              <td class="citation-year"><time datetime="2022">2022</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2022.05.17.492336" target="_blank" rel="noopener">scMoMaT: Mosaic integration of single cell multi-omics data using matrix tri-factorization</a></td>
+              <td class="citation-year"><time datetime="2022">2022</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://www.semanticscholar.org/paper/7ffbb02148ef258f0751f2951e71f4c5105668b5" target="_blank" rel="noopener">scMoMaT: Mosaic integration of single cell multi-omics matrices using matrix trifactorization</a></td>
+              <td class="citation-year"><time datetime="2022">2022</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include cluster, excitatory, shows, neuron, brain, correspond, cortex, matches.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2022.12.11.519959" target="_blank" rel="noopener">Single Cell transcriptional analysis of ex vivo models of cortical and hippocampal development identifies unique longitudinal trends</a></td>
+              <td class="citation-year"><time datetime="2022">2022</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include architecture, brain, brains, complex, development, differences, diseases, dynamics.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.3389/fcell.2022.884748" target="_blank" rel="noopener">Single-cell and single-nuclei RNA sequencing as powerful tools to decipher cellular heterogeneity and dysregulation in neurodegenerative diseases</a></td>
+              <td class="citation-year"><time datetime="2022">2022</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1073/pnas.2203677119" target="_blank" rel="noopener">Single-cell transcriptomic classification of rabies-infected cortical neurons</a></td>
+              <td class="citation-year"><time datetime="2022">2022</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1038/s41467-022-35288-0" target="_blank" rel="noopener">Spatial-ID: a cell typing method for spatially resolved transcriptomics via transfer learning and spatial embedding</a></td>
+              <td class="citation-year"><time datetime="2022">2022</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include dataset, cells, contains, control, genes, matched, methods, thesnrna-seq.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.21203/rs.3.rs-1661366/v1" target="_blank" rel="noopener">Spatial-ID: a cell typing method for spatially resolved transcriptomics via transfer learning and spatial embedding</a></td>
+              <td class="citation-year"><time datetime="2022">2022</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2022.05.26.493527" target="_blank" rel="noopener">Spatial-ID: a cell typing method for spatially resolved transcriptomics via transfer learning and spatial embedding</a></td>
+              <td class="citation-year"><time datetime="2022">2022</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1038/s41467-022-34413-3" target="_blank" rel="noopener">Spatially resolved gene regulatory and disease-related vulnerability map of the adult Macaque cortex</a></td>
+              <td class="citation-year"><time datetime="2022">2022</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2022.06.16.496448" target="_blank" rel="noopener">Spectral neural approximations for models of transcriptional dynamics</a></td>
+              <td class="citation-year"><time datetime="2022">2022</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include mouse, cells, gabaergic, rates, approximation, burst, cortex, degradation.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2022.10.26.513902" target="_blank" rel="noopener">Statistical analysis supports pervasive RNA subcellular localization and alternative 3’ UTR regulation</a></td>
+              <td class="citation-year"><time datetime="2022">2022</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include differential, associated, cell-type, cell-types, corresponding, cxcl14, datasets, different.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1038/s41593-022-01123-4" target="_blank" rel="noopener">Temporally divergent regulatory mechanisms govern neuronal diversification and maturation in the mouse and marmoset neocortex</a></td>
+              <td class="citation-year"><time datetime="2022">2022</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1073/pnas.2201355119" target="_blank" rel="noopener">Thalamocortical axons regulate neurogenesis and laminar fates in the early sensory cortex</a></td>
+              <td class="citation-year"><time datetime="2022">2022</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include comparable, contains, cortex, expressing, neurons, normally, primary, profile.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2022.10.26.513573" target="_blank" rel="noopener">The BRAIN Initiative Cell Census Network Data Ecosystem: A User’s Guide</a></td>
+              <td class="citation-year"><time datetime="2022">2022</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include single, zhang, sequencing, atac-seq, nucleus, snmc-seq, bella, biccn.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1093/nar/gkac962" target="_blank" rel="noopener">The Neuroscience Multi-Omic Archive: a BRAIN Initiative resource for single-cell transcriptomic and epigenomic data from the mammalian brain</a></td>
+              <td class="citation-year"><time datetime="2022">2022</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include mouse, cortex, epigenomic, integrated, motor, primary, profiles, provide.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2022.09.08.505285" target="_blank" rel="noopener">The Neuroscience Multi-Omic Archive: A BRAIN Initiative resource for single-cell transcriptomic and epigenomic data from the mammalian brain</a></td>
+              <td class="citation-year"><time datetime="2022">2022</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2022.07.10.499487" target="_blank" rel="noopener">Transcriptomic cell type structures in vivo neuronal activity across multiple time scales</a></td>
+              <td class="citation-year"><time datetime="2022">2022</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1016/j.celrep.2023.112318" target="_blank" rel="noopener">Transcriptomic cell type structures in vivo neuronal activity across multiple timescales</a></td>
+              <td class="citation-year"><time datetime="2022">2022</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include excitatory, based, canonically, class, classes, collapsed, defined, distinctions.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2022.08.11.503261" target="_blank" rel="noopener">Transformer Enables Reference Free And Unsupervised Analysis of Spatial Transcriptomics</a></td>
+              <td class="citation-year"><time datetime="2022">2022</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include atlas, batch, biccn, biomolecular, brain, census, effects, heterogeneity.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2022.10.17.512599" target="_blank" rel="noopener">Transient and delay chemical master equations</a></td>
+              <td class="citation-year"><time datetime="2022">2022</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1016/j.cell.2021.12.022" target="_blank" rel="noopener">Vision-dependent specification of cell types and function in the developing cortex</a></td>
+              <td class="citation-year"><time datetime="2022">2022</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1016/j.cell.2022.06.031" target="_blank" rel="noopener">What is a cell type and how to define it?</a></td>
+              <td class="citation-year"><time datetime="2022">2022</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2022.11.06.515380" target="_blank" rel="noopener">Whole-cortex in situ sequencing reveals peripheral input-dependent cell type-defined area identity</a></td>
+              <td class="citation-year"><time datetime="2022">2022</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1038/d41586-021-02493-8" target="_blank" rel="noopener">A census of cell types in the brain’s motor cortex</a></td>
+              <td class="citation-year"><time datetime="2021">2021</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1038/s41586-021-03604-1" target="_blank" rel="noopener">An atlas of gene regulatory elements in adult mouse cerebrum</a></td>
+              <td class="citation-year"><time datetime="2021">2021</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2021.10.17.464718" target="_blank" rel="noopener">Cell type matching in single-cell RNA-sequencing data using FR-Match</a></td>
+              <td class="citation-year"><time datetime="2021">2021</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2021.10.10.463815" target="_blank" rel="noopener">Cell-type specific induction of cyclo-oxygenase-2 in layer II/III prefrontal cortical neurons mediates stress-induced anxiety phenotypes in mice</a></td>
+              <td class="citation-year"><time datetime="2021">2021</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2021.11.08.467668" target="_blank" rel="noopener">Cellular and Synaptic Diversity of Layer 2-3 Pyramidal Neurons in Human Individuals</a></td>
+              <td class="citation-year"><time datetime="2021">2021</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1186/s13059-021-02556-z" target="_blank" rel="noopener">Cobolt: integrative analysis of multimodal single-cell sequencing data</a></td>
+              <td class="citation-year"><time datetime="2021">2021</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include cells, annotated, expression, layer, mouse, neurons, scrna-seq, section.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2021.04.03.438329" target="_blank" rel="noopener">Cobolt: Joint analysis of multimodal single-cell sequencing data</a></td>
+              <td class="citation-year"><time datetime="2021">2021</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1038/s41586-021-03465-8" target="_blank" rel="noopener">Comparative cellular analysis of motor cortex in human, marmoset and mouse</a></td>
+              <td class="citation-year"><time datetime="2021">2021</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1038/s41586-020-03182-8" target="_blank" rel="noopener">DNA methylation atlas of the mouse brain at single-cell resolution</a></td>
+              <td class="citation-year"><time datetime="2021">2021</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1016/j.isci.2021.103292" target="_blank" rel="noopener">How many markers are needed to robustly determine a cell&#39;s type?</a></td>
+              <td class="citation-year"><time datetime="2021">2021</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include 2021a, biccn, 2021b, subclasses, types, cortex, datasets, markers.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1038/d41586-021-02661-w" target="_blank" rel="noopener">How the world’s biggest brain maps could transform neuroscience</a></td>
+              <td class="citation-year"><time datetime="2021">2021</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://www.semanticscholar.org/paper/d6d6159d35425a523cacc472c57d17259d03cd93" target="_blank" rel="noopener">Intra-individual Physiomic Landscape of Pyramidal Neurons in the Human Neocortex Authors</a></td>
+              <td class="citation-year"><time datetime="2021">2021</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include approaches, based, common, cortical, detailed, expression, high-throughput, including.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1038/s41586-021-03969-3" target="_blank" rel="noopener">Isoform cell-type specificity in the mouse primary motor cortex</a></td>
+              <td class="citation-year"><time datetime="2021">2021</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2021.04.01.438068" target="_blank" rel="noopener">Learning single-cell chromatin accessibility profiles using meta-analytic marker genes</a></td>
+              <td class="citation-year"><time datetime="2021">2021</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2021.08.02.453487" target="_blank" rel="noopener">NewWave: a scalable R/Bioconductor package for the dimensionality reduction and batch effect removal of single-cell RNA-seq data</a></td>
+              <td class="citation-year"><time datetime="2021">2021</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2021.04.07.438822" target="_blank" rel="noopener">PsiNorm: a scalable normalization for single-cell RNA-seq data</a></td>
+              <td class="citation-year"><time datetime="2021">2021</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2021.04.27.441683" target="_blank" rel="noopener">Robust and annotation-free analysis of alternative splicing across diverse cell types in mice</a></td>
+              <td class="citation-year"><time datetime="2021">2021</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include cortex, biccn, splicing, expression, motor, primary, cells, figure.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2021.10.25.465795" target="_blank" rel="noopener">Robust enhancer-gene regulation identified by single-cell transcriptomes and epigenomes</a></td>
+              <td class="citation-year"><time datetime="2021">2021</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1016/j.neuron.2020.12.010" target="_blank" rel="noopener">Single-Cell Sequencing of Brain Cell Transcriptomes and Epigenomes</a></td>
+              <td class="citation-year"><time datetime="2021">2021</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1038/s41586-021-03705-x" target="_blank" rel="noopener">Spatially resolved cell atlas of the mouse primary motor cortex by MERFISH</a></td>
+              <td class="citation-year"><time datetime="2021">2021</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1038/s41586-021-03950-0" target="_blank" rel="noopener">A multimodal cell census and atlas of the mammalian primary motor cortex</a></td>
+              <td class="citation-year"><time datetime="2020">2020</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1038/s41586-020-2907-3" target="_blank" rel="noopener">Phenotypic variation of transcriptomic cell types in mouse motor cortex</a></td>
+              <td class="citation-year"><time datetime="2020">2020</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://www.semanticscholar.org/paper/f74ad209c4f368005cc50e89d0363a97e88c7a61" target="_blank" rel="noopener">Digital Commons@Becker Digital Commons@</a></td>
+              <td class="citation-year"></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include cite-seq, linq-view, datasets, modality, number, accurate, achieve, analysis.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://www.semanticscholar.org/paper/f690e94c757ba6af58366f05b1bcdaa1a37bfc4c" target="_blank" rel="noopener">Robust and annotation-free analysis 1 of alternative splicing across diverse 2 cell types in mice 3</a></td>
+              <td class="citation-year"></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include biccn, cortex, expression, coverage, motor, mouse, muris, primary.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://www.semanticscholar.org/paper/d191b22dccaf9d639ae9dd06a345d21ebf4fd0ed" target="_blank" rel="noopener">This paper is included in the Proceedings of the 20th USENIX Symposium on Networked Systems Design and Implementation.</a></td>
+              <td class="citation-year"></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include availability, bioinformatic, cells, changes, evaluate, handling, mapping, modeling.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://www.semanticscholar.org/paper/ed8bf499d2d91b2a25c48f8492f4cbf1561131a8" target="_blank" rel="noopener">Variable RNA sampling biases mediate concordance of single-cell and nucleus sequencing across cell types</a></td>
+              <td class="citation-year"></td>
+              <td class="citation-summary"></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </article>
+  </body>
+</html>

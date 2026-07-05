@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-6P1ZQ0CC8F"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-6P1ZQ0CC8F");
+    </script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Supply chain limitations during the COVID-19 pandemic have driven up the cost of COVID-19 diagnostics. This places a priority on high throughput approaches for diagnostics. We produced a COVID-19 diagnostic assay using next-generation sequencing of pooled samples. This assay, called SwabSeq, enables the testing of thousands of nasal or saliva samples for SARS-CoV-2 RNA in a single run without the need for RNA extraction. SwabSeq has an analytical sensitivity and specificity comparable to or better than traditional qPCR tests, and can be rapidly adapted for the detection of other pathogens. SwabSeq is currently deployed at UCLA and Caltech for their COVID-19 surveillance testing program." />
+    <link rel="stylesheet" href="../styles.css" />
+    
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        document.querySelectorAll(".copy-bibtex-button").forEach((button) => {
+          button.addEventListener("click", async () => {
+            const box = button.closest(".bibtex-box");
+            const code = box ? box.querySelector("code") : null;
+            const bibtex = code ? code.textContent : "";
+            const previousText = button.textContent;
+            const markStatus = (text) => {
+              button.textContent = text;
+              window.setTimeout(() => {
+                button.textContent = previousText;
+              }, 1200);
+            };
+            const copyWithSelection = () => {
+              const textarea = document.createElement("textarea");
+              textarea.value = bibtex;
+              textarea.setAttribute("readonly", "");
+              textarea.style.position = "fixed";
+              textarea.style.left = "0";
+              textarea.style.top = "0";
+              textarea.style.width = "1px";
+              textarea.style.height = "1px";
+              textarea.style.opacity = "0";
+              textarea.style.pointerEvents = "none";
+              document.body.appendChild(textarea);
+              textarea.focus({ preventScroll: true });
+              textarea.select();
+              textarea.setSelectionRange(0, textarea.value.length);
+              const copied = document.execCommand("copy");
+              textarea.remove();
+              return copied;
+            };
+
+            try {
+              if (navigator.clipboard && navigator.clipboard.writeText) {
+                await navigator.clipboard.writeText(bibtex);
+                markStatus("Copied");
+                return;
+              }
+
+              if (copyWithSelection()) {
+                markStatus("Copied");
+                return;
+              }
+            } catch {
+              let copied = false;
+
+              try {
+                copied = copyWithSelection();
+              } catch {
+                copied = false;
+              }
+
+              if (copied) {
+                markStatus("Copied");
+                return;
+              }
+            }
+
+            markStatus("Copy failed");
+          });
+        });
+      });
+    </script>
+    <title>Massively scaled-up testing for SARS-CoV-2 RNA via next-generation sequencing of pooled and barcoded nasal and saliva samples | Works | Sina Booeshaghi</title>
+  </head>
+  <body>
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="../index.html">Home</a>
+      <span aria-hidden="true">/</span>
+      <a href="../publications.html">Works</a>
+      <span aria-hidden="true">/</span>
+      <span class="breadcrumb-current" title="Massively scaled-up testing for SARS-CoV-2 RNA via next-generation sequencing of pooled and barcoded nasal and saliva samples">Massively scaled-up testing for SARS-CoV-2 RNA via next-generati...</span>
+    </nav>
+    <article class="work-page">
+      <h1>Massively scaled-up testing for SARS-CoV-2 RNA via next-generation sequencing of pooled and barcoded nasal and saliva samples</h1>
+      <div class="publication-links work-links" aria-label="Work links">
+        
+        <a class="publication-link" href="https://doi.org/10.1038/s41551-021-00754-5" target="_blank" rel="noopener">
+          <span>Nature Biomedical Engineering</span>
+          <time datetime="2021-07-01">2021-07-01</time>
+        </a>
+      </div>
+
+      <section>
+        <h2>Summary</h2>
+        <p>Supply chain limitations during the COVID-19 pandemic have driven up the cost of COVID-19 diagnostics. This places a priority on high throughput approaches for diagnostics. We produced a COVID-19 diagnostic assay using next-generation sequencing of pooled samples. This assay, called SwabSeq, enables the testing of thousands of nasal or saliva samples for SARS-CoV-2 RNA in a single run without the need for RNA extraction. SwabSeq has an analytical sensitivity and specificity comparable to or better than traditional qPCR tests, and can be rapidly adapted for the detection of other pathogens. SwabSeq is currently deployed at UCLA and Caltech for their COVID-19 surveillance testing program.</p>
+      </section>
+
+      <section>
+        <h2>BibTeX</h2>
+        
+        <section class="bibtex-entry">
+          <h3>Nature Biomedical Engineering</h3>
+          <div class="bibtex-box">
+            <button
+              class="copy-bibtex-button"
+              type="button"
+              aria-label="Copy BibTeX for Nature Biomedical Engineering"
+            >
+              Copy BibTeX
+            </button>
+            <pre><code>@article{Bloom_2021,
+  TITLE     = {Massively scaled-up testing for SARS-CoV-2 RNA via next-generation sequencing of pooled and barcoded nasal and saliva samples},
+  VOLUME    = {5},
+  ISSN      = {2157-846X},
+  URL       = {http://dx.doi.org/10.1038/s41551-021-00754-5},
+  DOI       = {10.1038/s41551-021-00754-5},
+  NUMBER    = {7},
+  JOURNAL   = {Nature Biomedical Engineering},
+  PUBLISHER = {Springer Science and Business Media LLC},
+  AUTHOR    = {Bloom, Joshua S. and Sathe, Laila and Munugala, Chetan and Jones, Eric M. and Gasperini, Molly and Lubock, Nathan B. and Yarza, Fauna and Thompson, Erin M. and Kovary, Kyle M. and Park, Jimin and Marquette, Dawn and Kay, Stephania and Lucas, Mark and Love, TreQuan and Sina Booeshaghi, A. and Brandenberg, Oliver F. and Guo, Longhua and Boocock, James and Hochman, Myles and Simpkins, Scott W. and Lin, Isabella and LaPierre, Nathan and Hong, Duke and Zhang, Yi and Oland, Gabriel and Choe, Bianca Judy and Chandrasekaran, Sukantha and Hilt, Evann E. and Butte, Manish J. and Damoiseaux, Robert and Kravit, Clifford and Cooper, Aaron R. and Yin, Yi and Pachter, Lior and Garner, Omai B. and Flint, Jonathan and Eskin, Eleazar and Luo, Chongyuan and Kosuri, Sriram and Kruglyak, Leonid and Arboleda, Valerie A.},
+  YEAR      = {2021},
+  PAGES     = {657-665}
+}</code></pre>
+          </div>
+        </section>
+      </section>
+
+      <section>
+        <h2>Citing Works</h2>
+        <p class="citation-source-note">
+          77 citing works found in citation data generated 2026-07-05. Citation relationships are sourced from OpenAlex, Semantic Scholar, Google Scholar.
+        </p>
+        <table class="citation-table">
+          <thead>
+            <tr>
+              <th>Title</th>
+              <th>Year</th>
+              <th>Summary</th>
+            </tr>
+          </thead>
+          <tbody>
+            
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1007/s13353-025-01042-7" target="_blank" rel="noopener">Advancements in somatic mutation detection through loop-mediated isothermal amplification (LAMP) in human tumors</a></td>
+              <td class="citation-year"><time datetime="2026">2026</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1145/3774895.3815158" target="_blank" rel="noopener">Architecture for Health Initiative (Arch4Health): Computational Challenges in Health-Related Applications and the Role of Computer Architecture in Addressing Them</a></td>
+              <td class="citation-year"><time datetime="2026">2026</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1016/j.diagmicrobio.2026.117519" target="_blank" rel="noopener">Automated implementation of the SwabSeq COVID-19 diagnostic assay on the opentrons flex liquid-handling robot</a></td>
+              <td class="citation-year"><time datetime="2026">2026</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.3390/ijms27052403" target="_blank" rel="noopener">Circulating RNA as a Functional Component of Liquid Biopsy in Cancer: Concepts, Classification, and Clinical Applications</a></td>
+              <td class="citation-year"><time datetime="2026">2026</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include addressing, adoption, appropriate, careful, controls, design, experimental, inclusion.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1145/3774895.3815157" target="_blank" rel="noopener">Enabling Fast, Efficient, and Low-Cost Genomic and Metagenomic Analyses via Storage-Centric System Designs</a></td>
+              <td class="citation-year"><time datetime="2026">2026</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1109/hpca68181.2026.11408446" target="_blank" rel="noopener">GenPairX: A Hardware-Algorithm Co-Designed Accelerator for Paired-End Read Mapping</a></td>
+              <td class="citation-year"><time datetime="2026">2026</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1007/978-981-95-7295-3_12" target="_blank" rel="noopener">Nucleic Acid Analysis-Based Methods for SARS-CoV-2 Detection</a></td>
+              <td class="citation-year"><time datetime="2026">2026</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1109/hpca68181.2026.11408512" target="_blank" rel="noopener">SAGe: A Lightweight Algorithm-Architecture Co-Design for Mitigating the Data Preparation Bottleneck in Large-Scale Genome Sequence Analysis</a></td>
+              <td class="citation-year"><time datetime="2026">2026</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include agriculture, analysis, biodiversity, communicable, conservation, discovery, diseases, ensuring.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.64898/2026.04.16.719115" target="_blank" rel="noopener">Systematic evaluation of 24 extraction and library preparation combinations for metagenomic sequencing of SARS-CoV-2 in saliva</a></td>
+              <td class="citation-year"><time datetime="2026">2026</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1016/j.jenvman.2026.129353" target="_blank" rel="noopener">Tracking viral variants by wastewater surveillance, from laboratory diagnosis towards on-site monitoring: lessons learned from the SARS-CoV-2 pandemic</a></td>
+              <td class="citation-year"><time datetime="2026">2026</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1039/d5lc00667h" target="_blank" rel="noopener">A multi-valve centrifugal microfluidic for Mycoplasma pneumoniae detection</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.5772/intechopen.1011431" target="_blank" rel="noopener">Advancements in Molecular Diagnostics for Viral Outbreaks: A Focus on Respiratory Virus</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1145/3658617.3697545" target="_blank" rel="noopener">In-Storage Read-Centric Seed Location Filtering Using 3D-NAND Flash for Genome Sequence Analysis</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1145/3721145.3730428" target="_blank" rel="noopener">MARS: Processing-In-Memory Acceleration of Raw Signal Genome Analysis Inside the Storage Subsystem</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include advances, analysis, analyzing, areas, biology, evolutionary, genome, identifying.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.3390/mi16070736" target="_blank" rel="noopener">Recent Advancements in Metal–Organic Framework-Based Microfluidic Chips for Biomedical Applications</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include analyses, capabilities, capitalize, catalytic, enable, features, fluid, high-throughput.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1038/s41467-024-55762-1" target="_blank" rel="noopener">Taming large-scale genomic analyses via sparsified genomics</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include disease, genomic, cancer, causes, clinical, communities, complex, discovering.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.4103/tcmj.tcmj_244_24" target="_blank" rel="noopener">The best pooling strategy to reduce polymerase chain reaction tests during the coronavirus disease-19 pandemic at low prevalence</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include example, prevalence, freeware, provide, readers, would.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1115/1.4067232" target="_blank" rel="noopener">Comparative Survey-Based Study of Noninvasive Saliva Collection Devices</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1039/d3sd00304c" target="_blank" rel="noopener">Democratizing nucleic acid-based molecular diagnostic tests for infectious diseases at resource-limited settings – from point of care to extreme point of care</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2024.07.03.601853" target="_blank" rel="noopener">Developing, characterizing and modeling CRISPR-based point-of-use pathogen diagnostics</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1021/acssynbio.4c00469" target="_blank" rel="noopener">Developing, Characterizing, and Modeling CRISPR-Based Point-of-Use Pathogen Diagnostics</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.3390/ijms252211899" target="_blank" rel="noopener">Mass Spectrometry-Based Metabolomics Reveals a Salivary Signature for Low-Severity COVID-19</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include agencies, authorized, regulatory, administration, alternative, approved, covid-19, diagnosis.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2024.06.09.24308631" target="_blank" rel="noopener">Needle-Plug/Piston-Based Modular Mesoscopic Design Paradigm Coupled with Microfluidic Device for Large-scale Point-of-Care Pooled Testing</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1002/advs.202406076" target="_blank" rel="noopener">Needle‐Plug/Piston‐Based Modular Mesoscopic Design Paradigm Coupled With Microfluidic Device for Point‐of‐Care Pooled Testing</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include against, alone, at-home, cannot, covid-19, diagnosis, diagnostic, emerging.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1016/j.scitotenv.2024.170845" target="_blank" rel="noopener">Quantification of multiple respiratory viruses in wastewater in the Kathmandu Valley, Nepal: Potential implications of wastewater-based epidemiology for community disease surveillance in developing countries</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1186/s13059-024-03181-2" target="_blank" rel="noopener">RUBICON: a framework for designing efficient deep learning-based genomic basecallers</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1007/s12207-024-09496-6" target="_blank" rel="noopener">Seeing Clearly in the Twilight: The Clinical and Forensic Relevance of the Indeterminate/Borderline Range in Multivariate Models of Performance Validity Assessment</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include accepted, biomedical, bloom, consequence, gammon, gonska, grati, gress.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1002/advs.202401988" target="_blank" rel="noopener">Two‐Stage Mixed‐Dye‐Based Isothermal Amplification with Ribonuclease‐Cleavable Enhanced Probes for Dual‐Visualization Detection of SARS‐CoV‐2 Variants of Interest</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1093/bioinformatics/btae657" target="_blank" rel="noopener">ViralPrimer: a web server to monitor viral nucleic acid amplification tests’ primer efficiency during pandemics, with emphasis on SARS-CoV-2 and Mpox</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1093/labmed/lmac161" target="_blank" rel="noopener">3D Printing as an Effective Quality Assurance Implementation in Massive-Scale SARS-CoV-2 Testing at a SwabSeq Next-Generation Sequencing Laboratory</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1007/978-3-031-46077-7_30" target="_blank" rel="noopener">A Case for Genome Analysis Where Genomes Reside</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1016/j.ab.2023.115037" target="_blank" rel="noopener">A novel paper-based lysis strip for SARS-CoV-2 RNA detection at low resource settings</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.3389/fmolb.2023.1141534" target="_blank" rel="noopener">A systematic review of the barcoding strategy that contributes to COVID-19 diagnostics at a population level</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2023.10.31.23297784" target="_blank" rel="noopener">Comparative survey-based study of non-invasive saliva collection devices</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include set-up, swabseq, testing, caltech, campus, covid-19, cryovial, early.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1039/d2sc06665c" target="_blank" rel="noopener">Diagnostics and analysis of SARS-CoV-2: current status, recent advances, challenges and perspectives</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1021/acs.analchem.3c00885" target="_blank" rel="noopener">Integrating Magnetic-Bead-Based Sample Extraction and Molecular Barcoding for the One-Step Pooled RT-qPCR Assay of Viral Pathogens without Retesting</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1016/j.cobme.2023.100471" target="_blank" rel="noopener">Multiplexed CRISPR-based methods for pathogen nucleic acid detection</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1002/smll.202205636" target="_blank" rel="noopener">Rapid Single‐Round Pool Testing of Infectious Disease Enabled by Multicolor Digital Melting PCR</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1007/978-3-031-46077-7_14" target="_blank" rel="noopener">RattlesnakeJake: A Fast and Accurate Pre-alignment Filter Suitable for Computation-in-Memory</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1016/j.adaj.2023.05.006" target="_blank" rel="noopener">Saliva diagnostics</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include diagnostics, favorable, initiatives, light, placed, saliva.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1145/3613424.3614252" target="_blank" rel="noopener">Swordfish: A Framework for Evaluating Deep Neural Network-based Basecalling using Computation-In-Memory with Non-Ideal Memristors</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include accurate, advancements, advancing, basecalling, critical, driving, facilitating, genomic.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2022.11.20.517297" target="_blank" rel="noopener">A Framework for Designing Efficient Deep Learning-Based Genomic Basecallers</a></td>
+              <td class="citation-year"><time datetime="2022">2022</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.7554/elife.69949" target="_blank" rel="noopener">A LAMP sequencing approach for high-throughput co-detection of SARS-CoV-2 and influenza virus in human saliva</a></td>
+              <td class="citation-year"><time datetime="2022">2022</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include bloom, yelagandula, approaches, aynaud, malta, massively, mello, methods.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1002/advs.202204246" target="_blank" rel="noopener">A Versatile Biomimic Nanotemplating Fluidic Assay for Multiplex Quantitative Monitoring of Viral Respiratory Infections and Immune Responses in Saliva and Blood</a></td>
+              <td class="citation-year"><time datetime="2022">2022</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.2147/jmdh.s370441" target="_blank" rel="noopener">Acceptability and Willingness of UAE Residents to Use OTC Vending Machines to Deliver Self-Testing Kits for COVID-19 and the Implications</a></td>
+              <td class="citation-year"><time datetime="2022">2022</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include machines, personnel, university, barriers, challenges, characterized, costs, countries.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1021/acs.analchem.2c03813" target="_blank" rel="noopener">Accurate Diagnosis of COVID-19 from Self-Collectable Biospecimens Using Synthetic Apolipoprotein H Peptide-Coated Nanoparticle Assay</a></td>
+              <td class="citation-year"><time datetime="2022">2022</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1002/jper.22-0152" target="_blank" rel="noopener">Antibody response to BNT162b2 mRNA vaccine in gingival crevicular fluid</a></td>
+              <td class="citation-year"><time datetime="2022">2022</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.37796/2211-8039.1334" target="_blank" rel="noopener">Comparison between the analytical sensitivity and clinical performance of two cobas SARS-CoV-2 tests based on high-throughput and point-of-care systems</a></td>
+              <td class="citation-year"><time datetime="2022">2022</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1016/b978-0-323-98809-4.00013-9" target="_blank" rel="noopener">COVID-19</a></td>
+              <td class="citation-year"><time datetime="2022">2022</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1186/s12864-022-08403-0" target="_blank" rel="noopener">DeepSARS: simultaneous diagnostic detection and genomic surveillance of SARS-CoV-2</a></td>
+              <td class="citation-year"><time datetime="2022">2022</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.3390/ijms232315258" target="_blank" rel="noopener">Detection of SARS-CoV-2 Virus by Triplex Enhanced Nucleic Acid Detection Assay (TENADA)</a></td>
+              <td class="citation-year"><time datetime="2022">2022</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1021/acsnano.2c01697" target="_blank" rel="noopener">Diagnostic Approaches For COVID-19: Lessons Learned and the Path Forward</a></td>
+              <td class="citation-year"><time datetime="2022">2022</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1016/j.scitotenv.2022.155059" target="_blank" rel="noopener">Direct comparison of RT-ddPCR and targeted amplicon sequencing for SARS-CoV-2 mutation monitoring in wastewater</a></td>
+              <td class="citation-year"><time datetime="2022">2022</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.2139/ssrn.4022373" target="_blank" rel="noopener">Direct Comparison of RT-ddPCR and Targeted Amplicon Sequencing for SARS-CoV-2 Mutation Monitoring in Wastewater</a></td>
+              <td class="citation-year"><time datetime="2022">2022</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1021/acsnano.1c11582" target="_blank" rel="noopener">DNA Hairpins and Dumbbell-Wheel Transitions Amplified Walking Nanomachine for Ultrasensitive Nucleic Acid Detection</a></td>
+              <td class="citation-year"><time datetime="2022">2022</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1016/j.snb.2022.131646" target="_blank" rel="noopener">First-in-Class: Cervical cancer diagnosis based on a urine test with fluorescent cysteine probe</a></td>
+              <td class="citation-year"><time datetime="2022">2022</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1016/j.csbj.2022.08.019" target="_blank" rel="noopener">From molecules to genomic variations: Accelerating genome analysis via intelligent algorithms and architectures</a></td>
+              <td class="citation-year"><time datetime="2022">2022</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://www.semanticscholar.org/paper/fad8f862216ddadb49e4bc03f36e1c5a4bc9404e" target="_blank" rel="noopener">Genome-on-Diet: Taming Large-Scale Genomic Analyses via Sparsified Genomics</a></td>
+              <td class="citation-year"><time datetime="2022">2022</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1109/micro56248.2022.00056" target="_blank" rel="noopener">GenPIP: In-Memory Acceleration of Genome Analysis via Tight Integration of Basecalling and Read Mapping</a></td>
+              <td class="citation-year"><time datetime="2022">2022</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://www.semanticscholar.org/paper/4d3fb0382d679483570650e091c89a086a585c07" target="_blank" rel="noopener">GenStore: A High-Performance and Energy-Efficient In-Storage Computing System for Genome Sequence Analysis</a></td>
+              <td class="citation-year"><time datetime="2022">2022</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include detection, sarscov-2, abhinav, alignment, analyses, as-of-yet, bhoyar, covidseq.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1145/3503222.3507702" target="_blank" rel="noopener">GenStore: a high-performance in-storage processing system for genome sequence analysis</a></td>
+              <td class="citation-year"><time datetime="2022">2022</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1038/s41467-022-34086-y" target="_blank" rel="noopener">Microfluidic space coding for multiplexed nucleic acid detection via CRISPR-Cas12a and recombinase polymerase amplification</a></td>
+              <td class="citation-year"><time datetime="2022">2022</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1093/ofid/ofac462" target="_blank" rel="noopener">Prevalence and Factors Associated With Antigen Test Positivity Following SARS-CoV-2 Infection Among Health Care Workers in Los Angeles</a></td>
+              <td class="citation-year"><time datetime="2022">2022</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include testing, administration, authorized, high-throughput, platform, program, sars-cov-2, surveillance.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2022.07.06.22277341" target="_blank" rel="noopener">Prevalence and factors associated with antigen test positivity following SARS-CoV-2 infection among healthcare workers in Los Angeles</a></td>
+              <td class="citation-year"><time datetime="2022">2022</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1016/j.snb.2022.131764" target="_blank" rel="noopener">Prospects of NIR fluorescent nanosensors for green detection of SARS-CoV-2</a></td>
+              <td class="citation-year"><time datetime="2022">2022</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1038/s41551-022-00917-y" target="_blank" rel="noopener">Rapid detection of SARS-CoV-2 RNA in saliva via Cas13</a></td>
+              <td class="citation-year"><time datetime="2022">2022</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1002/smll.202200854" target="_blank" rel="noopener">Sensitive and Rapid Diagnosis of Respiratory Virus Coinfection Using a Microfluidic Chip‐Powered CRISPR/Cas12a System</a></td>
+              <td class="citation-year"><time datetime="2022">2022</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1038/s41598-022-10128-9" target="_blank" rel="noopener">Smart pooling: AI-powered COVID-19 informative group testing</a></td>
+              <td class="citation-year"><time datetime="2022">2022</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include bloom, detect, instead, next-generation, pooling, procedure, rt-pcr, sars-cov-2.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1021/acsnano.2c04840" target="_blank" rel="noopener">Smartphone-Based SARS-CoV-2 and Variants Detection System using Colorimetric DNAzyme Reaction Triggered by Loop-Mediated Isothermal Amplification (LAMP) with Clustered Regularly Interspaced Short Palindromic Repeats (CRISPR)</a></td>
+              <td class="citation-year"><time datetime="2022">2022</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.21203/rs.3.rs-2277358/v1" target="_blank" rel="noopener">Taming Large-Scale Genomic Analyses via Sparsified Genomics</a></td>
+              <td class="citation-year"><time datetime="2022">2022</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1021/acsinfecdis.2c00204" target="_blank" rel="noopener">Two Years into the COVID-19 Pandemic: Lessons Learned</a></td>
+              <td class="citation-year"><time datetime="2022">2022</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.22541/au.165285401.15076943/v1" target="_blank" rel="noopener">Use molecular barcodes to study emerging infectious diseases</a></td>
+              <td class="citation-year"><time datetime="2022">2022</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1038/s41551-021-00765-2" target="_blank" rel="noopener">Antigen sensing via nanobody-coated transistors</a></td>
+              <td class="citation-year"><time datetime="2021">2021</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2021.08.16.21262126" target="_blank" rel="noopener">DeepSARS: simultaneous diagnostic detection and genomic surveillance of SARS-CoV-2</a></td>
+              <td class="citation-year"><time datetime="2021">2021</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1093/labmed/lmab069" target="_blank" rel="noopener">Lean Principles to Improve Quality in High-Throughput COVID-19 Testing Using SwabSeq: A Barcoded Sequencing-Based Testing Platform</a></td>
+              <td class="citation-year"><time datetime="2021">2021</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include swabseq, amplicons, barcoded, control, pipeline, quantitative, results, virus.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1002/jcla.24178" target="_blank" rel="noopener">Recent advances in methods for the diagnosis of Corona Virus Disease 2019</a></td>
+              <td class="citation-year"><time datetime="2021">2021</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1021/acsbiomaterials.1c01138" target="_blank" rel="noopener">Stabilization of Salivary Biomarkers</a></td>
+              <td class="citation-year"><time datetime="2021">2021</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </article>
+  </body>
+</html>

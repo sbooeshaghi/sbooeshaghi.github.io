@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-6P1ZQ0CC8F"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-6P1ZQ0CC8F");
+    </script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Instrumentation to perform single-cell RNA-sequencing experiments is costly and limits the scale of experimentation. To address this, we have developed an open-source syringe pump and microscope system called poseidon. The system of three syringe pumps and microscope costs less than $400, and can be assembled in under an hour. Importantly, poseidon reduces costs of experimentation by up to 25x while demonstrating similar accuracy and precision to commercial alternatives." />
+    <link rel="stylesheet" href="../styles.css" />
+    
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        document.querySelectorAll(".copy-bibtex-button").forEach((button) => {
+          button.addEventListener("click", async () => {
+            const box = button.closest(".bibtex-box");
+            const code = box ? box.querySelector("code") : null;
+            const bibtex = code ? code.textContent : "";
+            const previousText = button.textContent;
+            const markStatus = (text) => {
+              button.textContent = text;
+              window.setTimeout(() => {
+                button.textContent = previousText;
+              }, 1200);
+            };
+            const copyWithSelection = () => {
+              const textarea = document.createElement("textarea");
+              textarea.value = bibtex;
+              textarea.setAttribute("readonly", "");
+              textarea.style.position = "fixed";
+              textarea.style.left = "0";
+              textarea.style.top = "0";
+              textarea.style.width = "1px";
+              textarea.style.height = "1px";
+              textarea.style.opacity = "0";
+              textarea.style.pointerEvents = "none";
+              document.body.appendChild(textarea);
+              textarea.focus({ preventScroll: true });
+              textarea.select();
+              textarea.setSelectionRange(0, textarea.value.length);
+              const copied = document.execCommand("copy");
+              textarea.remove();
+              return copied;
+            };
+
+            try {
+              if (navigator.clipboard && navigator.clipboard.writeText) {
+                await navigator.clipboard.writeText(bibtex);
+                markStatus("Copied");
+                return;
+              }
+
+              if (copyWithSelection()) {
+                markStatus("Copied");
+                return;
+              }
+            } catch {
+              let copied = false;
+
+              try {
+                copied = copyWithSelection();
+              } catch {
+                copied = false;
+              }
+
+              if (copied) {
+                markStatus("Copied");
+                return;
+              }
+            }
+
+            markStatus("Copy failed");
+          });
+        });
+      });
+    </script>
+    <title>Principles of open source bioinstrumentation applied to the poseidon syringe pump system | Works | Sina Booeshaghi</title>
+  </head>
+  <body>
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="../index.html">Home</a>
+      <span aria-hidden="true">/</span>
+      <a href="../publications.html">Works</a>
+      <span aria-hidden="true">/</span>
+      <span class="breadcrumb-current" title="Principles of open source bioinstrumentation applied to the poseidon syringe pump system">Principles of open source bioinstrumentation applied to the pose...</span>
+    </nav>
+    <article class="work-page">
+      <h1>Principles of open source bioinstrumentation applied to the poseidon syringe pump system</h1>
+      <div class="publication-links work-links" aria-label="Work links">
+        
+        <a class="publication-link" href="https://doi.org/10.1038/s41598-019-48815-9" target="_blank" rel="noopener">
+          <span>Nature Scientific Reports</span>
+          <time datetime="2019-08-27">2019-08-27</time>
+        </a>
+        <a class="publication-link" href="https://doi.org/10.1038/s41598-023-42035-y" target="_blank" rel="noopener">
+          <span>Correction</span>
+          <time datetime="2023-09-08">2023-09-08</time>
+        </a>
+      </div>
+
+      <section>
+        <h2>Summary</h2>
+        <p>Instrumentation to perform single-cell RNA-sequencing experiments is costly and limits the scale of experimentation. To address this, we have developed an open-source syringe pump and microscope system called poseidon. The system of three syringe pumps and microscope costs less than $400, and can be assembled in under an hour. Importantly, poseidon reduces costs of experimentation by up to 25x while demonstrating similar accuracy and precision to commercial alternatives.</p>
+      </section>
+
+      <section>
+        <h2>BibTeX</h2>
+        
+        <section class="bibtex-entry">
+          <h3>Nature Scientific Reports</h3>
+          <div class="bibtex-box">
+            <button
+              class="copy-bibtex-button"
+              type="button"
+              aria-label="Copy BibTeX for Nature Scientific Reports"
+            >
+              Copy BibTeX
+            </button>
+            <pre><code>@article{Booeshaghi_2019,
+  TITLE     = {Principles of open source bioinstrumentation applied to the poseidon syringe pump system},
+  VOLUME    = {9},
+  ISSN      = {2045-2322},
+  URL       = {http://dx.doi.org/10.1038/s41598-019-48815-9},
+  DOI       = {10.1038/s41598-019-48815-9},
+  NUMBER    = {1},
+  JOURNAL   = {Scientific Reports},
+  PUBLISHER = {Springer Science and Business Media LLC},
+  AUTHOR    = {Booeshaghi, A. Sina and Beltrame, Eduardo da Veiga and Bannon, Dylan and Gehring, Jase and Pachter, Lior},
+  YEAR      = {2019}
+}</code></pre>
+          </div>
+        </section>
+        <section class="bibtex-entry">
+          <h3>Correction</h3>
+          <div class="bibtex-box">
+            <button
+              class="copy-bibtex-button"
+              type="button"
+              aria-label="Copy BibTeX for Correction"
+            >
+              Copy BibTeX
+            </button>
+            <pre><code>@article{Booeshaghi_2023,
+  TITLE     = {Author Correction: Principles of open source bioinstrumentation applied to the poseidon syringe pump system},
+  VOLUME    = {13},
+  ISSN      = {2045-2322},
+  URL       = {http://dx.doi.org/10.1038/s41598-023-42035-y},
+  DOI       = {10.1038/s41598-023-42035-y},
+  NUMBER    = {1},
+  JOURNAL   = {Scientific Reports},
+  PUBLISHER = {Springer Science and Business Media LLC},
+  AUTHOR    = {Booeshaghi, A. Sina and Beltrame, Eduardo da Veiga and Bannon, Dylan and Gehring, Jase and Pachter, Lior},
+  YEAR      = {2023}
+}</code></pre>
+          </div>
+        </section>
+      </section>
+
+      <section>
+        <h2>Citing Works</h2>
+        <p class="citation-source-note">
+          73 citing works found in citation data generated 2026-07-05. Citation relationships are sourced from OpenAlex, Semantic Scholar, Google Scholar.
+        </p>
+        <table class="citation-table">
+          <thead>
+            <tr>
+              <th>Title</th>
+              <th>Year</th>
+              <th>Summary</th>
+            </tr>
+          </thead>
+          <tbody>
+            
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.64898/2026.05.20.726626" target="_blank" rel="noopener">3D bioprinting of engineered living materials in support slurries for complex free-standing structures</a></td>
+              <td class="citation-year"><time datetime="2026">2026</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.64898/2026.03.02.709168" target="_blank" rel="noopener">A Purpose-Built Open Source Liquid Handler for Industry-Class Automated Experiments</a></td>
+              <td class="citation-year"><time datetime="2026">2026</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include profile, guide, aligned, alignment, automation, barrier, building, cabinet.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.64898/2026.02.08.704633" target="_blank" rel="noopener">FloBuzz: A Modular Feeder System for Automated Aversive Conditioning in Bees</a></td>
+              <td class="citation-year"><time datetime="2026">2026</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1007/s11090-026-10680-6" target="_blank" rel="noopener">Quantification of Eroded Fe Contamination in Plasma Activated Water Using Acoustic Levitation Assisted Laser-Induced Breakdown Spectroscopy by a Novel Method - Multi-Line Calibration Curve</a></td>
+              <td class="citation-year"><time datetime="2026">2026</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include system, adapted, custom, deposition, design, open-access, syringe.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1016/j.ohx.2025.e00691" target="_blank" rel="noopener">A cost-effective and open-source near-field electrospinning system with a graphical user interface</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include applied, customized, microfluidic, neuroscience, open-source, system, version, wijnen.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1523/eneuro.0024-25.2025" target="_blank" rel="noopener">A Flexible Fluid Delivery System for Rodent Behavior Experiments</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include applications, behavioral, booeshaghi, chemistry, cubberley, delivery, designs, developed.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1016/j.ohx.2025.e00734" target="_blank" rel="noopener">A low-cost and robust microscope hardware trigger interface board</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1038/s41467-025-66269-8" target="_blank" rel="noopener">An integrated platform for liquid handling and cell imaging in life science applications</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1109/becithcon69222.2025.11503918" target="_blank" rel="noopener">Design and Development of a Cost-Effective Wireless Syringe Pump for Telehealth Applications</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include bases, children, deliver, durations, especially, fluid, fluids, important.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1109/isec64801.2025.11147320" target="_blank" rel="noopener">Security Driven Product Design for Open-Source Medical Syringe Infusion Pumps</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include arduino, clockwise, commands, control, counterclockwise, microcontroller, motors, receives.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.48550/arxiv.2402.04354" target="_blank" rel="noopener">3D printer-controlled syringe pumps for dual, active, regulable and simultaneous dispensing of reagents. Manufacturing of immunochromatographic test strips</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1016/j.microc.2024.110652" target="_blank" rel="noopener">3D Printer-Controlled syringe pumps for Dual, Active, Regulable and Simultaneous dispensing of reagents. Manufacturing of immunochromatographic test strips</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1007/s41981-024-00319-y" target="_blank" rel="noopener">3D-printed open-source sensor flow cells for microfluidic temperature, electrical conductivity, and pH value determination</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include based, calibration, communicating, controlling, displaying, handling, measured, measurements.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.15406/ijbsbe.2024.09.00236" target="_blank" rel="noopener">Design and manufacture a syringe pump for intelligent injection of specific doses of contrast medicine in medical imaging applications</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.35414/akufemubid.1400218" target="_blank" rel="noopener">Designing a Cost-Efficient Belt-Driven 3D-Printed Syringe Pump</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1007/978-3-658-44114-2_14" target="_blank" rel="noopener">Exploring Open-Source Software Ecosystems for Hardware Development</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1007/s41981-024-00328-x" target="_blank" rel="noopener">Functionalization of unsaturated carbon–carbon bonds by continuous-flow ozonolysis</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include approach, high-lighted, previously, pumps, syringe.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1007/978-3-658-44114-2" target="_blank" rel="noopener">Global collaboration, local production</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1039/d4re00242c" target="_blank" rel="noopener">Modular 3D printed flow system for efficient one-step synthesis of phenyl-functionalised silica-coated superparamagnetic iron oxide nanoparticles</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1016/j.ohx.2024.e00550" target="_blank" rel="noopener">Open-source spring-driven syringe pump with 3D-printed components for microfluidic applications</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include control, generate, microfluidic, pumps, across, added, bolus, build.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1016/j.ohx.2024.e00517" target="_blank" rel="noopener">Pi-seq—A customizable multichannel syringe pump for microfluidics</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include poseidon, system, additional, arduino, board, computer, damage, four-channel.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1007/s43683-022-00100-4" target="_blank" rel="noopener">A Hands-on Medical Mechatronics Exercise to Pump Up Student Learnings</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1007/978-3-031-35734-3_19" target="_blank" rel="noopener">A Lightweight Botnet Exploiting HTTP for Control Flow Denial on Open-Source Medical Systems</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.31219/osf.io/fcb3t" target="_blank" rel="noopener">A low-cost and robust microscope hardware trigger interface board</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1016/j.matdes.2023.111884" target="_blank" rel="noopener">Algorithmic linearization improves Syringe-based extrusion in elastic systems using Hydrogel-based materials</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1007/s00216-023-04981-4" target="_blank" rel="noopener">Automated silylation of flavonoids using 3D printed microfluidics prior to chromatographic analysis: system development</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include arduino, board, computer, connected, controlled, controller, poseidon, program.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.26481/dis.20230404rr" target="_blank" rel="noopener">Biosensors, customisation, and prototyping</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1109/mdat.2023.3237942" target="_blank" rel="noopener">Building an Open-Source DNA Assembler Device</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include attention, biology, diagnostics, gained, imaging, instruments, molecular, open-source.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.7554/elife.81406" target="_blank" rel="noopener">Candida albicans exhibits heterogeneous and adaptive cytoprotective responses to antifungal compounds</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.3389/fbioe.2023.1108396" target="_blank" rel="noopener">Development and implementation of a significantly low-cost 3D bioprinter using recycled scrap material</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include available, booeshaghi, open-source, otherwise, project, wijnen.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1007/s43683-023-00117-3" target="_blank" rel="noopener">Engineering Distance Learning: The Promise and Challenges of Microfluidics</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include microscope, syringe, advantage, another, assembled, classroom, consumer, corresponding.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1002/advs.202302165" target="_blank" rel="noopener">Listen to Your Gut: Key Concepts for Bioengineering Advanced Models of the Intestine</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1371/journal.pone.0288696" target="_blank" rel="noopener">Open-source 3-D printable autoinjector: Design, testing, and regulatory limitations</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1038/s41467-023-42885-0" target="_blank" rel="noopener">Real-time signal processing via chemical reactions for a microfluidic molecular communication system</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.3354/dao03754" target="_blank" rel="noopener">Use of brome mosaic virus-like particles in feed, to deliver dsRNA targeting the white spot syndrome virus vp28 gene, reduces Penaeus vannamei mortality</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1016/j.compbiomed.2022.105391" target="_blank" rel="noopener">A hacked kitchen scale-based system for quantification of grip strength in rodents</a></td>
+              <td class="citation-year"><time datetime="2022">2022</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include booeshaghi, open-source, attention, available, bioinstrumentation, chagas, community, concordance.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1016/j.ohx.2022.e00295" target="_blank" rel="noopener">A low-cost push–pull syringe pump for continuous flow applications</a></td>
+              <td class="citation-year"><time datetime="2022">2022</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2022.07.20.500774" target="_blank" rel="noopener">Candida albicans exhibits heterogeneous and adaptive cytoprotective responses to antifungal compounds</a></td>
+              <td class="citation-year"><time datetime="2022">2022</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1016/j.phmed.2022.100051" target="_blank" rel="noopener">Cost-effective, scalable and smartphone-controlled 3D-Printed syringe pump - From lab bench to point of care biosensing applications</a></td>
+              <td class="citation-year"><time datetime="2022">2022</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.17504/protocols.io.ewov1o8jplr2/v1" target="_blank" rel="noopener">Deriving steps per mm for an LVE system v1</a></td>
+              <td class="citation-year"><time datetime="2022">2022</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1007/s12161-022-02233-2" target="_blank" rel="noopener">Low-Cost 3D-Printed Reactionware for the Determination of Fatty Acid Content in Edible Oils using a Base-Catalyzed Transesterification Method in Continuous Flow</a></td>
+              <td class="citation-year"><time datetime="2022">2022</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1016/j.ohx.2022.e00316" target="_blank" rel="noopener">Maasi: A 3D printed spin coater with touchscreen</a></td>
+              <td class="citation-year"><time datetime="2022">2022</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include commercial, affordable, alternative, aspects, automatic, certain, chemicals, chuks.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.5334/joh.36" target="_blank" rel="noopener">Open Source 3D Printed ISO 8655 Compliant Multichannel Pipette</a></td>
+              <td class="citation-year"><time datetime="2022">2022</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1080/10739149.2022.2124418" target="_blank" rel="noopener">Pneumatic piston hydrostatic bioreactor for cartilage tissue engineering</a></td>
+              <td class="citation-year"><time datetime="2022">2022</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include bioreactor, apparatus, articular, better, cartilage, changing, co-created, complex.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1016/j.ohx.2022.e00319" target="_blank" rel="noopener">Sidekick: A Low-Cost Open-Source 3D-printed liquid dispensing robot</a></td>
+              <td class="citation-year"><time datetime="2022">2022</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include open-source, adapted, options, peristaltic, pumps, syringe, accuracy, complex.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1021/acs.jchemed.2c00503" target="_blank" rel="noopener">The Automated Synthesis of Aspirin: An Undergraduate Practical Activity</a></td>
+              <td class="citation-year"><time datetime="2022">2022</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1007/s41981-022-00236-y" target="_blank" rel="noopener">The synthesis of Aspirin and Acetobromo-α-D-glucose using 3D printed flow reactors: an undergraduate demonstration</a></td>
+              <td class="citation-year"><time datetime="2022">2022</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1109/tbme.2022.3168494" target="_blank" rel="noopener">Towards Image Guided Magnetic Resonance Elastography via Active Driver Positioning Robot</a></td>
+              <td class="citation-year"><time datetime="2022">2022</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1063/5.0089495" target="_blank" rel="noopener">Vapor generation system for the sensor capabilities verification</a></td>
+              <td class="citation-year"><time datetime="2022">2022</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.3389/fcell.2021.697584" target="_blank" rel="noopener">An Open-Source Framework for Automated High-Throughput Cell Biology Experiments</a></td>
+              <td class="citation-year"><time datetime="2021">2021</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include solutions, almada, although, amarante, booeshaghi, developed, handling, however.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1016/j.ohx.2021.e00219" target="_blank" rel="noopener">Ender3 3D printer kit transformed into open, programmable syringe pump set</a></td>
+              <td class="citation-year"><time datetime="2021">2021</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.26434/chemrxiv.14718183" target="_blank" rel="noopener">Ender3 3D Printer Kit Transformed into Open, Programmable Syringe Pump Set</a></td>
+              <td class="citation-year"><time datetime="2021">2021</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.26434/chemrxiv.14718183.v2" target="_blank" rel="noopener">Ender3 3D Printer Kit Transformed into Open, Programmable Syringe Pump Set</a></td>
+              <td class="citation-year"><time datetime="2021">2021</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.26434/chemrxiv.14718183.v1" target="_blank" rel="noopener">Ender3 3D Printer Kit Transformed into Open, Programmable Syringe Pump Set</a></td>
+              <td class="citation-year"><time datetime="2021">2021</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2021.03.10.434735" target="_blank" rel="noopener">Low-Cost, Modular Modification to a Desktop 3D Printer for General Purpose Gel/Paste Extrusion &amp;amp; Direct Ink Writing</a></td>
+              <td class="citation-year"><time datetime="2021">2021</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include assembled, based, design, easily, impressive, instructions, low-cost, materials.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1016/j.ohx.2021.e00201" target="_blank" rel="noopener">Low-cost, scalable, and automated fluid sampling for fluidics applications</a></td>
+              <td class="citation-year"><time datetime="2021">2021</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2021.01.27.428538" target="_blank" rel="noopener">Low-cost, scalable, and automated fluid sampling for fluidics applications</a></td>
+              <td class="citation-year"><time datetime="2021">2021</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1016/j.bprint.2021.e00155" target="_blank" rel="noopener">Open source bioprinters: Revolutionizing the accessibility of biofabrication</a></td>
+              <td class="citation-year"><time datetime="2021">2021</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1016/j.snb.2021.130624" target="_blank" rel="noopener">Open-source and do-it-yourself microfluidics</a></td>
+              <td class="citation-year"><time datetime="2021">2021</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1016/j.ohx.2021.e00175" target="_blank" rel="noopener">Syringe pump extruder and curing system for 3D printing of photopolymers</a></td>
+              <td class="citation-year"><time datetime="2021">2021</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.20944/preprints202105.0352.v1" target="_blank" rel="noopener">The Field Guide to 3D Printing in Microscopy</a></td>
+              <td class="citation-year"><time datetime="2021">2021</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include applications, arrays, downstream, fixation, immunofluorescence, microscopy, multiple, poseidon.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1002/adbi.202100994" target="_blank" rel="noopener">The Field Guide to 3D Printing in Optical Microscopy for Life Sciences</a></td>
+              <td class="citation-year"><time datetime="2021">2021</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1115/1.4050824" target="_blank" rel="noopener">Towards an Ultra-Affordable Three-Dimensional Bioprinter: A Heated Inductive-Enabled Syringe Pump Extrusion Multifunction Module for Open-Source Fused Deposition Modeling Three-Dimensional Printers</a></td>
+              <td class="citation-year"><time datetime="2021">2021</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2020.07.23.217737" target="_blank" rel="noopener">A hacked kitchen scale-based system for quantification of grip strength in rodents</a></td>
+              <td class="citation-year"><time datetime="2020">2020</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.12688/f1000research.22942.2" target="_blank" rel="noopener">A review of open source ventilators for COVID-19 and future pandemics</a></td>
+              <td class="citation-year"><time datetime="2020">2020</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.26701/ems.769837" target="_blank" rel="noopener">A Simple Approach for Controlling an Open-Source Syringe Pump</a></td>
+              <td class="citation-year"><time datetime="2020">2020</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include assembly, details, literature, mechanical, open-source, similar, syringe, systems.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1007/s41981-020-00117-2" target="_blank" rel="noopener">An open source toolkit for 3D printed fluidics</a></td>
+              <td class="citation-year"><time datetime="2020">2020</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1016/j.ohx.2020.e00150" target="_blank" rel="noopener">Can Open Source Hardware Mechanical Ventilator (OSH-MVs) initiatives help cope with the COVID-19 health crisis? Taxonomy and state of the art</a></td>
+              <td class="citation-year"><time datetime="2020">2020</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1021/acs.jchemed.0c01115" target="_blank" rel="noopener">Modular Science Kit as a support platform for STEM learning in primary and secondary school</a></td>
+              <td class="citation-year"><time datetime="2020">2020</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1016/j.ohx.2020.e00123" target="_blank" rel="noopener">Open-source autosampler for elemental and isotopic analyses of solids</a></td>
+              <td class="citation-year"><time datetime="2020">2020</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1038/s41598-020-70465-5" target="_blank" rel="noopener">Principles of computer-controlled linear motion applied to an open-source affordable liquid handler for automated micropipetting</a></td>
+              <td class="citation-year"><time datetime="2020">2020</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include syringe, accurately, actuator, actuators, affects, applications, automated, become.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.5334/joh.22" target="_blank" rel="noopener">Standardisation of Practices in Open Source Hardware</a></td>
+              <td class="citation-year"><time datetime="2020">2020</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1016/j.ohx.2019.e00080" target="_blank" rel="noopener">Ystruder: Open source multifunction extruder with sensing and monitoring capabilities</a></td>
+              <td class="citation-year"><time datetime="2019">2019</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include design, bioinstrumentation, principles, regarding, source, syringe.</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </article>
+  </body>
+</html>

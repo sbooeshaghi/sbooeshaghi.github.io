@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-6P1ZQ0CC8F"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-6P1ZQ0CC8F");
+    </script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="The accessing of data and metadata from the sequence read archive (SRA) and other genomics databases has been cumbersome, and a source of frustration for many biologists seeking to leverage published data in their work. We developed a command-line tool, called ffq, for querying user- generated data and metadata from sequence databases such as GEO, SRA, NCBI, EMBL-EBI, DDBJ, and ENCODE. ffq enables users to quickly and easily find FASTQ files associated with a paper or accession, and greatly simplifies and organizes the process of downloading data. This tool currently has 400 stars on GitHub and is downloaded ~200 times per week." />
+    <link rel="stylesheet" href="../styles.css" />
+    
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        document.querySelectorAll(".copy-bibtex-button").forEach((button) => {
+          button.addEventListener("click", async () => {
+            const box = button.closest(".bibtex-box");
+            const code = box ? box.querySelector("code") : null;
+            const bibtex = code ? code.textContent : "";
+            const previousText = button.textContent;
+            const markStatus = (text) => {
+              button.textContent = text;
+              window.setTimeout(() => {
+                button.textContent = previousText;
+              }, 1200);
+            };
+            const copyWithSelection = () => {
+              const textarea = document.createElement("textarea");
+              textarea.value = bibtex;
+              textarea.setAttribute("readonly", "");
+              textarea.style.position = "fixed";
+              textarea.style.left = "0";
+              textarea.style.top = "0";
+              textarea.style.width = "1px";
+              textarea.style.height = "1px";
+              textarea.style.opacity = "0";
+              textarea.style.pointerEvents = "none";
+              document.body.appendChild(textarea);
+              textarea.focus({ preventScroll: true });
+              textarea.select();
+              textarea.setSelectionRange(0, textarea.value.length);
+              const copied = document.execCommand("copy");
+              textarea.remove();
+              return copied;
+            };
+
+            try {
+              if (navigator.clipboard && navigator.clipboard.writeText) {
+                await navigator.clipboard.writeText(bibtex);
+                markStatus("Copied");
+                return;
+              }
+
+              if (copyWithSelection()) {
+                markStatus("Copied");
+                return;
+              }
+            } catch {
+              let copied = false;
+
+              try {
+                copied = copyWithSelection();
+              } catch {
+                copied = false;
+              }
+
+              if (copied) {
+                markStatus("Copied");
+                return;
+              }
+            }
+
+            markStatus("Copy failed");
+          });
+        });
+      });
+    </script>
+    <title>Metadata retrieval from sequence databases with ffq | Works | Sina Booeshaghi</title>
+  </head>
+  <body>
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="../index.html">Home</a>
+      <span aria-hidden="true">/</span>
+      <a href="../publications.html">Works</a>
+      <span aria-hidden="true">/</span>
+      <span class="breadcrumb-current" title="Metadata retrieval from sequence databases with ffq">Metadata retrieval from sequence databases with ffq</span>
+    </nav>
+    <article class="work-page">
+      <h1>Metadata retrieval from sequence databases with ffq</h1>
+      <div class="publication-links work-links" aria-label="Work links">
+        
+        <a class="publication-link" href="https://doi.org/10.1093/bioinformatics/btac667" target="_blank" rel="noopener">
+          <span>Bioinformatics</span>
+          <time datetime="2023-01-05">2023-01-05</time>
+        </a>
+        <a class="publication-link" href="https://doi.org/10.1101/2022.05.18.492548" target="_blank" rel="noopener">
+          <span>bioRxiv</span>
+          <time datetime="2022-05-26">2022-05-26</time>
+        </a>
+      </div>
+
+      <section>
+        <h2>Summary</h2>
+        <p>The accessing of data and metadata from the sequence read archive (SRA) and other genomics databases has been cumbersome, and a source of frustration for many biologists seeking to leverage published data in their work. We developed a command-line tool, called ffq, for querying user- generated data and metadata from sequence databases such as GEO, SRA, NCBI, EMBL-EBI, DDBJ, and ENCODE. ffq enables users to quickly and easily find FASTQ files associated with a paper or accession, and greatly simplifies and organizes the process of downloading data. This tool currently has 400 stars on GitHub and is downloaded ~200 times per week.</p>
+      </section>
+
+      <section>
+        <h2>BibTeX</h2>
+        
+        <section class="bibtex-entry">
+          <h3>Bioinformatics</h3>
+          <div class="bibtex-box">
+            <button
+              class="copy-bibtex-button"
+              type="button"
+              aria-label="Copy BibTeX for Bioinformatics"
+            >
+              Copy BibTeX
+            </button>
+            <pre><code>@article{G_lvez_Merch_n_2023,
+  TITLE     = {Metadata retrieval from sequence databases with
+                    &lt;i&gt;ffq&lt;/i&gt;},
+  VOLUME    = {39},
+  ISSN      = {1367-4811},
+  URL       = {http://dx.doi.org/10.1093/bioinformatics/btac667},
+  DOI       = {10.1093/bioinformatics/btac667},
+  NUMBER    = {1},
+  JOURNAL   = {Bioinformatics},
+  PUBLISHER = {Oxford University Press (OUP)},
+  AUTHOR    = {Gálvez-Merchán, Ángel and Min, Kyung Hoi (Joseph) and Pachter, Lior and Booeshaghi, A Sina},
+  EDITOR    = {Robinson, Peter},
+  YEAR      = {2023}
+}</code></pre>
+          </div>
+        </section>
+        <section class="bibtex-entry">
+          <h3>bioRxiv</h3>
+          <div class="bibtex-box">
+            <button
+              class="copy-bibtex-button"
+              type="button"
+              aria-label="Copy BibTeX for bioRxiv"
+            >
+              Copy BibTeX
+            </button>
+            <pre><code>@article{G_lvez_Merch_n_2022,
+  TITLE     = {Metadata retrieval from sequence databases with
+                  &lt;i&gt;ffq&lt;/i&gt;},
+  URL       = {http://dx.doi.org/10.1101/2022.05.18.492548},
+  DOI       = {10.1101/2022.05.18.492548},
+  PUBLISHER = {openRxiv},
+  AUTHOR    = {Gálvez-Merchán, Ángel and Min, Kyung Hoi (Joseph) and Pachter, Lior and Booeshaghi, A. Sina},
+  YEAR      = {2022}
+}</code></pre>
+          </div>
+        </section>
+      </section>
+
+      <section>
+        <h2>Citing Works</h2>
+        <p class="citation-source-note">
+          54 citing works found in citation data generated 2026-07-05. Citation relationships are sourced from OpenAlex, Semantic Scholar, Google Scholar.
+        </p>
+        <table class="citation-table">
+          <thead>
+            <tr>
+              <th>Title</th>
+              <th>Year</th>
+              <th>Summary</th>
+            </tr>
+          </thead>
+          <tbody>
+            
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.64898/2026.02.26.708306" target="_blank" rel="noopener">Antibody background in ChIP-seq skews estimates of cohesin positioning by CTCF barriers</a></td>
+              <td class="citation-year"><time datetime="2026">2026</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include addition, analyses, automated, command-line, comparative, datasets, downstream, expression.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1016/j.celrep.2026.117407" target="_blank" rel="noopener">Consensus Pituitary Atlas, a scalable resource for annotation, novel marker discovery, and analyses in mouse pituitary gland research</a></td>
+              <td class="citation-year"><time datetime="2026">2026</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1093/gigascience/giag039" target="_blank" rel="noopener">GEfetch2R : fetching single-cell/bulk RNA-seq data from public repositories to R and benchmarking the subsequent format conversion tools</a></td>
+              <td class="citation-year"><time datetime="2026">2026</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include downloading, tools, available, count, currently, designed, download, fetch.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2022.05.06.490859" target="_blank" rel="noopener">Normalization for sampled count data</a></td>
+              <td class="citation-year"><time datetime="2026">2026</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://scholar.google.com/scholar?q=The%20ChIP-FRiP%20pipeline%20quantifies%20co-binding%20and%20reveals%20how%20antibody%20background%20contributes%20to%20cohesin%20ChIP-seq%20patterns" target="_blank" rel="noopener">The ChIP-FRiP pipeline quantifies co-binding and reveals how antibody background contributes to cohesin ChIP-seq patterns</a></td>
+              <td class="citation-year"><time datetime="2026">2026</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://s-space.snu.ac.kr/handle/10371/228513" target="_blank" rel="noopener">Comparative Multi-omics Study Across Diverse Species: Integrative Mapping of the Dog Epigenome and Development of a Centralized Resource Acquisition System</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2025.10.28.685060" target="_blank" rel="noopener">Consensus Pituitary Atlas, a scalable resource for annotation, novel marker discovery and analyses in pituitary gland research</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.24072/pcjournal.637" target="_blank" rel="noopener">Data mining of public genomic repositories: harnessing off-target reads to expand microbial pathogen genomic resources</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1038/s41587-025-02614-y" target="_blank" rel="noopener">Detection of viral sequences at single-cell resolution identifies novel viruses associated with host gene expression changes</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include archive, available, download, european, gse158390, links, nucleotide, obtained.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://scholar.sun.ac.za/server/api/core/bitstreams/96923c6b-8a47-4fd8-b1f4-f0ac85d63083/content" target="_blank" rel="noopener">Effect of single-cell RNA sequencing parameters on cluster stability</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1093/bioinformatics/btaf128" target="_blank" rel="noopener">Gencube: centralized retrieval and integration of multi-omics resources from leading databases</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://search.ebscohost.com/login.aspx?direct=true&amp;profile=ehost&amp;scope=site&amp;authtype=crawler&amp;jrnl=09738916&amp;AN=187989896" target="_blank" rel="noopener">Immunoinformatic-Based Design of a Multi-Epitope Vaccine Against Heartland Virus.</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1093/ve/veaf051" target="_blank" rel="noopener">Insights into diversity, host range, and evolution of iflaviruses in Lepidoptera through transcriptome mining</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2025.01.22.634245" target="_blank" rel="noopener">Insights into diversity, host range, and evolution of iflaviruses in Lepidoptera through transcriptome mining</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1111/syen.70009" target="_blank" rel="noopener">Integrating Sanger and next‐generation sequencing data sheds light on phylogenetic relationships among gelechioid moths (Lepidoptera: Gelechioidea)</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include lvez-merch.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2025.08.20.666107" target="_blank" rel="noopener">MetaMiner: Streamlined GUI Tool for Retrieving, Normalizing and Exploring Metadata</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2025.11.26.690832" target="_blank" rel="noopener">SaVor - A Reproducible Structural Variant Calling and Benchmarking Platform from Short-Read Data</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://search.proquest.com/openview/8e9949dae5a0161c89db4e6bb1990663/1?pq-origsite=gscholar&amp;cbl=18750&amp;diss=y" target="_blank" rel="noopener">svArcher: A Reproducible Structural Variant Calling Pipeline for Plant Genomes</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2024.03.23.586412" target="_blank" rel="noopener">A human commons cell atlas reveals cell type specificity for OAS1 isoforms</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2024.03.23.586413" target="_blank" rel="noopener">Algorithms for a Commons Cell Atlas</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2024.05.22.595240" target="_blank" rel="noopener">BioInformatics Agent (BIA): Unleashing the Power of Large Language Models to Reshape Bioinformatics Workflow</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include augments, basic, fetching, files, geoparse, implemented, information, metadata.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2024.07.18.604168" target="_blank" rel="noopener">Gencube: Efficient retrieval, download, and unification of genomic data from leading biodiversity databases</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1109/tla.2024.10412034" target="_blank" rel="noopener">GeneConnector: Unlocking the full potential of Genbank metadata</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include tools, aggregate, aggregation, despite, examples, existence, focused, genomic.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1038/s41598-024-59148-7" target="_blank" rel="noopener">Genome plasticity shapes the ecology and evolution of Phocaeicola dorei and Phocaeicola vulgatus</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include ena-related, metadata.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1093/bioinformatics/btae152" target="_blank" rel="noopener">GINSA: an accumulator for paired locality and next-generation small ribosomal subunit sequence data</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1093/bioinformatics/btae641" target="_blank" rel="noopener">iSeq: an integrated tool to fetch public sequencing data</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1038/s41596-024-01057-0" target="_blank" rel="noopener">kallisto, bustools and kb-python for quantifying bulk, single-cell and single-nucleus RNA-seq</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1007/s00248-024-02369-0" target="_blank" rel="noopener">Meta-analysis of the Microbial Diversity Cultured in Bioreactors Simulating the Gut Microbiome</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2024.03.19.585745" target="_blank" rel="noopener">srahunter : a user-friendly tool to speed up and simplify data downloading from NCBI SRA</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://dspace.uzhnu.edu.ua/items/e6879894-945f-44fd-ab4a-8d79292f912e" target="_blank" rel="noopener">Сучасні методи викладання іноземних мов у дистанційному форматі: адаптація до викликів воєнного стану</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1016/j.cels.2023.07.008" target="_blank" rel="noopener">A bipartite function of ESRRB can integrate signaling over time to balance self-renewal and differentiation.</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2023.06.22.546168" target="_blank" rel="noopener">A fast, reproducible, high-throughput variant calling workflow for evolutionary, ecological, and conservation genomics</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include accession, downloaded, generate, happens, lvez-merch.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1093/molbev/msad270" target="_blank" rel="noopener">A Fast, Reproducible, High-throughput Variant Calling Workflow for Population Genomics</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.3389/fgene.2023.1154198" target="_blank" rel="noopener">Challenges to sharing sample metadata in computational genomics</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include metadata, cannizzaro, choudhary, data-oriented, databases, davis, dbgap, dedicated.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1093/ve/vead062" target="_blank" rel="noopener">Diving deep into fish bornaviruses: Uncovering hidden diversity and transcriptional strategies through comprehensive data mining</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2023.08.23.554433" target="_blank" rel="noopener">Diving Deep into Fish Bornaviruses: Uncovering Hidden Diversity and Transcriptional Strategies through Comprehensive Data Mining</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2023.12.11.571168" target="_blank" rel="noopener">Efficient and accurate detection of viral sequences at single-cell resolution reveals putative novel viruses perturbing host gene expression</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1093/bioinformatics/btac836" target="_blank" rel="noopener">Efficient querying of genomic reference databases with gget</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2023.11.18.567507" target="_blank" rel="noopener">GEfetch2R : fetching single-cell/bulk RNA-seq data from public repositories to R and benchmarking the subsequent format conversion tools</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1093/bioinformatics/btad069" target="_blank" rel="noopener">GEOfetch: a command-line tool for downloading data and standardized metadata from GEO and SRA</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2023.01.12.523796" target="_blank" rel="noopener">Human pan-body age- and sex-specific molecular phenomena inferred from public transcriptome data using machine learning</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2023.11.21.568164" target="_blank" rel="noopener">kallisto, bustools, and kb-python for quantifying bulk, single-cell, and single-nucleus RNA-seq</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2023.10.14.562335" target="_blank" rel="noopener">MADAME: a user-friendly bioinformatic tool for data and metadata retrieval in microbiome research</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://scholar.google.com/scholar?q=Palidis%3A%20fast%20discovery%20of%20novel%20insertion%20sequences" target="_blank" rel="noopener">Palidis: fast discovery of novel insertion sequences</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1093/bioadv/vbad181" target="_blank" rel="noopener">Quantifying orthogonal barcodes for sequence census assays</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include gsm4012688, lvez-merch.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.3389/fmars.2023.1159754" target="_blank" rel="noopener">Tracing the invertebrate herpesviruses in the global sequence datasets</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include table, database, experimental, lvez-mercha, metadata, output, populated, related.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2023.09.14.543267" target="_blank" rel="noopener">Universal preprocessing of single-cell genomics data</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2022.09.20.508291" target="_blank" rel="noopener">A bipartite function of ESRRB can integrate signaling over time to balance self-renewal and differentiation</a></td>
+              <td class="citation-year"><time datetime="2022">2022</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include command, following, lvez-merch.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2022.05.17.492392" target="_blank" rel="noopener">Efficient querying of genomic reference databases with gget</a></td>
+              <td class="citation-year"><time datetime="2022">2022</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.3390/ijms232214418" target="_blank" rel="noopener">KARAJ: An Efficient Adaptive Multi-Processor Tool to Streamline Genomic and Transcriptomic Sequence Data Acquisition</a></td>
+              <td class="citation-year"><time datetime="2022">2022</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include download, karaj, prjna, accession, aspera, numbers, pysradb, access.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2022.06.04.494845" target="_blank" rel="noopener">Pseudoalignment facilitates assignment of error-prone Ultima Genomics reads</a></td>
+              <td class="citation-year"><time datetime="2022">2022</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2022.10.09.511501" target="_blank" rel="noopener">Quantifying orthogonal barcodes for sequence census assays</a></td>
+              <td class="citation-year"><time datetime="2022">2022</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://search.proquest.com/openview/8fa0c0da71feb11d8ab9ca3eff166c05/1?pq-origsite=gscholar&amp;cbl=18750&amp;diss=y" target="_blank" rel="noopener">Systematic Examination of Epigenomic Regulation of Neuronal Plasticity</a></td>
+              <td class="citation-year"><time datetime="2022">2022</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2021.12.08.471788" target="_blank" rel="noopener">Assessing the multimodal tradeoff</a></td>
+              <td class="citation-year"><time datetime="2021">2021</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include accession, downloaded, reads, single-nuclei, respectively, atac-seq, dataset, gsm6284343.</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </article>
+  </body>
+</html>

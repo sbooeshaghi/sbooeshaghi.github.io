@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-6P1ZQ0CC8F"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-6P1ZQ0CC8F");
+    </script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Long-read RNA sequencing can resolve transcript isoforms but requires efficient quantification methods. This work introduces lr-kallisto for transcriptome quantification from long-read sequencing data." />
+    <link rel="stylesheet" href="../styles.css" />
+    
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        document.querySelectorAll(".copy-bibtex-button").forEach((button) => {
+          button.addEventListener("click", async () => {
+            const box = button.closest(".bibtex-box");
+            const code = box ? box.querySelector("code") : null;
+            const bibtex = code ? code.textContent : "";
+            const previousText = button.textContent;
+            const markStatus = (text) => {
+              button.textContent = text;
+              window.setTimeout(() => {
+                button.textContent = previousText;
+              }, 1200);
+            };
+            const copyWithSelection = () => {
+              const textarea = document.createElement("textarea");
+              textarea.value = bibtex;
+              textarea.setAttribute("readonly", "");
+              textarea.style.position = "fixed";
+              textarea.style.left = "0";
+              textarea.style.top = "0";
+              textarea.style.width = "1px";
+              textarea.style.height = "1px";
+              textarea.style.opacity = "0";
+              textarea.style.pointerEvents = "none";
+              document.body.appendChild(textarea);
+              textarea.focus({ preventScroll: true });
+              textarea.select();
+              textarea.setSelectionRange(0, textarea.value.length);
+              const copied = document.execCommand("copy");
+              textarea.remove();
+              return copied;
+            };
+
+            try {
+              if (navigator.clipboard && navigator.clipboard.writeText) {
+                await navigator.clipboard.writeText(bibtex);
+                markStatus("Copied");
+                return;
+              }
+
+              if (copyWithSelection()) {
+                markStatus("Copied");
+                return;
+              }
+            } catch {
+              let copied = false;
+
+              try {
+                copied = copyWithSelection();
+              } catch {
+                copied = false;
+              }
+
+              if (copied) {
+                markStatus("Copied");
+                return;
+              }
+            }
+
+            markStatus("Copy failed");
+          });
+        });
+      });
+    </script>
+    <title>Long-read sequencing transcriptome quantification with lr-kallisto | Works | Sina Booeshaghi</title>
+  </head>
+  <body>
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="../index.html">Home</a>
+      <span aria-hidden="true">/</span>
+      <a href="../publications.html">Works</a>
+      <span aria-hidden="true">/</span>
+      <span class="breadcrumb-current" title="Long-read sequencing transcriptome quantification with lr-kallisto">Long-read sequencing transcriptome quantification with lr-kallis...</span>
+    </nav>
+    <article class="work-page">
+      <h1>Long-read sequencing transcriptome quantification with lr-kallisto</h1>
+      <div class="publication-links work-links" aria-label="Work links">
+        
+        <a class="publication-link" href="https://doi.org/10.1371/journal.pcbi.1013692" target="_blank" rel="noopener">
+          <span>PLOS Computational Biology</span>
+          <time datetime="2025-12-01">2025-12-01</time>
+        </a>
+        <a class="publication-link" href="https://doi.org/10.1101/2024.07.19.604364" target="_blank" rel="noopener">
+          <span>bioRxiv</span>
+          <time datetime="2024-07-19">2024-07-19</time>
+        </a>
+      </div>
+
+      <section>
+        <h2>Summary</h2>
+        <p>Long-read RNA sequencing can resolve transcript isoforms but requires efficient quantification methods. This work introduces lr-kallisto for transcriptome quantification from long-read sequencing data.</p>
+      </section>
+
+      <section>
+        <h2>BibTeX</h2>
+        
+        <section class="bibtex-entry">
+          <h3>PLOS Computational Biology</h3>
+          <div class="bibtex-box">
+            <button
+              class="copy-bibtex-button"
+              type="button"
+              aria-label="Copy BibTeX for PLOS Computational Biology"
+            >
+              Copy BibTeX
+            </button>
+            <pre><code>@article{Loving_2025,
+  TITLE     = {Long-read sequencing transcriptome quantification with lr-kallisto},
+  VOLUME    = {21},
+  ISSN      = {1553-7358},
+  URL       = {http://dx.doi.org/10.1371/journal.pcbi.1013692},
+  DOI       = {10.1371/journal.pcbi.1013692},
+  NUMBER    = {12},
+  JOURNAL   = {PLOS Computational Biology},
+  PUBLISHER = {Public Library of Science (PLoS)},
+  AUTHOR    = {Loving, Rebekah K. and Sullivan, Delaney K. and Reese, Fairlie and Rebboah, Elisabeth and Sakr, Jasmine and Rezaie, Narges and Liang, Heidi Y. and Filimban, Ghassan and Kawauchi, Shimako and Booeshaghi, A. Sina and Melsted, Páll and Oakes, Conrad and Trout, Diane and Williams, Brian A. and MacGregor, Grant R. and Wold, Barbara J. and Mortazavi, Ali and Pachter, Lior},
+  EDITOR    = {Zhang, Shihua},
+  YEAR      = {2025},
+  PAGES     = {e1013692}
+}</code></pre>
+          </div>
+        </section>
+        <section class="bibtex-entry">
+          <h3>bioRxiv</h3>
+          <div class="bibtex-box">
+            <button
+              class="copy-bibtex-button"
+              type="button"
+              aria-label="Copy BibTeX for bioRxiv"
+            >
+              Copy BibTeX
+            </button>
+            <pre><code>@article{Loving_2024,
+  TITLE     = {Long-read sequencing transcriptome quantification with lr-kallisto},
+  URL       = {http://dx.doi.org/10.1101/2024.07.19.604364},
+  DOI       = {10.1101/2024.07.19.604364},
+  PUBLISHER = {openRxiv},
+  AUTHOR    = {Loving, Rebekah K. and Sullivan, Delaney K. and Booeshagi, A. Sina and Reese, Fairlie and Rebboah, Elisabeth and Sakr, Jasmine and Rezaie, Narges and Liang, Heidi Y. and Filimban, Ghassan and Kawauchi, Shimako and Oakes, Conrad and Trout, Diane and Williams, Brian A. and MacGregor, Grant and Wold, Barbara J. and Mortazavi, Ali and Pachter, Lior},
+  YEAR      = {2024}
+}</code></pre>
+          </div>
+        </section>
+      </section>
+
+      <section>
+        <h2>Citing Works</h2>
+        <p class="citation-source-note">
+          29 citing works found in citation data generated 2026-07-05. Citation relationships are sourced from OpenAlex, Semantic Scholar, Google Scholar.
+        </p>
+        <table class="citation-table">
+          <thead>
+            <tr>
+              <th>Title</th>
+              <th>Year</th>
+              <th>Summary</th>
+            </tr>
+          </thead>
+          <tbody>
+            
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1186/s13059-026-04001-5" target="_blank" rel="noopener">A comprehensive evaluation of long-read de novo transcriptome assembly</a></td>
+              <td class="citation-year"><time datetime="2026">2026</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include analysis, development, downstream, further, improve, long-read, meth-ods, numerous.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1186/s13059-026-03988-1" target="_blank" rel="noopener">A systematic benchmark of high-accuracy PacBio long-read RNA sequencing for transcript-level quantification</a></td>
+              <td class="citation-year"><time datetime="2026">2026</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include pacbio.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.64898/2026.03.24.713944" target="_blank" rel="noopener">Allos: an integrated Python toolkit for isoform-level single-cell and spatial in-situ transcriptomics</a></td>
+              <td class="citation-year"><time datetime="2026">2026</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include bambu, bambu-clump, flames, including, isosceles, lr-kallisto, pipelines, scotch.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.64898/2026.03.12.706999" target="_blank" rel="noopener">BenchDrop-seq: a microfluidics-free platform for benchtop single-cell long-read RNA sequencing</a></td>
+              <td class="citation-year"><time datetime="2026">2026</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.64898/2026.02.26.708244" target="_blank" rel="noopener">Benchmarking computational tools for locus-specific analysis of transposable elements in single-cell RNA-seq datasets</a></td>
+              <td class="citation-year"><time datetime="2026">2026</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.64898/2026.04.01.715783" target="_blank" rel="noopener">Benchmarking long-read RNA-seq across modalities, methods, and sequencing depth in iNeurons</a></td>
+              <td class="citation-year"><time datetime="2026">2026</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include bambu, isosceles, jousheghani, kabza, kallisto, loving, oarfish, quantification.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1016/j.gde.2026.102497" target="_blank" rel="noopener">Beyond the gene: isoform diversity as a key contributor to human brain disorders</a></td>
+              <td class="citation-year"><time datetime="2026">2026</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://search.proquest.com/openview/0d9fa6b9d5d1fbb2c5f1c533bfc9331f/1?pq-origsite=gscholar&amp;cbl=18750&amp;diss=y" target="_blank" rel="noopener">Computational Methods for Long-Read Functional Genomics in the Age of Agentic AI</a></td>
+              <td class="citation-year"><time datetime="2026">2026</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1093/bioinformatics/btag066" target="_blank" rel="noopener">Dogme: a nextflow pipeline for reprocessing nanopore RNA and DNA modifications</a></td>
+              <td class="citation-year"><time datetime="2026">2026</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include dorado, github, https, modkit, allows, copies, kallisto-bustools, loving.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2025.10.19.683327" target="_blank" rel="noopener">Igniting full-length isoform analysis in single-cell and spatial RNA-seq data with FLAMESv2</a></td>
+              <td class="citation-year"><time datetime="2026">2026</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include additionally, analyzed, direct-rna, except, following, instead, long-bench, lr-kallisto.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://scholar.google.com/scholar?q=Nuclear%20Speckles%20Regulate%20Splicing%20During%20Muscle%20Stem%20Cell%20Activation%20and%20Aging" target="_blank" rel="noopener">Nuclear Speckles Regulate Splicing During Muscle Stem Cell Activation and Aging</a></td>
+              <td class="citation-year"><time datetime="2026">2026</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.64898/2026.01.14.699429" target="_blank" rel="noopener">Quantitative Full-length transcriptome analysis by nanopore sequencing with Error-Aware UMI mapping</a></td>
+              <td class="citation-year"><time datetime="2026">2026</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1038/s41592-026-03045-6" target="_blank" rel="noopener">SNP calling, haplotype phasing and allele-specific analysis with long RNA-seq reads</a></td>
+              <td class="citation-year"><time datetime="2026">2026</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2025.04.09.648005" target="_blank" rel="noopener">Unexpected XIST Expression in Male Hearts Associates with Disease</a></td>
+              <td class="citation-year"><time datetime="2026">2026</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include assuming, configuration, count, long-read, pipeline, pseudoalign, reads, reverse.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2025.05.30.656561" target="_blank" rel="noopener">A Systematic Benchmark of High-Accuracy PacBio Long-Read RNA Sequencing for Transcript-Level Quantification</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1093/bib/bbaf655" target="_blank" rel="noopener">Bioinformatics frameworks for single-cell long-read sequencing: unlocking isoform-level resolution</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include error, lr-kallisto, platforms, pseudoalignment, rates, reads, robust, sequencing.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2025.06.04.657941" target="_blank" rel="noopener">Dogme: A nextflow pipeline for reprocessing nanopore RNA and DNA modifications</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1038/s41467-025-66096-x" target="_blank" rel="noopener">Long-read transcriptomics of a diverse human cohort reveals ancestry bias in gene annotation</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2025.03.14.643250" target="_blank" rel="noopener">Long-read transcriptomics of a diverse human cohort reveals widespread ancestry bias in gene annotation</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include counts, allows, frequently, integer, locus, lr-kallisto, methods, overlapping.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2025.02.08.637184" target="_blank" rel="noopener">Multi-sample, multi-platform isoform quantification using empirical Bayes</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include platforms, bitseqvb, developed, isoform, kallisto, lr-kallisto, methods, nanocount.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1093/bioinformatics/btaf240" target="_blank" rel="noopener">Oarfish: enhanced probabilistic modeling leads to improved accuracy in long read transcriptome quantification</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include quantification, altering, approach, augmented, during, effective, enable, kallisto.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2025.11.21.689818" target="_blank" rel="noopener">Sample-specific haplotype-resolved protein isoform characterization via long-read RNA-seq-based proteogenomics</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include followed, g2gtools, generated, haplotype-resolved, lr-kallisto, lrrna-seq, quantification, transcriptomes.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2025.04.08.647887" target="_blank" rel="noopener">scnanoseq: an nf-core pipeline for Oxford Nanopore single-cell RNA-sequencing</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1093/bioinformatics/btaf487" target="_blank" rel="noopener">scnanoseq: an nf-core pipeline for Oxford Nanopore single-cell RNA-sequencing</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include emerging, expression, integration, loving, lr-kallisto, methods, potential, quantification.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2025.05.26.656191" target="_blank" rel="noopener">SNP calling, haplotype phasing and allele-specific analysis with long RNA-seq reads</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2025.02.02.635999" target="_blank" rel="noopener">Towards accurate, reference-free differential expression: A comprehensive evaluation of long-read de novo transcriptome assembly</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1038/s41576-025-00828-z" target="_blank" rel="noopener">Transcriptomics in the era of long-read sequencing</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include events, accurate, alternative, alternatively, assess, consequences, detect, detected.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2024.07.30.605821" target="_blank" rel="noopener">A replicable and modular benchmark for long-read transcript quantification methods</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://www.semanticscholar.org/paper/4212f50d279daf2312198716cadfddbbee889fd0" target="_blank" rel="noopener">Quantitative isoform profiling using deep coverage long-read RNA sequencing across early endothelial differentiation</a></td>
+              <td class="citation-year"></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include pacbio.</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </article>
+  </body>
+</html>

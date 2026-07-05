@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-6P1ZQ0CC8F"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-6P1ZQ0CC8F");
+    </script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Single-cell count data normalization is a requisite for accurate interpretation of analysis results. However, a menagerie of methods has created confusion in the field, and there is disagreement about what methods to use in practice. We benchmarked widely used methods for normalizing scRNAseq data on 526 datasets in order to understand their performance and limits. We found tradeoffs between effective depth-normalization, variance stabilization, and monotonicity. We also found that the proportional fitting (PF) transformation followed by log(1 + X) can benefit from an additional PF with minimal loss to variance stabilization." />
+    <link rel="stylesheet" href="../styles.css" />
+    
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        document.querySelectorAll(".copy-bibtex-button").forEach((button) => {
+          button.addEventListener("click", async () => {
+            const box = button.closest(".bibtex-box");
+            const code = box ? box.querySelector("code") : null;
+            const bibtex = code ? code.textContent : "";
+            const previousText = button.textContent;
+            const markStatus = (text) => {
+              button.textContent = text;
+              window.setTimeout(() => {
+                button.textContent = previousText;
+              }, 1200);
+            };
+            const copyWithSelection = () => {
+              const textarea = document.createElement("textarea");
+              textarea.value = bibtex;
+              textarea.setAttribute("readonly", "");
+              textarea.style.position = "fixed";
+              textarea.style.left = "0";
+              textarea.style.top = "0";
+              textarea.style.width = "1px";
+              textarea.style.height = "1px";
+              textarea.style.opacity = "0";
+              textarea.style.pointerEvents = "none";
+              document.body.appendChild(textarea);
+              textarea.focus({ preventScroll: true });
+              textarea.select();
+              textarea.setSelectionRange(0, textarea.value.length);
+              const copied = document.execCommand("copy");
+              textarea.remove();
+              return copied;
+            };
+
+            try {
+              if (navigator.clipboard && navigator.clipboard.writeText) {
+                await navigator.clipboard.writeText(bibtex);
+                markStatus("Copied");
+                return;
+              }
+
+              if (copyWithSelection()) {
+                markStatus("Copied");
+                return;
+              }
+            } catch {
+              let copied = false;
+
+              try {
+                copied = copyWithSelection();
+              } catch {
+                copied = false;
+              }
+
+              if (copied) {
+                markStatus("Copied");
+                return;
+              }
+            }
+
+            markStatus("Copy failed");
+          });
+        });
+      });
+    </script>
+    <title>Normalization for sampled count data | Works | Sina Booeshaghi</title>
+  </head>
+  <body>
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="../index.html">Home</a>
+      <span aria-hidden="true">/</span>
+      <a href="../publications.html">Works</a>
+      <span aria-hidden="true">/</span>
+      <span class="breadcrumb-current" title="Normalization for sampled count data">Normalization for sampled count data</span>
+    </nav>
+    <article class="work-page">
+      <h1>Normalization for sampled count data</h1>
+      <div class="publication-links work-links" aria-label="Work links">
+        
+        <a class="publication-link" href="https://doi.org/10.1101/2022.05.06.490859" target="_blank" rel="noopener">
+          <span>bioRxiv</span>
+          <time datetime="2022-05-06">2022-05-06</time>
+        </a>
+      </div>
+
+      <section>
+        <h2>Summary</h2>
+        <p>Single-cell count data normalization is a requisite for accurate interpretation of analysis results. However, a menagerie of methods has created confusion in the field, and there is disagreement about what methods to use in practice. We benchmarked widely used methods for normalizing scRNAseq data on 526 datasets in order to understand their performance and limits. We found tradeoffs between effective depth-normalization, variance stabilization, and monotonicity. We also found that the proportional fitting (PF) transformation followed by log(1 + X) can benefit from an additional PF with minimal loss to variance stabilization.</p>
+      </section>
+
+      <section>
+        <h2>BibTeX</h2>
+        
+        <section class="bibtex-entry">
+          <h3>bioRxiv</h3>
+          <div class="bibtex-box">
+            <button
+              class="copy-bibtex-button"
+              type="button"
+              aria-label="Copy BibTeX for bioRxiv"
+            >
+              Copy BibTeX
+            </button>
+            <pre><code>@article{Booeshaghi_2022,
+  TITLE     = {Normalization for sampled count data},
+  URL       = {http://dx.doi.org/10.1101/2022.05.06.490859},
+  DOI       = {10.1101/2022.05.06.490859},
+  PUBLISHER = {openRxiv},
+  AUTHOR    = {Booeshaghi, A. Sina and Hallgrímsdóttir, Ingileif B. and Gálvez-Merchán, Ángel and Pachter, Lior},
+  YEAR      = {2022}
+}</code></pre>
+          </div>
+        </section>
+      </section>
+
+      <section>
+        <h2>Citing Works</h2>
+        <p class="citation-source-note">
+          62 citing works found in citation data generated 2026-07-05. Citation relationships are sourced from OpenAlex, Semantic Scholar, Google Scholar.
+        </p>
+        <table class="citation-table">
+          <thead>
+            <tr>
+              <th>Title</th>
+              <th>Year</th>
+              <th>Summary</th>
+            </tr>
+          </thead>
+          <tbody>
+            
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.64898/2026.06.01.729215" target="_blank" rel="noopener">Cell-specific regulatory circuits connect genetic variation to disease susceptibility</a></td>
+              <td class="citation-year"><time datetime="2026">2026</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.64898/2026.01.20.700519" target="_blank" rel="noopener">Federated single-cell QTL meta-analysis reveals novel disease mechanisms</a></td>
+              <td class="citation-year"><time datetime="2026">2026</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://search.proquest.com/openview/e037d73b36dfe9efdc749a5b2ce18864/1?pq-origsite=gscholar&amp;cbl=18750&amp;diss=y" target="_blank" rel="noopener">From Subjective to Principled Single-Cell Data Analysis: Evaluating Annotation Behavior, Optimizing Integration, and Benchmarking Visualization Pipelines</a></td>
+              <td class="citation-year"><time datetime="2026">2026</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1016/j.crmeth.2026.101415" target="_blank" rel="noopener">High-quality acinar cell isolation enables single-cell analysis of healthy and injured pancreas</a></td>
+              <td class="citation-year"><time datetime="2026">2026</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.64898/2026.05.01.716870" target="_blank" rel="noopener">Tissue-adapted NK cells shape pathogenic cDC1 niches in early arthritis</a></td>
+              <td class="citation-year"><time datetime="2026">2026</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.48550/arxiv.2510.00392" target="_blank" rel="noopener">A Deep Learning Pipeline for Epilepsy Genomic Analysis Using GPT-2 XL and NVIDIA H100</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include applied, approaches, capture, conventional, counts, dimensionality, directly, latent.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1186/s13059-025-03887-x" target="_blank" rel="noopener">A systematic evaluation of highly variable gene selection methods for single-cell RNA-sequencing</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include developers, evaluating, future, methods, selecting, studies.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.5220/0013318700003911" target="_blank" rel="noopener">Assessing the Influence of scRNA-Seq Data Normalization on Dimensionality Reduction Outcomes</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include another, booeshaghi, common, effective, lause, logarithmic, normalization, processing.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1038/s41556-025-01619-8" target="_blank" rel="noopener">Biases in machine-learning models of human single-cell data</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include however, limitations, methods, pointed, recently, scholars.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2025.09.06.674678" target="_blank" rel="noopener">Disease-associated variants are enriched for altering cell-type-specific gene co-expression relationships</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2025.11.26.689911" target="_blank" rel="noopener">High cell-type specificity of eQTLs revealed by single-nucleus analyses of brain and blood</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://docserv.uni-duesseldorf.de/servlets/DerivateServlet/Derivate-74616" target="_blank" rel="noopener">Linker histone variant H1-0 dysregulation in ETV6:: RUNX1+ preleukemia and B cell acute lymphoblastic leukemia</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1038/s41467-025-65712-0" target="_blank" rel="noopener">Multimodal single cell analyses reveal gene networks of planarian stem cell differentiation</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1016/j.jcmgh.2025.101717" target="_blank" rel="noopener">Novel Acinar Metaplastic States Uncovered in Exocrine Pancreas Disease</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2025.05.11.653354" target="_blank" rel="noopener">Pseudoassembly of k-mers</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1038/s41592-025-02700-8" target="_blank" rel="noopener">Single-cell ultra-high-throughput multiplexed chromatin and RNA profiling reveals gene regulatory dynamics</a></td>
+              <td class="citation-year"><time datetime="2025">2025</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include depth, fitting, proportional, another, experiment, expression, followed, logarithmic.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2024.03.23.586412" target="_blank" rel="noopener">A human commons cell atlas reveals cell type specificity for OAS1 isoforms</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2024.08.25.608519" target="_blank" rel="noopener">A systematic evaluation of highly variable gene selection methods for single-cell RNA-sequencing</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.3389/fbinf.2024.1417428" target="_blank" rel="noopener">A systematic overview of single-cell transcriptomics databases, their use cases, and limitations</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include analysis, booeshaghi, normalization, technical, affect, aspects, assumptions, biological.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://www.semanticscholar.org/paper/d7f8f5b984f070b6f0dd9d448c503392d603fa35" target="_blank" rel="noopener">A Systematic Overview of Single-Cell Transcriptomics Databases, their Use cases, and Limitations</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include analysis, normalization, affect, analyses, annotation, aspects, assumptions, benchmarking.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2024.03.23.586413" target="_blank" rel="noopener">Algorithms for a Commons Cell Atlas</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1002/cpz1.963" target="_blank" rel="noopener">Analytical Workflows for Single‐Cell Multiomic Data Using the BD Rhapsody Platform</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://scholar.google.com/scholar?q=BacSC%3A%20A%20general%20workflow%20for%20bacterial%20single-cell%20RNA%20sequencing%20data%20analysis" target="_blank" rel="noopener">BacSC: A general workflow for bacterial single-cell RNA sequencing data analysis</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1016/j.xgen.2024.100701" target="_blank" rel="noopener">Cell type and dynamic state govern genetic regulation of gene expression in heterogeneous differentiating cultures</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2024.05.02.592174" target="_blank" rel="noopener">Cell-type and dynamic state govern genetic regulation of gene expression in heterogeneous differentiating cultures</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include genes, highly, variable, default, embedding, extracting, fitting, generate.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1145/3641284" target="_blank" rel="noopener">Deep Learning in Single-cell Analysis</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://www.repository.cam.ac.uk/items/f6cbb732-6657-451c-9587-a6e25e1247a1" target="_blank" rel="noopener">Experimental Design of Single Cell Sequencing Experiments</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2024.02.26.582178" target="_blank" rel="noopener">Identification of robust cellular programs using reproducible LDA that impact sex-specific disease progression in different genotypes of a mouse model of AD</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2024.06.28.601221" target="_blank" rel="noopener">Linker histone H1-0 is a specific mediator of the repressive ETV6::RUNX1 transcriptional landscape</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1038/s41467-024-47884-3" target="_blank" rel="noopener">scLENS: data-driven signal detection for unbiased scRNA-seq data analysis</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include although, booeshaghi, compounding, counteract, depth, effect, ineffective, inmitigating.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2024.06.12.598567" target="_blank" rel="noopener">The ENCODE mouse postnatal developmental time course identifies regulatory programs of cell types and cell states</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2024.04.04.588111" target="_blank" rel="noopener">The impact of package selection and versioning on single-cell RNA-seq analysis</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2024.08.23.608747" target="_blank" rel="noopener">The Regulatory Logic of Planarian Stem Cell Differentiation</a></td>
+              <td class="citation-year"><time datetime="2024">2024</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1214/22-sts880" target="_blank" rel="noopener">Aitchison’s Compositional Data Analysis 40 Years on: A Reappraisal</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1038/s41576-023-00586-w" target="_blank" rel="noopener">Best practices for single-cell analysis across modalities</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.21203/rs.3.rs-3211191/v1" target="_blank" rel="noopener">ClusterDE: a post-clustering differential expression (DE) method robust to false-positive inflation caused by double dipping</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1038/s41592-023-01814-1" target="_blank" rel="noopener">Comparison of transformations for single-cell RNA-seq data</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://scholar.google.com/scholar?q=Distinguishing%20biophysical%20stochasticity%20from%20technical%20noise%20in%20single-cell%20RNA%20sequencing%20using%20Monod" target="_blank" rel="noopener">Distinguishing biophysical stochasticity from technical noise in single-cell RNA sequencing using Monod</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://theses.hal.science/tel-04234539/" target="_blank" rel="noopener">Le séquençage de transcrits sur cellule unique appliqué à l&#39;étude des mécanismes de formation et de résolution de la fibrose pulmonaire</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://www.diva-portal.org/smash/record.jsf?pid=diva2:1752949" target="_blank" rel="noopener">Mapping Transcriptomes in Tissues</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.48550/arxiv.2310.02275" target="_blank" rel="noopener">MuSe-GNN: Learning Unified Gene Representation From Multimodal Biological Graph Data</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include co-expression, confounding, counts, creating, cs-core, depth, employ, expression.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2023.12.21.572783" target="_blank" rel="noopener">Normalization and gene selection for single-cell RNA-seq UMI data using sampling-adjusted sums of squares of Pearson residuals with a Poisson model</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include transformations, ahlmann-eltze, alternative, booeshaghi, combining, consider, downstream, emphasize.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1007/s12064-023-00408-x" target="_blank" rel="noopener">Normalizing need not be the norm: count-based math for analyzing single-cell data</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include cells, cluster, physical, alternative, approach, booeshaghi, central, correspond.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1007/s41884-023-00104-1" target="_blank" rel="noopener">Power transformations of relative count data as a shrinkage problem</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2023.12.26.573253" target="_blank" rel="noopener">Scalable ultra-high-throughput single-cell chromatin and RNA sequencing reveals gene regulatory dynamics linking macrophage polarization to autoimmune disease</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include depth, fitting, proportional, another, expression, followed, logarithmic, matrix.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2023.03.28.534443" target="_blank" rel="noopener">Single-cell RNA-seq differential expression tests within a sample should use pseudo-bulk data of pseudo-replicates</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://search.proquest.com/openview/9b01393b59220a61ee018759229543ba/1?pq-origsite=gscholar&amp;cbl=18750&amp;diss=y" target="_blank" rel="noopener">Stochastic foundations for single-cell RNA sequencing</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1016/j.cels.2023.08.004" target="_blank" rel="noopener">Studying stochastic systems biology of the cell with single-cell genomics data</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include assumptions, attempt, biases, considerable, correlations, counts, datasets, depth.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2023.05.17.541250" target="_blank" rel="noopener">Studying stochastic systems biology of the cell with single-cell genomics data</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include assumptions, attempt, biases, considerable, correlations, counts, datasets, depth.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2023.07.21.550107" target="_blank" rel="noopener">Synthetic control removes spurious discoveries from double dipping in single-cell and spatial transcriptomics data analyses</a></td>
+              <td class="citation-year"><time datetime="2023">2023</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1093/bioinformatics/btad295" target="_blank" rel="noopener">BUSZ: compressed BUS files</a></td>
+              <td class="citation-year"><time datetime="2022">2022</time></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include algorithm, booeshaghi, collected, compress, compression, decompress, evaluate, files.</td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2022.12.19.521034" target="_blank" rel="noopener">BUSZ: Compressed BUS files</a></td>
+              <td class="citation-year"><time datetime="2022">2022</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2022.05.18.492548" target="_blank" rel="noopener">Metadata retrieval from sequence databases with ffq</a></td>
+              <td class="citation-year"><time datetime="2022">2022</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1093/bioinformatics/btac667" target="_blank" rel="noopener">Metadata retrieval from sequence databases with ffq</a></td>
+              <td class="citation-year"><time datetime="2022">2022</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2022.06.11.495771" target="_blank" rel="noopener">Monod : model-based discovery and integration through fitting stochastic transcriptional dynamics to single-cell sequencing data</a></td>
+              <td class="citation-year"><time datetime="2022">2022</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2022.06.01.494334" target="_blank" rel="noopener">Normalizing need not be the norm: count-based math for analyzing single-cell data</a></td>
+              <td class="citation-year"><time datetime="2022">2022</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://search.proquest.com/openview/4e872305538c4b237fc33196b6f7d94b/1?pq-origsite=gscholar&amp;cbl=18750&amp;diss=y" target="_blank" rel="noopener">SIMS: Scalable, Interpretable Machine Learning for Single-Cell Annotation</a></td>
+              <td class="citation-year"><time datetime="2022">2022</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2021.06.24.449781" target="_blank" rel="noopener">Comparison of Transformations for Single-Cell RNA-Seq Data</a></td>
+              <td class="citation-year"><time datetime="2021">2021</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2021.11.15.468733" target="_blank" rel="noopener">Erasure of Biologically Meaningful Signal by Unsupervised scRNAseq Batch-correction Methods</a></td>
+              <td class="citation-year"><time datetime="2021">2021</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1101/2021.05.20.445002" target="_blank" rel="noopener">Systematic, Protein Activity-based Characterization of Single Cell State</a></td>
+              <td class="citation-year"><time datetime="2021">2021</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://doi.org/10.1214/22-sts879" target="_blank" rel="noopener">The Role of Exchangeability in Causal Inference</a></td>
+              <td class="citation-year"><time datetime="2020">2020</time></td>
+              <td class="citation-summary"></td>
+            </tr>
+            <tr>
+              <td class="citation-title"><a href="https://www.semanticscholar.org/paper/540ebbec703884433d894a4f3504ba66fb20c8e3" target="_blank" rel="noopener">Monod : mechanistic analysis of single-cell RNA sequencing count data</a></td>
+              <td class="citation-year"></td>
+              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include described, log1ppf, procedure, section.</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </article>
+  </body>
+</html>
