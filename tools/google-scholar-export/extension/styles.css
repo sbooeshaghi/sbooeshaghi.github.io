@@ -1,0 +1,57 @@
+#sbe-scholar-export {
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  z-index: 2147483647;
+  width: 260px;
+  padding: 12px;
+  border: 1px solid #c9d2e3;
+  border-radius: 8px;
+  background: #fff;
+  color: #202124;
+  box-shadow: 0 8px 24px rgba(32, 33, 36, 0.18);
+  font: 13px/1.4 Arial, sans-serif;
+}
+
+#sbe-scholar-export * {
+  box-sizing: border-box;
+}
+
+#sbe-scholar-export .sbe-title {
+  margin: 0 0 8px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+#sbe-scholar-export .sbe-actions {
+  display: grid;
+  gap: 6px;
+}
+
+#sbe-scholar-export button {
+  width: 100%;
+  min-height: 32px;
+  border: 1px solid #9aa0a6;
+  border-radius: 6px;
+  background: #f8fafd;
+  color: #202124;
+  cursor: pointer;
+  font: inherit;
+}
+
+#sbe-scholar-export button:hover {
+  background: #eef3fb;
+}
+
+#sbe-scholar-export button:disabled {
+  cursor: default;
+  opacity: 0.55;
+}
+
+#sbe-scholar-export .sbe-status {
+  margin-top: 8px;
+  min-height: 18px;
+  color: #5f6368;
+  overflow-wrap: anywhere;
+}
+

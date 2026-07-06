@@ -556,6 +556,3839 @@
           "summary": ""
         }
       ]
+    },
+    "modular-efficient-and-constant-memory-single-cell-rna-seq-preprocessing": {
+      "cited_by": [
+        {
+          "title": "[HTML] A copula-infused graph neural network for cell type classification in single-cell RNA sequencing data",
+          "link": "https://www.sciencedirect.com/science/article/pii/S2001037026000115",
+          "year": 2026,
+          "summary": ""
+        },
+        {
+          "title": "[HTML] A uniquely leptin sensitive hypothalamic neuron population limits hyperphagia and weight gain in diet-induced obesity",
+          "link": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13041805/",
+          "year": 2026,
+          "summary": ""
+        },
+        {
+          "title": "[HTML] Charting the computational landscape of single-cell genetic perturbation",
+          "link": "https://www.sciencedirect.com/science/article/pii/S2090123226004947",
+          "year": 2026,
+          "summary": ""
+        },
+        {
+          "title": "[HTML] Detection of viral sequences at single-cell resolution identifies novel viruses associated with host gene expression changes",
+          "link": "https://idp.nature.com/authorize/casa?redirect_uri=https://www.nature.com/articles/s41587-025-02614-y&casa_token=JaA6ZAV7rscAAAAA:DZ0i5IBJF-UrgtDrUNlcyGEas0F8hxABi5U3MajeYQHPwIIMWdFrqPgDLHazXet2PaTz1a6B2HcDKsc7",
+          "year": 2026,
+          "summary": ""
+        },
+        {
+          "title": "[HTML] Research briefing",
+          "link": "https://idp.nature.com/authorize/casa?redirect_uri=https://www.nature.com/articles/s41587-025-02638-4&casa_token=5vy-Cy5xZSAAAAAA:osXZ6TGDzTFpH7taHiDyUjXi0ocy7vX-Zu6ilVwWypa7CJoaEXxLW1jb4fMdVypnIbwnW8kWN7mSbJlO",
+          "year": 2026,
+          "summary": ""
+        },
+        {
+          "title": "[HTML] Targeted single-cell RNA and perturbation sequencing with TAP-seq",
+          "link": "https://idp.nature.com/authorize/casa?redirect_uri=https://www.nature.com/articles/s41596-026-01367-5&casa_token=ZYffOhT_6w8AAAAA:bU49ukjtpMXhjYby_jB222HNxt-q7uMog1oKa18YZzG_ugxWkxEKGQWAG0DENWQcF9pciXZs4_y-zuGT",
+          "year": 2026,
+          "summary": ""
+        },
+        {
+          "title": "[HTML] Uniform pre-processing of bacterial single-cell RNA-seq",
+          "link": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12871247/",
+          "year": 2026,
+          "summary": ""
+        },
+        {
+          "title": "A rare pre-existing progenitor-like Primed SMC compartment is the dominant inferred source of SMC-derived cellularity in vascular injury and atherosclerosis",
+          "link": "https://www.biorxiv.org/content/10.64898/2026.06.28.735042.abstract",
+          "year": 2026,
+          "summary": ""
+        },
+        {
+          "title": "Alternative splicing dynamics during human cardiac development in vivo and in vitro",
+          "link": "https://www.cell.com/stem-cell-reports/fulltext/S2213-6711(25)00361-3",
+          "year": 2026,
+          "summary": ""
+        },
+        {
+          "title": "ApoE-Dependent Lipid Handling by Median Eminence Microglia Preserves Myelin Integrity and Metabolic Function",
+          "link": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12934649/",
+          "year": 2026,
+          "summary": ""
+        },
+        {
+          "title": "Cell-type-resolved transcriptional reprogramming in resistant soybean roots reveals cambial activation and early syncytium initiation upon nematode infection",
+          "link": "https://www.biorxiv.org/content/10.64898/2026.04.08.717279.abstract",
+          "year": 2026,
+          "summary": ""
+        },
+        {
+          "title": "Cell-type-specific transposable element transcription tracks symbiosis and calcification programs in the reef-building coral Acropora hemprichii",
+          "link": "https://www.biorxiv.org/content/10.64898/2026.05.21.726757.abstract",
+          "year": 2026,
+          "summary": ""
+        },
+        {
+          "title": "Conservation of Neuron‐Astrocyte Correlated Activity in Developing Sensory Pathways",
+          "link": "https://onlinelibrary.wiley.com/doi/abs/10.1002/glia.70141",
+          "year": 2026,
+          "summary": ""
+        },
+        {
+          "title": "Decoding vascular cell diversity: single-cell approaches to mechanisms of vascular disease",
+          "link": "https://www.ahajournals.org/doi/abs/10.1161/CIRCRESAHA.125.326001",
+          "year": 2026,
+          "summary": ""
+        },
+        {
+          "title": "Differential analysis of genomics count data with edge",
+          "link": "https://www.biorxiv.org/content/10.64898/2026.02.16.706223.abstract",
+          "year": 2026,
+          "summary": ""
+        },
+        {
+          "title": "Discovering molecular subgroups and cellular heterogeneity associated with pulmonary disease",
+          "link": "https://search.proquest.com/openview/e41bf07d2f67968e3d613ec1590ba1dc/1?pq-origsite=gscholar&cbl=18750&diss=y",
+          "year": 2026,
+          "summary": ""
+        },
+        {
+          "title": "Discrete and cell‐specific hypoxic responses in Arabidopsis roots resolved by single‐nuclei transcriptomics",
+          "link": "https://nph.onlinelibrary.wiley.com/doi/abs/10.1111/nph.70874",
+          "year": 2026,
+          "summary": ""
+        },
+        {
+          "title": "Dissecting PGE2-driven inhibition of T cell activation using single-cell multi-omic and inflammatory bowel disease genetic association analysis",
+          "link": "https://www.nature.com/articles/s41467-026-71383-2",
+          "year": 2026,
+          "summary": ""
+        },
+        {
+          "title": "DNMT3A R882H Is Not Required for Disease Maintenance in Primary Human AML but Is Associated with Increased Leukemia Stem Cell Frequency",
+          "link": "https://aacrjournals.org/cancerdiscovery/article-abstract/doi/10.1158/2159-8290.CD-24-1604/772192",
+          "year": 2026,
+          "summary": ""
+        },
+        {
+          "title": "ESGI: Efficient splitting of generic indices in single-cell sequencing data",
+          "link": "https://www.biorxiv.org/content/10.64898/2026.03.04.709594.abstract",
+          "year": 2026,
+          "summary": ""
+        },
+        {
+          "title": "Fezf2 regulates differentiation of Aire-expressing and post-Aire mimetic epithelial populations maintaining thymic homeostasis",
+          "link": "https://www.biorxiv.org/content/10.64898/2025.12.31.697099.abstract",
+          "year": 2026,
+          "summary": ""
+        },
+        {
+          "title": "Harvesting more reads from single-cell combinatorial barcoding data with scarecrow",
+          "link": "https://academic.oup.com/bioinformatics/article-abstract/42/4/btag182/8651107",
+          "year": 2026,
+          "summary": ""
+        },
+        {
+          "title": "Hybrid crosses reveal a cell-type-specific landscape of mouse regulatory variation",
+          "link": "https://europepmc.org/article/pmc/pmc13060228",
+          "year": 2026,
+          "summary": ""
+        },
+        {
+          "title": "In vivo reprogramming of cytotoxic effector CD8 T cells via fractalkine-conjugated mRNA-LNPs",
+          "link": "https://www.science.org/doi/abs/10.1126/sciimmunol.aec3436?casa_token=rp8NnX8WAfsAAAAA:Rl9WHHn2rOvMUxae-ZDPzzqAbZO-AeTS37Pul99gRcgl4AJteRTfJM7Ae1LUGI_XBa6_CEztuJZGdQ",
+          "year": 2026,
+          "summary": ""
+        },
+        {
+          "title": "In vivo reprogramming of cytotoxic effector CD8 T cells via fractalkine-conjugated mRNA-LNPs",
+          "link": "https://www.ovid.com/journals/scimn/abstract/10.1126/sciimmunol.aec3436~in-vivo-reprogramming-of-cytotoxic-effector-cd8-t-cells-via",
+          "year": 2026,
+          "summary": ""
+        },
+        {
+          "title": "LBR nucleoplasmic domains regulate X-chromosome solubility and nuclear organization",
+          "link": "https://www.biorxiv.org/content/10.64898/2026.03.30.714681.abstract",
+          "year": 2026,
+          "summary": ""
+        },
+        {
+          "title": "Long-read transcriptomic profiling across human tissues and scales: from bulk to single-cell resolution",
+          "link": "https://ueaeprints.uea.ac.uk/id/eprint/101927/",
+          "year": 2026,
+          "summary": ""
+        },
+        {
+          "title": "Methods, culture medias and devices for generating embryos in vitro from stem cells",
+          "link": "https://patents.google.com/patent/US12618830B2/en",
+          "year": 2026,
+          "summary": ""
+        },
+        {
+          "title": "Molecular signatures of resilience to Alzheimer's disease in neocortical layer 4 neurons",
+          "link": "https://www.nature.com/articles/s41467-026-68920-4",
+          "year": 2026,
+          "summary": ""
+        },
+        {
+          "title": "Nonsense-mediated mRNA decay orchestrates neuronal migration and cortical lamination while modulating Reelin and ciliary gene regulatory networks",
+          "link": "https://www.cell.com/cell-reports/fulltext/S2211-1247(26)00105-1",
+          "year": 2026,
+          "summary": ""
+        },
+        {
+          "title": "Nuclear Speckles Regulate Splicing During Muscle Stem Cell Activation and Aging",
+          "link": "https://www.biorxiv.org/content/10.64898/2026.05.04.722644.abstract",
+          "year": 2026,
+          "summary": ""
+        },
+        {
+          "title": "Osteoprotegerin-Enabled Immune Evasion of Pathological Adipose Stromal Cells Drives Metabolic Dysfunction in Obesity",
+          "link": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12871294/",
+          "year": 2026,
+          "summary": ""
+        },
+        {
+          "title": "Quantitative and Mechanistic Characterization of Artemisinin Resistance in Plasmodium falciparum",
+          "link": "https://search.proquest.com/openview/5c31a08da2a37025cf6d0ffa6ee573c3/1?pq-origsite=gscholar&cbl=18750&diss=y",
+          "year": 2026,
+          "summary": ""
+        },
+        {
+          "title": "Robust identification of cell-cell communication heterogeneity in single cells",
+          "link": "https://www.biorxiv.org/content/10.64898/2026.04.29.721691.abstract",
+          "year": 2026,
+          "summary": ""
+        },
+        {
+          "title": "scReady-an automated and accessible pipeline for single-cell RNA-Seq preprocessing: Empowering novice bioinformaticians",
+          "link": "https://wellcomeopenresearch.org/articles/11-43",
+          "year": 2026,
+          "summary": ""
+        },
+        {
+          "title": "Single-cell analyses identify independent aging processes that compete to determine cellular fate in budding yeast",
+          "link": "https://www.pnas.org/doi/abs/10.1073/pnas.2534452123",
+          "year": 2026,
+          "summary": ""
+        },
+        {
+          "title": "Single-cell atlas of transcript usage remodelling in antiviral immune responses across human populations",
+          "link": "https://www.biorxiv.org/content/10.64898/2026.04.30.721889.abstract",
+          "year": 2026,
+          "summary": ""
+        },
+        {
+          "title": "Single-cell epigenetic and transcriptomic states across the continuum of monoclonal B cell lymphocytosis to chronic lymphocytic leukemia",
+          "link": "https://link.springer.com/article/10.1186/s13059-026-04072-4",
+          "year": 2026,
+          "summary": ""
+        },
+        {
+          "title": "Single-cell RNA-seq reveals trans-sialidase-like superfamily gene expression heterogeneity in Trypanosoma cruzi populations",
+          "link": "https://elifesciences.org/articles/105822",
+          "year": 2026,
+          "summary": ""
+        },
+        {
+          "title": "Single-cell RNA-sequencing of dermal fibroblasts demonstrates culture-induced changes and variable persistence of keloid disease features",
+          "link": "https://www.cell.com/iscience/fulltext/S2589-0042(26)01005-9",
+          "year": 2026,
+          "summary": ""
+        },
+        {
+          "title": "SPTEdU-seq enables parallel optics-free newborn cell tracking and spatial total transcriptional dynamics in intact microenvironments",
+          "link": "https://www.cell.com/cell-stem-cell/fulltext/S1934-5909(26)00111-6",
+          "year": 2026,
+          "summary": ""
+        },
+        {
+          "title": "SypC, a symbiont outer membrane vesicle protein, impacts the development of the squid–vibrio partnership",
+          "link": "https://www.pnas.org/doi/abs/10.1073/pnas.2524648123",
+          "year": 2026,
+          "summary": ""
+        },
+        {
+          "title": "Systematic cell-type resolved transcriptomes of 8 tissues in 8 lab and wild-derived mouse strains capture global and local expression variation",
+          "link": "https://www.cell.com/cell-genomics/fulltext/S2666-979X(25)00364-7",
+          "year": 2026,
+          "summary": ""
+        },
+        {
+          "title": "The impact of package selection and versioning on single-cell RNA-seq analysis",
+          "link": "https://www.cell.com/cell-systems/abstract/S2405-4712(26)00042-6",
+          "year": 2026,
+          "summary": ""
+        },
+        {
+          "title": "UBA1-CDK16: A female-specific chimeric RNA emerging through evolution and involved in immune regulation",
+          "link": "https://www.science.org/doi/abs/10.1126/sciadv.adz9784",
+          "year": 2026,
+          "summary": ""
+        },
+        {
+          "title": "Upregulation of Genetic Markers of Poor Prognosis following Chemotherapy in Acute Myeloid Leukemia Cells",
+          "link": "https://www.biorxiv.org/content/10.64898/2026.02.12.705420.abstract",
+          "year": 2026,
+          "summary": ""
+        },
+        {
+          "title": "Verifying LLM-extracted text with token alignment",
+          "link": "https://www.biorxiv.org/content/10.64898/2026.02.06.704502.abstract",
+          "year": 2026,
+          "summary": ""
+        },
+        {
+          "title": "[B] A biophysical approach to normalization and trajectory inference in single-cell RNA sequencing data analysis",
+          "link": "https://search.proquest.com/openview/c883f8dc3d4411975c95c8d9e80e98cc/1?pq-origsite=gscholar&cbl=18750&diss=y",
+          "year": 2025,
+          "summary": ""
+        },
+        {
+          "title": "[B] Dissecting mechanisms of immune self-tolerance via bioinformatic analysis of cellular and molecular states",
+          "link": "https://search.proquest.com/openview/52d21567efbb655fa5e02ceab874593a/1?pq-origsite=gscholar&cbl=18750&diss=y",
+          "year": 2025,
+          "summary": ""
+        },
+        {
+          "title": "[B] Understanding Cell Type Conservation and Innovation Using Flatworm Models",
+          "link": "https://search.proquest.com/openview/d1cdc8f6cce82d1fc460f63ac03f4c39/1?pq-origsite=gscholar&cbl=18750&diss=y",
+          "year": 2025,
+          "summary": ""
+        },
+        {
+          "title": "[HTML] A fibroblast-centric network drives cold fibrosis in the tumor microenvironment of lung squamous cell carcinoma",
+          "link": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12407771/",
+          "year": 2025,
+          "summary": ""
+        },
+        {
+          "title": "[HTML] A massively parallel CRISPR-Based screening platform for modifiers of neuronal activity",
+          "link": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11844385/",
+          "year": 2025,
+          "summary": ""
+        },
+        {
+          "title": "[HTML] A role for fibroblast and mural cell subsets in a nerve ligation model of neuropathic pain?",
+          "link": "https://www.sciencedirect.com/science/article/pii/S0889159125001898",
+          "year": 2025,
+          "summary": ""
+        },
+        {
+          "title": "[HTML] A systematic review of single-cell RNA sequencing applications and innovations",
+          "link": "https://www.sciencedirect.com/science/article/pii/S1476927125000222?casa_token=5nGdgVKunV0AAAAA:v0IoDWWO5NL_LjP01G59lHwZimQl9OWIif5atkBq_TScLxxAHU5V8XVXGUW8a5hizFFDH9kV0Q",
+          "year": 2025,
+          "summary": ""
+        },
+        {
+          "title": "[HTML] Characterization of subcutaneous and visceral de-differentiated fat cells",
+          "link": "https://www.sciencedirect.com/science/article/pii/S2212877825000122",
+          "year": 2025,
+          "summary": ""
+        },
+        {
+          "title": "[HTML] Cross-species analyses of thymic mimetic cells reveal evolutionarily ancient origins and both conserved and species-specific elements",
+          "link": "https://www.cell.com/immunity/fulltext/S1074-7613(24)00540-5?uuid=uuid%3A1b925d18-7aaf-4d46-b465-84c2f02cdffc",
+          "year": 2025,
+          "summary": ""
+        },
+        {
+          "title": "[HTML] Development and characterization of a scalable calcium imaging assay using human iPSC-derived neurons",
+          "link": "https://www.frontiersin.org/journals/cellular-neuroscience/articles/10.3389/fncel.2025.1701907/full",
+          "year": 2025,
+          "summary": ""
+        },
+        {
+          "title": "[HTML] Diagnosing recipient-vs. donor-derived posttransplant myelodysplastic neoplasm via targeted single-cell mutational profiling",
+          "link": "https://www.cell.com/med/fulltext/S2666-6340(24)00442-2?uuid=uuid%3Aee6d9c10-101e-4bfc-a74b-88dedb1813e4",
+          "year": 2025,
+          "summary": ""
+        },
+        {
+          "title": "[HTML] Efficient profiling of total RNA in single cells with STORM-seq",
+          "link": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12139823/",
+          "year": 2025,
+          "summary": ""
+        },
+        {
+          "title": "[HTML] HIV infection in microglia leads to senescence, triggering activation of neurotoxicity pathways",
+          "link": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12247681/",
+          "year": 2025,
+          "summary": ""
+        },
+        {
+          "title": "[HTML] Integrated single-cell analysis reveals spatially and temporally dynamic heterogeneity in fibroblast states during wound healing",
+          "link": "https://www.sciencedirect.com/science/article/pii/S0022202X24018840",
+          "year": 2025,
+          "summary": ""
+        },
+        {
+          "title": "[HTML] kallisto, bustools and kb-python for quantifying bulk, single-cell and single-nucleus RNA-seq",
+          "link": "https://idp.nature.com/authorize/casa?redirect_uri=https://www.nature.com/articles/s41596-024-01057-0&casa_token=vOohdDO7rAwAAAAA:MaqQvHBSSH2PGPNT2O1v0R6Z3V5VB9s10jerCMDP9gADorfa_a8j2DTu2fi7M2kIWZPWXzCz59QLk5Ca",
+          "year": 2025,
+          "summary": ""
+        },
+        {
+          "title": "[HTML] Marsupial single-cell transcriptomics identifies temporal diversity in mammalian developmental programs",
+          "link": "https://www.cell.com/developmental-cell/fulltext/S1534-5807(25)00433-2",
+          "year": 2025,
+          "summary": ""
+        },
+        {
+          "title": "[HTML] MicroRNA control of stem cell reconstitution and growth in root regeneration",
+          "link": "https://idp.nature.com/authorize/casa?redirect_uri=https://www.nature.com/articles/s41477-025-01922-0&casa_token=TY6KRUzKU1sAAAAA:dpqhgZgbW8TD7lTSWj5qFcnHhHeapWJF87QI7e4X0ZUUKcG8YMzX0P4VvuPkd35btNSGzZ_eHKEqPBzZ",
+          "year": 2025,
+          "summary": ""
+        },
+        {
+          "title": "[HTML] Monod: model-based discovery and integration through fitting stochastic transcriptional dynamics to single-cell sequencing data",
+          "link": "https://idp.nature.com/authorize/casa?redirect_uri=https://www.nature.com/articles/s41592-025-02832-x&casa_token=BNOO_RLUMSAAAAAA:YqcKiaOrOHUimFnx_texRgOCQ3e66DrzbbIZiBb4gUvH1lAed-g7uco3i-jkP9qrzQlyb1SRFzoxLoYR",
+          "year": 2025,
+          "summary": ""
+        },
+        {
+          "title": "[HTML] Pre-processing of Single-Cell RNA Data",
+          "link": "https://galaxyproject.github.io/training-material/topics/transcriptomics/tutorials/scrna-preprocessing/tutorial.html",
+          "year": 2025,
+          "summary": ""
+        },
+        {
+          "title": "[HTML] Probing Cellular Landscapes in Plants via Single-Cell Transcriptomics",
+          "link": "https://www.sciencedirect.com/science/article/pii/S0168945225005825?casa_token=eVOlKxDPIdEAAAAA:fPfVFIt_mEeAfJPAO60J3a1HRMkCd5bEd7USHBYD22KFhiTmUlI0S77pOajXgouAle0FhLZfkg",
+          "year": 2025,
+          "summary": ""
+        },
+        {
+          "title": "[HTML] Pseudoassembly of k-mers",
+          "link": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12132446/",
+          "year": 2025,
+          "summary": ""
+        },
+        {
+          "title": "[HTML] Single-cell omics: experimental workflow, data analyses and applications",
+          "link": "https://idp.springer.com/authorize/casa?redirect_uri=https://link.springer.com/article/10.1007/s11427-023-2561-0&casa_token=p_68jHIZvSwAAAAA:7iV-FOkSZ0Im7z2vAzoBHV_RMAfhDL4fOkPCMzCJ6ikwzjKnjlOH3x2qXwHyWo6ewrJ_r1tIzU7v-nGK",
+          "year": 2025,
+          "summary": ""
+        },
+        {
+          "title": "[HTML] Single-cell transcriptomic landscape of sorghum leaf reveals cell-specific mineral nutrient regulation",
+          "link": "https://idp.springer.com/authorize/casa?redirect_uri=https://link.springer.com/article/10.1007/s40502-025-00912-w&casa_token=y7YGVI8GEU8AAAAA:mmvawad6kZ9XFrPC4_5nTNu0YoxV5Z_evxIAc_3CGzcigfd-AwG7BldT2HoPrU_VAbvD1_AiziY-uk7l",
+          "year": 2025,
+          "summary": ""
+        },
+        {
+          "title": "[HTML] Single-cell transcriptomics reveal how root tissues adapt to soil stress",
+          "link": "https://www.nature.com/articles/s41586-025-08941-z",
+          "year": 2025,
+          "summary": ""
+        },
+        {
+          "title": "[HTML] Synthetic Oleanane Triterpenoids Reduce Tumor Growth and Promote an Anti-Tumor Immune Response Independent of Cancer KEAP1 Mutational Status",
+          "link": "https://www.mdpi.com/2076-3921/14/12/1406",
+          "year": 2025,
+          "summary": ""
+        },
+        {
+          "title": "[HTML] The Immunophenotype and Proviral Landscape of HIV-infected CD4 T Cells During Antiretroviral Therapy",
+          "link": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12157356/",
+          "year": 2025,
+          "summary": ""
+        },
+        {
+          "title": "[HTML] Transcriptional profiles of mouse oligodendrocyte precursor cells across the lifespan",
+          "link": "https://idp.nature.com/authorize/casa?redirect_uri=https://www.nature.com/articles/s43587-025-00840-2&casa_token=Ucu4-Gau6tgAAAAA:YzAm0YORNjPgfkcR0ACdKDkuT_iFOW4OoG_LF25jGII_VX8iG7iNu8SoFvRYFK-DV-2F39mEdYoYc5Kw",
+          "year": 2025,
+          "summary": ""
+        },
+        {
+          "title": "[HTML] Tumoroid model recreates clinically relevant phenotypes of high grade serous ovarian cancer (HGSC) cells, carcinoma associated fibroblasts, and …",
+          "link": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12204350/",
+          "year": 2025,
+          "summary": ""
+        },
+        {
+          "title": "[PDF] Computational analyses of HTseq data from developing B cells",
+          "link": "https://duepublico2.uni-due.de/servlets/MCRFileNodeServlet/duepublico_derivate_00084708/Diss_Ttoouli.pdf",
+          "year": 2025,
+          "summary": ""
+        },
+        {
+          "title": "[PDF] Statistical Methods for Complex Biological and Clinical Data",
+          "link": "https://tesidottorato.depositolegale.it/bitstream/20.500.14242/210983/1/mainPDFA_definitivo.pdf",
+          "year": 2025,
+          "summary": ""
+        },
+        {
+          "title": "A dual-metric framework for quantifying the biological fidelity of scRNA-seq pipelines",
+          "link": "https://www.biorxiv.org/content/10.1101/2025.11.12.688141.abstract",
+          "year": 2025,
+          "summary": ""
+        },
+        {
+          "title": "A realistic FastQ-based framework FastQDesign for ScRNA-seq study design issues",
+          "link": "https://www.nature.com/articles/s42003-025-07938-8",
+          "year": 2025,
+          "summary": ""
+        },
+        {
+          "title": "A role for the male germline in the expansion of the mammalian brain",
+          "link": "https://www.biorxiv.org/content/10.1101/2025.09.15.676184.abstract",
+          "year": 2025,
+          "summary": ""
+        },
+        {
+          "title": "A unified genetic perturbation language for human cellular programming",
+          "link": "https://www.biorxiv.org/content/10.1101/2025.11.20.689421.abstract",
+          "year": 2025,
+          "summary": ""
+        },
+        {
+          "title": "Accurate quantification of nascent and mature RNAs from single-cell and single-nucleus RNA-seq",
+          "link": "https://academic.oup.com/nar/article-abstract/53/1/gkae1137/7917963",
+          "year": 2025,
+          "summary": ""
+        },
+        {
+          "title": "Accurate quantification of spliced and unspliced transcripts for single-cell rna sequencing with tidesurf",
+          "link": "https://www.biorxiv.org/content/10.1101/2025.01.28.635274.abstract",
+          "year": 2025,
+          "summary": ""
+        },
+        {
+          "title": "Adrenergic signaling coordinates distant and local responses to amputation in axolotl",
+          "link": "https://www.cell.com/cell/fulltext/S0092-8674(25)01125-0",
+          "year": 2025,
+          "summary": ""
+        },
+        {
+          "title": "Allele-specific immune gene quantification and expression analysis in single-cell RNA-seq data",
+          "link": "https://academic.oup.com/nargab/article-abstract/7/4/lqaf149/8321208",
+          "year": 2025,
+          "summary": ""
+        },
+        {
+          "title": "Applications and techniques of single-cell RNA sequencing across diverse species",
+          "link": "https://academic.oup.com/bib/article-abstract/26/4/bbaf354/8210809",
+          "year": 2025,
+          "summary": ""
+        },
+        {
+          "title": "Autophagy disruption and mitochondrial stress precede photoreceptor necroptosis in multiple mouse models of inherited retinal disorders",
+          "link": "https://www.nature.com/articles/s41467-025-59165-8",
+          "year": 2025,
+          "summary": ""
+        },
+        {
+          "title": "Avian photoreceptor homologies and the origin of double cones",
+          "link": "https://www.cell.com/current-biology/fulltext/S0960-9822(25)00204-0",
+          "year": 2025,
+          "summary": ""
+        },
+        {
+          "title": "BayVel: A Bayesian Framework for RNA Velocity Estimation in Single-Cell Transcriptomics",
+          "link": "https://arxiv.org/abs/2505.03083",
+          "year": 2025,
+          "summary": ""
+        },
+        {
+          "title": "Best Practices in Single-Cell RNA-seq Data Analysis",
+          "link": "https://www.taylorfrancis.com/chapters/oa-edit/10.1201/9781003354062-7/best-practices-single-cell-rna-seq-data-analysis-mathias-galati-xinhui-wang-muhammad-shoaib-rajesh-rawal-irina-balaur-shaman-narayanasamy-venkata-satagopam",
+          "year": 2025,
+          "summary": ""
+        },
+        {
+          "title": "Bioinformatics perspectives on transcriptomics: A comprehensive review of bulk and single‐cell RNA sequencing analyses",
+          "link": "https://onlinelibrary.wiley.com/doi/abs/10.1002/qub2.78",
+          "year": 2025,
+          "summary": ""
+        },
+        {
+          "title": "Biophysical constraints on mRNA decay rates shape macroevolutionary divergence in steady-state abundances",
+          "link": "https://www.biorxiv.org/content/10.1101/2025.11.24.690267.abstract",
+          "year": 2025,
+          "summary": ""
+        },
+        {
+          "title": "Biophysical dynamical priors in machine learning",
+          "link": "https://www.repository.cam.ac.uk/items/0284c457-ef57-4a80-8d92-4bc54f74ae4a",
+          "year": 2025,
+          "summary": ""
+        },
+        {
+          "title": "Blocking Osteoprotegerin Reprograms Cancer Associated Fibroblast to Promotes Immune Infiltration into the Tumor Microenvironment",
+          "link": "https://www.biorxiv.org/content/10.1101/2025.07.04.663190.abstract",
+          "year": 2025,
+          "summary": ""
+        },
+        {
+          "title": "Cardiac differentiation roadmap for analysis of plasticity and balanced lineage commitment",
+          "link": "https://www.cell.com/stem-cell-reports/fulltext/S2213-6711(25)00026-8",
+          "year": 2025,
+          "summary": ""
+        },
+        {
+          "title": "Cell Cycle Arrest of a 'Zippering'Epithelial Cell Cluster Shapes the Face and is Disrupted in Craniofacial Disorders",
+          "link": "https://www.biorxiv.org/content/10.1101/2025.07.28.667310.abstract",
+          "year": 2025,
+          "summary": ""
+        },
+        {
+          "title": "Characterization of alternative polyadenylation sites at single cell resolution and its impact on Alzheimer Disease",
+          "link": "https://www.tdx.cat/handle/10803/697585",
+          "year": 2025,
+          "summary": ""
+        },
+        {
+          "title": "Charting the neural organoid landscape and the impact of glucocorticoids on human brain development through single-cell genomics",
+          "link": "https://mediatum.ub.tum.de/1738262",
+          "year": 2025,
+          "summary": ""
+        },
+        {
+          "title": "Concerted changes in Epithelium and Stroma: a multi-scale, multi-omics analysis of progression from Barrett's Esophagus to adenocarcinoma",
+          "link": "https://www.cell.com/developmental-cell/abstract/S1534-5807(25)00412-5",
+          "year": 2025,
+          "summary": ""
+        },
+        {
+          "title": "CountASAP: a lightweight, easy to use python package for processing ASAPseq data",
+          "link": "https://link.springer.com/article/10.1186/s12859-025-06311-0",
+          "year": 2025,
+          "summary": ""
+        },
+        {
+          "title": "Decoding human cardiovascular development and disease through single-cell transcriptomic and epigenomic profiling",
+          "link": "https://www.cell.com/trends/cell-biology/abstract/S0962-8924(25)00111-4",
+          "year": 2025,
+          "summary": ""
+        },
+        {
+          "title": "Discordant effects of maternal age on the human MII oocyte transcriptome",
+          "link": "https://academic.oup.com/molehr/article-abstract/31/3/gaaf038/8217407",
+          "year": 2025,
+          "summary": ""
+        },
+        {
+          "title": "Disease-linked regulatory DNA variants and homeostatic transcription factors in epidermis",
+          "link": "https://www.nature.com/articles/s41467-025-63070-5",
+          "year": 2025,
+          "summary": ""
+        },
+        {
+          "title": "Dysregulation of transcription networks regulating oligodendrogenesis in age-related decline in CNS remyelination",
+          "link": "https://www.biorxiv.org/content/10.1101/2025.11.14.688494.abstract",
+          "year": 2025,
+          "summary": ""
+        },
+        {
+          "title": "Efficient and accurate detection of viral sequences at single-cell resolution reveals putative novel viruses perturbing host gene expression",
+          "link": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10760059/",
+          "year": 2025,
+          "summary": ""
+        },
+        {
+          "title": "Endocytic patch dynamics are differentially regulated at distinct cell sites in fission yeast",
+          "link": "https://journals.biologists.com/jcs/article/138/18/jcs263873/369310?casa_token=rP0QF567GyMAAAAA:nQjZfc48TGiOttc7U5TAIebICe1Teb-fVpEUc75bFGHFfS_nMIlVSmQYM-lrw0EKKYLoSLU",
+          "year": 2025,
+          "summary": ""
+        },
+        {
+          "title": "Error Correction Algorithms for Efficient Gene Expression Quantification in Single Cell Transcriptomics",
+          "link": "https://www.biorxiv.org/content/10.1101/2025.11.27.690682.abstract",
+          "year": 2025,
+          "summary": ""
+        },
+        {
+          "title": "Histone chaperones coupled to DNA replication and transcription control divergent chromatin elements to maintain cell fate",
+          "link": "https://genesdev.cshlp.org/content/39/9-10/652.short",
+          "year": 2025,
+          "summary": ""
+        },
+        {
+          "title": "Identification and targeting of regulators of SARS-CoV-2–host interactions in the airway epithelium",
+          "link": "https://www.science.org/doi/abs/10.1126/sciadv.adu2079",
+          "year": 2025,
+          "summary": ""
+        },
+        {
+          "title": "IL-11/IL-11R signal inhibition by 9MW3811 remodels immune tumor microenvironment and enhances anti-tumor efficacy of PD-1 blockade",
+          "link": "https://www.nature.com/articles/s41698-025-00913-w",
+          "year": 2025,
+          "summary": ""
+        },
+        {
+          "title": "Immune perturbations in human pancreas lymphatic tissues prior to and after type 1 diabetes onset",
+          "link": "https://www.nature.com/articles/s41467-025-59626-0",
+          "year": 2025,
+          "summary": ""
+        },
+        {
+          "title": "Inferring Phenotypes of Copy Number Clones in Cancer Populations Using TreeAlign",
+          "link": "https://link.springer.com/protocol/10.1007/978-1-0716-4566-6_7",
+          "year": 2025,
+          "summary": ""
+        },
+        {
+          "title": "Investigating biological nitrogen fixation via single-cell transcriptomics",
+          "link": "https://academic.oup.com/jxb/article-abstract/76/4/931/7905114",
+          "year": 2025,
+          "summary": ""
+        },
+        {
+          "title": "Long-read sequencing transcriptome quantification with lr-kallisto",
+          "link": "https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1013692",
+          "year": 2025,
+          "summary": ""
+        },
+        {
+          "title": "Lower expression of BIN1's neuronal isoform in vulnerable excitatory neurons increases risk in Alzheimer's disease",
+          "link": "https://journals.sagepub.com/doi/abs/10.1177/25424823241296018",
+          "year": 2025,
+          "summary": ""
+        },
+        {
+          "title": "Mapping cis- and trans-regulatory target genes of human-specific deletions",
+          "link": "https://www.nature.com/articles/s41467-025-67424-x",
+          "year": 2025,
+          "summary": ""
+        },
+        {
+          "title": "Metabolic reprogramming of the neovascular niche promotes regenerative angiogenesis in proliferative retinopathy",
+          "link": "https://www.nature.com/articles/s41467-025-60061-4",
+          "year": 2025,
+          "summary": ""
+        },
+        {
+          "title": "Molecular Mechanisms Defining and Driving Receptivity in Conversion of Fibroblasts to Motor Neurons",
+          "link": "https://dspace.mit.edu/handle/1721.1/165182",
+          "year": 2025,
+          "summary": ""
+        },
+        {
+          "title": "Multi-Omic Characterization of Neuroimmune Cell Taxonomy and Communication Across Multiple Neurodegenerative and Neuropsychiatric Disorders",
+          "link": "https://search.proquest.com/openview/1443f122ee2c0f4d92b337cb497ebf65/1?pq-origsite=gscholar&cbl=18750&diss=y",
+          "year": 2025,
+          "summary": ""
+        },
+        {
+          "title": "Multimodal hierarchical classification of CITE-seq data delineates immune cell states across lineages and tissues",
+          "link": "https://www.cell.com/cell-reports-methods/fulltext/S2667-2375(24)00328-X",
+          "year": 2025,
+          "summary": ""
+        },
+        {
+          "title": "Neural ensembles that encode nocifensive mechanical and heat pain in mouse spinal cord",
+          "link": "https://www.nature.com/articles/s41593-025-01921-6",
+          "year": 2025,
+          "summary": ""
+        },
+        {
+          "title": "nf-core/marsseq: systematic preprocessing pipeline for MARS-seq experiments",
+          "link": "https://academic.oup.com/bioinformaticsadvances/article-abstract/5/1/vbaf089/8142418",
+          "year": 2025,
+          "summary": ""
+        },
+        {
+          "title": "Paradigms, innovations, and biological applications of RNA velocity: a comprehensive review",
+          "link": "https://academic.oup.com/bib/article-abstract/26/4/bbaf339/8203344",
+          "year": 2025,
+          "summary": ""
+        },
+        {
+          "title": "Predicting the structural impact of human alternative splicing",
+          "link": "https://link.springer.com/article/10.1186/s13059-025-03744-x",
+          "year": 2025,
+          "summary": ""
+        },
+        {
+          "title": "Primer on machine learning applications in brain immunology",
+          "link": "https://www.frontiersin.org/journals/bioinformatics/articles/10.3389/fbinf.2025.1554010/full",
+          "year": 2025,
+          "summary": ""
+        },
+        {
+          "title": "PTBP1 depletion in mature astrocytes reveals distinct splicing alterations without neuronal features",
+          "link": "https://elifesciences.org/articles/107683",
+          "year": 2025,
+          "summary": ""
+        },
+        {
+          "title": "Quantification of spliced and unspliced transcripts by velocyto is inaccurate for 5'-sequencing data",
+          "link": "https://www.biorxiv.org/content/10.1101/2025.01.17.633503.abstract",
+          "year": 2025,
+          "summary": ""
+        },
+        {
+          "title": "Reconstructing human early embryogenesis in vitro with pluripotent stem cells",
+          "link": "https://patents.google.com/patent/US12467917B2/en",
+          "year": 2025,
+          "summary": ""
+        },
+        {
+          "title": "Reference-based variant detection with varseek",
+          "link": "https://www.biorxiv.org/content/10.1101/2025.09.03.674039.abstract",
+          "year": 2025,
+          "summary": ""
+        },
+        {
+          "title": "ScIsoX: a multidimensional framework for measuring isoform-level transcriptomic complexity in single cells",
+          "link": "https://link.springer.com/article/10.1186/s13059-025-03758-5",
+          "year": 2025,
+          "summary": ""
+        },
+        {
+          "title": "ScIsoX: A Multidimensional Framework for Measuring Transcriptomic Complexity in Single-Cell Long-Read Sequencing Data",
+          "link": "https://www.biorxiv.org/content/10.1101/2025.04.28.650897v1?versioned=true&commentpr=y",
+          "year": 2025,
+          "summary": ""
+        },
+        {
+          "title": "Selective infection and loss of PRDM1+ LN Tfh cells in uncontrolled HIV infection precludes formation of Tfh reservoirs under ART",
+          "link": "https://www.biorxiv.org/content/10.64898/2025.12.11.693731.abstract",
+          "year": 2025,
+          "summary": ""
+        },
+        {
+          "title": "Self-organization of mouse embryonic stem cells into reproducible pre-gastrulation embryo models via CRISPRa programming",
+          "link": "https://www.cell.com/cell-stem-cell/fulltext/S1934-5909(25)00083-9",
+          "year": 2025,
+          "summary": ""
+        },
+        {
+          "title": "Single-cell atac-seq compatible with 5'rna-seq",
+          "link": "https://patents.google.com/patent/US20250066859A1/en",
+          "year": 2025,
+          "summary": ""
+        },
+        {
+          "title": "Single-cell RNA sequencing clarifies dermal fibroblast subset representation in vitro and reveals variable persistence of keloid disease-associated features",
+          "link": "https://www.biorxiv.org/content/10.1101/2025.08.11.668109.abstract",
+          "year": 2025,
+          "summary": ""
+        },
+        {
+          "title": "Single-cell sequencing analysis focused on cancer immunotherapy",
+          "link": "https://books.google.com/books?hl=en&lr=&id=Wa2GEQAAQBAJ&oi=fnd&pg=PA207&ots=yKfvsZqS6w&sig=k8XC3sE22cAf5C5ZHHoY6FEzxKU",
+          "year": 2025,
+          "summary": ""
+        },
+        {
+          "title": "Spatially resolved single-cell transcriptome analysis of murine Salmonella infection reveals the role of distal colonocytes in the inflammatory response",
+          "link": "https://www.tandfonline.com/doi/abs/10.1080/19490976.2025.2579909",
+          "year": 2025,
+          "summary": ""
+        },
+        {
+          "title": "Spatiotemporal dynamics of the developing zebrafish enteric nervous system at the whole-organ level",
+          "link": "https://www.cell.com/developmental-cell/abstract/S1534-5807(24)00671-3",
+          "year": 2025,
+          "summary": ""
+        },
+        {
+          "title": "Systemic coordination of whole-body tissue remodeling during local regeneration in sea anemones",
+          "link": "https://www.cell.com/developmental-cell/fulltext/S1534-5807(24)00666-X",
+          "year": 2025,
+          "summary": ""
+        },
+        {
+          "title": "Targeting lysozyme 2 in endocardium promotes rapid recovery by modulating remote injury signals",
+          "link": "https://www.cell.com/cell-stem-cell/fulltext/S1934-5909(25)00330-3",
+          "year": 2025,
+          "summary": ""
+        },
+        {
+          "title": "TGF-β signaling redirects Sox11 gene regulatory activity to promote partial EMT and collective invasion of oncogenically transformed intestinal organoids",
+          "link": "https://www.nature.com/articles/s41389-025-00560-7",
+          "year": 2025,
+          "summary": ""
+        },
+        {
+          "title": "The battle for reads: evaluating strategies to tackle multi-mapping in RNA-seq quantification in highly repetitive genomes",
+          "link": "https://www.researchsquare.com/article/rs-7888056/latest",
+          "year": 2025,
+          "summary": ""
+        },
+        {
+          "title": "Triggering AHR resolves TGF-β1 induced fibroblast activation and promotes AT1 cell regeneration in alveolar organoids",
+          "link": "https://www.nature.com/articles/s42003-025-08446-5",
+          "year": 2025,
+          "summary": ""
+        },
+        {
+          "title": "[B] Methods for Efficient Processing and Comprehensive Analysis of Single Cell Sequencing Data",
+          "link": "https://search.proquest.com/openview/676cb7aacb4817d24e028a3ebe1907b2/1?pq-origsite=gscholar&cbl=18750&diss=y",
+          "year": 2024,
+          "summary": ""
+        },
+        {
+          "title": "[B] Perturbing the Genome: From Bench to Biophysics",
+          "link": "https://search.proquest.com/openview/45dda9362404cf23baffee00cb95e068/1?pq-origsite=gscholar&cbl=18750&diss=y",
+          "year": 2024,
+          "summary": ""
+        },
+        {
+          "title": "[HTML] Adult human, but not rodent, spermatogonial stem cells retain states with a foetal-like signature",
+          "link": "https://www.mdpi.com/2073-4409/13/9/742",
+          "year": 2024,
+          "summary": ""
+        },
+        {
+          "title": "[HTML] Biophysical modeling with variational autoencoders for bimodal, single-cell RNA sequencing data",
+          "link": "https://idp.nature.com/authorize/casa?redirect_uri=https://www.nature.com/articles/s41592-024-02365-9&casa_token=K1G9eLYO_ngAAAAA:-ETFYD75yaFPTW9HAj4drzLf-7l2KeYwWt0NSj65wrhCNQrDS2nCAKdSPfe-qAcdqhWOMHgkAqUrcaIP",
+          "year": 2024,
+          "summary": ""
+        },
+        {
+          "title": "[HTML] Biophysically interpretable inference of cell types from multimodal sequencing data",
+          "link": "https://idp.nature.com/authorize/casa?redirect_uri=https://www.nature.com/articles/s43588-024-00689-2&casa_token=pnrlObsEgrsAAAAA:cMKoIQvXui3BzowdEVdMCsqvwJtii8-A1Cr9Y_jTfYqHWtQBmv7YtHCf_Xupuzg7uY7p_tGiaKEhJ148",
+          "year": 2024,
+          "summary": ""
+        },
+        {
+          "title": "[HTML] Cells transit through a quiescent-like state to convert to neurons at high rates",
+          "link": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11623504/",
+          "year": 2024,
+          "summary": ""
+        },
+        {
+          "title": "[HTML] Early-life prefrontal cortex inhibition and early-life stress lead to long-lasting behavioral, transcriptional, and physiological impairments",
+          "link": "https://idp.nature.com/authorize/casa?redirect_uri=https://www.nature.com/articles/s41380-024-02499-4&casa_token=zKtwk6flqLEAAAAA:PYVbseokZb6NDzHpE9Fs9BYazx2awegmm0x5D-PeH9BaEr80GYZHt3-MjR9IPTXlEDzMjHtrVery4Y1D",
+          "year": 2024,
+          "summary": ""
+        },
+        {
+          "title": "[HTML] Epithelial zonation along the mouse and human small intestine defines five discrete metabolic domains",
+          "link": "https://idp.nature.com/authorize/casa?redirect_uri=https://www.nature.com/articles/s41556-023-01337-z&casa_token=PJ416k3orUgAAAAA:1oCkw8smthBTmNSFl8n__8eDKC0bJXCZw74U8gLwmJq__PSnmkg5vSn-ef_UOc_6SVg-_DbFkppTdEYI",
+          "year": 2024,
+          "summary": ""
+        },
+        {
+          "title": "[HTML] Genome organization around nuclear speckles drives mRNA splicing efficiency",
+          "link": "https://idp.nature.com/authorize/casa?redirect_uri=https://www.nature.com/articles/s41586-024-07429-6&casa_token=bVJ2spP_SRwAAAAA:rJmM0RnQjEtfBpS4_uKa33ol6rg8kTsNf8rvcihJhUGHt4EXRTC_iarH4fP7esdmUhb_1AMLcwxLXr0Z",
+          "year": 2024,
+          "summary": ""
+        },
+        {
+          "title": "[HTML] In silico single-cell metabolism analysis unravels a new transition stage of CD8 T cells 4 days post-infection",
+          "link": "https://www.sciencedirect.com/science/article/pii/S2667119024000089",
+          "year": 2024,
+          "summary": ""
+        },
+        {
+          "title": "[HTML] Independent effects of testosterone, estradiol, and sex chromosomes on gene expression in immune cells of trans-and cisgender individuals",
+          "link": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11482753/",
+          "year": 2024,
+          "summary": ""
+        },
+        {
+          "title": "[HTML] Mapping genotypes to chromatin accessibility profiles in single cells",
+          "link": "https://idp.nature.com/authorize/casa?redirect_uri=https://www.nature.com/articles/s41586-024-07388-y&casa_token=GqgpUP1ctCgAAAAA:Qa3CgqpoJX4I_9uYa3FAUYsa_xUFU6rzM6f4WKUJCOFeQk_29pRf8ijGd-bTLKWnW1Px6gPNOjX3D9rF",
+          "year": 2024,
+          "summary": ""
+        },
+        {
+          "title": "[HTML] Single-cell and spatial transcriptomics: Bridging current technologies with long-read sequencing",
+          "link": "https://www.sciencedirect.com/science/article/pii/S0098299724000141?casa_token=sFHvaO_RAZwAAAAA:0T05VW04Pctjnz9BygNhTolOVwmiBIm0O9f8R73r1ex3FMGlIczKksLFsVnJ1Qi54_vALeCgkA",
+          "year": 2024,
+          "summary": ""
+        },
+        {
+          "title": "[HTML] Spatiotemporal lineage tracing reveals the dynamic spatial architecture of tumor growth and metastasis",
+          "link": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11526908/",
+          "year": 2024,
+          "summary": ""
+        },
+        {
+          "title": "[HTML] Therapeutic targeting of cellular senescence in diabetic macular edema: preclinical and phase 1 trial results",
+          "link": "https://idp.nature.com/authorize/casa?redirect_uri=https://www.nature.com/articles/s41591-024-02802-4&casa_token=wQ00NQW7YMQAAAAA:zqnMA51ZBE3l8himgjzyeNq-2YJzr4SLAjRHHLniXXtOweNYaHEY_7iuA6kqvwNtnWbtpSwp16C9sxkf",
+          "year": 2024,
+          "summary": ""
+        },
+        {
+          "title": "[HTML] Transcriptional profiles of murine oligodendrocyte precursor cells across the lifespan",
+          "link": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11565715/",
+          "year": 2024,
+          "summary": ""
+        },
+        {
+          "title": "[PDF] A machine-readable specification for genomics assays",
+          "link": "https://academic.oup.com/bioinformatics/article-pdf/doi/10.1093/bioinformatics/btae168/57218622/btae168.pdf",
+          "year": 2024,
+          "summary": ""
+        },
+        {
+          "title": "[PDF] Accurate quantification of single-cell and single-nucleus RNA-seq transcripts using distinguishing flanking k-mers",
+          "link": "https://www.biorxiv.org/content/10.1101/2022.12.02.518832.pdf",
+          "year": 2024,
+          "summary": ""
+        },
+        {
+          "title": "[PDF] Development of a comprehensive single cell RNA sequencing pipeline: pre-processing, quality control and identification of outliers",
+          "link": "https://scholar.sun.ac.za/server/api/core/bitstreams/1c0018a8-3d1f-4d93-87b9-a87f6df8a4a1/content",
+          "year": 2024,
+          "summary": ""
+        },
+        {
+          "title": "[PDF] EPIGENETIC CONTROL OF NEURAL CREST DEVELOPMENT AND NEURAL CREST DERIVED",
+          "link": "https://escholarship.org/content/qt40f4d016/qt40f4d016.pdf?v=lg",
+          "year": 2024,
+          "summary": ""
+        },
+        {
+          "title": "[PDF] Preprocessing-based Dendritic Neuron for Prediction Tasks",
+          "link": "https://toyama.repo.nii.ac.jp/record/2000589/files/13201_riko_kou_232.pdf",
+          "year": 2024,
+          "summary": ""
+        },
+        {
+          "title": "[PDF] TUM SCHOOL OF LIFE SCIENCES",
+          "link": "https://mediatum.ub.tum.de/doc/1738262/g1w2sm1sqx6p0vegbjkv7a8rp.thesis.pdf",
+          "year": 2024,
+          "summary": ""
+        },
+        {
+          "title": "A comprehensive workflow for allele-specific immune gene quantification and expression analysis in single-cell RNA-seq data",
+          "link": "https://www.biorxiv.org/content/10.1101/2024.12.10.627679.abstract",
+          "year": 2024,
+          "summary": ""
+        },
+        {
+          "title": "A human commons cell atlas reveals cell type specificity for OAS1 isoforms",
+          "link": "https://www.biorxiv.org/content/10.1101/2024.03.23.586412.abstract",
+          "year": 2024,
+          "summary": ""
+        },
+        {
+          "title": "A novel FD3 framework for carbon emissions prediction",
+          "link": "https://search.proquest.com/openview/7c69ef8657443cb30f1316b55fa9ec3f/1?pq-origsite=gscholar&cbl=25741",
+          "year": 2024,
+          "summary": ""
+        },
+        {
+          "title": "A single-cell atlas of the miracidium larva of Schistosoma mansoni reveals cell types, developmental pathways, and tissue architecture",
+          "link": "https://elifesciences.org/articles/95628",
+          "year": 2024,
+          "summary": ""
+        },
+        {
+          "title": "Accurate RNA velocity estimation based on multibatch network reveals complex lineage in batch scRNA-seq data",
+          "link": "https://link.springer.com/article/10.1186/s12915-024-02085-8",
+          "year": 2024,
+          "summary": ""
+        },
+        {
+          "title": "Advances in long-read single-cell transcriptomics",
+          "link": "https://link.springer.com/article/10.1007/s00439-024-02678-x",
+          "year": 2024,
+          "summary": ""
+        },
+        {
+          "title": "AHR activation accelerates the resolution of TGF-β1 induced fibroblast activation and promotes alveolar type 1 cell regeneration in alveolar organoids",
+          "link": "https://www.biorxiv.org/content/10.1101/2024.04.29.590972.abstract",
+          "year": 2024,
+          "summary": ""
+        },
+        {
+          "title": "Algorithms for a Commons Cell Atlas",
+          "link": "https://www.biorxiv.org/content/10.1101/2024.03.23.586413.abstract",
+          "year": 2024,
+          "summary": ""
+        },
+        {
+          "title": "An exhausted-like microglial population accumulates in aged and APOE4 genotype Alzheimer's brains",
+          "link": "https://www.cell.com/immunity/fulltext/S1074-7613(23)00532-0",
+          "year": 2024,
+          "summary": ""
+        },
+        {
+          "title": "Cellular‐resolution gene expression mapping reveals organization in the head ganglia of the gastropod, Berghia stephanieae",
+          "link": "https://onlinelibrary.wiley.com/doi/abs/10.1002/cne.25628",
+          "year": 2024,
+          "summary": ""
+        },
+        {
+          "title": "Computational methodologies for studying polyclonal immune responses with PhIP-Seq",
+          "link": "https://search.proquest.com/openview/19e61b937370568da076b93f53a13296/1?pq-origsite=gscholar&cbl=18750&diss=y",
+          "year": 2024,
+          "summary": ""
+        },
+        {
+          "title": "Convergent evolution of monocyte differentiation in adult skin instructs Langerhans cell identity",
+          "link": "https://www.science.org/doi/abs/10.1126/sciimmunol.adp0344?casa_token=zJ2SEE2P6BsAAAAA:LvEpdxmtMpW9nlLUkTHazQyHaUq13nv2V1_zw7S95np7lC-4uGdbf2QSjl-celx4ZetN9BYiV6YSJw&casa_token=M_YJtz6VZVYAAAAA:7qmH2Le6kW55_SpaevpFPrMV6b1hlf-04YuKVYnbCu6omsnmm3Z1Sw26LYJb1cKKZ-Y667C0KAVBCg",
+          "year": 2024,
+          "summary": ""
+        },
+        {
+          "title": "Deciphering maternal-fetal cross-talk in the human placenta during parturition using single-cell RNA sequencing",
+          "link": "https://www.science.org/doi/abs/10.1126/scitranslmed.adh8335",
+          "year": 2024,
+          "summary": ""
+        },
+        {
+          "title": "Deep generative modeling of transcriptional dynamics for RNA velocity analysis in single cells",
+          "link": "https://www.nature.com/articles/s41592-023-01994-w",
+          "year": 2024,
+          "summary": ""
+        },
+        {
+          "title": "Degron-modified Cas12a enhances single-cell CRISPR screening",
+          "link": "https://www.biorxiv.org/content/10.1101/2024.12.08.627374.abstract",
+          "year": 2024,
+          "summary": ""
+        },
+        {
+          "title": "Development of a multi-species scRNA-seq atlas of metabolic dysfunction–associated steatotic liver disease (MASLD)",
+          "link": "https://repository.bilkent.edu.tr/items/55784a24-0116-4b18-ac21-2c6971b2d275",
+          "year": 2024,
+          "summary": ""
+        },
+        {
+          "title": "Differences in molecular sampling and data processing explain variation among single-cell and single-nucleus RNA-seq experiments",
+          "link": "https://genome.cshlp.org/content/34/2/179.short",
+          "year": 2024,
+          "summary": ""
+        },
+        {
+          "title": "Direct lineage conversion of postnatal mouse cortical astrocytes to oligodendrocyte lineage cells",
+          "link": "https://www.biorxiv.org/content/10.1101/2024.05.28.596294.abstract",
+          "year": 2024,
+          "summary": ""
+        },
+        {
+          "title": "Distinct pathways drive anterior hypoblast specification in the implanting human embryo",
+          "link": "https://www.nature.com/articles/s41556-024-01367-1",
+          "year": 2024,
+          "summary": ""
+        },
+        {
+          "title": "Epigenetic control of neural crest development and neural crest derived tumors",
+          "link": "https://search.proquest.com/openview/6e86376bdbeb9da5b63e407a3c97369d/1?pq-origsite=gscholar&cbl=18750&diss=y",
+          "year": 2024,
+          "summary": ""
+        },
+        {
+          "title": "Epigenetic reprogramming shapes the cellular landscape of schwannoma",
+          "link": "https://www.nature.com/articles/s41467-023-40408-5",
+          "year": 2024,
+          "summary": ""
+        },
+        {
+          "title": "Expression Atlas update: insights from sequencing data at both bulk and single cell level",
+          "link": "https://academic.oup.com/nar/article-abstract/52/D1/D107/7442051",
+          "year": 2024,
+          "summary": ""
+        },
+        {
+          "title": "Flexible use of conserved motif vocabularies constrains genome access in cell type evolution",
+          "link": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11398382/",
+          "year": 2024,
+          "summary": ""
+        },
+        {
+          "title": "Forseti: a mechanistic and predictive model of the splicing status of scRNA-seq reads",
+          "link": "https://academic.oup.com/bioinformatics/article-abstract/40/Supplement_1/i297/7700855",
+          "year": 2024,
+          "summary": ""
+        },
+        {
+          "title": "Guide assignment in single-cell CRISPR screens using crispat",
+          "link": "https://academic.oup.com/bioinformatics/article-abstract/40/9/btae535/7750392",
+          "year": 2024,
+          "summary": ""
+        },
+        {
+          "title": "Hodge decomposition of single-cell RNA velocity",
+          "link": "https://pubs.acs.org/doi/abs/10.1021/acs.jcim.4c00132",
+          "year": 2024,
+          "summary": ""
+        },
+        {
+          "title": "Homeostatic macrophages prevent preterm birth and improve neonatal outcomes by mitigating in utero sterile inflammation in mice",
+          "link": "https://academic.oup.com/jimmunol/article-abstract/213/11/1620/7960586",
+          "year": 2024,
+          "summary": ""
+        },
+        {
+          "title": "Human ASXL1-mutant hematopoiesis is driven by a truncated protein associated with aberrant deubiquitination of H2AK119",
+          "link": "https://aacrjournals.org/bloodcancerdiscov/article/5/3/202/745088",
+          "year": 2024,
+          "summary": ""
+        },
+        {
+          "title": "Human spermatogonial stem cells retain states with a foetal-like signature",
+          "link": "https://www.biorxiv.org/content/10.1101/2024.03.18.585628.abstract",
+          "year": 2024,
+          "summary": ""
+        },
+        {
+          "title": "Human γδ T cells in diverse tissues exhibit site-specific maturation dynamics across the life span",
+          "link": "https://www.science.org/doi/abs/10.1126/sciimmunol.adn3954",
+          "year": 2024,
+          "summary": ""
+        },
+        {
+          "title": "Improved Sequencing and Informatics Approaches for Technical Obstacles in Single-Cell RNA-seq Analysis",
+          "link": "https://search.proquest.com/openview/0519176169378ff774d4639bc473585e/1?pq-origsite=gscholar&cbl=18750&diss=y",
+          "year": 2024,
+          "summary": ""
+        },
+        {
+          "title": "Investigation of the motif activity of transcription regulators in pancreatic β-like cell subpopulations differentiated from human induced pluripotent stem cells",
+          "link": "https://academic.oup.com/molecular-omics/article-abstract/20/10/654/8277314",
+          "year": 2024,
+          "summary": ""
+        },
+        {
+          "title": "KAT6A deficiency impairs cognitive functions through suppressing RSPO2/Wnt signaling in hippocampal CA3",
+          "link": "https://www.science.org/doi/abs/10.1126/sciadv.adm9326",
+          "year": 2024,
+          "summary": ""
+        },
+        {
+          "title": "Maintenance of caecal homeostasis by diverse adaptive immune cells in the rhesus macaque",
+          "link": "https://onlinelibrary.wiley.com/doi/abs/10.1002/cti2.1508",
+          "year": 2024,
+          "summary": ""
+        },
+        {
+          "title": "Marsupial single-cell transcriptomics provides an atlas of developmental heterochrony",
+          "link": "https://www.biorxiv.org/content/10.1101/2024.05.26.595746.abstract",
+          "year": 2024,
+          "summary": ""
+        },
+        {
+          "title": "Methods and compositions for direct lineage reprogramming of astrocytes to oligodendrocyte lineage cells",
+          "link": "https://patents.google.com/patent/US20240424140A1/en",
+          "year": 2024,
+          "summary": ""
+        },
+        {
+          "title": "Molecular, cellular, and developmental organization of the mouse vomeronasal organ at single cell resolution",
+          "link": "https://elifesciences.org/articles/97356",
+          "year": 2024,
+          "summary": ""
+        },
+        {
+          "title": "Murine glial protrusion transcripts predict localized Drosophila glial mRNAs involved in plasticity",
+          "link": "https://rupress.org/jcb/article/223/10/e202306152/276869",
+          "year": 2024,
+          "summary": ""
+        },
+        {
+          "title": "Neoadjuvant PARPi or chemotherapy in ovarian cancer informs targeting effector Treg cells for homologous-recombination-deficient tumors",
+          "link": "https://www.cell.com/cell/fulltext/S0092-8674(24)00653-6",
+          "year": 2024,
+          "summary": ""
+        },
+        {
+          "title": "Neural ensembles that encode affective mechanical and heat pain in mouse spinal cord",
+          "link": "https://www.biorxiv.org/content/10.1101/2024.02.05.578816.abstract",
+          "year": 2024,
+          "summary": ""
+        },
+        {
+          "title": "Next-generation forward genetic screens: uniting high-throughput perturbations with single-cell analysis",
+          "link": "https://www.cell.com/trends/genetics/abstract/S0168-9525(23)00240-8",
+          "year": 2024,
+          "summary": ""
+        },
+        {
+          "title": "Optimization of Cancer Immunotherapies",
+          "link": "https://search.proquest.com/openview/296aea7ac711893242357de28fb5bbb3/1?pq-origsite=gscholar&cbl=18750&diss=y",
+          "year": 2024,
+          "summary": ""
+        },
+        {
+          "title": "Proteome asymmetry in mouse and human embryos before fate specification",
+          "link": "https://www.biorxiv.org/content/10.1101/2024.08.26.609777.abstract",
+          "year": 2024,
+          "summary": ""
+        },
+        {
+          "title": "Quantifying 3′ UTR length from scRNA-seq data reveals changes independent of gene expression",
+          "link": "https://www.nature.com/articles/s41467-024-48254-9",
+          "year": 2024,
+          "summary": ""
+        },
+        {
+          "title": "Quantifying orthogonal barcodes for sequence census assays",
+          "link": "https://academic.oup.com/bioinformaticsadvances/article-abstract/4/1/vbad181/7484654",
+          "year": 2024,
+          "summary": ""
+        },
+        {
+          "title": "Rare and Undiagnosed Liver Diseases: New Insights From Genomic and Single Cell Transcriptomic Analyses",
+          "link": "https://search.proquest.com/openview/d13e6074175baee58a558572b5195604/1?pq-origsite=gscholar&cbl=18750&diss=y",
+          "year": 2024,
+          "summary": ""
+        },
+        {
+          "title": "Resilience of a learned motor behavior after chronic disruption of inhibitory circuits",
+          "link": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10245685/",
+          "year": 2024,
+          "summary": ""
+        },
+        {
+          "title": "scTrends: A living review of commercial single-cell and spatial'omic technologies",
+          "link": "https://www.cell.com/cell-genomics/fulltext/S2666-979X(24)00352-5",
+          "year": 2024,
+          "summary": ""
+        },
+        {
+          "title": "Self-organization of embryonic stem cells into a reproducible embryo model through epigenome editing",
+          "link": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10942404/",
+          "year": 2024,
+          "summary": ""
+        },
+        {
+          "title": "Single-cell RNA-seq Reveals Early Transcriptional Programs of the Maternal to Zygote Transition in Mice and Rats",
+          "link": "https://www.biorxiv.org/content/10.1101/2024.09.30.615942.abstract",
+          "year": 2024,
+          "summary": ""
+        },
+        {
+          "title": "Single-cell transcriptome reveals potential mechanisms for coronary artery lesions in kawasaki disease",
+          "link": "https://www.ahajournals.org/doi/abs/10.1161/ATVBAHA.123.320188",
+          "year": 2024,
+          "summary": ""
+        },
+        {
+          "title": "Single-Molecule Barcoding Technology for Single-Cell Genomics",
+          "link": "https://www.biorxiv.org/content/10.1101/2024.08.13.607508.abstract",
+          "year": 2024,
+          "summary": ""
+        },
+        {
+          "title": "Single-nucleus RNA velocity reveals critical synaptic and cell-cycle dysregulations in neuropathologically confirmed Alzheimer's disease",
+          "link": "https://www.nature.com/articles/s41598-024-57918-x",
+          "year": 2024,
+          "summary": ""
+        },
+        {
+          "title": "SIRV: spatial inference of RNA velocity at the single-cell resolution",
+          "link": "https://academic.oup.com/nargab/article-abstract/6/3/lqae100/7728020",
+          "year": 2024,
+          "summary": ""
+        },
+        {
+          "title": "Spatial and single-nucleus transcriptomic analysis of genetic and sporadic forms of Alzheimer's disease",
+          "link": "https://www.nature.com/articles/s41588-024-01961-x",
+          "year": 2024,
+          "summary": ""
+        },
+        {
+          "title": "Spectral neural approximations for models of transcriptional dynamics",
+          "link": "https://www.cell.com/biophysj/abstract/S0006-3495(24)00314-X",
+          "year": 2024,
+          "summary": ""
+        },
+        {
+          "title": "Stochastic modeling of biophysical responses to perturbation",
+          "link": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11245117/",
+          "year": 2024,
+          "summary": ""
+        },
+        {
+          "title": "Systematic deconstruction of myeloid cell signaling in tuberculosis granulomas reveals IFN-γ, TGF-β, and time are associated with conserved myeloid diversity",
+          "link": "https://www.biorxiv.org/content/10.1101/2024.05.24.595747.abstract",
+          "year": 2024,
+          "summary": ""
+        },
+        {
+          "title": "Systemic coordination of whole-body tissue remodeling in sea anemone local regeneration",
+          "link": "https://www.biorxiv.org/content/10.1101/2024.03.20.585927.abstract",
+          "year": 2024,
+          "summary": ""
+        },
+        {
+          "title": "Tipping points in epithelial-mesenchymal lineages from single-cell transcriptomics data",
+          "link": "https://www.cell.com/biophysj/fulltext/S0006-3495(24)00201-7",
+          "year": 2024,
+          "summary": ""
+        },
+        {
+          "title": "Tracking rare single donor and recipient immune and leukemia cells after allogeneic hematopoietic cell transplantation using mitochondrial DNA mutations",
+          "link": "https://aacrjournals.org/bloodcancerdiscov/article/5/6/442/749230?casa_token=U3MkMRPBRcIAAAAA:4B4zMdO-EA4b6vPMWvPVQZ3t0Ngx0-PEdpU8azRZTazTZB_MFR4PwDFiJaZFiwHavb0xRxk",
+          "year": 2024,
+          "summary": ""
+        },
+        {
+          "title": "Transcriptional dynamics of the murine heart during perinatal development at single-cell resolution",
+          "link": "https://www.biorxiv.org/content/10.1101/2024.03.05.583423.abstract",
+          "year": 2024,
+          "summary": ""
+        },
+        {
+          "title": "Transcriptomic profiling of plasma extracellular vesicles enables reliable annotation of the cancer-specific transcriptome and molecular subtype",
+          "link": "https://aacrjournals.org/cancerres/article-abstract/84/10/1719/745312",
+          "year": 2024,
+          "summary": ""
+        },
+        {
+          "title": "Transposable elements regulate thymus development and function",
+          "link": "https://elifesciences.org/articles/91037",
+          "year": 2024,
+          "summary": ""
+        },
+        {
+          "title": "Transposable elements regulate thymus development and function",
+          "link": "https://search.proquest.com/openview/0ff0b4cc3d3ec421ae759c532e627af4/1?pq-origsite=gscholar&cbl=2045579",
+          "year": 2024,
+          "summary": ""
+        },
+        {
+          "title": "Uncovering functional lncRNAs by scRNA-seq with ELATUS",
+          "link": "https://www.nature.com/articles/s41467-024-54005-7",
+          "year": 2024,
+          "summary": ""
+        },
+        {
+          "title": "Understanding Transcriptional Responses to Environmental and Developmental Cues in Model Organisms Using Full-Length Single Cell RNA-Seq",
+          "link": "https://search.proquest.com/openview/165bac0f6e672f680c53d29d057dac1c/1?pq-origsite=gscholar&cbl=18750&diss=y",
+          "year": 2024,
+          "summary": ""
+        },
+        {
+          "title": "Vulture: cloud-enabled scalable mining of microbial reads in public scRNA-seq data",
+          "link": "https://academic.oup.com/gigascience/article-abstract/doi/10.1093/gigascience/giad117/7513487",
+          "year": 2024,
+          "summary": ""
+        },
+        {
+          "title": "基于 DP-FS-BP 预测框架和 SHAP 算法的 数据资产价值评估指标贡献率.",
+          "link": "https://search.ebscohost.com/login.aspx?direct=true&profile=ehost&scope=site&authtype=crawler&jrnl=16711815&AN=181741294&h=Bz746cSS8u4hTNA3qi9OOii%2FM%2BJB1xx%2Fil7F3bl7T2ge96besFDncXfWvEpnaeZuLYdaZ58%2BcuX%2BKhR5He9UHQ%3D%3D&crl=c",
+          "year": 2024,
+          "summary": ""
+        },
+        {
+          "title": "[B] Graph modeling for genomics and epidemiology",
+          "link": "https://search.proquest.com/openview/0abd5bf9682f337f76f51068e8da23f2/1?pq-origsite=gscholar&cbl=18750&diss=y",
+          "year": 2023,
+          "summary": ""
+        },
+        {
+          "title": "[B] Integrative omics data analysis to discover novel signatures in complex diseases",
+          "link": "https://search.proquest.com/openview/97e4b88d34ff16141acef094b0b491ff/1?pq-origsite=gscholar&cbl=2026366&diss=y",
+          "year": 2023,
+          "summary": ""
+        },
+        {
+          "title": "[B] On the Role of Three-Dimensional Genome Organization in Gene Regulation and mRNA Splicing",
+          "link": "https://search.proquest.com/openview/6a8bfc4b1612208734a1404beb2ee6d9/1?pq-origsite=gscholar&cbl=18750&diss=y",
+          "year": 2023,
+          "summary": ""
+        },
+        {
+          "title": "[B] Stochastic foundations for single-cell RNA sequencing",
+          "link": "https://search.proquest.com/openview/9b01393b59220a61ee018759229543ba/1?pq-origsite=gscholar&cbl=18750&diss=y",
+          "year": 2023,
+          "summary": ""
+        },
+        {
+          "title": "[B] Studies of mRNA expression and degradation",
+          "link": "https://search.proquest.com/openview/2921dc1e86cbcf7d641af71d34cc4201/1?pq-origsite=gscholar&cbl=18750&diss=y",
+          "year": 2023,
+          "summary": ""
+        },
+        {
+          "title": "[HTML] A comprehensive mouse kidney atlas enables rare cell population characterization and robust marker discovery",
+          "link": "https://www.cell.com/iscience/fulltext/S2589-0042(23)00954-9?uuid=uuid%3Adaecfd3b-8146-47cd-a7f1-4004f3f6ad54",
+          "year": 2023,
+          "summary": ""
+        },
+        {
+          "title": "[HTML] Assessing Markovian and delay models for single-nucleus RNA sequencing",
+          "link": "https://idp.springer.com/authorize/casa?redirect_uri=https://link.springer.com/article/10.1007/s11538-023-01213-9&casa_token=UJ__nR9OvcUAAAAA:5O7FJMcmm0SlQJZeIil9uq-pnL2IljKlVlmnRK4Fnk89ib_djU_bE9JJQdJx6edjK4SZNgLAkt3OMCNH",
+          "year": 2023,
+          "summary": ""
+        },
+        {
+          "title": "[HTML] Current status and prospects of the single-cell sequencing technologies for revealing the pathogenesis of pregnancy-associated disorders",
+          "link": "https://www.mdpi.com/2073-4425/14/3/756",
+          "year": 2023,
+          "summary": ""
+        },
+        {
+          "title": "[HTML] Induction of bronchus-associated lymphoid tissue is an early life adaptation for promoting human B cell immunity",
+          "link": "https://idp.nature.com/authorize/casa?redirect_uri=https://www.nature.com/articles/s41590-023-01557-3&casa_token=OoUX3eaWyJcAAAAA:JQoh-P3n4hk4aYMYRwW_BDHatzsI-ECDZxWSXDe-0JWC7SgXanLjFQFp9dyNmDNdeER_UVgsV9xf9d5n",
+          "year": 2023,
+          "summary": ""
+        },
+        {
+          "title": "[HTML] Local causal pathway discovery for single-cell RNA sequencing count data: a benchmark study",
+          "link": "https://www.oaepublish.com/articles/jtgg.2022.22",
+          "year": 2023,
+          "summary": ""
+        },
+        {
+          "title": "[HTML] PLAE web app enables powerful searching and multiple visualizations across one million unified single-cell ocular transcriptomes",
+          "link": "https://iovs.arvojournals.org/article.aspx?articleid=2792870",
+          "year": 2023,
+          "summary": ""
+        },
+        {
+          "title": "[HTML] scAAGA: Single cell data analysis framework using asymmetric autoencoder with gene attention",
+          "link": "https://www.sciencedirect.com/science/article/pii/S001048252300879X?casa_token=LoUTlimvqq0AAAAA:ZcpnsoWYn8vmHYh0nqqCgrHP54B_C1rSPXvv3D4VQTnikanJCgNv2ZYdpjxDY0zaeT-TkCZjeQ",
+          "year": 2023,
+          "summary": ""
+        },
+        {
+          "title": "[HTML] Specialized functions and sexual dimorphism explain the functional diversity of the myeloid populations during glioma progression",
+          "link": "https://www.cell.com/cell-reports/fulltext/S2211-1247(22)01875-7?rss=yes&",
+          "year": 2023,
+          "summary": ""
+        },
+        {
+          "title": "[HTML] Targeting PGLYRP1 promotes antitumor immunity while inhibiting autoimmune neuroinflammation",
+          "link": "https://idp.nature.com/authorize/casa?redirect_uri=https://www.nature.com/articles/s41590-023-01645-4&casa_token=jWUVf0z7SGEAAAAA:IcrVAxyIcodZu5KB5q9KHN9mXb4s8jj5DXVEBNBu9ui_67ceCBjPDbAj1zoXcRD8z8YZJAziVKGV_9s5",
+          "year": 2023,
+          "summary": ""
+        },
+        {
+          "title": "[HTML] Tissue adaptation and clonal segregation of human memory T cells in barrier sites",
+          "link": "https://idp.nature.com/authorize/casa?redirect_uri=https://www.nature.com/articles/s41590-022-01395-9&casa_token=Cue8wirvrXgAAAAA:s2LfRU78jn1k2rt7XapJHi-XvDmPdN63hKCMuSchXk-UjEM5L5iNGyUD9B3ZMooEiIuqEP3uo2vO4sDK",
+          "year": 2023,
+          "summary": ""
+        },
+        {
+          "title": "[HTML] Vector-borne Trypanosoma brucei parasites develop in artificial human skin and persist as skin tissue forms",
+          "link": "https://www.nature.com/articles/s41467-023-43437-2",
+          "year": 2023,
+          "summary": ""
+        },
+        {
+          "title": "[PDF] A Practical Introduction to Single-Cell RNA-seq in Immuno-Oncology",
+          "link": "https://videleaf.com/wp-content/uploads/2023/11/A-Practical-Introduction-to-Single-Cell-RNA-seq-in-Immuno-Oncology.pdf",
+          "year": 2023,
+          "summary": ""
+        },
+        {
+          "title": "[PDF] Automatic quality control of single-cell and single-nucleus RNA-seq using valiDrops",
+          "link": "https://academic.oup.com/nargab/article-pdf/doi/10.1093/nargab/lqad101/57944132/lqad101.pdf",
+          "year": 2023,
+          "summary": ""
+        },
+        {
+          "title": "[PDF] Distinguishing biophysical stochasticity from technical noise in single-cell RNA sequencing using Monod",
+          "link": "https://www.biorxiv.org/content/10.1101/2022.06.11.495771.pdf",
+          "year": 2023,
+          "summary": ""
+        },
+        {
+          "title": "[PDF] Efficient and accurate detection of viral sequences at single-cell resolution reveals novel viruses perturbing host gene expression",
+          "link": "https://storage.prod.researchhub.com/uploads/papers/2023/12/12/2023.12.11.571168.full.pdf",
+          "year": 2023,
+          "summary": ""
+        },
+        {
+          "title": "[PDF] Large scale transcriptomics analyses for gene function annotation and regulation",
+          "link": "https://dr.ntu.edu.sg/bitstreams/3ac36378-2a27-4351-bf5b-f72832175893/download",
+          "year": 2023,
+          "summary": ""
+        },
+        {
+          "title": "A global view of aging and Alzheimer's pathogenesis-associated cell population dynamics and molecular signatures in human and mouse brains",
+          "link": "https://www.nature.com/articles/s41588-023-01572-y",
+          "year": 2023,
+          "summary": ""
+        },
+        {
+          "title": "A single-cell atlas of the miracidium larva of the human blood fluke Schistosoma mansoni: cell types, developmental pathways and tissue architecture",
+          "link": "https://www.biorxiv.org/content/10.1101/2023.03.27.533868.abstract",
+          "year": 2023,
+          "summary": ""
+        },
+        {
+          "title": "Age-associated changes in lineage composition of the enteric nervous system regulate gut health and disease",
+          "link": "https://elifesciences.org/articles/88051",
+          "year": 2023,
+          "summary": ""
+        },
+        {
+          "title": "Alternative splicing variability between human populations at single-cell resolution",
+          "link": "https://upcommons.upc.edu/entities/publication/3c80cb81-09ec-4d85-9574-293f713cd885",
+          "year": 2023,
+          "summary": ""
+        },
+        {
+          "title": "An allosteric pan-TEAD inhibitor blocks oncogenic YAP/TAZ signaling and overcomes KRAS G12C inhibitor resistance",
+          "link": "https://www.nature.com/articles/s43018-023-00577-0",
+          "year": 2023,
+          "summary": ""
+        },
+        {
+          "title": "An interwoven network of transcription factors, with divergent influences from FoxP3, underlies Treg diversity",
+          "link": "https://www.biorxiv.org/content/10.1101/2023.05.18.541358.abstract",
+          "year": 2023,
+          "summary": ""
+        },
+        {
+          "title": "Autism genes converge on microtubule biology and RNA-binding proteins during excitatory neurogenesis",
+          "link": "https://www.biorxiv.org/content/10.1101/2023.12.22.573108.abstract",
+          "year": 2023,
+          "summary": ""
+        },
+        {
+          "title": "Benchmark of pre-processing pipelines of single cell RNA sequencing data",
+          "link": "https://openaccess.uoc.edu/handle/10609/148591",
+          "year": 2023,
+          "summary": ""
+        },
+        {
+          "title": "Blockade of IL-6R prevents preterm birth and adverse neonatal outcomes",
+          "link": "https://www.thelancet.com/journals/ebiom/article/PIIS2352-3964(23)00431-0/fulltext",
+          "year": 2023,
+          "summary": ""
+        },
+        {
+          "title": "Brassinosteroid gene regulatory networks at cellular resolution in the Arabidopsis root",
+          "link": "https://www.science.org/doi/abs/10.1126/science.adf4721",
+          "year": 2023,
+          "summary": ""
+        },
+        {
+          "title": "Building an Analytical Framework for Quality Control and Meta-Analysis of Single-Cell Data to Understand Heterogeneity in Lung Cancer Cells",
+          "link": "https://search.proquest.com/openview/0491ace9c1e4be1a57a3f0cae9baeb76/1?pq-origsite=gscholar&cbl=18750&diss=y",
+          "year": 2023,
+          "summary": ""
+        },
+        {
+          "title": "BUSZ: compressed BUS files",
+          "link": "https://academic.oup.com/bioinformatics/article-abstract/39/5/btad295/7147899",
+          "year": 2023,
+          "summary": ""
+        },
+        {
+          "title": "Cancer-Associated Fibroblasts Promote Tumor Aggressiveness in Head and Neck Cancer through Chemokine Ligand 11: Molecular Mechanism and Clinical …",
+          "link": "https://search.proquest.com/openview/e79bc46510853495e8e9181597493083/1?pq-origsite=gscholar&cbl=2026366&diss=y",
+          "year": 2023,
+          "summary": ""
+        },
+        {
+          "title": "cellCounts: an R function for quantifying 10x Chromium single-cell RNA sequencing data",
+          "link": "https://academic.oup.com/bioinformatics/article-abstract/39/7/btad439/7225850",
+          "year": 2023,
+          "summary": ""
+        },
+        {
+          "title": "CIARA: a cluster-independent algorithm for identifying markers of rare cell types from single-cell sequencing data",
+          "link": "https://journals.biologists.com/dev/article-abstract/150/11/dev201264/316615",
+          "year": 2023,
+          "summary": ""
+        },
+        {
+          "title": "Combined PD-L1/TGFβ blockade allows expansion and differentiation of stem cell-like CD8 T cells in immune excluded tumors",
+          "link": "https://www.nature.com/articles/s41467-023-40398-4",
+          "year": 2023,
+          "summary": ""
+        },
+        {
+          "title": "Comprehensive Annotation of 3′ UTRs and Their Quantification From Single-Cell RNA Sequencing Data",
+          "link": "https://search.proquest.com/openview/84b8023650bf45dbea80e4efd1cc7d95/1?pq-origsite=gscholar&cbl=18750&diss=y",
+          "year": 2023,
+          "summary": ""
+        },
+        {
+          "title": "Computational approaches and challenges in spatial transcriptomics",
+          "link": "https://academic.oup.com/gpb/article-abstract/21/1/24/7274161",
+          "year": 2023,
+          "summary": ""
+        },
+        {
+          "title": "Concerted epithelial and stromal changes during progression of Barrett's Esophagus to invasive adenocarcinoma exposed by multi-scale, multi-omics analysis",
+          "link": "https://www.biorxiv.org/content/10.1101/2023.06.08.544265.abstract",
+          "year": 2023,
+          "summary": ""
+        },
+        {
+          "title": "Convergent evolution of monocyte differentiation in adult skin permits repair of the Langerhans cell network",
+          "link": "https://www.biorxiv.org/content/10.1101/2023.11.13.566862.abstract",
+          "year": 2023,
+          "summary": ""
+        },
+        {
+          "title": "Deciphering the mechanisms by which FoxP3 regulates treg identity: an analysis of naturally occurring IPEX mutations",
+          "link": "https://theses.hal.science/tel-04884672/",
+          "year": 2023,
+          "summary": ""
+        },
+        {
+          "title": "Decoding human biology and disease using single-cell omics technologies",
+          "link": "https://academic.oup.com/gpb/article-abstract/21/5/926/7632863",
+          "year": 2023,
+          "summary": ""
+        },
+        {
+          "title": "Dedifferentiation and proliferation of artery endothelial cells drive coronary collateral development in mice",
+          "link": "https://www.ahajournals.org/doi/abs/10.1161/ATVBAHA.123.319319",
+          "year": 2023,
+          "summary": ""
+        },
+        {
+          "title": "Development of Deep Learning Models for scRNA Data Analysis",
+          "link": "https://search.proquest.com/openview/268cd9e87916d5d3efbe0b79af10e8d1/1?pq-origsite=gscholar&cbl=2026366&diss=y",
+          "year": 2023,
+          "summary": ""
+        },
+        {
+          "title": "Dynamically regulated transcription factors are encoded by highly unstable mRNAs in the Drosophila larval brain",
+          "link": "https://rnajournal.cshlp.org/content/29/7/1020.short",
+          "year": 2023,
+          "summary": ""
+        },
+        {
+          "title": "Effective Preprocessing of Single-Cell RNA-Seq for Unravelling Alzheimer's",
+          "link": "https://books.google.com/books?hl=en&lr=&id=F3HOEAAAQBAJ&oi=fnd&pg=PA251&ots=1_NVo_sWnD&sig=xBtdeBSu3EW_1NosNIEhiNpA_PQ",
+          "year": 2023,
+          "summary": ""
+        },
+        {
+          "title": "Epigenetic Aberrations in Systemic Sclerosis and Systemic Lupus Erythematosus",
+          "link": "https://search.proquest.com/openview/fbc658c512301220ddb99d9be69a2b8b/1?pq-origsite=gscholar&cbl=18750&diss=y",
+          "year": 2023,
+          "summary": ""
+        },
+        {
+          "title": "Epigenomic profiling at genome scale: from assays and analysis to clinical insights",
+          "link": "https://www.sciencedirect.com/science/article/pii/B9780323913676000015",
+          "year": 2023,
+          "summary": ""
+        },
+        {
+          "title": "Genetic control of the dynamic transcriptional response to immune stimuli and glucocorticoids at single-cell resolution",
+          "link": "https://genome.cshlp.org/content/33/6/839.short",
+          "year": 2023,
+          "summary": ""
+        },
+        {
+          "title": "GIA: A genome interval arithmetic toolkit for high performance interval set operations",
+          "link": "https://www.biorxiv.org/content/10.1101/2023.09.20.558707.abstract",
+          "year": 2023,
+          "summary": ""
+        },
+        {
+          "title": "hdWGCNA identifies co-expression networks in high-dimensional transcriptomics data",
+          "link": "https://www.cell.com/cell-reports-methods/fulltext/S2667-2375(23)00127-3",
+          "year": 2023,
+          "summary": ""
+        },
+        {
+          "title": "Homeostatic, repertoire and transcriptional relationships between colon T regulatory cell subsets",
+          "link": "https://www.pnas.org/doi/abs/10.1073/pnas.2311566120",
+          "year": 2023,
+          "summary": ""
+        },
+        {
+          "title": "Hyaluronan driven by epithelial aPKC deficiency remodels the microenvironment and creates a vulnerability in mesenchymal colorectal cancer",
+          "link": "https://www.cell.com/cancer-cell/fulltext/S1535-6108(22)00563-3",
+          "year": 2023,
+          "summary": ""
+        },
+        {
+          "title": "Identifying the mechanisms driving pancreatic ductal adenocarcinoma stem cell characteristics using single-cell RNA-sequencing",
+          "link": "https://ora.ox.ac.uk/objects/uuid:b0847284-a02f-47ee-88e3-a3c4e0cdb8b1",
+          "year": 2023,
+          "summary": ""
+        },
+        {
+          "title": "Immune checkpoints are predominantly co-expressed by clonally expanded CD4+FoxP3+ intratumoral T-cells in primary human cancers",
+          "link": "https://link.springer.com/article/10.1186/s13046-023-02897-6",
+          "year": 2023,
+          "summary": ""
+        },
+        {
+          "title": "Impact of TNF on ceramide metabolism and on the inflammatory and differentiation status of melanoma: from basic mechanisms to the clinic and back",
+          "link": "https://ut3-toulouseinp.hal.science/tel-05002536/",
+          "year": 2023,
+          "summary": ""
+        },
+        {
+          "title": "Impaired histone inheritance promotes tumor progression",
+          "link": "https://www.nature.com/articles/s41467-023-39185-y",
+          "year": 2023,
+          "summary": ""
+        },
+        {
+          "title": "In silico single-cell metabolism analysis unravels a new transition stage of CD8 T cells 4 days post-infection",
+          "link": "https://www.biorxiv.org/content/10.1101/2023.09.22.558248.abstract",
+          "year": 2023,
+          "summary": ""
+        },
+        {
+          "title": "In vitro differentiated human CD4+ T cells produce hepatocyte growth factor",
+          "link": "https://www.frontiersin.org/journals/immunology/articles/10.3389/fimmu.2023.1210836/full",
+          "year": 2023,
+          "summary": ""
+        },
+        {
+          "title": "Interactive analysis of single-cell data using flexible workflows with SCTK2",
+          "link": "https://www.cell.com/patterns/fulltext/S2666-3899(23)00182-4",
+          "year": 2023,
+          "summary": ""
+        },
+        {
+          "title": "Le séquençage de transcrits sur cellule unique appliqué à l'étude des mécanismes de formation et de résolution de la fibrose pulmonaire",
+          "link": "https://theses.hal.science/tel-04234539/",
+          "year": 2023,
+          "summary": ""
+        },
+        {
+          "title": "Length biases in single-cell RNA sequencing of pre-mRNA",
+          "link": "https://www.cell.com/biophysreports/fulltext/S2667-0747(22)00054-4",
+          "year": 2023,
+          "summary": ""
+        },
+        {
+          "title": "Lymph node medulla regulates the spatiotemporal unfolding of resident dendritic cell networks",
+          "link": "https://www.cell.com/immunity/fulltext/S1074-7613(23)00277-7",
+          "year": 2023,
+          "summary": ""
+        },
+        {
+          "title": "M2 macrophages dampen in utero sterile inflammation to prevent preterm birth and improve neonatal outcomes",
+          "link": "https://www.biorxiv.org/content/10.1101/2023.07.19.549717.abstract",
+          "year": 2023,
+          "summary": ""
+        },
+        {
+          "title": "Mapping neuronal gene expression reveals aspects of ganglionic organization in a gastropod mollusc",
+          "link": "https://www.biorxiv.org/content/10.1101/2023.06.22.546160.abstract",
+          "year": 2023,
+          "summary": ""
+        },
+        {
+          "title": "Mass production of lumenogenic human embryoid bodies and functional cardiospheres using in-air-generated microcapsules",
+          "link": "https://www.nature.com/articles/s41467-023-42297-0",
+          "year": 2023,
+          "summary": ""
+        },
+        {
+          "title": "Mechanistic modeling with a variational autoencoder for multimodal single-cell RNA sequencing data",
+          "link": "https://authors.library.caltech.edu/records/ffqct-7cq19",
+          "year": 2023,
+          "summary": ""
+        },
+        {
+          "title": "Metadata retrieval from sequence databases with ffq",
+          "link": "https://academic.oup.com/bioinformatics/article-abstract/39/1/btac667/6971839",
+          "year": 2023,
+          "summary": ""
+        },
+        {
+          "title": "Methods and insights from single-cell expression quantitative trait loci",
+          "link": "https://www.annualreviews.org/content/journals/10.1146/annurev-genom-101422-100437",
+          "year": 2023,
+          "summary": ""
+        },
+        {
+          "title": "Molecular insights into the Darwin paradox of coral reefs from the sea anemone Aiptasia",
+          "link": "https://www.science.org/doi/abs/10.1126/sciadv.adf7108",
+          "year": 2023,
+          "summary": ""
+        },
+        {
+          "title": "mRNA COVID-19 vaccine elicits potent adaptive immune response without the acute inflammation of SARS-CoV-2 infection",
+          "link": "https://www.cell.com/iscience/fulltext/S2589-0042(23)02649-4",
+          "year": 2023,
+          "summary": ""
+        },
+        {
+          "title": "Multi-species atlas resolves an axolotl limb development and regeneration paradox",
+          "link": "https://www.nature.com/articles/s41467-023-41944-w",
+          "year": 2023,
+          "summary": ""
+        },
+        {
+          "title": "Multiomic strategies for the discovery of molecular determinants of atrial fibrillation",
+          "link": "https://umontreal.scholaris.ca/items/50d65555-baf5-4269-964a-22a7d59d4bb8",
+          "year": 2023,
+          "summary": ""
+        },
+        {
+          "title": "Mutations from patients with IPEX ported to mice reveal different patterns of FoxP3 and Treg dysfunction",
+          "link": "https://www.cell.com/cell-reports/fulltext/S2211-1247(23)01029-X",
+          "year": 2023,
+          "summary": ""
+        },
+        {
+          "title": "Neural circuit-wide analysis of changes to gene expression during deafening-induced birdsong destabilization",
+          "link": "https://elifesciences.org/articles/85970",
+          "year": 2023,
+          "summary": ""
+        },
+        {
+          "title": "ONECUT2 regulates RANKL-dependent enterocyte and microfold cell differentiation in the small intestine; a multi-omics study",
+          "link": "https://academic.oup.com/nar/article-abstract/51/3/1277/6981654",
+          "year": 2023,
+          "summary": ""
+        },
+        {
+          "title": "Persistence of foetal testicular features in patients with defective androgen signalling",
+          "link": "https://academic.oup.com/ejendo/article-abstract/188/1/166/7017644",
+          "year": 2023,
+          "summary": ""
+        },
+        {
+          "title": "Pluripotent stem cell-derived model of the post-implantation human embryo",
+          "link": "https://www.nature.com/articles/s41586-023-06368-y",
+          "year": 2023,
+          "summary": ""
+        },
+        {
+          "title": "Profound phenotypic and epigenetic heterogeneity of the HIV-1-infected CD4+ T cell reservoir",
+          "link": "https://www.nature.com/articles/s41590-022-01371-3",
+          "year": 2023,
+          "summary": ""
+        },
+        {
+          "title": "Quantitative analysis of high‐throughput biological data",
+          "link": "https://wires.onlinelibrary.wiley.com/doi/abs/10.1002/wcms.1658?casa_token=6U2ODNp8MV0AAAAA:UgUmOPhf8rs2RvyYgivsDpCWLWOPiIBlM-pFhXcqstZ5274uJBMWfdRaSsxihYjEjgkKuvnS-hLpcU0",
+          "year": 2023,
+          "summary": ""
+        },
+        {
+          "title": "Radiation-induced circulating myeloid-derived suppressor cells induce systemic lymphopenia after chemoradiotherapy in patients with glioblastoma",
+          "link": "https://www.science.org/doi/abs/10.1126/scitranslmed.abn6758",
+          "year": 2023,
+          "summary": ""
+        },
+        {
+          "title": "Recovery of a learned behavior despite partial restoration of neuronal dynamics after chronic inactivation of inhibitory neurons",
+          "link": "https://www.biorxiv.org/content/10.1101/2023.05.17.541057.abstract",
+          "year": 2023,
+          "summary": ""
+        },
+        {
+          "title": "scAN1.0: A reproducible and standardized pipeline for processing 10X single cell RNAseq data",
+          "link": "https://journals.sagepub.com/doi/abs/10.3233/ISB-220252",
+          "year": 2023,
+          "summary": ""
+        },
+        {
+          "title": "scONE-seq: A single-cell multi-omics method enables simultaneous dissection of phenotype and genotype heterogeneity from frozen tumors",
+          "link": "https://www.science.org/doi/abs/10.1126/sciadv.abp8901",
+          "year": 2023,
+          "summary": ""
+        },
+        {
+          "title": "scRNA‐seq data analysis method to improve analysis performance",
+          "link": "https://ietresearch.onlinelibrary.wiley.com/doi/abs/10.1049/nbt2.12115",
+          "year": 2023,
+          "summary": ""
+        },
+        {
+          "title": "scRNASequest: an ecosystem of scRNA-seq analysis, visualization, and publishing",
+          "link": "https://link.springer.com/article/10.1186/s12864-023-09332-2",
+          "year": 2023,
+          "summary": ""
+        },
+        {
+          "title": "Signalling-state dependent drug-tolerance in head and neck squamous cell carcinoma",
+          "link": "https://www.biorxiv.org/content/10.1101/2023.12.05.570063.abstract",
+          "year": 2023,
+          "summary": ""
+        },
+        {
+          "title": "simpleaf: a simple, flexible, and scalable framework for single-cell data processing using alevin-fry",
+          "link": "https://academic.oup.com/bioinformatics/article-abstract/39/10/btad614/7295550",
+          "year": 2023,
+          "summary": ""
+        },
+        {
+          "title": "Simultaneous amplification of dna and rna from single cells",
+          "link": "https://patents.google.com/patent/US20230366009A1/en",
+          "year": 2023,
+          "summary": ""
+        },
+        {
+          "title": "Simultaneous estimation of gene regulatory network structure and RNA kinetics from single cell gene expression",
+          "link": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10542544/",
+          "year": 2023,
+          "summary": ""
+        },
+        {
+          "title": "Single-cell transcriptome analysis in health and disease",
+          "link": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10883422/",
+          "year": 2023,
+          "summary": ""
+        },
+        {
+          "title": "Single-cell transcriptome analysis reveals a cellular immune response in freshwater dark sleeper (Odontobutis potamophila) after infection with Aeromonas veronii",
+          "link": "https://www.frontiersin.org/journals/physiology/articles/10.3389/fphys.2023.1201914/full",
+          "year": 2023,
+          "summary": ""
+        },
+        {
+          "title": "Spatial mapping of the total transcriptome by in situ polyadenylation",
+          "link": "https://www.nature.com/articles/s41587-022-01517-6",
+          "year": 2023,
+          "summary": ""
+        },
+        {
+          "title": "Spatial transcriptomics reveal markers of histopathological changes in Duchenne muscular dystrophy mouse models",
+          "link": "https://www.nature.com/articles/s41467-023-40555-9",
+          "year": 2023,
+          "summary": ""
+        },
+        {
+          "title": "Structured data abstractions and interpretable latent representations for single-cell multimodal genomics",
+          "link": "https://archiv.ub.uni-heidelberg.de/volltextserver/33298/",
+          "year": 2023,
+          "summary": ""
+        },
+        {
+          "title": "Studying stochastic systems biology of the cell with single-cell genomics data",
+          "link": "https://www.cell.com/cell-systems/fulltext/S2405-4712(23)00244-2",
+          "year": 2023,
+          "summary": ""
+        },
+        {
+          "title": "Systems immunology frameworks link multicellular immune perturbation phenotypes and setpoints to response outcomes",
+          "link": "https://www.repository.cam.ac.uk/items/9546ecb5-86d7-4632-ae0f-232f5fa3e470",
+          "year": 2023,
+          "summary": ""
+        },
+        {
+          "title": "Trajectory reconstruction identifies dysregulation of perinatal maturation programs in pluripotent stem cell-derived cardiomyocytes",
+          "link": "https://www.cell.com/cell-reports/fulltext/S2211-1247(23)00341-8",
+          "year": 2023,
+          "summary": ""
+        },
+        {
+          "title": "Transgene directed induction of a stem cell-derived human embryo model",
+          "link": "https://www.biorxiv.org/content/10.1101/2023.06.15.545082.abstract",
+          "year": 2023,
+          "summary": ""
+        },
+        {
+          "title": "Unambiguous detection of SARS-CoV-2 subgenomic mRNAs with single-cell RNA sequencing",
+          "link": "https://journals.asm.org/doi/abs/10.1128/spectrum.00776-23",
+          "year": 2023,
+          "summary": ""
+        },
+        {
+          "title": "Understanding and evaluating ambiguity in single-cell and single-nucleus RNA-sequencing",
+          "link": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9881993/",
+          "year": 2023,
+          "summary": ""
+        },
+        {
+          "title": "Universal preprocessing of single-cell genomics data",
+          "link": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10515959/",
+          "year": 2023,
+          "summary": ""
+        },
+        {
+          "title": "[B] Cell States and Transcriptional Programs of the Healthy Human Hearta",
+          "link": "https://search.proquest.com/openview/927f40cb5e4fd3f6d5724bb918780644/1?pq-origsite=gscholar&cbl=2026366&diss=y",
+          "year": 2022,
+          "summary": ""
+        },
+        {
+          "title": "[B] Foundations and Applications of Single-Cell RNA Sequencing",
+          "link": "https://search.proquest.com/openview/840d1691efc2b66751086b781c9cb376/1?pq-origsite=gscholar&cbl=18750&diss=y",
+          "year": 2022,
+          "summary": ""
+        },
+        {
+          "title": "[HTML] A genome-scale screen for synthetic drivers of T cell proliferation",
+          "link": "https://idp.nature.com/authorize/casa?redirect_uri=https://www.nature.com/articles/s41586-022-04494-7&casa_token=sOZfPtvqrWcAAAAA:8l0rWAnQtbiXCG23itMN2vYLlAq4rXMoNYGnRK_LJw5mZVNi7B81QIsF-KH-BRgTUhprlOt-AbF5dT_5",
+          "year": 2022,
+          "summary": ""
+        },
+        {
+          "title": "[HTML] Alevin-fry unlocks rapid, accurate and memory-frugal quantification of single-cell RNA-seq data",
+          "link": "https://idp.nature.com/authorize/casa?redirect_uri=https://www.nature.com/articles/s41592-022-01408-3&casa_token=nlhg6L3fjXcAAAAA:4rdXYy13tqp6eAtItGMC0edaHxVbHP7PQMCKM8sJ5TfQoVfIlbVRASzdJEowjSf8HHxWcYH7C6WI-7O3",
+          "year": 2022,
+          "summary": ""
+        },
+        {
+          "title": "[HTML] Alveolar basal cells differentiate towards secretory epithelial-and aberrant basaloid-like cells in vitro",
+          "link": "https://www.mdpi.com/2073-4409/11/11/1820",
+          "year": 2022,
+          "summary": ""
+        },
+        {
+          "title": "[HTML] Cascade Forest-based model for prediction of RNA velocity",
+          "link": "https://www.mdpi.com/1420-3049/27/22/7873",
+          "year": 2022,
+          "summary": ""
+        },
+        {
+          "title": "[HTML] Computational solutions for spatial transcriptomics",
+          "link": "https://www.sciencedirect.com/science/article/pii/S2001037022003786",
+          "year": 2022,
+          "summary": ""
+        },
+        {
+          "title": "[HTML] Epithelial GPR35 protects from Citrobacter rodentium infection by preserving goblet cells and mucosal barrier integrity",
+          "link": "https://www.sciencedirect.com/science/article/pii/S1933021922000666",
+          "year": 2022,
+          "summary": ""
+        },
+        {
+          "title": "[HTML] Induced human regulatory T cells express the glucagon-like peptide-1 receptor",
+          "link": "https://www.mdpi.com/2073-4409/11/16/2587",
+          "year": 2022,
+          "summary": ""
+        },
+        {
+          "title": "[HTML] MYRF: A new regulator of cardiac and early gonadal development—Insights from single cell RNA sequencing analysis",
+          "link": "https://www.mdpi.com/2077-0383/11/16/4858",
+          "year": 2022,
+          "summary": ""
+        },
+        {
+          "title": "[HTML] Recent advances in T-cell receptor repertoire analysis: bridging the gap with multimodal single-cell RNA sequencing",
+          "link": "https://www.sciencedirect.com/science/article/pii/S2667119022000015",
+          "year": 2022,
+          "summary": ""
+        },
+        {
+          "title": "[HTML] RNA velocity unraveled",
+          "link": "https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1010492&",
+          "year": 2022,
+          "summary": ""
+        },
+        {
+          "title": "[HTML] Schwann cell precursors represent a neural crest‐like state with biased multipotency",
+          "link": "https://link.springer.com/article/10.15252/embj.2021108780",
+          "year": 2022,
+          "summary": ""
+        },
+        {
+          "title": "[HTML] spliceJAC: transition genes and state‐specific gene regulation from single‐cell transcriptome data",
+          "link": "https://link.springer.com/article/10.15252/msb.202211176",
+          "year": 2022,
+          "summary": ""
+        },
+        {
+          "title": "[PDF] Chiral monoterpenes reveal forest emission mechanisms and drought responses",
+          "link": "https://freidok.uni-freiburg.de/files/233496/x1wptsVW3VtM2wki/s41586-022-05020-5.pdf",
+          "year": 2022,
+          "summary": ""
+        },
+        {
+          "title": "[PDF] FLOW DECOMPOSITION ALGORITHMS FOR MULTIASSEMBLY PROBLEMS",
+          "link": "https://scholarworks.montana.edu/bitstreams/0dd276a8-3400-4202-8b3c-654f59d59e94/download",
+          "year": 2022,
+          "summary": ""
+        },
+        {
+          "title": "[PDF] IRescue: uncertainty-aware quantification of transposable elements expression at single cell level",
+          "link": "https://scholar.archive.org/work/j3odkr43rjcv5lchl5oujkagbq/access/wayback/https://www.biorxiv.org/content/biorxiv/early/2022/12/20/2022.09.16.508229.full.pdf",
+          "year": 2022,
+          "summary": ""
+        },
+        {
+          "title": "[PDF] Monod: mechanistic analysis of single-cell RNA sequencing count data",
+          "link": "https://scholar.archive.org/work/4usmlfx5yvh7xf4xspvcvjbl4a/access/wayback/https://www.biorxiv.org/content/biorxiv/early/2022/06/12/2022.06.11.495771.full.pdf",
+          "year": 2022,
+          "summary": ""
+        },
+        {
+          "title": "A bifurcation concept for B-lymphoid/plasmacytoid dendritic cells with largely fluctuating transcriptome dynamics",
+          "link": "https://www.cell.com/cell-reports/fulltext/S2211-1247(22)01078-6",
+          "year": 2022,
+          "summary": ""
+        },
+        {
+          "title": "A functional cellular framework for sex and estrous cycle-dependent gene expression and behavior",
+          "link": "https://www.cell.com/cell/fulltext/S0092-8674(21)01494-X",
+          "year": 2022,
+          "summary": ""
+        },
+        {
+          "title": "A guide to trajectory inference and RNA velocity",
+          "link": "https://link.springer.com/protocol/10.1007/978-1-0716-2756-3_14",
+          "year": 2022,
+          "summary": ""
+        },
+        {
+          "title": "A mechanism for red coloration in vertebrates",
+          "link": "https://www.cell.com/current-biology/fulltext/S0960-9822(22)01290-8",
+          "year": 2022,
+          "summary": ""
+        },
+        {
+          "title": "Accurate quantification of single-cell and single-nucleus RNA-seq transcripts using distinguishing flanking k-mers",
+          "link": "https://www.biorxiv.org/content/10.1101/2022.12.02.518832.abstract",
+          "year": 2022,
+          "summary": ""
+        },
+        {
+          "title": "Amyloid-beta and tau pathologies act synergistically to induce novel disease stage-specific microglia subtypes",
+          "link": "https://link.springer.com/article/10.1186/s13024-022-00589-x",
+          "year": 2022,
+          "summary": ""
+        },
+        {
+          "title": "Brassinosteroid gene regulatory networks at cellular resolution",
+          "link": "https://www.biorxiv.org/content/10.1101/2022.09.16.508001.abstract",
+          "year": 2022,
+          "summary": ""
+        },
+        {
+          "title": "Broad misappropriation of developmental splicing profile by cancer in multiple organs",
+          "link": "https://www.nature.com/articles/s41467-022-35322-1",
+          "year": 2022,
+          "summary": ""
+        },
+        {
+          "title": "C5aR1 antagonism alters microglial polarization and mitigates disease progression in a mouse model of Alzheimer's disease",
+          "link": "https://link.springer.com/article/10.1186/s40478-022-01416-6",
+          "year": 2022,
+          "summary": ""
+        },
+        {
+          "title": "Cancer induces a stress ileopathy depending on β-adrenergic receptors and promoting dysbiosis that contributes to carcinogenesis",
+          "link": "https://aacrjournals.org/cancerdiscovery/article-abstract/12/4/1128/689617",
+          "year": 2022,
+          "summary": ""
+        },
+        {
+          "title": "CD8 memory precursor cell generation is a continuous process",
+          "link": "https://www.cell.com/iscience/fulltext/S2589-0042(22)01199-3",
+          "year": 2022,
+          "summary": ""
+        },
+        {
+          "title": "CIARA: a cluster-independent algorithm for the identification of markers of rare cell types from single-cell RNA seq data",
+          "link": "https://www.biorxiv.org/content/10.1101/2022.08.01.501965.abstract",
+          "year": 2022,
+          "summary": ""
+        },
+        {
+          "title": "Clonal expansion and epigenetic inheritance of long-lasting NK cell memory",
+          "link": "https://www.nature.com/articles/s41590-022-01327-7",
+          "year": 2022,
+          "summary": ""
+        },
+        {
+          "title": "Comparative analysis of common alignment tools for single-cell RNA sequencing",
+          "link": "https://academic.oup.com/gigascience/article-abstract/doi/10.1093/gigascience/giac001/6515741",
+          "year": 2022,
+          "summary": ""
+        },
+        {
+          "title": "Comprehensive benchmarking of CITE-seq versus DOGMA-seq single cell multimodal omics",
+          "link": "https://link.springer.com/article/10.1186/s13059-022-02698-8",
+          "year": 2022,
+          "summary": ""
+        },
+        {
+          "title": "Comprehensive generation, visualization, and reporting of quality control metrics for single-cell RNA sequencing data",
+          "link": "https://www.nature.com/articles/s41467-022-29212-9",
+          "year": 2022,
+          "summary": ""
+        },
+        {
+          "title": "Computational and Statistical Methods for Single-Cell RNA Sequencing Data",
+          "link": "https://link.springer.com/chapter/10.1007/978-3-662-65902-1_1",
+          "year": 2022,
+          "summary": ""
+        },
+        {
+          "title": "Data analysis guidelines for single-cell RNA-seq in biomedical studies and clinical applications",
+          "link": "https://link.springer.com/article/10.1186/s40779-022-00434-8",
+          "year": 2022,
+          "summary": ""
+        },
+        {
+          "title": "De-differentiation and Proliferation of Artery Endothelial Cells Drive Coronary Collateral Development",
+          "link": "https://www.biorxiv.org/content/10.1101/2022.07.27.501689.abstract",
+          "year": 2022,
+          "summary": ""
+        },
+        {
+          "title": "Depth normalization for single-cell genomics count data",
+          "link": "https://www.biorxiv.org/content/10.1101/2022.05.06.490859.abstract",
+          "year": 2022,
+          "summary": ""
+        },
+        {
+          "title": "Development and Application of Single-Cell Technologies to Study Clonal Evolution in Human Hematopoiesis",
+          "link": "https://search.proquest.com/openview/d9a04579bb81eada6e05b322e1b0afc9/1?pq-origsite=gscholar&cbl=18750&diss=y",
+          "year": 2022,
+          "summary": ""
+        },
+        {
+          "title": "Diverse partial reprogramming strategies restore youthful gene expression and transiently suppress cell identity",
+          "link": "https://www.cell.com/cell-systems/fulltext/S2405-4712(22)00223-X",
+          "year": 2022,
+          "summary": ""
+        },
+        {
+          "title": "DSAE-Impute: learning discriminative stacked autoencoders for imputing single-cell RNA-seq data",
+          "link": "https://www.benthamdirect.com/content/journals/cbio/10.2174/1574893617666220330151024",
+          "year": 2022,
+          "summary": ""
+        },
+        {
+          "title": "Dynamically upregulated mast cell CPA3 patterns in chronic obstructive pulmonary disease and idiopathic pulmonary fibrosis",
+          "link": "https://www.frontiersin.org/journals/immunology/articles/10.3389/fimmu.2022.924244/full",
+          "year": 2022,
+          "summary": ""
+        },
+        {
+          "title": "Dynast: Inclusive and efficient quantification of metabolically labeled transcripts in single cells",
+          "link": "https://dspace.mit.edu/handle/1721.1/147475",
+          "year": 2022,
+          "summary": ""
+        },
+        {
+          "title": "Effective Preprocessing of Single-Cell RNA-Seq for Unravelling Alzheimer's Disease Signatures",
+          "link": "https://link.springer.com/chapter/10.1007/978-3-031-31978-5_25",
+          "year": 2022,
+          "summary": ""
+        },
+        {
+          "title": "Evaluation of Swab-Seq as a scalable, sensitive assay for community surveillance of SARS-CoV-2 infection",
+          "link": "https://www.nature.com/articles/s41598-022-06901-5",
+          "year": 2022,
+          "summary": ""
+        },
+        {
+          "title": "Extensive heterogeneity of the HIV-1 infected CD4+ T-cell reservoir revealed by single-cell viral ASAPseq",
+          "link": "https://www.biorxiv.org/content/10.1101/2022.04.02.486753.abstract",
+          "year": 2022,
+          "summary": ""
+        },
+        {
+          "title": "Functional regulatory variants implicate distinct transcriptional networks in dementia",
+          "link": "https://www.science.org/doi/abs/10.1126/science.abi8654",
+          "year": 2022,
+          "summary": ""
+        },
+        {
+          "title": "High dimensional co-expression networks enable discovery of transcriptomic drivers in complex biological systems",
+          "link": "https://www.biorxiv.org/content/10.1101/2022.09.22.509094.abstract",
+          "year": 2022,
+          "summary": ""
+        },
+        {
+          "title": "IL-22 plays a dual role in the amniotic cavity: tissue injury and host defense against microbes in preterm labor",
+          "link": "https://academic.oup.com/jimmunol/article-abstract/208/7/1595/7924585",
+          "year": 2022,
+          "summary": ""
+        },
+        {
+          "title": "In situ polyadenylation enables spatial mapping of the total transcriptome",
+          "link": "https://www.biorxiv.org/content/10.1101/2022.04.20.488964.abstract",
+          "year": 2022,
+          "summary": ""
+        },
+        {
+          "title": "Insights into Systemic Responses to Amputation Injury in Axolotl Salamanders",
+          "link": "https://search.proquest.com/openview/e715163e26c4ec86f5f2a35cae4d60f9/1?pq-origsite=gscholar&cbl=18750&diss=y",
+          "year": 2022,
+          "summary": ""
+        },
+        {
+          "title": "Integrated Single-Cell Genotyping and Chromatin Accessibility Charts JAK2V617F Human Hematopoietic Differentiation",
+          "link": "https://www.biorxiv.org/content/10.1101/2022.05.11.491515.abstract",
+          "year": 2022,
+          "summary": ""
+        },
+        {
+          "title": "Integration of multimodal data in the developing tooth reveals candidate dental disease genes",
+          "link": "https://www.biorxiv.org/content/10.1101/2022.03.15.483501.abstract",
+          "year": 2022,
+          "summary": ""
+        },
+        {
+          "title": "Integration of multimodal data in the developing tooth reveals candidate regulatory loci driving human odontogenic phenotypes",
+          "link": "https://www.frontiersin.org/journals/dental-medicine/articles/10.3389/fdmed.2022.1009264/full",
+          "year": 2022,
+          "summary": ""
+        },
+        {
+          "title": "Integrative analysis of transcriptomics in human craniofacial development reveals novel candidate disease genes",
+          "link": "https://www.biorxiv.org/content/10.1101/2022.02.28.482338.abstract",
+          "year": 2022,
+          "summary": ""
+        },
+        {
+          "title": "Interpretable and tractable models of transcriptional noise for the rational design of single-molecule quantification experiments",
+          "link": "https://www.nature.com/articles/s41467-022-34857-7",
+          "year": 2022,
+          "summary": ""
+        },
+        {
+          "title": "IRescue: single cell uncertainty-aware quantification of transposable elements expression",
+          "link": "https://www.biorxiv.org/content/10.1101/2022.09.16.508229.abstract",
+          "year": 2022,
+          "summary": ""
+        },
+        {
+          "title": "Isoform-level quantification for single-cell RNA sequencing",
+          "link": "https://academic.oup.com/bioinformatics/article-abstract/38/5/1287/6448218",
+          "year": 2022,
+          "summary": ""
+        },
+        {
+          "title": "Joint Analysis of Transcriptome and Proteome Measurements in Single Cells with totalVI",
+          "link": "https://link.springer.com/protocol/10.1007/978-1-0716-2525-5_4",
+          "year": 2022,
+          "summary": ""
+        },
+        {
+          "title": "Joint profiling of gene expression and chromatin accessibility during amphioxus development at single-cell resolution",
+          "link": "https://www.cell.com/cell-reports/fulltext/S2211-1247(22)00765-3",
+          "year": 2022,
+          "summary": ""
+        },
+        {
+          "title": "Mammalian glial protrusion transcriptomes predict localization of Drosophila glial transcripts required for synaptic plasticity",
+          "link": "https://www.biorxiv.org/content/10.1101/2022.11.30.518536.abstract",
+          "year": 2022,
+          "summary": ""
+        },
+        {
+          "title": "Mapping and modeling macrophages in tuberculosis",
+          "link": "https://dspace.mit.edu/handle/1721.1/147899",
+          "year": 2022,
+          "summary": ""
+        },
+        {
+          "title": "Maternal-fetal immune responses in pregnant women infected with SARS-CoV-2",
+          "link": "https://www.nature.com/articles/s41467-021-27745-z",
+          "year": 2022,
+          "summary": ""
+        },
+        {
+          "title": "Molecular spikes: a gold standard for single-cell RNA counting",
+          "link": "https://www.nature.com/articles/s41592-022-01446-x",
+          "year": 2022,
+          "summary": ""
+        },
+        {
+          "title": "Multiregional single-cell proteogenomic analysis of ccRCC reveals cytokine drivers of intratumor spatial heterogeneity",
+          "link": "https://www.cell.com/cell-reports/fulltext/S2211-1247(22)00993-7",
+          "year": 2022,
+          "summary": ""
+        },
+        {
+          "title": "Normalizing and denoising protein expression data from droplet-based single cell profiling",
+          "link": "https://www.nature.com/articles/s41467-022-29356-8",
+          "year": 2022,
+          "summary": ""
+        },
+        {
+          "title": "ONECUT2 restricts Microfold cell numbers in the small intestine; a multi-omics study",
+          "link": "https://www.biorxiv.org/content/10.1101/2022.09.01.506202.abstract",
+          "year": 2022,
+          "summary": ""
+        },
+        {
+          "title": "Postmitotic accumulation of histone variant H3. 3 in new cortical neurons establishes neuronal chromatin, transcriptome, and identity",
+          "link": "https://www.pnas.org/doi/abs/10.1073/pnas.2116956119",
+          "year": 2022,
+          "summary": ""
+        },
+        {
+          "title": "Protocol for fast scRNA-seq raw data processing using scKB and non-arbitrary quality control with COPILOT",
+          "link": "https://www.cell.com/star-protocols/fulltext/S2666-1667(22)00609-8",
+          "year": 2022,
+          "summary": ""
+        },
+        {
+          "title": "Pseudoalignment facilitates assignment of error-prone Ultima Genomics reads",
+          "link": "https://www.biorxiv.org/content/10.1101/2022.06.04.494845.abstract",
+          "year": 2022,
+          "summary": ""
+        },
+        {
+          "title": "Pyro-Velocity: Probabilistic RNA Velocity inference from single-cell data",
+          "link": "https://www.biorxiv.org/content/10.1101/2022.09.12.507691.abstract",
+          "year": 2022,
+          "summary": ""
+        },
+        {
+          "title": "Pyro-Velocity: Probabilistic RNA Velocity inference from single-cell data",
+          "link": "https://www.researchsquare.com/article/rs-2059147/latest",
+          "year": 2022,
+          "summary": ""
+        },
+        {
+          "title": "Reconstruction of full-length scFv libraries with the extended range targeted sequencing method",
+          "link": "https://www.biorxiv.org/content/10.1101/2022.05.10.491248.abstract",
+          "year": 2022,
+          "summary": ""
+        },
+        {
+          "title": "Reliable and accurate gene expression quantification with subpopulation structure-aware constraints for single-cell RNA sequencing",
+          "link": "https://www.biorxiv.org/content/10.1101/2022.11.08.515740.abstract",
+          "year": 2022,
+          "summary": ""
+        },
+        {
+          "title": "SASCRiP: A Python workflow for preprocessing UMI count-based scRNA-seq data",
+          "link": "https://f1000research.com/articles/11-190",
+          "year": 2022,
+          "summary": ""
+        },
+        {
+          "title": "SC3s: efficient scaling of single cell consensus clustering to millions of cells",
+          "link": "https://link.springer.com/article/10.1186/s12859-022-05085-z",
+          "year": 2022,
+          "summary": ""
+        },
+        {
+          "title": "Scarf enables a highly memory-efficient analysis of large-scale single-cell genomics data",
+          "link": "https://www.nature.com/articles/s41467-022-32097-3",
+          "year": 2022,
+          "summary": ""
+        },
+        {
+          "title": "Single-cell analyses of axolotl forebrain organization, neurogenesis, and regeneration",
+          "link": "https://www.biorxiv.org/content/10.1101/2022.03.21.485045.abstract",
+          "year": 2022,
+          "summary": ""
+        },
+        {
+          "title": "Single-cell analyses of axolotl telencephalon organization, neurogenesis, and regeneration",
+          "link": "https://www.science.org/doi/abs/10.1126/science.abp9262",
+          "year": 2022,
+          "summary": ""
+        },
+        {
+          "title": "Single-cell analysis of early chick hypothalamic development reveals that hypothalamic cells are induced from prethalamic-like progenitors",
+          "link": "https://www.cell.com/cell-reports/fulltext/S2211-1247(21)01763-0",
+          "year": 2022,
+          "summary": ""
+        },
+        {
+          "title": "Single-cell analysis of plexiform neurofibromas: heterogeneity and tumor cell-of-origin",
+          "link": "https://repositori.upf.edu/items/e39fce67-d85a-4488-923d-0459c3b30f47",
+          "year": 2022,
+          "summary": ""
+        },
+        {
+          "title": "Single-cell analysis of the transcriptome and epigenome",
+          "link": "https://link.springer.com/protocol/10.1007/978-1-0716-1831-8_3",
+          "year": 2022,
+          "summary": ""
+        },
+        {
+          "title": "Single-cell antibody sequencing in atherosclerosis research",
+          "link": "https://link.springer.com/protocol/10.1007/978-1-0716-1924-7_46",
+          "year": 2022,
+          "summary": ""
+        },
+        {
+          "title": "Single-cell RNA profiling of Plasmodium vivax liver stages reveals parasite- and host- specific transcriptomic signatures and drug targets",
+          "link": "https://www.biorxiv.org/content/10.1101/2022.02.01.478648.abstract",
+          "year": 2022,
+          "summary": ""
+        },
+        {
+          "title": "Single-cell RNA profiling of Plasmodium vivax-infected hepatocytes reveals parasite- and host- specific transcriptomic signatures and therapeutic targets",
+          "link": "https://www.frontiersin.org/journals/cellular-and-infection-microbiology/articles/10.3389/fcimb.2022.986314/full",
+          "year": 2022,
+          "summary": ""
+        },
+        {
+          "title": "Single-nucleus RNA velocity reveals synaptic and cell-cycle dysregulations missed by gene expression in neuropathologic Alzheimer's disease",
+          "link": "https://www.medrxiv.org/content/10.1101/2022.10.31.22281759.abstract",
+          "year": 2022,
+          "summary": ""
+        },
+        {
+          "title": "Single-nucleus RNA-sequencing in pre-cellularization Drosophila melanogaster embryos",
+          "link": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0270471",
+          "year": 2022,
+          "summary": ""
+        },
+        {
+          "title": "Stability of SCRNA-Seq analysis workflows is susceptible to preprocessing and is mitigated by regularized or supervised approaches",
+          "link": "https://journals.sagepub.com/doi/abs/10.1177/11769343221123050",
+          "year": 2022,
+          "summary": ""
+        },
+        {
+          "title": "Systematic reconstruction of cellular trajectories across mouse embryogenesis",
+          "link": "https://www.nature.com/articles/s41588-022-01018-x",
+          "year": 2022,
+          "summary": ""
+        },
+        {
+          "title": "Targeting colonic macrophages improves glycemic control in high-fat diet-induced obesity",
+          "link": "https://www.nature.com/articles/s42003-022-03305-z",
+          "year": 2022,
+          "summary": ""
+        },
+        {
+          "title": "Th2 single-cell heterogeneity and clonal distribution at distant sites in helminth-infected mice",
+          "link": "https://elifesciences.org/articles/74183",
+          "year": 2022,
+          "summary": ""
+        },
+        {
+          "title": "The liver X receptor is selectively modulated to differentially alter female mammary metastasis-associated myeloid cells",
+          "link": "https://academic.oup.com/endo/article-abstract/163/7/bqac072/6586041",
+          "year": 2022,
+          "summary": ""
+        },
+        {
+          "title": "Thymic epithelial cells co-opt lineage-defining transcription factors to eliminate autoreactive T cells",
+          "link": "https://www.cell.com/cell/fulltext/S0092-8674(22)00649-3",
+          "year": 2022,
+          "summary": ""
+        },
+        {
+          "title": "Time-resolved single-cell RNA-seq using metabolic RNA labelling",
+          "link": "https://www.nature.com/articles/s43586-022-00157-z",
+          "year": 2022,
+          "summary": ""
+        },
+        {
+          "title": "Transient and delay chemical master equations",
+          "link": "https://www.biorxiv.org/content/10.1101/2022.10.17.512599.abstract",
+          "year": 2022,
+          "summary": ""
+        },
+        {
+          "title": "Triple-negative breast cancer metastasis involves complex epithelial-mesenchymal transition dynamics and requires vimentin",
+          "link": "https://www.science.org/doi/abs/10.1126/scitranslmed.abn7571",
+          "year": 2022,
+          "summary": ""
+        },
+        {
+          "title": "Uncovering the molecular architecture of Alzheimer's disease",
+          "link": "https://escholarship.org/uc/item/4435w86z",
+          "year": 2022,
+          "summary": ""
+        },
+        {
+          "title": "Understanding the transcriptional response to ER stress in Chinese hamster ovary cells using multiplexed single cell RNA-seq",
+          "link": "https://www.biorxiv.org/content/10.1101/2022.03.31.486542",
+          "year": 2022,
+          "summary": ""
+        },
+        {
+          "title": "[B] Exploring the regulation of gene expression in the early Drosophila embryo using genetics and single-nucleus RNA-sequencing",
+          "link": "https://search.proquest.com/openview/e6fac941428a36448c2d7052a12c4026/1?pq-origsite=gscholar&cbl=18750&diss=y",
+          "year": 2021,
+          "summary": ""
+        },
+        {
+          "title": "[B] Genotype-By-Environment Interactions in the Immune System",
+          "link": "https://search.proquest.com/openview/1c6fe66d28c3eb5243e21a4c3158db0a/1?pq-origsite=gscholar&cbl=18750&diss=y",
+          "year": 2021,
+          "summary": ""
+        },
+        {
+          "title": "[HTML] CellexalVR: A virtual reality platform to visualize and analyze single-cell omics data",
+          "link": "https://www.cell.com/iscience/fulltext/S2589-0042(21)01220-7?ref=ghost.weltfern.de",
+          "year": 2021,
+          "summary": ""
+        },
+        {
+          "title": "[HTML] Evaluating genetic causes of azoospermia: What can we learn from a complex cellular structure and single-cell transcriptomics of the human testis?",
+          "link": "https://idp.springer.com/authorize/casa?redirect_uri=https://link.springer.com/article/10.1007/s00439-020-02116-8&casa_token=1nUc_6OoY1EAAAAA:cThRWV1AVyoDNbOsNJQuZp7opiz1WGofp5R-xEwFjN1aDBynSuDyVn3r-cdP97lxeltm8iWIlcEkXlWr",
+          "year": 2021,
+          "summary": ""
+        },
+        {
+          "title": "[HTML] Pattern of Repetitive Element Transcription Segregate Cell Lineages during the Embryogenesis of Sea Urchin Strongylocentrotus purpuratus",
+          "link": "https://www.mdpi.com/2227-9059/9/11/1736",
+          "year": 2021,
+          "summary": ""
+        },
+        {
+          "title": "[HTML] Prioritization of cell types responsive to biological perturbations in single-cell data with Augur",
+          "link": "https://idp.nature.com/authorize/casa?redirect_uri=https://www.nature.com/articles/s41596-021-00561-x&casa_token=gNP_yuN9x4wAAAAA:hDiv-d2RNdHvZ3fu-UdM01iEUJb8khSyqfRnVK8X5QqNyHJU_WChfYr5tt9IwmgnxfnxIqtUPgv9VYlm",
+          "year": 2021,
+          "summary": ""
+        },
+        {
+          "title": "[HTML] Single-cell RNA sequencing procedures and data analysis",
+          "link": "https://www.ncbi.nlm.nih.gov/books/NBK569559/",
+          "year": 2021,
+          "summary": ""
+        },
+        {
+          "title": "[HTML] Updates on immunotherapy and immune landscape in renal clear cell carcinoma",
+          "link": "https://www.mdpi.com/2072-6694/13/22/5856",
+          "year": 2021,
+          "summary": ""
+        },
+        {
+          "title": "[PDF] Efficient pre-processing of Single-cell ATAC-seq data",
+          "link": "https://scholar.archive.org/work/jl3htjcq7bgyxm2nxsjc5fc5u4/access/wayback/https://www.biorxiv.org/content/biorxiv/early/2021/12/10/2021.12.08.471788.full.pdf",
+          "year": 2021,
+          "summary": ""
+        },
+        {
+          "title": "[PDF] Gene regulatory networks controlling differentiation, survival, and diversification of",
+          "link": "https://scholar.archive.org/work/gmfwcjawsbhapjzn775hbsx33i/access/wayback/https://escholarship.org/content/qt38x5q4hb/qt38x5q4hb.pdf?t=qox3j0",
+          "year": 2021,
+          "summary": ""
+        },
+        {
+          "title": "[PDF] SARS-CoV-2 mRNA vaccine elicits a potent adaptive immune response in the absence of IFN-mediated inflammation observed in COVID-19",
+          "link": "https://www.researchgate.net/profile/Sergei-Koralov/publication/351160872_Discrete_immune_response_signature_to_SARS-CoV-2_mRNA_vaccination_versus_infection/links/613b916311e9c168f2c29530/Discrete-immune-response-signature-to-SARS-CoV-2-mRNA-vaccination-versus-infection.pdf",
+          "year": 2021,
+          "summary": ""
+        },
+        {
+          "title": "[PDF] scONE-seq: A one-tube single-cell multi-omics method enables simultaneous dissection of molecular phenotype and genotype heterogeneity from frozen …",
+          "link": "https://assets-eu.researchsquare.com/files/rs-956200/v2/54f025e7-a828-4605-8ef8-fde1150c7c0e.pdf",
+          "year": 2021,
+          "summary": ""
+        },
+        {
+          "title": "A like-for-like comparison of lightweight-mapping pipelines for single-cell RNA-seq data pre-processing",
+          "link": "https://www.biorxiv.org/content/10.1101/2021.02.10.430656.abstract",
+          "year": 2021,
+          "summary": ""
+        },
+        {
+          "title": "A Modified SMART-Seq method for single-cell transcriptomic analysis of embryoid body differentiation",
+          "link": "https://link.springer.com/protocol/10.1007/7651_2021_435",
+          "year": 2021,
+          "summary": ""
+        },
+        {
+          "title": "An in vitro platform supports generation of human innate lymphoid cells from CD34+ hematopoietic progenitors that recapitulate ex vivo identity",
+          "link": "https://www.cell.com/immunity/fulltext/S1074-7613(21)00307-1",
+          "year": 2021,
+          "summary": ""
+        },
+        {
+          "title": "Applications of single-cell genomics and computational strategies to study common disease and population-level variation",
+          "link": "https://genome.cshlp.org/content/31/10/1728.short",
+          "year": 2021,
+          "summary": ""
+        },
+        {
+          "title": "Assessing the multimodal tradeoff",
+          "link": "https://www.biorxiv.org/content/10.1101/2021.12.08.471788.abstract",
+          "year": 2021,
+          "summary": ""
+        },
+        {
+          "title": "Benchmarking of lightweight-mapping based single-cell RNA-seq pre-processing",
+          "link": "https://www.biorxiv.org/content/10.1101/2021.01.25.428188.abstract",
+          "year": 2021,
+          "summary": ""
+        },
+        {
+          "title": "Benchmarking UMI-based single cell RNA-sequencing preprocessing workflows",
+          "link": "https://www.biorxiv.org/content/10.1101/2021.06.17.448895.abstract",
+          "year": 2021,
+          "summary": ""
+        },
+        {
+          "title": "Benchmarking UMI-based single-cell RNA-seq preprocessing workflows",
+          "link": "https://link.springer.com/article/10.1186/s13059-021-02552-3",
+          "year": 2021,
+          "summary": ""
+        },
+        {
+          "title": "Bioinformatics approach to spatially resolved transcriptomics",
+          "link": "https://portlandpress.com/emergtoplifesci/article-abstract/5/5/669/229489",
+          "year": 2021,
+          "summary": ""
+        },
+        {
+          "title": "Breast cancer endocrine therapy promotes weight gain with distinct adipose tissue effects in lean and obese female mice",
+          "link": "https://academic.oup.com/endo/article-abstract/162/11/bqab174/6354857",
+          "year": 2021,
+          "summary": ""
+        },
+        {
+          "title": "Building the mega single-cell transcriptome ocular meta-atlas",
+          "link": "https://academic.oup.com/gigascience/article-abstract/10/10/giab061/6396190",
+          "year": 2021,
+          "summary": ""
+        },
+        {
+          "title": "BUTTERFLY: addressing the pooled amplification paradox with unique molecular identifiers in single-cell RNA-seq",
+          "link": "https://link.springer.com/article/10.1186/s13059-021-02386-z",
+          "year": 2021,
+          "summary": ""
+        },
+        {
+          "title": "Cardiac progenitors auto-regulate second heart field cell fate via Wnt secretion",
+          "link": "https://www.biorxiv.org/content/10.1101/2021.01.31.428968.abstract",
+          "year": 2021,
+          "summary": ""
+        },
+        {
+          "title": "Cell-level metadata are indispensable for documenting single-cell sequencing datasets",
+          "link": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3001077",
+          "year": 2021,
+          "summary": ""
+        },
+        {
+          "title": "Choice of pre-processing pipeline influences clustering quality of scRNA-seq datasets",
+          "link": "https://link.springer.com/article/10.1186/s12864-021-07930-6",
+          "year": 2021,
+          "summary": ""
+        },
+        {
+          "title": "Compression of quantification uncertainty for scRNA-seq counts",
+          "link": "https://academic.oup.com/bioinformatics/article-abstract/37/12/1699/6104828",
+          "year": 2021,
+          "summary": ""
+        },
+        {
+          "title": "Democratising deep learning for microscopy with ZeroCostDL4Mic",
+          "link": "https://www.nature.com/articles/s41467-021-22518-0",
+          "year": 2021,
+          "summary": ""
+        },
+        {
+          "title": "Discovery of target genes and pathways of blood trait loci using pooled CRISPR screens and single cell RNA sequencing",
+          "link": "https://www.biorxiv.org/content/10.1101/2021.04.07.438882.abstract",
+          "year": 2021,
+          "summary": ""
+        },
+        {
+          "title": "Discrete immune response signature to SARS-CoV-2 mRNA vaccination versus infection",
+          "link": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3838993",
+          "year": 2021,
+          "summary": ""
+        },
+        {
+          "title": "Enhancer-associated H3K4 methylation safeguards in vitro germline competence",
+          "link": "https://www.nature.com/articles/s41467-021-26065-6",
+          "year": 2021,
+          "summary": ""
+        },
+        {
+          "title": "Evolutionary assembly of cooperating cell types in an animal chemical defense system",
+          "link": "https://www.cell.com/cell/fulltext/S0092-8674(21)01329-5",
+          "year": 2021,
+          "summary": ""
+        },
+        {
+          "title": "Extrathymic Aire-expressing cells support maternal-fetal tolerance",
+          "link": "https://www.science.org/doi/abs/10.1126/sciimmunol.abf1968",
+          "year": 2021,
+          "summary": ""
+        },
+        {
+          "title": "Gene regulatory networks controlling differentiation, survival, and diversification of hypothalamic Lhx6-expressing GABAergic neurons",
+          "link": "https://www.nature.com/articles/s42003-020-01616-7",
+          "year": 2021,
+          "summary": ""
+        },
+        {
+          "title": "Gene regulatory networks controlling temporal patterning, neurogenesis, and cell-fate specification in mammalian retina",
+          "link": "https://www.cell.com/cell-reports/fulltext/S2211-1247(21)01473-X",
+          "year": 2021,
+          "summary": ""
+        },
+        {
+          "title": "Highly accurate barcode and UMI error correction using dual nucleotide dimer blocks allows direct single-cell nanopore transcriptome sequencing",
+          "link": "https://www.biorxiv.org/content/10.1101/2021.01.18.427145.abstract",
+          "year": 2021,
+          "summary": ""
+        },
+        {
+          "title": "Identification of enamel knot gene signature within the developing mouse molar",
+          "link": "https://www.biorxiv.org/content/10.1101/2021.06.14.448115.abstract",
+          "year": 2021,
+          "summary": ""
+        },
+        {
+          "title": "Improving oligo-conjugated antibody signal in multimodal single-cell analysis",
+          "link": "https://elifesciences.org/articles/61973",
+          "year": 2021,
+          "summary": ""
+        },
+        {
+          "title": "Isoform cell-type specificity in the mouse primary motor cortex",
+          "link": "https://www.nature.com/articles/s41586-021-03969-3",
+          "year": 2021,
+          "summary": ""
+        },
+        {
+          "title": "Longitudinal profiling of respiratory and systemic immune responses reveals myeloid cell-driven lung inflammation in severe COVID-19",
+          "link": "https://www.cell.com/immunity/fulltext/S1074-7613(21)00117-5",
+          "year": 2021,
+          "summary": ""
+        },
+        {
+          "title": "Massively scaled-up testing for SARS-CoV-2 RNA via next-generation sequencing of pooled and barcoded nasal and saliva samples",
+          "link": "https://www.nature.com/articles/s41551-021-00754-5",
+          "year": 2021,
+          "summary": ""
+        },
+        {
+          "title": "mRNA COVID-19 vaccine elicits potent adaptive immune response without the persistent inflammation seen in SARS-CoV-2 infection",
+          "link": "https://www.medrxiv.org/content/10.1101/2021.04.20.21255677.abstract",
+          "year": 2021,
+          "summary": ""
+        },
+        {
+          "title": "Nanopore sequencing of single-cell transcriptomes with scCOLOR-seq",
+          "link": "https://www.nature.com/articles/s41587-021-00965-w",
+          "year": 2021,
+          "summary": ""
+        },
+        {
+          "title": "Partial reprogramming restores youthful gene expression through transient suppression of cell identity",
+          "link": "https://www.biorxiv.org/content/10.1101/2021.05.21.444556.abstract",
+          "year": 2021,
+          "summary": ""
+        },
+        {
+          "title": "Preprocessing choices affect RNA velocity results for droplet scRNA-seq data",
+          "link": "https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1008585",
+          "year": 2021,
+          "summary": ""
+        },
+        {
+          "title": "Quantification of alternative 3′ UTR isoforms from single cell RNA-seq data with scUTRquant",
+          "link": "https://www.biorxiv.org/content/10.1101/2021.11.22.469635",
+          "year": 2021,
+          "summary": ""
+        },
+        {
+          "title": "Reconstructing aspects of human embryogenesis with pluripotent stem cells",
+          "link": "https://www.nature.com/articles/s41467-021-25853-4",
+          "year": 2021,
+          "summary": ""
+        },
+        {
+          "title": "Resolving cellular systems by ultra-sensitive and economical single-cell transcriptome filtering",
+          "link": "https://www.cell.com/iscience/fulltext/S2589-0042(21)00115-2",
+          "year": 2021,
+          "summary": ""
+        },
+        {
+          "title": "Retinoic acid signaling is critical during the totipotency window in early mammalian development",
+          "link": "https://www.nature.com/articles/s41594-021-00590-w",
+          "year": 2021,
+          "summary": ""
+        },
+        {
+          "title": "Scarf: A toolkit for memory efficient analysis of large-scale single-cell genomics data",
+          "link": "https://www.biorxiv.org/content/10.1101/2021.05.02.441899.abstract",
+          "year": 2021,
+          "summary": ""
+        },
+        {
+          "title": "scRegulocity: Detection of local RNA velocity patterns in embeddings of single cell RNA-Seq data",
+          "link": "https://www.biorxiv.org/content/10.1101/2021.06.01.446674.abstract",
+          "year": 2021,
+          "summary": ""
+        },
+        {
+          "title": "scSNV: accurate dscRNA-seq SNV co-expression analysis using duplicate tag collapsing",
+          "link": "https://link.springer.com/article/10.1186/s13059-021-02364-5",
+          "year": 2021,
+          "summary": ""
+        },
+        {
+          "title": "Self-organization of human dorsal-ventral forebrain structures by light induced SHH",
+          "link": "https://www.nature.com/articles/s41467-021-26881-w",
+          "year": 2021,
+          "summary": ""
+        },
+        {
+          "title": "Self-organized stem cell-derived human lung buds with proximo-distal patterning and novel targets of SARS-CoV-2",
+          "link": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7805464/",
+          "year": 2021,
+          "summary": ""
+        },
+        {
+          "title": "Single-cell analysis of early chick hypothalamic development reveals that hypothalamic cells are induced from prethalamic-like progenitors",
+          "link": "https://www.biorxiv.org/content/10.1101/2021.04.09.438683.abstract",
+          "year": 2021,
+          "summary": ""
+        },
+        {
+          "title": "Single-cell and nucleus RNA-seq in a mouse model of AD reveal activation of distinct glial subpopulations in the presence of plaques and tangles",
+          "link": "https://www.biorxiv.org/content/10.1101/2021.09.29.462436.abstract",
+          "year": 2021,
+          "summary": ""
+        },
+        {
+          "title": "Single-cell transcriptome analysis in plants: advances and challenges",
+          "link": "https://www.cell.com/molecular-plant/fulltext/S1674-2052(20)30379-8",
+          "year": 2021,
+          "summary": ""
+        },
+        {
+          "title": "Specific splice junction detection in single cells with SICILIAN",
+          "link": "https://link.springer.com/article/10.1186/s13059-021-02434-8",
+          "year": 2021,
+          "summary": ""
+        },
+        {
+          "title": "STARsolo: accurate, fast and versatile mapping/quantification of single-cell and single-nucleus RNA-seq data",
+          "link": "https://www.biorxiv.org/content/10.1101/2021.05.05.442755.abstract",
+          "year": 2021,
+          "summary": ""
+        },
+        {
+          "title": "Swab-Seq: A high-throughput platform for massively scaled up SARS-CoV-2 testing",
+          "link": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7480060/",
+          "year": 2021,
+          "summary": ""
+        },
+        {
+          "title": "SwabSeq: A sequencing-based platform for high-throughput SARS-CoV-2 testing",
+          "link": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10810734/",
+          "year": 2021,
+          "summary": ""
+        },
+        {
+          "title": "Th2 single-cell heterogeneity and clonal interorgan distribution in helminth-infected mice",
+          "link": "https://www.biorxiv.org/content/10.1101/2021.10.03.462935.abstract",
+          "year": 2021,
+          "summary": ""
+        },
+        {
+          "title": "Transcriptome dynamics of neurodegeneration using single-cell and long-read approaches",
+          "link": "https://escholarship.org/uc/item/5hx90538",
+          "year": 2021,
+          "summary": ""
+        },
+        {
+          "title": "Transcriptome Dynamics of Neurodegeneration Using Single-Cell and Long-Read Approaches",
+          "link": "https://search.proquest.com/openview/4e7cf6902e8f1e4e1b40e4c44b022642/1?pq-origsite=gscholar&cbl=18750&diss=y",
+          "year": 2021,
+          "summary": ""
+        },
+        {
+          "title": "Transcriptomic entropy benchmarks stem cell-derived cardiomyocyte maturation against endogenous tissue at single cell level",
+          "link": "https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1009305",
+          "year": 2021,
+          "summary": ""
+        },
+        {
+          "title": "Transcriptomic profiling of control and thyroid-associated orbitopathy (TAO) orbital fat and TAO orbital fibroblasts undergoing adipogenesis",
+          "link": "https://iovs.arvojournals.org/article.aspx?articleid=2776481",
+          "year": 2021,
+          "summary": ""
+        },
+        {
+          "title": "Transcriptomic profiling of human orbital fat and differentiating orbital fibroblasts",
+          "link": "https://www.biorxiv.org/content/10.1101/2021.05.13.443857.abstract",
+          "year": 2021,
+          "summary": ""
+        },
+        {
+          "title": "Tumor-derived NKG2D ligand sMIC reprograms NK cells to an inflammatory phenotype through CBM signalosome activation",
+          "link": "https://www.nature.com/articles/s42003-021-02440-3",
+          "year": 2021,
+          "summary": ""
+        },
+        {
+          "title": "Whole-animal multiplexed single-cell RNA-seq reveals transcriptional shifts across Clytia medusa cell types",
+          "link": "https://www.science.org/doi/abs/10.1126/sciadv.abh1683",
+          "year": 2021,
+          "summary": ""
+        },
+        {
+          "title": "[HTML] Cumulus provides cloud-based data analysis for large-scale single-cell and single-nucleus RNA-seq",
+          "link": "https://idp.nature.com/authorize/casa?redirect_uri=https://www.nature.com/articles/s41592-020-0905-x&casa_token=pOm3c2dJXBUAAAAA:wR89AobQd56LLQYHOZmX24ySJP76naMMo5ZMyveMQYpYvoWo9EARj2wG0B4sYBOetqlMAZ9upmWE3Xq-",
+          "year": 2020,
+          "summary": ""
+        },
+        {
+          "title": "[HTML] Dermal adipocyte lipolysis and myofibroblast conversion are required for efficient skin repair",
+          "link": "https://www.cell.com/cell-stem-cell/fulltext/S1934-5909(20)30105-3?dgcid=raven_jbs_aip_email",
+          "year": 2020,
+          "summary": ""
+        },
+        {
+          "title": "[HTML] Generalizing RNA velocity to transient cell states through dynamical modeling",
+          "link": "https://idp.nature.com/authorize/casa?redirect_uri=https://www.nature.com/articles/s41587-020-0591-3&casa_token=PK1tSzHHB48AAAAA:cKAPJomhtYKl1oAFNbqZLLBK7BPS5VMnPLIiVuX5sjFuisWXz49vG79ckPbD7rhat0P9DQiproHyVkrw",
+          "year": 2020,
+          "summary": ""
+        },
+        {
+          "title": "[HTML] Highly multiplexed single-cell RNA-seq by DNA oligonucleotide tagging of cellular proteins",
+          "link": "https://idp.nature.com/authorize/casa?redirect_uri=https://www.nature.com/articles/s41587-019-0372-z&casa_token=uVW7KiePdtkAAAAA:N_dGUeXF9b9ckApgVb9WGRNvbekd0PnppWDiuaqUsgVGX0VnECVeemzof45vEmAmdDcZ65u84ufFQ0zy",
+          "year": 2020,
+          "summary": ""
+        },
+        {
+          "title": "[HTML] LSTrAP-Cloud: a user-friendly cloud computing pipeline to infer coexpression networks",
+          "link": "https://www.mdpi.com/2073-4425/11/4/428",
+          "year": 2020,
+          "summary": ""
+        },
+        {
+          "title": "[HTML] Orchestrating single-cell analysis with Bioconductor",
+          "link": "https://idp.nature.com/authorize/casa?redirect_uri=https://www.nature.com/articles/s41592-019-0654-x&casa_token=az6uibJ1TRMAAAAA:MnawCWQX1rpaXiRr1Uz0Ky9-98lDTENbsYkeBmSb5a691fs38YxdCem30rDS_x3llZhgcqS_hBTdlEzg",
+          "year": 2020,
+          "summary": ""
+        },
+        {
+          "title": "[HTML] Single-nucleus sequencing of an entire mammalian heart: cell type composition and velocity",
+          "link": "https://www.mdpi.com/2073-4409/9/2/318",
+          "year": 2020,
+          "summary": ""
+        },
+        {
+          "title": "[HTML] Tools for the analysis of high-dimensional single-cell RNA sequencing data",
+          "link": "https://idp.nature.com/authorize/casa?redirect_uri=https://www.nature.com/articles/s41581-020-0262-0&casa_token=lEf5PVf7vRYAAAAA:d2NUK8y_EkqzfaYEaQfHfuinuu2Jyv_SaTsYmvdVLMS6njt_m5-sokmY2ybojS3Ng0gGSiN3VbbYgTRf",
+          "year": 2020,
+          "summary": ""
+        },
+        {
+          "title": "[PDF] Enhancer priming by H3K4 methylation safeguards germline competence",
+          "link": "https://scholar.archive.org/work/wfyfkut3jvbmdprfcme3axfxpi/access/wayback/https://www.biorxiv.org/content/biorxiv/early/2020/07/07/2020.07.07.192427.full.pdf",
+          "year": 2020,
+          "summary": ""
+        },
+        {
+          "title": "[PDF] of genomic regions [version 2; peer review: 2 approved]",
+          "link": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7308914.2/pdf/f1000research-9-26547.pdf",
+          "year": 2020,
+          "summary": ""
+        },
+        {
+          "title": "A Bayesian framework for inter-cellular information sharing improves dscRNA-seq quantification",
+          "link": "https://academic.oup.com/bioinformatics/article-abstract/36/Supplement_1/i292/5870502",
+          "year": 2020,
+          "summary": ""
+        },
+        {
+          "title": "Addressing the pooled amplification paradox with unique molecular identifiers in single-cell RNA-seq",
+          "link": "https://www.biorxiv.org/content/10.1101/2020.07.06.188003.abstract",
+          "year": 2020,
+          "summary": ""
+        },
+        {
+          "title": "Analysis of respiratory and systemic immune responses in COVID-19 reveals mechanisms of disease pathogenesis",
+          "link": "https://www.medrxiv.org/content/10.1101/2020.10.15.20208041.abstract",
+          "year": 2020,
+          "summary": ""
+        },
+        {
+          "title": "Computational methods for single-cell RNA sequencing",
+          "link": "https://www.annualreviews.org/content/journals/10.1146/annurev-biodatasci-012220-100601",
+          "year": 2020,
+          "summary": ""
+        },
+        {
+          "title": "Decrease in ACE2 mRNA expression in aged mouse lung",
+          "link": "https://www.biorxiv.org/content/10.1101/2020.04.02.021451.abstract",
+          "year": 2020,
+          "summary": ""
+        },
+        {
+          "title": "Does the human placenta express the canonical cell entry mediators for SARS-CoV-2?",
+          "link": "https://elifesciences.org/articles/58716",
+          "year": 2020,
+          "summary": ""
+        },
+        {
+          "title": "Evaluation of STAR and Kallisto on single cell RNA-Seq data alignment",
+          "link": "https://academic.oup.com/g3journal/article-abstract/10/5/1775/6026272",
+          "year": 2020,
+          "summary": ""
+        },
+        {
+          "title": "Fast analysis of scATAC-seq data using a predefined set of genomic regions",
+          "link": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7308914/",
+          "year": 2020,
+          "summary": ""
+        },
+        {
+          "title": "Fast analysis of scATAC-seq data using a predefined set of genomic regions",
+          "link": "https://search.proquest.com/openview/ec7251dc627bd5f6e7efa6509bdc119c/1?pq-origsite=gscholar&cbl=2045578",
+          "year": 2020,
+          "summary": ""
+        },
+        {
+          "title": "Fast and accurate diagnostics from highly multiplexed sequencing assays",
+          "link": "https://www.medrxiv.org/content/10.1101/2020.05.13.20100131.abstract",
+          "year": 2020,
+          "summary": ""
+        },
+        {
+          "title": "Flexible mean field variational inference using mixtures of non-overlapping exponential families",
+          "link": "https://proceedings.neurips.cc/paper_files/paper/2020/hash/e3a54649aeec04cf1c13907bc6c5c8aa-Abstract.html",
+          "year": 2020,
+          "summary": ""
+        },
+        {
+          "title": "Incorporation of Quantification Uncertainty into Bulk and Single-Cell RNA-Seq Analysis",
+          "link": "https://search.proquest.com/openview/d95bc7484c7ae6d55184768d4cdae4fa/1?pq-origsite=gscholar&cbl=18750&diss=y",
+          "year": 2020,
+          "summary": ""
+        },
+        {
+          "title": "Integrated single-cell and bulk gene expression and ATAC-seq reveals heterogeneity and early changes in pathways associated with resistance to cetuximab in …",
+          "link": "https://www.nature.com/articles/s41416-020-0851-5",
+          "year": 2020,
+          "summary": ""
+        },
+        {
+          "title": "Intrinsic and extrinsic noise are distinguishable in a synthesis–export–degradation model of mRNA production",
+          "link": "https://www.biorxiv.org/content/10.1101/2020.09.25.312868.abstract",
+          "year": 2020,
+          "summary": ""
+        },
+        {
+          "title": "Lineage reversion drives WNT independence in intestinal cancer",
+          "link": "https://aacrjournals.org/cancerdiscovery/article-abstract/10/10/1590/6450",
+          "year": 2020,
+          "summary": ""
+        },
+        {
+          "title": "Single cell profiling of COVID-19 patients: an international data resource from multiple tissues",
+          "link": "https://www.medrxiv.org/content/10.1101/2020.11.20.20227355.abstract",
+          "year": 2020,
+          "summary": ""
+        },
+        {
+          "title": "Single cell RNA sequencing in atherosclerosis research",
+          "link": "https://www.ahajournals.org/doi/abs/10.1161/CIRCRESAHA.119.315940",
+          "year": 2020,
+          "summary": ""
+        },
+        {
+          "title": "Single‐Cell RNA Sequencing for Precision Oncology: Current State-of-Art: Seow et al.",
+          "link": "https://link.springer.com/article/10.1007/s41745-020-00178-1",
+          "year": 2020,
+          "summary": ""
+        },
+        {
+          "title": "Solo: doublet identification in single-cell RNA-seq via semi-supervised deep learning",
+          "link": "https://www.cell.com/cell-systems/fulltext/S2405-4712(20)30195-2",
+          "year": 2020,
+          "summary": ""
+        },
+        {
+          "title": "The cellular and molecular landscape of hypothalamic patterning and differentiation from embryonic to late postnatal development",
+          "link": "https://www.nature.com/articles/s41467-020-18231-z",
+          "year": 2020,
+          "summary": ""
+        },
+        {
+          "title": "Quantifying the tradeoff between sequencing depth and cell number in single-cell RNA-seq",
+          "link": "https://www.biorxiv.org/content/10.1101/762773.abstract",
+          "year": 2019,
+          "summary": ""
+        },
+        {
+          "title": "[HTML] Instituto de Investigaciones Biotecnológicas (IIBio), Universidad Nacional de San Martín (UNSAM), and Consejo Nacional de Investigaciones Científicas y …",
+          "link": "https://assets-eu.researchsquare.com/files/rs-7888056/v1/797cdc46c4cace8a55c8dc7c.html",
+          "year": null,
+          "summary": ""
+        },
+        {
+          "title": "[HTML] scRNASequest: an ecosystem of scRNA-seq analysis, visualization, and publishing",
+          "link": "https://www.academia.edu/download/102278837/s12864-023-09332-2.pdf",
+          "year": null,
+          "summary": ""
+        },
+        {
+          "title": "[PDF] A comprehensive mouse kidney atlas enables rare cell population characterization and robust marker discovery",
+          "link": "https://pure.tudelft.nl/ws/portalfiles/portal/153499319/1_s2.0_S2589004223009549_main.pdf",
+          "year": null,
+          "summary": ""
+        },
+        {
+          "title": "[PDF] A Massively Parallel CRISPR-Based Screening Platform for Modifiers of Neuronal",
+          "link": "https://www.biorxiv.org/content/10.1101/2024.02.28.582546.pdf",
+          "year": null,
+          "summary": ""
+        },
+        {
+          "title": "[PDF] Gene regulatory networks controlling temporal patterning, neurogenesis, and cell fate",
+          "link": "https://www.researchgate.net/profile/Seth-Blackshaw/publication/354224353_Gene_regulatory_networks_controlling_temporal_patterning_neurogenesis_and_cell_fate_specification_in_the_mammalian_retina/links/612d468338818c2eaf702a41/Gene-regulatory-networks-controlling-temporal-patterning-neurogenesis-and-cell-fate-specification-in-the-mammalian-retina.pdf",
+          "year": null,
+          "summary": ""
+        },
+        {
+          "title": "[PDF] Immune perturbations in human pancreas lymphatic tissues prior to and after type 1 diabetes onset",
+          "link": "https://www.biorxiv.org/content/10.1101/2024.04.23.590798.pdf",
+          "year": null,
+          "summary": ""
+        },
+        {
+          "title": "[PDF] King's Research Portal",
+          "link": "https://kclpure.kcl.ac.uk/ws/portalfiles/portal/337196273/1-s2.0-S0889159125001898-main.pdf",
+          "year": null,
+          "summary": ""
+        },
+        {
+          "title": "[PDF] Main supplemental file-Index",
+          "link": "https://aacr.figshare.com/articles/journal_contribution/Main_supplemental_file_from_Erythroid_Differentiation_Enhances_RNA_Mis-Splicing_in_i_SF3B1_i_-Mutant_Myelodysplastic_Syndromes_with_Ring_Sideroblasts/25002166/1/files/44059678.pdf",
+          "year": null,
+          "summary": ""
+        },
+        {
+          "title": "[PDF] Supplementary Materials Normalizing and denoising protein expression data from droplet-based single cell profiling",
+          "link": "https://api.repository.cam.ac.uk/server/api/core/bitstreams/73539aac-c0a1-4a42-a957-99d76f0a6f35/content",
+          "year": null,
+          "summary": ""
+        },
+        {
+          "title": "Characterizing Interneuron Expression in the Developing Olfactory Bulb",
+          "link": "https://www.natbytes.com/scRNA_Murine_Olfactory_Bulb/",
+          "year": null,
+          "summary": ""
+        },
+        {
+          "title": "Computational solutions for spatial transcriptomics",
+          "link": "https://www.utupub.fi/items/d1db9e10-5224-4b3c-aa21-b48cde169cdb",
+          "year": null,
+          "summary": ""
+        },
+        {
+          "title": "Democratising deep learning for microscopy with ZeroCostDL4Mic",
+          "link": "https://www.utupub.fi/items/eb119d01-39b5-4e19-87fa-c954aa08633e",
+          "year": null,
+          "summary": ""
+        },
+        {
+          "title": "Harvesting more reads from single-cell combinatorial barcoding data with scarecrow",
+          "link": "https://www.ovid.com/journals/bioinf/abstract/10.1093/bioinformatics/btag182~harvesting-more-reads-from-single-cell-combinatorial",
+          "year": null,
+          "summary": ""
+        },
+        {
+          "title": "SUPPLEMENTARY METHODS",
+          "link": "https://jitc.bmj.com/content/jitc/12/1/e007573/DC1/embed/inline-supplementary-material-1.pdf?download=true",
+          "year": null,
+          "summary": ""
+        },
+        {
+          "title": "Διερευνητική Ανάλυση Δεδομένων από τεχνικές single-cell RNA sequencing",
+          "link": "https://apothesis.eap.gr/archive/item/170983",
+          "year": null,
+          "summary": ""
+        }
+      ]
+    },
+    "a-multimodal-cell-census-and-atlas-of-the-mammalian-primary-motor-cortex": {
+      "cited_by": [
+        {
+          "title": "[HTML] A dynamic and multimodal framework to define microglial states",
+          "link": "https://idp.nature.com/authorize/casa?redirect_uri=https://www.nature.com/articles/s41593-025-01978-3&casa_token=MW8rH6H-lpUAAAAA:oLXJzDWvMebtMW1PUz7YodrXGBW4phD7NyWGa0Vqw5gqhROE8QyNX_CNNB5EKE6_Rm-mweby7Mg5Ehkw",
+          "year": 2025,
+          "summary": ""
+        },
+        {
+          "title": "[HTML] Advances and applications in single-cell and spatial genomics",
+          "link": "https://idp.springer.com/authorize/casa?redirect_uri=https://link.springer.com/article/10.1007/s11427-024-2770-x&casa_token=N9SkGBJibA0AAAAA:HxyXawzs6caN-l1d2eTQYk3pmTMChGlC_B7k1tqu1At0b__kH2oYFOrwQbpjYoBfggTDbNduJmQ1as7k",
+          "year": 2025,
+          "summary": ""
+        },
+        {
+          "title": "[HTML] Continuous cell-type diversification in mouse visual cortex development",
+          "link": "https://www.nature.com/articles/s41586-025-09644-1",
+          "year": 2025,
+          "summary": ""
+        },
+        {
+          "title": "[HTML] Integrated analysis of molecular atlases unveils modules driving developmental cell subtype specification in the human cortex",
+          "link": "https://www.nature.com/articles/s41593-025-01933-2",
+          "year": 2025,
+          "summary": ""
+        },
+        {
+          "title": "[HTML] Single-cell and spatial RNA sequencing identify divergent microenvironments and progression signatures in early-versus late-onset prostate cancer",
+          "link": "https://idp.nature.com/authorize/casa?redirect_uri=https://www.nature.com/articles/s43587-025-00842-0&casa_token=I5EvVabxRuEAAAAA:1w0QI46QvKrAR30aAaqWNlbgkpTNjqCusG25WaSMtBeMLuewktZjv9aGJh2piV3mbICr0LMTWGGiWWL4",
+          "year": 2025,
+          "summary": ""
+        },
+        {
+          "title": "[HTML] Single-nucleus chromatin accessibility profiling identifies cell types and functional variants contributing to major depression",
+          "link": "https://idp.nature.com/authorize/casa?redirect_uri=https://www.nature.com/articles/s41588-025-02249-4&casa_token=qAEMDet_qTUAAAAA:UzXVFD18gfNEIB29j0VP4qcnZa4gN3hoVbwsnadatt3kPMXTpyMWyY3DG2GuT2cej_86SUdt52kkBt8r",
+          "year": 2025,
+          "summary": ""
+        },
+        {
+          "title": "[HTML] The cell-type underpinnings of the human functional cortical connectome",
+          "link": "https://idp.nature.com/authorize/casa?redirect_uri=https://www.nature.com/articles/s41593-024-01812-2&casa_token=gGe8QgQSTvkAAAAA:BlBaFVktrd5CG2MTdEWEevxvBwwVSlpxseqVH_QcJfXxuXAFt4I7rnwf9daNEDJ44QNS8fVWkGkflCmd",
+          "year": 2025,
+          "summary": ""
+        },
+        {
+          "title": "A molecular brain atlas reveals cellular shifts during the repair phase of stroke",
+          "link": "https://link.springer.com/article/10.1186/s12974-025-03437-z",
+          "year": 2025,
+          "summary": ""
+        },
+        {
+          "title": "Brain organoids: Tools for understanding the uniqueness and individual variability of the human brain",
+          "link": "https://www.annualreviews.org/content/journals/10.1146/annurev-genom-111522-014009",
+          "year": 2025,
+          "summary": ""
+        },
+        {
+          "title": "Challenges and opportunities in the clinical translation of high-resolution spatial transcriptomics",
+          "link": "https://www.annualreviews.org/content/journals/10.1146/annurev-pathmechdis-111523-023417",
+          "year": 2025,
+          "summary": ""
+        },
+        {
+          "title": "Combined single-cell profiling of chromatin–transcriptome and splicing across brain cell types, regions and disease state",
+          "link": "https://www.nature.com/articles/s41587-025-02734-5",
+          "year": 2025,
+          "summary": ""
+        },
+        {
+          "title": "Community modularity structure promotes the evolution of phase clusters and chimeralike states",
+          "link": "https://journals.aps.org/pre/abstract/10.1103/PhysRevE.111.034311",
+          "year": 2025,
+          "summary": ""
+        },
+        {
+          "title": "Descending projection neurons in the primary sensorimotor cortex regulate neuropathic pain and locomotion in mice",
+          "link": "https://www.nature.com/articles/s41467-025-61164-8",
+          "year": 2025,
+          "summary": ""
+        },
+        {
+          "title": "[HTML] Brain endothelial GSDMD activation mediates inflammatory BBB breakdown",
+          "link": "https://idp.nature.com/authorize/casa?redirect_uri=https://www.nature.com/articles/s41586-024-07314-2&casa_token=VBYb6qTgeYAAAAAA:BnRjr--cnl5VZlo_6vAP-OyCWvIX3PBwjP5Kdl_gJwBszGQD1ASqrn5FtAwZ5efOZgZXobWalLmv8Ukg",
+          "year": 2024,
+          "summary": ""
+        },
+        {
+          "title": "[HTML] CellCharter reveals spatial cell niches associated with tissue remodeling and cell plasticity",
+          "link": "https://idp.nature.com/authorize/casa?redirect_uri=https://www.nature.com/articles/s41588-023-01588-4&casa_token=5HI6GPhrK-IAAAAA:1-EoqY4acdTRHvYsYNKPB2OMHxjr8JtxTbCrYMOq_6arYPyK9o4_LZv7NQofybOFZSkaon6Si19FDhlz",
+          "year": 2024,
+          "summary": ""
+        },
+        {
+          "title": "[HTML] Deep 3D histology powered by tissue clearing, omics and AI",
+          "link": "https://idp.nature.com/authorize/casa?redirect_uri=https://www.nature.com/articles/s41592-024-02327-1&casa_token=t8Lu6UAPtwkAAAAA:80EGWCH1pi31kpN1IF_1hoQVb4-bNiSbOF98RgUN-65fv-XK_EmmXa6N7f7d0Cuq0B8Ltr7trx0oMsaR",
+          "year": 2024,
+          "summary": ""
+        },
+        {
+          "title": "[HTML] Evolution of a novel adrenal cell type that promotes parental care",
+          "link": "https://idp.nature.com/authorize/casa?redirect_uri=https://www.nature.com/articles/s41586-024-07423-y&casa_token=XNKFltaJVjEAAAAA:Fii4_x7ZPvFGoyZ9mVQRIpVJw8J2kjin-60XqOTtvfe1IiJF0PEduVh-sOIeSYFj8cKUCiEf8EJnDsy0",
+          "year": 2024,
+          "summary": ""
+        },
+        {
+          "title": "[HTML] Integrated multimodal cell atlas of Alzheimer's disease",
+          "link": "https://www.nature.com/articles/s41593-024-01774-5",
+          "year": 2024,
+          "summary": ""
+        },
+        {
+          "title": "[HTML] Molecular and cellular mechanisms of selective vulnerability in neurodegenerative diseases",
+          "link": "https://idp.nature.com/authorize/casa?redirect_uri=https://www.nature.com/articles/s41583-024-00806-0&casa_token=8hdlNzgYhucAAAAA:uugaiRrwGHCgb7q4HzO9WYtu7WtHvvmmo0746FMc-b7y44aC7j_7JMiW3fioP44LlsqCvJq6rR1Qs-zZ",
+          "year": 2024,
+          "summary": ""
+        },
+        {
+          "title": "[HTML] Revealing gene function with statistical inference at single-cell resolution",
+          "link": "https://idp.nature.com/authorize/casa?redirect_uri=https://www.nature.com/articles/s41576-024-00750-w&casa_token=ltyv67VH54wAAAAA:fJzQ6WrEVZoqjr0KNWX5aI3W9bn6RINhsI58zoWkHcaF8yfA9p8i2TtXGcIKSwAoZ3n_H2lMqe4bznWk",
+          "year": 2024,
+          "summary": ""
+        },
+        {
+          "title": "[HTML] SEA-AD is a multimodal cellular atlas and resource for Alzheimer's disease",
+          "link": "https://idp.nature.com/authorize/casa?redirect_uri=https://www.nature.com/articles/s43587-024-00719-8&casa_token=1ewNdbY4kd0AAAAA:KBTaYjWABO2_iZ7DG-Kg4A9I3G7HbqEUBzfkeCd_Uycs9o6dNDam7jCUDO2fVjmJGWO_cJwKyll1P6fT",
+          "year": 2024,
+          "summary": ""
+        },
+        {
+          "title": "A brain cell atlas integrating single-cell transcriptomes across human brain regions",
+          "link": "https://www.nature.com/articles/s41591-024-03150-z",
+          "year": 2024,
+          "summary": ""
+        },
+        {
+          "title": "An honest reckoning with the amygdala and mental illness",
+          "link": "https://psychiatryonline.org/doi/abs/10.1176/appi.ajp.20240941",
+          "year": 2024,
+          "summary": ""
+        },
+        {
+          "title": "Cell-type-specific effects of age and sex on human cortical neurons",
+          "link": "https://www.cell.com/neuron/fulltext/S0896-6273(24)00360-X",
+          "year": 2024,
+          "summary": ""
+        },
+        {
+          "title": "Large-scale mechanistic models of brain circuits with biophysically and morphologically detailed neurons",
+          "link": "https://www.jneurosci.org/content/44/40/e1236242024.abstract",
+          "year": 2024,
+          "summary": ""
+        },
+        {
+          "title": "Molecular adaptations in response to exercise training are associated with tissue-specific transcriptomic and epigenomic signatures",
+          "link": "https://www.cell.com/cell-genomics/fulltext/S2666-979X(23)00247-1",
+          "year": 2024,
+          "summary": ""
+        },
+        {
+          "title": "Molecular cascades and cell type–specific signatures in ASD revealed by single-cell genomics",
+          "link": "https://www.science.org/doi/abs/10.1126/science.adh2602",
+          "year": 2024,
+          "summary": ""
+        },
+        {
+          "title": "Neuronal parts list and wiring diagram for a visual system",
+          "link": "https://www.nature.com/articles/s41586-024-07981-1",
+          "year": 2024,
+          "summary": ""
+        },
+        {
+          "title": "Neuronal wiring diagram of an adult brain",
+          "link": "https://www.nature.com/articles/s41586-024-07558-y",
+          "year": 2024,
+          "summary": ""
+        },
+        {
+          "title": "Reactive gliosis in traumatic brain injury: a comprehensive review",
+          "link": "https://www.frontiersin.org/journals/cellular-neuroscience/articles/10.3389/fncel.2024.1335849/full",
+          "year": 2024,
+          "summary": ""
+        },
+        {
+          "title": "scPair: Boosting single cell multimodal analysis by leveraging implicit feature selection and single cell atlases",
+          "link": "https://www.nature.com/articles/s41467-024-53971-2",
+          "year": 2024,
+          "summary": ""
+        },
+        {
+          "title": "Single-cell genomics and regulatory networks for 388 human brains",
+          "link": "https://www.science.org/doi/abs/10.1126/science.adi5199",
+          "year": 2024,
+          "summary": ""
+        },
+        {
+          "title": "Spatial and single-nucleus transcriptomic analysis of genetic and sporadic forms of Alzheimer's disease",
+          "link": "https://www.nature.com/articles/s41588-024-01961-x",
+          "year": 2024,
+          "summary": ""
+        },
+        {
+          "title": "The single-cell opioid responses in the context of HIV (SCORCH) consortium",
+          "link": "https://www.nature.com/articles/s41380-024-02620-7",
+          "year": 2024,
+          "summary": ""
+        },
+        {
+          "title": "Transcriptomic cell-type specificity of local cortical circuits",
+          "link": "https://www.cell.com/neuron/fulltext/S0896-6273(24)00651-2",
+          "year": 2024,
+          "summary": ""
+        },
+        {
+          "title": "Whole-brain annotation and multi-connectome cell typing of Drosophila",
+          "link": "https://www.nature.com/articles/s41586-024-07686-5",
+          "year": 2024,
+          "summary": ""
+        },
+        {
+          "title": "[HTML] A high-resolution transcriptomic and spatial atlas of cell types in the whole mouse brain",
+          "link": "https://www.nature.com/articles/s41586-023-06812-z",
+          "year": 2023,
+          "summary": ""
+        },
+        {
+          "title": "[HTML] Cell and circuit complexity of the external globus pallidus",
+          "link": "https://idp.nature.com/authorize/casa?redirect_uri=https://www.nature.com/articles/s41593-023-01368-7&casa_token=VQrztzkQWuMAAAAA:kFi_OT9Pvsr-FV6z615m2IOPZzAEhHZgFNjjh-O9Ccn8zJPRyMyQgQ4vZ1WjISi-2IMj-AOE8SyBqBy8",
+          "year": 2023,
+          "summary": ""
+        },
+        {
+          "title": "[HTML] Conserved and divergent gene regulatory programs of the mammalian neocortex",
+          "link": "https://www.nature.com/articles/s41586-023-06819-6",
+          "year": 2023,
+          "summary": ""
+        },
+        {
+          "title": "[HTML] Developmental mechanisms underlying the evolution of human cortical circuits",
+          "link": "https://idp.nature.com/authorize/casa?redirect_uri=https://www.nature.com/articles/s41583-023-00675-z&casa_token=CiRI1d5NtWEAAAAA:YJGnduamwoQBvduH0jcagkal6utbjY0JRQdkm1VKLw1gkfOXo5-cDyahZjVYarLKQSYLRJUn_-7Qm1MK",
+          "year": 2023,
+          "summary": ""
+        },
+        {
+          "title": "[HTML] Estudios de corte transversal. Un diseño de investigación a considerar en ciencias morfológicas",
+          "link": "https://www.scielo.cl/scielo.php?pid=S0717-95022023000100146&script=sci_arttext&tlng=en",
+          "year": 2023,
+          "summary": ""
+        },
+        {
+          "title": "[HTML] Multimodal charting of molecular and functional cell states via in situ electro-sequencing",
+          "link": "https://www.cell.com/cell/fulltext/S0092-8674(23)00286-6?uuid=uuid%3A51eddbdd-5fc2-42b2-8823-2b26da3da457",
+          "year": 2023,
+          "summary": ""
+        },
+        {
+          "title": "[HTML] The brain is not mental! coupling neuronal and immune cellular processing in human organisms",
+          "link": "https://www.frontiersin.org/journals/integrative-neuroscience/articles/10.3389/fnint.2023.1057622/full?ref=quillette.com",
+          "year": 2023,
+          "summary": ""
+        },
+        {
+          "title": "A cellular resolution atlas of Broca's area",
+          "link": "https://www.science.org/doi/abs/10.1126/sciadv.adg3844",
+          "year": 2023,
+          "summary": ""
+        },
+        {
+          "title": "A comparative atlas of single-cell chromatin accessibility in the human brain",
+          "link": "https://www.science.org/doi/abs/10.1126/science.adf7044",
+          "year": 2023,
+          "summary": ""
+        },
+        {
+          "title": "A guide to the BRAIN Initiative Cell Census Network data ecosystem",
+          "link": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3002133",
+          "year": 2023,
+          "summary": ""
+        },
+        {
+          "title": "Adult hippocampal neurogenesis in Alzheimer's disease: A roadmap to clinical relevance",
+          "link": "https://www.cell.com/cell-stem-cell/fulltext/S1934-5909(23)00002-4",
+          "year": 2023,
+          "summary": ""
+        },
+        {
+          "title": "Atlas of the aging mouse brain reveals white matter as vulnerable foci",
+          "link": "https://www.cell.com/cell/fulltext/S0092-8674(23)00805-X",
+          "year": 2023,
+          "summary": ""
+        },
+        {
+          "title": "Cortical somatostatin interneuron subtypes form cell-type-specific circuits",
+          "link": "https://www.cell.com/neuron/fulltext/S0896-6273(23)00435-X",
+          "year": 2023,
+          "summary": ""
+        },
+        {
+          "title": "Deep self-learning enables fast, high-fidelity isotropic resolution restoration for volumetric fluorescence microscopy",
+          "link": "https://www.nature.com/articles/s41377-023-01230-2",
+          "year": 2023,
+          "summary": ""
+        },
+        {
+          "title": "Interindividual variation in human cortical cell type abundance and expression",
+          "link": "https://www.science.org/doi/abs/10.1126/science.adf2359",
+          "year": 2023,
+          "summary": ""
+        },
+        {
+          "title": "Merged magnetic resonance and light sheet microscopy of the whole mouse brain",
+          "link": "https://www.pnas.org/doi/abs/10.1073/pnas.2218617120",
+          "year": 2023,
+          "summary": ""
+        },
+        {
+          "title": "Molecularly defined and spatially resolved cell atlas of the whole mouse brain",
+          "link": "https://www.nature.com/articles/s41586-023-06808-9",
+          "year": 2023,
+          "summary": ""
+        },
+        {
+          "title": "Neurodevelopmental disorders, like cancer, are connected to impaired chromatin remodelers, PI3K/mTOR, and PAK1-regulated MAPK",
+          "link": "https://link.springer.com/article/10.1007/s12551-023-01054-9",
+          "year": 2023,
+          "summary": ""
+        },
+        {
+          "title": "Pyramidal cell types drive functionally distinct cortical activity patterns during decision-making",
+          "link": "https://www.nature.com/articles/s41593-022-01245-9",
+          "year": 2023,
+          "summary": ""
+        },
+        {
+          "title": "SCENIC+: single-cell multiomic inference of enhancers and gene regulatory networks",
+          "link": "https://www.nature.com/articles/s41592-023-01938-4",
+          "year": 2023,
+          "summary": ""
+        },
+        {
+          "title": "Single-cell analysis of chromatin accessibility in the adult mouse brain",
+          "link": "https://www.nature.com/articles/s41586-023-06824-9",
+          "year": 2023,
+          "summary": ""
+        },
+        {
+          "title": "Single-cell and spatial transcriptomics: deciphering brain complexity in health and disease",
+          "link": "https://www.nature.com/articles/s41582-023-00809-y",
+          "year": 2023,
+          "summary": ""
+        },
+        {
+          "title": "Spatial transcriptomics in neuroscience",
+          "link": "https://www.nature.com/articles/s12276-023-01093-y",
+          "year": 2023,
+          "summary": ""
+        },
+        {
+          "title": "Spatial transcriptomics reveals the distinct organization of mouse prefrontal cortex and neuronal subtypes regulating chronic pain",
+          "link": "https://www.nature.com/articles/s41593-023-01455-9",
+          "year": 2023,
+          "summary": ""
+        },
+        {
+          "title": "Spatial transcriptomics: technical aspects of recent developments and their applications in neuroscience and cancer research",
+          "link": "https://advanced.onlinelibrary.wiley.com/doi/abs/10.1002/advs.202206939",
+          "year": 2023,
+          "summary": ""
+        },
+        {
+          "title": "The proteomic landscape of synaptic diversity across brain regions and cell types",
+          "link": "https://www.cell.com/cell/fulltext/S0092-8674(23)01082-6",
+          "year": 2023,
+          "summary": ""
+        },
+        {
+          "title": "Transcriptomic cytoarchitecture reveals principles of human neocortex organization",
+          "link": "https://www.science.org/doi/abs/10.1126/science.adf6812",
+          "year": 2023,
+          "summary": ""
+        },
+        {
+          "title": "Whole-brain annotation and multi-connectome cell typing quantifies circuit stereotypy in Drosophila",
+          "link": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10327018/",
+          "year": 2023,
+          "summary": ""
+        },
+        {
+          "title": "[HTML] A transcriptomic axis predicts state modulation of cortical interneurons",
+          "link": "https://www.nature.com/articles/s41586-022-04915-7",
+          "year": 2022,
+          "summary": ""
+        },
+        {
+          "title": "[HTML] Computational solutions for spatial transcriptomics",
+          "link": "https://www.sciencedirect.com/science/article/pii/S2001037022003786",
+          "year": 2022,
+          "summary": ""
+        },
+        {
+          "title": "[HTML] Disconnecting multicellular networks in brain tumours",
+          "link": "https://idp.nature.com/authorize/casa?redirect_uri=https://www.nature.com/articles/s41568-022-00475-0&casa_token=ot_jbfyuCDgAAAAA:nxdQNtxVFabVa4_9Hwsy8eIdez5t2sUe8vbXYOecNcARyMen2Ul0JKKBcoWy52Jk9Duxm8BItcREG1ql",
+          "year": 2022,
+          "summary": ""
+        },
+        {
+          "title": "[HTML] Multiregion neuronal activity: the forest and the trees",
+          "link": "https://idp.nature.com/authorize/casa?redirect_uri=https://www.nature.com/articles/s41583-022-00634-0&casa_token=B9pZyFGFPH4AAAAA:XSfTARIDmf7Pe6w3rPJuEvptD2wm6cBRDD-QqDk4DW13pji63b_j6TCyahAMaJHDFUbk7oWuHcsv0E6z",
+          "year": 2022,
+          "summary": ""
+        },
+        {
+          "title": "[HTML] Networking brainstem and basal ganglia circuits for movement",
+          "link": "https://idp.nature.com/authorize/casa?redirect_uri=https://www.nature.com/articles/s41583-022-00581-w&casa_token=_LYvpYisqPEAAAAA:oOK8ZGfbbcGY8RnA6LVRU_8BPsd0utMM5Hjd6DGqFkWujwTe6WE78Vtqh9NXVAjVfvE86npzCWA0HLBe",
+          "year": 2022,
+          "summary": ""
+        },
+        {
+          "title": "[HTML] Programmable RNA sensing for cell monitoring and manipulation",
+          "link": "https://idp.nature.com/authorize/casa?redirect_uri=https://www.nature.com/articles/s41586-022-05280-1&casa_token=gQ4ptQ-XgxQAAAAA:SIxBAzY4Hoi6sJdQMIXFOuJoL8C0r46__nAFn2g3CuOorhjzR9mBZlIGKGrqSTbjKIXsjdiWRc41BpUY",
+          "year": 2022,
+          "summary": ""
+        },
+        {
+          "title": "[HTML] The emerging landscape of spatial profiling technologies",
+          "link": "https://idp.nature.com/authorize/casa?redirect_uri=https://www.nature.com/articles/s41576-022-00515-3&casa_token=nTUAoZdLK0sAAAAA:9BcsJBF4ub_xbNzTgVsASA4GvY1o2dKdQij-i0j-tHperJA38ilm0sQ1WDHI2SVRBZbg7wnsKKsbYQCe",
+          "year": 2022,
+          "summary": ""
+        },
+        {
+          "title": "[HTML] Trans-Seq maps a selective mammalian retinotectal synapse instructed by Nephronectin",
+          "link": "https://idp.nature.com/authorize/casa?redirect_uri=https://www.nature.com/articles/s41593-022-01068-8&casa_token=jF65MDvPQWoAAAAA:_5DcJlFO8esdTSuxT-koIn464o5_vVX6hH4QpAMg_VurnHO4zNhm98itYlx6Naf8k6jgg2Be93YrCYLo",
+          "year": 2022,
+          "summary": ""
+        },
+        {
+          "title": "[HTML] Vision-dependent specification of cell types and function in the developing cortex",
+          "link": "https://www.cell.com/cell/fulltext/S0092-8674(21)01485-9?uuid=uuid%3A49ff7c54-4f26-4813-99f2-000fcf96c36c",
+          "year": 2022,
+          "summary": ""
+        },
+        {
+          "title": "Identification of visual cortex cell types and species differences using single-cell RNA sequencing",
+          "link": "https://www.nature.com/articles/s41467-022-34590-1",
+          "year": 2022,
+          "summary": ""
+        },
+        {
+          "title": "Museum of spatial transcriptomics",
+          "link": "https://www.nature.com/articles/s41592-022-01409-2",
+          "year": 2022,
+          "summary": ""
+        },
+        {
+          "title": "Reference-free cell type deconvolution of multi-cellular pixel-resolution spatially resolved transcriptomics data",
+          "link": "https://www.nature.com/articles/s41467-022-30033-z",
+          "year": 2022,
+          "summary": ""
+        },
+        {
+          "title": "Spatial-ID: a cell typing method for spatially resolved transcriptomics via transfer learning and spatial embedding",
+          "link": "https://www.nature.com/articles/s41467-022-35288-0",
+          "year": 2022,
+          "summary": ""
+        },
+        {
+          "title": "Unified classification of mouse retinal ganglion cells using function, morphology, and gene expression",
+          "link": "https://www.cell.com/cell-reports/fulltext/S2211-1247(22)00834-8",
+          "year": 2022,
+          "summary": ""
+        },
+        {
+          "title": "Upper cortical layer–driven network impairment in schizophrenia",
+          "link": "https://www.science.org/doi/abs/10.1126/sciadv.abn8367",
+          "year": 2022,
+          "summary": ""
+        },
+        {
+          "title": "Visualizing anatomically registered data with brainrender",
+          "link": "https://elifesciences.org/articles/65751",
+          "year": 2021,
+          "summary": ""
+        }
+      ]
+    },
+    "a-transcriptomic-and-epigenomic-cell-atlas-of-the-mouse-primary-motor-cortex": {
+      "cited_by": []
+    },
+    "massively-scaled-up-testing-for-sars-cov-2-rna-via-next-generation-sequencing-of-pooled-and-barcoded-nasal-and-saliva-samples": {
+      "cited_by": []
+    },
+    "isoform-cell-type-specificity-in-the-mouse-primary-motor-cortex": {
+      "cited_by": []
+    },
+    "principles-of-open-source-bioinstrumentation-applied-to-the-poseidon-syringe-pump-system": {
+      "cited_by": []
+    },
+    "normalization-of-single-cell-rna-seq-counts-by-log-x-1-or-log-1-x": {
+      "cited_by": []
+    },
+    "kallisto-bustools-and-kb-python-for-quantifying-bulk-single-cell-and-single-nucleus-rna-seq": {
+      "cited_by": []
+    },
+    "voyager-exploratory-single-cell-genomics-data-analysis-with-geospatial-statistics": {
+      "cited_by": []
+    },
+    "algorithms-for-a-commons-cell-atlas": {
+      "cited_by": []
+    },
+    "science-should-be-machine-readable": {
+      "cited_by": []
+    },
+    "universal-preprocessing-of-single-cell-genomics-data": {
+      "cited_by": []
+    },
+    "determining-gene-specificity-from-multivariate-single-cell-rna-sequencing-data": {
+      "cited_by": []
+    },
+    "verifying-llm-extracted-text-with-token-alignment": {
+      "cited_by": []
+    },
+    "single-nucleus-analysis-of-human-white-adipose-tissue-reveals-adipocyte-subsets-with-distinct-metabolic-profiles": {
+      "cited_by": []
     }
   }
 }

@@ -132,6 +132,20 @@
         "name": "Nature"
       }
     ],
+    "versions": [
+      {
+        "title": "Deciphering the impact of genomic variation on function",
+        "url": "https://doi.org/10.1038/s41586-024-07510-0",
+        "date": "2024-09-05",
+        "name": "Nature"
+      },
+      {
+        "title": "The impact of genomic variation on function (IGVF) consortium",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10402186/",
+        "date": "2023-07-24",
+        "name": "arXiv"
+      }
+    ],
     "summary": "The IGVF Consortium describes approaches and resources for understanding how genomic variation affects molecular and cellular function."
   },
   {
@@ -219,6 +233,26 @@
         "name": "bioRxiv"
       }
     ],
+    "versions": [
+      {
+        "title": "Characterization of spatial homogeneous regions in tissues with concordex",
+        "url": "https://www.biorxiv.org/content/10.1101/2023.06.28.546949v3",
+        "date": "2025-06-19",
+        "name": "bioRxiv v3"
+      },
+      {
+        "title": "Quantitative assessment of single-cell RNA-seq clustering with CONCORDEX",
+        "url": "https://www.biorxiv.org/content/10.1101/2023.06.28.546949v2?versioned=true",
+        "date": "2024-07-18",
+        "name": "bioRxiv v2"
+      },
+      {
+        "title": "Quantitative assessment of single-cell RNA-seq clustering with CONCORDEX",
+        "url": "https://www.biorxiv.org/content/10.1101/2023.06.28.546949v1?versioned=true",
+        "date": "2023-06-30",
+        "name": "bioRxiv v1"
+      }
+    ],
     "summary": "Spatial omics data can contain regions of tissue with distinct molecular organization. This work extends the concordex framework to characterize spatially homogeneous regions in tissues by measuring neighborhood concordance in spatial genomics data."
   },
   {
@@ -266,6 +300,32 @@
         "doi": "https://doi.org/10.1101/2022.05.06.490859",
         "date": "2022-05-06",
         "name": "bioRxiv"
+      }
+    ],
+    "versions": [
+      {
+        "title": "Normalization for sampled count data",
+        "url": "https://www.biorxiv.org/content/10.1101/2022.05.06.490859v4",
+        "date": "2026-06-22",
+        "name": "bioRxiv v4"
+      },
+      {
+        "title": "Depth normalization for single-cell genomics count data",
+        "url": "https://www.biorxiv.org/content/10.1101/2022.05.06.490859v3?versioned=true",
+        "date": "2026-06-10",
+        "name": "bioRxiv v3"
+      },
+      {
+        "title": "Depth normalization for single-cell genomics count data",
+        "url": "https://www.biorxiv.org/content/10.1101/2022.05.06.490859v2?versioned=true",
+        "date": "2026-06-07",
+        "name": "bioRxiv v2"
+      },
+      {
+        "title": "Depth normalization for single-cell genomics count data",
+        "url": "https://www.biorxiv.org/content/10.1101/2022.05.06.490859v1?versioned=true",
+        "date": "2022-05-06",
+        "name": "bioRxiv v1"
       }
     ],
     "summary": "Single-cell count data normalization is a requisite for accurate interpretation of analysis results. However, a menagerie of methods has created confusion in the field, and there is disagreement about what methods to use in practice. We benchmarked widely used methods for normalizing scRNAseq data on 526 datasets in order to understand their performance and limits. We found tradeoffs between effective depth-normalization, variance stabilization, and monotonicity. We also found that the proportional fitting (PF) transformation followed by log(1 + X) can benefit from an additional PF with minimal loss to variance stabilization."
@@ -403,6 +463,26 @@
         "doi": "https://doi.org/10.1038/s41598-023-42035-y",
         "date": "2023-09-08",
         "name": "Correction"
+      }
+    ],
+    "versions": [
+      {
+        "title": "Author Correction: Principles of open source bioinstrumentation applied to the poseidon syringe pump system",
+        "url": "https://doi.org/10.1038/s41598-023-42035-y",
+        "date": "2023-09-08",
+        "name": "Correction"
+      },
+      {
+        "title": "Principles of open source bioinstrumentation applied to the poseidon syringe pump system",
+        "url": "https://doi.org/10.1038/s41598-019-48815-9",
+        "date": "2019-08-27",
+        "name": "Scientific Reports"
+      },
+      {
+        "title": "Design principles for open source bioinstrumentation: the poseidon syringe pump system as an example",
+        "url": "https://doi.org/10.1101/623199",
+        "date": "2019-05-03",
+        "name": "bioRxiv"
       }
     ],
     "summary": "Instrumentation to perform single-cell RNA-sequencing experiments is costly and limits the scale of experimentation. To address this, we have developed an open-source syringe pump and microscope system called poseidon. The system of three syringe pumps and microscope costs less than $400, and can be assembled in under an hour. Importantly, poseidon reduces costs of experimentation by up to 25x while demonstrating similar accuracy and precision to commercial alternatives."

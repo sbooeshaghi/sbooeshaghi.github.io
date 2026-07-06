@@ -61,6 +61,16 @@ function doiLink(doi) {
   return `https://doi.org/${doiFromURL(doi)}`;
 }
 
+function publicationVersions(publication) {
+  return [...(publication.versions || publication.links || [])].sort((a, b) =>
+    String(b.date).localeCompare(String(a.date))
+  );
+}
+
+function versionHref(version) {
+  return version.url || version.doi || "";
+}
+
 function fallbackBibTeX(link, publication, index) {
   const key = `${slugify(publication.title).replace(/-/g, "_")}_${index + 1}`;
   return [
@@ -173,16 +183,29 @@ function bibTeXCopyScript() {
 }
 
 function renderLinks(publication) {
-  return publication.links
-    .map((link) => {
+  return publicationVersions(publication)
+    .map((version, versionIndex) => {
+      const detail = [version.name, version.date].filter(Boolean).join(" · ");
+
       return `
-        <a class="publication-link" href="${escapeHTML(
-          link.doi
-        )}" target="_blank" rel="noopener">
-          <span>${escapeHTML(link.name)}</span>
-          <time datetime="${escapeHTML(link.date)}">${escapeHTML(
-        link.date
-      )}</time>
+        <a
+          class="publication-version-link${
+            versionIndex === 0 ? " is-current" : ""
+          }"
+          href="${escapeHTML(versionHref(version))}"
+          target="_blank"
+          rel="noopener"
+        >
+          <span class="publication-version-title">${escapeHTML(
+            version.title || publication.title
+          )}</span>
+          ${
+            detail
+              ? `<span class="publication-version-detail">${escapeHTML(
+                  detail
+                )}</span>`
+              : ""
+          }
         </a>`;
     })
     .join("");
@@ -355,8 +378,11 @@ function renderPage(publication) {
     </nav>
     <article class="work-page">
       <h1>${title}</h1>
-      <div class="publication-links work-links" aria-label="Work links">
-        ${renderLinks(publication)}
+      <div class="publication-versions work-versions" aria-label="Work versions">
+        <span class="publication-versions-label">Versions</span>
+        <div class="publication-version-cards">
+          ${renderLinks(publication)}
+        </div>
       </div>
 
       <section>

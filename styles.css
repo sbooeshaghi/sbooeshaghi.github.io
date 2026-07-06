@@ -328,6 +328,65 @@ span[style*="width"] {
   border-bottom-color: red;
 }
 
+.publication-versions {
+  margin-top: 0.65rem;
+}
+
+.publication-versions-label {
+  display: block;
+  margin-bottom: 0.35rem;
+  color: #666;
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.publication-version-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(14rem, 100%), 1fr));
+  gap: 0.45rem;
+}
+
+.publication-version-link {
+  display: flex;
+  flex-direction: column;
+  gap: 0.22rem;
+  min-width: 0;
+  padding: 0.5rem 0.6rem;
+  color: #222;
+  text-decoration: none;
+  background: #fff;
+  border: 1px solid #d8d8d8;
+  border-radius: 6px;
+}
+
+.publication-version-link.is-current {
+  background: #f7f7f7;
+  border-color: #777;
+}
+
+.publication-version-link:hover {
+  border-bottom-color: red;
+  border-color: red;
+}
+
+.publication-version-link:hover .publication-version-title {
+  color: red;
+}
+
+.publication-version-title {
+  color: #0645ad;
+  font-size: 0.82rem;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.publication-version-detail {
+  color: #666;
+  font-size: 0.74rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
 .publication-meta {
   display: grid;
   gap: 0.1rem;
@@ -360,6 +419,14 @@ span[style*="width"] {
 
 .work-links {
   margin: 0 0 1.25rem;
+}
+
+.work-versions {
+  margin: 0 0 1.35rem;
+}
+
+.work-versions .publication-version-cards {
+  grid-template-columns: repeat(auto-fit, minmax(min(18rem, 100%), 1fr));
 }
 
 .authors-section h2 {

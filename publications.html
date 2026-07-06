@@ -76,11 +76,22 @@
         );
       }
 
+      function publicationVersions(publication) {
+        return [...(publication.versions || publication.links || [])].sort(
+          (a, b) => String(b.date).localeCompare(String(a.date))
+        );
+      }
+
+      function versionHref(version) {
+        return version.url || version.doi || "";
+      }
+
       function formatPublication(publication, citedByData) {
         const summary = publication.summary.trim();
         const wordCount = summary.split(/\s+/).length;
         const pageHref = `works/${slugify(publication.title)}.html`;
         const citationCount = citationCountFor(publication, citedByData);
+        const versions = publicationVersions(publication);
 
         return `
           <li class="publication-item">
@@ -90,24 +101,41 @@
                   pageHref
                 )}">${escapeHTML(publication.title)}</a>
               </h2>
-              <div class="publication-links" aria-label="Work links">
-                ${publication.links
-                  .map((link) => {
-                    return `
+              <div class="publication-versions" aria-label="Work versions">
+                <span class="publication-versions-label">Versions</span>
+                <div class="publication-version-cards">
+                  ${versions
+                    .map((version, versionIndex) => {
+                      const detail = [
+                        version.name,
+                        version.date ? formatDate(version.date) : "",
+                      ]
+                        .filter(Boolean)
+                        .join(" · ");
+                      return `
                       <a
-                        class="publication-link"
-                        href="${escapeHTML(link.doi)}"
+                        class="publication-version-link${
+                          versionIndex === 0 ? " is-current" : ""
+                        }"
+                        href="${escapeHTML(versionHref(version))}"
                         target="_blank"
                         rel="noopener"
                       >
-                        <span>${escapeHTML(link.name)}</span>
-                        <time datetime="${escapeHTML(link.date)}">${formatDate(
-                      link.date
-                    )}</time>
+                        <span class="publication-version-title">${escapeHTML(
+                          version.title || publication.title
+                        )}</span>
+                        ${
+                          detail
+                            ? `<span class="publication-version-detail">${escapeHTML(
+                                detail
+                              )}</span>`
+                            : ""
+                        }
                       </a>
                     `;
-                  })
-                  .join("")}
+                    })
+                    .join("")}
+                </div>
               </div>
               <div class="publication-meta">
                 <span class="publication-citation-count">Citations: ${citationCount}</span>

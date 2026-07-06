@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Scholar Cited-By Export",
+  "version": "0.1.0",
+  "description": "Export Google Scholar profile works and cited-by rows as small JSON files.",
+  "permissions": [],
+  "content_scripts": [
+    {
+      "matches": ["https://scholar.google.com/*"],
+      "js": ["content.js"],
+      "css": ["styles.css"],
+      "run_at": "document_idle"
+    }
+  ]
+}
+
