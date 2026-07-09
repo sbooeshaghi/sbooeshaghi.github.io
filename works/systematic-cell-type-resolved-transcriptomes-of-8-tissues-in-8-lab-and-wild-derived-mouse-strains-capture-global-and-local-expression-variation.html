@@ -17,77 +17,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="This study profiles cell-type-resolved transcriptomes across multiple tissues and mouse strains to characterize how expression varies globally and locally across genetic backgrounds." />
+    <meta name="description" content="Genetic diversity shapes physiology through cell-type-specific programs, so resolving expression variation at cellular resolution is essential for connecting genotype to disease. Bulk tissue profiles and limited strain panels can obscure where strain and sex effects concentrate. The Cell Genomics resource maps eight Collaborative Cross founder strains across eight tissue groups, showing that genotype-driven and disease-relevant signatures localize to particular cell types." />
     <link rel="stylesheet" href="../styles.css" />
-    
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        document.querySelectorAll(".copy-bibtex-button").forEach((button) => {
-          button.addEventListener("click", async () => {
-            const box = button.closest(".bibtex-box");
-            const code = box ? box.querySelector("code") : null;
-            const bibtex = code ? code.textContent : "";
-            const previousText = button.textContent;
-            const markStatus = (text) => {
-              button.textContent = text;
-              window.setTimeout(() => {
-                button.textContent = previousText;
-              }, 1200);
-            };
-            const copyWithSelection = () => {
-              const textarea = document.createElement("textarea");
-              textarea.value = bibtex;
-              textarea.setAttribute("readonly", "");
-              textarea.style.position = "fixed";
-              textarea.style.left = "0";
-              textarea.style.top = "0";
-              textarea.style.width = "1px";
-              textarea.style.height = "1px";
-              textarea.style.opacity = "0";
-              textarea.style.pointerEvents = "none";
-              document.body.appendChild(textarea);
-              textarea.focus({ preventScroll: true });
-              textarea.select();
-              textarea.setSelectionRange(0, textarea.value.length);
-              const copied = document.execCommand("copy");
-              textarea.remove();
-              return copied;
-            };
-
-            try {
-              if (navigator.clipboard && navigator.clipboard.writeText) {
-                await navigator.clipboard.writeText(bibtex);
-                markStatus("Copied");
-                return;
-              }
-
-              if (copyWithSelection()) {
-                markStatus("Copied");
-                return;
-              }
-            } catch {
-              let copied = false;
-
-              try {
-                copied = copyWithSelection();
-              } catch {
-                copied = false;
-              }
-
-              if (copied) {
-                markStatus("Copied");
-                return;
-              }
-            }
-
-            markStatus("Copy failed");
-          });
-        });
-      });
-    </script>
     <title>Systematic cell-type resolved transcriptomes of 8 tissues in 8 lab and wild-derived mouse strains capture global and local expression variation | Works | Sina Booeshaghi</title>
   </head>
-  <body>
+  <body class="work-detail-page">
     <nav class="breadcrumb" aria-label="Breadcrumb">
       <a href="../index.html">Home</a>
       <span aria-hidden="true">/</span>
@@ -95,241 +29,71 @@
       <span aria-hidden="true">/</span>
       <span class="breadcrumb-current" title="Systematic cell-type resolved transcriptomes of 8 tissues in 8 lab and wild-derived mouse strains capture global and local expression variation">Systematic cell-type resolved transcriptomes of 8 tissues in 8 l...</span>
     </nav>
-    <article class="work-page">
-      <h1>Systematic cell-type resolved transcriptomes of 8 tissues in 8 lab and wild-derived mouse strains capture global and local expression variation</h1>
-      <div class="publication-versions work-versions" aria-label="Work versions">
-        <span class="publication-versions-label">Versions</span>
-        <div class="publication-version-cards">
-          
-        <a
-          class="publication-version-link is-current"
-          href="https://doi.org/10.1016/j.xgen.2025.101108"
-          target="_blank"
-          rel="noopener"
-        >
-          <span class="publication-version-title">Systematic cell-type resolved transcriptomes of 8 tissues in 8 lab and wild-derived mouse strains capture global and local expression variation</span>
-          <span class="publication-version-detail">Cell Genomics · 2026-04</span>
-        </a>
-        <a
-          class="publication-version-link"
-          href="https://doi.org/10.1101/2025.04.21.649844"
-          target="_blank"
-          rel="noopener"
-        >
-          <span class="publication-version-title">Systematic cell-type resolved transcriptomes of 8 tissues in 8 lab and wild-derived mouse strains capture global and local expression variation</span>
-          <span class="publication-version-detail">bioRxiv · 2025-04-24</span>
-        </a>
+    <article class="work-page study-graph-page">
+      <section class="study-focus" aria-label="Selected work">
+        <div>
+          <h1>Systematic cell-type resolved transcriptomes of 8 tissues in 8 lab and wild-derived mouse strains capture global and local expression variation</h1>
+          <p>Genetic diversity shapes physiology through cell-type-specific programs, so resolving expression variation at cellular resolution is essential for connecting genotype to disease. Bulk tissue profiles and limited strain panels can obscure where strain and sex effects concentrate. The Cell Genomics resource maps eight Collaborative Cross founder strains across eight tissue groups, showing that genotype-driven and disease-relevant signatures localize to particular cell types.</p>
         </div>
-      </div>
-
-      <section>
-        <h2>Summary</h2>
-        <p>This study profiles cell-type-resolved transcriptomes across multiple tissues and mouse strains to characterize how expression varies globally and locally across genetic backgrounds.</p>
+        <dl class="study-stats">
+          <div>
+            <dt>Citations</dt>
+            <dd>10</dd>
+          </div>
+          <div>
+            <dt>Relations</dt>
+            <dd>32</dd>
+          </div>
+        </dl>
       </section>
 
       
-      <section
-        class="authors-section"
-        data-author-version-count="2"
-      >
-        <h2>Authors</h2>
-        
-        <section
-          class="author-version"
-          data-author-count="26"
-        >
-          <h3>
-            <a href="https://doi.org/10.1016/j.xgen.2025.101108" target="_blank" rel="noopener">Cell Genomics</a>
-            <time datetime="2026-04">2026-04</time>
-          </h3>
-          <ul class="author-list">
-            
-            <li><a href="https://orcid.org/0000-0003-2273-0189" target="_blank" rel="noopener" title="ORCID">Elisabeth Rebboah</a></li>
-            <li><a href="https://orcid.org/0000-0003-2044-9297" target="_blank" rel="noopener" title="ORCID">Ryan Weber</a></li>
-            <li><a href="https://orcid.org/0009-0005-1330-9183" target="_blank" rel="noopener" title="ORCID">Elnaz Abdollahzadeh</a></li>
-            <li><a href="https://orcid.org/0000-0003-3300-0114" target="_blank" rel="noopener" title="ORCID">Nikhila Swarna</a></li>
-            <li><a href="https://orcid.org/0000-0002-8359-6705" target="_blank" rel="noopener" title="ORCID">Delaney K. Sullivan</a></li>
-            <li><a href="https://orcid.org/0000-0002-4928-5532" target="_blank" rel="noopener" title="ORCID">Diane Trout</a></li>
-            <li><a href="https://orcid.org/0000-0002-9240-0102" target="_blank" rel="noopener" title="ORCID">Fairlie Reese</a></li>
-            <li><a href="https://orcid.org/0000-0002-6190-9723" target="_blank" rel="noopener" title="ORCID">Heidi Yahan Liang</a></li>
-            <li><a href="https://orcid.org/0000-0002-2612-2554" target="_blank" rel="noopener" title="ORCID">Ghassan Filimban</a></li>
-            <li>Parvin Mahdipoor</li>
-            <li><a href="https://orcid.org/0009-0009-1860-7269" target="_blank" rel="noopener" title="ORCID">Margaret Duffield</a></li>
-            <li><a href="https://orcid.org/0009-0004-9176-2154" target="_blank" rel="noopener" title="ORCID">Romina Mojaverzargar</a></li>
-            <li><a href="https://orcid.org/0009-0001-6677-9921" target="_blank" rel="noopener" title="ORCID">Erisa Taghizadeh</a></li>
-            <li><a href="https://orcid.org/0009-0001-9222-0793" target="_blank" rel="noopener" title="ORCID">Negar Fattahi</a></li>
-            <li><a href="https://orcid.org/0009-0000-1846-2332" target="_blank" rel="noopener" title="ORCID">Negar Mojgani</a></li>
-            <li><a href="https://orcid.org/0009-0007-5669-8320" target="_blank" rel="noopener" title="ORCID">Haoran Zhang</a></li>
-            <li><a href="https://orcid.org/0000-0001-8725-0376" target="_blank" rel="noopener" title="ORCID">Rebekah K. Loving</a></li>
-            <li><a href="https://orcid.org/0000-0002-8977-7224" target="_blank" rel="noopener" title="ORCID">Maria Carilli</a></li>
-            <li><a href="https://orcid.org/0000-0002-6442-4502" target="_blank" rel="noopener" title="ORCID">A. Sina Booeshaghi</a></li>
-            <li><a href="https://orcid.org/0000-0002-8577-4763" target="_blank" rel="noopener" title="ORCID">Shimako Kawauchi</a></li>
-            <li><a href="https://orcid.org/0000-0002-4710-0047" target="_blank" rel="noopener" title="ORCID">Ingileif B. Hallgrímsdóttir</a></li>
-            <li><a href="https://orcid.org/0000-0003-3253-611X" target="_blank" rel="noopener" title="ORCID">Brian A. Williams</a></li>
-            <li><a href="https://orcid.org/0000-0001-7598-9501" target="_blank" rel="noopener" title="ORCID">Grant R. MacGregor</a></li>
-            <li><a href="https://orcid.org/0000-0002-9164-6231" target="_blank" rel="noopener" title="ORCID">Lior Pachter</a></li>
-            <li><a href="https://orcid.org/0000-0003-3235-8130" target="_blank" rel="noopener" title="ORCID">Barbara J. Wold</a></li>
-            <li><a href="https://orcid.org/0000-0002-4259-6362" target="_blank" rel="noopener" title="ORCID">Ali Mortazavi</a></li>
-          </ul>
-        </section>
-        <section
-          class="author-version"
-          data-author-count="26"
-        >
-          <h3>
-            <a href="https://doi.org/10.1101/2025.04.21.649844" target="_blank" rel="noopener">bioRxiv</a>
-            <time datetime="2025-04-24">2025-04-24</time>
-          </h3>
-          <ul class="author-list">
-            
-            <li><a href="https://orcid.org/0000-0003-2273-0189" target="_blank" rel="noopener" title="ORCID">Elisabeth Rebboah</a></li>
-            <li><a href="https://orcid.org/0000-0003-2044-9297" target="_blank" rel="noopener" title="ORCID">Ryan Weber</a></li>
-            <li><a href="https://orcid.org/0009-0005-1330-9183" target="_blank" rel="noopener" title="ORCID">Elnaz Abdollahzadeh</a></li>
-            <li><a href="https://orcid.org/0000-0003-3300-0114" target="_blank" rel="noopener" title="ORCID">Nikhila Swarna</a></li>
-            <li><a href="https://orcid.org/0000-0002-8359-6705" target="_blank" rel="noopener" title="ORCID">Delaney K. Sullivan</a></li>
-            <li><a href="https://orcid.org/0000-0002-4928-5532" target="_blank" rel="noopener" title="ORCID">Diane Trout</a></li>
-            <li><a href="https://orcid.org/0000-0002-9240-0102" target="_blank" rel="noopener" title="ORCID">Fairlie Reese</a></li>
-            <li><a href="https://orcid.org/0000-0002-6190-9723" target="_blank" rel="noopener" title="ORCID">Heidi Yahan Liang</a></li>
-            <li><a href="https://orcid.org/0000-0002-2612-2554" target="_blank" rel="noopener" title="ORCID">Ghassan Filimban</a></li>
-            <li>Parvin Mahdipoor</li>
-            <li><a href="https://orcid.org/0009-0009-1860-7269" target="_blank" rel="noopener" title="ORCID">Margaret Duffield</a></li>
-            <li><a href="https://orcid.org/0009-0004-9176-2154" target="_blank" rel="noopener" title="ORCID">Romina Mojaverzargar</a></li>
-            <li><a href="https://orcid.org/0009-0001-6677-9921" target="_blank" rel="noopener" title="ORCID">Erisa Taghizadeh</a></li>
-            <li><a href="https://orcid.org/0009-0001-9222-0793" target="_blank" rel="noopener" title="ORCID">Negar Fattahi</a></li>
-            <li><a href="https://orcid.org/0009-0000-1846-2332" target="_blank" rel="noopener" title="ORCID">Negar Mojgani</a></li>
-            <li><a href="https://orcid.org/0009-0007-5669-8320" target="_blank" rel="noopener" title="ORCID">Haoran Zhang</a></li>
-            <li><a href="https://orcid.org/0000-0001-8725-0376" target="_blank" rel="noopener" title="ORCID">Rebekah K. Loving</a></li>
-            <li><a href="https://orcid.org/0000-0002-8977-7224" target="_blank" rel="noopener" title="ORCID">Maria Carilli</a></li>
-            <li><a href="https://orcid.org/0000-0002-6442-4502" target="_blank" rel="noopener" title="ORCID">A. Sina Booeshaghi</a></li>
-            <li><a href="https://orcid.org/0000-0002-8577-4763" target="_blank" rel="noopener" title="ORCID">Shimako Kawauchi</a></li>
-            <li><a href="https://orcid.org/0000-0002-4710-0047" target="_blank" rel="noopener" title="ORCID">Ingileif B. Hallgrímsdóttir</a></li>
-            <li><a href="https://orcid.org/0000-0003-3253-611X" target="_blank" rel="noopener" title="ORCID">Brian A. Williams</a></li>
-            <li><a href="https://orcid.org/0000-0001-7598-9501" target="_blank" rel="noopener" title="ORCID">Grant R. MacGregor</a></li>
-            <li><a href="https://orcid.org/0000-0002-9164-6231" target="_blank" rel="noopener" title="ORCID">Lior Pachter</a></li>
-            <li><a href="https://orcid.org/0000-0003-3235-8130" target="_blank" rel="noopener" title="ORCID">Barbara J. Wold</a></li>
-            <li><a href="https://orcid.org/0000-0002-4259-6362" target="_blank" rel="noopener" title="ORCID">Ali Mortazavi</a></li>
-          </ul>
-        </section>
-      </section>
-
-      <section>
-        <h2>BibTeX</h2>
-        
-        <section class="bibtex-entry">
-          <h3>Cell Genomics</h3>
-          <div class="bibtex-box">
-            <button
-              class="copy-bibtex-button"
-              type="button"
-              aria-label="Copy BibTeX for Cell Genomics"
-            >
-              Copy BibTeX
-            </button>
-            <pre><code>@article{Rebboah_2026,
-  TITLE     = {Systematic cell-type resolved transcriptomes of 8 tissues in 8 lab and wild-derived mouse strains capture global and local expression variation},
-  VOLUME    = {6},
-  ISSN      = {2666-979X},
-  URL       = {http://dx.doi.org/10.1016/j.xgen.2025.101108},
-  DOI       = {10.1016/j.xgen.2025.101108},
-  NUMBER    = {4},
-  JOURNAL   = {Cell Genomics},
-  PUBLISHER = {Elsevier BV},
-  AUTHOR    = {Rebboah, Elisabeth and Weber, Ryan and Abdollahzadeh, Elnaz and Swarna, Nikhila and Sullivan, Delaney K. and Trout, Diane and Reese, Fairlie and Liang, Heidi Yahan and Filimban, Ghassan and Mahdipoor, Parvin and Duffield, Margaret and Mojaverzargar, Romina and Taghizadeh, Erisa and Fattahi, Negar and Mojgani, Negar and Zhang, Haoran and Loving, Rebekah K. and Carilli, Maria and Booeshaghi, A. Sina and Kawauchi, Shimako and Hallgrímsdóttir, Ingileif B. and Williams, Brian A. and MacGregor, Grant R. and Pachter, Lior and Wold, Barbara J. and Mortazavi, Ali},
-  YEAR      = {2026},
-  PAGES     = {101108}
-}</code></pre>
+      <section class="relationship-inspector" aria-label="Indexed relations" data-work-relations>
+        <section class="relationship-list-panel" aria-label="Relations">
+          <div class="study-section-heading">
+            <h2>Relations</h2>
           </div>
+          <div
+            class="relation-tabs"
+            role="tablist"
+            aria-label="Relation types"
+            data-relation-tabs
+          ></div>
+          <div class="reason-list" data-relation-list></div>
         </section>
-        <section class="bibtex-entry">
-          <h3>bioRxiv</h3>
-          <div class="bibtex-box">
-            <button
-              class="copy-bibtex-button"
-              type="button"
-              aria-label="Copy BibTeX for bioRxiv"
-            >
-              Copy BibTeX
-            </button>
-            <pre><code>@article{Rebboah_2025,
-  TITLE     = {Systematic cell-type resolved transcriptomes of 8 tissues in 8 lab and wild-derived mouse strains captures global and local expression variation},
-  URL       = {http://dx.doi.org/10.1101/2025.04.21.649844},
-  DOI       = {10.1101/2025.04.21.649844},
-  PUBLISHER = {openRxiv},
-  AUTHOR    = {Rebboah, Elisabeth and Weber, Ryan and Abdollahzadeh, Elnaz and Swarna, Nikhila and Sullivan, Delaney K. and Trout, Diane and Reese, Fairlie and Liang, Heidi Yahan and Filimban, Ghassan and Mahdipoor, Parvin and Duffield, Margaret and Mojaverzargar, Romina and Taghizadeh, Erisa and Fattahi, Negar and Mojgani, Negar and Zhang, Haoran and Loving, Rebekah K. and Carilli, Maria and Booeshaghi, A. Sina and Kawauchi, Shimako and Hallgrímsdóttir, Ingileif B. and Williams, Brian A. and MacGregor, Grant R. and Pachter, Lior and Wold, Barbara J. and Mortazavi, Ali},
-  YEAR      = {2025}
-}</code></pre>
-          </div>
-        </section>
-      </section>
 
-      <section>
-        <h2>Citing Works</h2>
-        <p class="citation-source-note">
-          10 citing works found in citation data generated 2026-07-06. Citation relationships are sourced from OpenAlex, Semantic Scholar, Google Scholar.
-        </p>
-        <table class="citation-table">
-          <thead>
-            <tr>
-              <th>Title</th>
-              <th>Year</th>
-              <th>Summary</th>
-            </tr>
-          </thead>
-          <tbody>
-            
-            <tr>
-              <td class="citation-title"><a href="https://search.proquest.com/openview/b3aa2bf0c1f4546bad99fcabc6918096/1?pq-origsite=gscholar&amp;cbl=18750&amp;diss=y" target="_blank" rel="noopener">Cell-Type Deconvolution and Candidate Gene Prioritization in Cardiac Complex Trait Genetics</a></td>
-              <td class="citation-year"><time datetime="2026">2026</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://search.proquest.com/openview/0d9fa6b9d5d1fbb2c5f1c533bfc9331f/1?pq-origsite=gscholar&amp;cbl=18750&amp;diss=y" target="_blank" rel="noopener">Computational Methods for Long-Read Functional Genomics in the Age of Agentic AI</a></td>
-              <td class="citation-year"><time datetime="2026">2026</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1016/j.celrep.2026.117407" target="_blank" rel="noopener">Consensus Pituitary Atlas, a scalable resource for annotation, novel marker discovery, and analyses in mouse pituitary gland research.</a></td>
-              <td class="citation-year"><time datetime="2026">2026</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.64898/2026.04.02.716195" target="_blank" rel="noopener">Hybrid crosses reveal a cell-type-specific landscape of mouse regulatory variation</a></td>
-              <td class="citation-year"><time datetime="2026">2026</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include dataset, analysis, barcoding, cis-and, combinatorial, designed, existing, founder.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.64898/2026.03.04.709349" target="_blank" rel="noopener">Single-Cell Genomics Decontamination with CellSweep</a></td>
-              <td class="citation-year"><time datetime="2026">2026</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include 000-900, assay, biosciences, cells, complex, demonstrate, derived, different.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/2025.10.28.685060" target="_blank" rel="noopener">Consensus Pituitary Atlas, a scalable resource for annotation, novel marker discovery and analyses in pituitary gland research</a></td>
-              <td class="citation-year"><time datetime="2025">2025</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/2025.11.21.689845" target="_blank" rel="noopener">Determining gene specificity from multivariate single-cell RNA sequencing data</a></td>
-              <td class="citation-year"><time datetime="2025">2025</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.48550/arxiv.2509.03761" target="_blank" rel="noopener">Optimizing alluvial plots</a></td>
-              <td class="citation-year"><time datetime="2025">2025</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/2025.05.11.653354" target="_blank" rel="noopener">Pseudoassembly of k-mers</a></td>
-              <td class="citation-year"><time datetime="2025">2025</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/2025.11.19.689125" target="_blank" rel="noopener">The Rayleigh Quotient and Contrastive Principal Component Analysis I</a></td>
-              <td class="citation-year"><time datetime="2025">2025</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include kidney, rebboah, analysis, annotations, counts, dataset, demonstrate, interpretability.</td>
-            </tr>
-          </tbody>
-        </table>
+        <aside class="evidence-panel relationship-detail" aria-live="polite">
+          <span class="study-label" data-relation-label>Relation</span>
+          <h2 data-relation-title></h2>
+          <p class="selected-relation-statement" data-relation-statement></p>
+          <section class="version-citation" data-version-citation hidden>
+            <h3>Citation</h3>
+            <div class="bibtex-box">
+              <button class="copy-bibtex-button" type="button" data-copy-bibtex>
+                Copy BibTeX
+              </button>
+              <pre><code data-bibtex-code></code></pre>
+            </div>
+          </section>
+          <details class="relationship-evidence" data-relation-evidence>
+            <summary>
+              <span>Evidence</span>
+              <span class="evidence-summary" data-evidence-summary></span>
+            </summary>
+            <table class="relationship-evidence-table">
+              <thead>
+                <tr>
+                  <th>Span</th>
+                  <th>Source</th>
+                </tr>
+              </thead>
+              <tbody data-evidence-rows></tbody>
+            </table>
+          </details>
+        </aside>
       </section>
+      <script id="workRelationData" type="application/json">{"work":{"id":"work:systematic-cell-type-resolved-transcriptomes-of-8-tissues-in-8-lab-and-wild-derived-mouse-strains-capture-global-and-local-expression-variation","title":"Systematic cell-type resolved transcriptomes of 8 tissues in 8 lab and wild-derived mouse strains capture global and local expression variation","description":"Genetic diversity shapes physiology through cell-type-specific programs, so resolving expression variation at cellular resolution is essential for connecting genotype to disease. Bulk tissue profiles and limited strain panels can obscure where strain and sex effects concentrate. The Cell Genomics resource maps eight Collaborative Cross founder strains across eight tissue groups, showing that genotype-driven and disease-relevant signatures localize to particular cell types."},"relationTypes":[{"id":"authors","label":"Authors"},{"id":"claims","label":"Claims"},{"id":"citations","label":"Citations"},{"id":"versions","label":"Versions"},{"id":"software","label":"Software"},{"id":"sources","label":"Sources"}],"connections":[{"id":"connection:version:systematic-cell-type-resolved-transcriptomes-of-8-tissues-in-8-lab-and-wild-derived-mouse-strains-capture-global-and-local-expression-variation--2025-04-24-biorxiv--person:orcid:0000-0003-2273-0189--author-1","type":"authors","title":"Elisabeth Rebboah","description":"Elisabeth Rebboah is an author of Systematic cell-type resolved transcriptomes of 8 tissues in 8 lab and wild-derived mouse strains capture global and local expression variation.","statement":"Elisabeth Rebboah is an author of Systematic cell-type resolved transcriptomes of 8 tissues in 8 lab and wild-derived mouse strains capture global and local expression variation.","evidence":[]},{"id":"connection:version:systematic-cell-type-resolved-transcriptomes-of-8-tissues-in-8-lab-and-wild-derived-mouse-strains-capture-global-and-local-expression-variation--2025-04-24-biorxiv--person:orcid:0000-0003-2044-9297--author-2","type":"authors","title":"Ryan Weber","description":"Ryan Weber is an author of Systematic cell-type resolved transcriptomes of 8 tissues in 8 lab and wild-derived mouse strains capture global and local expression variation.","statement":"Ryan Weber is an author of Systematic cell-type resolved transcriptomes of 8 tissues in 8 lab and wild-derived mouse strains capture global and local expression variation.","evidence":[]},{"id":"connection:version:systematic-cell-type-resolved-transcriptomes-of-8-tissues-in-8-lab-and-wild-derived-mouse-strains-capture-global-and-local-expression-variation--2025-04-24-biorxiv--person:orcid:0009-0005-1330-9183--author-3","type":"authors","title":"Elnaz Abdollahzadeh","description":"Elnaz Abdollahzadeh is an author of Systematic cell-type resolved transcriptomes of 8 tissues in 8 lab and wild-derived mouse strains capture global and local expression variation.","statement":"Elnaz Abdollahzadeh is an author of Systematic cell-type resolved transcriptomes of 8 tissues in 8 lab and wild-derived mouse strains capture global and local expression variation.","evidence":[]},{"id":"connection:version:systematic-cell-type-resolved-transcriptomes-of-8-tissues-in-8-lab-and-wild-derived-mouse-strains-capture-global-and-local-expression-variation--2025-04-24-biorxiv--person:orcid:0000-0003-3300-0114--author-4","type":"authors","title":"Nikhila Swarna","description":"Nikhila Swarna is an author of Systematic cell-type resolved transcriptomes of 8 tissues in 8 lab and wild-derived mouse strains capture global and local expression variation.","statement":"Nikhila Swarna is an author of Systematic cell-type resolved transcriptomes of 8 tissues in 8 lab and wild-derived mouse strains capture global and local expression variation.","evidence":[]},{"id":"connection:version:systematic-cell-type-resolved-transcriptomes-of-8-tissues-in-8-lab-and-wild-derived-mouse-strains-capture-global-and-local-expression-variation--2025-04-24-biorxiv--person:orcid:0000-0002-8359-6705--author-5","type":"authors","title":"Delaney K. Sullivan","description":"Delaney K. Sullivan is an author of Systematic cell-type resolved transcriptomes of 8 tissues in 8 lab and wild-derived mouse strains capture global and local expression variation.","statement":"Delaney K. Sullivan is an author of Systematic cell-type resolved transcriptomes of 8 tissues in 8 lab and wild-derived mouse strains capture global and local expression variation.","evidence":[]},{"id":"connection:version:systematic-cell-type-resolved-transcriptomes-of-8-tissues-in-8-lab-and-wild-derived-mouse-strains-capture-global-and-local-expression-variation--2025-04-24-biorxiv--person:orcid:0000-0002-4928-5532--author-6","type":"authors","title":"Diane Trout","description":"Diane Trout is an author of Systematic cell-type resolved transcriptomes of 8 tissues in 8 lab and wild-derived mouse strains capture global and local expression variation.","statement":"Diane Trout is an author of Systematic cell-type resolved transcriptomes of 8 tissues in 8 lab and wild-derived mouse strains capture global and local expression variation.","evidence":[]},{"id":"connection:version:systematic-cell-type-resolved-transcriptomes-of-8-tissues-in-8-lab-and-wild-derived-mouse-strains-capture-global-and-local-expression-variation--2025-04-24-biorxiv--person:orcid:0000-0002-9240-0102--author-7","type":"authors","title":"Fairlie Reese","description":"Fairlie Reese is an author of Systematic cell-type resolved transcriptomes of 8 tissues in 8 lab and wild-derived mouse strains capture global and local expression variation.","statement":"Fairlie Reese is an author of Systematic cell-type resolved transcriptomes of 8 tissues in 8 lab and wild-derived mouse strains capture global and local expression variation.","evidence":[]},{"id":"connection:version:systematic-cell-type-resolved-transcriptomes-of-8-tissues-in-8-lab-and-wild-derived-mouse-strains-capture-global-and-local-expression-variation--2025-04-24-biorxiv--person:orcid:0000-0002-6190-9723--author-8","type":"authors","title":"Heidi Yahan Liang","description":"Heidi Yahan Liang is an author of Systematic cell-type resolved transcriptomes of 8 tissues in 8 lab and wild-derived mouse strains capture global and local expression variation.","statement":"Heidi Yahan Liang is an author of Systematic cell-type resolved transcriptomes of 8 tissues in 8 lab and wild-derived mouse strains capture global and local expression variation.","evidence":[]},{"id":"connection:version:systematic-cell-type-resolved-transcriptomes-of-8-tissues-in-8-lab-and-wild-derived-mouse-strains-capture-global-and-local-expression-variation--2025-04-24-biorxiv--person:orcid:0000-0002-2612-2554--author-9","type":"authors","title":"Ghassan Filimban","description":"Ghassan Filimban is an author of Systematic cell-type resolved transcriptomes of 8 tissues in 8 lab and wild-derived mouse strains capture global and local expression variation.","statement":"Ghassan Filimban is an author of Systematic cell-type resolved transcriptomes of 8 tissues in 8 lab and wild-derived mouse strains capture global and local expression variation.","evidence":[]},{"id":"connection:version:systematic-cell-type-resolved-transcriptomes-of-8-tissues-in-8-lab-and-wild-derived-mouse-strains-capture-global-and-local-expression-variation--2025-04-24-biorxiv--person:local:parvin-mahdipoor--author-10","type":"authors","title":"Parvin Mahdipoor","description":"Parvin Mahdipoor is an author of Systematic cell-type resolved transcriptomes of 8 tissues in 8 lab and wild-derived mouse strains capture global and local expression variation.","statement":"Parvin Mahdipoor is an author of Systematic cell-type resolved transcriptomes of 8 tissues in 8 lab and wild-derived mouse strains capture global and local expression variation.","evidence":[]},{"id":"connection:version:systematic-cell-type-resolved-transcriptomes-of-8-tissues-in-8-lab-and-wild-derived-mouse-strains-capture-global-and-local-expression-variation--2025-04-24-biorxiv--person:orcid:0009-0009-1860-7269--author-11","type":"authors","title":"Margaret Duffield","description":"Margaret Duffield is an author of Systematic cell-type resolved transcriptomes of 8 tissues in 8 lab and wild-derived mouse strains capture global and local expression variation.","statement":"Margaret Duffield is an author of Systematic cell-type resolved transcriptomes of 8 tissues in 8 lab and wild-derived mouse strains capture global and local expression variation.","evidence":[]},{"id":"connection:version:systematic-cell-type-resolved-transcriptomes-of-8-tissues-in-8-lab-and-wild-derived-mouse-strains-capture-global-and-local-expression-variation--2025-04-24-biorxiv--person:orcid:0009-0004-9176-2154--author-12","type":"authors","title":"Romina Mojaverzargar","description":"Romina Mojaverzargar is an author of Systematic cell-type resolved transcriptomes of 8 tissues in 8 lab and wild-derived mouse strains capture global and local expression variation.","statement":"Romina Mojaverzargar is an author of Systematic cell-type resolved transcriptomes of 8 tissues in 8 lab and wild-derived mouse strains capture global and local expression variation.","evidence":[]},{"id":"connection:version:systematic-cell-type-resolved-transcriptomes-of-8-tissues-in-8-lab-and-wild-derived-mouse-strains-capture-global-and-local-expression-variation--2025-04-24-biorxiv--person:orcid:0009-0001-6677-9921--author-13","type":"authors","title":"Erisa Taghizadeh","description":"Erisa Taghizadeh is an author of Systematic cell-type resolved transcriptomes of 8 tissues in 8 lab and wild-derived mouse strains capture global and local expression variation.","statement":"Erisa Taghizadeh is an author of Systematic cell-type resolved transcriptomes of 8 tissues in 8 lab and wild-derived mouse strains capture global and local expression variation.","evidence":[]},{"id":"connection:version:systematic-cell-type-resolved-transcriptomes-of-8-tissues-in-8-lab-and-wild-derived-mouse-strains-capture-global-and-local-expression-variation--2025-04-24-biorxiv--person:orcid:0009-0001-9222-0793--author-14","type":"authors","title":"Negar Fattahi","description":"Negar Fattahi is an author of Systematic cell-type resolved transcriptomes of 8 tissues in 8 lab and wild-derived mouse strains capture global and local expression variation.","statement":"Negar Fattahi is an author of Systematic cell-type resolved transcriptomes of 8 tissues in 8 lab and wild-derived mouse strains capture global and local expression variation.","evidence":[]},{"id":"connection:version:systematic-cell-type-resolved-transcriptomes-of-8-tissues-in-8-lab-and-wild-derived-mouse-strains-capture-global-and-local-expression-variation--2025-04-24-biorxiv--person:orcid:0009-0000-1846-2332--author-15","type":"authors","title":"Negar Mojgani","description":"Negar Mojgani is an author of Systematic cell-type resolved transcriptomes of 8 tissues in 8 lab and wild-derived mouse strains capture global and local expression variation.","statement":"Negar Mojgani is an author of Systematic cell-type resolved transcriptomes of 8 tissues in 8 lab and wild-derived mouse strains capture global and local expression variation.","evidence":[]},{"id":"connection:version:systematic-cell-type-resolved-transcriptomes-of-8-tissues-in-8-lab-and-wild-derived-mouse-strains-capture-global-and-local-expression-variation--2025-04-24-biorxiv--person:orcid:0009-0007-5669-8320--author-16","type":"authors","title":"Haoran Zhang","description":"Haoran Zhang is an author of Systematic cell-type resolved transcriptomes of 8 tissues in 8 lab and wild-derived mouse strains capture global and local expression variation.","statement":"Haoran Zhang is an author of Systematic cell-type resolved transcriptomes of 8 tissues in 8 lab and wild-derived mouse strains capture global and local expression variation.","evidence":[]},{"id":"connection:version:systematic-cell-type-resolved-transcriptomes-of-8-tissues-in-8-lab-and-wild-derived-mouse-strains-capture-global-and-local-expression-variation--2025-04-24-biorxiv--person:orcid:0000-0001-8725-0376--author-17","type":"authors","title":"Rebekah K. Loving","description":"Rebekah K. Loving is an author of Systematic cell-type resolved transcriptomes of 8 tissues in 8 lab and wild-derived mouse strains capture global and local expression variation.","statement":"Rebekah K. Loving is an author of Systematic cell-type resolved transcriptomes of 8 tissues in 8 lab and wild-derived mouse strains capture global and local expression variation.","evidence":[]},{"id":"connection:version:systematic-cell-type-resolved-transcriptomes-of-8-tissues-in-8-lab-and-wild-derived-mouse-strains-capture-global-and-local-expression-variation--2025-04-24-biorxiv--person:orcid:0000-0002-8977-7224--author-18","type":"authors","title":"Maria Carilli","description":"Maria Carilli is an author of Systematic cell-type resolved transcriptomes of 8 tissues in 8 lab and wild-derived mouse strains capture global and local expression variation.","statement":"Maria Carilli is an author of Systematic cell-type resolved transcriptomes of 8 tissues in 8 lab and wild-derived mouse strains capture global and local expression variation.","evidence":[]},{"id":"connection:version:systematic-cell-type-resolved-transcriptomes-of-8-tissues-in-8-lab-and-wild-derived-mouse-strains-capture-global-and-local-expression-variation--2025-04-24-biorxiv--person:orcid:0000-0002-6442-4502--author-19","type":"authors","title":"A. Sina Booeshaghi","description":"A. Sina Booeshaghi is an author of Systematic cell-type resolved transcriptomes of 8 tissues in 8 lab and wild-derived mouse strains capture global and local expression variation.","statement":"A. Sina Booeshaghi is an author of Systematic cell-type resolved transcriptomes of 8 tissues in 8 lab and wild-derived mouse strains capture global and local expression variation.","evidence":[]},{"id":"connection:version:systematic-cell-type-resolved-transcriptomes-of-8-tissues-in-8-lab-and-wild-derived-mouse-strains-capture-global-and-local-expression-variation--2025-04-24-biorxiv--person:orcid:0000-0002-8577-4763--author-20","type":"authors","title":"Shimako Kawauchi","description":"Shimako Kawauchi is an author of Systematic cell-type resolved transcriptomes of 8 tissues in 8 lab and wild-derived mouse strains capture global and local expression variation.","statement":"Shimako Kawauchi is an author of Systematic cell-type resolved transcriptomes of 8 tissues in 8 lab and wild-derived mouse strains capture global and local expression variation.","evidence":[]},{"id":"connection:version:systematic-cell-type-resolved-transcriptomes-of-8-tissues-in-8-lab-and-wild-derived-mouse-strains-capture-global-and-local-expression-variation--2025-04-24-biorxiv--person:orcid:0000-0002-4710-0047--author-21","type":"authors","title":"Ingileif B. Hallgrímsdóttir","description":"Ingileif B. Hallgrímsdóttir is an author of Systematic cell-type resolved transcriptomes of 8 tissues in 8 lab and wild-derived mouse strains capture global and local expression variation.","statement":"Ingileif B. Hallgrímsdóttir is an author of Systematic cell-type resolved transcriptomes of 8 tissues in 8 lab and wild-derived mouse strains capture global and local expression variation.","evidence":[]},{"id":"connection:version:systematic-cell-type-resolved-transcriptomes-of-8-tissues-in-8-lab-and-wild-derived-mouse-strains-capture-global-and-local-expression-variation--2025-04-24-biorxiv--person:orcid:0000-0003-3253-611X--author-22","type":"authors","title":"Brian A. Williams","description":"Brian A. Williams is an author of Systematic cell-type resolved transcriptomes of 8 tissues in 8 lab and wild-derived mouse strains capture global and local expression variation.","statement":"Brian A. Williams is an author of Systematic cell-type resolved transcriptomes of 8 tissues in 8 lab and wild-derived mouse strains capture global and local expression variation.","evidence":[]},{"id":"connection:version:systematic-cell-type-resolved-transcriptomes-of-8-tissues-in-8-lab-and-wild-derived-mouse-strains-capture-global-and-local-expression-variation--2025-04-24-biorxiv--person:orcid:0000-0001-7598-9501--author-23","type":"authors","title":"Grant R. MacGregor","description":"Grant R. MacGregor is an author of Systematic cell-type resolved transcriptomes of 8 tissues in 8 lab and wild-derived mouse strains capture global and local expression variation.","statement":"Grant R. MacGregor is an author of Systematic cell-type resolved transcriptomes of 8 tissues in 8 lab and wild-derived mouse strains capture global and local expression variation.","evidence":[]},{"id":"connection:version:systematic-cell-type-resolved-transcriptomes-of-8-tissues-in-8-lab-and-wild-derived-mouse-strains-capture-global-and-local-expression-variation--2025-04-24-biorxiv--person:orcid:0000-0002-9164-6231--author-24","type":"authors","title":"Lior Pachter","description":"Lior Pachter is an author of Systematic cell-type resolved transcriptomes of 8 tissues in 8 lab and wild-derived mouse strains capture global and local expression variation.","statement":"Lior Pachter is an author of Systematic cell-type resolved transcriptomes of 8 tissues in 8 lab and wild-derived mouse strains capture global and local expression variation.","evidence":[]},{"id":"connection:version:systematic-cell-type-resolved-transcriptomes-of-8-tissues-in-8-lab-and-wild-derived-mouse-strains-capture-global-and-local-expression-variation--2025-04-24-biorxiv--person:orcid:0000-0003-3235-8130--author-25","type":"authors","title":"Barbara J. Wold","description":"Barbara J. Wold is an author of Systematic cell-type resolved transcriptomes of 8 tissues in 8 lab and wild-derived mouse strains capture global and local expression variation.","statement":"Barbara J. Wold is an author of Systematic cell-type resolved transcriptomes of 8 tissues in 8 lab and wild-derived mouse strains capture global and local expression variation.","evidence":[]},{"id":"connection:version:systematic-cell-type-resolved-transcriptomes-of-8-tissues-in-8-lab-and-wild-derived-mouse-strains-capture-global-and-local-expression-variation--2025-04-24-biorxiv--person:orcid:0000-0002-4259-6362--author-26","type":"authors","title":"Ali Mortazavi","description":"Ali Mortazavi is an author of Systematic cell-type resolved transcriptomes of 8 tissues in 8 lab and wild-derived mouse strains capture global and local expression variation.","statement":"Ali Mortazavi is an author of Systematic cell-type resolved transcriptomes of 8 tissues in 8 lab and wild-derived mouse strains capture global and local expression variation.","evidence":[]},{"id":"connection:version:systematic-cell-type-resolved-transcriptomes-of-8-tissues-in-8-lab-and-wild-derived-mouse-strains-capture-global-and-local-expression-variation--2025-04-24-biorxiv--claim:version:systematic-cell-type-resolved-transcriptomes-of-8-tissues-in-8-lab-and-wild-derived-mouse-strains-capture-global-and-local-expression-variation--2025-04-24-biorxiv--summary-0","type":"claims","title":"Genetic background influences disease and trait variation, but its cellular basis is difficult to resolve without coordi","description":"Genetic background influences disease and trait variation, but its cellular basis is difficult to resolve without coordinated multi-tissue data. Existing mouse resources often lack matched strain, sex, tissue, and cell-type coverage at single-nucleus scale. The 8-cube dataset profiles eight founder strains across eight tissues and shows that strain and sex effects concentrate in specific cell types and disease-associated states.","statement":"This publication contains the target grounded summary claim.","evidence":[{"source":"source:text:document:systematic-cell-type-resolved-transcriptomes-of-8-tissues-in-8-lab-and-wild-derived-mouse-strains-capture-global-and-local-expression-variation--2025-04-24-biorxiv","span":"We sequenced samples from four male and four female replicates per tissue using single-nucleus RNA-seq to generate an \"8-cube\" dataset of 5.2 million nuclei across 106 cell types and cell states.","page":1,"properties":{"document_id":"document:systematic-cell-type-resolved-transcriptomes-of-8-tissues-in-8-lab-and-wild-derived-mouse-strains-capture-global-and-local-expression-variation--2025-04-24-biorxiv","char_start":2203,"char_end":2398}},{"source":"source:text:document:systematic-cell-type-resolved-transcriptomes-of-8-tissues-in-8-lab-and-wild-derived-mouse-strains-capture-global-and-local-expression-variation--2025-04-24-biorxiv","span":"Further analyses revealed substantial strain variation, often concentrated in a few cell types as well as cell-state signatures that especially reflect strain-associated immune and metabolic trait differences.","page":1,"properties":{"document_id":"document:systematic-cell-type-resolved-transcriptomes-of-8-tissues-in-8-lab-and-wild-derived-mouse-strains-capture-global-and-local-expression-variation--2025-04-24-biorxiv","char_start":2742,"char_end":2951}},{"source":"source:text:document:systematic-cell-type-resolved-transcriptomes-of-8-tissues-in-8-lab-and-wild-derived-mouse-strains-capture-global-and-local-expression-variation--2025-04-24-biorxiv","span":"This analysis demonstrates that while genotype strongly influences cell type clustering across all tissues, its effects are concentrated in specific cell types within each tissue, whereas sex-specific effects are more restricted to an even smaller subset of cell types.","page":6,"properties":{"document_id":"document:systematic-cell-type-resolved-transcriptomes-of-8-tissues-in-8-lab-and-wild-derived-mouse-strains-capture-global-and-local-expression-variation--2025-04-24-biorxiv","char_start":2175,"char_end":2444}},{"source":"source:text:document:systematic-cell-type-resolved-transcriptomes-of-8-tissues-in-8-lab-and-wild-derived-mouse-strains-capture-global-and-local-expression-variation--2025-04-24-biorxiv","span":"The founder 8-cube dataset provides rich transcriptome variation signatures to help explain strain-specific phenotypic traits and disease states, as illustrated by examples in tissue-resident immune cells, muscle degeneration, kidney sex differences, and the hypothalamicpituitary-adrenal axis.","page":1,"properties":{"document_id":"document:systematic-cell-type-resolved-transcriptomes-of-8-tissues-in-8-lab-and-wild-derived-mouse-strains-capture-global-and-local-expression-variation--2025-04-24-biorxiv","char_start":2952,"char_end":3246}}]},{"id":"connection:version:systematic-cell-type-resolved-transcriptomes-of-8-tissues-in-8-lab-and-wild-derived-mouse-strains-capture-global-and-local-expression-variation--2026-04-cell-genomics--claim:version:systematic-cell-type-resolved-transcriptomes-of-8-tissues-in-8-lab-and-wild-derived-mouse-strains-capture-global-and-local-expression-variation--2026-04-cell-genomics--summary-0","type":"claims","title":"Genetic diversity shapes physiology through cell-type-specific programs, so resolving expression variation at cellular r","description":"Genetic diversity shapes physiology through cell-type-specific programs, so resolving expression variation at cellular resolution is essential for connecting genotype to disease. Bulk tissue profiles and limited strain panels can obscure where strain and sex effects concentrate. The Cell Genomics resource maps eight Collaborative Cross founder strains across eight tissue groups, showing that genotype-driven and disease-relevant signatures localize to particular cell types.","statement":"This publication contains the target grounded summary claim.","evidence":[{"source":"source:text:document:systematic-cell-type-resolved-transcriptomes-of-8-tissues-in-8-lab-and-wild-derived-mouse-strains-capture-global-and-local-expression-variation--2026-04-cell-genomics","span":"This resource maps how genetic diversity shapes celltype-specific gene expression, providing a foundation for connecting genotype to disease-relevant cellular phenotypes.","page":1,"properties":{"document_id":"document:systematic-cell-type-resolved-transcriptomes-of-8-tissues-in-8-lab-and-wild-derived-mouse-strains-capture-global-and-local-expression-variation--2026-04-cell-genomics","char_start":476,"char_end":646}},{"source":"source:text:document:systematic-cell-type-resolved-transcriptomes-of-8-tissues-in-8-lab-and-wild-derived-mouse-strains-capture-global-and-local-expression-variation--2026-04-cell-genomics","span":"Here, we used single-nucleus RNA sequencing (snRNA-seq) to quantify gene expression in the eight founder strains of the CC panel across eight distinct tissue groups: (1) cortex and hippocampus, (2) diencephalon and pituitary gland, (3) muscle, (4) heart, (5) liver, (6) kidney, (7) adrenal gland, and (8) male and female gonads.","page":3,"properties":{"document_id":"document:systematic-cell-type-resolved-transcriptomes-of-8-tissues-in-8-lab-and-wild-derived-mouse-strains-capture-global-and-local-expression-variation--2026-04-cell-genomics","char_start":1592,"char_end":1920}},{"source":"source:text:document:systematic-cell-type-resolved-transcriptomes-of-8-tissues-in-8-lab-and-wild-derived-mouse-strains-capture-global-and-local-expression-variation--2026-04-cell-genomics","span":"Overall, this demonstrates that genotype influences cell-type clustering for all tissues, with the effects concentrated in specific cell types within each tissue, and that sex-specific effects are restricted to an even smaller subset of cell types.","page":6,"properties":{"document_id":"document:systematic-cell-type-resolved-transcriptomes-of-8-tissues-in-8-lab-and-wild-derived-mouse-strains-capture-global-and-local-expression-variation--2026-04-cell-genomics","char_start":1720,"char_end":1968}},{"source":"source:text:document:systematic-cell-type-resolved-transcriptomes-of-8-tissues-in-8-lab-and-wild-derived-mouse-strains-capture-global-and-local-expression-variation--2026-04-cell-genomics","span":"Our results demonstrate that strain-specific differences in gene expression, even within a numerically minor cell type, can serve as early RNA hallmarks of future disease.","page":12,"properties":{"document_id":"document:systematic-cell-type-resolved-transcriptomes-of-8-tissues-in-8-lab-and-wild-derived-mouse-strains-capture-global-and-local-expression-variation--2026-04-cell-genomics","char_start":859,"char_end":1030}}]},{"id":"connection:version:systematic-cell-type-resolved-transcriptomes-of-8-tissues-in-8-lab-and-wild-derived-mouse-strains-capture-global-and-local-expression-variation--2026-04-cell-genomics--work:systematic-cell-type-resolved-transcriptomes-of-8-tissues-in-8-lab-and-wild-derived-mouse-strains-capture-global-and-local-expression-variation","type":"versions","title":"Systematic cell-type resolved transcriptomes of 8 tissues in 8 lab and wild-derived mouse strains capture global and local expression variation","description":"2026-04 · Cell Genomics","statement":"2026-04 is a version of Systematic cell-type resolved transcriptomes of 8 tissues in 8 lab and wild-derived mouse strains capture global and local expression variation.","evidence":[],"citation":{"doi":"10.1016/j.xgen.2025.101108","url":"https://doi.org/10.1016/j.xgen.2025.101108","date":"2026-04","venue":"Cell Genomics","authors":[{"name":"Elisabeth Rebboah","orcid":"https://orcid.org/0000-0003-2273-0189"},{"name":"Ryan Weber","orcid":"https://orcid.org/0000-0003-2044-9297"},{"name":"Elnaz Abdollahzadeh","orcid":"https://orcid.org/0009-0005-1330-9183"},{"name":"Nikhila Swarna","orcid":"https://orcid.org/0000-0003-3300-0114"},{"name":"Delaney K. Sullivan","orcid":"https://orcid.org/0000-0002-8359-6705"},{"name":"Diane Trout","orcid":"https://orcid.org/0000-0002-4928-5532"},{"name":"Fairlie Reese","orcid":"https://orcid.org/0000-0002-9240-0102"},{"name":"Heidi Yahan Liang","orcid":"https://orcid.org/0000-0002-6190-9723"},{"name":"Ghassan Filimban","orcid":"https://orcid.org/0000-0002-2612-2554"},{"name":"Parvin Mahdipoor","orcid":""},{"name":"Margaret Duffield","orcid":"https://orcid.org/0009-0009-1860-7269"},{"name":"Romina Mojaverzargar","orcid":"https://orcid.org/0009-0004-9176-2154"},{"name":"Erisa Taghizadeh","orcid":"https://orcid.org/0009-0001-6677-9921"},{"name":"Negar Fattahi","orcid":"https://orcid.org/0009-0001-9222-0793"},{"name":"Negar Mojgani","orcid":"https://orcid.org/0009-0000-1846-2332"},{"name":"Haoran Zhang","orcid":"https://orcid.org/0009-0007-5669-8320"},{"name":"Rebekah K. Loving","orcid":"https://orcid.org/0000-0001-8725-0376"},{"name":"Maria Carilli","orcid":"https://orcid.org/0000-0002-8977-7224"},{"name":"A. Sina Booeshaghi","orcid":"https://orcid.org/0000-0002-6442-4502"},{"name":"Shimako Kawauchi","orcid":"https://orcid.org/0000-0002-8577-4763"},{"name":"Ingileif B. Hallgrímsdóttir","orcid":"https://orcid.org/0000-0002-4710-0047"},{"name":"Brian A. Williams","orcid":"https://orcid.org/0000-0003-3253-611X"},{"name":"Grant R. MacGregor","orcid":"https://orcid.org/0000-0001-7598-9501"},{"name":"Lior Pachter","orcid":"https://orcid.org/0000-0002-9164-6231"},{"name":"Barbara J. Wold","orcid":"https://orcid.org/0000-0003-3235-8130"},{"name":"Ali Mortazavi","orcid":"https://orcid.org/0000-0002-4259-6362"}]},"bibtex":"@article{Rebboah_2026,\n  TITLE     = {Systematic cell-type resolved transcriptomes of 8 tissues in 8 lab and wild-derived mouse strains capture global and local expression variation},\n  VOLUME    = {6},\n  ISSN      = {2666-979X},\n  URL       = {http://dx.doi.org/10.1016/j.xgen.2025.101108},\n  DOI       = {10.1016/j.xgen.2025.101108},\n  NUMBER    = {4},\n  JOURNAL   = {Cell Genomics},\n  PUBLISHER = {Elsevier BV},\n  AUTHOR    = {Rebboah, Elisabeth and Weber, Ryan and Abdollahzadeh, Elnaz and Swarna, Nikhila and Sullivan, Delaney K. and Trout, Diane and Reese, Fairlie and Liang, Heidi Yahan and Filimban, Ghassan and Mahdipoor, Parvin and Duffield, Margaret and Mojaverzargar, Romina and Taghizadeh, Erisa and Fattahi, Negar and Mojgani, Negar and Zhang, Haoran and Loving, Rebekah K. and Carilli, Maria and Booeshaghi, A. Sina and Kawauchi, Shimako and Hallgrímsdóttir, Ingileif B. and Williams, Brian A. and MacGregor, Grant R. and Pachter, Lior and Wold, Barbara J. and Mortazavi, Ali},\n  YEAR      = {2026},\n  PAGES     = {101108}\n}"},{"id":"connection:version:systematic-cell-type-resolved-transcriptomes-of-8-tissues-in-8-lab-and-wild-derived-mouse-strains-capture-global-and-local-expression-variation--2025-04-24-biorxiv--work:systematic-cell-type-resolved-transcriptomes-of-8-tissues-in-8-lab-and-wild-derived-mouse-strains-capture-global-and-local-expression-variation","type":"versions","title":"Systematic cell-type resolved transcriptomes of 8 tissues in 8 lab and wild-derived mouse strains capture global and local expression variation","description":"2025-04-24 · bioRxiv","statement":"2025-04-24 is a version of Systematic cell-type resolved transcriptomes of 8 tissues in 8 lab and wild-derived mouse strains capture global and local expression variation.","evidence":[],"citation":{"doi":"10.1101/2025.04.21.649844","url":"https://doi.org/10.1101/2025.04.21.649844","date":"2025-04-24","venue":"bioRxiv","authors":[{"name":"Elisabeth Rebboah","orcid":"https://orcid.org/0000-0003-2273-0189"},{"name":"Ryan Weber","orcid":"https://orcid.org/0000-0003-2044-9297"},{"name":"Elnaz Abdollahzadeh","orcid":"https://orcid.org/0009-0005-1330-9183"},{"name":"Nikhila Swarna","orcid":"https://orcid.org/0000-0003-3300-0114"},{"name":"Delaney K. Sullivan","orcid":"https://orcid.org/0000-0002-8359-6705"},{"name":"Diane Trout","orcid":"https://orcid.org/0000-0002-4928-5532"},{"name":"Fairlie Reese","orcid":"https://orcid.org/0000-0002-9240-0102"},{"name":"Heidi Yahan Liang","orcid":"https://orcid.org/0000-0002-6190-9723"},{"name":"Ghassan Filimban","orcid":"https://orcid.org/0000-0002-2612-2554"},{"name":"Parvin Mahdipoor","orcid":""},{"name":"Margaret Duffield","orcid":"https://orcid.org/0009-0009-1860-7269"},{"name":"Romina Mojaverzargar","orcid":"https://orcid.org/0009-0004-9176-2154"},{"name":"Erisa Taghizadeh","orcid":"https://orcid.org/0009-0001-6677-9921"},{"name":"Negar Fattahi","orcid":"https://orcid.org/0009-0001-9222-0793"},{"name":"Negar Mojgani","orcid":"https://orcid.org/0009-0000-1846-2332"},{"name":"Haoran Zhang","orcid":"https://orcid.org/0009-0007-5669-8320"},{"name":"Rebekah K. Loving","orcid":"https://orcid.org/0000-0001-8725-0376"},{"name":"Maria Carilli","orcid":"https://orcid.org/0000-0002-8977-7224"},{"name":"A. Sina Booeshaghi","orcid":"https://orcid.org/0000-0002-6442-4502"},{"name":"Shimako Kawauchi","orcid":"https://orcid.org/0000-0002-8577-4763"},{"name":"Ingileif B. Hallgrímsdóttir","orcid":"https://orcid.org/0000-0002-4710-0047"},{"name":"Brian A. Williams","orcid":"https://orcid.org/0000-0003-3253-611X"},{"name":"Grant R. MacGregor","orcid":"https://orcid.org/0000-0001-7598-9501"},{"name":"Lior Pachter","orcid":"https://orcid.org/0000-0002-9164-6231"},{"name":"Barbara J. Wold","orcid":"https://orcid.org/0000-0003-3235-8130"},{"name":"Ali Mortazavi","orcid":"https://orcid.org/0000-0002-4259-6362"}]},"bibtex":"@article{Rebboah_2025,\n  TITLE     = {Systematic cell-type resolved transcriptomes of 8 tissues in 8 lab and wild-derived mouse strains captures global and local expression variation},\n  URL       = {http://dx.doi.org/10.1101/2025.04.21.649844},\n  DOI       = {10.1101/2025.04.21.649844},\n  PUBLISHER = {openRxiv},\n  AUTHOR    = {Rebboah, Elisabeth and Weber, Ryan and Abdollahzadeh, Elnaz and Swarna, Nikhila and Sullivan, Delaney K. and Trout, Diane and Reese, Fairlie and Liang, Heidi Yahan and Filimban, Ghassan and Mahdipoor, Parvin and Duffield, Margaret and Mojaverzargar, Romina and Taghizadeh, Erisa and Fattahi, Negar and Mojgani, Negar and Zhang, Haoran and Loving, Rebekah K. and Carilli, Maria and Booeshaghi, A. Sina and Kawauchi, Shimako and Hallgrímsdóttir, Ingileif B. and Williams, Brian A. and MacGregor, Grant R. and Pachter, Lior and Wold, Barbara J. and Mortazavi, Ali},\n  YEAR      = {2025}\n}"},{"id":"connection:document:systematic-cell-type-resolved-transcriptomes-of-8-tissues-in-8-lab-and-wild-derived-mouse-strains-capture-global-and-local-expression-variation--2025-04-24-biorxiv--version:systematic-cell-type-resolved-transcriptomes-of-8-tissues-in-8-lab-and-wild-derived-mouse-strains-capture-global-and-local-expression-variation--2025-04-24-biorxiv","type":"sources","title":"2025-04-24-biorxiv.pdf","description":"This source document provides local provenance for the target publication.","statement":"This source document provides local provenance for the target publication.","evidence":[]},{"id":"connection:document:systematic-cell-type-resolved-transcriptomes-of-8-tissues-in-8-lab-and-wild-derived-mouse-strains-capture-global-and-local-expression-variation--2026-04-cell-genomics--version:systematic-cell-type-resolved-transcriptomes-of-8-tissues-in-8-lab-and-wild-derived-mouse-strains-capture-global-and-local-expression-variation--2026-04-cell-genomics","type":"sources","title":"2026-04-cell-genomics.pdf","description":"This source document provides local provenance for the target publication.","statement":"This source document provides local provenance for the target publication.","evidence":[]}]}</script>
+      <script src="../work-relations.js"></script>
     </article>
   </body>
 </html>

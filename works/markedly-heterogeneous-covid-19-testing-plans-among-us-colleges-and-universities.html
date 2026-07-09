@@ -17,77 +17,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="During the COVID-19 pandemic, universities in the US were faced with managing in-person learning with minimal, and often incoherent, guidelines. To contribute to an evaluation of university preparedness for the COVID-19 pandemic, we assessed COVID-19 on-campus testing. We examined testing plans at more than 500 colleges and universities throughout the US, and collated statistics, as well as narratives from publicly facing websites. We discovered a highly variable and muddled state of COVID-19 testing plans among US institutions of higher education and highlighted cases of divergence between university testing plans and public health best practices, as well as potential bioethical issues." />
+    <meta name="description" content="Safe campus reopening during COVID-19 depended on testing plans that could identify infections before outbreaks spread. U.S. colleges faced conflicting guidance, uneven resources, and opaque public communication, producing wide variation in whether and how communities would be screened. A survey of more than 500 institutions documents heterogeneous testing strategies, divergence from emerging best practices for frequent testing, and equity concerns tied to institutional resources and worker access." />
     <link rel="stylesheet" href="../styles.css" />
-    
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        document.querySelectorAll(".copy-bibtex-button").forEach((button) => {
-          button.addEventListener("click", async () => {
-            const box = button.closest(".bibtex-box");
-            const code = box ? box.querySelector("code") : null;
-            const bibtex = code ? code.textContent : "";
-            const previousText = button.textContent;
-            const markStatus = (text) => {
-              button.textContent = text;
-              window.setTimeout(() => {
-                button.textContent = previousText;
-              }, 1200);
-            };
-            const copyWithSelection = () => {
-              const textarea = document.createElement("textarea");
-              textarea.value = bibtex;
-              textarea.setAttribute("readonly", "");
-              textarea.style.position = "fixed";
-              textarea.style.left = "0";
-              textarea.style.top = "0";
-              textarea.style.width = "1px";
-              textarea.style.height = "1px";
-              textarea.style.opacity = "0";
-              textarea.style.pointerEvents = "none";
-              document.body.appendChild(textarea);
-              textarea.focus({ preventScroll: true });
-              textarea.select();
-              textarea.setSelectionRange(0, textarea.value.length);
-              const copied = document.execCommand("copy");
-              textarea.remove();
-              return copied;
-            };
-
-            try {
-              if (navigator.clipboard && navigator.clipboard.writeText) {
-                await navigator.clipboard.writeText(bibtex);
-                markStatus("Copied");
-                return;
-              }
-
-              if (copyWithSelection()) {
-                markStatus("Copied");
-                return;
-              }
-            } catch {
-              let copied = false;
-
-              try {
-                copied = copyWithSelection();
-              } catch {
-                copied = false;
-              }
-
-              if (copied) {
-                markStatus("Copied");
-                return;
-              }
-            }
-
-            markStatus("Copy failed");
-          });
-        });
-      });
-    </script>
     <title>Markedly heterogeneous COVID-19 testing plans among US colleges and universities | Works | Sina Booeshaghi</title>
   </head>
-  <body>
+  <body class="work-detail-page">
     <nav class="breadcrumb" aria-label="Breadcrumb">
       <a href="../index.html">Home</a>
       <span aria-hidden="true">/</span>
@@ -95,288 +29,71 @@
       <span aria-hidden="true">/</span>
       <span class="breadcrumb-current" title="Markedly heterogeneous COVID-19 testing plans among US colleges and universities">Markedly heterogeneous COVID-19 testing plans among US colleges...</span>
     </nav>
-    <article class="work-page">
-      <h1>Markedly heterogeneous COVID-19 testing plans among US colleges and universities</h1>
-      <div class="publication-versions work-versions" aria-label="Work versions">
-        <span class="publication-versions-label">Versions</span>
-        <div class="publication-version-cards">
-          
-        <a
-          class="publication-version-link is-current"
-          href="https://doi.org/10.1101/2020.08.09.20171223"
-          target="_blank"
-          rel="noopener"
-        >
-          <span class="publication-version-title">Markedly heterogeneous COVID-19 testing plans among US colleges and universities</span>
-          <span class="publication-version-detail">MedRxiv · 2020-08-11</span>
-        </a>
+    <article class="work-page study-graph-page">
+      <section class="study-focus" aria-label="Selected work">
+        <div>
+          <h1>Markedly heterogeneous COVID-19 testing plans among US colleges and universities</h1>
+          <p>Safe campus reopening during COVID-19 depended on testing plans that could identify infections before outbreaks spread. U.S. colleges faced conflicting guidance, uneven resources, and opaque public communication, producing wide variation in whether and how communities would be screened. A survey of more than 500 institutions documents heterogeneous testing strategies, divergence from emerging best practices for frequent testing, and equity concerns tied to institutional resources and worker access.</p>
         </div>
-      </div>
-
-      <section>
-        <h2>Summary</h2>
-        <p>During the COVID-19 pandemic, universities in the US were faced with managing in-person learning with minimal, and often incoherent, guidelines. To contribute to an evaluation of university preparedness for the COVID-19 pandemic, we assessed COVID-19 on-campus testing. We examined testing plans at more than 500 colleges and universities throughout the US, and collated statistics, as well as narratives from publicly facing websites. We discovered a highly variable and muddled state of COVID-19 testing plans among US institutions of higher education and highlighted cases of divergence between university testing plans and public health best practices, as well as potential bioethical issues.</p>
+        <dl class="study-stats">
+          <div>
+            <dt>Citations</dt>
+            <dd>38</dd>
+          </div>
+          <div>
+            <dt>Relations</dt>
+            <dd>8</dd>
+          </div>
+        </dl>
       </section>
 
       
-      <section
-        class="authors-section"
-        data-author-version-count="1"
-      >
-        <h2>Authors</h2>
-        
-        <section
-          class="author-version"
-          data-author-count="5"
-        >
-          <h3>
-            <a href="https://doi.org/10.1101/2020.08.09.20171223" target="_blank" rel="noopener">MedRxiv</a>
-            <time datetime="2020-08-11">2020-08-11</time>
-          </h3>
-          <ul class="author-list">
-            
-            <li><a href="https://orcid.org/0000-0002-6442-4502" target="_blank" rel="noopener" title="ORCID">A. Sina Booeshaghi</a></li>
-            <li><a href="https://orcid.org/0000-0002-2160-5311" target="_blank" rel="noopener" title="ORCID">Fayth Tan</a></li>
-            <li>Benjamin Renton</li>
-            <li><a href="https://orcid.org/0000-0002-5871-0342" target="_blank" rel="noopener" title="ORCID">Zackary Berger</a></li>
-            <li><a href="https://orcid.org/0000-0002-9164-6231" target="_blank" rel="noopener" title="ORCID">Lior Pachter</a></li>
-          </ul>
-        </section>
-      </section>
-
-      <section>
-        <h2>BibTeX</h2>
-        
-        <section class="bibtex-entry">
-          <h3>MedRxiv</h3>
-          <div class="bibtex-box">
-            <button
-              class="copy-bibtex-button"
-              type="button"
-              aria-label="Copy BibTeX for MedRxiv"
-            >
-              Copy BibTeX
-            </button>
-            <pre><code>@article{Booeshaghi_2020,
-  TITLE     = {Markedly heterogeneous COVID-19 testing plans among US colleges and universities},
-  URL       = {http://dx.doi.org/10.1101/2020.08.09.20171223},
-  DOI       = {10.1101/2020.08.09.20171223},
-  PUBLISHER = {openRxiv},
-  AUTHOR    = {Booeshaghi, A. Sina and Tan, Fayth and Renton, Benjamin and Berger, Zackary and Pachter, Lior},
-  YEAR      = {2020}
-}</code></pre>
+      <section class="relationship-inspector" aria-label="Indexed relations" data-work-relations>
+        <section class="relationship-list-panel" aria-label="Relations">
+          <div class="study-section-heading">
+            <h2>Relations</h2>
           </div>
+          <div
+            class="relation-tabs"
+            role="tablist"
+            aria-label="Relation types"
+            data-relation-tabs
+          ></div>
+          <div class="reason-list" data-relation-list></div>
         </section>
-      </section>
 
-      <section>
-        <h2>Citing Works</h2>
-        <p class="citation-source-note">
-          38 citing works found in citation data generated 2026-07-06. Citation relationships are sourced from OpenAlex, Semantic Scholar, Google Scholar.
-        </p>
-        <table class="citation-table">
-          <thead>
-            <tr>
-              <th>Title</th>
-              <th>Year</th>
-              <th>Summary</th>
-            </tr>
-          </thead>
-          <tbody>
-            
-            <tr>
-              <td class="citation-title"><a href="https://scholar.google.com/scholar?q=Communicating%20Effectively%20During%20a%20Health%20Crisis%3A%20A%20Critical%20Examination%20of%20Communication%20Breakdowns%20During%20the%20COVID-19%20Pandemic" target="_blank" rel="noopener">Communicating Effectively During a Health Crisis: A Critical Examination of Communication Breakdowns During the COVID-19 Pandemic</a></td>
-              <td class="citation-year"><time datetime="2024">2024</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://www.scienceopen.com/document_file/0c983a4e-5577-4af1-99a8-f0aa7d97e713/PubMedCentral/0c983a4e-5577-4af1-99a8-f0aa7d97e713.pdf" target="_blank" rel="noopener">Infectious Disease Modelling</a></td>
-              <td class="citation-year"><time datetime="2024">2024</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1073/pnas.2314357121" target="_blank" rel="noopener">Inferring COVID-19 testing and vaccination behavior from New Jersey testing data</a></td>
-              <td class="citation-year"><time datetime="2024">2024</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1038/s41598-023-29858-5" target="_blank" rel="noopener">A multiplexed, paired-pooled droplet digital PCR assay for detection of SARS-CoV-2 in saliva</a></td>
-              <td class="citation-year"><time datetime="2023">2023</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.21203/rs.3.rs-2242271/v2" target="_blank" rel="noopener">A multiplexed, paired-pooled droplet digital PCR assay for detection of SARS-CoV-2 in saliva</a></td>
-              <td class="citation-year"><time datetime="2023">2023</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1002/soej.12627" target="_blank" rel="noopener">COVID on campus: An empirical analysis of COVID infection rates at U.S. colleges and universities</a></td>
-              <td class="citation-year"><time datetime="2023">2023</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1136/bmjopen-2022-063999" target="_blank" rel="noopener">Monitoring SARS-CoV-2 incidence and seroconversion among university students and employees: a longitudinal cohort study in California, June–August 2020</a></td>
-              <td class="citation-year"><time datetime="2023">2023</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1371/journal.pone.0281710" target="_blank" rel="noopener">Operational analysis for COVID-19 testing: Determining the risk from asymptomatic infections</a></td>
-              <td class="citation-year"><time datetime="2023">2023</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include academic, aches, breath, campuses, college, congestion, coronavirus, cough.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://scholar.google.com/scholar?q=Pandemic%20politics%3A%20Exploring%20the%20intersection%20of%20state%20political%20affiliation%20and%20public%20universities&#39;%20COVID-19%20policies%20and%20messaging." target="_blank" rel="noopener">Pandemic politics: Exploring the intersection of state political affiliation and public universities&#39; COVID-19 policies and messaging.</a></td>
-              <td class="citation-year"><time datetime="2023">2023</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.21203/rs.3.rs-2242271/v1" target="_blank" rel="noopener">A multiplexed, paired-pooled droplet digital PCR assay for detection of SARS-CoV-2 in saliva</a></td>
-              <td class="citation-year"><time datetime="2022">2022</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1007/978-3-031-12370-2_6" target="_blank" rel="noopener">Campuses Respond to COVID: “Pandemia” Not Making the Science Grades</a></td>
-              <td class="citation-year"><time datetime="2022">2022</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1098/rsos.220129" target="_blank" rel="noopener">Heterogeneity in testing for infectious diseases</a></td>
-              <td class="citation-year"><time datetime="2022">2022</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/2022.01.11.22269086" target="_blank" rel="noopener">Heterogeneity in testing for infectious diseases</a></td>
-              <td class="citation-year"><time datetime="2022">2022</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1371/journal.pdig.0000065" target="_blank" rel="noopener">Higher education responses to COVID-19 in the United States: Evidence for the impacts of university policy</a></td>
-              <td class="citation-year"><time datetime="2022">2022</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.3390/v15010106" target="_blank" rel="noopener">Laboratory-Based SARS-CoV-2 Receptor Binding Domain Serologic Assays Perform with Equivalent Sensitivity and Specificity to Commercial FDA-EUA Approved Tests</a></td>
-              <td class="citation-year"><time datetime="2022">2022</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include epidemic, academic-diagnostic, capacity, catalyzed, covid-19, early, laboratory, lacking.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://search.proquest.com/openview/4e3a5ed0adbbec8bdb513a59bad537c3/1?pq-origsite=gscholar&amp;cbl=18750&amp;diss=y" target="_blank" rel="noopener">Reaching adolescents and young adults with accessible health services: Applications to HIV, contraception, and COVID-19</a></td>
-              <td class="citation-year"><time datetime="2022">2022</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1371/journal.pone.0261230" target="_blank" rel="noopener">A method for campus-wide SARS-CoV-2 surveillance at a large public university</a></td>
-              <td class="citation-year"><time datetime="2021">2021</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include testing, asymptomatic, campuses, cases, challenge, college, community, covid-19.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.2139/ssrn.3885591" target="_blank" rel="noopener">Covid on Campus: An Empirical Analysis of Covid Infection Rates at US Colleges and Universities</a></td>
-              <td class="citation-year"><time datetime="2021">2021</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.2139/ssrn.3873892" target="_blank" rel="noopener">COVID on Campus: An Empirical Analysis of COVID Infection Rates at US Colleges and Universities</a></td>
-              <td class="citation-year"><time datetime="2021">2021</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/2021.08.11.21261732" target="_blank" rel="noopener">COVID-19 in Connecticut institutions of higher education during the 2020-2021 academic year</a></td>
-              <td class="citation-year"><time datetime="2021">2021</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1016/j.jadohealth.2021.01.016" target="_blank" rel="noopener">COVID-19 Response Strategies at Large Institutes of Higher Education in the United States: A Landscape Analysis, Fall 2020</a></td>
-              <td class="citation-year"><time datetime="2021">2021</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1001/jamanetworkopen.2021.40602" target="_blank" rel="noopener">COVID-19 Testing and Case Rates and Social Contact Among Residential College Students in Connecticut During the 2020-2021 Academic Year</a></td>
-              <td class="citation-year"><time datetime="2021">2021</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://aisel.aisnet.org/mwais2021/13/" target="_blank" rel="noopener">Effects of COVID-19 Policy and Communication on Pandemic Control in US Colleges-An Empirical Study Through the Lens of Online Social Media</a></td>
-              <td class="citation-year"><time datetime="2021">2021</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1016/j.idm.2021.09.003" target="_blank" rel="noopener">Evaluating the sensitivity of SARS-CoV-2 infection rates on college campuses to wastewater surveillance</a></td>
-              <td class="citation-year"><time datetime="2021">2021</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/2021.10.07.21264419" target="_blank" rel="noopener">Higher education responses to COVID-19 in the United States: Evidence for the impacts of university policy</a></td>
-              <td class="citation-year"><time datetime="2021">2021</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1007/s10900-021-00970-9" target="_blank" rel="noopener">Information About COVID-19 Testing on College Websites in the New York City Metropolitan Area</a></td>
-              <td class="citation-year"><time datetime="2021">2021</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1371/journal.pone.0245765" target="_blank" rel="noopener">Piloting an integrated SARS-CoV-2 testing and data system for outbreak containment among college students: A prospective cohort study</a></td>
-              <td class="citation-year"><time datetime="2021">2021</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1093/ofid/ofab464" target="_blank" rel="noopener">SARS-CoV-2 Epidemiology on a Public University Campus in Washington State</a></td>
-              <td class="citation-year"><time datetime="2021">2021</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include approach, cases, constraints, containment, early, facilitate, given, identification.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/2021.03.15.21253227" target="_blank" rel="noopener">SARS-CoV-2 Epidemiology on a Public University Campus in Washington State</a></td>
-              <td class="citation-year"><time datetime="2021">2021</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://www.semanticscholar.org/paper/2110034b5568d8241d0327a1138086227cd58473" target="_blank" rel="noopener">The Macroeconomics of Testing and Quarantining y</a></td>
-              <td class="citation-year"><time datetime="2021">2021</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include according, associated, booeshaghi, budget, constraint, constraints, denote, equations.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/2020.10.09.20210245" target="_blank" rel="noopener">Evaluating the Sensitivity of SARS-CoV-2 Infection Rates on College Campuses to Wastewater Surveillance</a></td>
-              <td class="citation-year"><time datetime="2020">2020</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/2020.09.05.20188839" target="_blank" rel="noopener">Frequency and accuracy of proactive testing for COVID-19</a></td>
-              <td class="citation-year"><time datetime="2020">2020</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include august, broad, coast, collaboration, examined, exceptions, institute, institutions.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://www.semanticscholar.org/paper/dbe806f8690bc9b3b7af575e64f4d5d27e66b26d" target="_blank" rel="noopener">NBER WORKING PAPER SERIES THE MACROECONOMICS OF TESTING AND QUARANTINING</a></td>
-              <td class="citation-year"><time datetime="2020">2020</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include associated, budget, constraint, constraints, denote, equations, function, lagrange.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.48550/arxiv.2007.04827" target="_blank" rel="noopener">Optimizing testing policies for detecting COVID-19 outbreaks</a></td>
-              <td class="citation-year"><time datetime="2020">2020</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://www.semanticscholar.org/paper/545d045e78a836519a5c367f78779ccfc85634d8" target="_blank" rel="noopener">Optimizing testing policies for detecting COVID-19 outbreaks</a></td>
-              <td class="citation-year"><time datetime="2020">2020</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include transmission, already, campus, campuses, college, crucial, especially, groups.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.3386/w27104" target="_blank" rel="noopener">The Macroeconomics of Testing and Quarantining</a></td>
-              <td class="citation-year"><time datetime="2020">2020</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/2020.11.25.20238899" target="_blank" rel="noopener">Universities and COVID-19 Growth at the Start of the 2020 Academic Year</a></td>
-              <td class="citation-year"><time datetime="2020">2020</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://www.semanticscholar.org/paper/37464294fda904b9fd915dece10b96cfbc7588cf" target="_blank" rel="noopener">WORKING PAPER SERIES THE MACROECONOMICS OF TESTING AND QUARANTINING</a></td>
-              <td class="citation-year"><time datetime="2020">2020</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include equations, according, associated, booeshaghi, budget, conditions, constraint, constraints.</td>
-            </tr>
-          </tbody>
-        </table>
+        <aside class="evidence-panel relationship-detail" aria-live="polite">
+          <span class="study-label" data-relation-label>Relation</span>
+          <h2 data-relation-title></h2>
+          <p class="selected-relation-statement" data-relation-statement></p>
+          <section class="version-citation" data-version-citation hidden>
+            <h3>Citation</h3>
+            <div class="bibtex-box">
+              <button class="copy-bibtex-button" type="button" data-copy-bibtex>
+                Copy BibTeX
+              </button>
+              <pre><code data-bibtex-code></code></pre>
+            </div>
+          </section>
+          <details class="relationship-evidence" data-relation-evidence>
+            <summary>
+              <span>Evidence</span>
+              <span class="evidence-summary" data-evidence-summary></span>
+            </summary>
+            <table class="relationship-evidence-table">
+              <thead>
+                <tr>
+                  <th>Span</th>
+                  <th>Source</th>
+                </tr>
+              </thead>
+              <tbody data-evidence-rows></tbody>
+            </table>
+          </details>
+        </aside>
       </section>
+      <script id="workRelationData" type="application/json">{"work":{"id":"work:markedly-heterogeneous-covid-19-testing-plans-among-us-colleges-and-universities","title":"Markedly heterogeneous COVID-19 testing plans among US colleges and universities","description":"Safe campus reopening during COVID-19 depended on testing plans that could identify infections before outbreaks spread. U.S. colleges faced conflicting guidance, uneven resources, and opaque public communication, producing wide variation in whether and how communities would be screened. A survey of more than 500 institutions documents heterogeneous testing strategies, divergence from emerging best practices for frequent testing, and equity concerns tied to institutional resources and worker access."},"relationTypes":[{"id":"authors","label":"Authors"},{"id":"claims","label":"Claims"},{"id":"citations","label":"Citations"},{"id":"versions","label":"Versions"},{"id":"software","label":"Software"},{"id":"sources","label":"Sources"}],"connections":[{"id":"connection:version:markedly-heterogeneous-covid-19-testing-plans-among-us-colleges-and-universities--2020-08-11-medrxiv--person:orcid:0000-0002-6442-4502--author-1","type":"authors","title":"A. Sina Booeshaghi","description":"A. Sina Booeshaghi is an author of Markedly heterogeneous COVID-19 testing plans among US colleges and universities.","statement":"A. Sina Booeshaghi is an author of Markedly heterogeneous COVID-19 testing plans among US colleges and universities.","evidence":[]},{"id":"connection:version:markedly-heterogeneous-covid-19-testing-plans-among-us-colleges-and-universities--2020-08-11-medrxiv--person:orcid:0000-0002-2160-5311--author-2","type":"authors","title":"Fayth Tan","description":"Fayth Tan is an author of Markedly heterogeneous COVID-19 testing plans among US colleges and universities.","statement":"Fayth Tan is an author of Markedly heterogeneous COVID-19 testing plans among US colleges and universities.","evidence":[]},{"id":"connection:version:markedly-heterogeneous-covid-19-testing-plans-among-us-colleges-and-universities--2020-08-11-medrxiv--person:local:benjamin-renton--author-3","type":"authors","title":"Benjamin Renton","description":"Benjamin Renton is an author of Markedly heterogeneous COVID-19 testing plans among US colleges and universities.","statement":"Benjamin Renton is an author of Markedly heterogeneous COVID-19 testing plans among US colleges and universities.","evidence":[]},{"id":"connection:version:markedly-heterogeneous-covid-19-testing-plans-among-us-colleges-and-universities--2020-08-11-medrxiv--person:orcid:0000-0002-5871-0342--author-4","type":"authors","title":"Zackary Berger","description":"Zackary Berger is an author of Markedly heterogeneous COVID-19 testing plans among US colleges and universities.","statement":"Zackary Berger is an author of Markedly heterogeneous COVID-19 testing plans among US colleges and universities.","evidence":[]},{"id":"connection:version:markedly-heterogeneous-covid-19-testing-plans-among-us-colleges-and-universities--2020-08-11-medrxiv--person:orcid:0000-0002-9164-6231--author-5","type":"authors","title":"Lior Pachter","description":"Lior Pachter is an author of Markedly heterogeneous COVID-19 testing plans among US colleges and universities.","statement":"Lior Pachter is an author of Markedly heterogeneous COVID-19 testing plans among US colleges and universities.","evidence":[]},{"id":"connection:version:markedly-heterogeneous-covid-19-testing-plans-among-us-colleges-and-universities--2020-08-11-medrxiv--claim:version:markedly-heterogeneous-covid-19-testing-plans-among-us-colleges-and-universities--2020-08-11-medrxiv--summary-0","type":"claims","title":"Safe campus reopening during COVID-19 depended on testing plans that could identify infections before outbreaks spread. ","description":"Safe campus reopening during COVID-19 depended on testing plans that could identify infections before outbreaks spread. U.S. colleges faced conflicting guidance, uneven resources, and opaque public communication, producing wide variation in whether and how communities would be screened. A survey of more than 500 institutions documents heterogeneous testing strategies, divergence from emerging best practices for frequent testing, and equity concerns tied to institutional resources and worker access.","statement":"This publication contains the target grounded summary claim.","evidence":[{"source":"source:text:document:markedly-heterogeneous-covid-19-testing-plans-among-us-colleges-and-universities--2020-08-11-medrxiv","span":"As the COVID-19 pandemic worsens in the United States [1], colleges that have invited students back for the fall are finalizing mitigation plans to lessen the spread of SARS-CoV-2. Even though students have largely been away from campuses over the summer, several outbreaks associated with colleges have already occurred [2], foreshadowing the scale of infection that could result from hundreds of thousands of students returning to college towns and cities.","page":1,"properties":{"document_id":"document:markedly-heterogeneous-covid-19-testing-plans-among-us-colleges-and-universities--2020-08-11-medrxiv","char_start":1064,"char_end":1522}},{"source":"source:text:document:markedly-heterogeneous-covid-19-testing-plans-among-us-colleges-and-universities--2020-08-11-medrxiv","span":"Examining the reopening plans of over 500 schools, we found, as of August 7, 2020, highly variable strategies all over the country, covering the full spectrum from available and regular testing for students, staff and faculty, to no testing at all.","page":1,"properties":{"document_id":"document:markedly-heterogeneous-covid-19-testing-plans-among-us-colleges-and-universities--2020-08-11-medrxiv","char_start":2640,"char_end":2888}},{"source":"source:text:document:markedly-heterogeneous-covid-19-testing-plans-among-us-colleges-and-universities--2020-08-11-medrxiv","span":"The variability of testing strategies might lead one to conclude that there is uncertainty in the science of best practices for safe reopening of colleges. However, contrary to that perception, recent research has converged on the need for easily accessible, frequent testing for colleges to reopen safely.","page":3,"properties":{"document_id":"document:markedly-heterogeneous-covid-19-testing-plans-among-us-colleges-and-universities--2020-08-11-medrxiv","char_start":378,"char_end":684}},{"source":"source:text:document:markedly-heterogeneous-covid-19-testing-plans-among-us-colleges-and-universities--2020-08-11-medrxiv","span":"However, not all colleges are planning to regularly screen their communities, and even those who do display high variability in the frequency with which they plan to test (​Figure 1b​).","page":3,"properties":{"document_id":"document:markedly-heterogeneous-covid-19-testing-plans-among-us-colleges-and-universities--2020-08-11-medrxiv","char_start":1170,"char_end":1355}},{"source":"source:text:document:markedly-heterogeneous-covid-19-testing-plans-among-us-colleges-and-universities--2020-08-11-medrxiv","span":"top 50 by US News World Report [25] plan on testing, compared to less highly ranked institutions (96% vs 49%). Furthemore, universities with higher endowments are more likely to plan for testing than universities with smaller endowments","page":4,"properties":{"document_id":"document:markedly-heterogeneous-covid-19-testing-plans-among-us-colleges-and-universities--2020-08-11-medrxiv","char_start":342,"char_end":578}}]},{"id":"connection:version:markedly-heterogeneous-covid-19-testing-plans-among-us-colleges-and-universities--2020-08-11-medrxiv--work:markedly-heterogeneous-covid-19-testing-plans-among-us-colleges-and-universities","type":"versions","title":"Markedly heterogeneous COVID-19 testing plans among US colleges and universities","description":"2020-08-11 · MedRxiv","statement":"2020-08-11 is a version of Markedly heterogeneous COVID-19 testing plans among US colleges and universities.","evidence":[],"citation":{"doi":"10.1101/2020.08.09.20171223","url":"https://doi.org/10.1101/2020.08.09.20171223","date":"2020-08-11","venue":"MedRxiv","authors":[{"name":"A. Sina Booeshaghi","orcid":"https://orcid.org/0000-0002-6442-4502"},{"name":"Fayth Tan","orcid":"https://orcid.org/0000-0002-2160-5311"},{"name":"Benjamin Renton","orcid":""},{"name":"Zackary Berger","orcid":"https://orcid.org/0000-0002-5871-0342"},{"name":"Lior Pachter","orcid":"https://orcid.org/0000-0002-9164-6231"}]},"bibtex":"@article{Booeshaghi_2020,\n  TITLE     = {Markedly heterogeneous COVID-19 testing plans among US colleges and universities},\n  URL       = {http://dx.doi.org/10.1101/2020.08.09.20171223},\n  DOI       = {10.1101/2020.08.09.20171223},\n  PUBLISHER = {openRxiv},\n  AUTHOR    = {Booeshaghi, A. Sina and Tan, Fayth and Renton, Benjamin and Berger, Zackary and Pachter, Lior},\n  YEAR      = {2020}\n}"},{"id":"connection:document:markedly-heterogeneous-covid-19-testing-plans-among-us-colleges-and-universities--2020-08-11-medrxiv--version:markedly-heterogeneous-covid-19-testing-plans-among-us-colleges-and-universities--2020-08-11-medrxiv","type":"sources","title":"2020-08-11-medrxiv.pdf","description":"This source document provides local provenance for the target publication.","statement":"This source document provides local provenance for the target publication.","evidence":[]}]}</script>
+      <script src="../work-relations.js"></script>
     </article>
   </body>
 </html>

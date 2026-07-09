@@ -17,77 +17,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Analysis of lowly expressed genes in single-cell RNA-sequencing can produce misleading results when standard normalization techniques are applied. To demonstrate this, we took single-cell RNA- sequencing data from young and old mice and showed how the application of log(1+x) combined with differential expression of ACE2 incorrectly failed to find statistically significant differences." />
+    <meta name="description" content="Single-cell atlases are often used to reason about clinically important genes, but sparse counts make naive comparisons fragile. For low-abundance targets such as ACE2, filtering to nonzero cells and applying log1p transformations can create misleading impressions of expression. These examples clarify the statistical interpretation of positive-cell fractions and warn that common normalization choices can distort comparative estimates when their limitations are ignored." />
     <link rel="stylesheet" href="../styles.css" />
-    
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        document.querySelectorAll(".copy-bibtex-button").forEach((button) => {
-          button.addEventListener("click", async () => {
-            const box = button.closest(".bibtex-box");
-            const code = box ? box.querySelector("code") : null;
-            const bibtex = code ? code.textContent : "";
-            const previousText = button.textContent;
-            const markStatus = (text) => {
-              button.textContent = text;
-              window.setTimeout(() => {
-                button.textContent = previousText;
-              }, 1200);
-            };
-            const copyWithSelection = () => {
-              const textarea = document.createElement("textarea");
-              textarea.value = bibtex;
-              textarea.setAttribute("readonly", "");
-              textarea.style.position = "fixed";
-              textarea.style.left = "0";
-              textarea.style.top = "0";
-              textarea.style.width = "1px";
-              textarea.style.height = "1px";
-              textarea.style.opacity = "0";
-              textarea.style.pointerEvents = "none";
-              document.body.appendChild(textarea);
-              textarea.focus({ preventScroll: true });
-              textarea.select();
-              textarea.setSelectionRange(0, textarea.value.length);
-              const copied = document.execCommand("copy");
-              textarea.remove();
-              return copied;
-            };
-
-            try {
-              if (navigator.clipboard && navigator.clipboard.writeText) {
-                await navigator.clipboard.writeText(bibtex);
-                markStatus("Copied");
-                return;
-              }
-
-              if (copyWithSelection()) {
-                markStatus("Copied");
-                return;
-              }
-            } catch {
-              let copied = false;
-
-              try {
-                copied = copyWithSelection();
-              } catch {
-                copied = false;
-              }
-
-              if (copied) {
-                markStatus("Copied");
-                return;
-              }
-            }
-
-            markStatus("Copy failed");
-          });
-        });
-      });
-    </script>
     <title>Normalization of single-cell RNA-seq counts by log (x+ 1) or log (1+ x) | Works | Sina Booeshaghi</title>
   </head>
-  <body>
+  <body class="work-detail-page">
     <nav class="breadcrumb" aria-label="Breadcrumb">
       <a href="../index.html">Home</a>
       <span aria-hidden="true">/</span>
@@ -95,430 +29,71 @@
       <span aria-hidden="true">/</span>
       <span class="breadcrumb-current" title="Normalization of single-cell RNA-seq counts by log (x+ 1) or log (1+ x)">Normalization of single-cell RNA-seq counts by log (x+ 1) or log...</span>
     </nav>
-    <article class="work-page">
-      <h1>Normalization of single-cell RNA-seq counts by log (x+ 1) or log (1+ x)</h1>
-      <div class="publication-versions work-versions" aria-label="Work versions">
-        <span class="publication-versions-label">Versions</span>
-        <div class="publication-version-cards">
-          
-        <a
-          class="publication-version-link is-current"
-          href="https://doi.org/10.1093/bioinformatics/btab085"
-          target="_blank"
-          rel="noopener"
-        >
-          <span class="publication-version-title">Normalization of single-cell RNA-seq counts by log (x+ 1) or log (1+ x)</span>
-          <span class="publication-version-detail">Bioinformatics · 2021-03-02</span>
-        </a>
+    <article class="work-page study-graph-page">
+      <section class="study-focus" aria-label="Selected work">
+        <div>
+          <h1>Normalization of single-cell RNA-seq counts by log (x+ 1) or log (1+ x)</h1>
+          <p>Single-cell atlases are often used to reason about clinically important genes, but sparse counts make naive comparisons fragile. For low-abundance targets such as ACE2, filtering to nonzero cells and applying log1p transformations can create misleading impressions of expression. These examples clarify the statistical interpretation of positive-cell fractions and warn that common normalization choices can distort comparative estimates when their limitations are ignored.</p>
         </div>
-      </div>
-
-      <section>
-        <h2>Summary</h2>
-        <p>Analysis of lowly expressed genes in single-cell RNA-sequencing can produce misleading results when standard normalization techniques are applied. To demonstrate this, we took single-cell RNA- sequencing data from young and old mice and showed how the application of log(1+x) combined with differential expression of ACE2 incorrectly failed to find statistically significant differences.</p>
+        <dl class="study-stats">
+          <div>
+            <dt>Citations</dt>
+            <dd>65</dd>
+          </div>
+          <div>
+            <dt>Relations</dt>
+            <dd>6</dd>
+          </div>
+        </dl>
       </section>
 
       
-      <section
-        class="authors-section"
-        data-author-version-count="1"
-      >
-        <h2>Authors</h2>
-        
-        <section
-          class="author-version"
-          data-author-count="2"
-        >
-          <h3>
-            <a href="https://doi.org/10.1093/bioinformatics/btab085" target="_blank" rel="noopener">Bioinformatics</a>
-            <time datetime="2021-03-02">2021-03-02</time>
-          </h3>
-          <ul class="author-list">
-            
-            <li><a href="https://orcid.org/0000-0002-6442-4502" target="_blank" rel="noopener" title="ORCID">A Sina Booeshaghi</a></li>
-            <li><a href="https://orcid.org/0000-0002-9164-6231" target="_blank" rel="noopener" title="ORCID">Lior Pachter</a></li>
-          </ul>
-        </section>
-      </section>
-
-      <section>
-        <h2>BibTeX</h2>
-        
-        <section class="bibtex-entry">
-          <h3>Bioinformatics</h3>
-          <div class="bibtex-box">
-            <button
-              class="copy-bibtex-button"
-              type="button"
-              aria-label="Copy BibTeX for Bioinformatics"
-            >
-              Copy BibTeX
-            </button>
-            <pre><code>@article{Booeshaghi_2021,
-  TITLE     = {Normalization of single-cell RNA-seq counts by log(
-                    &lt;i&gt;x&lt;/i&gt;
-                    + 1) or log(1 +
-                    &lt;i&gt;x&lt;/i&gt;
-                    )},
-  VOLUME    = {37},
-  ISSN      = {1367-4811},
-  URL       = {http://dx.doi.org/10.1093/bioinformatics/btab085},
-  DOI       = {10.1093/bioinformatics/btab085},
-  NUMBER    = {15},
-  JOURNAL   = {Bioinformatics},
-  PUBLISHER = {Oxford University Press (OUP)},
-  AUTHOR    = {Booeshaghi, A Sina and Pachter, Lior},
-  EDITOR    = {Kelso, Janet},
-  YEAR      = {2021},
-  PAGES     = {2223-2224}
-}</code></pre>
+      <section class="relationship-inspector" aria-label="Indexed relations" data-work-relations>
+        <section class="relationship-list-panel" aria-label="Relations">
+          <div class="study-section-heading">
+            <h2>Relations</h2>
           </div>
+          <div
+            class="relation-tabs"
+            role="tablist"
+            aria-label="Relation types"
+            data-relation-tabs
+          ></div>
+          <div class="reason-list" data-relation-list></div>
         </section>
-      </section>
 
-      <section>
-        <h2>Citing Works</h2>
-        <p class="citation-source-note">
-          65 citing works found in citation data generated 2026-07-06. Citation relationships are sourced from OpenAlex, Semantic Scholar, Google Scholar.
-        </p>
-        <table class="citation-table">
-          <thead>
-            <tr>
-              <th>Title</th>
-              <th>Year</th>
-              <th>Summary</th>
-            </tr>
-          </thead>
-          <tbody>
-            
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1080/01621459.2026.2615185" target="_blank" rel="noopener">Heterogeneous Gene Network Estimation for Single-Cell Transcriptomic Data via a Joint Regularized Deep Neural Network</a></td>
-              <td class="citation-year"><time datetime="2026">2026</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.7554/elife.106183.2" target="_blank" rel="noopener">Integrating bulk and single cell RNA-seq refines transcriptomic profiles of individual C. elegans neurons</a></td>
-              <td class="citation-year"><time datetime="2026">2026</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1093/biostatistics/kxag012" target="_blank" rel="noopener">NBSR: a Negative Binomial Softmax Regression model for microRNA-seq data analysis</a></td>
-              <td class="citation-year"><time datetime="2026">2026</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1038/s42256-026-01225-9" target="_blank" rel="noopener">Probabilistic modelling of single-cell bisulfite sequencing data with MethylVI</a></td>
-              <td class="citation-year"><time datetime="2026">2026</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1038/s41467-026-69102-y" target="_blank" rel="noopener">scLong: a billion-parameter foundation model for capturing long-range gene context in single-cell transcriptomics</a></td>
-              <td class="citation-year"><time datetime="2026">2026</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1016/j.ejca.2026.116591" target="_blank" rel="noopener">Single-cell systems network and machine learning dissection of ferroptosis in recurrent glioblastoma highlights astrocytic ZFP36 as a therapeutic hub for network medicine repurposing</a></td>
-              <td class="citation-year"><time datetime="2026">2026</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.17208/jkpa.2026.02.61.1.161" target="_blank" rel="noopener">The Impact of Economic Conditions on the Return-to-Rural Intentions of Baby Boomers: A Generational Comparison between the First and Second Baby Boomer Cohorts</a></td>
-              <td class="citation-year"><time datetime="2026">2026</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1038/s43588-025-00943-1" target="_blank" rel="noopener">Toward informed batch correction for single-cell transcriptome integration</a></td>
-              <td class="citation-year"><time datetime="2026">2026</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.64898/2026.04.27.720955" target="_blank" rel="noopener">Unlocking Multi-Sample Differential Expression for Spatial Transcriptomics Data with TESSERA</a></td>
-              <td class="citation-year"><time datetime="2026">2026</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1038/s41587-025-02614-y" target="_blank" rel="noopener">Detection of viral sequences at single-cell resolution identifies novel viruses associated with host gene expression changes</a></td>
-              <td class="citation-year"><time datetime="2025">2025</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1109/twc.2025.3646777" target="_blank" rel="noopener">Exploring ln(1 + x ) Bounds: A Case Study on the Cellular Network Average Data Rate Bounds</a></td>
-              <td class="citation-year"><time datetime="2025">2025</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1093/nargab/lqaf049" target="_blank" rel="noopener">Exploring the latent space of transcriptomic data with topic modeling</a></td>
-              <td class="citation-year"><time datetime="2025">2025</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/2025.05.11.653373" target="_blank" rel="noopener">Extrinsic biological stochasticity and technical noise normalization of single-cell RNA sequencing data</a></td>
-              <td class="citation-year"><time datetime="2025">2025</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.64898/2025.12.11.691720" target="_blank" rel="noopener">Going Against the Grain: Investigating the C4 wheat hypothesis with spatial transcriptomics</a></td>
-              <td class="citation-year"><time datetime="2025">2025</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1007/s40333-025-0095-6" target="_blank" rel="noopener">Influence of land use on spatial distribution of primary productivity in aquatic environment in the Weihe River Basin, China</a></td>
-              <td class="citation-year"><time datetime="2025">2025</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.7554/elife.106183.1" target="_blank" rel="noopener">Integrating bulk and single cell RNA-seq refines transcriptomic profiles of individual C. elegans neurons</a></td>
-              <td class="citation-year"><time datetime="2025">2025</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.7554/elife.106183" target="_blank" rel="noopener">Integrating bulk and single cell RNA-seq refines transcriptomic profiles of individual C. elegans neurons</a></td>
-              <td class="citation-year"><time datetime="2025">2025</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1371/journal.pcbi.1012476" target="_blank" rel="noopener">Optimal transport reveals dynamic gene regulatory networks via gene velocity estimation</a></td>
-              <td class="citation-year"><time datetime="2025">2025</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1016/j.envres.2025.122123" target="_blank" rel="noopener">Oxidative damage, genetic and epigenetic alterations in hexavalent chromium exposed workers - A cross-sectional study within the SafeChrom project</a></td>
-              <td class="citation-year"><time datetime="2025">2025</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/2025.05.11.653354" target="_blank" rel="noopener">Pseudoassembly of k-mers</a></td>
-              <td class="citation-year"><time datetime="2025">2025</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1186/s12859-025-06112-5" target="_blank" rel="noopener">Redefining the high variable genes by optimized LOESS regression with positive ratio</a></td>
-              <td class="citation-year"><time datetime="2025">2025</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.3390/ai6050094" target="_blank" rel="noopener">Robust Single-Cell RNA-Seq Analysis Using Hyperdimensional Computing: Enhanced Clustering and Classification Methods</a></td>
-              <td class="citation-year"><time datetime="2025">2025</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.2174/0115748936348851241230113213" target="_blank" rel="noopener">scZIGVAE: A Variational Graph Attention Autoencoder Based on the Zero-Inflated Negative Binomial Distribution for Clustering Single-cell RNA-Seq Data</a></td>
-              <td class="citation-year"><time datetime="2025">2025</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1111/pbi.70351" target="_blank" rel="noopener">Spatial Transcriptomics of Developing Wheat Seed Reveals Concentric Gene Expression Zones and Subgenome Biased Expression of Key Genes</a></td>
-              <td class="citation-year"><time datetime="2025">2025</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/2025.06.08.658529" target="_blank" rel="noopener">Spatial transcriptomics of developing wheat seed reveals radial expression patterns in endosperm and subgenome biased expression of key genes</a></td>
-              <td class="citation-year"><time datetime="2025">2025</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1109/tcbbio.2025.3641230" target="_blank" rel="noopener">Synthetic Assessment of Transfer Learning Method From Cell Lines to Single-Cell on Drug Response Prediction</a></td>
-              <td class="citation-year"><time datetime="2025">2025</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1002/hem3.70195" target="_blank" rel="noopener">Transcriptional profiling directs the classification of acute leukemias of ambiguous lineage into AML, B‐ALL, or T‐ALL</a></td>
-              <td class="citation-year"><time datetime="2025">2025</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1038/s41598-025-93146-7" target="_blank" rel="noopener">Unraveling shared diagnostic genes and cellular microenvironmental changes in endometriosis and recurrent implantation failure through multi-omics analysis</a></td>
-              <td class="citation-year"><time datetime="2025">2025</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1093/bioinformatics/btae219" target="_blank" rel="noopener">A count-based model for delineating cell–cell interactions in spatial transcriptomics data</a></td>
-              <td class="citation-year"><time datetime="2024">2024</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/2024.11.04.621867" target="_blank" rel="noopener">Addressing the mean-variance relationship in spatially resolved transcriptomics data with spoon</a></td>
-              <td class="citation-year"><time datetime="2024">2024</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1093/biostatistics/kxaf012" target="_blank" rel="noopener">Addressing the mean–variance relationship in spatially resolved transcriptomics data with spoon</a></td>
-              <td class="citation-year"><time datetime="2024">2024</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1093/bioinformatics/btae660" target="_blank" rel="noopener">ADTGP: correcting single-cell antibody sequencing data using Gaussian process regression</a></td>
-              <td class="citation-year"><time datetime="2024">2024</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1109/urucon63440.2024.10850429" target="_blank" rel="noopener">Assessing Bias in Citizen Science Data through Linear Regression</a></td>
-              <td class="citation-year"><time datetime="2024">2024</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1093/nargab/lqae169" target="_blank" rel="noopener">Cell- and tissue-specific glycosylation pathways informed by single-cell transcriptomics</a></td>
-              <td class="citation-year"><time datetime="2024">2024</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/2024.10.31.621233" target="_blank" rel="noopener">Exploring the latent space of transcriptomic data with topic modeling</a></td>
-              <td class="citation-year"><time datetime="2024">2024</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1109/embc53108.2024.10782122" target="_blank" rel="noopener">HyperCell: Advancing Cell Type Classification with Hyperdimensional Computing</a></td>
-              <td class="citation-year"><time datetime="2024">2024</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1038/s41467-023-44211-0" target="_blank" rel="noopener">IgM N-glycosylation correlates with COVID-19 severity and rate of complement deposition</a></td>
-              <td class="citation-year"><time datetime="2024">2024</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1371/journal.pcbi.1012560" target="_blank" rel="noopener">Mcadet: A feature selection method for fine-resolution single-cell RNA-seq data based on multiple correspondence analysis and community detection</a></td>
-              <td class="citation-year"><time datetime="2024">2024</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/2024.09.12.612590" target="_blank" rel="noopener">Optimal transport reveals dynamic gene regulatory networks via gene velocity estimation</a></td>
-              <td class="citation-year"><time datetime="2024">2024</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1016/j.compbiomed.2024.108351" target="_blank" rel="noopener">PPPCT: Privacy-Preserving framework for Parallel Clustering Transcriptomics data</a></td>
-              <td class="citation-year"><time datetime="2024">2024</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1038/s41592-024-02390-8" target="_blank" rel="noopener">Small data methods in omics: the power of one</a></td>
-              <td class="citation-year"><time datetime="2024">2024</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1016/j.compbiomed.2024.109395" target="_blank" rel="noopener">The impact of PTEN status on glioblastoma multiforme: A glial cell type-specific study identifies unique prognostic markers</a></td>
-              <td class="citation-year"><time datetime="2024">2024</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1038/s41467-023-44014-3" target="_blank" rel="noopener">Accurate integration of single-cell DNA and RNA for analyzing intratumor heterogeneity using MaCroDNA</a></td>
-              <td class="citation-year"><time datetime="2023">2023</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/2023.09.26.559616" target="_blank" rel="noopener">Cell and tissue-specific glycosylation pathways informed by single-cell transcriptomics</a></td>
-              <td class="citation-year"><time datetime="2023">2023</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1186/s13059-023-03067-9" target="_blank" rel="noopener">GoM DE: interpreting structure in sequence count data with differential expression analysis allowing for grades of membership</a></td>
-              <td class="citation-year"><time datetime="2023">2023</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/2023.03.03.531029" target="_blank" rel="noopener">GoM DE: interpreting structure in sequence count data with differential expression analysis allowing for grades of membership</a></td>
-              <td class="citation-year"><time datetime="2023">2023</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/2023.12.15.571918" target="_blank" rel="noopener">Identifying condition-related cell-cell communication events using supervised tensor analysis</a></td>
-              <td class="citation-year"><time datetime="2023">2023</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.21203/rs.3.rs-2939468/v1" target="_blank" rel="noopener">IgM N-glycosylation correlates with COVID-19 severity and rate of complement deposition</a></td>
-              <td class="citation-year"><time datetime="2023">2023</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1172/jci.insight.171305" target="_blank" rel="noopener">MED12 mutation activates the tryptophan/kynurenine/AHR pathway to promote growth of uterine leiomyomas</a></td>
-              <td class="citation-year"><time datetime="2023">2023</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1088/2632-2153/acd7c3" target="_blank" rel="noopener">scGMM-VGAE: a Gaussian mixture model-based variational graph autoencoder algorithm for clustering single-cell RNA-seq data</a></td>
-              <td class="citation-year"><time datetime="2023">2023</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1007/s41109-023-00567-2" target="_blank" rel="noopener">Selecting a significance level in sequential testing procedures for community detection</a></td>
-              <td class="citation-year"><time datetime="2023">2023</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.4103/1673-5374.366493" target="_blank" rel="noopener">Single-nuclei RNA sequencing uncovers heterogenous transcriptional signatures in Parkinson’s disease associated with nuclear receptor-related factor 1 defect</a></td>
-              <td class="citation-year"><time datetime="2023">2023</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1016/j.cels.2023.08.004" target="_blank" rel="noopener">Studying stochastic systems biology of the cell with single-cell genomics data</a></td>
-              <td class="citation-year"><time datetime="2023">2023</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/2023.05.17.541250" target="_blank" rel="noopener">Studying stochastic systems biology of the cell with single-cell genomics data</a></td>
-              <td class="citation-year"><time datetime="2023">2023</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1186/s12859-022-05054-6" target="_blank" rel="noopener">A Poisson reduced-rank regression model for association mapping in sequencing data</a></td>
-              <td class="citation-year"><time datetime="2022">2022</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/2022.05.31.494236" target="_blank" rel="noopener">A Poisson reduced-rank regression model for association mapping in sequencing data</a></td>
-              <td class="citation-year"><time datetime="2022">2022</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1038/s41467-022-31369-2" target="_blank" rel="noopener">Context-aware deconvolution of cell–cell communication with Tensor-cell2cell</a></td>
-              <td class="citation-year"><time datetime="2022">2022</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/2022.09.02.22279554" target="_blank" rel="noopener">Effects of nasogastric tube on oral microbiome among long-term care patients</a></td>
-              <td class="citation-year"><time datetime="2022">2022</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.4049/jimmunol.2100439" target="_blank" rel="noopener">IL-22 Plays a Dual Role in the Amniotic Cavity: Tissue Injury and Host Defense against Microbes in Preterm Labor</a></td>
-              <td class="citation-year"><time datetime="2022">2022</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/2022.08.21.504709" target="_blank" rel="noopener">MaCroDNA: Accurate integration of single-cell DNA and RNA data for a deeper understanding of tumor heterogeneity</a></td>
-              <td class="citation-year"><time datetime="2022">2022</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.3389/fcell.2022.884748" target="_blank" rel="noopener">Single-cell and single-nuclei RNA sequencing as powerful tools to decipher cellular heterogeneity and dysregulation in neurodegenerative diseases</a></td>
-              <td class="citation-year"><time datetime="2022">2022</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/2022.04.04.486878" target="_blank" rel="noopener">Single-cell multimodal modeling with deep parametric inference</a></td>
-              <td class="citation-year"><time datetime="2022">2022</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1093/bioinformatics/btab804" target="_blank" rel="noopener">CellVGAE: an unsupervised scRNA-seq analysis workflow with graph attention networks</a></td>
-              <td class="citation-year"><time datetime="2021">2021</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/2021.09.20.461129" target="_blank" rel="noopener">Context-aware deconvolution of cell-cell communication with Tensor-cell2cell</a></td>
-              <td class="citation-year"><time datetime="2021">2021</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.3389/fgene.2021.717319" target="_blank" rel="noopener">Identification and Validation of a Tumor Microenvironment-Related Gene Signature in Hepatocellular Carcinoma Prognosis</a></td>
-              <td class="citation-year"><time datetime="2021">2021</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-          </tbody>
-        </table>
+        <aside class="evidence-panel relationship-detail" aria-live="polite">
+          <span class="study-label" data-relation-label>Relation</span>
+          <h2 data-relation-title></h2>
+          <p class="selected-relation-statement" data-relation-statement></p>
+          <section class="version-citation" data-version-citation hidden>
+            <h3>Citation</h3>
+            <div class="bibtex-box">
+              <button class="copy-bibtex-button" type="button" data-copy-bibtex>
+                Copy BibTeX
+              </button>
+              <pre><code data-bibtex-code></code></pre>
+            </div>
+          </section>
+          <details class="relationship-evidence" data-relation-evidence>
+            <summary>
+              <span>Evidence</span>
+              <span class="evidence-summary" data-evidence-summary></span>
+            </summary>
+            <table class="relationship-evidence-table">
+              <thead>
+                <tr>
+                  <th>Span</th>
+                  <th>Source</th>
+                </tr>
+              </thead>
+              <tbody data-evidence-rows></tbody>
+            </table>
+          </details>
+        </aside>
       </section>
+      <script id="workRelationData" type="application/json">{"work":{"id":"work:normalization-of-single-cell-rna-seq-counts-by-log-x-1-or-log-1-x","title":"Normalization of single-cell RNA-seq counts by log (x+ 1) or log (1+ x)","description":"Single-cell atlases are often used to reason about clinically important genes, but sparse counts make naive comparisons fragile. For low-abundance targets such as ACE2, filtering to nonzero cells and applying log1p transformations can create misleading impressions of expression. These examples clarify the statistical interpretation of positive-cell fractions and warn that common normalization choices can distort comparative estimates when their limitations are ignored."},"relationTypes":[{"id":"authors","label":"Authors"},{"id":"claims","label":"Claims"},{"id":"citations","label":"Citations"},{"id":"versions","label":"Versions"},{"id":"software","label":"Software"},{"id":"sources","label":"Sources"}],"connections":[{"id":"connection:version:normalization-of-single-cell-rna-seq-counts-by-log-x-1-or-log-1-x--2021-03-02-bioinformatics--person:orcid:0000-0002-6442-4502--author-1","type":"authors","title":"A. Sina Booeshaghi","description":"A Sina Booeshaghi is an author of Normalization of single-cell RNA-seq counts by log (x+ 1) or log (1+ x).","statement":"A Sina Booeshaghi is an author of Normalization of single-cell RNA-seq counts by log (x+ 1) or log (1+ x).","evidence":[]},{"id":"connection:version:normalization-of-single-cell-rna-seq-counts-by-log-x-1-or-log-1-x--2021-03-02-bioinformatics--person:orcid:0000-0002-9164-6231--author-2","type":"authors","title":"Lior Pachter","description":"Lior Pachter is an author of Normalization of single-cell RNA-seq counts by log (x+ 1) or log (1+ x).","statement":"Lior Pachter is an author of Normalization of single-cell RNA-seq counts by log (x+ 1) or log (1+ x).","evidence":[]},{"id":"connection:version:normalization-of-single-cell-rna-seq-counts-by-log-x-1-or-log-1-x--2021-03-02-bioinformatics--claim:version:normalization-of-single-cell-rna-seq-counts-by-log-x-1-or-log-1-x--2021-03-02-bioinformatics--summary-0","type":"claims","title":"Single-cell atlases are often used to reason about clinically important genes, but sparse counts make naive comparisons ","description":"Single-cell atlases are often used to reason about clinically important genes, but sparse counts make naive comparisons fragile. For low-abundance targets such as ACE2, filtering to nonzero cells and applying log1p transformations can create misleading impressions of expression. These examples clarify the statistical interpretation of positive-cell fractions and warn that common normalization choices can distort comparative estimates when their limitations are ignored.","statement":"This publication contains the target grounded summary claim.","evidence":[{"source":"source:text:document:normalization-of-single-cell-rna-seq-counts-by-log-x-1-or-log-1-x--2021-03-02-bioinformatics","span":"Several studies have reported on the expression of ACE2 at single-cell resolution, and papers have been rife with speculation about implications of differential ACE2 mRNA abundance for severity of disease.","page":1,"properties":{"document_id":"document:normalization-of-single-cell-rna-seq-counts-by-log-x-1-or-log-1-x--2021-03-02-bioinformatics","char_start":1196,"char_end":1401}},{"source":"source:text:document:normalization-of-single-cell-rna-seq-counts-by-log-x-1-or-log-1-x--2021-03-02-bioinformatics","span":"While it may appear that average ACE2 expression is similar between young and old mice, when comparing the fraction of cells with non-zero expression of ACE2 it is clear that ACE2 has significantly lower mRNA expression in the lungs of aged mice than young mice.","page":1,"properties":{"document_id":"document:normalization-of-single-cell-rna-seq-counts-by-log-x-1-or-log-1-x--2021-03-02-bioinformatics","char_start":2374,"char_end":2636}},{"source":"source:text:document:normalization-of-single-cell-rna-seq-counts-by-log-x-1-or-log-1-x--2021-03-02-bioinformatics","span":"A seemingly minor technical issue in log transforming counts is that zero counts cannot be 'logged', as logð0Þ is undefined. To circumvent this problem, it is customary to add a 'pseudocount', e.g. þ1, to each gene count prior to log transforming the data (Innes and Bader, 2018).","page":1,"properties":{"document_id":"document:normalization-of-single-cell-rna-seq-counts-by-log-x-1-or-log-1-x--2021-03-02-bioinformatics","char_start":4027,"char_end":4307}},{"source":"source:text:document:normalization-of-single-cell-rna-seq-counts-by-log-x-1-or-log-1-x--2021-03-02-bioinformatics","span":"Methods should not be used unless their limitations are understood. For example, while it does not matter whether one uses logðx þ 1Þ or logð1 þ xÞ, the filtering and normalization applied to counts can affect comparative estimates in non-intuitive ways.","page":2,"properties":{"document_id":"document:normalization-of-single-cell-rna-seq-counts-by-log-x-1-or-log-1-x--2021-03-02-bioinformatics","char_start":426,"char_end":680}}]},{"id":"connection:claim:citation:version-citing-2025-detection-of-viral-sequences-at-single-cell-resolution-identifies-novel-viruses-eae304e5f7-cites-version-normalization-of-single-cell-rna-seq-counts-cec7310c24--version:normalization-of-single-cell-rna-seq-counts-by-log-x-1-or-log-1-x--2021-03-02-bioinformatics","type":"citations","title":"Detection of viral sequences at single-cell resolution identifies novel viruses associated with host gene expression changes","description":"The paper introduces a translated kallisto/PalmDB workflow for rapidly detecting viral sequences in bulk and single-cell transcriptomics and linking viral presence to host gene expression at single-cell resolution.","statement":"The paper cites this work to support that the binary virus-count approach is robust to normalization-related biases.","evidence":[{"source":"source:pdf:document:cited-by--2025-detection-of-viral-sequences-at-single-cell-resolution-identifies-novel-viruses-eae304e5f7","span":"Thisapproachhas\nbeenpreviouslyvalidatedforsparsesingle-cellRNA;specifically,viral\nsequencing data24,78\n. Furthermore, this approach is robust to biases\nthatmaybeintroducedbynormalizationmethods42,79","page":13,"properties":{"document_id":"document:cited-by--2025-detection-of-viral-sequences-at-single-cell-resolution-identifies-novel-viruses-eae304e5f7","char_start":null,"char_end":null}}]},{"id":"connection:version:normalization-of-single-cell-rna-seq-counts-by-log-x-1-or-log-1-x--2021-03-02-bioinformatics--work:normalization-of-single-cell-rna-seq-counts-by-log-x-1-or-log-1-x","type":"versions","title":"Normalization of single-cell RNA-seq counts by log (x+ 1) or log (1+ x)","description":"2021-03-02 · Bioinformatics","statement":"2021-03-02 is a version of Normalization of single-cell RNA-seq counts by log (x+ 1) or log (1+ x).","evidence":[],"citation":{"doi":"10.1093/bioinformatics/btab085","url":"https://doi.org/10.1093/bioinformatics/btab085","date":"2021-03-02","venue":"Bioinformatics","authors":[{"name":"A Sina Booeshaghi","orcid":"https://orcid.org/0000-0002-6442-4502"},{"name":"Lior Pachter","orcid":"https://orcid.org/0000-0002-9164-6231"}]},"bibtex":"@article{Booeshaghi_2021,\n  TITLE     = {Normalization of single-cell RNA-seq counts by log(\n                    \u003ci>x\u003c/i>\n                    + 1) or log(1 +\n                    \u003ci>x\u003c/i>\n                    )},\n  VOLUME    = {37},\n  ISSN      = {1367-4811},\n  URL       = {http://dx.doi.org/10.1093/bioinformatics/btab085},\n  DOI       = {10.1093/bioinformatics/btab085},\n  NUMBER    = {15},\n  JOURNAL   = {Bioinformatics},\n  PUBLISHER = {Oxford University Press (OUP)},\n  AUTHOR    = {Booeshaghi, A Sina and Pachter, Lior},\n  EDITOR    = {Kelso, Janet},\n  YEAR      = {2021},\n  PAGES     = {2223-2224}\n}"},{"id":"connection:document:normalization-of-single-cell-rna-seq-counts-by-log-x-1-or-log-1-x--2021-03-02-bioinformatics--version:normalization-of-single-cell-rna-seq-counts-by-log-x-1-or-log-1-x--2021-03-02-bioinformatics","type":"sources","title":"2021-03-02-bioinformatics.pdf","description":"This source document provides local provenance for the target publication.","statement":"This source document provides local provenance for the target publication.","evidence":[]}]}</script>
+      <script src="../work-relations.js"></script>
     </article>
   </body>
 </html>

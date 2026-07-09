@@ -25,16 +25,6 @@
     <link rel="stylesheet" href="styles.css" />
     <title>Works | Sina Booeshaghi</title>
     <script>
-      const dateFormatter = new Intl.DateTimeFormat("en", {
-        month: "short",
-        day: "numeric",
-        year: "numeric",
-      });
-      const monthFormatter = new Intl.DateTimeFormat("en", {
-        month: "short",
-        year: "numeric",
-      });
-
       function escapeHTML(value) {
         return String(value)
           .replace(/&/g, "&amp;")
@@ -42,22 +32,6 @@
           .replace(/>/g, "&gt;")
           .replace(/"/g, "&quot;")
           .replace(/'/g, "&#39;");
-      }
-
-      function formatDate(date) {
-        const parts = date.split("-").map(Number);
-
-        if (parts.length === 1) {
-          return date;
-        }
-
-        if (parts.length === 2) {
-          return monthFormatter.format(new Date(parts[0], parts[1] - 1, 1));
-        }
-
-        return dateFormatter.format(
-          new Date(parts[0], parts[1] - 1, parts[2])
-        );
       }
 
       function slugify(value) {
@@ -70,28 +44,9 @@
           .replace(/^-+|-+$/g, "");
       }
 
-      function citationCountFor(publication, citedByData) {
-        return (
-          citedByData.works?.[slugify(publication.title)]?.cited_by?.length || 0
-        );
-      }
-
-      function publicationVersions(publication) {
-        return [...(publication.versions || publication.links || [])].sort(
-          (a, b) => String(b.date).localeCompare(String(a.date))
-        );
-      }
-
-      function versionHref(version) {
-        return version.url || version.doi || "";
-      }
-
-      function formatPublication(publication, citedByData) {
+      function formatPublication(publication) {
         const summary = publication.summary.trim();
-        const wordCount = summary.split(/\s+/).length;
         const pageHref = `works/${slugify(publication.title)}.html`;
-        const citationCount = citationCountFor(publication, citedByData);
-        const versions = publicationVersions(publication);
 
         return `
           <li class="publication-item">
@@ -101,46 +56,6 @@
                   pageHref
                 )}">${escapeHTML(publication.title)}</a>
               </h2>
-              <div class="publication-versions" aria-label="Work versions">
-                <span class="publication-versions-label">Versions</span>
-                <div class="publication-version-cards">
-                  ${versions
-                    .map((version, versionIndex) => {
-                      const detail = [
-                        version.name,
-                        version.date ? formatDate(version.date) : "",
-                      ]
-                        .filter(Boolean)
-                        .join(" · ");
-                      return `
-                      <a
-                        class="publication-version-link${
-                          versionIndex === 0 ? " is-current" : ""
-                        }"
-                        href="${escapeHTML(versionHref(version))}"
-                        target="_blank"
-                        rel="noopener"
-                      >
-                        <span class="publication-version-title">${escapeHTML(
-                          version.title || publication.title
-                        )}</span>
-                        ${
-                          detail
-                            ? `<span class="publication-version-detail">${escapeHTML(
-                                detail
-                              )}</span>`
-                            : ""
-                        }
-                      </a>
-                    `;
-                    })
-                    .join("")}
-                </div>
-              </div>
-              <div class="publication-meta">
-                <span class="publication-citation-count">Citations: ${citationCount}</span>
-                <span class="publication-word-count">${wordCount} words</span>
-              </div>
               <p class="publication-summary">
                 ${escapeHTML(summary)}
               </p>
@@ -149,24 +64,19 @@
         `;
       }
 
-      function formatPublications(publications, citedByData) {
+      function formatPublications(publications) {
         return publications
-          .map((publication) => formatPublication(publication, citedByData))
+          .map((publication) => formatPublication(publication))
           .join("");
       }
 
       document.addEventListener("DOMContentLoaded", () => {
-        Promise.all([
-          fetch("db/publications.json", { cache: "no-store" }).then(
-            (response) => response.json()
-          ),
-          fetch("db/cited-by.json", { cache: "no-store" }).then((response) =>
-            response.json()
-          ),
-        ]).then(([publications, citedByData]) => {
-            document.getElementById("publicationList").innerHTML =
-              formatPublications(publications, citedByData);
-          });
+        fetch("db/publications.json", { cache: "no-store" })
+          .then((response) => response.json())
+          .then((publications) => {
+          document.getElementById("publicationList").innerHTML =
+            formatPublications(publications);
+        });
       });
     </script>
   </head>

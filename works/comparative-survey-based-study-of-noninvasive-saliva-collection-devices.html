@@ -17,77 +17,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="This study compares noninvasive saliva collection devices using survey-based evidence, evaluating design and usability considerations for saliva-based sampling." />
+    <meta name="description" content="Saliva diagnostics matter because whole saliva can be collected noninvasively and can support applications ranging from infectious disease testing to biomarker monitoring. Yet collection protocols are not standardized, and device usability, leakage, and collection efficiency can affect sample quality and user safety. By comparing five representative devices in 60 adults, the work identifies tradeoffs across metrics and motivates better standardized, user-friendly saliva collection designs." />
     <link rel="stylesheet" href="../styles.css" />
-    
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        document.querySelectorAll(".copy-bibtex-button").forEach((button) => {
-          button.addEventListener("click", async () => {
-            const box = button.closest(".bibtex-box");
-            const code = box ? box.querySelector("code") : null;
-            const bibtex = code ? code.textContent : "";
-            const previousText = button.textContent;
-            const markStatus = (text) => {
-              button.textContent = text;
-              window.setTimeout(() => {
-                button.textContent = previousText;
-              }, 1200);
-            };
-            const copyWithSelection = () => {
-              const textarea = document.createElement("textarea");
-              textarea.value = bibtex;
-              textarea.setAttribute("readonly", "");
-              textarea.style.position = "fixed";
-              textarea.style.left = "0";
-              textarea.style.top = "0";
-              textarea.style.width = "1px";
-              textarea.style.height = "1px";
-              textarea.style.opacity = "0";
-              textarea.style.pointerEvents = "none";
-              document.body.appendChild(textarea);
-              textarea.focus({ preventScroll: true });
-              textarea.select();
-              textarea.setSelectionRange(0, textarea.value.length);
-              const copied = document.execCommand("copy");
-              textarea.remove();
-              return copied;
-            };
-
-            try {
-              if (navigator.clipboard && navigator.clipboard.writeText) {
-                await navigator.clipboard.writeText(bibtex);
-                markStatus("Copied");
-                return;
-              }
-
-              if (copyWithSelection()) {
-                markStatus("Copied");
-                return;
-              }
-            } catch {
-              let copied = false;
-
-              try {
-                copied = copyWithSelection();
-              } catch {
-                copied = false;
-              }
-
-              if (copied) {
-                markStatus("Copied");
-                return;
-              }
-            }
-
-            markStatus("Copy failed");
-          });
-        });
-      });
-    </script>
     <title>Comparative survey-based study of noninvasive saliva collection devices | Works | Sina Booeshaghi</title>
   </head>
-  <body>
+  <body class="work-detail-page">
     <nav class="breadcrumb" aria-label="Breadcrumb">
       <a href="../index.html">Home</a>
       <span aria-hidden="true">/</span>
@@ -95,154 +29,71 @@
       <span aria-hidden="true">/</span>
       <span class="breadcrumb-current" title="Comparative survey-based study of noninvasive saliva collection devices">Comparative survey-based study of noninvasive saliva collection...</span>
     </nav>
-    <article class="work-page">
-      <h1>Comparative survey-based study of noninvasive saliva collection devices</h1>
-      <div class="publication-versions work-versions" aria-label="Work versions">
-        <span class="publication-versions-label">Versions</span>
-        <div class="publication-version-cards">
-          
-        <a
-          class="publication-version-link is-current"
-          href="https://doi.org/10.1115/1.4067232"
-          target="_blank"
-          rel="noopener"
-        >
-          <span class="publication-version-title">Comparative survey-based study of noninvasive saliva collection devices</span>
-          <span class="publication-version-detail">Journal of Medical Devices · 2025-06-01</span>
-        </a>
-        <a
-          class="publication-version-link"
-          href="https://doi.org/10.1101/2023.10.31.23297784"
-          target="_blank"
-          rel="noopener"
-        >
-          <span class="publication-version-title">Comparative survey-based study of noninvasive saliva collection devices</span>
-          <span class="publication-version-detail">medRxiv · 2023-10-31</span>
-        </a>
+    <article class="work-page study-graph-page">
+      <section class="study-focus" aria-label="Selected work">
+        <div>
+          <h1>Comparative survey-based study of noninvasive saliva collection devices</h1>
+          <p>Saliva diagnostics matter because whole saliva can be collected noninvasively and can support applications ranging from infectious disease testing to biomarker monitoring. Yet collection protocols are not standardized, and device usability, leakage, and collection efficiency can affect sample quality and user safety. By comparing five representative devices in 60 adults, the work identifies tradeoffs across metrics and motivates better standardized, user-friendly saliva collection designs.</p>
         </div>
-      </div>
-
-      <section>
-        <h2>Summary</h2>
-        <p>This study compares noninvasive saliva collection devices using survey-based evidence, evaluating design and usability considerations for saliva-based sampling.</p>
+        <dl class="study-stats">
+          <div>
+            <dt>Citations</dt>
+            <dd>2</dd>
+          </div>
+          <div>
+            <dt>Relations</dt>
+            <dd>9</dd>
+          </div>
+        </dl>
       </section>
 
       
-      <section
-        class="authors-section"
-        data-author-version-count="2"
-      >
-        <h2>Authors</h2>
-        
-        <section
-          class="author-version"
-          data-author-count="3"
-        >
-          <h3>
-            <a href="https://doi.org/10.1115/1.4067232" target="_blank" rel="noopener">Journal of Medical Devices</a>
-            <time datetime="2025-06-01">2025-06-01</time>
-          </h3>
-          <ul class="author-list">
-            
-            <li><a href="https://orcid.org/0000-0002-1235-7379" target="_blank" rel="noopener" title="ORCID">Yeokyoung (Anne) Kil</a></li>
-            <li><a href="https://orcid.org/0000-0002-6442-4502" target="_blank" rel="noopener" title="ORCID">Ali S. Booeshaghi</a></li>
-            <li><a href="https://orcid.org/0000-0002-9164-6231" target="_blank" rel="noopener" title="ORCID">Lior S. Pachter</a></li>
-          </ul>
-        </section>
-        <section
-          class="author-version"
-          data-author-count="3"
-        >
-          <h3>
-            <a href="https://doi.org/10.1101/2023.10.31.23297784" target="_blank" rel="noopener">medRxiv</a>
-            <time datetime="2023-10-31">2023-10-31</time>
-          </h3>
-          <ul class="author-list">
-            
-            <li><a href="https://orcid.org/0000-0002-1235-7379" target="_blank" rel="noopener" title="ORCID">Yeokyoung (Anne) Kil</a></li>
-            <li><a href="https://orcid.org/0000-0002-6442-4502" target="_blank" rel="noopener" title="ORCID">Ali S. Booeshaghi</a></li>
-            <li><a href="https://orcid.org/0000-0002-9164-6231" target="_blank" rel="noopener" title="ORCID">Lior S. Pachter</a></li>
-          </ul>
-        </section>
-      </section>
-
-      <section>
-        <h2>BibTeX</h2>
-        
-        <section class="bibtex-entry">
-          <h3>Journal of Medical Devices</h3>
-          <div class="bibtex-box">
-            <button
-              class="copy-bibtex-button"
-              type="button"
-              aria-label="Copy BibTeX for Journal of Medical Devices"
-            >
-              Copy BibTeX
-            </button>
-            <pre><code>@article{Kil_2024,
-  TITLE     = {Comparative Survey-Based Study of Noninvasive Saliva Collection Devices},
-  VOLUME    = {19},
-  ISSN      = {1932-619X},
-  URL       = {http://dx.doi.org/10.1115/1.4067232},
-  DOI       = {10.1115/1.4067232},
-  NUMBER    = {2},
-  JOURNAL   = {Journal of Medical Devices},
-  PUBLISHER = {ASME International},
-  AUTHOR    = {Kil, Yeokyoung (Anne) and Booeshaghi, Ali S. and Pachter, Lior S.},
-  YEAR      = {2024}
-}</code></pre>
+      <section class="relationship-inspector" aria-label="Indexed relations" data-work-relations>
+        <section class="relationship-list-panel" aria-label="Relations">
+          <div class="study-section-heading">
+            <h2>Relations</h2>
           </div>
+          <div
+            class="relation-tabs"
+            role="tablist"
+            aria-label="Relation types"
+            data-relation-tabs
+          ></div>
+          <div class="reason-list" data-relation-list></div>
         </section>
-        <section class="bibtex-entry">
-          <h3>medRxiv</h3>
-          <div class="bibtex-box">
-            <button
-              class="copy-bibtex-button"
-              type="button"
-              aria-label="Copy BibTeX for medRxiv"
-            >
-              Copy BibTeX
-            </button>
-            <pre><code>@article{Kil_2023,
-  TITLE     = {Comparative survey-based study of non-invasive saliva collection devices},
-  URL       = {http://dx.doi.org/10.1101/2023.10.31.23297784},
-  DOI       = {10.1101/2023.10.31.23297784},
-  PUBLISHER = {openRxiv},
-  AUTHOR    = {Kil, Yeokyoung (Anne) and Booeshaghi, Ali S. and Pachter, Lior S.},
-  YEAR      = {2023}
-}</code></pre>
-          </div>
-        </section>
-      </section>
 
-      <section>
-        <h2>Citing Works</h2>
-        <p class="citation-source-note">
-          2 citing works found in citation data generated 2026-07-06. Citation relationships are sourced from OpenAlex, Semantic Scholar, Google Scholar.
-        </p>
-        <table class="citation-table">
-          <thead>
-            <tr>
-              <th>Title</th>
-              <th>Year</th>
-              <th>Summary</th>
-            </tr>
-          </thead>
-          <tbody>
-            
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1016/j.jelechem.2026.120213" target="_blank" rel="noopener">A novel non-invasive technique for glucose detection in saliva through direct I-V measurements using rGO/GOx-modified planar electrodes</a></td>
-              <td class="citation-year"><time datetime="2026">2026</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://search.proquest.com/openview/3d18269153671e898e7743e097b432ee/1?pq-origsite=gscholar&amp;cbl=18750&amp;diss=y" target="_blank" rel="noopener">Engineering and Computational Tools for Salivary Biomedicine</a></td>
-              <td class="citation-year"><time datetime="2025">2025</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-          </tbody>
-        </table>
+        <aside class="evidence-panel relationship-detail" aria-live="polite">
+          <span class="study-label" data-relation-label>Relation</span>
+          <h2 data-relation-title></h2>
+          <p class="selected-relation-statement" data-relation-statement></p>
+          <section class="version-citation" data-version-citation hidden>
+            <h3>Citation</h3>
+            <div class="bibtex-box">
+              <button class="copy-bibtex-button" type="button" data-copy-bibtex>
+                Copy BibTeX
+              </button>
+              <pre><code data-bibtex-code></code></pre>
+            </div>
+          </section>
+          <details class="relationship-evidence" data-relation-evidence>
+            <summary>
+              <span>Evidence</span>
+              <span class="evidence-summary" data-evidence-summary></span>
+            </summary>
+            <table class="relationship-evidence-table">
+              <thead>
+                <tr>
+                  <th>Span</th>
+                  <th>Source</th>
+                </tr>
+              </thead>
+              <tbody data-evidence-rows></tbody>
+            </table>
+          </details>
+        </aside>
       </section>
+      <script id="workRelationData" type="application/json">{"work":{"id":"work:comparative-survey-based-study-of-noninvasive-saliva-collection-devices","title":"Comparative survey-based study of noninvasive saliva collection devices","description":"Saliva diagnostics matter because whole saliva can be collected noninvasively and can support applications ranging from infectious disease testing to biomarker monitoring. Yet collection protocols are not standardized, and device usability, leakage, and collection efficiency can affect sample quality and user safety. By comparing five representative devices in 60 adults, the work identifies tradeoffs across metrics and motivates better standardized, user-friendly saliva collection designs."},"relationTypes":[{"id":"authors","label":"Authors"},{"id":"claims","label":"Claims"},{"id":"citations","label":"Citations"},{"id":"versions","label":"Versions"},{"id":"software","label":"Software"},{"id":"sources","label":"Sources"}],"connections":[{"id":"connection:version:comparative-survey-based-study-of-noninvasive-saliva-collection-devices--2023-10-31-medrxiv--person:orcid:0000-0002-1235-7379--author-1","type":"authors","title":"Yeokyoung (Anne) Kil","description":"Yeokyoung (Anne) Kil is an author of Comparative survey-based study of noninvasive saliva collection devices.","statement":"Yeokyoung (Anne) Kil is an author of Comparative survey-based study of noninvasive saliva collection devices.","evidence":[]},{"id":"connection:version:comparative-survey-based-study-of-noninvasive-saliva-collection-devices--2023-10-31-medrxiv--person:orcid:0000-0002-6442-4502--author-2","type":"authors","title":"A. Sina Booeshaghi","description":"Ali S. Booeshaghi is an author of Comparative survey-based study of noninvasive saliva collection devices.","statement":"Ali S. Booeshaghi is an author of Comparative survey-based study of noninvasive saliva collection devices.","evidence":[]},{"id":"connection:version:comparative-survey-based-study-of-noninvasive-saliva-collection-devices--2023-10-31-medrxiv--person:orcid:0000-0002-9164-6231--author-3","type":"authors","title":"Lior Pachter","description":"Lior S. Pachter is an author of Comparative survey-based study of noninvasive saliva collection devices.","statement":"Lior S. Pachter is an author of Comparative survey-based study of noninvasive saliva collection devices.","evidence":[]},{"id":"connection:version:comparative-survey-based-study-of-noninvasive-saliva-collection-devices--2023-10-31-medrxiv--claim:version:comparative-survey-based-study-of-noninvasive-saliva-collection-devices--2023-10-31-medrxiv--summary-0","type":"claims","title":"Saliva-based testing is valuable because it can make diagnostic sampling less invasive and easier to deploy at scale. Th","description":"Saliva-based testing is valuable because it can make diagnostic sampling less invasive and easier to deploy at scale. The practical challenge is that swabs, funnels, and passive drool devices differ in efficiency, readability, leakage, and user burden, leaving collection protocols unstandardized. This preprint compares five devices with timed collection, reading-rate normalization, surveys, and stimulated-flow measurements to define design criteria for safer and easier saliva collection.","statement":"This publication contains the target grounded summary claim.","evidence":[{"source":"source:text:document:comparative-survey-based-study-of-noninvasive-saliva-collection-devices--2023-10-31-medrxiv","span":"Saliva has many characteristics that make it an attractive sample type for diagnosis. The biggest advantage in using saliva for diagnosis is that although some gland collection techniques are invasive, it is straightforward to collect whole saliva noninvasively (3).","page":3,"properties":{"document_id":"document:comparative-survey-based-study-of-noninvasive-saliva-collection-devices--2023-10-31-medrxiv","char_start":694,"char_end":960}},{"source":"source:text:document:comparative-survey-based-study-of-noninvasive-saliva-collection-devices--2023-10-31-medrxiv","span":"There are many different methods and devices for collecting saliva non-invasively. The methods can be broadly classified based on three distinct collection mechanisms: swabs, funnels, and passive drool.","page":3,"properties":{"document_id":"document:comparative-survey-based-study-of-noninvasive-saliva-collection-devices--2023-10-31-medrxiv","char_start":1296,"char_end":1498}},{"source":"source:text:document:comparative-survey-based-study-of-noninvasive-saliva-collection-devices--2023-10-31-medrxiv","span":"In this survey-based comparative study, we identified five saliva collection devices–two funnel devices, two swab devices, and one passive-drool device (Figure 1).","page":5,"properties":{"document_id":"document:comparative-survey-based-study-of-noninvasive-saliva-collection-devices--2023-10-31-medrxiv","char_start":467,"char_end":630}},{"source":"source:text:document:comparative-survey-based-study-of-noninvasive-saliva-collection-devices--2023-10-31-medrxiv","span":"Medschenker yielded efficient saliva collection, as can be observed in the normalized collection rate–and the highest normalized instruction reading rate out of the five devices (Figures 2, 3, Tables 2, 3). Medschenker also yielded the least leakage out of the five devices (Figure 4, Table 4).","page":18,"properties":{"document_id":"document:comparative-survey-based-study-of-noninvasive-saliva-collection-devices--2023-10-31-medrxiv","char_start":681,"char_end":975}},{"source":"source:text:document:comparative-survey-based-study-of-noninvasive-saliva-collection-devices--2023-10-31-medrxiv","span":"This shows that a device that satisfies all metrics–a device that allows for efficient saliva collection, is easy to use, and collects saliva without leakage–would be ideal for saliva collection.","page":17,"properties":{"document_id":"document:comparative-survey-based-study-of-noninvasive-saliva-collection-devices--2023-10-31-medrxiv","char_start":1617,"char_end":1812}}]},{"id":"connection:version:comparative-survey-based-study-of-noninvasive-saliva-collection-devices--2025-06-01-journal-of-medical-devices--claim:version:comparative-survey-based-study-of-noninvasive-saliva-collection-devices--2025-06-01-journal-of-medical-devices--summary-0","type":"claims","title":"Saliva diagnostics matter because whole saliva can be collected noninvasively and can support applications ranging from ","description":"Saliva diagnostics matter because whole saliva can be collected noninvasively and can support applications ranging from infectious disease testing to biomarker monitoring. Yet collection protocols are not standardized, and device usability, leakage, and collection efficiency can affect sample quality and user safety. By comparing five representative devices in 60 adults, the work identifies tradeoffs across metrics and motivates better standardized, user-friendly saliva collection designs.","statement":"This publication contains the target grounded summary claim.","evidence":[{"source":"source:text:document:comparative-survey-based-study-of-noninvasive-saliva-collection-devices--2025-06-01-journal-of-medical-devices","span":"Saliva has several attributes that make it an ideal sample for diagnostics. The biggest advantage of using saliva is that whole saliva can be collected noninvasively [8].","page":1,"properties":{"document_id":"document:comparative-survey-based-study-of-noninvasive-saliva-collection-devices--2025-06-01-journal-of-medical-devices","char_start":3862,"char_end":4032}},{"source":"source:text:document:comparative-survey-based-study-of-noninvasive-saliva-collection-devices--2025-06-01-journal-of-medical-devices","span":"Despite saliva's diagnostic potential, no standardized method exists for optimized collection across different analytes. This lack of standardization can affect sample quality and test reliability.","page":2,"properties":{"document_id":"document:comparative-survey-based-study-of-noninvasive-saliva-collection-devices--2025-06-01-journal-of-medical-devices","char_start":2303,"char_end":2500}},{"source":"source:text:document:comparative-survey-based-study-of-noninvasive-saliva-collection-devices--2025-06-01-journal-of-medical-devices","span":"To address this, we evaluated the performance and usability of five saliva collection devices, aiming to identify the strengths and limitations of each and to demonstrate the critical need for optimized, standardized saliva collection methods.","page":2,"properties":{"document_id":"document:comparative-survey-based-study-of-noninvasive-saliva-collection-devices--2025-06-01-journal-of-medical-devices","char_start":2501,"char_end":2744}},{"source":"source:text:document:comparative-survey-based-study-of-noninvasive-saliva-collection-devices--2025-06-01-journal-of-medical-devices","span":"Aggregated results showed that no single device performed well on all of the metrics. Our results underscore the need for an all-encompassing device that can address the functionality and usability-related issues that are present in the myriad of saliva collection devices on the market.","page":6,"properties":{"document_id":"document:comparative-survey-based-study-of-noninvasive-saliva-collection-devices--2025-06-01-journal-of-medical-devices","char_start":3591,"char_end":3878}}]},{"id":"connection:version:comparative-survey-based-study-of-noninvasive-saliva-collection-devices--2025-06-01-journal-of-medical-devices--work:comparative-survey-based-study-of-noninvasive-saliva-collection-devices","type":"versions","title":"Comparative survey-based study of noninvasive saliva collection devices","description":"2025-06-01 · Journal of Medical Devices","statement":"2025-06-01 is a version of Comparative survey-based study of noninvasive saliva collection devices.","evidence":[],"citation":{"doi":"10.1115/1.4067232","url":"https://doi.org/10.1115/1.4067232","date":"2025-06-01","venue":"Journal of Medical Devices","authors":[{"name":"Yeokyoung (Anne) Kil","orcid":"https://orcid.org/0000-0002-1235-7379"},{"name":"Ali S. Booeshaghi","orcid":"https://orcid.org/0000-0002-6442-4502"},{"name":"Lior S. Pachter","orcid":"https://orcid.org/0000-0002-9164-6231"}]},"bibtex":"@article{Kil_2024,\n  TITLE     = {Comparative Survey-Based Study of Noninvasive Saliva Collection Devices},\n  VOLUME    = {19},\n  ISSN      = {1932-619X},\n  URL       = {http://dx.doi.org/10.1115/1.4067232},\n  DOI       = {10.1115/1.4067232},\n  NUMBER    = {2},\n  JOURNAL   = {Journal of Medical Devices},\n  PUBLISHER = {ASME International},\n  AUTHOR    = {Kil, Yeokyoung (Anne) and Booeshaghi, Ali S. and Pachter, Lior S.},\n  YEAR      = {2024}\n}"},{"id":"connection:version:comparative-survey-based-study-of-noninvasive-saliva-collection-devices--2023-10-31-medrxiv--work:comparative-survey-based-study-of-noninvasive-saliva-collection-devices","type":"versions","title":"Comparative survey-based study of noninvasive saliva collection devices","description":"2023-10-31 · medRxiv","statement":"2023-10-31 is a version of Comparative survey-based study of noninvasive saliva collection devices.","evidence":[],"citation":{"doi":"10.1101/2023.10.31.23297784","url":"https://doi.org/10.1101/2023.10.31.23297784","date":"2023-10-31","venue":"medRxiv","authors":[{"name":"Yeokyoung (Anne) Kil","orcid":"https://orcid.org/0000-0002-1235-7379"},{"name":"Ali S. Booeshaghi","orcid":"https://orcid.org/0000-0002-6442-4502"},{"name":"Lior S. Pachter","orcid":"https://orcid.org/0000-0002-9164-6231"}]},"bibtex":"@article{Kil_2023,\n  TITLE     = {Comparative survey-based study of non-invasive saliva collection devices},\n  URL       = {http://dx.doi.org/10.1101/2023.10.31.23297784},\n  DOI       = {10.1101/2023.10.31.23297784},\n  PUBLISHER = {openRxiv},\n  AUTHOR    = {Kil, Yeokyoung (Anne) and Booeshaghi, Ali S. and Pachter, Lior S.},\n  YEAR      = {2023}\n}"},{"id":"connection:document:comparative-survey-based-study-of-noninvasive-saliva-collection-devices--2023-10-31-medrxiv--version:comparative-survey-based-study-of-noninvasive-saliva-collection-devices--2023-10-31-medrxiv","type":"sources","title":"2023-10-31-medrxiv.pdf","description":"This source document provides local provenance for the target publication.","statement":"This source document provides local provenance for the target publication.","evidence":[]},{"id":"connection:document:comparative-survey-based-study-of-noninvasive-saliva-collection-devices--2025-06-01-journal-of-medical-devices--version:comparative-survey-based-study-of-noninvasive-saliva-collection-devices--2025-06-01-journal-of-medical-devices","type":"sources","title":"2025-06-01-journal-of-medical-devices.pdf","description":"This source document provides local provenance for the target publication.","statement":"This source document provides local provenance for the target publication.","evidence":[]}]}</script>
+      <script src="../work-relations.js"></script>
     </article>
   </body>
 </html>

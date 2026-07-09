@@ -17,77 +17,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Current commercial systems for long-time-course microfluidics experiments are costly and close-source, limiting the scale of experimentation and hardware customization. To address this, we have developed a low-cost, modular, and automated fluid sampling device for scalable fluidic applications called colosseum. The colosseum fraction collector uses a single motor, and can be built for less than $100, demonstrating a cost savings of ~10x compared to commercial alternatives. Colosseum uses off-the- shelf and 3D-printed components and can be assembled in less than an hour making it accessible to researchers in low-resource environments." />
+    <meta name="description" content="Automated fraction collection is useful for microfluidics and chromatography, but commercial systems can be costly, bulky, and difficult to customize. Colosseum addresses this access gap with an open-source, 3D-printed, single-motor fraction collector that can be assembled cheaply from off-the-shelf parts. Bench tests and gradient collections show accurate, scalable sampling across common fluidics applications." />
     <link rel="stylesheet" href="../styles.css" />
-    
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        document.querySelectorAll(".copy-bibtex-button").forEach((button) => {
-          button.addEventListener("click", async () => {
-            const box = button.closest(".bibtex-box");
-            const code = box ? box.querySelector("code") : null;
-            const bibtex = code ? code.textContent : "";
-            const previousText = button.textContent;
-            const markStatus = (text) => {
-              button.textContent = text;
-              window.setTimeout(() => {
-                button.textContent = previousText;
-              }, 1200);
-            };
-            const copyWithSelection = () => {
-              const textarea = document.createElement("textarea");
-              textarea.value = bibtex;
-              textarea.setAttribute("readonly", "");
-              textarea.style.position = "fixed";
-              textarea.style.left = "0";
-              textarea.style.top = "0";
-              textarea.style.width = "1px";
-              textarea.style.height = "1px";
-              textarea.style.opacity = "0";
-              textarea.style.pointerEvents = "none";
-              document.body.appendChild(textarea);
-              textarea.focus({ preventScroll: true });
-              textarea.select();
-              textarea.setSelectionRange(0, textarea.value.length);
-              const copied = document.execCommand("copy");
-              textarea.remove();
-              return copied;
-            };
-
-            try {
-              if (navigator.clipboard && navigator.clipboard.writeText) {
-                await navigator.clipboard.writeText(bibtex);
-                markStatus("Copied");
-                return;
-              }
-
-              if (copyWithSelection()) {
-                markStatus("Copied");
-                return;
-              }
-            } catch {
-              let copied = false;
-
-              try {
-                copied = copyWithSelection();
-              } catch {
-                copied = false;
-              }
-
-              if (copied) {
-                markStatus("Copied");
-                return;
-              }
-            }
-
-            markStatus("Copy failed");
-          });
-        });
-      });
-    </script>
     <title>Low-cost, scalable, and automated fluid sampling for fluidics applications | Works | Sina Booeshaghi</title>
   </head>
-  <body>
+  <body class="work-detail-page">
     <nav class="breadcrumb" aria-label="Breadcrumb">
       <a href="../index.html">Home</a>
       <span aria-hidden="true">/</span>
@@ -95,187 +29,71 @@
       <span aria-hidden="true">/</span>
       <span class="breadcrumb-current" title="Low-cost, scalable, and automated fluid sampling for fluidics applications">Low-cost, scalable, and automated fluid sampling for fluidics ap...</span>
     </nav>
-    <article class="work-page">
-      <h1>Low-cost, scalable, and automated fluid sampling for fluidics applications</h1>
-      <div class="publication-versions work-versions" aria-label="Work versions">
-        <span class="publication-versions-label">Versions</span>
-        <div class="publication-version-cards">
-          
-        <a
-          class="publication-version-link is-current"
-          href="https://doi.org/10.1016/j.ohx.2021.e00201"
-          target="_blank"
-          rel="noopener"
-        >
-          <span class="publication-version-title">Low-cost, scalable, and automated fluid sampling for fluidics applications</span>
-          <span class="publication-version-detail">HardwareX · 2021-05-31</span>
-        </a>
+    <article class="work-page study-graph-page">
+      <section class="study-focus" aria-label="Selected work">
+        <div>
+          <h1>Low-cost, scalable, and automated fluid sampling for fluidics applications</h1>
+          <p>Automated fraction collection is useful for microfluidics and chromatography, but commercial systems can be costly, bulky, and difficult to customize. Colosseum addresses this access gap with an open-source, 3D-printed, single-motor fraction collector that can be assembled cheaply from off-the-shelf parts. Bench tests and gradient collections show accurate, scalable sampling across common fluidics applications.</p>
         </div>
-      </div>
-
-      <section>
-        <h2>Summary</h2>
-        <p>Current commercial systems for long-time-course microfluidics experiments are costly and close-source, limiting the scale of experimentation and hardware customization. To address this, we have developed a low-cost, modular, and automated fluid sampling device for scalable fluidic applications called colosseum. The colosseum fraction collector uses a single motor, and can be built for less than $100, demonstrating a cost savings of ~10x compared to commercial alternatives. Colosseum uses off-the- shelf and 3D-printed components and can be assembled in less than an hour making it accessible to researchers in low-resource environments.</p>
+        <dl class="study-stats">
+          <div>
+            <dt>Citations</dt>
+            <dd>17</dd>
+          </div>
+          <div>
+            <dt>Relations</dt>
+            <dd>8</dd>
+          </div>
+        </dl>
       </section>
 
       
-      <section
-        class="authors-section"
-        data-author-version-count="1"
-      >
-        <h2>Authors</h2>
-        
-        <section
-          class="author-version"
-          data-author-count="5"
-        >
-          <h3>
-            <a href="https://doi.org/10.1016/j.ohx.2021.e00201" target="_blank" rel="noopener">HardwareX</a>
-            <time datetime="2021-05-31">2021-05-31</time>
-          </h3>
-          <ul class="author-list">
-            
-            <li><a href="https://orcid.org/0000-0002-6442-4502" target="_blank" rel="noopener" title="ORCID">A. Sina Booeshaghi</a></li>
-            <li><a href="https://orcid.org/0000-0002-1235-7379" target="_blank" rel="noopener" title="ORCID">Yeokyoung (Anne) Kil</a></li>
-            <li><a href="https://orcid.org/0000-0003-0894-4017" target="_blank" rel="noopener" title="ORCID">Kyung Hoi (Joseph) Min</a></li>
-            <li><a href="https://orcid.org/0000-0002-3894-9495" target="_blank" rel="noopener" title="ORCID">Jase Gehring</a></li>
-            <li><a href="https://orcid.org/0000-0002-9164-6231" target="_blank" rel="noopener" title="ORCID">Lior Pachter</a></li>
-          </ul>
-        </section>
-      </section>
-
-      <section>
-        <h2>BibTeX</h2>
-        
-        <section class="bibtex-entry">
-          <h3>HardwareX</h3>
-          <div class="bibtex-box">
-            <button
-              class="copy-bibtex-button"
-              type="button"
-              aria-label="Copy BibTeX for HardwareX"
-            >
-              Copy BibTeX
-            </button>
-            <pre><code>@article{Booeshaghi_2021,
-  TITLE     = {Low-cost, scalable, and automated fluid sampling for fluidics applications},
-  VOLUME    = {10},
-  ISSN      = {2468-0672},
-  URL       = {http://dx.doi.org/10.1016/j.ohx.2021.e00201},
-  DOI       = {10.1016/j.ohx.2021.e00201},
-  JOURNAL   = {HardwareX},
-  PUBLISHER = {Elsevier BV},
-  AUTHOR    = {Booeshaghi, A. Sina and Kil, Yeokyoung (Anne) and Min, Kyung Hoi (Joseph) and Gehring, Jase and Pachter, Lior},
-  YEAR      = {2021},
-  PAGES     = {e00201}
-}</code></pre>
+      <section class="relationship-inspector" aria-label="Indexed relations" data-work-relations>
+        <section class="relationship-list-panel" aria-label="Relations">
+          <div class="study-section-heading">
+            <h2>Relations</h2>
           </div>
+          <div
+            class="relation-tabs"
+            role="tablist"
+            aria-label="Relation types"
+            data-relation-tabs
+          ></div>
+          <div class="reason-list" data-relation-list></div>
         </section>
-      </section>
 
-      <section>
-        <h2>Citing Works</h2>
-        <p class="citation-source-note">
-          17 citing works found in citation data generated 2026-07-06. Citation relationships are sourced from OpenAlex, Semantic Scholar, Google Scholar.
-        </p>
-        <table class="citation-table">
-          <thead>
-            <tr>
-              <th>Title</th>
-              <th>Year</th>
-              <th>Summary</th>
-            </tr>
-          </thead>
-          <tbody>
-            
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1039/d5dd00554j" target="_blank" rel="noopener">Python-controlled, solvent-resistant fraction collector for automated flow synthesis</a></td>
-              <td class="citation-year"><time datetime="2026">2026</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://www.scielo.br/j/jbchs/a/66VMwpchNXChJQn4mZKss8S/?lang=en" target="_blank" rel="noopener">3D-Printed Liquid Handling Robot for the Development of Automated Analytical Methods</a></td>
-              <td class="citation-year"><time datetime="2025">2025</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1016/b978-0-443-15675-5.00005-7" target="_blank" rel="noopener">3D-printed scaffolds for sample handling and preparation</a></td>
-              <td class="citation-year"><time datetime="2025">2025</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1016/j.chroma.2025.465884" target="_blank" rel="noopener">A 3D-metal-printed UV detector specifically designed for real-time monitoring of an open column chromatography fraction</a></td>
-              <td class="citation-year"><time datetime="2025">2025</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1016/j.ohx.2024.e00612" target="_blank" rel="noopener">Customizable large-scale HPLC fraction collection using low-cost 3D printing</a></td>
-              <td class="citation-year"><time datetime="2024">2024</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1021/acs.energyfuels.3c04313" target="_blank" rel="noopener">Effects of Core Size and Surfactant Choice on Fluid Saturation Development in Surfactant/Polymer Corefloods</a></td>
-              <td class="citation-year"><time datetime="2024">2024</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include addition, allow, amber, associated, collection, collector, conductivity, fractional.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1007/s11242-024-02146-0" target="_blank" rel="noopener">Multimodality Imaging of Fluid Saturation and Chemical Transport for Two-Phase Surfactant/Polymer Floods in Porous Rocks</a></td>
-              <td class="citation-year"><time datetime="2024">2024</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include outlet, amber, booeshaghi, built, collector, conductivity, determination, following.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1002/jssc.202400111" target="_blank" rel="noopener">The utilization of open‐source microcontroller boards and single‐board computers in liquid chromatography</a></td>
-              <td class="citation-year"><time datetime="2024">2024</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1016/j.ohx.2023.e00462" target="_blank" rel="noopener">An open-source smart fraction collector for isocratic preparative liquid chromatography</a></td>
-              <td class="citation-year"><time datetime="2023">2023</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://search.proquest.com/openview/09ee56c23d5b116f1abb62e4657f1626/1?pq-origsite=gscholar&amp;cbl=18750&amp;diss=y" target="_blank" rel="noopener">Characterization and Design of Nickel-Binding Proteins Towards Metal Recovery Applications</a></td>
-              <td class="citation-year"><time datetime="2023">2023</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1016/j.trac.2023.117171" target="_blank" rel="noopener">Modern automated sample preparation for the determination of organic compounds: A review on robotic and on-flow systems</a></td>
-              <td class="citation-year"><time datetime="2023">2023</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.3390/hardware1010004" target="_blank" rel="noopener">Turning a 3D Printer into a HPLC Fraction Collector: A Tool for Compound-Specific Stable Isotope Measurements</a></td>
-              <td class="citation-year"><time datetime="2023">2023</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.20944/preprints202310.2080.v1" target="_blank" rel="noopener">Turning a 3D Printer into a HPLC Fraction Collector: A Tool for Compound-Specific Stable Isotope Measurements</a></td>
-              <td class="citation-year"><time datetime="2023">2023</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1016/j.ohx.2022.e00388" target="_blank" rel="noopener">Low-cost modular chromatography column rack and vial holders</a></td>
-              <td class="citation-year"><time datetime="2022">2022</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1016/j.ohx.2022.e00305" target="_blank" rel="noopener">Open source fraction collector/MALDI spotter for proteomics</a></td>
-              <td class="citation-year"><time datetime="2022">2022</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1016/j.ohx.2022.e00291" target="_blank" rel="noopener">REVOLVER: A low-cost automated protein purifier based on parallel preparative gravity column workflows</a></td>
-              <td class="citation-year"><time datetime="2022">2022</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/2021.12.12.472287" target="_blank" rel="noopener">REVOLVER: a low-cost automated protein purifier based on parallel preparative gravity column workflows</a></td>
-              <td class="citation-year"><time datetime="2021">2021</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-          </tbody>
-        </table>
+        <aside class="evidence-panel relationship-detail" aria-live="polite">
+          <span class="study-label" data-relation-label>Relation</span>
+          <h2 data-relation-title></h2>
+          <p class="selected-relation-statement" data-relation-statement></p>
+          <section class="version-citation" data-version-citation hidden>
+            <h3>Citation</h3>
+            <div class="bibtex-box">
+              <button class="copy-bibtex-button" type="button" data-copy-bibtex>
+                Copy BibTeX
+              </button>
+              <pre><code data-bibtex-code></code></pre>
+            </div>
+          </section>
+          <details class="relationship-evidence" data-relation-evidence>
+            <summary>
+              <span>Evidence</span>
+              <span class="evidence-summary" data-evidence-summary></span>
+            </summary>
+            <table class="relationship-evidence-table">
+              <thead>
+                <tr>
+                  <th>Span</th>
+                  <th>Source</th>
+                </tr>
+              </thead>
+              <tbody data-evidence-rows></tbody>
+            </table>
+          </details>
+        </aside>
       </section>
+      <script id="workRelationData" type="application/json">{"work":{"id":"work:low-cost-scalable-and-automated-fluid-sampling-for-fluidics-applications","title":"Low-cost, scalable, and automated fluid sampling for fluidics applications","description":"Automated fraction collection is useful for microfluidics and chromatography, but commercial systems can be costly, bulky, and difficult to customize. Colosseum addresses this access gap with an open-source, 3D-printed, single-motor fraction collector that can be assembled cheaply from off-the-shelf parts. Bench tests and gradient collections show accurate, scalable sampling across common fluidics applications."},"relationTypes":[{"id":"authors","label":"Authors"},{"id":"claims","label":"Claims"},{"id":"citations","label":"Citations"},{"id":"versions","label":"Versions"},{"id":"software","label":"Software"},{"id":"sources","label":"Sources"}],"connections":[{"id":"connection:version:low-cost-scalable-and-automated-fluid-sampling-for-fluidics-applications--2021-05-31-hardwarex--person:orcid:0000-0002-6442-4502--author-1","type":"authors","title":"A. Sina Booeshaghi","description":"A. Sina Booeshaghi is an author of Low-cost, scalable, and automated fluid sampling for fluidics applications.","statement":"A. Sina Booeshaghi is an author of Low-cost, scalable, and automated fluid sampling for fluidics applications.","evidence":[]},{"id":"connection:version:low-cost-scalable-and-automated-fluid-sampling-for-fluidics-applications--2021-05-31-hardwarex--person:orcid:0000-0002-1235-7379--author-2","type":"authors","title":"Yeokyoung (Anne) Kil","description":"Yeokyoung (Anne) Kil is an author of Low-cost, scalable, and automated fluid sampling for fluidics applications.","statement":"Yeokyoung (Anne) Kil is an author of Low-cost, scalable, and automated fluid sampling for fluidics applications.","evidence":[]},{"id":"connection:version:low-cost-scalable-and-automated-fluid-sampling-for-fluidics-applications--2021-05-31-hardwarex--person:orcid:0000-0003-0894-4017--author-3","type":"authors","title":"Kyung Hoi (Joseph) Min","description":"Kyung Hoi (Joseph) Min is an author of Low-cost, scalable, and automated fluid sampling for fluidics applications.","statement":"Kyung Hoi (Joseph) Min is an author of Low-cost, scalable, and automated fluid sampling for fluidics applications.","evidence":[]},{"id":"connection:version:low-cost-scalable-and-automated-fluid-sampling-for-fluidics-applications--2021-05-31-hardwarex--person:orcid:0000-0002-3894-9495--author-4","type":"authors","title":"Jase Gehring","description":"Jase Gehring is an author of Low-cost, scalable, and automated fluid sampling for fluidics applications.","statement":"Jase Gehring is an author of Low-cost, scalable, and automated fluid sampling for fluidics applications.","evidence":[]},{"id":"connection:version:low-cost-scalable-and-automated-fluid-sampling-for-fluidics-applications--2021-05-31-hardwarex--person:orcid:0000-0002-9164-6231--author-5","type":"authors","title":"Lior Pachter","description":"Lior Pachter is an author of Low-cost, scalable, and automated fluid sampling for fluidics applications.","statement":"Lior Pachter is an author of Low-cost, scalable, and automated fluid sampling for fluidics applications.","evidence":[]},{"id":"connection:version:low-cost-scalable-and-automated-fluid-sampling-for-fluidics-applications--2021-05-31-hardwarex--claim:version:low-cost-scalable-and-automated-fluid-sampling-for-fluidics-applications--2021-05-31-hardwarex--summary-0","type":"claims","title":"Automated fraction collection is useful for microfluidics and chromatography, but commercial systems can be costly, bulk","description":"Automated fraction collection is useful for microfluidics and chromatography, but commercial systems can be costly, bulky, and difficult to customize. Colosseum addresses this access gap with an open-source, 3D-printed, single-motor fraction collector that can be assembled cheaply from off-the-shelf parts. Bench tests and gradient collections show accurate, scalable sampling across common fluidics applications.","statement":"This publication contains the target grounded summary claim.","evidence":[{"source":"source:text:document:low-cost-scalable-and-automated-fluid-sampling-for-fluidics-applications--2021-05-31-hardwarex","span":"Fraction collectors that sample from a microfluidic stream [1], are preferable to manual collection that can be tedious and introduce human error [2].","page":2,"properties":{"document_id":"document:low-cost-scalable-and-automated-fluid-sampling-for-fluidics-applications--2021-05-31-hardwarex","char_start":122,"char_end":272}},{"source":"source:text:document:low-cost-scalable-and-automated-fluid-sampling-for-fluidics-applications--2021-05-31-hardwarex","span":"Most laboratories currently rely on commercial fraction collectors, which are expensive and difficult to customize (Supplementary Table 1).","page":2,"properties":{"document_id":"document:low-cost-scalable-and-automated-fluid-sampling-for-fluidics-applications--2021-05-31-hardwarex","char_start":479,"char_end":618}},{"source":"source:text:document:low-cost-scalable-and-automated-fluid-sampling-for-fluidics-applications--2021-05-31-hardwarex","span":"We present colosseum, a low-cost, modular, and automated fluid sampling device for scalable fluidic applications.","page":1,"properties":{"document_id":"document:low-cost-scalable-and-automated-fluid-sampling-for-fluidics-applications--2021-05-31-hardwarex","char_start":1089,"char_end":1202}},{"source":"source:text:document:low-cost-scalable-and-automated-fluid-sampling-for-fluidics-applications--2021-05-31-hardwarex","span":"The colosseum fraction collector uses a single motor, can be built for less than $100 using off-the-shelf and 3D-printed components, and can be assembled in less than an hour.","page":1,"properties":{"document_id":"document:low-cost-scalable-and-automated-fluid-sampling-for-fluidics-applications--2021-05-31-hardwarex","char_start":1203,"char_end":1378}},{"source":"source:text:document:low-cost-scalable-and-automated-fluid-sampling-for-fluidics-applications--2021-05-31-hardwarex","span":"We found that the collected fractions closely followed the expected fraction amount with a Spearman correlation of 0.997, showing that the colosseum fraction collector can be used to accurately collect gradient elution series.","page":2,"properties":{"document_id":"document:low-cost-scalable-and-automated-fluid-sampling-for-fluidics-applications--2021-05-31-hardwarex","char_start":6022,"char_end":6248}}]},{"id":"connection:version:low-cost-scalable-and-automated-fluid-sampling-for-fluidics-applications--2021-05-31-hardwarex--work:low-cost-scalable-and-automated-fluid-sampling-for-fluidics-applications","type":"versions","title":"Low-cost, scalable, and automated fluid sampling for fluidics applications","description":"2021-05-31 · HardwareX","statement":"2021-05-31 is a version of Low-cost, scalable, and automated fluid sampling for fluidics applications.","evidence":[],"citation":{"doi":"10.1016/j.ohx.2021.e00201","url":"https://doi.org/10.1016/j.ohx.2021.e00201","date":"2021-05-31","venue":"HardwareX","authors":[{"name":"A. Sina Booeshaghi","orcid":"https://orcid.org/0000-0002-6442-4502"},{"name":"Yeokyoung (Anne) Kil","orcid":"https://orcid.org/0000-0002-1235-7379"},{"name":"Kyung Hoi (Joseph) Min","orcid":"https://orcid.org/0000-0003-0894-4017"},{"name":"Jase Gehring","orcid":"https://orcid.org/0000-0002-3894-9495"},{"name":"Lior Pachter","orcid":"https://orcid.org/0000-0002-9164-6231"}]},"bibtex":"@article{Booeshaghi_2021,\n  TITLE     = {Low-cost, scalable, and automated fluid sampling for fluidics applications},\n  VOLUME    = {10},\n  ISSN      = {2468-0672},\n  URL       = {http://dx.doi.org/10.1016/j.ohx.2021.e00201},\n  DOI       = {10.1016/j.ohx.2021.e00201},\n  JOURNAL   = {HardwareX},\n  PUBLISHER = {Elsevier BV},\n  AUTHOR    = {Booeshaghi, A. Sina and Kil, Yeokyoung (Anne) and Min, Kyung Hoi (Joseph) and Gehring, Jase and Pachter, Lior},\n  YEAR      = {2021},\n  PAGES     = {e00201}\n}"},{"id":"connection:document:low-cost-scalable-and-automated-fluid-sampling-for-fluidics-applications--2021-05-31-hardwarex--version:low-cost-scalable-and-automated-fluid-sampling-for-fluidics-applications--2021-05-31-hardwarex","type":"sources","title":"2021-05-31-hardwarex.pdf","description":"This source document provides local provenance for the target publication.","statement":"This source document provides local provenance for the target publication.","evidence":[]}]}</script>
+      <script src="../work-relations.js"></script>
     </article>
   </body>
 </html>

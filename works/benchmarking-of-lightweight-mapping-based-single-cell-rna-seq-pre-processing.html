@@ -17,77 +17,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Recent developments of comparable tools for preprocessing single-cell RNA-sequencing data necessitate a coherent evaluation and benchmark of methods. We compared two lightweight-mapping tools that have been developed for pre-processing single-cell RNA-seq data, and found that they produce similar results. We also found that to the extent that there are differences, they are inconsequential for downstream analysis." />
+    <meta name="description" content="Single-cell RNA-seq preprocessing is a prerequisite for interpreting growing cellular datasets, so users need tools that are both reproducible and computationally practical. The challenge is deciding whether competing lightweight-mapping workflows differ meaningfully in output, usability, speed, or memory. A comparison across 20 datasets finds kallisto-bustools and Salmon-Alevin-fry produce nearly identical downstream results, while Salmon-Alevin-fry is slower, more memory-intensive, and more expensive to run." />
     <link rel="stylesheet" href="../styles.css" />
-    
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        document.querySelectorAll(".copy-bibtex-button").forEach((button) => {
-          button.addEventListener("click", async () => {
-            const box = button.closest(".bibtex-box");
-            const code = box ? box.querySelector("code") : null;
-            const bibtex = code ? code.textContent : "";
-            const previousText = button.textContent;
-            const markStatus = (text) => {
-              button.textContent = text;
-              window.setTimeout(() => {
-                button.textContent = previousText;
-              }, 1200);
-            };
-            const copyWithSelection = () => {
-              const textarea = document.createElement("textarea");
-              textarea.value = bibtex;
-              textarea.setAttribute("readonly", "");
-              textarea.style.position = "fixed";
-              textarea.style.left = "0";
-              textarea.style.top = "0";
-              textarea.style.width = "1px";
-              textarea.style.height = "1px";
-              textarea.style.opacity = "0";
-              textarea.style.pointerEvents = "none";
-              document.body.appendChild(textarea);
-              textarea.focus({ preventScroll: true });
-              textarea.select();
-              textarea.setSelectionRange(0, textarea.value.length);
-              const copied = document.execCommand("copy");
-              textarea.remove();
-              return copied;
-            };
-
-            try {
-              if (navigator.clipboard && navigator.clipboard.writeText) {
-                await navigator.clipboard.writeText(bibtex);
-                markStatus("Copied");
-                return;
-              }
-
-              if (copyWithSelection()) {
-                markStatus("Copied");
-                return;
-              }
-            } catch {
-              let copied = false;
-
-              try {
-                copied = copyWithSelection();
-              } catch {
-                copied = false;
-              }
-
-              if (copied) {
-                markStatus("Copied");
-                return;
-              }
-            }
-
-            markStatus("Copy failed");
-          });
-        });
-      });
-    </script>
     <title>Benchmarking of lightweight-mapping based single-cell RNA-seq pre-processing | Works | Sina Booeshaghi</title>
   </head>
-  <body>
+  <body class="work-detail-page">
     <nav class="breadcrumb" aria-label="Breadcrumb">
       <a href="../index.html">Home</a>
       <span aria-hidden="true">/</span>
@@ -95,130 +29,71 @@
       <span aria-hidden="true">/</span>
       <span class="breadcrumb-current" title="Benchmarking of lightweight-mapping based single-cell RNA-seq pre-processing">Benchmarking of lightweight-mapping based single-cell RNA-seq pr...</span>
     </nav>
-    <article class="work-page">
-      <h1>Benchmarking of lightweight-mapping based single-cell RNA-seq pre-processing</h1>
-      <div class="publication-versions work-versions" aria-label="Work versions">
-        <span class="publication-versions-label">Versions</span>
-        <div class="publication-version-cards">
-          
-        <a
-          class="publication-version-link is-current"
-          href="https://doi.org/10.1101/2021.01.25.428188"
-          target="_blank"
-          rel="noopener"
-        >
-          <span class="publication-version-title">Benchmarking of lightweight-mapping based single-cell RNA-seq pre-processing</span>
-          <span class="publication-version-detail">bioRxiv · 2021-03-03</span>
-        </a>
+    <article class="work-page study-graph-page">
+      <section class="study-focus" aria-label="Selected work">
+        <div>
+          <h1>Benchmarking of lightweight-mapping based single-cell RNA-seq pre-processing</h1>
+          <p>Single-cell RNA-seq preprocessing is a prerequisite for interpreting growing cellular datasets, so users need tools that are both reproducible and computationally practical. The challenge is deciding whether competing lightweight-mapping workflows differ meaningfully in output, usability, speed, or memory. A comparison across 20 datasets finds kallisto-bustools and Salmon-Alevin-fry produce nearly identical downstream results, while Salmon-Alevin-fry is slower, more memory-intensive, and more expensive to run.</p>
         </div>
-      </div>
-
-      <section>
-        <h2>Summary</h2>
-        <p>Recent developments of comparable tools for preprocessing single-cell RNA-sequencing data necessitate a coherent evaluation and benchmark of methods. We compared two lightweight-mapping tools that have been developed for pre-processing single-cell RNA-seq data, and found that they produce similar results. We also found that to the extent that there are differences, they are inconsequential for downstream analysis.</p>
+        <dl class="study-stats">
+          <div>
+            <dt>Citations</dt>
+            <dd>7</dd>
+          </div>
+          <div>
+            <dt>Relations</dt>
+            <dd>5</dd>
+          </div>
+        </dl>
       </section>
 
       
-      <section
-        class="authors-section"
-        data-author-version-count="1"
-      >
-        <h2>Authors</h2>
-        
-        <section
-          class="author-version"
-          data-author-count="2"
-        >
-          <h3>
-            <a href="https://doi.org/10.1101/2021.01.25.428188" target="_blank" rel="noopener">bioRxiv</a>
-            <time datetime="2021-03-03">2021-03-03</time>
-          </h3>
-          <ul class="author-list">
-            
-            <li><a href="https://orcid.org/0000-0002-6442-4502" target="_blank" rel="noopener" title="ORCID">A. Sina Booeshaghi</a></li>
-            <li><a href="https://orcid.org/0000-0002-9164-6231" target="_blank" rel="noopener" title="ORCID">Lior Pachter</a></li>
-          </ul>
-        </section>
-      </section>
-
-      <section>
-        <h2>BibTeX</h2>
-        
-        <section class="bibtex-entry">
-          <h3>bioRxiv</h3>
-          <div class="bibtex-box">
-            <button
-              class="copy-bibtex-button"
-              type="button"
-              aria-label="Copy BibTeX for bioRxiv"
-            >
-              Copy BibTeX
-            </button>
-            <pre><code>@article{Booeshaghi_2021,
-  TITLE     = {Benchmarking of lightweight-mapping based single-cell RNA-seq pre-processing},
-  URL       = {http://dx.doi.org/10.1101/2021.01.25.428188},
-  DOI       = {10.1101/2021.01.25.428188},
-  PUBLISHER = {openRxiv},
-  AUTHOR    = {Booeshaghi, A. Sina and Pachter, Lior},
-  YEAR      = {2021}
-}</code></pre>
+      <section class="relationship-inspector" aria-label="Indexed relations" data-work-relations>
+        <section class="relationship-list-panel" aria-label="Relations">
+          <div class="study-section-heading">
+            <h2>Relations</h2>
           </div>
+          <div
+            class="relation-tabs"
+            role="tablist"
+            aria-label="Relation types"
+            data-relation-tabs
+          ></div>
+          <div class="reason-list" data-relation-list></div>
         </section>
-      </section>
 
-      <section>
-        <h2>Citing Works</h2>
-        <p class="citation-source-note">
-          7 citing works found in citation data generated 2026-07-06. Citation relationships are sourced from OpenAlex, Semantic Scholar, Google Scholar.
-        </p>
-        <table class="citation-table">
-          <thead>
-            <tr>
-              <th>Title</th>
-              <th>Year</th>
-              <th>Summary</th>
-            </tr>
-          </thead>
-          <tbody>
-            
-            <tr>
-              <td class="citation-title"><a href="https://elifesciences.org/articles/87517" target="_blank" rel="noopener">Statistical analysis supports pervasive RNA subcellular localization and alternative 3&#39;UTR regulation</a></td>
-              <td class="citation-year"><time datetime="2024">2024</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://www.semanticscholar.org/paper/2ad32831f4d77dab1cd7e8392316a050b80fe4f1" target="_blank" rel="noopener">Graph Modeling for Genomics and Epidemiology</a></td>
-              <td class="citation-year"><time datetime="2023">2023</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://www.biorxiv.org/content/10.1101/2022.12.02.518832.abstract" target="_blank" rel="noopener">Accurate quantification of single-cell and single-nucleus RNA-seq transcripts using distinguishing flanking k-mers</a></td>
-              <td class="citation-year"><time datetime="2022">2022</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1093/gigascience/giac001" target="_blank" rel="noopener">Comparative analysis of common alignment tools for single-cell RNA sequencing</a></td>
-              <td class="citation-year"><time datetime="2022">2022</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include alevin, kallisto, booeshaghi, comparing, datasets, memory, pachter, preprint.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/2021.02.10.430656" target="_blank" rel="noopener">A like-for-like comparison of lightweight-mapping pipelines for single-cell RNA-seq data pre-processing</a></td>
-              <td class="citation-year"><time datetime="2021">2021</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include booeshaghi, pachter, alevin-fry, kallisto-bustools, benchmarking, benchmark, configurations, https.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1186/s13059-021-02552-3" target="_blank" rel="noopener">Benchmarking UMI-based single-cell RNA-seq preprocessing workflows</a></td>
-              <td class="citation-year"><time datetime="2021">2021</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include alevin-fry, bustools, compared, lightweight-mapping, performance, pipelines, pseudoalignment, recent.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/2021.02.15.430948" target="_blank" rel="noopener">Comparative Analysis of common alignment tools for single cell RNA sequencing</a></td>
-              <td class="citation-year"><time datetime="2021">2021</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-          </tbody>
-        </table>
+        <aside class="evidence-panel relationship-detail" aria-live="polite">
+          <span class="study-label" data-relation-label>Relation</span>
+          <h2 data-relation-title></h2>
+          <p class="selected-relation-statement" data-relation-statement></p>
+          <section class="version-citation" data-version-citation hidden>
+            <h3>Citation</h3>
+            <div class="bibtex-box">
+              <button class="copy-bibtex-button" type="button" data-copy-bibtex>
+                Copy BibTeX
+              </button>
+              <pre><code data-bibtex-code></code></pre>
+            </div>
+          </section>
+          <details class="relationship-evidence" data-relation-evidence>
+            <summary>
+              <span>Evidence</span>
+              <span class="evidence-summary" data-evidence-summary></span>
+            </summary>
+            <table class="relationship-evidence-table">
+              <thead>
+                <tr>
+                  <th>Span</th>
+                  <th>Source</th>
+                </tr>
+              </thead>
+              <tbody data-evidence-rows></tbody>
+            </table>
+          </details>
+        </aside>
       </section>
+      <script id="workRelationData" type="application/json">{"work":{"id":"work:benchmarking-of-lightweight-mapping-based-single-cell-rna-seq-pre-processing","title":"Benchmarking of lightweight-mapping based single-cell RNA-seq pre-processing","description":"Single-cell RNA-seq preprocessing is a prerequisite for interpreting growing cellular datasets, so users need tools that are both reproducible and computationally practical. The challenge is deciding whether competing lightweight-mapping workflows differ meaningfully in output, usability, speed, or memory. A comparison across 20 datasets finds kallisto-bustools and Salmon-Alevin-fry produce nearly identical downstream results, while Salmon-Alevin-fry is slower, more memory-intensive, and more expensive to run."},"relationTypes":[{"id":"authors","label":"Authors"},{"id":"claims","label":"Claims"},{"id":"citations","label":"Citations"},{"id":"versions","label":"Versions"},{"id":"software","label":"Software"},{"id":"sources","label":"Sources"}],"connections":[{"id":"connection:version:benchmarking-of-lightweight-mapping-based-single-cell-rna-seq-pre-processing--2021-03-03-biorxiv--person:orcid:0000-0002-6442-4502--author-1","type":"authors","title":"A. Sina Booeshaghi","description":"A. Sina Booeshaghi is an author of Benchmarking of lightweight-mapping based single-cell RNA-seq pre-processing.","statement":"A. Sina Booeshaghi is an author of Benchmarking of lightweight-mapping based single-cell RNA-seq pre-processing.","evidence":[]},{"id":"connection:version:benchmarking-of-lightweight-mapping-based-single-cell-rna-seq-pre-processing--2021-03-03-biorxiv--person:orcid:0000-0002-9164-6231--author-2","type":"authors","title":"Lior Pachter","description":"Lior Pachter is an author of Benchmarking of lightweight-mapping based single-cell RNA-seq pre-processing.","statement":"Lior Pachter is an author of Benchmarking of lightweight-mapping based single-cell RNA-seq pre-processing.","evidence":[]},{"id":"connection:version:benchmarking-of-lightweight-mapping-based-single-cell-rna-seq-pre-processing--2021-03-03-biorxiv--claim:version:benchmarking-of-lightweight-mapping-based-single-cell-rna-seq-pre-processing--2021-03-03-biorxiv--summary-0","type":"claims","title":"Single-cell RNA-seq preprocessing is a prerequisite for interpreting growing cellular datasets, so users need tools that","description":"Single-cell RNA-seq preprocessing is a prerequisite for interpreting growing cellular datasets, so users need tools that are both reproducible and computationally practical. The challenge is deciding whether competing lightweight-mapping workflows differ meaningfully in output, usability, speed, or memory. A comparison across 20 datasets finds kallisto-bustools and Salmon-Alevin-fry produce nearly identical downstream results, while Salmon-Alevin-fry is slower, more memory-intensive, and more expensive to run.","statement":"This publication contains the target grounded summary claim.","evidence":[{"source":"source:text:document:benchmarking-of-lightweight-mapping-based-single-cell-rna-seq-pre-processing--2021-03-03-biorxiv","span":"The analysis of single-cell RNA-seq data begins with pre-processing of sequenced reads to generate count matrices. This analysis prerequisite is the analog of quantification of bulk RNA-seq data, however it is considerably more complex ​(Luecken and Theis 2019)​. Several different technology-specific approaches to single-cell pre-processing have been implemented as part of proof-of-principle demonstrations of the experimental techniques, e.g. ​(Cao et al. 2018; Macosko et al. 2015)​, but such custom solutions do not scale well and as datasets grow in size ​(Svensson, da Veiga Beltrame, and Pachter 2020; Cao et al. 2020)​ algorithmically sound and computationally efficient tools are needed.","page":1,"properties":{"document_id":"document:benchmarking-of-lightweight-mapping-based-single-cell-rna-seq-pre-processing--2021-03-03-biorxiv","char_start":1256,"char_end":1954}},{"source":"source:text:document:benchmarking-of-lightweight-mapping-based-single-cell-rna-seq-pre-processing--2021-03-03-biorxiv","span":"This modular structure makes it easy to pre-process data from different technologies in a uniform way, and enables a large number of downstream analyses by virtue of easy customization of individual pre-processing steps.","page":2,"properties":{"document_id":"document:benchmarking-of-lightweight-mapping-based-single-cell-rna-seq-pre-processing--2021-03-03-biorxiv","char_start":1294,"char_end":1514}},{"source":"source:text:document:benchmarking-of-lightweight-mapping-based-single-cell-rna-seq-pre-processing--2021-03-03-biorxiv","span":"To answer this question, we have performed a comprehensive comparison and benchmarking of kallisto-bustools and Salmon-Alevin-fry, taking particular care to avoid the self-assessment trap ​(Teng et al. 2016; Buchka et al. 2021)​. To do so we adhere carefully to developer recommendations, and compare the programs with respect to a large number of datasets that include data from a wide variety of organisms and tissues. We have also included code reproducing our results, so that users can explore the tools and data for themselves, without having to take our word about performance, features, and benchmarks.","page":2,"properties":{"document_id":"document:benchmarking-of-lightweight-mapping-based-single-cell-rna-seq-pre-processing--2021-03-03-biorxiv","char_start":2655,"char_end":3265}},{"source":"source:text:document:benchmarking-of-lightweight-mapping-based-single-cell-rna-seq-pre-processing--2021-03-03-biorxiv","span":"The total run times per dataset of the Salmon-Alevin-fry programs were consistently much higher than that of kallisto-bustools, and the memory requirements were much higher as well (Figure 3).","page":7,"properties":{"document_id":"document:benchmarking-of-lightweight-mapping-based-single-cell-rna-seq-pre-processing--2021-03-03-biorxiv","char_start":1478,"char_end":1670}},{"source":"source:text:document:benchmarking-of-lightweight-mapping-based-single-cell-rna-seq-pre-processing--2021-03-03-biorxiv","span":"Here we find that Salmon-Alevin-fry results on single-cell RNA-seq datasets using \"selective alignment with a decoy-aware transcriptome\" are nearly identical, insofar as downstream analyses are concerned, to those of kallisto, which performs pseudoalignment to a transcriptome only.","page":8,"properties":{"document_id":"document:benchmarking-of-lightweight-mapping-based-single-cell-rna-seq-pre-processing--2021-03-03-biorxiv","char_start":2052,"char_end":2334}}]},{"id":"connection:version:benchmarking-of-lightweight-mapping-based-single-cell-rna-seq-pre-processing--2021-03-03-biorxiv--work:benchmarking-of-lightweight-mapping-based-single-cell-rna-seq-pre-processing","type":"versions","title":"Benchmarking of lightweight-mapping based single-cell RNA-seq pre-processing","description":"2021-03-03 · bioRxiv","statement":"2021-03-03 is a version of Benchmarking of lightweight-mapping based single-cell RNA-seq pre-processing.","evidence":[],"citation":{"doi":"10.1101/2021.01.25.428188","url":"https://doi.org/10.1101/2021.01.25.428188","date":"2021-03-03","venue":"bioRxiv","authors":[{"name":"A. Sina Booeshaghi","orcid":"https://orcid.org/0000-0002-6442-4502"},{"name":"Lior Pachter","orcid":"https://orcid.org/0000-0002-9164-6231"}]},"bibtex":"@article{Booeshaghi_2021,\n  TITLE     = {Benchmarking of lightweight-mapping based single-cell RNA-seq pre-processing},\n  URL       = {http://dx.doi.org/10.1101/2021.01.25.428188},\n  DOI       = {10.1101/2021.01.25.428188},\n  PUBLISHER = {openRxiv},\n  AUTHOR    = {Booeshaghi, A. Sina and Pachter, Lior},\n  YEAR      = {2021}\n}"},{"id":"connection:document:benchmarking-of-lightweight-mapping-based-single-cell-rna-seq-pre-processing--2021-03-03-biorxiv--version:benchmarking-of-lightweight-mapping-based-single-cell-rna-seq-pre-processing--2021-03-03-biorxiv","type":"sources","title":"2021-03-03-biorxiv.pdf","description":"This source document provides local provenance for the target publication.","statement":"This source document provides local provenance for the target publication.","evidence":[]}]}</script>
+      <script src="../work-relations.js"></script>
     </article>
   </body>
 </html>

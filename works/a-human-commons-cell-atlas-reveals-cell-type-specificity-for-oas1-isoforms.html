@@ -17,77 +17,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="This study uses a human commons cell atlas to examine cell-type specificity of OAS1 isoforms across integrated single-cell datasets." />
+    <meta name="description" content="OAS1 isoforms matter because innate antiviral protection depends on which transcripts are present in the cell types a virus infects. Existing cell atlases largely report gene-level counts, making isoform-specific and dynamically reprocessable questions difficult. By building a 2.9-million-cell Human Commons Cell Atlas from raw FASTQs and reprocessing it at isoform resolution, the work identifies testis-specific OAS1-p44b expression in spermatogenesis cells and demonstrates a flexible atlas model for custom analyses." />
     <link rel="stylesheet" href="../styles.css" />
-    
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        document.querySelectorAll(".copy-bibtex-button").forEach((button) => {
-          button.addEventListener("click", async () => {
-            const box = button.closest(".bibtex-box");
-            const code = box ? box.querySelector("code") : null;
-            const bibtex = code ? code.textContent : "";
-            const previousText = button.textContent;
-            const markStatus = (text) => {
-              button.textContent = text;
-              window.setTimeout(() => {
-                button.textContent = previousText;
-              }, 1200);
-            };
-            const copyWithSelection = () => {
-              const textarea = document.createElement("textarea");
-              textarea.value = bibtex;
-              textarea.setAttribute("readonly", "");
-              textarea.style.position = "fixed";
-              textarea.style.left = "0";
-              textarea.style.top = "0";
-              textarea.style.width = "1px";
-              textarea.style.height = "1px";
-              textarea.style.opacity = "0";
-              textarea.style.pointerEvents = "none";
-              document.body.appendChild(textarea);
-              textarea.focus({ preventScroll: true });
-              textarea.select();
-              textarea.setSelectionRange(0, textarea.value.length);
-              const copied = document.execCommand("copy");
-              textarea.remove();
-              return copied;
-            };
-
-            try {
-              if (navigator.clipboard && navigator.clipboard.writeText) {
-                await navigator.clipboard.writeText(bibtex);
-                markStatus("Copied");
-                return;
-              }
-
-              if (copyWithSelection()) {
-                markStatus("Copied");
-                return;
-              }
-            } catch {
-              let copied = false;
-
-              try {
-                copied = copyWithSelection();
-              } catch {
-                copied = false;
-              }
-
-              if (copied) {
-                markStatus("Copied");
-                return;
-              }
-            }
-
-            markStatus("Copy failed");
-          });
-        });
-      });
-    </script>
     <title>A human commons cell atlas reveals cell type specificity for OAS1 isoforms | Works | Sina Booeshaghi</title>
   </head>
-  <body>
+  <body class="work-detail-page">
     <nav class="breadcrumb" aria-label="Breadcrumb">
       <a href="../index.html">Home</a>
       <span aria-hidden="true">/</span>
@@ -95,146 +29,71 @@
       <span aria-hidden="true">/</span>
       <span class="breadcrumb-current" title="A human commons cell atlas reveals cell type specificity for OAS1 isoforms">A human commons cell atlas reveals cell type specificity for OAS...</span>
     </nav>
-    <article class="work-page">
-      <h1>A human commons cell atlas reveals cell type specificity for OAS1 isoforms</h1>
-      <div class="publication-versions work-versions" aria-label="Work versions">
-        <span class="publication-versions-label">Versions</span>
-        <div class="publication-version-cards">
-          
-        <a
-          class="publication-version-link is-current"
-          href="https://doi.org/10.1101/2024.03.23.586412"
-          target="_blank"
-          rel="noopener"
-        >
-          <span class="publication-version-title">A human commons cell atlas reveals cell type specificity for OAS1 isoforms</span>
-          <span class="publication-version-detail">bioRxiv · 2024-03-24</span>
-        </a>
+    <article class="work-page study-graph-page">
+      <section class="study-focus" aria-label="Selected work">
+        <div>
+          <h1>A human commons cell atlas reveals cell type specificity for OAS1 isoforms</h1>
+          <p>OAS1 isoforms matter because innate antiviral protection depends on which transcripts are present in the cell types a virus infects. Existing cell atlases largely report gene-level counts, making isoform-specific and dynamically reprocessable questions difficult. By building a 2.9-million-cell Human Commons Cell Atlas from raw FASTQs and reprocessing it at isoform resolution, the work identifies testis-specific OAS1-p44b expression in spermatogenesis cells and demonstrates a flexible atlas model for custom analyses.</p>
         </div>
-      </div>
-
-      <section>
-        <h2>Summary</h2>
-        <p>This study uses a human commons cell atlas to examine cell-type specificity of OAS1 isoforms across integrated single-cell datasets.</p>
+        <dl class="study-stats">
+          <div>
+            <dt>Citations</dt>
+            <dd>10</dd>
+          </div>
+          <div>
+            <dt>Relations</dt>
+            <dd>6</dd>
+          </div>
+        </dl>
       </section>
 
       
-      <section
-        class="authors-section"
-        data-author-version-count="1"
-      >
-        <h2>Authors</h2>
-        
-        <section
-          class="author-version"
-          data-author-count="3"
-        >
-          <h3>
-            <a href="https://doi.org/10.1101/2024.03.23.586412" target="_blank" rel="noopener">bioRxiv</a>
-            <time datetime="2024-03-24">2024-03-24</time>
-          </h3>
-          <ul class="author-list">
-            
-            <li><a href="https://orcid.org/0000-0001-7420-8697" target="_blank" rel="noopener" title="ORCID">Ángel Galvez-Merchán</a></li>
-            <li><a href="https://orcid.org/0000-0002-6442-4502" target="_blank" rel="noopener" title="ORCID">A. Sina Booeshaghi</a></li>
-            <li><a href="https://orcid.org/0000-0002-9164-6231" target="_blank" rel="noopener" title="ORCID">Lior Pachter</a></li>
-          </ul>
-        </section>
-      </section>
-
-      <section>
-        <h2>BibTeX</h2>
-        
-        <section class="bibtex-entry">
-          <h3>bioRxiv</h3>
-          <div class="bibtex-box">
-            <button
-              class="copy-bibtex-button"
-              type="button"
-              aria-label="Copy BibTeX for bioRxiv"
-            >
-              Copy BibTeX
-            </button>
-            <pre><code>@article{Galvez_Merch_n_2024,
-  TITLE     = {A human commons cell atlas reveals cell type specificity for OAS1 isoforms},
-  URL       = {http://dx.doi.org/10.1101/2024.03.23.586412},
-  DOI       = {10.1101/2024.03.23.586412},
-  PUBLISHER = {openRxiv},
-  AUTHOR    = {Galvez-Merchán, Ángel and Booeshaghi, A. Sina and Pachter, Lior},
-  YEAR      = {2024}
-}</code></pre>
+      <section class="relationship-inspector" aria-label="Indexed relations" data-work-relations>
+        <section class="relationship-list-panel" aria-label="Relations">
+          <div class="study-section-heading">
+            <h2>Relations</h2>
           </div>
+          <div
+            class="relation-tabs"
+            role="tablist"
+            aria-label="Relation types"
+            data-relation-tabs
+          ></div>
+          <div class="reason-list" data-relation-list></div>
         </section>
-      </section>
 
-      <section>
-        <h2>Citing Works</h2>
-        <p class="citation-source-note">
-          10 citing works found in citation data generated 2026-07-06. Citation relationships are sourced from OpenAlex, Semantic Scholar, Google Scholar.
-        </p>
-        <table class="citation-table">
-          <thead>
-            <tr>
-              <th>Title</th>
-              <th>Year</th>
-              <th>Summary</th>
-            </tr>
-          </thead>
-          <tbody>
-            
-            <tr>
-              <td class="citation-title"><a href="https://www.nature.com/articles/s41587-026-03199-w" target="_blank" rel="noopener">A genome-scale CRISPRi perturbation atlas of human induced pluripotent stem cells</a></td>
-              <td class="citation-year"><time datetime="2026">2026</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://www.cell.com/cell-reports/fulltext/S2211-1247(26)00485-7" target="_blank" rel="noopener">Consensus Pituitary Atlas, a scalable resource for annotation, novel marker discovery, and analyses in mouse pituitary gland research</a></td>
-              <td class="citation-year"><time datetime="2026">2026</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://journals.physiology.org/doi/abs/10.1152/physiol.00010.2025" target="_blank" rel="noopener">From Cells to Selves and Back: Human Neurodiversity at Single-Cell Resolution</a></td>
-              <td class="citation-year"><time datetime="2026">2026</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://www.nature.com/articles/s41576-026-00939-1" target="_blank" rel="noopener">Gene regulatory networks: from correlative models to causal explanations</a></td>
-              <td class="citation-year"><time datetime="2026">2026</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/2025.04.09.648005" target="_blank" rel="noopener">Unexpected XIST Expression in Male Hearts Associates with Disease</a></td>
-              <td class="citation-year"><time datetime="2026">2026</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include accession, atlas, commons, erx4319109, expression, h0026, litvi, nukov.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1038/d41586-024-01217-y" target="_blank" rel="noopener">85 million cells — and counting — at your fingertips</a></td>
-              <td class="citation-year"><time datetime="2024">2024</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11580897/" target="_blank" rel="noopener">A perturbation cell atlas of human induced pluripotent stem cells</a></td>
-              <td class="citation-year"><time datetime="2024">2024</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1038/s41592-024-02532-y" target="_blank" rel="noopener">Considerations for building and using integrated single-cell atlases</a></td>
-              <td class="citation-year"><time datetime="2024">2024</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11565817/" target="_blank" rel="noopener">GENCODE: massively expanding the lncRNA catalog through capture long-read RNA sequencing</a></td>
-              <td class="citation-year"><time datetime="2024">2024</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://search.proquest.com/openview/0519176169378ff774d4639bc473585e/1?pq-origsite=gscholar&amp;cbl=18750&amp;diss=y" target="_blank" rel="noopener">Improved Sequencing and Informatics Approaches for Technical Obstacles in Single-Cell RNA-seq Analysis</a></td>
-              <td class="citation-year"><time datetime="2024">2024</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-          </tbody>
-        </table>
+        <aside class="evidence-panel relationship-detail" aria-live="polite">
+          <span class="study-label" data-relation-label>Relation</span>
+          <h2 data-relation-title></h2>
+          <p class="selected-relation-statement" data-relation-statement></p>
+          <section class="version-citation" data-version-citation hidden>
+            <h3>Citation</h3>
+            <div class="bibtex-box">
+              <button class="copy-bibtex-button" type="button" data-copy-bibtex>
+                Copy BibTeX
+              </button>
+              <pre><code data-bibtex-code></code></pre>
+            </div>
+          </section>
+          <details class="relationship-evidence" data-relation-evidence>
+            <summary>
+              <span>Evidence</span>
+              <span class="evidence-summary" data-evidence-summary></span>
+            </summary>
+            <table class="relationship-evidence-table">
+              <thead>
+                <tr>
+                  <th>Span</th>
+                  <th>Source</th>
+                </tr>
+              </thead>
+              <tbody data-evidence-rows></tbody>
+            </table>
+          </details>
+        </aside>
       </section>
+      <script id="workRelationData" type="application/json">{"work":{"id":"work:a-human-commons-cell-atlas-reveals-cell-type-specificity-for-oas1-isoforms","title":"A human commons cell atlas reveals cell type specificity for OAS1 isoforms","description":"OAS1 isoforms matter because innate antiviral protection depends on which transcripts are present in the cell types a virus infects. Existing cell atlases largely report gene-level counts, making isoform-specific and dynamically reprocessable questions difficult. By building a 2.9-million-cell Human Commons Cell Atlas from raw FASTQs and reprocessing it at isoform resolution, the work identifies testis-specific OAS1-p44b expression in spermatogenesis cells and demonstrates a flexible atlas model for custom analyses."},"relationTypes":[{"id":"authors","label":"Authors"},{"id":"claims","label":"Claims"},{"id":"citations","label":"Citations"},{"id":"versions","label":"Versions"},{"id":"software","label":"Software"},{"id":"sources","label":"Sources"}],"connections":[{"id":"connection:version:a-human-commons-cell-atlas-reveals-cell-type-specificity-for-oas1-isoforms--2024-03-24-biorxiv--person:orcid:0000-0001-7420-8697--author-1","type":"authors","title":"Ángel Gálvez-Merchán","description":"Ángel Galvez-Merchán is an author of A human commons cell atlas reveals cell type specificity for OAS1 isoforms.","statement":"Ángel Galvez-Merchán is an author of A human commons cell atlas reveals cell type specificity for OAS1 isoforms.","evidence":[]},{"id":"connection:version:a-human-commons-cell-atlas-reveals-cell-type-specificity-for-oas1-isoforms--2024-03-24-biorxiv--person:orcid:0000-0002-6442-4502--author-2","type":"authors","title":"A. Sina Booeshaghi","description":"A. Sina Booeshaghi is an author of A human commons cell atlas reveals cell type specificity for OAS1 isoforms.","statement":"A. Sina Booeshaghi is an author of A human commons cell atlas reveals cell type specificity for OAS1 isoforms.","evidence":[]},{"id":"connection:version:a-human-commons-cell-atlas-reveals-cell-type-specificity-for-oas1-isoforms--2024-03-24-biorxiv--person:orcid:0000-0002-9164-6231--author-3","type":"authors","title":"Lior Pachter","description":"Lior Pachter is an author of A human commons cell atlas reveals cell type specificity for OAS1 isoforms.","statement":"Lior Pachter is an author of A human commons cell atlas reveals cell type specificity for OAS1 isoforms.","evidence":[]},{"id":"connection:version:a-human-commons-cell-atlas-reveals-cell-type-specificity-for-oas1-isoforms--2024-03-24-biorxiv--claim:version:a-human-commons-cell-atlas-reveals-cell-type-specificity-for-oas1-isoforms--2024-03-24-biorxiv--summary-0","type":"claims","title":"OAS1 isoforms matter because innate antiviral protection depends on which transcripts are present in the cell types a vi","description":"OAS1 isoforms matter because innate antiviral protection depends on which transcripts are present in the cell types a virus infects. Existing cell atlases largely report gene-level counts, making isoform-specific and dynamically reprocessable questions difficult. By building a 2.9-million-cell Human Commons Cell Atlas from raw FASTQs and reprocessing it at isoform resolution, the work identifies testis-specific OAS1-p44b expression in spermatogenesis cells and demonstrates a flexible atlas model for custom analyses.","statement":"This publication contains the target grounded summary claim.","evidence":[{"source":"source:text:document:a-human-commons-cell-atlas-reveals-cell-type-specificity-for-oas1-isoforms--2024-03-24-biorxiv","span":"The innate immune system plays a crucial role in defending the body against viruses (Takeuchi and Akira 2009; Koyama et al. 2008; Carty, Guy, and Bowie 2021).","page":1,"properties":{"document_id":"document:a-human-commons-cell-atlas-reveals-cell-type-specificity-for-oas1-isoforms--2024-03-24-biorxiv","char_start":1786,"char_end":1944}},{"source":"source:text:document:a-human-commons-cell-atlas-reveals-cell-type-specificity-for-oas1-isoforms--2024-03-24-biorxiv","span":"However, no study has explored whether this regulation is organ or cell-type specific. This question is significant: an OAS1 isoform can only protect against a virus if it is expressed in the cell-type the virus infects, and therefore an understanding of cell type specificity of OAS1 isoforms must accompany an analysis of viral tropism.","page":1,"properties":{"document_id":"document:a-human-commons-cell-atlas-reveals-cell-type-specificity-for-oas1-isoforms--2024-03-24-biorxiv","char_start":3207,"char_end":3545}},{"source":"source:text:document:a-human-commons-cell-atlas-reveals-cell-type-specificity-for-oas1-isoforms--2024-03-24-biorxiv","span":"First, current atlases exclusively provide gene-level expression data, and lack information on isoforms.","page":2,"properties":{"document_id":"document:a-human-commons-cell-atlas-reveals-cell-type-specificity-for-oas1-isoforms--2024-03-24-biorxiv","char_start":904,"char_end":1008}},{"source":"source:text:document:a-human-commons-cell-atlas-reveals-cell-type-specificity-for-oas1-isoforms--2024-03-24-biorxiv","span":"The Human CCA comprises over 2.9 million cells from 525 publicly available scRNA-seq datasets across 27 organs (Figure 1A).","page":2,"properties":{"document_id":"document:a-human-commons-cell-atlas-reveals-cell-type-specificity-for-oas1-isoforms--2024-03-24-biorxiv","char_start":2128,"char_end":2251}},{"source":"source:text:document:a-human-commons-cell-atlas-reveals-cell-type-specificity-for-oas1-isoforms--2024-03-24-biorxiv","span":"We observed that the high OAS1-p44b expression was specific to germ cells undergoing spermatogenesis, where p44b represented over 80% of total OAS1 expression (Figure 2F).","page":5,"properties":{"document_id":"document:a-human-commons-cell-atlas-reveals-cell-type-specificity-for-oas1-isoforms--2024-03-24-biorxiv","char_start":2088,"char_end":2259}}]},{"id":"connection:version:a-human-commons-cell-atlas-reveals-cell-type-specificity-for-oas1-isoforms--2024-03-24-biorxiv--work:a-human-commons-cell-atlas-reveals-cell-type-specificity-for-oas1-isoforms","type":"versions","title":"A human commons cell atlas reveals cell type specificity for OAS1 isoforms","description":"2024-03-24 · bioRxiv","statement":"2024-03-24 is a version of A human commons cell atlas reveals cell type specificity for OAS1 isoforms.","evidence":[],"citation":{"doi":"10.1101/2024.03.23.586412","url":"https://doi.org/10.1101/2024.03.23.586412","date":"2024-03-24","venue":"bioRxiv","authors":[{"name":"Ángel Galvez-Merchán","orcid":"https://orcid.org/0000-0001-7420-8697"},{"name":"A. Sina Booeshaghi","orcid":"https://orcid.org/0000-0002-6442-4502"},{"name":"Lior Pachter","orcid":"https://orcid.org/0000-0002-9164-6231"}]},"bibtex":"@article{Galvez_Merch_n_2024,\n  TITLE     = {A human commons cell atlas reveals cell type specificity for OAS1 isoforms},\n  URL       = {http://dx.doi.org/10.1101/2024.03.23.586412},\n  DOI       = {10.1101/2024.03.23.586412},\n  PUBLISHER = {openRxiv},\n  AUTHOR    = {Galvez-Merchán, Ángel and Booeshaghi, A. Sina and Pachter, Lior},\n  YEAR      = {2024}\n}"},{"id":"connection:document:a-human-commons-cell-atlas-reveals-cell-type-specificity-for-oas1-isoforms--2024-03-24-biorxiv--version:a-human-commons-cell-atlas-reveals-cell-type-specificity-for-oas1-isoforms--2024-03-24-biorxiv","type":"sources","title":"2024-03-24-biorxiv.pdf","description":"This source document provides local provenance for the target publication.","statement":"This source document provides local provenance for the target publication.","evidence":[]}]}</script>
+      <script src="../work-relations.js"></script>
     </article>
   </body>
 </html>

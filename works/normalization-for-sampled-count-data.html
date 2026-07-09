@@ -17,77 +17,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Single-cell count data normalization is a requisite for accurate interpretation of analysis results. However, a menagerie of methods has created confusion in the field, and there is disagreement about what methods to use in practice. We benchmarked widely used methods for normalizing scRNAseq data on 526 datasets in order to understand their performance and limits. We found tradeoffs between effective depth-normalization, variance stabilization, and monotonicity. We also found that the proportional fitting (PF) transformation followed by log(1 + X) can benefit from an additional PF with minimal loss to variance stabilization." />
+    <meta name="description" content="Reliable genomics count analysis depends on normalization that preserves biological structure while removing technical effects. Common single-cell workflows still leave residual depth structure, alter within-cell ranks, or impose dense-memory costs. The 2026 v4 formulation defines PFlog as an Anscombe-calibrated shifted centered-log-ratio transform, proves it uniquely satisfies the desired equivariant criteria, and benchmarks it across hundreds of datasets with improved depth, rank, and geometry behavior." />
     <link rel="stylesheet" href="../styles.css" />
-    
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        document.querySelectorAll(".copy-bibtex-button").forEach((button) => {
-          button.addEventListener("click", async () => {
-            const box = button.closest(".bibtex-box");
-            const code = box ? box.querySelector("code") : null;
-            const bibtex = code ? code.textContent : "";
-            const previousText = button.textContent;
-            const markStatus = (text) => {
-              button.textContent = text;
-              window.setTimeout(() => {
-                button.textContent = previousText;
-              }, 1200);
-            };
-            const copyWithSelection = () => {
-              const textarea = document.createElement("textarea");
-              textarea.value = bibtex;
-              textarea.setAttribute("readonly", "");
-              textarea.style.position = "fixed";
-              textarea.style.left = "0";
-              textarea.style.top = "0";
-              textarea.style.width = "1px";
-              textarea.style.height = "1px";
-              textarea.style.opacity = "0";
-              textarea.style.pointerEvents = "none";
-              document.body.appendChild(textarea);
-              textarea.focus({ preventScroll: true });
-              textarea.select();
-              textarea.setSelectionRange(0, textarea.value.length);
-              const copied = document.execCommand("copy");
-              textarea.remove();
-              return copied;
-            };
-
-            try {
-              if (navigator.clipboard && navigator.clipboard.writeText) {
-                await navigator.clipboard.writeText(bibtex);
-                markStatus("Copied");
-                return;
-              }
-
-              if (copyWithSelection()) {
-                markStatus("Copied");
-                return;
-              }
-            } catch {
-              let copied = false;
-
-              try {
-                copied = copyWithSelection();
-              } catch {
-                copied = false;
-              }
-
-              if (copied) {
-                markStatus("Copied");
-                return;
-              }
-            }
-
-            markStatus("Copy failed");
-          });
-        });
-      });
-    </script>
     <title>Normalization for sampled count data | Works | Sina Booeshaghi</title>
   </head>
-  <body>
+  <body class="work-detail-page">
     <nav class="breadcrumb" aria-label="Breadcrumb">
       <a href="../index.html">Home</a>
       <span aria-hidden="true">/</span>
@@ -95,434 +29,71 @@
       <span aria-hidden="true">/</span>
       <span class="breadcrumb-current" title="Normalization for sampled count data">Normalization for sampled count data</span>
     </nav>
-    <article class="work-page">
-      <h1>Normalization for sampled count data</h1>
-      <div class="publication-versions work-versions" aria-label="Work versions">
-        <span class="publication-versions-label">Versions</span>
-        <div class="publication-version-cards">
-          
-        <a
-          class="publication-version-link is-current"
-          href="https://www.biorxiv.org/content/10.1101/2022.05.06.490859v4"
-          target="_blank"
-          rel="noopener"
-        >
-          <span class="publication-version-title">Normalization for sampled count data</span>
-          <span class="publication-version-detail">bioRxiv v4 · 2026-06-22</span>
-        </a>
-        <a
-          class="publication-version-link"
-          href="https://www.biorxiv.org/content/10.1101/2022.05.06.490859v3?versioned=true"
-          target="_blank"
-          rel="noopener"
-        >
-          <span class="publication-version-title">Depth normalization for single-cell genomics count data</span>
-          <span class="publication-version-detail">bioRxiv v3 · 2026-06-10</span>
-        </a>
-        <a
-          class="publication-version-link"
-          href="https://www.biorxiv.org/content/10.1101/2022.05.06.490859v2?versioned=true"
-          target="_blank"
-          rel="noopener"
-        >
-          <span class="publication-version-title">Depth normalization for single-cell genomics count data</span>
-          <span class="publication-version-detail">bioRxiv v2 · 2026-06-07</span>
-        </a>
-        <a
-          class="publication-version-link"
-          href="https://www.biorxiv.org/content/10.1101/2022.05.06.490859v1?versioned=true"
-          target="_blank"
-          rel="noopener"
-        >
-          <span class="publication-version-title">Depth normalization for single-cell genomics count data</span>
-          <span class="publication-version-detail">bioRxiv v1 · 2022-05-06</span>
-        </a>
+    <article class="work-page study-graph-page">
+      <section class="study-focus" aria-label="Selected work">
+        <div>
+          <h1>Normalization for sampled count data</h1>
+          <p>Reliable genomics count analysis depends on normalization that preserves biological structure while removing technical effects. Common single-cell workflows still leave residual depth structure, alter within-cell ranks, or impose dense-memory costs. The 2026 v4 formulation defines PFlog as an Anscombe-calibrated shifted centered-log-ratio transform, proves it uniquely satisfies the desired equivariant criteria, and benchmarks it across hundreds of datasets with improved depth, rank, and geometry behavior.</p>
         </div>
-      </div>
-
-      <section>
-        <h2>Summary</h2>
-        <p>Single-cell count data normalization is a requisite for accurate interpretation of analysis results. However, a menagerie of methods has created confusion in the field, and there is disagreement about what methods to use in practice. We benchmarked widely used methods for normalizing scRNAseq data on 526 datasets in order to understand their performance and limits. We found tradeoffs between effective depth-normalization, variance stabilization, and monotonicity. We also found that the proportional fitting (PF) transformation followed by log(1 + X) can benefit from an additional PF with minimal loss to variance stabilization.</p>
+        <dl class="study-stats">
+          <div>
+            <dt>Citations</dt>
+            <dd>62</dd>
+          </div>
+          <div>
+            <dt>Relations</dt>
+            <dd>18</dd>
+          </div>
+        </dl>
       </section>
 
       
-      <section
-        class="authors-section"
-        data-author-version-count="1"
-      >
-        <h2>Authors</h2>
-        
-        <section
-          class="author-version"
-          data-author-count="4"
-        >
-          <h3>
-            <a href="https://doi.org/10.1101/2022.05.06.490859" target="_blank" rel="noopener">bioRxiv</a>
-            <time datetime="2022-05-06">2022-05-06</time>
-          </h3>
-          <ul class="author-list">
-            
-            <li><a href="https://orcid.org/0000-0002-6442-4502" target="_blank" rel="noopener" title="ORCID">A. Sina Booeshaghi</a></li>
-            <li><a href="https://orcid.org/0000-0002-4710-0047" target="_blank" rel="noopener" title="ORCID">Ingileif B. Hallgrímsdóttir</a></li>
-            <li><a href="https://orcid.org/0000-0001-7420-8697" target="_blank" rel="noopener" title="ORCID">Ángel Gálvez-Merchán</a></li>
-            <li><a href="https://orcid.org/0000-0002-9164-6231" target="_blank" rel="noopener" title="ORCID">Lior Pachter</a></li>
-          </ul>
-        </section>
-      </section>
-
-      <section>
-        <h2>BibTeX</h2>
-        
-        <section class="bibtex-entry">
-          <h3>bioRxiv</h3>
-          <div class="bibtex-box">
-            <button
-              class="copy-bibtex-button"
-              type="button"
-              aria-label="Copy BibTeX for bioRxiv"
-            >
-              Copy BibTeX
-            </button>
-            <pre><code>@article{Booeshaghi_2022,
-  TITLE     = {Normalization for sampled count data},
-  URL       = {http://dx.doi.org/10.1101/2022.05.06.490859},
-  DOI       = {10.1101/2022.05.06.490859},
-  PUBLISHER = {openRxiv},
-  AUTHOR    = {Booeshaghi, A. Sina and Hallgrímsdóttir, Ingileif B. and Gálvez-Merchán, Ángel and Pachter, Lior},
-  YEAR      = {2022}
-}</code></pre>
+      <section class="relationship-inspector" aria-label="Indexed relations" data-work-relations>
+        <section class="relationship-list-panel" aria-label="Relations">
+          <div class="study-section-heading">
+            <h2>Relations</h2>
           </div>
+          <div
+            class="relation-tabs"
+            role="tablist"
+            aria-label="Relation types"
+            data-relation-tabs
+          ></div>
+          <div class="reason-list" data-relation-list></div>
         </section>
-      </section>
 
-      <section>
-        <h2>Citing Works</h2>
-        <p class="citation-source-note">
-          62 citing works found in citation data generated 2026-07-06. Citation relationships are sourced from OpenAlex, Semantic Scholar, Google Scholar.
-        </p>
-        <table class="citation-table">
-          <thead>
-            <tr>
-              <th>Title</th>
-              <th>Year</th>
-              <th>Summary</th>
-            </tr>
-          </thead>
-          <tbody>
-            
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.64898/2026.06.01.729215" target="_blank" rel="noopener">Cell-specific regulatory circuits connect genetic variation to disease susceptibility</a></td>
-              <td class="citation-year"><time datetime="2026">2026</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.64898/2026.01.20.700519" target="_blank" rel="noopener">Federated single-cell QTL meta-analysis reveals novel disease mechanisms</a></td>
-              <td class="citation-year"><time datetime="2026">2026</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://search.proquest.com/openview/e037d73b36dfe9efdc749a5b2ce18864/1?pq-origsite=gscholar&amp;cbl=18750&amp;diss=y" target="_blank" rel="noopener">From Subjective to Principled Single-Cell Data Analysis: Evaluating Annotation Behavior, Optimizing Integration, and Benchmarking Visualization Pipelines</a></td>
-              <td class="citation-year"><time datetime="2026">2026</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1016/j.crmeth.2026.101415" target="_blank" rel="noopener">High-quality acinar cell isolation enables single-cell analysis of healthy and injured pancreas</a></td>
-              <td class="citation-year"><time datetime="2026">2026</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.64898/2026.05.01.716870" target="_blank" rel="noopener">Tissue-adapted NK cells shape pathogenic cDC1 niches in early arthritis</a></td>
-              <td class="citation-year"><time datetime="2026">2026</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.48550/arxiv.2510.00392" target="_blank" rel="noopener">A Deep Learning Pipeline for Epilepsy Genomic Analysis Using GPT-2 XL and NVIDIA H100</a></td>
-              <td class="citation-year"><time datetime="2025">2025</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include applied, approaches, capture, conventional, counts, dimensionality, directly, latent.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1186/s13059-025-03887-x" target="_blank" rel="noopener">A systematic evaluation of highly variable gene selection methods for single-cell RNA-sequencing</a></td>
-              <td class="citation-year"><time datetime="2025">2025</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include developers, evaluating, future, methods, selecting, studies.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.5220/0013318700003911" target="_blank" rel="noopener">Assessing the Influence of scRNA-Seq Data Normalization on Dimensionality Reduction Outcomes</a></td>
-              <td class="citation-year"><time datetime="2025">2025</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include another, booeshaghi, common, effective, lause, logarithmic, normalization, processing.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1038/s41556-025-01619-8" target="_blank" rel="noopener">Biases in machine-learning models of human single-cell data</a></td>
-              <td class="citation-year"><time datetime="2025">2025</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include however, limitations, methods, pointed, recently, scholars.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/2025.09.06.674678" target="_blank" rel="noopener">Disease-associated variants are enriched for altering cell-type-specific gene co-expression relationships</a></td>
-              <td class="citation-year"><time datetime="2025">2025</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/2025.11.26.689911" target="_blank" rel="noopener">High cell-type specificity of eQTLs revealed by single-nucleus analyses of brain and blood</a></td>
-              <td class="citation-year"><time datetime="2025">2025</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://docserv.uni-duesseldorf.de/servlets/DerivateServlet/Derivate-74616" target="_blank" rel="noopener">Linker histone variant H1-0 dysregulation in ETV6:: RUNX1+ preleukemia and B cell acute lymphoblastic leukemia</a></td>
-              <td class="citation-year"><time datetime="2025">2025</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1038/s41467-025-65712-0" target="_blank" rel="noopener">Multimodal single cell analyses reveal gene networks of planarian stem cell differentiation</a></td>
-              <td class="citation-year"><time datetime="2025">2025</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1016/j.jcmgh.2025.101717" target="_blank" rel="noopener">Novel Acinar Metaplastic States Uncovered in Exocrine Pancreas Disease</a></td>
-              <td class="citation-year"><time datetime="2025">2025</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/2025.05.11.653354" target="_blank" rel="noopener">Pseudoassembly of k-mers</a></td>
-              <td class="citation-year"><time datetime="2025">2025</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1038/s41592-025-02700-8" target="_blank" rel="noopener">Single-cell ultra-high-throughput multiplexed chromatin and RNA profiling reveals gene regulatory dynamics</a></td>
-              <td class="citation-year"><time datetime="2025">2025</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include depth, fitting, proportional, another, experiment, expression, followed, logarithmic.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/2024.03.23.586412" target="_blank" rel="noopener">A human commons cell atlas reveals cell type specificity for OAS1 isoforms</a></td>
-              <td class="citation-year"><time datetime="2024">2024</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/2024.08.25.608519" target="_blank" rel="noopener">A systematic evaluation of highly variable gene selection methods for single-cell RNA-sequencing</a></td>
-              <td class="citation-year"><time datetime="2024">2024</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.3389/fbinf.2024.1417428" target="_blank" rel="noopener">A systematic overview of single-cell transcriptomics databases, their use cases, and limitations</a></td>
-              <td class="citation-year"><time datetime="2024">2024</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include analysis, booeshaghi, normalization, technical, affect, aspects, assumptions, biological.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://www.semanticscholar.org/paper/d7f8f5b984f070b6f0dd9d448c503392d603fa35" target="_blank" rel="noopener">A Systematic Overview of Single-Cell Transcriptomics Databases, their Use cases, and Limitations</a></td>
-              <td class="citation-year"><time datetime="2024">2024</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include analysis, normalization, affect, analyses, annotation, aspects, assumptions, benchmarking.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/2024.03.23.586413" target="_blank" rel="noopener">Algorithms for a Commons Cell Atlas</a></td>
-              <td class="citation-year"><time datetime="2024">2024</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1002/cpz1.963" target="_blank" rel="noopener">Analytical Workflows for Single‐Cell Multiomic Data Using the BD Rhapsody Platform</a></td>
-              <td class="citation-year"><time datetime="2024">2024</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://scholar.google.com/scholar?q=BacSC%3A%20A%20general%20workflow%20for%20bacterial%20single-cell%20RNA%20sequencing%20data%20analysis" target="_blank" rel="noopener">BacSC: A general workflow for bacterial single-cell RNA sequencing data analysis</a></td>
-              <td class="citation-year"><time datetime="2024">2024</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1016/j.xgen.2024.100701" target="_blank" rel="noopener">Cell type and dynamic state govern genetic regulation of gene expression in heterogeneous differentiating cultures</a></td>
-              <td class="citation-year"><time datetime="2024">2024</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/2024.05.02.592174" target="_blank" rel="noopener">Cell-type and dynamic state govern genetic regulation of gene expression in heterogeneous differentiating cultures</a></td>
-              <td class="citation-year"><time datetime="2024">2024</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include genes, highly, variable, default, embedding, extracting, fitting, generate.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1145/3641284" target="_blank" rel="noopener">Deep Learning in Single-cell Analysis</a></td>
-              <td class="citation-year"><time datetime="2024">2024</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://www.repository.cam.ac.uk/items/f6cbb732-6657-451c-9587-a6e25e1247a1" target="_blank" rel="noopener">Experimental Design of Single Cell Sequencing Experiments</a></td>
-              <td class="citation-year"><time datetime="2024">2024</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/2024.02.26.582178" target="_blank" rel="noopener">Identification of robust cellular programs using reproducible LDA that impact sex-specific disease progression in different genotypes of a mouse model of AD</a></td>
-              <td class="citation-year"><time datetime="2024">2024</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/2024.06.28.601221" target="_blank" rel="noopener">Linker histone H1-0 is a specific mediator of the repressive ETV6::RUNX1 transcriptional landscape</a></td>
-              <td class="citation-year"><time datetime="2024">2024</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1038/s41467-024-47884-3" target="_blank" rel="noopener">scLENS: data-driven signal detection for unbiased scRNA-seq data analysis</a></td>
-              <td class="citation-year"><time datetime="2024">2024</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include although, booeshaghi, compounding, counteract, depth, effect, ineffective, inmitigating.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/2024.06.12.598567" target="_blank" rel="noopener">The ENCODE mouse postnatal developmental time course identifies regulatory programs of cell types and cell states</a></td>
-              <td class="citation-year"><time datetime="2024">2024</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/2024.04.04.588111" target="_blank" rel="noopener">The impact of package selection and versioning on single-cell RNA-seq analysis</a></td>
-              <td class="citation-year"><time datetime="2024">2024</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/2024.08.23.608747" target="_blank" rel="noopener">The Regulatory Logic of Planarian Stem Cell Differentiation</a></td>
-              <td class="citation-year"><time datetime="2024">2024</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1214/22-sts880" target="_blank" rel="noopener">Aitchison’s Compositional Data Analysis 40 Years on: A Reappraisal</a></td>
-              <td class="citation-year"><time datetime="2023">2023</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1038/s41576-023-00586-w" target="_blank" rel="noopener">Best practices for single-cell analysis across modalities</a></td>
-              <td class="citation-year"><time datetime="2023">2023</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.21203/rs.3.rs-3211191/v1" target="_blank" rel="noopener">ClusterDE: a post-clustering differential expression (DE) method robust to false-positive inflation caused by double dipping</a></td>
-              <td class="citation-year"><time datetime="2023">2023</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1038/s41592-023-01814-1" target="_blank" rel="noopener">Comparison of transformations for single-cell RNA-seq data</a></td>
-              <td class="citation-year"><time datetime="2023">2023</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://scholar.google.com/scholar?q=Distinguishing%20biophysical%20stochasticity%20from%20technical%20noise%20in%20single-cell%20RNA%20sequencing%20using%20Monod" target="_blank" rel="noopener">Distinguishing biophysical stochasticity from technical noise in single-cell RNA sequencing using Monod</a></td>
-              <td class="citation-year"><time datetime="2023">2023</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://theses.hal.science/tel-04234539/" target="_blank" rel="noopener">Le séquençage de transcrits sur cellule unique appliqué à l&#39;étude des mécanismes de formation et de résolution de la fibrose pulmonaire</a></td>
-              <td class="citation-year"><time datetime="2023">2023</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://www.diva-portal.org/smash/record.jsf?pid=diva2:1752949" target="_blank" rel="noopener">Mapping Transcriptomes in Tissues</a></td>
-              <td class="citation-year"><time datetime="2023">2023</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.48550/arxiv.2310.02275" target="_blank" rel="noopener">MuSe-GNN: Learning Unified Gene Representation From Multimodal Biological Graph Data</a></td>
-              <td class="citation-year"><time datetime="2023">2023</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include co-expression, confounding, counts, creating, cs-core, depth, employ, expression.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/2023.12.21.572783" target="_blank" rel="noopener">Normalization and gene selection for single-cell RNA-seq UMI data using sampling-adjusted sums of squares of Pearson residuals with a Poisson model</a></td>
-              <td class="citation-year"><time datetime="2023">2023</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include transformations, ahlmann-eltze, alternative, booeshaghi, combining, consider, downstream, emphasize.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1007/s12064-023-00408-x" target="_blank" rel="noopener">Normalizing need not be the norm: count-based math for analyzing single-cell data</a></td>
-              <td class="citation-year"><time datetime="2023">2023</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include cells, cluster, physical, alternative, approach, booeshaghi, central, correspond.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1007/s41884-023-00104-1" target="_blank" rel="noopener">Power transformations of relative count data as a shrinkage problem</a></td>
-              <td class="citation-year"><time datetime="2023">2023</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/2023.12.26.573253" target="_blank" rel="noopener">Scalable ultra-high-throughput single-cell chromatin and RNA sequencing reveals gene regulatory dynamics linking macrophage polarization to autoimmune disease</a></td>
-              <td class="citation-year"><time datetime="2023">2023</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include depth, fitting, proportional, another, expression, followed, logarithmic, matrix.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/2023.03.28.534443" target="_blank" rel="noopener">Single-cell RNA-seq differential expression tests within a sample should use pseudo-bulk data of pseudo-replicates</a></td>
-              <td class="citation-year"><time datetime="2023">2023</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://search.proquest.com/openview/9b01393b59220a61ee018759229543ba/1?pq-origsite=gscholar&amp;cbl=18750&amp;diss=y" target="_blank" rel="noopener">Stochastic foundations for single-cell RNA sequencing</a></td>
-              <td class="citation-year"><time datetime="2023">2023</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1016/j.cels.2023.08.004" target="_blank" rel="noopener">Studying stochastic systems biology of the cell with single-cell genomics data</a></td>
-              <td class="citation-year"><time datetime="2023">2023</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include assumptions, attempt, biases, considerable, correlations, counts, datasets, depth.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/2023.05.17.541250" target="_blank" rel="noopener">Studying stochastic systems biology of the cell with single-cell genomics data</a></td>
-              <td class="citation-year"><time datetime="2023">2023</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include assumptions, attempt, biases, considerable, correlations, counts, datasets, depth.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/2023.07.21.550107" target="_blank" rel="noopener">Synthetic control removes spurious discoveries from double dipping in single-cell and spatial transcriptomics data analyses</a></td>
-              <td class="citation-year"><time datetime="2023">2023</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1093/bioinformatics/btad295" target="_blank" rel="noopener">BUSZ: compressed BUS files</a></td>
-              <td class="citation-year"><time datetime="2022">2022</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include algorithm, booeshaghi, collected, compress, compression, decompress, evaluate, files.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/2022.12.19.521034" target="_blank" rel="noopener">BUSZ: Compressed BUS files</a></td>
-              <td class="citation-year"><time datetime="2022">2022</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/2022.05.18.492548" target="_blank" rel="noopener">Metadata retrieval from sequence databases with ffq</a></td>
-              <td class="citation-year"><time datetime="2022">2022</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1093/bioinformatics/btac667" target="_blank" rel="noopener">Metadata retrieval from sequence databases with ffq</a></td>
-              <td class="citation-year"><time datetime="2022">2022</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/2022.06.11.495771" target="_blank" rel="noopener">Monod : model-based discovery and integration through fitting stochastic transcriptional dynamics to single-cell sequencing data</a></td>
-              <td class="citation-year"><time datetime="2022">2022</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/2022.06.01.494334" target="_blank" rel="noopener">Normalizing need not be the norm: count-based math for analyzing single-cell data</a></td>
-              <td class="citation-year"><time datetime="2022">2022</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://search.proquest.com/openview/4e872305538c4b237fc33196b6f7d94b/1?pq-origsite=gscholar&amp;cbl=18750&amp;diss=y" target="_blank" rel="noopener">SIMS: Scalable, Interpretable Machine Learning for Single-Cell Annotation</a></td>
-              <td class="citation-year"><time datetime="2022">2022</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/2021.06.24.449781" target="_blank" rel="noopener">Comparison of Transformations for Single-Cell RNA-Seq Data</a></td>
-              <td class="citation-year"><time datetime="2021">2021</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/2021.11.15.468733" target="_blank" rel="noopener">Erasure of Biologically Meaningful Signal by Unsupervised scRNAseq Batch-correction Methods</a></td>
-              <td class="citation-year"><time datetime="2021">2021</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/2021.05.20.445002" target="_blank" rel="noopener">Systematic, Protein Activity-based Characterization of Single Cell State</a></td>
-              <td class="citation-year"><time datetime="2021">2021</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1214/22-sts879" target="_blank" rel="noopener">The Role of Exchangeability in Causal Inference</a></td>
-              <td class="citation-year"><time datetime="2020">2020</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://www.semanticscholar.org/paper/540ebbec703884433d894a4f3504ba66fb20c8e3" target="_blank" rel="noopener">Monod : mechanistic analysis of single-cell RNA sequencing count data</a></td>
-              <td class="citation-year"></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include described, log1ppf, procedure, section.</td>
-            </tr>
-          </tbody>
-        </table>
+        <aside class="evidence-panel relationship-detail" aria-live="polite">
+          <span class="study-label" data-relation-label>Relation</span>
+          <h2 data-relation-title></h2>
+          <p class="selected-relation-statement" data-relation-statement></p>
+          <section class="version-citation" data-version-citation hidden>
+            <h3>Citation</h3>
+            <div class="bibtex-box">
+              <button class="copy-bibtex-button" type="button" data-copy-bibtex>
+                Copy BibTeX
+              </button>
+              <pre><code data-bibtex-code></code></pre>
+            </div>
+          </section>
+          <details class="relationship-evidence" data-relation-evidence>
+            <summary>
+              <span>Evidence</span>
+              <span class="evidence-summary" data-evidence-summary></span>
+            </summary>
+            <table class="relationship-evidence-table">
+              <thead>
+                <tr>
+                  <th>Span</th>
+                  <th>Source</th>
+                </tr>
+              </thead>
+              <tbody data-evidence-rows></tbody>
+            </table>
+          </details>
+        </aside>
       </section>
+      <script id="workRelationData" type="application/json">{"work":{"id":"work:normalization-for-sampled-count-data","title":"Normalization for sampled count data","description":"Reliable genomics count analysis depends on normalization that preserves biological structure while removing technical effects. Common single-cell workflows still leave residual depth structure, alter within-cell ranks, or impose dense-memory costs. The 2026 v4 formulation defines PFlog as an Anscombe-calibrated shifted centered-log-ratio transform, proves it uniquely satisfies the desired equivariant criteria, and benchmarks it across hundreds of datasets with improved depth, rank, and geometry behavior."},"relationTypes":[{"id":"authors","label":"Authors"},{"id":"claims","label":"Claims"},{"id":"citations","label":"Citations"},{"id":"versions","label":"Versions"},{"id":"software","label":"Software"},{"id":"sources","label":"Sources"}],"connections":[{"id":"connection:version:normalization-for-sampled-count-data--2022-05-06-biorxiv-v1--person:orcid:0000-0002-6442-4502--author-1","type":"authors","title":"A. Sina Booeshaghi","description":"A. Sina Booeshaghi is an author of Depth normalization for single-cell genomics count data.","statement":"A. Sina Booeshaghi is an author of Depth normalization for single-cell genomics count data.","evidence":[]},{"id":"connection:version:normalization-for-sampled-count-data--2022-05-06-biorxiv-v1--person:orcid:0000-0002-4710-0047--author-2","type":"authors","title":"Ingileif B. Hallgrímsdóttir","description":"Ingileif B. Hallgrímsdóttir is an author of Depth normalization for single-cell genomics count data.","statement":"Ingileif B. Hallgrímsdóttir is an author of Depth normalization for single-cell genomics count data.","evidence":[]},{"id":"connection:version:normalization-for-sampled-count-data--2022-05-06-biorxiv-v1--person:orcid:0000-0001-7420-8697--author-3","type":"authors","title":"Ángel Gálvez-Merchán","description":"Ángel Gálvez-Merchán is an author of Depth normalization for single-cell genomics count data.","statement":"Ángel Gálvez-Merchán is an author of Depth normalization for single-cell genomics count data.","evidence":[]},{"id":"connection:version:normalization-for-sampled-count-data--2022-05-06-biorxiv-v1--person:orcid:0000-0002-9164-6231--author-4","type":"authors","title":"Lior Pachter","description":"Lior Pachter is an author of Depth normalization for single-cell genomics count data.","statement":"Lior Pachter is an author of Depth normalization for single-cell genomics count data.","evidence":[]},{"id":"connection:version:normalization-for-sampled-count-data--2022-05-06-biorxiv-v1--claim:version:normalization-for-sampled-count-data--2022-05-06-biorxiv-v1--summary-0","type":"claims","title":"Single-cell RNA-seq normalization is a first step that shapes PCA, clustering, differential expression, and marker visua","description":"Single-cell RNA-seq normalization is a first step that shapes PCA, clustering, differential expression, and marker visualization. The original 2022 preprint identifies a practical tradeoff: popular methods stabilize variance, normalize depth, or preserve monotonicity, but often not all three at once. It benchmarks hundreds of datasets and introduces PFlog1pPF as a sparse, monotonic heuristic that adds a second proportional-fitting step to improve depth normalization while retaining useful variance behavior.","statement":"This publication contains the target grounded summary claim.","evidence":[{"source":"source:text:document:normalization-for-sampled-count-data--2022-05-06-biorxiv-v1","span":"Single-cell genomics analysis requires normalization of feature counts that stabilizes variance while accounting for variable cell sequencing depth.","page":1,"properties":{"document_id":"document:normalization-for-sampled-count-data--2022-05-06-biorxiv-v1","char_start":787,"char_end":935}},{"source":"source:text:document:normalization-for-sampled-count-data--2022-05-06-biorxiv-v1","span":"In recognition of the fact that the patterns we observed in 10xv3_NIH_3T3 were not necessarily representative of other datasets, we analyzed a further 525 datasets of which 437 passed quality control (Supp. Fig. 3.1 - 3.526, Methods).","page":5,"properties":{"document_id":"document:normalization-for-sampled-count-data--2022-05-06-biorxiv-v1","char_start":1542,"char_end":1776}},{"source":"source:text:document:normalization-for-sampled-count-data--2022-05-06-biorxiv-v1","span":"Our analysis of current normalization methods shows that they exhibit a stark tradeoff between variance stabilization and depth normalization.","page":7,"properties":{"document_id":"document:normalization-for-sampled-count-data--2022-05-06-biorxiv-v1","char_start":1082,"char_end":1224}},{"source":"source:text:document:normalization-for-sampled-count-data--2022-05-06-biorxiv-v1","span":"We observed that PFlog1pPF (Supp. Fig. 12) can be seen to only slightly decrease variance stabilization (Fig. 2a) while ensuring depth normalization and monotonicity.","page":11,"properties":{"document_id":"document:normalization-for-sampled-count-data--2022-05-06-biorxiv-v1","char_start":2664,"char_end":2830}},{"source":"source:text:document:normalization-for-sampled-count-data--2022-05-06-biorxiv-v1","span":"The PFlog1PF heuristic we have proposed is a monotonic transform on the raw counts that results in a fully depth normalized matrix and offers variance stability similar to sqrt.","page":12,"properties":{"document_id":"document:normalization-for-sampled-count-data--2022-05-06-biorxiv-v1","char_start":2651,"char_end":2828}}]},{"id":"connection:version:normalization-for-sampled-count-data--2026-06-07-biorxiv-v2--claim:version:normalization-for-sampled-count-data--2026-06-07-biorxiv-v2--summary-0","type":"claims","title":"Single-cell count normalization matters because downstream neighborhood graphs and marker rankings are sensitive to dept","description":"Single-cell count normalization matters because downstream neighborhood graphs and marker rankings are sensitive to depth and feature-panel choices. The June 7 version frames the unresolved gap as jointly achieving variance stabilization, depth normalization, and monotonicity without sacrificing sparse workflows. It proposes PFlog1pPF and shows stronger downsampling robustness, reduced feature-panel dependence, and better overall tradeoffs than common log1pPF and residual-based methods.","statement":"This publication contains the target grounded summary claim.","evidence":[{"source":"source:text:document:normalization-for-sampled-count-data--2026-06-07-biorxiv-v2","span":"Single-cell genomics analysis requires normalization of feature counts that stabilizes variance, accounts for variable cell sequencing depth, and preserves monotonicity of within-cell feature abundances.","page":1,"properties":{"document_id":"document:normalization-for-sampled-count-data--2026-06-07-biorxiv-v2","char_start":825,"char_end":1028}},{"source":"source:text:document:normalization-for-sampled-count-data--2026-06-07-biorxiv-v2","span":"This gap motivates studying a transform that jointly targets variance stabilization, depth normalization, and monotonicity.","page":2,"properties":{"document_id":"document:normalization-for-sampled-count-data--2026-06-07-biorxiv-v2","char_start":2790,"char_end":2913}},{"source":"source:text:document:normalization-for-sampled-count-data--2026-06-07-biorxiv-v2","span":"Depth effects also persisted for methods that nominally correct for depth variability; importantly, the widely used log1pPF transform and some sctransform outputs retained substantial depth correlation in many datasets.","page":2,"properties":{"document_id":"document:normalization-for-sampled-count-data--2026-06-07-biorxiv-v2","char_start":5447,"char_end":5666}},{"source":"source:text:document:normalization-for-sampled-count-data--2026-06-07-biorxiv-v2","span":"The key result is that PFlog1pPF (CLR) is among the strongest methods in consistency, competitive in simulation, and markedly better in the downsampling benchmark.","page":3,"properties":{"document_id":"document:normalization-for-sampled-count-data--2026-06-07-biorxiv-v2","char_start":2958,"char_end":3121}},{"source":"source:text:document:normalization-for-sampled-count-data--2026-06-07-biorxiv-v2","span":"The feature-panel comparison in Fig. 3a– c shows that PFlog1pPF reduces this avoidable dependence relative to log1pPF by removing a cell-wise offset that is a function of the selected genes.","page":5,"properties":{"document_id":"document:normalization-for-sampled-count-data--2026-06-07-biorxiv-v2","char_start":4254,"char_end":4444}}]},{"id":"connection:version:normalization-for-sampled-count-data--2026-06-10-biorxiv-v3--claim:version:normalization-for-sampled-count-data--2026-06-10-biorxiv-v3--summary-0","type":"claims","title":"Single-cell analyses rely on normalization before PCA, clustering, and marker discovery, so normalization errors can pro","description":"Single-cell analyses rely on normalization before PCA, clustering, and marker discovery, so normalization errors can propagate into biological interpretation. The June 10 version argues that widely used log-normalized and residual-based workflows incompletely balance variance stabilization, depth normalization, and monotonicity. It formalizes PFlog1pPF as a shifted centered-log-ratio transform and shows improved benchmark, downsampling, and feature-panel stability across large single-cell datasets.","statement":"This publication contains the target grounded summary claim.","evidence":[{"source":"source:text:document:normalization-for-sampled-count-data--2026-06-10-biorxiv-v3","span":"Single-cell genomics analysis requires normalization of feature counts that stabilizes variance, accounts for variable cell sequencing depth, and preserves monotonicity of within-cell feature abundances.","page":1,"properties":{"document_id":"document:normalization-for-sampled-count-data--2026-06-10-biorxiv-v3","char_start":826,"char_end":1029}},{"source":"source:text:document:normalization-for-sampled-count-data--2026-06-10-biorxiv-v3","span":"We show that normalization via an (additive in the raw counts) proportional fitting step followed by the logarithm and then another (multiplicative in the raw counts) proportional fitting step (PFlogPF) is the only feature-relabeling-equivariant method satisfying the three desiderata.","page":1,"properties":{"document_id":"document:normalization-for-sampled-count-data--2026-06-10-biorxiv-v3","char_start":1030,"char_end":1315}},{"source":"source:text:document:normalization-for-sampled-count-data--2026-06-10-biorxiv-v3","span":"Depth effects also persisted for methods that nominally correct for depth variability; importantly, the widely used log1pPF transform and some sctransform outputs retained substantial depth correlation in many datasets.","page":2,"properties":{"document_id":"document:normalization-for-sampled-count-data--2026-06-10-biorxiv-v3","char_start":5448,"char_end":5667}},{"source":"source:text:document:normalization-for-sampled-count-data--2026-06-10-biorxiv-v3","span":"Most importantly, PFlog1pPF provided the best overall performance across criteria in this large benchmark.","page":2,"properties":{"document_id":"document:normalization-for-sampled-count-data--2026-06-10-biorxiv-v3","char_start":6172,"char_end":6278}},{"source":"source:text:document:normalization-for-sampled-count-data--2026-06-10-biorxiv-v3","span":"It recovers, on average, 36.8 neighbors out of 50 in the 𝑘-NN graph, in comparison to 5.8 for the other displayed methods, providing substantially better preservation of local neighborhoods after downsampling.","page":3,"properties":{"document_id":"document:normalization-for-sampled-count-data--2026-06-10-biorxiv-v3","char_start":3100,"char_end":3310}}]},{"id":"connection:version:normalization-for-sampled-count-data--2026-06-22-biorxiv-v4--claim:version:normalization-for-sampled-count-data--2026-06-22-biorxiv-v4--summary-0","type":"claims","title":"Reliable genomics count analysis depends on normalization that preserves biological structure while removing technical e","description":"Reliable genomics count analysis depends on normalization that preserves biological structure while removing technical effects. Common single-cell workflows still leave residual depth structure, alter within-cell ranks, or impose dense-memory costs. The 2026 v4 formulation defines PFlog as an Anscombe-calibrated shifted centered-log-ratio transform, proves it uniquely satisfies the desired equivariant criteria, and benchmarks it across hundreds of datasets with improved depth, rank, and geometry behavior.","statement":"This publication contains the target grounded summary claim.","evidence":[{"source":"source:text:document:normalization-for-sampled-count-data--2026-06-22-biorxiv-v4","span":"Genomics data analysis requires normalization of feature counts that stabilizes technical variance, accounts for variable cell sequencing depth, and preserves monotonicity of within-cell feature abundances.","page":1,"properties":{"document_id":"document:normalization-for-sampled-count-data--2026-06-22-biorxiv-v4","char_start":807,"char_end":1013}},{"source":"source:text:document:normalization-for-sampled-count-data--2026-06-22-biorxiv-v4","span":"We show that normalization via an optimal variance stabilizing transform for negative binomial count data followed by a proportional fitting step (PFlog) is the only feature-relabeling-equivariant method satisfying the three desiderata.","page":1,"properties":{"document_id":"document:normalization-for-sampled-count-data--2026-06-22-biorxiv-v4","char_start":1014,"char_end":1250}},{"source":"source:text:document:normalization-for-sampled-count-data--2026-06-22-biorxiv-v4","span":"Depth effects also persisted for methods that nominally correct for depth variability; importantly, the log1pPF transform and some sctransform outputs retained substantial depth correlation in many datasets.","page":3,"properties":{"document_id":"document:normalization-for-sampled-count-data--2026-06-22-biorxiv-v4","char_start":2345,"char_end":2552}},{"source":"source:text:document:normalization-for-sampled-count-data--2026-06-22-biorxiv-v4","span":"Most importantly, PFlog provided the best overall performance across criteria in this large benchmark.","page":3,"properties":{"document_id":"document:normalization-for-sampled-count-data--2026-06-22-biorxiv-v4","char_start":3007,"char_end":3109}},{"source":"source:text:document:normalization-for-sampled-count-data--2026-06-22-biorxiv-v4","span":"We provide efficient implementations for PFlog via scclr (Python) and scclrR (R), making the normalization practical for large single-cell matrices without requiring dense storage.","page":7,"properties":{"document_id":"document:normalization-for-sampled-count-data--2026-06-22-biorxiv-v4","char_start":378,"char_end":558}}]},{"id":"connection:claim:citation:version-citing-2024-a-human-commons-cell-atlas-reveals-cell-type-specificity-for-oas1-isoforms-cites-version-normalization-for-sampled-count-data-2022-05-06-biorxiv-v1-s-ed1000618a--version:normalization-for-sampled-count-data--2022-05-06-biorxiv-v1","type":"citations","title":"A human commons cell atlas reveals cell type specificity for OAS1 isoforms","description":"The paper presents an open-source Human Commons Cell Atlas of 2.9 million cells across 27 tissues and uses it to analyze OAS1 isoform cell-type specificity, finding OAS1 p44b specificity in round and elongating spermatids.","statement":"Cited for the log1pPF method used by mx norm to normalize gene count matrices.","evidence":[{"source":"source:pdf:document:cited-by--2024-a-human-commons-cell-atlas-reveals-cell-type-specificity-for-oas1-isoforms","span":"Gene count matrices were normalized using 'mx norm', which uses the log1pPF method (Sina Booeshaghi et al. 2022).","page":9,"properties":{"document_id":"document:cited-by--2024-a-human-commons-cell-atlas-reveals-cell-type-specificity-for-oas1-isoforms","char_start":null,"char_end":null}}]},{"id":"connection:claim:citation:version-citing-2024-algorithms-for-a-commons-cell-atlas-04a893eb73-cites-version-normalization-for-sampled-count-data-2022-05-06-biorxiv-v1-sina-booeshaghi-et-al-2022-0--version:normalization-for-sampled-count-data--2022-05-06-biorxiv-v1","type":"citations","title":"Algorithms for a Commons Cell Atlas","description":"The paper presents data, algorithms, and tools for automating cataloging and analysis of cell types across tissues, demonstrated in a human atlas.","statement":"The paper cites PFlog1pPF normalization as removing the mean-variance relationship while preserving depth normalization.","evidence":[{"source":"source:pdf:document:cited-by--2024-algorithms-for-a-commons-cell-atlas-04a893eb73","span":"We chose the PFlog1pPF normalization (Sina Booeshaghi et al. 2022) as it effectively removes the mean-variance relationship while preserving depth normalization (Figure 1d,e,f).","page":4,"properties":{"document_id":"document:cited-by--2024-algorithms-for-a-commons-cell-atlas-04a893eb73","char_start":null,"char_end":null}}]},{"id":"connection:version:normalization-for-sampled-count-data--2026-06-22-biorxiv-v4--work:normalization-for-sampled-count-data","type":"versions","title":"Normalization for sampled count data","description":"2026-06-22 · bioRxiv v4","statement":"2026-06-22 is a version of Normalization for sampled count data.","evidence":[],"citation":{"doi":"10.1101/2022.05.06.490859","url":"https://www.biorxiv.org/content/10.1101/2022.05.06.490859v4","date":"2026-06-22","venue":"bioRxiv v4","authors":[{"name":"A. Sina Booeshaghi","orcid":"https://orcid.org/0000-0002-6442-4502"},{"name":"Ingileif B. Hallgrímsdóttir","orcid":"https://orcid.org/0000-0002-4710-0047"},{"name":"Ángel Gálvez-Merchán","orcid":"https://orcid.org/0000-0001-7420-8697"},{"name":"Lior Pachter","orcid":"https://orcid.org/0000-0002-9164-6231"}]},"bibtex":"@misc{normalization_for_sampled_count_data_2026_06_22,\n  title = {Normalization for sampled count data},\n  author = {A. Sina Booeshaghi and Ingileif B. Hallgrímsdóttir and Ángel Gálvez-Merchán and Lior Pachter},\n  year = {2026},\n  doi = {10.1101/2022.05.06.490859},\n  url = {https://www.biorxiv.org/content/10.1101/2022.05.06.490859v4},\n  note = {bioRxiv v4, 2026-06-22}\n}"},{"id":"connection:version:normalization-for-sampled-count-data--2026-06-10-biorxiv-v3--work:normalization-for-sampled-count-data","type":"versions","title":"Depth normalization for single-cell genomics count data","description":"2026-06-10 · bioRxiv v3","statement":"2026-06-10 is a version of Depth normalization for single-cell genomics count data.","evidence":[],"citation":{"doi":"10.1101/2022.05.06.490859","url":"https://www.biorxiv.org/content/10.1101/2022.05.06.490859v3?versioned=true","date":"2026-06-10","venue":"bioRxiv v3","authors":[{"name":"A. Sina Booeshaghi","orcid":"https://orcid.org/0000-0002-6442-4502"},{"name":"Ingileif B. Hallgrímsdóttir","orcid":"https://orcid.org/0000-0002-4710-0047"},{"name":"Ángel Gálvez-Merchán","orcid":"https://orcid.org/0000-0001-7420-8697"},{"name":"Lior Pachter","orcid":"https://orcid.org/0000-0002-9164-6231"}]},"bibtex":"@misc{depth_normalization_for_single_cell_genomics_count_data_2026_06_10,\n  title = {Depth normalization for single-cell genomics count data},\n  author = {A. Sina Booeshaghi and Ingileif B. Hallgrímsdóttir and Ángel Gálvez-Merchán and Lior Pachter},\n  year = {2026},\n  doi = {10.1101/2022.05.06.490859},\n  url = {https://www.biorxiv.org/content/10.1101/2022.05.06.490859v3?versioned=true},\n  note = {bioRxiv v3, 2026-06-10}\n}"},{"id":"connection:version:normalization-for-sampled-count-data--2026-06-07-biorxiv-v2--work:normalization-for-sampled-count-data","type":"versions","title":"Depth normalization for single-cell genomics count data","description":"2026-06-07 · bioRxiv v2","statement":"2026-06-07 is a version of Depth normalization for single-cell genomics count data.","evidence":[],"citation":{"doi":"10.1101/2022.05.06.490859","url":"https://www.biorxiv.org/content/10.1101/2022.05.06.490859v2?versioned=true","date":"2026-06-07","venue":"bioRxiv v2","authors":[{"name":"A. Sina Booeshaghi","orcid":"https://orcid.org/0000-0002-6442-4502"},{"name":"Ingileif B. Hallgrímsdóttir","orcid":"https://orcid.org/0000-0002-4710-0047"},{"name":"Ángel Gálvez-Merchán","orcid":"https://orcid.org/0000-0001-7420-8697"},{"name":"Lior Pachter","orcid":"https://orcid.org/0000-0002-9164-6231"}]},"bibtex":"@misc{depth_normalization_for_single_cell_genomics_count_data_2026_06_07,\n  title = {Depth normalization for single-cell genomics count data},\n  author = {A. Sina Booeshaghi and Ingileif B. Hallgrímsdóttir and Ángel Gálvez-Merchán and Lior Pachter},\n  year = {2026},\n  doi = {10.1101/2022.05.06.490859},\n  url = {https://www.biorxiv.org/content/10.1101/2022.05.06.490859v2?versioned=true},\n  note = {bioRxiv v2, 2026-06-07}\n}"},{"id":"connection:version:normalization-for-sampled-count-data--2022-05-06-biorxiv-v1--work:normalization-for-sampled-count-data","type":"versions","title":"Depth normalization for single-cell genomics count data","description":"2022-05-06 · bioRxiv v1","statement":"2022-05-06 is a version of Depth normalization for single-cell genomics count data.","evidence":[],"citation":{"doi":"10.1101/2022.05.06.490859","url":"https://www.biorxiv.org/content/10.1101/2022.05.06.490859v1?versioned=true","date":"2022-05-06","venue":"bioRxiv v1","authors":[{"name":"A. Sina Booeshaghi","orcid":"https://orcid.org/0000-0002-6442-4502"},{"name":"Ingileif B. Hallgrímsdóttir","orcid":"https://orcid.org/0000-0002-4710-0047"},{"name":"Ángel Gálvez-Merchán","orcid":"https://orcid.org/0000-0001-7420-8697"},{"name":"Lior Pachter","orcid":"https://orcid.org/0000-0002-9164-6231"}]},"bibtex":"@misc{depth_normalization_for_single_cell_genomics_count_data_2022_05_06,\n  title = {Depth normalization for single-cell genomics count data},\n  author = {A. Sina Booeshaghi and Ingileif B. Hallgrímsdóttir and Ángel Gálvez-Merchán and Lior Pachter},\n  year = {2022},\n  doi = {10.1101/2022.05.06.490859},\n  url = {https://www.biorxiv.org/content/10.1101/2022.05.06.490859v1?versioned=true},\n  note = {bioRxiv v1, 2022-05-06}\n}"},{"id":"connection:document:normalization-for-sampled-count-data--2022-05-06-biorxiv-v1--version:normalization-for-sampled-count-data--2022-05-06-biorxiv-v1","type":"sources","title":"2022-05-06-biorxiv-v1.pdf","description":"This source document provides local provenance for the target publication.","statement":"This source document provides local provenance for the target publication.","evidence":[]},{"id":"connection:document:normalization-for-sampled-count-data--2026-06-07-biorxiv-v2--version:normalization-for-sampled-count-data--2026-06-07-biorxiv-v2","type":"sources","title":"2026-06-07-biorxiv-v2.pdf","description":"This source document provides local provenance for the target publication.","statement":"This source document provides local provenance for the target publication.","evidence":[]},{"id":"connection:document:normalization-for-sampled-count-data--2026-06-10-biorxiv-v3--version:normalization-for-sampled-count-data--2026-06-10-biorxiv-v3","type":"sources","title":"2026-06-10-biorxiv-v3.pdf","description":"This source document provides local provenance for the target publication.","statement":"This source document provides local provenance for the target publication.","evidence":[]},{"id":"connection:document:normalization-for-sampled-count-data--2026-06-22-biorxiv-v4--version:normalization-for-sampled-count-data--2026-06-22-biorxiv-v4","type":"sources","title":"2026-06-22-biorxiv-v4.pdf","description":"This source document provides local provenance for the target publication.","statement":"This source document provides local provenance for the target publication.","evidence":[]}]}</script>
+      <script src="../work-relations.js"></script>
     </article>
   </body>
 </html>

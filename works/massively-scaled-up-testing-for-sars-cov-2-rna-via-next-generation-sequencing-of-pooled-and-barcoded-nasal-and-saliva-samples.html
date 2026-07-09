@@ -17,77 +17,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Supply chain limitations during the COVID-19 pandemic have driven up the cost of COVID-19 diagnostics. This places a priority on high throughput approaches for diagnostics. We produced a COVID-19 diagnostic assay using next-generation sequencing of pooled samples. This assay, called SwabSeq, enables the testing of thousands of nasal or saliva samples for SARS-CoV-2 RNA in a single run without the need for RNA extraction. SwabSeq has an analytical sensitivity and specificity comparable to or better than traditional qPCR tests, and can be rapidly adapted for the detection of other pathogens. SwabSeq is currently deployed at UCLA and Caltech for their COVID-19 surveillance testing program." />
+    <meta name="description" content="Frequent asymptomatic testing can suppress viral transmission, but RT-qPCR capacity, extraction workflows, and cost limited population-scale SARS-CoV-2 screening. SwabSeq addresses that bottleneck by combining sample barcodes, end-point RT-PCR, and synthetic RNA standards so pooled sequencing can call thousands of nasal or saliva specimens without RNA extraction. Clinical validation and deployment showed qPCR-comparable performance, extraction-free workflows, and more than 80,000 returned tests with sub-24-hour turnaround." />
     <link rel="stylesheet" href="../styles.css" />
-    
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        document.querySelectorAll(".copy-bibtex-button").forEach((button) => {
-          button.addEventListener("click", async () => {
-            const box = button.closest(".bibtex-box");
-            const code = box ? box.querySelector("code") : null;
-            const bibtex = code ? code.textContent : "";
-            const previousText = button.textContent;
-            const markStatus = (text) => {
-              button.textContent = text;
-              window.setTimeout(() => {
-                button.textContent = previousText;
-              }, 1200);
-            };
-            const copyWithSelection = () => {
-              const textarea = document.createElement("textarea");
-              textarea.value = bibtex;
-              textarea.setAttribute("readonly", "");
-              textarea.style.position = "fixed";
-              textarea.style.left = "0";
-              textarea.style.top = "0";
-              textarea.style.width = "1px";
-              textarea.style.height = "1px";
-              textarea.style.opacity = "0";
-              textarea.style.pointerEvents = "none";
-              document.body.appendChild(textarea);
-              textarea.focus({ preventScroll: true });
-              textarea.select();
-              textarea.setSelectionRange(0, textarea.value.length);
-              const copied = document.execCommand("copy");
-              textarea.remove();
-              return copied;
-            };
-
-            try {
-              if (navigator.clipboard && navigator.clipboard.writeText) {
-                await navigator.clipboard.writeText(bibtex);
-                markStatus("Copied");
-                return;
-              }
-
-              if (copyWithSelection()) {
-                markStatus("Copied");
-                return;
-              }
-            } catch {
-              let copied = false;
-
-              try {
-                copied = copyWithSelection();
-              } catch {
-                copied = false;
-              }
-
-              if (copied) {
-                markStatus("Copied");
-                return;
-              }
-            }
-
-            markStatus("Copy failed");
-          });
-        });
-      });
-    </script>
     <title>Massively scaled-up testing for SARS-CoV-2 RNA via next-generation sequencing of pooled and barcoded nasal and saliva samples | Works | Sina Booeshaghi</title>
   </head>
-  <body>
+  <body class="work-detail-page">
     <nav class="breadcrumb" aria-label="Breadcrumb">
       <a href="../index.html">Home</a>
       <span aria-hidden="true">/</span>
@@ -95,524 +29,71 @@
       <span aria-hidden="true">/</span>
       <span class="breadcrumb-current" title="Massively scaled-up testing for SARS-CoV-2 RNA via next-generation sequencing of pooled and barcoded nasal and saliva samples">Massively scaled-up testing for SARS-CoV-2 RNA via next-generati...</span>
     </nav>
-    <article class="work-page">
-      <h1>Massively scaled-up testing for SARS-CoV-2 RNA via next-generation sequencing of pooled and barcoded nasal and saliva samples</h1>
-      <div class="publication-versions work-versions" aria-label="Work versions">
-        <span class="publication-versions-label">Versions</span>
-        <div class="publication-version-cards">
-          
-        <a
-          class="publication-version-link is-current"
-          href="https://doi.org/10.1038/s41551-021-00754-5"
-          target="_blank"
-          rel="noopener"
-        >
-          <span class="publication-version-title">Massively scaled-up testing for SARS-CoV-2 RNA via next-generation sequencing of pooled and barcoded nasal and saliva samples</span>
-          <span class="publication-version-detail">Nature Biomedical Engineering · 2021-07-01</span>
-        </a>
+    <article class="work-page study-graph-page">
+      <section class="study-focus" aria-label="Selected work">
+        <div>
+          <h1>Massively scaled-up testing for SARS-CoV-2 RNA via next-generation sequencing of pooled and barcoded nasal and saliva samples</h1>
+          <p>Frequent asymptomatic testing can suppress viral transmission, but RT-qPCR capacity, extraction workflows, and cost limited population-scale SARS-CoV-2 screening. SwabSeq addresses that bottleneck by combining sample barcodes, end-point RT-PCR, and synthetic RNA standards so pooled sequencing can call thousands of nasal or saliva specimens without RNA extraction. Clinical validation and deployment showed qPCR-comparable performance, extraction-free workflows, and more than 80,000 returned tests with sub-24-hour turnaround.</p>
         </div>
-      </div>
-
-      <section>
-        <h2>Summary</h2>
-        <p>Supply chain limitations during the COVID-19 pandemic have driven up the cost of COVID-19 diagnostics. This places a priority on high throughput approaches for diagnostics. We produced a COVID-19 diagnostic assay using next-generation sequencing of pooled samples. This assay, called SwabSeq, enables the testing of thousands of nasal or saliva samples for SARS-CoV-2 RNA in a single run without the need for RNA extraction. SwabSeq has an analytical sensitivity and specificity comparable to or better than traditional qPCR tests, and can be rapidly adapted for the detection of other pathogens. SwabSeq is currently deployed at UCLA and Caltech for their COVID-19 surveillance testing program.</p>
+        <dl class="study-stats">
+          <div>
+            <dt>Citations</dt>
+            <dd>77</dd>
+          </div>
+          <div>
+            <dt>Relations</dt>
+            <dd>44</dd>
+          </div>
+        </dl>
       </section>
 
       
-      <section
-        class="authors-section"
-        data-author-version-count="1"
-      >
-        <h2>Authors</h2>
-        
-        <section
-          class="author-version"
-          data-author-count="41"
-        >
-          <h3>
-            <a href="https://doi.org/10.1038/s41551-021-00754-5" target="_blank" rel="noopener">Nature Biomedical Engineering</a>
-            <time datetime="2021-07-01">2021-07-01</time>
-          </h3>
-          <ul class="author-list">
-            
-            <li><a href="https://orcid.org/0000-0002-7241-1648" target="_blank" rel="noopener" title="ORCID">Joshua S. Bloom</a></li>
-            <li><a href="https://orcid.org/0000-0003-1016-3295" target="_blank" rel="noopener" title="ORCID">Laila Sathe</a></li>
-            <li>Chetan Munugala</li>
-            <li>Eric M. Jones</li>
-            <li>Molly Gasperini</li>
-            <li>Nathan B. Lubock</li>
-            <li><a href="https://orcid.org/0000-0002-2512-6182" target="_blank" rel="noopener" title="ORCID">Fauna Yarza</a></li>
-            <li>Erin M. Thompson</li>
-            <li>Kyle M. Kovary</li>
-            <li>Jimin Park</li>
-            <li><a href="https://orcid.org/0000-0002-3964-7683" target="_blank" rel="noopener" title="ORCID">Dawn Marquette</a></li>
-            <li>Stephania Kay</li>
-            <li>Mark Lucas</li>
-            <li>TreQuan Love</li>
-            <li><a href="https://orcid.org/0000-0002-6442-4502" target="_blank" rel="noopener" title="ORCID">A. Sina Booeshaghi</a></li>
-            <li>Oliver F. Brandenberg</li>
-            <li>Longhua Guo</li>
-            <li>James Boocock</li>
-            <li>Myles Hochman</li>
-            <li><a href="https://orcid.org/0000-0002-5997-2838" target="_blank" rel="noopener" title="ORCID">Scott W. Simpkins</a></li>
-            <li>Isabella Lin</li>
-            <li>Nathan LaPierre</li>
-            <li>Duke Hong</li>
-            <li>Yi Zhang</li>
-            <li><a href="https://orcid.org/0000-0002-6941-3060" target="_blank" rel="noopener" title="ORCID">Gabriel Oland</a></li>
-            <li>Bianca Judy Choe</li>
-            <li>Sukantha Chandrasekaran</li>
-            <li>Evann E. Hilt</li>
-            <li><a href="https://orcid.org/0000-0002-4490-5595" target="_blank" rel="noopener" title="ORCID">Manish J. Butte</a></li>
-            <li>Robert Damoiseaux</li>
-            <li>Clifford Kravit</li>
-            <li>Aaron R. Cooper</li>
-            <li>Yi Yin</li>
-            <li><a href="https://orcid.org/0000-0002-9164-6231" target="_blank" rel="noopener" title="ORCID">Lior Pachter</a></li>
-            <li>Omai B. Garner</li>
-            <li>Jonathan Flint</li>
-            <li>Eleazar Eskin</li>
-            <li>Chongyuan Luo</li>
-            <li><a href="https://orcid.org/0000-0002-4661-0600" target="_blank" rel="noopener" title="ORCID">Sriram Kosuri</a></li>
-            <li><a href="https://orcid.org/0000-0002-8065-3057" target="_blank" rel="noopener" title="ORCID">Leonid Kruglyak</a></li>
-            <li><a href="https://orcid.org/0000-0002-9687-9122" target="_blank" rel="noopener" title="ORCID">Valerie A. Arboleda</a></li>
-          </ul>
-        </section>
-      </section>
-
-      <section>
-        <h2>BibTeX</h2>
-        
-        <section class="bibtex-entry">
-          <h3>Nature Biomedical Engineering</h3>
-          <div class="bibtex-box">
-            <button
-              class="copy-bibtex-button"
-              type="button"
-              aria-label="Copy BibTeX for Nature Biomedical Engineering"
-            >
-              Copy BibTeX
-            </button>
-            <pre><code>@article{Bloom_2021,
-  TITLE     = {Massively scaled-up testing for SARS-CoV-2 RNA via next-generation sequencing of pooled and barcoded nasal and saliva samples},
-  VOLUME    = {5},
-  ISSN      = {2157-846X},
-  URL       = {http://dx.doi.org/10.1038/s41551-021-00754-5},
-  DOI       = {10.1038/s41551-021-00754-5},
-  NUMBER    = {7},
-  JOURNAL   = {Nature Biomedical Engineering},
-  PUBLISHER = {Springer Science and Business Media LLC},
-  AUTHOR    = {Bloom, Joshua S. and Sathe, Laila and Munugala, Chetan and Jones, Eric M. and Gasperini, Molly and Lubock, Nathan B. and Yarza, Fauna and Thompson, Erin M. and Kovary, Kyle M. and Park, Jimin and Marquette, Dawn and Kay, Stephania and Lucas, Mark and Love, TreQuan and Sina Booeshaghi, A. and Brandenberg, Oliver F. and Guo, Longhua and Boocock, James and Hochman, Myles and Simpkins, Scott W. and Lin, Isabella and LaPierre, Nathan and Hong, Duke and Zhang, Yi and Oland, Gabriel and Choe, Bianca Judy and Chandrasekaran, Sukantha and Hilt, Evann E. and Butte, Manish J. and Damoiseaux, Robert and Kravit, Clifford and Cooper, Aaron R. and Yin, Yi and Pachter, Lior and Garner, Omai B. and Flint, Jonathan and Eskin, Eleazar and Luo, Chongyuan and Kosuri, Sriram and Kruglyak, Leonid and Arboleda, Valerie A.},
-  YEAR      = {2021},
-  PAGES     = {657-665}
-}</code></pre>
+      <section class="relationship-inspector" aria-label="Indexed relations" data-work-relations>
+        <section class="relationship-list-panel" aria-label="Relations">
+          <div class="study-section-heading">
+            <h2>Relations</h2>
           </div>
+          <div
+            class="relation-tabs"
+            role="tablist"
+            aria-label="Relation types"
+            data-relation-tabs
+          ></div>
+          <div class="reason-list" data-relation-list></div>
         </section>
-      </section>
 
-      <section>
-        <h2>Citing Works</h2>
-        <p class="citation-source-note">
-          77 citing works found in citation data generated 2026-07-06. Citation relationships are sourced from OpenAlex, Semantic Scholar, Google Scholar.
-        </p>
-        <table class="citation-table">
-          <thead>
-            <tr>
-              <th>Title</th>
-              <th>Year</th>
-              <th>Summary</th>
-            </tr>
-          </thead>
-          <tbody>
-            
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1007/s13353-025-01042-7" target="_blank" rel="noopener">Advancements in somatic mutation detection through loop-mediated isothermal amplification (LAMP) in human tumors</a></td>
-              <td class="citation-year"><time datetime="2026">2026</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1145/3774895.3815158" target="_blank" rel="noopener">Architecture for Health Initiative (Arch4Health): Computational Challenges in Health-Related Applications and the Role of Computer Architecture in Addressing Them</a></td>
-              <td class="citation-year"><time datetime="2026">2026</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1016/j.diagmicrobio.2026.117519" target="_blank" rel="noopener">Automated implementation of the SwabSeq COVID-19 diagnostic assay on the opentrons flex liquid-handling robot</a></td>
-              <td class="citation-year"><time datetime="2026">2026</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.3390/ijms27052403" target="_blank" rel="noopener">Circulating RNA as a Functional Component of Liquid Biopsy in Cancer: Concepts, Classification, and Clinical Applications</a></td>
-              <td class="citation-year"><time datetime="2026">2026</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include addressing, adoption, appropriate, careful, controls, design, experimental, inclusion.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1145/3774895.3815157" target="_blank" rel="noopener">Enabling Fast, Efficient, and Low-Cost Genomic and Metagenomic Analyses via Storage-Centric System Designs</a></td>
-              <td class="citation-year"><time datetime="2026">2026</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1109/hpca68181.2026.11408446" target="_blank" rel="noopener">GenPairX: A Hardware-Algorithm Co-Designed Accelerator for Paired-End Read Mapping</a></td>
-              <td class="citation-year"><time datetime="2026">2026</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1007/978-981-95-7295-3_12" target="_blank" rel="noopener">Nucleic Acid Analysis-Based Methods for SARS-CoV-2 Detection</a></td>
-              <td class="citation-year"><time datetime="2026">2026</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1109/hpca68181.2026.11408512" target="_blank" rel="noopener">SAGe: A Lightweight Algorithm-Architecture Co-Design for Mitigating the Data Preparation Bottleneck in Large-Scale Genome Sequence Analysis</a></td>
-              <td class="citation-year"><time datetime="2026">2026</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include agriculture, analysis, biodiversity, communicable, conservation, discovery, diseases, ensuring.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.64898/2026.04.16.719115" target="_blank" rel="noopener">Systematic evaluation of 24 extraction and library preparation combinations for metagenomic sequencing of SARS-CoV-2 in saliva</a></td>
-              <td class="citation-year"><time datetime="2026">2026</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1016/j.jenvman.2026.129353" target="_blank" rel="noopener">Tracking viral variants by wastewater surveillance, from laboratory diagnosis towards on-site monitoring: lessons learned from the SARS-CoV-2 pandemic</a></td>
-              <td class="citation-year"><time datetime="2026">2026</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1039/d5lc00667h" target="_blank" rel="noopener">A multi-valve centrifugal microfluidic for Mycoplasma pneumoniae detection</a></td>
-              <td class="citation-year"><time datetime="2025">2025</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.5772/intechopen.1011431" target="_blank" rel="noopener">Advancements in Molecular Diagnostics for Viral Outbreaks: A Focus on Respiratory Virus</a></td>
-              <td class="citation-year"><time datetime="2025">2025</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1145/3658617.3697545" target="_blank" rel="noopener">In-Storage Read-Centric Seed Location Filtering Using 3D-NAND Flash for Genome Sequence Analysis</a></td>
-              <td class="citation-year"><time datetime="2025">2025</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1145/3721145.3730428" target="_blank" rel="noopener">MARS: Processing-In-Memory Acceleration of Raw Signal Genome Analysis Inside the Storage Subsystem</a></td>
-              <td class="citation-year"><time datetime="2025">2025</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include advances, analysis, analyzing, areas, biology, evolutionary, genome, identifying.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.3390/mi16070736" target="_blank" rel="noopener">Recent Advancements in Metal–Organic Framework-Based Microfluidic Chips for Biomedical Applications</a></td>
-              <td class="citation-year"><time datetime="2025">2025</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include analyses, capabilities, capitalize, catalytic, enable, features, fluid, high-throughput.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1038/s41467-024-55762-1" target="_blank" rel="noopener">Taming large-scale genomic analyses via sparsified genomics</a></td>
-              <td class="citation-year"><time datetime="2025">2025</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include disease, genomic, cancer, causes, clinical, communities, complex, discovering.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.4103/tcmj.tcmj_244_24" target="_blank" rel="noopener">The best pooling strategy to reduce polymerase chain reaction tests during the coronavirus disease-19 pandemic at low prevalence</a></td>
-              <td class="citation-year"><time datetime="2025">2025</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include example, prevalence, freeware, provide, readers, would.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1115/1.4067232" target="_blank" rel="noopener">Comparative Survey-Based Study of Noninvasive Saliva Collection Devices</a></td>
-              <td class="citation-year"><time datetime="2024">2024</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1039/d3sd00304c" target="_blank" rel="noopener">Democratizing nucleic acid-based molecular diagnostic tests for infectious diseases at resource-limited settings – from point of care to extreme point of care</a></td>
-              <td class="citation-year"><time datetime="2024">2024</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/2024.07.03.601853" target="_blank" rel="noopener">Developing, characterizing and modeling CRISPR-based point-of-use pathogen diagnostics</a></td>
-              <td class="citation-year"><time datetime="2024">2024</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1021/acssynbio.4c00469" target="_blank" rel="noopener">Developing, Characterizing, and Modeling CRISPR-Based Point-of-Use Pathogen Diagnostics</a></td>
-              <td class="citation-year"><time datetime="2024">2024</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.3390/ijms252211899" target="_blank" rel="noopener">Mass Spectrometry-Based Metabolomics Reveals a Salivary Signature for Low-Severity COVID-19</a></td>
-              <td class="citation-year"><time datetime="2024">2024</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include agencies, authorized, regulatory, administration, alternative, approved, covid-19, diagnosis.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/2024.06.09.24308631" target="_blank" rel="noopener">Needle-Plug/Piston-Based Modular Mesoscopic Design Paradigm Coupled with Microfluidic Device for Large-scale Point-of-Care Pooled Testing</a></td>
-              <td class="citation-year"><time datetime="2024">2024</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1002/advs.202406076" target="_blank" rel="noopener">Needle‐Plug/Piston‐Based Modular Mesoscopic Design Paradigm Coupled With Microfluidic Device for Point‐of‐Care Pooled Testing</a></td>
-              <td class="citation-year"><time datetime="2024">2024</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include against, alone, at-home, cannot, covid-19, diagnosis, diagnostic, emerging.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1016/j.scitotenv.2024.170845" target="_blank" rel="noopener">Quantification of multiple respiratory viruses in wastewater in the Kathmandu Valley, Nepal: Potential implications of wastewater-based epidemiology for community disease surveillance in developing countries</a></td>
-              <td class="citation-year"><time datetime="2024">2024</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1186/s13059-024-03181-2" target="_blank" rel="noopener">RUBICON: a framework for designing efficient deep learning-based genomic basecallers</a></td>
-              <td class="citation-year"><time datetime="2024">2024</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1007/s12207-024-09496-6" target="_blank" rel="noopener">Seeing Clearly in the Twilight: The Clinical and Forensic Relevance of the Indeterminate/Borderline Range in Multivariate Models of Performance Validity Assessment</a></td>
-              <td class="citation-year"><time datetime="2024">2024</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include accepted, biomedical, bloom, consequence, gammon, gonska, grati, gress.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1002/advs.202401988" target="_blank" rel="noopener">Two‐Stage Mixed‐Dye‐Based Isothermal Amplification with Ribonuclease‐Cleavable Enhanced Probes for Dual‐Visualization Detection of SARS‐CoV‐2 Variants of Interest</a></td>
-              <td class="citation-year"><time datetime="2024">2024</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1093/bioinformatics/btae657" target="_blank" rel="noopener">ViralPrimer: a web server to monitor viral nucleic acid amplification tests’ primer efficiency during pandemics, with emphasis on SARS-CoV-2 and Mpox</a></td>
-              <td class="citation-year"><time datetime="2024">2024</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1093/labmed/lmac161" target="_blank" rel="noopener">3D Printing as an Effective Quality Assurance Implementation in Massive-Scale SARS-CoV-2 Testing at a SwabSeq Next-Generation Sequencing Laboratory</a></td>
-              <td class="citation-year"><time datetime="2023">2023</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1007/978-3-031-46077-7_30" target="_blank" rel="noopener">A Case for Genome Analysis Where Genomes Reside</a></td>
-              <td class="citation-year"><time datetime="2023">2023</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1016/j.ab.2023.115037" target="_blank" rel="noopener">A novel paper-based lysis strip for SARS-CoV-2 RNA detection at low resource settings</a></td>
-              <td class="citation-year"><time datetime="2023">2023</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.3389/fmolb.2023.1141534" target="_blank" rel="noopener">A systematic review of the barcoding strategy that contributes to COVID-19 diagnostics at a population level</a></td>
-              <td class="citation-year"><time datetime="2023">2023</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/2023.10.31.23297784" target="_blank" rel="noopener">Comparative survey-based study of non-invasive saliva collection devices</a></td>
-              <td class="citation-year"><time datetime="2023">2023</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include set-up, swabseq, testing, caltech, campus, covid-19, cryovial, early.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1039/d2sc06665c" target="_blank" rel="noopener">Diagnostics and analysis of SARS-CoV-2: current status, recent advances, challenges and perspectives</a></td>
-              <td class="citation-year"><time datetime="2023">2023</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1021/acs.analchem.3c00885" target="_blank" rel="noopener">Integrating Magnetic-Bead-Based Sample Extraction and Molecular Barcoding for the One-Step Pooled RT-qPCR Assay of Viral Pathogens without Retesting</a></td>
-              <td class="citation-year"><time datetime="2023">2023</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1016/j.cobme.2023.100471" target="_blank" rel="noopener">Multiplexed CRISPR-based methods for pathogen nucleic acid detection</a></td>
-              <td class="citation-year"><time datetime="2023">2023</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1002/smll.202205636" target="_blank" rel="noopener">Rapid Single‐Round Pool Testing of Infectious Disease Enabled by Multicolor Digital Melting PCR</a></td>
-              <td class="citation-year"><time datetime="2023">2023</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1007/978-3-031-46077-7_14" target="_blank" rel="noopener">RattlesnakeJake: A Fast and Accurate Pre-alignment Filter Suitable for Computation-in-Memory</a></td>
-              <td class="citation-year"><time datetime="2023">2023</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1016/j.adaj.2023.05.006" target="_blank" rel="noopener">Saliva diagnostics</a></td>
-              <td class="citation-year"><time datetime="2023">2023</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include diagnostics, favorable, initiatives, light, placed, saliva.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1145/3613424.3614252" target="_blank" rel="noopener">Swordfish: A Framework for Evaluating Deep Neural Network-based Basecalling using Computation-In-Memory with Non-Ideal Memristors</a></td>
-              <td class="citation-year"><time datetime="2023">2023</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include accurate, advancements, advancing, basecalling, critical, driving, facilitating, genomic.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/2022.11.20.517297" target="_blank" rel="noopener">A Framework for Designing Efficient Deep Learning-Based Genomic Basecallers</a></td>
-              <td class="citation-year"><time datetime="2022">2022</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.7554/elife.69949" target="_blank" rel="noopener">A LAMP sequencing approach for high-throughput co-detection of SARS-CoV-2 and influenza virus in human saliva</a></td>
-              <td class="citation-year"><time datetime="2022">2022</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include bloom, yelagandula, approaches, aynaud, malta, massively, mello, methods.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1002/advs.202204246" target="_blank" rel="noopener">A Versatile Biomimic Nanotemplating Fluidic Assay for Multiplex Quantitative Monitoring of Viral Respiratory Infections and Immune Responses in Saliva and Blood</a></td>
-              <td class="citation-year"><time datetime="2022">2022</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.2147/jmdh.s370441" target="_blank" rel="noopener">Acceptability and Willingness of UAE Residents to Use OTC Vending Machines to Deliver Self-Testing Kits for COVID-19 and the Implications</a></td>
-              <td class="citation-year"><time datetime="2022">2022</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include machines, personnel, university, barriers, challenges, characterized, costs, countries.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1021/acs.analchem.2c03813" target="_blank" rel="noopener">Accurate Diagnosis of COVID-19 from Self-Collectable Biospecimens Using Synthetic Apolipoprotein H Peptide-Coated Nanoparticle Assay</a></td>
-              <td class="citation-year"><time datetime="2022">2022</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1002/jper.22-0152" target="_blank" rel="noopener">Antibody response to BNT162b2 mRNA vaccine in gingival crevicular fluid</a></td>
-              <td class="citation-year"><time datetime="2022">2022</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.37796/2211-8039.1334" target="_blank" rel="noopener">Comparison between the analytical sensitivity and clinical performance of two cobas SARS-CoV-2 tests based on high-throughput and point-of-care systems</a></td>
-              <td class="citation-year"><time datetime="2022">2022</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1016/b978-0-323-98809-4.00013-9" target="_blank" rel="noopener">COVID-19</a></td>
-              <td class="citation-year"><time datetime="2022">2022</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1186/s12864-022-08403-0" target="_blank" rel="noopener">DeepSARS: simultaneous diagnostic detection and genomic surveillance of SARS-CoV-2</a></td>
-              <td class="citation-year"><time datetime="2022">2022</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.3390/ijms232315258" target="_blank" rel="noopener">Detection of SARS-CoV-2 Virus by Triplex Enhanced Nucleic Acid Detection Assay (TENADA)</a></td>
-              <td class="citation-year"><time datetime="2022">2022</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1021/acsnano.2c01697" target="_blank" rel="noopener">Diagnostic Approaches For COVID-19: Lessons Learned and the Path Forward</a></td>
-              <td class="citation-year"><time datetime="2022">2022</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1016/j.scitotenv.2022.155059" target="_blank" rel="noopener">Direct comparison of RT-ddPCR and targeted amplicon sequencing for SARS-CoV-2 mutation monitoring in wastewater</a></td>
-              <td class="citation-year"><time datetime="2022">2022</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.2139/ssrn.4022373" target="_blank" rel="noopener">Direct Comparison of RT-ddPCR and Targeted Amplicon Sequencing for SARS-CoV-2 Mutation Monitoring in Wastewater</a></td>
-              <td class="citation-year"><time datetime="2022">2022</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1021/acsnano.1c11582" target="_blank" rel="noopener">DNA Hairpins and Dumbbell-Wheel Transitions Amplified Walking Nanomachine for Ultrasensitive Nucleic Acid Detection</a></td>
-              <td class="citation-year"><time datetime="2022">2022</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1016/j.snb.2022.131646" target="_blank" rel="noopener">First-in-Class: Cervical cancer diagnosis based on a urine test with fluorescent cysteine probe</a></td>
-              <td class="citation-year"><time datetime="2022">2022</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1016/j.csbj.2022.08.019" target="_blank" rel="noopener">From molecules to genomic variations: Accelerating genome analysis via intelligent algorithms and architectures</a></td>
-              <td class="citation-year"><time datetime="2022">2022</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://www.semanticscholar.org/paper/fad8f862216ddadb49e4bc03f36e1c5a4bc9404e" target="_blank" rel="noopener">Genome-on-Diet: Taming Large-Scale Genomic Analyses via Sparsified Genomics</a></td>
-              <td class="citation-year"><time datetime="2022">2022</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1109/micro56248.2022.00056" target="_blank" rel="noopener">GenPIP: In-Memory Acceleration of Genome Analysis via Tight Integration of Basecalling and Read Mapping</a></td>
-              <td class="citation-year"><time datetime="2022">2022</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://www.semanticscholar.org/paper/4d3fb0382d679483570650e091c89a086a585c07" target="_blank" rel="noopener">GenStore: A High-Performance and Energy-Efficient In-Storage Computing System for Genome Sequence Analysis</a></td>
-              <td class="citation-year"><time datetime="2022">2022</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include detection, sarscov-2, abhinav, alignment, analyses, as-of-yet, bhoyar, covidseq.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1145/3503222.3507702" target="_blank" rel="noopener">GenStore: a high-performance in-storage processing system for genome sequence analysis</a></td>
-              <td class="citation-year"><time datetime="2022">2022</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1038/s41467-022-34086-y" target="_blank" rel="noopener">Microfluidic space coding for multiplexed nucleic acid detection via CRISPR-Cas12a and recombinase polymerase amplification</a></td>
-              <td class="citation-year"><time datetime="2022">2022</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1093/ofid/ofac462" target="_blank" rel="noopener">Prevalence and Factors Associated With Antigen Test Positivity Following SARS-CoV-2 Infection Among Health Care Workers in Los Angeles</a></td>
-              <td class="citation-year"><time datetime="2022">2022</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include testing, administration, authorized, high-throughput, platform, program, sars-cov-2, surveillance.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/2022.07.06.22277341" target="_blank" rel="noopener">Prevalence and factors associated with antigen test positivity following SARS-CoV-2 infection among healthcare workers in Los Angeles</a></td>
-              <td class="citation-year"><time datetime="2022">2022</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1016/j.snb.2022.131764" target="_blank" rel="noopener">Prospects of NIR fluorescent nanosensors for green detection of SARS-CoV-2</a></td>
-              <td class="citation-year"><time datetime="2022">2022</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1038/s41551-022-00917-y" target="_blank" rel="noopener">Rapid detection of SARS-CoV-2 RNA in saliva via Cas13</a></td>
-              <td class="citation-year"><time datetime="2022">2022</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1002/smll.202200854" target="_blank" rel="noopener">Sensitive and Rapid Diagnosis of Respiratory Virus Coinfection Using a Microfluidic Chip‐Powered CRISPR/Cas12a System</a></td>
-              <td class="citation-year"><time datetime="2022">2022</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1038/s41598-022-10128-9" target="_blank" rel="noopener">Smart pooling: AI-powered COVID-19 informative group testing</a></td>
-              <td class="citation-year"><time datetime="2022">2022</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include bloom, detect, instead, next-generation, pooling, procedure, rt-pcr, sars-cov-2.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1021/acsnano.2c04840" target="_blank" rel="noopener">Smartphone-Based SARS-CoV-2 and Variants Detection System using Colorimetric DNAzyme Reaction Triggered by Loop-Mediated Isothermal Amplification (LAMP) with Clustered Regularly Interspaced Short Palindromic Repeats (CRISPR)</a></td>
-              <td class="citation-year"><time datetime="2022">2022</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.21203/rs.3.rs-2277358/v1" target="_blank" rel="noopener">Taming Large-Scale Genomic Analyses via Sparsified Genomics</a></td>
-              <td class="citation-year"><time datetime="2022">2022</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1021/acsinfecdis.2c00204" target="_blank" rel="noopener">Two Years into the COVID-19 Pandemic: Lessons Learned</a></td>
-              <td class="citation-year"><time datetime="2022">2022</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.22541/au.165285401.15076943/v1" target="_blank" rel="noopener">Use molecular barcodes to study emerging infectious diseases</a></td>
-              <td class="citation-year"><time datetime="2022">2022</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1038/s41551-021-00765-2" target="_blank" rel="noopener">Antigen sensing via nanobody-coated transistors</a></td>
-              <td class="citation-year"><time datetime="2021">2021</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/2021.08.16.21262126" target="_blank" rel="noopener">DeepSARS: simultaneous diagnostic detection and genomic surveillance of SARS-CoV-2</a></td>
-              <td class="citation-year"><time datetime="2021">2021</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1093/labmed/lmab069" target="_blank" rel="noopener">Lean Principles to Improve Quality in High-Throughput COVID-19 Testing Using SwabSeq: A Barcoded Sequencing-Based Testing Platform</a></td>
-              <td class="citation-year"><time datetime="2021">2021</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include swabseq, amplicons, barcoded, control, pipeline, quantitative, results, virus.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1002/jcla.24178" target="_blank" rel="noopener">Recent advances in methods for the diagnosis of Corona Virus Disease 2019</a></td>
-              <td class="citation-year"><time datetime="2021">2021</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1021/acsbiomaterials.1c01138" target="_blank" rel="noopener">Stabilization of Salivary Biomarkers</a></td>
-              <td class="citation-year"><time datetime="2021">2021</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-          </tbody>
-        </table>
+        <aside class="evidence-panel relationship-detail" aria-live="polite">
+          <span class="study-label" data-relation-label>Relation</span>
+          <h2 data-relation-title></h2>
+          <p class="selected-relation-statement" data-relation-statement></p>
+          <section class="version-citation" data-version-citation hidden>
+            <h3>Citation</h3>
+            <div class="bibtex-box">
+              <button class="copy-bibtex-button" type="button" data-copy-bibtex>
+                Copy BibTeX
+              </button>
+              <pre><code data-bibtex-code></code></pre>
+            </div>
+          </section>
+          <details class="relationship-evidence" data-relation-evidence>
+            <summary>
+              <span>Evidence</span>
+              <span class="evidence-summary" data-evidence-summary></span>
+            </summary>
+            <table class="relationship-evidence-table">
+              <thead>
+                <tr>
+                  <th>Span</th>
+                  <th>Source</th>
+                </tr>
+              </thead>
+              <tbody data-evidence-rows></tbody>
+            </table>
+          </details>
+        </aside>
       </section>
+      <script id="workRelationData" type="application/json">{"work":{"id":"work:massively-scaled-up-testing-for-sars-cov-2-rna-via-next-generation-sequencing-of-pooled-and-barcoded-nasal-and-saliva-samples","title":"Massively scaled-up testing for SARS-CoV-2 RNA via next-generation sequencing of pooled and barcoded nasal and saliva samples","description":"Frequent asymptomatic testing can suppress viral transmission, but RT-qPCR capacity, extraction workflows, and cost limited population-scale SARS-CoV-2 screening. SwabSeq addresses that bottleneck by combining sample barcodes, end-point RT-PCR, and synthetic RNA standards so pooled sequencing can call thousands of nasal or saliva specimens without RNA extraction. Clinical validation and deployment showed qPCR-comparable performance, extraction-free workflows, and more than 80,000 returned tests with sub-24-hour turnaround."},"relationTypes":[{"id":"authors","label":"Authors"},{"id":"claims","label":"Claims"},{"id":"citations","label":"Citations"},{"id":"versions","label":"Versions"},{"id":"software","label":"Software"},{"id":"sources","label":"Sources"}],"connections":[{"id":"connection:version:massively-scaled-up-testing-for-sars-cov-2-rna-via-next-generation-sequencing-of-pooled-and-barcoded-nasal-and-saliva-samples--2021-07-01-nature-biomedical-engineering--person:orcid:0000-0002-7241-1648--author-1","type":"authors","title":"Joshua S. Bloom","description":"Joshua S. Bloom is an author of Massively scaled-up testing for SARS-CoV-2 RNA via next-generation sequencing of pooled and barcoded nasal and saliva samples.","statement":"Joshua S. Bloom is an author of Massively scaled-up testing for SARS-CoV-2 RNA via next-generation sequencing of pooled and barcoded nasal and saliva samples.","evidence":[]},{"id":"connection:version:massively-scaled-up-testing-for-sars-cov-2-rna-via-next-generation-sequencing-of-pooled-and-barcoded-nasal-and-saliva-samples--2021-07-01-nature-biomedical-engineering--person:orcid:0000-0003-1016-3295--author-2","type":"authors","title":"Laila Sathe","description":"Laila Sathe is an author of Massively scaled-up testing for SARS-CoV-2 RNA via next-generation sequencing of pooled and barcoded nasal and saliva samples.","statement":"Laila Sathe is an author of Massively scaled-up testing for SARS-CoV-2 RNA via next-generation sequencing of pooled and barcoded nasal and saliva samples.","evidence":[]},{"id":"connection:version:massively-scaled-up-testing-for-sars-cov-2-rna-via-next-generation-sequencing-of-pooled-and-barcoded-nasal-and-saliva-samples--2021-07-01-nature-biomedical-engineering--person:local:chetan-munugala--author-3","type":"authors","title":"Chetan Munugala","description":"Chetan Munugala is an author of Massively scaled-up testing for SARS-CoV-2 RNA via next-generation sequencing of pooled and barcoded nasal and saliva samples.","statement":"Chetan Munugala is an author of Massively scaled-up testing for SARS-CoV-2 RNA via next-generation sequencing of pooled and barcoded nasal and saliva samples.","evidence":[]},{"id":"connection:version:massively-scaled-up-testing-for-sars-cov-2-rna-via-next-generation-sequencing-of-pooled-and-barcoded-nasal-and-saliva-samples--2021-07-01-nature-biomedical-engineering--person:local:eric-m-jones--author-4","type":"authors","title":"Eric M. Jones","description":"Eric M. Jones is an author of Massively scaled-up testing for SARS-CoV-2 RNA via next-generation sequencing of pooled and barcoded nasal and saliva samples.","statement":"Eric M. Jones is an author of Massively scaled-up testing for SARS-CoV-2 RNA via next-generation sequencing of pooled and barcoded nasal and saliva samples.","evidence":[]},{"id":"connection:version:massively-scaled-up-testing-for-sars-cov-2-rna-via-next-generation-sequencing-of-pooled-and-barcoded-nasal-and-saliva-samples--2021-07-01-nature-biomedical-engineering--person:local:molly-gasperini--author-5","type":"authors","title":"Molly Gasperini","description":"Molly Gasperini is an author of Massively scaled-up testing for SARS-CoV-2 RNA via next-generation sequencing of pooled and barcoded nasal and saliva samples.","statement":"Molly Gasperini is an author of Massively scaled-up testing for SARS-CoV-2 RNA via next-generation sequencing of pooled and barcoded nasal and saliva samples.","evidence":[]},{"id":"connection:version:massively-scaled-up-testing-for-sars-cov-2-rna-via-next-generation-sequencing-of-pooled-and-barcoded-nasal-and-saliva-samples--2021-07-01-nature-biomedical-engineering--person:local:nathan-b-lubock--author-6","type":"authors","title":"Nathan B. Lubock","description":"Nathan B. Lubock is an author of Massively scaled-up testing for SARS-CoV-2 RNA via next-generation sequencing of pooled and barcoded nasal and saliva samples.","statement":"Nathan B. Lubock is an author of Massively scaled-up testing for SARS-CoV-2 RNA via next-generation sequencing of pooled and barcoded nasal and saliva samples.","evidence":[]},{"id":"connection:version:massively-scaled-up-testing-for-sars-cov-2-rna-via-next-generation-sequencing-of-pooled-and-barcoded-nasal-and-saliva-samples--2021-07-01-nature-biomedical-engineering--person:orcid:0000-0002-2512-6182--author-7","type":"authors","title":"Fauna Yarza","description":"Fauna Yarza is an author of Massively scaled-up testing for SARS-CoV-2 RNA via next-generation sequencing of pooled and barcoded nasal and saliva samples.","statement":"Fauna Yarza is an author of Massively scaled-up testing for SARS-CoV-2 RNA via next-generation sequencing of pooled and barcoded nasal and saliva samples.","evidence":[]},{"id":"connection:version:massively-scaled-up-testing-for-sars-cov-2-rna-via-next-generation-sequencing-of-pooled-and-barcoded-nasal-and-saliva-samples--2021-07-01-nature-biomedical-engineering--person:local:erin-m-thompson--author-8","type":"authors","title":"Erin M. Thompson","description":"Erin M. Thompson is an author of Massively scaled-up testing for SARS-CoV-2 RNA via next-generation sequencing of pooled and barcoded nasal and saliva samples.","statement":"Erin M. Thompson is an author of Massively scaled-up testing for SARS-CoV-2 RNA via next-generation sequencing of pooled and barcoded nasal and saliva samples.","evidence":[]},{"id":"connection:version:massively-scaled-up-testing-for-sars-cov-2-rna-via-next-generation-sequencing-of-pooled-and-barcoded-nasal-and-saliva-samples--2021-07-01-nature-biomedical-engineering--person:local:kyle-m-kovary--author-9","type":"authors","title":"Kyle M. Kovary","description":"Kyle M. Kovary is an author of Massively scaled-up testing for SARS-CoV-2 RNA via next-generation sequencing of pooled and barcoded nasal and saliva samples.","statement":"Kyle M. Kovary is an author of Massively scaled-up testing for SARS-CoV-2 RNA via next-generation sequencing of pooled and barcoded nasal and saliva samples.","evidence":[]},{"id":"connection:version:massively-scaled-up-testing-for-sars-cov-2-rna-via-next-generation-sequencing-of-pooled-and-barcoded-nasal-and-saliva-samples--2021-07-01-nature-biomedical-engineering--person:local:jimin-park--author-10","type":"authors","title":"Jimin Park","description":"Jimin Park is an author of Massively scaled-up testing for SARS-CoV-2 RNA via next-generation sequencing of pooled and barcoded nasal and saliva samples.","statement":"Jimin Park is an author of Massively scaled-up testing for SARS-CoV-2 RNA via next-generation sequencing of pooled and barcoded nasal and saliva samples.","evidence":[]},{"id":"connection:version:massively-scaled-up-testing-for-sars-cov-2-rna-via-next-generation-sequencing-of-pooled-and-barcoded-nasal-and-saliva-samples--2021-07-01-nature-biomedical-engineering--person:orcid:0000-0002-3964-7683--author-11","type":"authors","title":"Dawn Marquette","description":"Dawn Marquette is an author of Massively scaled-up testing for SARS-CoV-2 RNA via next-generation sequencing of pooled and barcoded nasal and saliva samples.","statement":"Dawn Marquette is an author of Massively scaled-up testing for SARS-CoV-2 RNA via next-generation sequencing of pooled and barcoded nasal and saliva samples.","evidence":[]},{"id":"connection:version:massively-scaled-up-testing-for-sars-cov-2-rna-via-next-generation-sequencing-of-pooled-and-barcoded-nasal-and-saliva-samples--2021-07-01-nature-biomedical-engineering--person:local:stephania-kay--author-12","type":"authors","title":"Stephania Kay","description":"Stephania Kay is an author of Massively scaled-up testing for SARS-CoV-2 RNA via next-generation sequencing of pooled and barcoded nasal and saliva samples.","statement":"Stephania Kay is an author of Massively scaled-up testing for SARS-CoV-2 RNA via next-generation sequencing of pooled and barcoded nasal and saliva samples.","evidence":[]},{"id":"connection:version:massively-scaled-up-testing-for-sars-cov-2-rna-via-next-generation-sequencing-of-pooled-and-barcoded-nasal-and-saliva-samples--2021-07-01-nature-biomedical-engineering--person:local:mark-lucas--author-13","type":"authors","title":"Mark Lucas","description":"Mark Lucas is an author of Massively scaled-up testing for SARS-CoV-2 RNA via next-generation sequencing of pooled and barcoded nasal and saliva samples.","statement":"Mark Lucas is an author of Massively scaled-up testing for SARS-CoV-2 RNA via next-generation sequencing of pooled and barcoded nasal and saliva samples.","evidence":[]},{"id":"connection:version:massively-scaled-up-testing-for-sars-cov-2-rna-via-next-generation-sequencing-of-pooled-and-barcoded-nasal-and-saliva-samples--2021-07-01-nature-biomedical-engineering--person:local:trequan-love--author-14","type":"authors","title":"TreQuan Love","description":"TreQuan Love is an author of Massively scaled-up testing for SARS-CoV-2 RNA via next-generation sequencing of pooled and barcoded nasal and saliva samples.","statement":"TreQuan Love is an author of Massively scaled-up testing for SARS-CoV-2 RNA via next-generation sequencing of pooled and barcoded nasal and saliva samples.","evidence":[]},{"id":"connection:version:massively-scaled-up-testing-for-sars-cov-2-rna-via-next-generation-sequencing-of-pooled-and-barcoded-nasal-and-saliva-samples--2021-07-01-nature-biomedical-engineering--person:orcid:0000-0002-6442-4502--author-15","type":"authors","title":"A. Sina Booeshaghi","description":"A. Sina Booeshaghi is an author of Massively scaled-up testing for SARS-CoV-2 RNA via next-generation sequencing of pooled and barcoded nasal and saliva samples.","statement":"A. Sina Booeshaghi is an author of Massively scaled-up testing for SARS-CoV-2 RNA via next-generation sequencing of pooled and barcoded nasal and saliva samples.","evidence":[]},{"id":"connection:version:massively-scaled-up-testing-for-sars-cov-2-rna-via-next-generation-sequencing-of-pooled-and-barcoded-nasal-and-saliva-samples--2021-07-01-nature-biomedical-engineering--person:local:oliver-f-brandenberg--author-16","type":"authors","title":"Oliver F. Brandenberg","description":"Oliver F. Brandenberg is an author of Massively scaled-up testing for SARS-CoV-2 RNA via next-generation sequencing of pooled and barcoded nasal and saliva samples.","statement":"Oliver F. Brandenberg is an author of Massively scaled-up testing for SARS-CoV-2 RNA via next-generation sequencing of pooled and barcoded nasal and saliva samples.","evidence":[]},{"id":"connection:version:massively-scaled-up-testing-for-sars-cov-2-rna-via-next-generation-sequencing-of-pooled-and-barcoded-nasal-and-saliva-samples--2021-07-01-nature-biomedical-engineering--person:local:longhua-guo--author-17","type":"authors","title":"Longhua Guo","description":"Longhua Guo is an author of Massively scaled-up testing for SARS-CoV-2 RNA via next-generation sequencing of pooled and barcoded nasal and saliva samples.","statement":"Longhua Guo is an author of Massively scaled-up testing for SARS-CoV-2 RNA via next-generation sequencing of pooled and barcoded nasal and saliva samples.","evidence":[]},{"id":"connection:version:massively-scaled-up-testing-for-sars-cov-2-rna-via-next-generation-sequencing-of-pooled-and-barcoded-nasal-and-saliva-samples--2021-07-01-nature-biomedical-engineering--person:local:james-boocock--author-18","type":"authors","title":"James Boocock","description":"James Boocock is an author of Massively scaled-up testing for SARS-CoV-2 RNA via next-generation sequencing of pooled and barcoded nasal and saliva samples.","statement":"James Boocock is an author of Massively scaled-up testing for SARS-CoV-2 RNA via next-generation sequencing of pooled and barcoded nasal and saliva samples.","evidence":[]},{"id":"connection:version:massively-scaled-up-testing-for-sars-cov-2-rna-via-next-generation-sequencing-of-pooled-and-barcoded-nasal-and-saliva-samples--2021-07-01-nature-biomedical-engineering--person:local:myles-hochman--author-19","type":"authors","title":"Myles Hochman","description":"Myles Hochman is an author of Massively scaled-up testing for SARS-CoV-2 RNA via next-generation sequencing of pooled and barcoded nasal and saliva samples.","statement":"Myles Hochman is an author of Massively scaled-up testing for SARS-CoV-2 RNA via next-generation sequencing of pooled and barcoded nasal and saliva samples.","evidence":[]},{"id":"connection:version:massively-scaled-up-testing-for-sars-cov-2-rna-via-next-generation-sequencing-of-pooled-and-barcoded-nasal-and-saliva-samples--2021-07-01-nature-biomedical-engineering--person:orcid:0000-0002-5997-2838--author-20","type":"authors","title":"Scott W. Simpkins","description":"Scott W. Simpkins is an author of Massively scaled-up testing for SARS-CoV-2 RNA via next-generation sequencing of pooled and barcoded nasal and saliva samples.","statement":"Scott W. Simpkins is an author of Massively scaled-up testing for SARS-CoV-2 RNA via next-generation sequencing of pooled and barcoded nasal and saliva samples.","evidence":[]},{"id":"connection:version:massively-scaled-up-testing-for-sars-cov-2-rna-via-next-generation-sequencing-of-pooled-and-barcoded-nasal-and-saliva-samples--2021-07-01-nature-biomedical-engineering--person:local:isabella-lin--author-21","type":"authors","title":"Isabella Lin","description":"Isabella Lin is an author of Massively scaled-up testing for SARS-CoV-2 RNA via next-generation sequencing of pooled and barcoded nasal and saliva samples.","statement":"Isabella Lin is an author of Massively scaled-up testing for SARS-CoV-2 RNA via next-generation sequencing of pooled and barcoded nasal and saliva samples.","evidence":[]},{"id":"connection:version:massively-scaled-up-testing-for-sars-cov-2-rna-via-next-generation-sequencing-of-pooled-and-barcoded-nasal-and-saliva-samples--2021-07-01-nature-biomedical-engineering--person:local:nathan-lapierre--author-22","type":"authors","title":"Nathan LaPierre","description":"Nathan LaPierre is an author of Massively scaled-up testing for SARS-CoV-2 RNA via next-generation sequencing of pooled and barcoded nasal and saliva samples.","statement":"Nathan LaPierre is an author of Massively scaled-up testing for SARS-CoV-2 RNA via next-generation sequencing of pooled and barcoded nasal and saliva samples.","evidence":[]},{"id":"connection:version:massively-scaled-up-testing-for-sars-cov-2-rna-via-next-generation-sequencing-of-pooled-and-barcoded-nasal-and-saliva-samples--2021-07-01-nature-biomedical-engineering--person:local:duke-hong--author-23","type":"authors","title":"Duke Hong","description":"Duke Hong is an author of Massively scaled-up testing for SARS-CoV-2 RNA via next-generation sequencing of pooled and barcoded nasal and saliva samples.","statement":"Duke Hong is an author of Massively scaled-up testing for SARS-CoV-2 RNA via next-generation sequencing of pooled and barcoded nasal and saliva samples.","evidence":[]},{"id":"connection:version:massively-scaled-up-testing-for-sars-cov-2-rna-via-next-generation-sequencing-of-pooled-and-barcoded-nasal-and-saliva-samples--2021-07-01-nature-biomedical-engineering--person:local:yi-zhang--author-24","type":"authors","title":"Yi Zhang","description":"Yi Zhang is an author of Massively scaled-up testing for SARS-CoV-2 RNA via next-generation sequencing of pooled and barcoded nasal and saliva samples.","statement":"Yi Zhang is an author of Massively scaled-up testing for SARS-CoV-2 RNA via next-generation sequencing of pooled and barcoded nasal and saliva samples.","evidence":[]},{"id":"connection:version:massively-scaled-up-testing-for-sars-cov-2-rna-via-next-generation-sequencing-of-pooled-and-barcoded-nasal-and-saliva-samples--2021-07-01-nature-biomedical-engineering--person:orcid:0000-0002-6941-3060--author-25","type":"authors","title":"Gabriel Oland","description":"Gabriel Oland is an author of Massively scaled-up testing for SARS-CoV-2 RNA via next-generation sequencing of pooled and barcoded nasal and saliva samples.","statement":"Gabriel Oland is an author of Massively scaled-up testing for SARS-CoV-2 RNA via next-generation sequencing of pooled and barcoded nasal and saliva samples.","evidence":[]},{"id":"connection:version:massively-scaled-up-testing-for-sars-cov-2-rna-via-next-generation-sequencing-of-pooled-and-barcoded-nasal-and-saliva-samples--2021-07-01-nature-biomedical-engineering--person:local:bianca-judy-choe--author-26","type":"authors","title":"Bianca Judy Choe","description":"Bianca Judy Choe is an author of Massively scaled-up testing for SARS-CoV-2 RNA via next-generation sequencing of pooled and barcoded nasal and saliva samples.","statement":"Bianca Judy Choe is an author of Massively scaled-up testing for SARS-CoV-2 RNA via next-generation sequencing of pooled and barcoded nasal and saliva samples.","evidence":[]},{"id":"connection:version:massively-scaled-up-testing-for-sars-cov-2-rna-via-next-generation-sequencing-of-pooled-and-barcoded-nasal-and-saliva-samples--2021-07-01-nature-biomedical-engineering--person:local:sukantha-chandrasekaran--author-27","type":"authors","title":"Sukantha Chandrasekaran","description":"Sukantha Chandrasekaran is an author of Massively scaled-up testing for SARS-CoV-2 RNA via next-generation sequencing of pooled and barcoded nasal and saliva samples.","statement":"Sukantha Chandrasekaran is an author of Massively scaled-up testing for SARS-CoV-2 RNA via next-generation sequencing of pooled and barcoded nasal and saliva samples.","evidence":[]},{"id":"connection:version:massively-scaled-up-testing-for-sars-cov-2-rna-via-next-generation-sequencing-of-pooled-and-barcoded-nasal-and-saliva-samples--2021-07-01-nature-biomedical-engineering--person:local:evann-e-hilt--author-28","type":"authors","title":"Evann E. Hilt","description":"Evann E. Hilt is an author of Massively scaled-up testing for SARS-CoV-2 RNA via next-generation sequencing of pooled and barcoded nasal and saliva samples.","statement":"Evann E. Hilt is an author of Massively scaled-up testing for SARS-CoV-2 RNA via next-generation sequencing of pooled and barcoded nasal and saliva samples.","evidence":[]},{"id":"connection:version:massively-scaled-up-testing-for-sars-cov-2-rna-via-next-generation-sequencing-of-pooled-and-barcoded-nasal-and-saliva-samples--2021-07-01-nature-biomedical-engineering--person:orcid:0000-0002-4490-5595--author-29","type":"authors","title":"Manish J. Butte","description":"Manish J. Butte is an author of Massively scaled-up testing for SARS-CoV-2 RNA via next-generation sequencing of pooled and barcoded nasal and saliva samples.","statement":"Manish J. Butte is an author of Massively scaled-up testing for SARS-CoV-2 RNA via next-generation sequencing of pooled and barcoded nasal and saliva samples.","evidence":[]},{"id":"connection:version:massively-scaled-up-testing-for-sars-cov-2-rna-via-next-generation-sequencing-of-pooled-and-barcoded-nasal-and-saliva-samples--2021-07-01-nature-biomedical-engineering--person:local:robert-damoiseaux--author-30","type":"authors","title":"Robert Damoiseaux","description":"Robert Damoiseaux is an author of Massively scaled-up testing for SARS-CoV-2 RNA via next-generation sequencing of pooled and barcoded nasal and saliva samples.","statement":"Robert Damoiseaux is an author of Massively scaled-up testing for SARS-CoV-2 RNA via next-generation sequencing of pooled and barcoded nasal and saliva samples.","evidence":[]},{"id":"connection:version:massively-scaled-up-testing-for-sars-cov-2-rna-via-next-generation-sequencing-of-pooled-and-barcoded-nasal-and-saliva-samples--2021-07-01-nature-biomedical-engineering--person:local:clifford-kravit--author-31","type":"authors","title":"Clifford Kravit","description":"Clifford Kravit is an author of Massively scaled-up testing for SARS-CoV-2 RNA via next-generation sequencing of pooled and barcoded nasal and saliva samples.","statement":"Clifford Kravit is an author of Massively scaled-up testing for SARS-CoV-2 RNA via next-generation sequencing of pooled and barcoded nasal and saliva samples.","evidence":[]},{"id":"connection:version:massively-scaled-up-testing-for-sars-cov-2-rna-via-next-generation-sequencing-of-pooled-and-barcoded-nasal-and-saliva-samples--2021-07-01-nature-biomedical-engineering--person:local:aaron-r-cooper--author-32","type":"authors","title":"Aaron R. Cooper","description":"Aaron R. Cooper is an author of Massively scaled-up testing for SARS-CoV-2 RNA via next-generation sequencing of pooled and barcoded nasal and saliva samples.","statement":"Aaron R. Cooper is an author of Massively scaled-up testing for SARS-CoV-2 RNA via next-generation sequencing of pooled and barcoded nasal and saliva samples.","evidence":[]},{"id":"connection:version:massively-scaled-up-testing-for-sars-cov-2-rna-via-next-generation-sequencing-of-pooled-and-barcoded-nasal-and-saliva-samples--2021-07-01-nature-biomedical-engineering--person:local:yi-yin--author-33","type":"authors","title":"Yi Yin","description":"Yi Yin is an author of Massively scaled-up testing for SARS-CoV-2 RNA via next-generation sequencing of pooled and barcoded nasal and saliva samples.","statement":"Yi Yin is an author of Massively scaled-up testing for SARS-CoV-2 RNA via next-generation sequencing of pooled and barcoded nasal and saliva samples.","evidence":[]},{"id":"connection:version:massively-scaled-up-testing-for-sars-cov-2-rna-via-next-generation-sequencing-of-pooled-and-barcoded-nasal-and-saliva-samples--2021-07-01-nature-biomedical-engineering--person:orcid:0000-0002-9164-6231--author-34","type":"authors","title":"Lior Pachter","description":"Lior Pachter is an author of Massively scaled-up testing for SARS-CoV-2 RNA via next-generation sequencing of pooled and barcoded nasal and saliva samples.","statement":"Lior Pachter is an author of Massively scaled-up testing for SARS-CoV-2 RNA via next-generation sequencing of pooled and barcoded nasal and saliva samples.","evidence":[]},{"id":"connection:version:massively-scaled-up-testing-for-sars-cov-2-rna-via-next-generation-sequencing-of-pooled-and-barcoded-nasal-and-saliva-samples--2021-07-01-nature-biomedical-engineering--person:local:omai-b-garner--author-35","type":"authors","title":"Omai B. Garner","description":"Omai B. Garner is an author of Massively scaled-up testing for SARS-CoV-2 RNA via next-generation sequencing of pooled and barcoded nasal and saliva samples.","statement":"Omai B. Garner is an author of Massively scaled-up testing for SARS-CoV-2 RNA via next-generation sequencing of pooled and barcoded nasal and saliva samples.","evidence":[]},{"id":"connection:version:massively-scaled-up-testing-for-sars-cov-2-rna-via-next-generation-sequencing-of-pooled-and-barcoded-nasal-and-saliva-samples--2021-07-01-nature-biomedical-engineering--person:local:jonathan-flint--author-36","type":"authors","title":"Jonathan Flint","description":"Jonathan Flint is an author of Massively scaled-up testing for SARS-CoV-2 RNA via next-generation sequencing of pooled and barcoded nasal and saliva samples.","statement":"Jonathan Flint is an author of Massively scaled-up testing for SARS-CoV-2 RNA via next-generation sequencing of pooled and barcoded nasal and saliva samples.","evidence":[]},{"id":"connection:version:massively-scaled-up-testing-for-sars-cov-2-rna-via-next-generation-sequencing-of-pooled-and-barcoded-nasal-and-saliva-samples--2021-07-01-nature-biomedical-engineering--person:local:eleazar-eskin--author-37","type":"authors","title":"Eleazar Eskin","description":"Eleazar Eskin is an author of Massively scaled-up testing for SARS-CoV-2 RNA via next-generation sequencing of pooled and barcoded nasal and saliva samples.","statement":"Eleazar Eskin is an author of Massively scaled-up testing for SARS-CoV-2 RNA via next-generation sequencing of pooled and barcoded nasal and saliva samples.","evidence":[]},{"id":"connection:version:massively-scaled-up-testing-for-sars-cov-2-rna-via-next-generation-sequencing-of-pooled-and-barcoded-nasal-and-saliva-samples--2021-07-01-nature-biomedical-engineering--person:local:chongyuan-luo--author-38","type":"authors","title":"Chongyuan Luo","description":"Chongyuan Luo is an author of Massively scaled-up testing for SARS-CoV-2 RNA via next-generation sequencing of pooled and barcoded nasal and saliva samples.","statement":"Chongyuan Luo is an author of Massively scaled-up testing for SARS-CoV-2 RNA via next-generation sequencing of pooled and barcoded nasal and saliva samples.","evidence":[]},{"id":"connection:version:massively-scaled-up-testing-for-sars-cov-2-rna-via-next-generation-sequencing-of-pooled-and-barcoded-nasal-and-saliva-samples--2021-07-01-nature-biomedical-engineering--person:orcid:0000-0002-4661-0600--author-39","type":"authors","title":"Sriram Kosuri","description":"Sriram Kosuri is an author of Massively scaled-up testing for SARS-CoV-2 RNA via next-generation sequencing of pooled and barcoded nasal and saliva samples.","statement":"Sriram Kosuri is an author of Massively scaled-up testing for SARS-CoV-2 RNA via next-generation sequencing of pooled and barcoded nasal and saliva samples.","evidence":[]},{"id":"connection:version:massively-scaled-up-testing-for-sars-cov-2-rna-via-next-generation-sequencing-of-pooled-and-barcoded-nasal-and-saliva-samples--2021-07-01-nature-biomedical-engineering--person:orcid:0000-0002-8065-3057--author-40","type":"authors","title":"Leonid Kruglyak","description":"Leonid Kruglyak is an author of Massively scaled-up testing for SARS-CoV-2 RNA via next-generation sequencing of pooled and barcoded nasal and saliva samples.","statement":"Leonid Kruglyak is an author of Massively scaled-up testing for SARS-CoV-2 RNA via next-generation sequencing of pooled and barcoded nasal and saliva samples.","evidence":[]},{"id":"connection:version:massively-scaled-up-testing-for-sars-cov-2-rna-via-next-generation-sequencing-of-pooled-and-barcoded-nasal-and-saliva-samples--2021-07-01-nature-biomedical-engineering--person:orcid:0000-0002-9687-9122--author-41","type":"authors","title":"Valerie A. Arboleda","description":"Valerie A. Arboleda is an author of Massively scaled-up testing for SARS-CoV-2 RNA via next-generation sequencing of pooled and barcoded nasal and saliva samples.","statement":"Valerie A. Arboleda is an author of Massively scaled-up testing for SARS-CoV-2 RNA via next-generation sequencing of pooled and barcoded nasal and saliva samples.","evidence":[]},{"id":"connection:version:massively-scaled-up-testing-for-sars-cov-2-rna-via-next-generation-sequencing-of-pooled-and-barcoded-nasal-and-saliva-samples--2021-07-01-nature-biomedical-engineering--claim:version:massively-scaled-up-testing-for-sars-cov-2-rna-via-next-generation-sequencing-of-pooled-and-barcoded-nasal-and-saliva-samples--2021-07-01-nature-biomedical-engineering--summary-0","type":"claims","title":"Frequent asymptomatic testing can suppress viral transmission, but RT-qPCR capacity, extraction workflows, and cost limi","description":"Frequent asymptomatic testing can suppress viral transmission, but RT-qPCR capacity, extraction workflows, and cost limited population-scale SARS-CoV-2 screening. SwabSeq addresses that bottleneck by combining sample barcodes, end-point RT-PCR, and synthetic RNA standards so pooled sequencing can call thousands of nasal or saliva specimens without RNA extraction. Clinical validation and deployment showed qPCR-comparable performance, extraction-free workflows, and more than 80,000 returned tests with sub-24-hour turnaround.","statement":"This publication contains the target grounded summary claim.","evidence":[{"source":"source:text:document:massively-scaled-up-testing-for-sars-cov-2-rna-via-next-generation-sequencing-of-pooled-and-barcoded-nasal-and-saliva-samples--2021-07-01-nature-biomedical-engineering","span":"Frequent and widespread testing of members of the population who are asymptomatic for severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) is essential for the mitigation of the transmission of the virus.","page":1,"properties":{"document_id":"document:massively-scaled-up-testing-for-sars-cov-2-rna-via-next-generation-sequencing-of-pooled-and-barcoded-nasal-and-saliva-samples--2021-07-01-nature-biomedical-engineering","char_start":940,"char_end":1152}},{"source":"source:text:document:massively-scaled-up-testing-for-sars-cov-2-rna-via-next-generation-sequencing-of-pooled-and-barcoded-nasal-and-saliva-samples--2021-07-01-nature-biomedical-engineering","span":"Here, we show that next-generation sequencing of pooled samples tagged with sample-specific molecular barcodes enables the testing of thousands of nasal or saliva samples for SARS-CoV-2 RNA in a single run without the need for RNA extraction.","page":1,"properties":{"document_id":"document:massively-scaled-up-testing-for-sars-cov-2-rna-via-next-generation-sequencing-of-pooled-and-barcoded-nasal-and-saliva-samples--2021-07-01-nature-biomedical-engineering","char_start":1350,"char_end":1592}},{"source":"source:text:document:massively-scaled-up-testing-for-sars-cov-2-rna-via-next-generation-sequencing-of-pooled-and-barcoded-nasal-and-saliva-samples--2021-07-01-nature-biomedical-engineering","span":"The assay, which we named SwabSeq, incorporates a synthetic RNA standard that facilitates end-point quantification and the calling of true negatives, and that reduces the requirements for automation, purification and sample-to-sample normalization.","page":1,"properties":{"document_id":"document:massively-scaled-up-testing-for-sars-cov-2-rna-via-next-generation-sequencing-of-pooled-and-barcoded-nasal-and-saliva-samples--2021-07-01-nature-biomedical-engineering","char_start":1593,"char_end":1841}},{"source":"source:text:document:massively-scaled-up-testing-for-sars-cov-2-rna-via-next-generation-sequencing-of-pooled-and-barcoded-nasal-and-saliva-samples--2021-07-01-nature-biomedical-engineering","span":"We used SwabSeq to perform 80,000 tests, with an analytical sensitivity and specificity comparable to or better than traditional qPCR tests, in less than two months with turnaround times of less than 24 h.","page":1,"properties":{"document_id":"document:massively-scaled-up-testing-for-sars-cov-2-rna-via-next-generation-sequencing-of-pooled-and-barcoded-nasal-and-saliva-samples--2021-07-01-nature-biomedical-engineering","char_start":1842,"char_end":2047}},{"source":"source:text:document:massively-scaled-up-testing-for-sars-cov-2-rna-via-next-generation-sequencing-of-pooled-and-barcoded-nasal-and-saliva-samples--2021-07-01-nature-biomedical-engineering","span":"We showed 95.3% overall agreement, 90.2% positive percent agreement and 96.3% negative percent agreement across 537 samples.","page":4,"properties":{"document_id":"document:massively-scaled-up-testing-for-sars-cov-2-rna-via-next-generation-sequencing-of-pooled-and-barcoded-nasal-and-saliva-samples--2021-07-01-nature-biomedical-engineering","char_start":2527,"char_end":2651}}]},{"id":"connection:version:massively-scaled-up-testing-for-sars-cov-2-rna-via-next-generation-sequencing-of-pooled-and-barcoded-nasal-and-saliva-samples--2021-07-01-nature-biomedical-engineering--work:massively-scaled-up-testing-for-sars-cov-2-rna-via-next-generation-sequencing-of-pooled-and-barcoded-nasal-and-saliva-samples","type":"versions","title":"Massively scaled-up testing for SARS-CoV-2 RNA via next-generation sequencing of pooled and barcoded nasal and saliva samples","description":"2021-07-01 · Nature Biomedical Engineering","statement":"2021-07-01 is a version of Massively scaled-up testing for SARS-CoV-2 RNA via next-generation sequencing of pooled and barcoded nasal and saliva samples.","evidence":[],"citation":{"doi":"10.1038/s41551-021-00754-5","url":"https://doi.org/10.1038/s41551-021-00754-5","date":"2021-07-01","venue":"Nature Biomedical Engineering","authors":[{"name":"Joshua S. Bloom","orcid":"https://orcid.org/0000-0002-7241-1648"},{"name":"Laila Sathe","orcid":"https://orcid.org/0000-0003-1016-3295"},{"name":"Chetan Munugala","orcid":""},{"name":"Eric M. Jones","orcid":""},{"name":"Molly Gasperini","orcid":""},{"name":"Nathan B. Lubock","orcid":""},{"name":"Fauna Yarza","orcid":"https://orcid.org/0000-0002-2512-6182"},{"name":"Erin M. Thompson","orcid":""},{"name":"Kyle M. Kovary","orcid":""},{"name":"Jimin Park","orcid":""},{"name":"Dawn Marquette","orcid":"https://orcid.org/0000-0002-3964-7683"},{"name":"Stephania Kay","orcid":""},{"name":"Mark Lucas","orcid":""},{"name":"TreQuan Love","orcid":""},{"name":"A. Sina Booeshaghi","orcid":"https://orcid.org/0000-0002-6442-4502"},{"name":"Oliver F. Brandenberg","orcid":""},{"name":"Longhua Guo","orcid":""},{"name":"James Boocock","orcid":""},{"name":"Myles Hochman","orcid":""},{"name":"Scott W. Simpkins","orcid":"https://orcid.org/0000-0002-5997-2838"},{"name":"Isabella Lin","orcid":""},{"name":"Nathan LaPierre","orcid":""},{"name":"Duke Hong","orcid":""},{"name":"Yi Zhang","orcid":""},{"name":"Gabriel Oland","orcid":"https://orcid.org/0000-0002-6941-3060"},{"name":"Bianca Judy Choe","orcid":""},{"name":"Sukantha Chandrasekaran","orcid":""},{"name":"Evann E. Hilt","orcid":""},{"name":"Manish J. Butte","orcid":"https://orcid.org/0000-0002-4490-5595"},{"name":"Robert Damoiseaux","orcid":""},{"name":"Clifford Kravit","orcid":""},{"name":"Aaron R. Cooper","orcid":""},{"name":"Yi Yin","orcid":""},{"name":"Lior Pachter","orcid":"https://orcid.org/0000-0002-9164-6231"},{"name":"Omai B. Garner","orcid":""},{"name":"Jonathan Flint","orcid":""},{"name":"Eleazar Eskin","orcid":""},{"name":"Chongyuan Luo","orcid":""},{"name":"Sriram Kosuri","orcid":"https://orcid.org/0000-0002-4661-0600"},{"name":"Leonid Kruglyak","orcid":"https://orcid.org/0000-0002-8065-3057"},{"name":"Valerie A. Arboleda","orcid":"https://orcid.org/0000-0002-9687-9122"}]},"bibtex":"@article{Bloom_2021,\n  TITLE     = {Massively scaled-up testing for SARS-CoV-2 RNA via next-generation sequencing of pooled and barcoded nasal and saliva samples},\n  VOLUME    = {5},\n  ISSN      = {2157-846X},\n  URL       = {http://dx.doi.org/10.1038/s41551-021-00754-5},\n  DOI       = {10.1038/s41551-021-00754-5},\n  NUMBER    = {7},\n  JOURNAL   = {Nature Biomedical Engineering},\n  PUBLISHER = {Springer Science and Business Media LLC},\n  AUTHOR    = {Bloom, Joshua S. and Sathe, Laila and Munugala, Chetan and Jones, Eric M. and Gasperini, Molly and Lubock, Nathan B. and Yarza, Fauna and Thompson, Erin M. and Kovary, Kyle M. and Park, Jimin and Marquette, Dawn and Kay, Stephania and Lucas, Mark and Love, TreQuan and Sina Booeshaghi, A. and Brandenberg, Oliver F. and Guo, Longhua and Boocock, James and Hochman, Myles and Simpkins, Scott W. and Lin, Isabella and LaPierre, Nathan and Hong, Duke and Zhang, Yi and Oland, Gabriel and Choe, Bianca Judy and Chandrasekaran, Sukantha and Hilt, Evann E. and Butte, Manish J. and Damoiseaux, Robert and Kravit, Clifford and Cooper, Aaron R. and Yin, Yi and Pachter, Lior and Garner, Omai B. and Flint, Jonathan and Eskin, Eleazar and Luo, Chongyuan and Kosuri, Sriram and Kruglyak, Leonid and Arboleda, Valerie A.},\n  YEAR      = {2021},\n  PAGES     = {657-665}\n}"},{"id":"connection:document:massively-scaled-up-testing-for-sars-cov-2-rna-via-next-generation-sequencing-of-pooled-and-barcoded-nasal-and-saliva-samples--2021-07-01-nature-biomedical-engineering--version:massively-scaled-up-testing-for-sars-cov-2-rna-via-next-generation-sequencing-of-pooled-and-barcoded-nasal-and-saliva-samples--2021-07-01-nature-biomedical-engineering","type":"sources","title":"2021-07-01-nature-biomedical-engineering.pdf","description":"This source document provides local provenance for the target publication.","statement":"This source document provides local provenance for the target publication.","evidence":[]}]}</script>
+      <script src="../work-relations.js"></script>
     </article>
   </body>
 </html>

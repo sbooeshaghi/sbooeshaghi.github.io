@@ -17,77 +17,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Single-cell RNA-seq analysis depends on rapidly changing software packages and package versions. This study evaluates how those choices can affect downstream analysis results, emphasizing the need to track computational environments and compare workflows carefully." />
+    <meta name="description" content="Single-cell RNA-seq workflows shape biological interpretation, so reproducible package behavior matters when analyses pass through many algorithmic steps. Widely used tools are often treated as interchangeable, but Seurat/Scanpy choices and version changes can alter outputs from feature selection through differential expression. By comparing package and version effects across the standard pipeline, the article establishes metrics for assessing those differences." />
     <link rel="stylesheet" href="../styles.css" />
-    
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        document.querySelectorAll(".copy-bibtex-button").forEach((button) => {
-          button.addEventListener("click", async () => {
-            const box = button.closest(".bibtex-box");
-            const code = box ? box.querySelector("code") : null;
-            const bibtex = code ? code.textContent : "";
-            const previousText = button.textContent;
-            const markStatus = (text) => {
-              button.textContent = text;
-              window.setTimeout(() => {
-                button.textContent = previousText;
-              }, 1200);
-            };
-            const copyWithSelection = () => {
-              const textarea = document.createElement("textarea");
-              textarea.value = bibtex;
-              textarea.setAttribute("readonly", "");
-              textarea.style.position = "fixed";
-              textarea.style.left = "0";
-              textarea.style.top = "0";
-              textarea.style.width = "1px";
-              textarea.style.height = "1px";
-              textarea.style.opacity = "0";
-              textarea.style.pointerEvents = "none";
-              document.body.appendChild(textarea);
-              textarea.focus({ preventScroll: true });
-              textarea.select();
-              textarea.setSelectionRange(0, textarea.value.length);
-              const copied = document.execCommand("copy");
-              textarea.remove();
-              return copied;
-            };
-
-            try {
-              if (navigator.clipboard && navigator.clipboard.writeText) {
-                await navigator.clipboard.writeText(bibtex);
-                markStatus("Copied");
-                return;
-              }
-
-              if (copyWithSelection()) {
-                markStatus("Copied");
-                return;
-              }
-            } catch {
-              let copied = false;
-
-              try {
-                copied = copyWithSelection();
-              } catch {
-                copied = false;
-              }
-
-              if (copied) {
-                markStatus("Copied");
-                return;
-              }
-            }
-
-            markStatus("Copy failed");
-          });
-        });
-      });
-    </script>
     <title>The impact of package selection and versioning on single-cell RNA-seq analysis | Works | Sina Booeshaghi</title>
   </head>
-  <body>
+  <body class="work-detail-page">
     <nav class="breadcrumb" aria-label="Breadcrumb">
       <a href="../index.html">Home</a>
       <span aria-hidden="true">/</span>
@@ -95,416 +29,71 @@
       <span aria-hidden="true">/</span>
       <span class="breadcrumb-current" title="The impact of package selection and versioning on single-cell RNA-seq analysis">The impact of package selection and versioning on single-cell RN...</span>
     </nav>
-    <article class="work-page">
-      <h1>The impact of package selection and versioning on single-cell RNA-seq analysis</h1>
-      <div class="publication-versions work-versions" aria-label="Work versions">
-        <span class="publication-versions-label">Versions</span>
-        <div class="publication-version-cards">
-          
-        <a
-          class="publication-version-link is-current"
-          href="https://doi.org/10.1016/j.cels.2026.101560"
-          target="_blank"
-          rel="noopener"
-        >
-          <span class="publication-version-title">The impact of package selection and versioning on single-cell RNA-seq analysis</span>
-          <span class="publication-version-detail">Cell Systems · 2026-04</span>
-        </a>
-        <a
-          class="publication-version-link"
-          href="https://doi.org/10.1101/2024.04.04.588111"
-          target="_blank"
-          rel="noopener"
-        >
-          <span class="publication-version-title">The impact of package selection and versioning on single-cell RNA-seq analysis</span>
-          <span class="publication-version-detail">bioRxiv · 2024-04-05</span>
-        </a>
+    <article class="work-page study-graph-page">
+      <section class="study-focus" aria-label="Selected work">
+        <div>
+          <h1>The impact of package selection and versioning on single-cell RNA-seq analysis</h1>
+          <p>Single-cell RNA-seq workflows shape biological interpretation, so reproducible package behavior matters when analyses pass through many algorithmic steps. Widely used tools are often treated as interchangeable, but Seurat/Scanpy choices and version changes can alter outputs from feature selection through differential expression. By comparing package and version effects across the standard pipeline, the article establishes metrics for assessing those differences.</p>
         </div>
-      </div>
-
-      <section>
-        <h2>Summary</h2>
-        <p>Single-cell RNA-seq analysis depends on rapidly changing software packages and package versions. This study evaluates how those choices can affect downstream analysis results, emphasizing the need to track computational environments and compare workflows carefully.</p>
+        <dl class="study-stats">
+          <div>
+            <dt>Citations</dt>
+            <dd>51</dd>
+          </div>
+          <div>
+            <dt>Relations</dt>
+            <dd>17</dd>
+          </div>
+        </dl>
       </section>
 
       
-      <section
-        class="authors-section"
-        data-author-version-count="2"
-      >
-        <h2>Authors</h2>
-        
-        <section
-          class="author-version"
-          data-author-count="11"
-        >
-          <h3>
-            <a href="https://doi.org/10.1016/j.cels.2026.101560" target="_blank" rel="noopener">Cell Systems</a>
-            <time datetime="2026-04">2026-04</time>
-          </h3>
-          <ul class="author-list">
-            
-            <li><a href="https://orcid.org/0000-0003-1400-8479" target="_blank" rel="noopener" title="ORCID">Joseph M. Rich</a></li>
-            <li><a href="https://orcid.org/0000-0002-7092-9427" target="_blank" rel="noopener" title="ORCID">Lambda Moses</a></li>
-            <li><a href="https://orcid.org/0000-0002-1665-7459" target="_blank" rel="noopener" title="ORCID">Pétur Helgi Einarsson</a></li>
-            <li><a href="https://orcid.org/0000-0001-6483-0108" target="_blank" rel="noopener" title="ORCID">Kayla Jackson</a></li>
-            <li><a href="https://orcid.org/0000-0003-1379-2927" target="_blank" rel="noopener" title="ORCID">Laura Luebbert</a></li>
-            <li><a href="https://orcid.org/0000-0002-6442-4502" target="_blank" rel="noopener" title="ORCID">A. Sina Booeshaghi</a></li>
-            <li><a href="https://orcid.org/0009-0005-0779-6923" target="_blank" rel="noopener" title="ORCID">Sindri Antonsson</a></li>
-            <li><a href="https://orcid.org/0000-0002-8359-6705" target="_blank" rel="noopener" title="ORCID">Delaney K. Sullivan</a></li>
-            <li><a href="https://orcid.org/0000-0002-4143-8194" target="_blank" rel="noopener" title="ORCID">Nicolas Bray</a></li>
-            <li><a href="https://orcid.org/0000-0002-8418-6724" target="_blank" rel="noopener" title="ORCID">Páll Melsted</a></li>
-            <li><a href="https://orcid.org/0000-0002-9164-6231" target="_blank" rel="noopener" title="ORCID">Lior Pachter</a></li>
-          </ul>
-        </section>
-        <section
-          class="author-version"
-          data-author-count="11"
-        >
-          <h3>
-            <a href="https://doi.org/10.1101/2024.04.04.588111" target="_blank" rel="noopener">bioRxiv</a>
-            <time datetime="2024-04-05">2024-04-05</time>
-          </h3>
-          <ul class="author-list">
-            
-            <li><a href="https://orcid.org/0000-0003-1400-8479" target="_blank" rel="noopener" title="ORCID">Joseph M Rich</a></li>
-            <li><a href="https://orcid.org/0000-0002-7092-9427" target="_blank" rel="noopener" title="ORCID">Lambda Moses</a></li>
-            <li><a href="https://orcid.org/0000-0002-1665-7459" target="_blank" rel="noopener" title="ORCID">Pétur Helgi Einarsson</a></li>
-            <li><a href="https://orcid.org/0000-0001-6483-0108" target="_blank" rel="noopener" title="ORCID">Kayla Jackson</a></li>
-            <li><a href="https://orcid.org/0000-0003-1379-2927" target="_blank" rel="noopener" title="ORCID">Laura Luebbert</a></li>
-            <li><a href="https://orcid.org/0000-0002-6442-4502" target="_blank" rel="noopener" title="ORCID">A. Sina Booeshaghi</a></li>
-            <li><a href="https://orcid.org/0009-0005-0779-6923" target="_blank" rel="noopener" title="ORCID">Sindri Antonsson</a></li>
-            <li><a href="https://orcid.org/0000-0002-8359-6705" target="_blank" rel="noopener" title="ORCID">Delaney K. Sullivan</a></li>
-            <li><a href="https://orcid.org/0000-0002-4143-8194" target="_blank" rel="noopener" title="ORCID">Nicolas Bray</a></li>
-            <li><a href="https://orcid.org/0000-0002-8418-6724" target="_blank" rel="noopener" title="ORCID">Páll Melsted</a></li>
-            <li><a href="https://orcid.org/0000-0002-9164-6231" target="_blank" rel="noopener" title="ORCID">Lior Pachter</a></li>
-          </ul>
-        </section>
-      </section>
-
-      <section>
-        <h2>BibTeX</h2>
-        
-        <section class="bibtex-entry">
-          <h3>Cell Systems</h3>
-          <div class="bibtex-box">
-            <button
-              class="copy-bibtex-button"
-              type="button"
-              aria-label="Copy BibTeX for Cell Systems"
-            >
-              Copy BibTeX
-            </button>
-            <pre><code>@article{Rich_2026,
-  TITLE     = {The impact of package selection and versioning on single-cell RNA-seq analysis},
-  VOLUME    = {17},
-  ISSN      = {2405-4712},
-  URL       = {http://dx.doi.org/10.1016/j.cels.2026.101560},
-  DOI       = {10.1016/j.cels.2026.101560},
-  NUMBER    = {4},
-  JOURNAL   = {Cell Systems},
-  PUBLISHER = {Elsevier BV},
-  AUTHOR    = {Rich, Joseph M. and Moses, Lambda and Einarsson, Pétur Helgi and Jackson, Kayla and Luebbert, Laura and Booeshaghi, A. Sina and Antonsson, Sindri and Sullivan, Delaney K. and Bray, Nicolas and Melsted, Páll and Pachter, Lior},
-  YEAR      = {2026},
-  PAGES     = {101560}
-}</code></pre>
+      <section class="relationship-inspector" aria-label="Indexed relations" data-work-relations>
+        <section class="relationship-list-panel" aria-label="Relations">
+          <div class="study-section-heading">
+            <h2>Relations</h2>
           </div>
+          <div
+            class="relation-tabs"
+            role="tablist"
+            aria-label="Relation types"
+            data-relation-tabs
+          ></div>
+          <div class="reason-list" data-relation-list></div>
         </section>
-        <section class="bibtex-entry">
-          <h3>bioRxiv</h3>
-          <div class="bibtex-box">
-            <button
-              class="copy-bibtex-button"
-              type="button"
-              aria-label="Copy BibTeX for bioRxiv"
-            >
-              Copy BibTeX
-            </button>
-            <pre><code>@article{Rich_2024,
-  TITLE     = {The impact of package selection and versioning on single-cell RNA-seq analysis},
-  URL       = {http://dx.doi.org/10.1101/2024.04.04.588111},
-  DOI       = {10.1101/2024.04.04.588111},
-  PUBLISHER = {openRxiv},
-  AUTHOR    = {Rich, Joseph M and Moses, Lambda and Einarsson, Pétur Helgi and Jackson, Kayla and Luebbert, Laura and Booeshaghi, A. Sina and Antonsson, Sindri and Sullivan, Delaney K. and Bray, Nicolas and Melsted, Páll and Pachter, Lior},
-  YEAR      = {2024}
-}</code></pre>
-          </div>
-        </section>
-      </section>
 
-      <section>
-        <h2>Citing Works</h2>
-        <p class="citation-source-note">
-          51 citing works found in citation data generated 2026-07-06. Citation relationships are sourced from OpenAlex, Semantic Scholar, Google Scholar.
-        </p>
-        <table class="citation-table">
-          <thead>
-            <tr>
-              <th>Title</th>
-              <th>Year</th>
-              <th>Summary</th>
-            </tr>
-          </thead>
-          <tbody>
-            
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.64898/2026.05.01.722166" target="_blank" rel="noopener">Building computational benchmarks: an Omnibenchmark reimplementation of a single-cell preprocessing pipeline evaluation</a></td>
-              <td class="citation-year"><time datetime="2026">2026</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include analyses, analysis, considerable, downstream, implementation, introduce, particular, pointed.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1016/j.celrep.2026.117407" target="_blank" rel="noopener">Consensus Pituitary Atlas, a scalable resource for annotation, novel marker discovery, and analyses in mouse pituitary gland research.</a></td>
-              <td class="citation-year"><time datetime="2026">2026</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.64898/2026.04.23.720468" target="_blank" rel="noopener">Defining Cell Types through Maximally Informative Biological Atlases</a></td>
-              <td class="citation-year"><time datetime="2026">2026</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include abstractions, aspects, broader, capture, cellular, diversity, labels, remain.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.64898/2026.02.14.705879" target="_blank" rel="noopener">Evaluating Single-Cell Perturbation Response Models Is Far from Straightforward</a></td>
-              <td class="citation-year"><time datetime="2026">2026</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include clustering, consistent, differences, louvain, observed, obtained, prior, reports.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://search.proquest.com/openview/e037d73b36dfe9efdc749a5b2ce18864/1?pq-origsite=gscholar&amp;cbl=18750&amp;diss=y" target="_blank" rel="noopener">From Subjective to Principled Single-Cell Data Analysis: Evaluating Annotation Behavior, Optimizing Integration, and Benchmarking Visualization Pipelines</a></td>
-              <td class="citation-year"><time datetime="2026">2026</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1016/j.gde.2026.102451" target="_blank" rel="noopener">Integrating multiomic layers to decode psychiatric disease mechanisms.</a></td>
-              <td class="citation-year"><time datetime="2026">2026</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1038/s41587-025-02965-6" target="_blank" rel="noopener">Mapping isoforms and regulatory mechanisms from spatial transcriptomics data with SPLISOSM</a></td>
-              <td class="citation-year"><time datetime="2026">2026</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://scholar.google.com/scholar?q=Multi-omic%20and%20Single-Cell%20approaches%20for%20elucidating%20cell%20biology%20and%20pathobiology%20of%20lung%20disease" target="_blank" rel="noopener">Multi-omic and Single-Cell approaches for elucidating cell biology and pathobiology of lung disease</a></td>
-              <td class="citation-year"><time datetime="2026">2026</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/2022.05.06.490859" target="_blank" rel="noopener">Normalization for sampled count data</a></td>
-              <td class="citation-year"><time datetime="2026">2026</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.64898/2026.06.05.730084" target="_blank" rel="noopener">scFAIR Consortium: a decentralized hub for single-cell RNA-Seq data standardization and unification</a></td>
-              <td class="citation-year"><time datetime="2026">2026</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1016/j.insi.2026.100322" target="_blank" rel="noopener">Single-cell landscape of autophagy in the metastatic ovarian tumor microenvironment: A cell-type-specific perspective</a></td>
-              <td class="citation-year"><time datetime="2026">2026</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://tesidottorato.depositolegale.it/handle/20.500.14242/366161" target="_blank" rel="noopener">Sviluppo di metodi efficienti e scalabili per l&#39;analisi di dati omici in biologia del cancro</a></td>
-              <td class="citation-year"><time datetime="2026">2026</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.3389/fimmu.2025.1693784" target="_blank" rel="noopener">Tumor heterogeneity assessment using single-cell RNA sequencing (scRNA-seq): applications in lung cancer for diagnosis and treatment</a></td>
-              <td class="citation-year"><time datetime="2026">2026</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://search.proquest.com/openview/c883f8dc3d4411975c95c8d9e80e98cc/1?pq-origsite=gscholar&amp;cbl=18750&amp;diss=y" target="_blank" rel="noopener">A biophysical approach to normalization and trajectory inference in single-cell RNA sequencing data analysis</a></td>
-              <td class="citation-year"><time datetime="2025">2025</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/2025.05.02.651907" target="_blank" rel="noopener">A computational framework for mapping isoform landscape and regulatory mechanisms from spatial transcriptomics data</a></td>
-              <td class="citation-year"><time datetime="2025">2025</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include additional, biases, common, distort, introduce, observations, pseudo-counts, relationships.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1007/s12311-025-01809-y" target="_blank" rel="noopener">A Gene-Expression Based Comparison of Murine and Human Inhibitory Interneurons in the Cerebellar Cortex and Nuclei</a></td>
-              <td class="citation-year"><time datetime="2025">2025</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1007/978-1-0716-4583-3_11" target="_blank" rel="noopener">An Optimized SPLiT-Seq Protocol for Insects</a></td>
-              <td class="citation-year"><time datetime="2025">2025</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1093/bioinformatics/btag288" target="_blank" rel="noopener">anndataR improves interoperability between R and Python in single-cell transcriptomics</a></td>
-              <td class="citation-year"><time datetime="2025">2025</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include basic, differences, different, ecosystems, functionality, implementation, produce, results.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.3390/cells14171315" target="_blank" rel="noopener">Artificial Intelligence in Ocular Transcriptomics: Applications of Unsupervised and Supervised Learning</a></td>
-              <td class="citation-year"><time datetime="2025">2025</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/2025.10.28.681564" target="_blank" rel="noopener">Benchmarking large-scale single-cell RNA-seq analysis</a></td>
-              <td class="citation-year"><time datetime="2025">2025</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.32388/i17ppm" target="_blank" rel="noopener">CAFE: An Integrated Web App for High-Dimensional Analysis and Visualisation in Spectral Flow Cytometry</a></td>
-              <td class="citation-year"><time datetime="2025">2025</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1093/bioinformatics/btaf176" target="_blank" rel="noopener">CAFE: an integrated web app for high-dimensional analysis and visualization in spectral flow cytometry</a></td>
-              <td class="citation-year"><time datetime="2025">2025</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include calculation, containers, crashes, docker, drawbacks, higher, however, including.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1016/j.celrep.2025.116458" target="_blank" rel="noopener">Combined somatic mutation and transcriptome analysis reveals region-specific differences in clonal architecture in human cortex</a></td>
-              <td class="citation-year"><time datetime="2025">2025</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include seurat, datasets, objects, produced.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/2025.10.28.685060" target="_blank" rel="noopener">Consensus Pituitary Atlas, a scalable resource for annotation, novel marker discovery and analyses in pituitary gland research</a></td>
-              <td class="citation-year"><time datetime="2025">2025</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/2025.04.04.645979" target="_blank" rel="noopener">Dynamic transcriptional heterogeneity in pituitary corticotrophs</a></td>
-              <td class="citation-year"><time datetime="2025">2025</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.14740/wjon2610" target="_blank" rel="noopener">E2F5 Overexpression in Laryngeal Squamous Cell Carcinoma: Associations With Neutrophil Extracellular Traps in the Tumor Microenvironment</a></td>
-              <td class="citation-year"><time datetime="2025">2025</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1093/nargab/lqaf049" target="_blank" rel="noopener">Exploring the latent space of transcriptomic data with topic modeling</a></td>
-              <td class="citation-year"><time datetime="2025">2025</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include different, alternative, approaches, biases, comparable, identify, performances, presence.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1186/s41065-025-00528-y" target="_blank" rel="noopener">Global trends in machine learning applications for single-cell transcriptomics research</a></td>
-              <td class="citation-year"><time datetime="2025">2025</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include analysis, assist, developed, interactively, online, perform, platforms, result.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1146/annurev-biodatasci-101424-121439" target="_blank" rel="noopener">Mapping, Modeling, and Reprogramming Cell-Fate Decision-Making Systems</a></td>
-              <td class="citation-year"><time datetime="2025">2025</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.5306/wjco.v16.i7.108666" target="_blank" rel="noopener">Nitidine chloride may mediate its antitumor effects by targeting kinesin family member 20A in colorectal cancer cells</a></td>
-              <td class="citation-year"><time datetime="2025">2025</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/2025.08.20.671270" target="_blank" rel="noopener">On the benchmarking of clustering algorithms and hyperparameter influence for cell type detection in single-cell RNA sequencing data</a></td>
-              <td class="citation-year"><time datetime="2025">2025</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include algorithm, described, differs, implementation, important, louvain, scanpy, seurat.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.48550/arxiv.2509.03761" target="_blank" rel="noopener">Optimizing alluvial plots</a></td>
-              <td class="citation-year"><time datetime="2025">2025</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include greedy, problem, alluvial, bipartite, clustering, compare, considered, described.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.3389/fbinf.2025.1554010" target="_blank" rel="noopener">Primer on machine learning applications in brain immunology</a></td>
-              <td class="citation-year"><time datetime="2025">2025</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/2025.02.03.636129" target="_blank" rel="noopener">Principled PCA separates signal from noise in omics count data</a></td>
-              <td class="citation-year"><time datetime="2025">2025</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include biological, discoveries, erences, example, experiment, false, interpretations, noise.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1080/16078454.2025.2452701" target="_blank" rel="noopener">Prognostic significance of neutrophil extracellular trap-related genes in childhood acute lymphoblastic leukemia: insights from multi-omics and in vitro experiment</a></td>
-              <td class="citation-year"><time datetime="2025">2025</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include createseuratobject, filter, function, package, preprocess, seurat.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1021/acs.jproteome.5c00178" target="_blank" rel="noopener">PSCS: Unified Sharing of Single-Cell Omics Data, Analyses, and Results</a></td>
-              <td class="citation-year"><time datetime="2025">2025</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/2025.05.11.653354" target="_blank" rel="noopener">Pseudoassembly of k-mers</a></td>
-              <td class="citation-year"><time datetime="2025">2025</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include scanpy, analysis, component, constructed, coordinates, default, genes, graphs.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1093/bioadv/vbaf321" target="_blank" rel="noopener">REDAC: RNA-seq expression data analysis chatbot</a></td>
-              <td class="citation-year"><time datetime="2025">2025</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include analysis, seurat, spatial, addition, address, analytical, demands, expression.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1177/18758592251390255" target="_blank" rel="noopener">The overexpression of HOXC6 in LUSC and pan-squamous cell carcinomas indicates the coexistence of nuclear division regulatory mechanisms</a></td>
-              <td class="citation-year"><time datetime="2025">2025</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/2025.04.09.648005" target="_blank" rel="noopener">Unexpected XIST Expression in Male Hearts Associates with Disease</a></td>
-              <td class="citation-year"><time datetime="2025">2025</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include addition, arbitrary, assignment, choices, control, differences, drastic, highly.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1093/nar/gkae1137" target="_blank" rel="noopener">Accurate quantification of nascent and mature RNAs from single-cell and single-nucleus RNA-seq</a></td>
-              <td class="citation-year"><time datetime="2024">2024</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include analysis, count, different, matrices, affect, approach, clustering, described.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1093/nar/gkae552" target="_blank" rel="noopener">Assessing the impact of transcriptomics data analysis pipelines on downstream functional enrichment results</a></td>
-              <td class="citation-year"><time datetime="2024">2024</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1186/s13059-024-03304-9" target="_blank" rel="noopener">Beyond benchmarking and towards predictive models of dataset-specific single-cell RNA-seq pipeline performance</a></td>
-              <td class="citation-year"><time datetime="2024">2024</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include analysis, approximate, consistent, doubt, extent, pipelines, python, r-based.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1371/journal.pcbi.1013658" target="_blank" rel="noopener">Building a continuous benchmarking ecosystem in bioinformatics</a></td>
-              <td class="citation-year"><time datetime="2024">2024</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include method, alternative, cases, changes, compared, however, illustrate, imagine.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/2024.12.03.626714" target="_blank" rel="noopener">CAFE: An Integrated Web App for High-Dimensional Analysis and Visualization in Spectral Flow Cytometry</a></td>
-              <td class="citation-year"><time datetime="2024">2024</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/2024.12.20.629764" target="_blank" rel="noopener">Comparison and evaluation of methods to infer gene regulatory networks from multimodal single-cell data</a></td>
-              <td class="citation-year"><time datetime="2024">2024</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/2024.07.30.605714" target="_blank" rel="noopener">Distributed Collaboration for Data, Analysis Pipelines, and Results in Single-Cell Omics</a></td>
-              <td class="citation-year"><time datetime="2024">2024</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/2024.08.10.607413" target="_blank" rel="noopener">Impacts of Cell Ranger versions on Chromium gene expression data</a></td>
-              <td class="citation-year"><time datetime="2024">2024</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/2024.08.13.607508" target="_blank" rel="noopener">Single-Molecule Barcoding Technology for Single-Cell Genomics</a></td>
-              <td class="citation-year"><time datetime="2024">2024</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1093/noajnl/vdae218" target="_blank" rel="noopener">Sonic hedgehog medulloblastoma cells in co-culture with cerebellar organoids converge towards in vivo malignant cell states</a></td>
-              <td class="citation-year"><time datetime="2024">2024</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include models, patient, tumors, better, co-culture, confirming, conventional, corrects.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://www.diva-portal.org/smash/record.jsf?pid=diva2:1905206" target="_blank" rel="noopener">Spatial analysis of tissue transcriptomes in health and disease</a></td>
-              <td class="citation-year"><time datetime="2024">2024</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-          </tbody>
-        </table>
+        <aside class="evidence-panel relationship-detail" aria-live="polite">
+          <span class="study-label" data-relation-label>Relation</span>
+          <h2 data-relation-title></h2>
+          <p class="selected-relation-statement" data-relation-statement></p>
+          <section class="version-citation" data-version-citation hidden>
+            <h3>Citation</h3>
+            <div class="bibtex-box">
+              <button class="copy-bibtex-button" type="button" data-copy-bibtex>
+                Copy BibTeX
+              </button>
+              <pre><code data-bibtex-code></code></pre>
+            </div>
+          </section>
+          <details class="relationship-evidence" data-relation-evidence>
+            <summary>
+              <span>Evidence</span>
+              <span class="evidence-summary" data-evidence-summary></span>
+            </summary>
+            <table class="relationship-evidence-table">
+              <thead>
+                <tr>
+                  <th>Span</th>
+                  <th>Source</th>
+                </tr>
+              </thead>
+              <tbody data-evidence-rows></tbody>
+            </table>
+          </details>
+        </aside>
       </section>
+      <script id="workRelationData" type="application/json">{"work":{"id":"work:the-impact-of-package-selection-and-versioning-on-single-cell-rna-seq-analysis","title":"The impact of package selection and versioning on single-cell RNA-seq analysis","description":"Single-cell RNA-seq workflows shape biological interpretation, so reproducible package behavior matters when analyses pass through many algorithmic steps. Widely used tools are often treated as interchangeable, but Seurat/Scanpy choices and version changes can alter outputs from feature selection through differential expression. By comparing package and version effects across the standard pipeline, the article establishes metrics for assessing those differences."},"relationTypes":[{"id":"authors","label":"Authors"},{"id":"claims","label":"Claims"},{"id":"citations","label":"Citations"},{"id":"versions","label":"Versions"},{"id":"software","label":"Software"},{"id":"sources","label":"Sources"}],"connections":[{"id":"connection:version:the-impact-of-package-selection-and-versioning-on-single-cell-rna-seq-analysis--2024-04-05-biorxiv--person:orcid:0000-0003-1400-8479--author-1","type":"authors","title":"Joseph M. Rich","description":"Joseph M Rich is an author of The impact of package selection and versioning on single-cell RNA-seq analysis.","statement":"Joseph M Rich is an author of The impact of package selection and versioning on single-cell RNA-seq analysis.","evidence":[]},{"id":"connection:version:the-impact-of-package-selection-and-versioning-on-single-cell-rna-seq-analysis--2024-04-05-biorxiv--person:orcid:0000-0002-7092-9427--author-2","type":"authors","title":"Lambda Moses","description":"Lambda Moses is an author of The impact of package selection and versioning on single-cell RNA-seq analysis.","statement":"Lambda Moses is an author of The impact of package selection and versioning on single-cell RNA-seq analysis.","evidence":[]},{"id":"connection:version:the-impact-of-package-selection-and-versioning-on-single-cell-rna-seq-analysis--2024-04-05-biorxiv--person:orcid:0000-0002-1665-7459--author-3","type":"authors","title":"Pétur Helgi Einarsson","description":"Pétur Helgi Einarsson is an author of The impact of package selection and versioning on single-cell RNA-seq analysis.","statement":"Pétur Helgi Einarsson is an author of The impact of package selection and versioning on single-cell RNA-seq analysis.","evidence":[]},{"id":"connection:version:the-impact-of-package-selection-and-versioning-on-single-cell-rna-seq-analysis--2024-04-05-biorxiv--person:orcid:0000-0001-6483-0108--author-4","type":"authors","title":"Kayla Jackson","description":"Kayla Jackson is an author of The impact of package selection and versioning on single-cell RNA-seq analysis.","statement":"Kayla Jackson is an author of The impact of package selection and versioning on single-cell RNA-seq analysis.","evidence":[]},{"id":"connection:version:the-impact-of-package-selection-and-versioning-on-single-cell-rna-seq-analysis--2024-04-05-biorxiv--person:orcid:0000-0003-1379-2927--author-5","type":"authors","title":"Laura Luebbert","description":"Laura Luebbert is an author of The impact of package selection and versioning on single-cell RNA-seq analysis.","statement":"Laura Luebbert is an author of The impact of package selection and versioning on single-cell RNA-seq analysis.","evidence":[]},{"id":"connection:version:the-impact-of-package-selection-and-versioning-on-single-cell-rna-seq-analysis--2024-04-05-biorxiv--person:orcid:0000-0002-6442-4502--author-6","type":"authors","title":"A. Sina Booeshaghi","description":"A. Sina Booeshaghi is an author of The impact of package selection and versioning on single-cell RNA-seq analysis.","statement":"A. Sina Booeshaghi is an author of The impact of package selection and versioning on single-cell RNA-seq analysis.","evidence":[]},{"id":"connection:version:the-impact-of-package-selection-and-versioning-on-single-cell-rna-seq-analysis--2024-04-05-biorxiv--person:orcid:0009-0005-0779-6923--author-7","type":"authors","title":"Sindri Antonsson","description":"Sindri Antonsson is an author of The impact of package selection and versioning on single-cell RNA-seq analysis.","statement":"Sindri Antonsson is an author of The impact of package selection and versioning on single-cell RNA-seq analysis.","evidence":[]},{"id":"connection:version:the-impact-of-package-selection-and-versioning-on-single-cell-rna-seq-analysis--2024-04-05-biorxiv--person:orcid:0000-0002-8359-6705--author-8","type":"authors","title":"Delaney K. Sullivan","description":"Delaney K. Sullivan is an author of The impact of package selection and versioning on single-cell RNA-seq analysis.","statement":"Delaney K. Sullivan is an author of The impact of package selection and versioning on single-cell RNA-seq analysis.","evidence":[]},{"id":"connection:version:the-impact-of-package-selection-and-versioning-on-single-cell-rna-seq-analysis--2024-04-05-biorxiv--person:orcid:0000-0002-4143-8194--author-9","type":"authors","title":"Nicolas Bray","description":"Nicolas Bray is an author of The impact of package selection and versioning on single-cell RNA-seq analysis.","statement":"Nicolas Bray is an author of The impact of package selection and versioning on single-cell RNA-seq analysis.","evidence":[]},{"id":"connection:version:the-impact-of-package-selection-and-versioning-on-single-cell-rna-seq-analysis--2024-04-05-biorxiv--person:orcid:0000-0002-8418-6724--author-10","type":"authors","title":"Páll Melsted","description":"Páll Melsted is an author of The impact of package selection and versioning on single-cell RNA-seq analysis.","statement":"Páll Melsted is an author of The impact of package selection and versioning on single-cell RNA-seq analysis.","evidence":[]},{"id":"connection:version:the-impact-of-package-selection-and-versioning-on-single-cell-rna-seq-analysis--2024-04-05-biorxiv--person:orcid:0000-0002-9164-6231--author-11","type":"authors","title":"Lior Pachter","description":"Lior Pachter is an author of The impact of package selection and versioning on single-cell RNA-seq analysis.","statement":"Lior Pachter is an author of The impact of package selection and versioning on single-cell RNA-seq analysis.","evidence":[]},{"id":"connection:version:the-impact-of-package-selection-and-versioning-on-single-cell-rna-seq-analysis--2024-04-05-biorxiv--claim:version:the-impact-of-package-selection-and-versioning-on-single-cell-rna-seq-analysis--2024-04-05-biorxiv--summary-0","type":"claims","title":"Single-cell RNA-seq analyses increasingly depend on shared software defaults, making package behavior a reproducibility ","description":"Single-cell RNA-seq analyses increasingly depend on shared software defaults, making package behavior a reproducibility issue rather than a cosmetic implementation detail. The challenge is that Seurat, Scanpy, Cell Ranger, and their versions can differ even when workflows appear similar. Quantifying package, version, and downsampling effects provides methods for comparing pipeline steps from filtering to differential expression.","statement":"This publication contains the target grounded summary claim.","evidence":[{"source":"source:text:document:the-impact-of-package-selection-and-versioning-on-single-cell-rna-seq-analysis--2024-04-05-biorxiv","span":"Our analysis highlights the need for users of scRNA-seq to carefully assess the tools on which they rely, and the importance of developers of scientific software to prioritize transparency, consistency, and reproducibility for their tools.","page":2,"properties":{"document_id":"document:the-impact-of-package-selection-and-versioning-on-single-cell-rna-seq-analysis--2024-04-05-biorxiv","char_start":1377,"char_end":1616}},{"source":"source:text:document:the-impact-of-package-selection-and-versioning-on-single-cell-rna-seq-analysis--2024-04-05-biorxiv","span":"The goal of this study is to quantify the variability in the standard scRNA-seq pipeline between packages (i.e., Seurat vs. Scanpy) and between multiple versions of the same package (i.e., Seurat v5 vs. v4, Scanpy v1.9 vs. v1.4, Cell Ranger v7 vs. v6).","page":4,"properties":{"document_id":"document:the-impact-of-package-selection-and-versioning-on-single-cell-rna-seq-analysis--2024-04-05-biorxiv","char_start":2904,"char_end":3156}},{"source":"source:text:document:the-impact-of-package-selection-and-versioning-on-single-cell-rna-seq-analysis--2024-04-05-biorxiv","span":"Comparing Seurat v5 to v4, there were sizeable differences in sets of significant marker genes, markers, and logFC estimates (Fig 3a-b).","page":11,"properties":{"document_id":"document:the-impact-of-package-selection-and-versioning-on-single-cell-rna-seq-analysis--2024-04-05-biorxiv","char_start":538,"char_end":674}},{"source":"source:text:document:the-impact-of-package-selection-and-versioning-on-single-cell-rna-seq-analysis--2024-04-05-biorxiv","span":"In conclusion, we establish a series of methods for assessing the similarity in function of each step of a standard scRNA-seq analysis pipeline from filtering to DE.","page":26,"properties":{"document_id":"document:the-impact-of-package-selection-and-versioning-on-single-cell-rna-seq-analysis--2024-04-05-biorxiv","char_start":352,"char_end":517}}]},{"id":"connection:version:the-impact-of-package-selection-and-versioning-on-single-cell-rna-seq-analysis--2026-04-cell-systems--claim:version:the-impact-of-package-selection-and-versioning-on-single-cell-rna-seq-analysis--2026-04-cell-systems--summary-0","type":"claims","title":"Single-cell RNA-seq workflows shape biological interpretation, so reproducible package behavior matters when analyses pa","description":"Single-cell RNA-seq workflows shape biological interpretation, so reproducible package behavior matters when analyses pass through many algorithmic steps. Widely used tools are often treated as interchangeable, but Seurat/Scanpy choices and version changes can alter outputs from feature selection through differential expression. By comparing package and version effects across the standard pipeline, the article establishes metrics for assessing those differences.","statement":"This publication contains the target grounded summary claim.","evidence":[{"source":"source:text:document:the-impact-of-package-selection-and-versioning-on-single-cell-rna-seq-analysis--2026-04-cell-systems","span":"Here, we examine the underlying algorithms of both packages and show that their outputs differ substantially across multiple analytic steps.","page":2,"properties":{"document_id":"document:the-impact-of-package-selection-and-versioning-on-single-cell-rna-seq-analysis--2026-04-cell-systems","char_start":1406,"char_end":1546}},{"source":"source:text:document:the-impact-of-package-selection-and-versioning-on-single-cell-rna-seq-analysis--2026-04-cell-systems","span":"Comparing Seurat v5 with v4, there were sizable differences in sets of significant marker genes, markers, and logFC estimates (p \u003c 0:001) (Figures 3A and 3B).","page":6,"properties":{"document_id":"document:the-impact-of-package-selection-and-versioning-on-single-cell-rna-seq-analysis--2026-04-cell-systems","char_start":4857,"char_end":5015}},{"source":"source:text:document:the-impact-of-package-selection-and-versioning-on-single-cell-rna-seq-analysis--2026-04-cell-systems","span":"In conclusion, we establish a series of methods for assessing the similarity in function of each step of a standard scRNA-seq analysis pipeline from filtering to DE.","page":16,"properties":{"document_id":"document:the-impact-of-package-selection-and-versioning-on-single-cell-rna-seq-analysis--2026-04-cell-systems","char_start":4149,"char_end":4314}},{"source":"source:text:document:the-impact-of-package-selection-and-versioning-on-single-cell-rna-seq-analysis--2026-04-cell-systems","span":"Our findings underscore the need for users to critically evaluate analysis tools and for developers to prioritize transparency and reproducibility.","page":2,"properties":{"document_id":"document:the-impact-of-package-selection-and-versioning-on-single-cell-rna-seq-analysis--2026-04-cell-systems","char_start":1815,"char_end":1962}}]},{"id":"connection:version:the-impact-of-package-selection-and-versioning-on-single-cell-rna-seq-analysis--2026-04-cell-systems--work:the-impact-of-package-selection-and-versioning-on-single-cell-rna-seq-analysis","type":"versions","title":"The impact of package selection and versioning on single-cell RNA-seq analysis","description":"2026-04 · Cell Systems","statement":"2026-04 is a version of The impact of package selection and versioning on single-cell RNA-seq analysis.","evidence":[],"citation":{"doi":"10.1016/j.cels.2026.101560","url":"https://doi.org/10.1016/j.cels.2026.101560","date":"2026-04","venue":"Cell Systems","authors":[{"name":"Joseph M. Rich","orcid":"https://orcid.org/0000-0003-1400-8479"},{"name":"Lambda Moses","orcid":"https://orcid.org/0000-0002-7092-9427"},{"name":"Pétur Helgi Einarsson","orcid":"https://orcid.org/0000-0002-1665-7459"},{"name":"Kayla Jackson","orcid":"https://orcid.org/0000-0001-6483-0108"},{"name":"Laura Luebbert","orcid":"https://orcid.org/0000-0003-1379-2927"},{"name":"A. Sina Booeshaghi","orcid":"https://orcid.org/0000-0002-6442-4502"},{"name":"Sindri Antonsson","orcid":"https://orcid.org/0009-0005-0779-6923"},{"name":"Delaney K. Sullivan","orcid":"https://orcid.org/0000-0002-8359-6705"},{"name":"Nicolas Bray","orcid":"https://orcid.org/0000-0002-4143-8194"},{"name":"Páll Melsted","orcid":"https://orcid.org/0000-0002-8418-6724"},{"name":"Lior Pachter","orcid":"https://orcid.org/0000-0002-9164-6231"}]},"bibtex":"@article{Rich_2026,\n  TITLE     = {The impact of package selection and versioning on single-cell RNA-seq analysis},\n  VOLUME    = {17},\n  ISSN      = {2405-4712},\n  URL       = {http://dx.doi.org/10.1016/j.cels.2026.101560},\n  DOI       = {10.1016/j.cels.2026.101560},\n  NUMBER    = {4},\n  JOURNAL   = {Cell Systems},\n  PUBLISHER = {Elsevier BV},\n  AUTHOR    = {Rich, Joseph M. and Moses, Lambda and Einarsson, Pétur Helgi and Jackson, Kayla and Luebbert, Laura and Booeshaghi, A. Sina and Antonsson, Sindri and Sullivan, Delaney K. and Bray, Nicolas and Melsted, Páll and Pachter, Lior},\n  YEAR      = {2026},\n  PAGES     = {101560}\n}"},{"id":"connection:version:the-impact-of-package-selection-and-versioning-on-single-cell-rna-seq-analysis--2024-04-05-biorxiv--work:the-impact-of-package-selection-and-versioning-on-single-cell-rna-seq-analysis","type":"versions","title":"The impact of package selection and versioning on single-cell RNA-seq analysis","description":"2024-04-05 · bioRxiv","statement":"2024-04-05 is a version of The impact of package selection and versioning on single-cell RNA-seq analysis.","evidence":[],"citation":{"doi":"10.1101/2024.04.04.588111","url":"https://doi.org/10.1101/2024.04.04.588111","date":"2024-04-05","venue":"bioRxiv","authors":[{"name":"Joseph M Rich","orcid":"https://orcid.org/0000-0003-1400-8479"},{"name":"Lambda Moses","orcid":"https://orcid.org/0000-0002-7092-9427"},{"name":"Pétur Helgi Einarsson","orcid":"https://orcid.org/0000-0002-1665-7459"},{"name":"Kayla Jackson","orcid":"https://orcid.org/0000-0001-6483-0108"},{"name":"Laura Luebbert","orcid":"https://orcid.org/0000-0003-1379-2927"},{"name":"A. Sina Booeshaghi","orcid":"https://orcid.org/0000-0002-6442-4502"},{"name":"Sindri Antonsson","orcid":"https://orcid.org/0009-0005-0779-6923"},{"name":"Delaney K. Sullivan","orcid":"https://orcid.org/0000-0002-8359-6705"},{"name":"Nicolas Bray","orcid":"https://orcid.org/0000-0002-4143-8194"},{"name":"Páll Melsted","orcid":"https://orcid.org/0000-0002-8418-6724"},{"name":"Lior Pachter","orcid":"https://orcid.org/0000-0002-9164-6231"}]},"bibtex":"@article{Rich_2024,\n  TITLE     = {The impact of package selection and versioning on single-cell RNA-seq analysis},\n  URL       = {http://dx.doi.org/10.1101/2024.04.04.588111},\n  DOI       = {10.1101/2024.04.04.588111},\n  PUBLISHER = {openRxiv},\n  AUTHOR    = {Rich, Joseph M and Moses, Lambda and Einarsson, Pétur Helgi and Jackson, Kayla and Luebbert, Laura and Booeshaghi, A. Sina and Antonsson, Sindri and Sullivan, Delaney K. and Bray, Nicolas and Melsted, Páll and Pachter, Lior},\n  YEAR      = {2024}\n}"},{"id":"connection:document:the-impact-of-package-selection-and-versioning-on-single-cell-rna-seq-analysis--2024-04-05-biorxiv--version:the-impact-of-package-selection-and-versioning-on-single-cell-rna-seq-analysis--2024-04-05-biorxiv","type":"sources","title":"2024-04-05-biorxiv.pdf","description":"This source document provides local provenance for the target publication.","statement":"This source document provides local provenance for the target publication.","evidence":[]},{"id":"connection:document:the-impact-of-package-selection-and-versioning-on-single-cell-rna-seq-analysis--2026-04-cell-systems--version:the-impact-of-package-selection-and-versioning-on-single-cell-rna-seq-analysis--2026-04-cell-systems","type":"sources","title":"2026-04-cell-systems.pdf","description":"This source document provides local provenance for the target publication.","statement":"This source document provides local provenance for the target publication.","evidence":[]}]}</script>
+      <script src="../work-relations.js"></script>
     </article>
   </body>
 </html>

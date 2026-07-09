@@ -2,25 +2,24 @@ import { execFileSync } from "node:child_process";
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { createWorkRelationProjector } from "./lib/work-relation-view.mjs";
 
 const scriptDir = path.dirname(fileURLToPath(import.meta.url));
 const rootDir = path.resolve(scriptDir, "..");
 const publicationsPath = path.join(rootDir, "db", "publications.json");
 const citedByPath = path.join(rootDir, "db", "cited-by.json");
-const publicationAuthorsPath = path.join(
-  rootDir,
-  "db",
-  "publication-authors.json"
-);
+const resourceIndexPath = path.join(rootDir, "db", "resource-index.json");
 const worksDir = path.join(rootDir, "works");
 
 const publications = JSON.parse(fs.readFileSync(publicationsPath, "utf8"));
 const citedByData = fs.existsSync(citedByPath)
   ? JSON.parse(fs.readFileSync(citedByPath, "utf8"))
   : { works: {} };
-const publicationAuthorsData = fs.existsSync(publicationAuthorsPath)
-  ? JSON.parse(fs.readFileSync(publicationAuthorsPath, "utf8"))
-  : { works: {} };
+const resourceIndex = fs.existsSync(resourceIndexPath)
+  ? JSON.parse(fs.readFileSync(resourceIndexPath, "utf8"))
+  : { objects: [], connections: [], sources: [] };
+const projectWorkRelations = createWorkRelationProjector(resourceIndex);
+const skipDoi2Bib = process.env.SKIP_DOI2BIB === "1";
 
 function escapeHTML(value) {
   return String(value)
@@ -49,51 +48,64 @@ function truncateBreadcrumbLabel(value, maxLength = 64) {
   return `${value.slice(0, maxLength).trimEnd()}...`;
 }
 
+function serializeJSONForHTML(value) {
+  return JSON.stringify(value)
+    .replace(/</g, "\\u003c")
+    .replace(/\u2028/g, "\\u2028")
+    .replace(/\u2029/g, "\\u2029");
+}
+
 function doiFromURL(value) {
-  return String(value).replace(/^https?:\/\/(?:dx\.)?doi\.org\//i, "");
+  const match = String(value || "").match(/(10\.\d{4,9}\/[^?#\s]+)/i);
+  return match
+    ? match[1]
+        .replace(/v\d+$/i, "")
+        .replace(/\.(?:abstract|full|full\.pdf)$/i, "")
+        .toLowerCase()
+    : "";
 }
 
-function citationLink(citation) {
-  return citation.link || "";
-}
-
-function doiLink(doi) {
-  return `https://doi.org/${doiFromURL(doi)}`;
-}
-
-function publicationVersions(publication) {
-  return [...(publication.versions || publication.links || [])].sort((a, b) =>
-    String(b.date).localeCompare(String(a.date))
-  );
-}
-
-function versionHref(version) {
-  return version.url || version.doi || "";
-}
-
-function fallbackBibTeX(link, publication, index) {
-  const key = `${slugify(publication.title).replace(/-/g, "_")}_${index + 1}`;
-  return [
+function versionBibTeX(version, index) {
+  const citation = version.citation || {};
+  const keyParts = [version.title, citation.date || index + 1].filter(Boolean);
+  const key = slugify(keyParts.join(" ")).replace(/-/g, "_");
+  const authors = (citation.authors || []).map((author) => author.name).filter(Boolean);
+  const fields = [
     `@misc{${key},`,
-    `  title = {${publication.title}},`,
-    `  doi = {${doiFromURL(link.doi)}},`,
-    `  url = {${link.doi}},`,
-    `  year = {${link.date.slice(0, 4)}}`,
+    `  title = {${version.title}},`,
+    authors.length ? `  author = {${authors.join(" and ")}},` : "",
+    citation.date ? `  year = {${citation.date.slice(0, 4)}},` : "",
+    citation.doi ? `  doi = {${citation.doi}},` : "",
+    citation.url ? `  url = {${citation.url}},` : "",
+    citation.venue || citation.date
+      ? `  note = {${[citation.venue, citation.date].filter(Boolean).join(", ")}}`
+      : "",
     "}",
-  ].join("\n");
+  ].filter(Boolean);
+  return fields.join("\n");
 }
 
-function fetchBibTeX(link, publication, index) {
-  const doi = doiFromURL(link.doi);
+const bibTeXByDoi = new Map();
+
+function fetchVersionBibTeX(version, index, sharedDoi) {
+  const doi = version.citation?.doi || doiFromURL(version.citation?.url);
+
+  if (!doi || sharedDoi || skipDoi2Bib) {
+    return versionBibTeX(version, index);
+  }
+
+  if (bibTeXByDoi.has(doi)) return bibTeXByDoi.get(doi);
 
   try {
-    return execFileSync("doi2bib", [doi], {
+    const bibtex = execFileSync("doi2bib", [doi], {
       encoding: "utf8",
       stdio: ["ignore", "pipe", "pipe"],
       timeout: 30000,
     }).trim();
+    bibTeXByDoi.set(doi, bibtex);
+    return bibtex;
   } catch {
-    return fallbackBibTeX(link, publication, index);
+    return versionBibTeX(version, index);
   }
 }
 
@@ -113,233 +125,74 @@ function googleTag() {
     </script>`;
 }
 
-function bibTeXCopyScript() {
-  return `
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        document.querySelectorAll(".copy-bibtex-button").forEach((button) => {
-          button.addEventListener("click", async () => {
-            const box = button.closest(".bibtex-box");
-            const code = box ? box.querySelector("code") : null;
-            const bibtex = code ? code.textContent : "";
-            const previousText = button.textContent;
-            const markStatus = (text) => {
-              button.textContent = text;
-              window.setTimeout(() => {
-                button.textContent = previousText;
-              }, 1200);
-            };
-            const copyWithSelection = () => {
-              const textarea = document.createElement("textarea");
-              textarea.value = bibtex;
-              textarea.setAttribute("readonly", "");
-              textarea.style.position = "fixed";
-              textarea.style.left = "0";
-              textarea.style.top = "0";
-              textarea.style.width = "1px";
-              textarea.style.height = "1px";
-              textarea.style.opacity = "0";
-              textarea.style.pointerEvents = "none";
-              document.body.appendChild(textarea);
-              textarea.focus({ preventScroll: true });
-              textarea.select();
-              textarea.setSelectionRange(0, textarea.value.length);
-              const copied = document.execCommand("copy");
-              textarea.remove();
-              return copied;
-            };
+function addVersionBibTeX(relationData) {
+  const versions = relationData.connections.filter((connection) => connection.type === "versions");
+  const doiCounts = versions.reduce((counts, version) => {
+    const doi = version.citation?.doi || doiFromURL(version.citation?.url);
+    if (doi) counts.set(doi, (counts.get(doi) || 0) + 1);
+    return counts;
+  }, new Map());
 
-            try {
-              if (navigator.clipboard && navigator.clipboard.writeText) {
-                await navigator.clipboard.writeText(bibtex);
-                markStatus("Copied");
-                return;
-              }
-
-              if (copyWithSelection()) {
-                markStatus("Copied");
-                return;
-              }
-            } catch {
-              let copied = false;
-
-              try {
-                copied = copyWithSelection();
-              } catch {
-                copied = false;
-              }
-
-              if (copied) {
-                markStatus("Copied");
-                return;
-              }
-            }
-
-            markStatus("Copy failed");
-          });
-        });
-      });
-    </script>`;
-}
-
-function renderLinks(publication) {
-  return publicationVersions(publication)
-    .map((version, versionIndex) => {
-      const detail = [version.name, version.date].filter(Boolean).join(" · ");
-
-      return `
-        <a
-          class="publication-version-link${
-            versionIndex === 0 ? " is-current" : ""
-          }"
-          href="${escapeHTML(versionHref(version))}"
-          target="_blank"
-          rel="noopener"
-        >
-          <span class="publication-version-title">${escapeHTML(
-            version.title || publication.title
-          )}</span>
-          ${
-            detail
-              ? `<span class="publication-version-detail">${escapeHTML(
-                  detail
-                )}</span>`
-              : ""
-          }
-        </a>`;
-    })
-    .join("");
-}
-
-function renderBibTeX(publication) {
-  return publication.links
-    .map((link, index) => {
-      const bibtex = fetchBibTeX(link, publication, index);
-
-      return `
-        <section class="bibtex-entry">
-          <h3>${escapeHTML(link.name)}</h3>
-          <div class="bibtex-box">
-            <button
-              class="copy-bibtex-button"
-              type="button"
-              aria-label="Copy BibTeX for ${escapeHTML(link.name)}"
-            >
-              Copy BibTeX
-            </button>
-            <pre><code>${escapeHTML(bibtex)}</code></pre>
-          </div>
-        </section>`;
-    })
-    .join("");
-}
-
-function authorVersions(slug) {
-  return publicationAuthorsData.works?.[slug]?.versions || [];
-}
-
-function renderAuthor(author) {
-  const name = escapeHTML(author.name);
-
-  if (!author.orcid) {
-    return name;
-  }
-
-  return `<a href="${escapeHTML(
-    author.orcid
-  )}" target="_blank" rel="noopener" title="ORCID">${name}</a>`;
-}
-
-function renderAuthors(slug) {
-  const versions = authorVersions(slug);
-
-  if (!versions.length) {
-    return `
-      <section class="authors-section" data-author-version-count="0">
-        <h2>Authors</h2>
-        <p class="author-empty">No author metadata found for this work.</p>
-      </section>`;
-  }
-
-  return `
-      <section
-        class="authors-section"
-        data-author-version-count="${versions.length}"
-      >
-        <h2>Authors</h2>
-        ${versions
-          .map((version) => {
-            const authors = version.authors || [];
-
-            return `
-        <section
-          class="author-version"
-          data-author-count="${authors.length}"
-        >
-          <h3>
-            <a href="${escapeHTML(
-              doiLink(version.doi)
-            )}" target="_blank" rel="noopener">${escapeHTML(version.name)}</a>
-            ${
-              version.date
-                ? `<time datetime="${escapeHTML(version.date)}">${escapeHTML(
-                    version.date
-                  )}</time>`
-                : ""
-            }
-          </h3>
-          <ul class="author-list">
-            ${authors
-              .map(
-                (author) => `
-            <li>${renderAuthor(author)}</li>`
-              )
-              .join("")}
-          </ul>
-        </section>`;
-          })
-          .join("")}
-      </section>`;
+  versions.forEach((version, index) => {
+    const doi = version.citation?.doi || doiFromURL(version.citation?.url);
+    version.bibtex = fetchVersionBibTeX(version, index, Boolean(doi && doiCounts.get(doi) > 1));
+  });
 }
 
 function citedByRows(slug) {
   return citedByData.works?.[slug]?.cited_by || [];
 }
 
-function renderCitingWorks(slug) {
-  const citations = citedByRows(slug);
+function renderRelationInspector(relationData) {
+  return `
+      <section class="relationship-inspector" aria-label="Indexed relations" data-work-relations>
+        <section class="relationship-list-panel" aria-label="Relations">
+          <div class="study-section-heading">
+            <h2>Relations</h2>
+          </div>
+          <div
+            class="relation-tabs"
+            role="tablist"
+            aria-label="Relation types"
+            data-relation-tabs
+          ></div>
+          <div class="reason-list" data-relation-list></div>
+        </section>
 
-  if (!citations.length) {
-    return `
-            <tr class="citation-empty">
-              <td colspan="3">No citing works found in the current citation data.</td>
-            </tr>`;
-  }
-
-  return citations
-    .map((citation) => {
-      const title = escapeHTML(citation.title);
-      const link = citationLink(citation);
-      const titleMarkup = link
-        ? `<a href="${escapeHTML(link)}" target="_blank" rel="noopener">${title}</a>`
-        : title;
-
-      return `
-            <tr>
-              <td class="citation-title">${titleMarkup}</td>
-              <td class="citation-year">${
-                citation.year
-                  ? `<time datetime="${escapeHTML(citation.year)}">${escapeHTML(
-                      citation.year
-                    )}</time>`
-                  : ""
-              }</td>
-              <td class="citation-summary">${escapeHTML(
-                citation.summary || ""
-              )}</td>
-            </tr>`;
-    })
-    .join("");
+        <aside class="evidence-panel relationship-detail" aria-live="polite">
+          <span class="study-label" data-relation-label>Relation</span>
+          <h2 data-relation-title></h2>
+          <p class="selected-relation-statement" data-relation-statement></p>
+          <section class="version-citation" data-version-citation hidden>
+            <h3>Citation</h3>
+            <div class="bibtex-box">
+              <button class="copy-bibtex-button" type="button" data-copy-bibtex>
+                Copy BibTeX
+              </button>
+              <pre><code data-bibtex-code></code></pre>
+            </div>
+          </section>
+          <details class="relationship-evidence" data-relation-evidence>
+            <summary>
+              <span>Evidence</span>
+              <span class="evidence-summary" data-evidence-summary></span>
+            </summary>
+            <table class="relationship-evidence-table">
+              <thead>
+                <tr>
+                  <th>Span</th>
+                  <th>Source</th>
+                </tr>
+              </thead>
+              <tbody data-evidence-rows></tbody>
+            </table>
+          </details>
+        </aside>
+      </section>
+      <script id="workRelationData" type="application/json">${serializeJSONForHTML(
+        relationData
+      )}</script>
+      <script src="../work-relations.js"></script>`;
 }
 
 function renderPage(publication) {
@@ -349,12 +202,9 @@ function renderPage(publication) {
   const breadcrumbLabel = escapeHTML(truncateBreadcrumbLabel(publication.title));
   const citations = citedByRows(slug);
   const citationCount = citations.length;
-  const generatedAt = citedByData.generatedAt
-    ? new Date(citedByData.generatedAt).toISOString().slice(0, 10)
-    : "";
-  const citationSources = citedByData.sources?.length
-    ? citedByData.sources.join(", ")
-    : "available citation data";
+  const relationData = projectWorkRelations(slug);
+  addVersionBibTeX(relationData);
+  const relationCount = relationData.connections.length;
 
   return `<!DOCTYPE html>
 <html lang="en">
@@ -365,10 +215,9 @@ function renderPage(publication) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="${summary}" />
     <link rel="stylesheet" href="../styles.css" />
-    ${bibTeXCopyScript()}
     <title>${title} | Works | Sina Booeshaghi</title>
   </head>
-  <body>
+  <body class="work-detail-page">
     <nav class="breadcrumb" aria-label="Breadcrumb">
       <a href="../index.html">Home</a>
       <span aria-hidden="true">/</span>
@@ -376,47 +225,25 @@ function renderPage(publication) {
       <span aria-hidden="true">/</span>
       <span class="breadcrumb-current" title="${title}">${breadcrumbLabel}</span>
     </nav>
-    <article class="work-page">
-      <h1>${title}</h1>
-      <div class="publication-versions work-versions" aria-label="Work versions">
-        <span class="publication-versions-label">Versions</span>
-        <div class="publication-version-cards">
-          ${renderLinks(publication)}
+    <article class="work-page study-graph-page">
+      <section class="study-focus" aria-label="Selected work">
+        <div>
+          <h1>${title}</h1>
+          <p>${summary}</p>
         </div>
-      </div>
-
-      <section>
-        <h2>Summary</h2>
-        <p>${summary}</p>
+        <dl class="study-stats">
+          <div>
+            <dt>Citations</dt>
+            <dd>${citationCount}</dd>
+          </div>
+          <div>
+            <dt>Relations</dt>
+            <dd>${relationCount}</dd>
+          </div>
+        </dl>
       </section>
 
-      ${renderAuthors(slug)}
-
-      <section>
-        <h2>BibTeX</h2>
-        ${renderBibTeX(publication)}
-      </section>
-
-      <section>
-        <h2>Citing Works</h2>
-        <p class="citation-source-note">
-          ${citationCount} citing work${citationCount === 1 ? "" : "s"} found${
-    generatedAt ? ` in citation data generated ${generatedAt}` : ""
-  }. Citation relationships are sourced from ${escapeHTML(citationSources)}.
-        </p>
-        <table class="citation-table">
-          <thead>
-            <tr>
-              <th>Title</th>
-              <th>Year</th>
-              <th>Summary</th>
-            </tr>
-          </thead>
-          <tbody>
-            ${renderCitingWorks(slug)}
-          </tbody>
-        </table>
-      </section>
+      ${renderRelationInspector(relationData)}
     </article>
   </body>
 </html>

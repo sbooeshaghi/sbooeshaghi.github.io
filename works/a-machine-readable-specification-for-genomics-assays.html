@@ -17,77 +17,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Sequencing-based genomics assays produce sequencing reads with a variety of synthetic and biological features. Often base-pair-level annotations of these sequencing reads are hard to find, incomplete, or are altogether missing from the associated data inhibiting uniform preprocessing. To overcome this, we developed seqspec, a machine readable specification and associated command-line tool for annotating sequencing reads. seqspec is general and applicable to all genomics-based assays and facilitates standardization of preprocessing, tracking, and comparison of genomics assays." />
+    <meta name="description" content="Accurate preprocessing of genomics reads depends on knowing how biological and technical sequences are arranged in each library. The gap is that assay-specific scripts, divergent parameters, and non-machine-readable library descriptions make uniform processing, comparison, and reanalysis difficult. Seqspec contributes a YAML-based specification and command-line tool for annotating library regions, validating specifications, and generating tool-compatible preprocessing inputs for standardized genomics workflows." />
     <link rel="stylesheet" href="../styles.css" />
-    
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        document.querySelectorAll(".copy-bibtex-button").forEach((button) => {
-          button.addEventListener("click", async () => {
-            const box = button.closest(".bibtex-box");
-            const code = box ? box.querySelector("code") : null;
-            const bibtex = code ? code.textContent : "";
-            const previousText = button.textContent;
-            const markStatus = (text) => {
-              button.textContent = text;
-              window.setTimeout(() => {
-                button.textContent = previousText;
-              }, 1200);
-            };
-            const copyWithSelection = () => {
-              const textarea = document.createElement("textarea");
-              textarea.value = bibtex;
-              textarea.setAttribute("readonly", "");
-              textarea.style.position = "fixed";
-              textarea.style.left = "0";
-              textarea.style.top = "0";
-              textarea.style.width = "1px";
-              textarea.style.height = "1px";
-              textarea.style.opacity = "0";
-              textarea.style.pointerEvents = "none";
-              document.body.appendChild(textarea);
-              textarea.focus({ preventScroll: true });
-              textarea.select();
-              textarea.setSelectionRange(0, textarea.value.length);
-              const copied = document.execCommand("copy");
-              textarea.remove();
-              return copied;
-            };
-
-            try {
-              if (navigator.clipboard && navigator.clipboard.writeText) {
-                await navigator.clipboard.writeText(bibtex);
-                markStatus("Copied");
-                return;
-              }
-
-              if (copyWithSelection()) {
-                markStatus("Copied");
-                return;
-              }
-            } catch {
-              let copied = false;
-
-              try {
-                copied = copyWithSelection();
-              } catch {
-                copied = false;
-              }
-
-              if (copied) {
-                markStatus("Copied");
-                return;
-              }
-            }
-
-            markStatus("Copy failed");
-          });
-        });
-      });
-    </script>
     <title>A machine-readable specification for genomics assays | Works | Sina Booeshaghi</title>
   </head>
-  <body>
+  <body class="work-detail-page">
     <nav class="breadcrumb" aria-label="Breadcrumb">
       <a href="../index.html">Home</a>
       <span aria-hidden="true">/</span>
@@ -95,230 +29,71 @@
       <span aria-hidden="true">/</span>
       <span class="breadcrumb-current" title="A machine-readable specification for genomics assays">A machine-readable specification for genomics assays</span>
     </nav>
-    <article class="work-page">
-      <h1>A machine-readable specification for genomics assays</h1>
-      <div class="publication-versions work-versions" aria-label="Work versions">
-        <span class="publication-versions-label">Versions</span>
-        <div class="publication-version-cards">
-          
-        <a
-          class="publication-version-link is-current"
-          href="https://doi.org/10.1093/bioinformatics/btae168"
-          target="_blank"
-          rel="noopener"
-        >
-          <span class="publication-version-title">A machine-readable specification for genomics assays</span>
-          <span class="publication-version-detail">Bioinformatics · 2024-03-29</span>
-        </a>
-        <a
-          class="publication-version-link"
-          href="https://doi.org/10.1101/2023.03.17.533215"
-          target="_blank"
-          rel="noopener"
-        >
-          <span class="publication-version-title">A machine-readable specification for genomics assays</span>
-          <span class="publication-version-detail">bioRxiv · 2023-03-21</span>
-        </a>
+    <article class="work-page study-graph-page">
+      <section class="study-focus" aria-label="Selected work">
+        <div>
+          <h1>A machine-readable specification for genomics assays</h1>
+          <p>Accurate preprocessing of genomics reads depends on knowing how biological and technical sequences are arranged in each library. The gap is that assay-specific scripts, divergent parameters, and non-machine-readable library descriptions make uniform processing, comparison, and reanalysis difficult. Seqspec contributes a YAML-based specification and command-line tool for annotating library regions, validating specifications, and generating tool-compatible preprocessing inputs for standardized genomics workflows.</p>
         </div>
-      </div>
-
-      <section>
-        <h2>Summary</h2>
-        <p>Sequencing-based genomics assays produce sequencing reads with a variety of synthetic and biological features. Often base-pair-level annotations of these sequencing reads are hard to find, incomplete, or are altogether missing from the associated data inhibiting uniform preprocessing. To overcome this, we developed seqspec, a machine readable specification and associated command-line tool for annotating sequencing reads. seqspec is general and applicable to all genomics-based assays and facilitates standardization of preprocessing, tracking, and comparison of genomics assays.</p>
+        <dl class="study-stats">
+          <div>
+            <dt>Citations</dt>
+            <dd>17</dd>
+          </div>
+          <div>
+            <dt>Relations</dt>
+            <dd>12</dd>
+          </div>
+        </dl>
       </section>
 
       
-      <section
-        class="authors-section"
-        data-author-version-count="2"
-      >
-        <h2>Authors</h2>
-        
-        <section
-          class="author-version"
-          data-author-count="3"
-        >
-          <h3>
-            <a href="https://doi.org/10.1093/bioinformatics/btae168" target="_blank" rel="noopener">Bioinformatics</a>
-            <time datetime="2024-03-29">2024-03-29</time>
-          </h3>
-          <ul class="author-list">
-            
-            <li><a href="https://orcid.org/0000-0002-6442-4502" target="_blank" rel="noopener" title="ORCID">Ali Sina Booeshaghi</a></li>
-            <li><a href="https://orcid.org/0000-0003-2648-3146" target="_blank" rel="noopener" title="ORCID">Xi Chen</a></li>
-            <li><a href="https://orcid.org/0000-0002-9164-6231" target="_blank" rel="noopener" title="ORCID">Lior Pachter</a></li>
-          </ul>
-        </section>
-        <section
-          class="author-version"
-          data-author-count="3"
-        >
-          <h3>
-            <a href="https://doi.org/10.1101/2023.03.17.533215" target="_blank" rel="noopener">bioRxiv</a>
-            <time datetime="2023-03-21">2023-03-21</time>
-          </h3>
-          <ul class="author-list">
-            
-            <li><a href="https://orcid.org/0000-0002-6442-4502" target="_blank" rel="noopener" title="ORCID">A. Sina Booeshaghi</a></li>
-            <li><a href="https://orcid.org/0000-0003-2648-3146" target="_blank" rel="noopener" title="ORCID">Xi Chen</a></li>
-            <li><a href="https://orcid.org/0000-0002-9164-6231" target="_blank" rel="noopener" title="ORCID">Lior Pachter</a></li>
-          </ul>
-        </section>
-      </section>
-
-      <section>
-        <h2>BibTeX</h2>
-        
-        <section class="bibtex-entry">
-          <h3>Bioinformatics</h3>
-          <div class="bibtex-box">
-            <button
-              class="copy-bibtex-button"
-              type="button"
-              aria-label="Copy BibTeX for Bioinformatics"
-            >
-              Copy BibTeX
-            </button>
-            <pre><code>@article{Booeshaghi_2024,
-  TITLE     = {A machine-readable specification for genomics assays},
-  VOLUME    = {40},
-  ISSN      = {1367-4811},
-  URL       = {http://dx.doi.org/10.1093/bioinformatics/btae168},
-  DOI       = {10.1093/bioinformatics/btae168},
-  NUMBER    = {4},
-  JOURNAL   = {Bioinformatics},
-  PUBLISHER = {Oxford University Press (OUP)},
-  AUTHOR    = {Booeshaghi, Ali Sina and Chen, Xi and Pachter, Lior},
-  EDITOR    = {Kendziorski, Christina},
-  YEAR      = {2024}
-}</code></pre>
+      <section class="relationship-inspector" aria-label="Indexed relations" data-work-relations>
+        <section class="relationship-list-panel" aria-label="Relations">
+          <div class="study-section-heading">
+            <h2>Relations</h2>
           </div>
+          <div
+            class="relation-tabs"
+            role="tablist"
+            aria-label="Relation types"
+            data-relation-tabs
+          ></div>
+          <div class="reason-list" data-relation-list></div>
         </section>
-        <section class="bibtex-entry">
-          <h3>bioRxiv</h3>
-          <div class="bibtex-box">
-            <button
-              class="copy-bibtex-button"
-              type="button"
-              aria-label="Copy BibTeX for bioRxiv"
-            >
-              Copy BibTeX
-            </button>
-            <pre><code>@article{Booeshaghi_2023,
-  TITLE     = {A machine-readable specification for genomics assays},
-  URL       = {http://dx.doi.org/10.1101/2023.03.17.533215},
-  DOI       = {10.1101/2023.03.17.533215},
-  PUBLISHER = {openRxiv},
-  AUTHOR    = {Booeshaghi, A. Sina and Chen, Xi and Pachter, Lior},
-  YEAR      = {2023}
-}</code></pre>
-          </div>
-        </section>
-      </section>
 
-      <section>
-        <h2>Citing Works</h2>
-        <p class="citation-source-note">
-          17 citing works found in citation data generated 2026-07-06. Citation relationships are sourced from OpenAlex, Semantic Scholar, Google Scholar.
-        </p>
-        <table class="citation-table">
-          <thead>
-            <tr>
-              <th>Title</th>
-              <th>Year</th>
-              <th>Summary</th>
-            </tr>
-          </thead>
-          <tbody>
-            
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1093/bioinformatics/btag182" target="_blank" rel="noopener">Harvesting more reads from single-cell combinatorial barcoding data with scarecrow</a></td>
-              <td class="citation-year"><time datetime="2026">2026</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1186/s12964-025-02128-9" target="_blank" rel="noopener">Basal cell adhesion molecule (BCAM) promotes mesothelial-to-mesenchymal transition and tumor angiogenesis through paracrine signaling</a></td>
-              <td class="citation-year"><time datetime="2025">2025</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include barcodes, published, retrieved.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/2025.10.17.683067" target="_blank" rel="noopener">Harvesting more reads from single-cell combinatorial barcoding data with scarecrow</a></td>
-              <td class="citation-year"><time datetime="2025">2025</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/2025.01.17.633678" target="_blank" rel="noopener">Mouse Single-Cell Long-Read Splicing Atlas by Ouro-Seq</a></td>
-              <td class="citation-year"><time datetime="2025">2025</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5272584" target="_blank" rel="noopener">Open Contracting in the US Public Sector: Converting Procurements from Documents to Data</a></td>
-              <td class="citation-year"><time datetime="2025">2025</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/2025.09.03.674039" target="_blank" rel="noopener">Reference-based variant detection with varseek</a></td>
-              <td class="citation-year"><time datetime="2025">2025</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/2024.03.23.586413" target="_blank" rel="noopener">Algorithms for a Commons Cell Atlas</a></td>
-              <td class="citation-year"><time datetime="2024">2024</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1093/plcell/koae003" target="_blank" rel="noopener">Best practices for the execution, analysis, and data storage of plant single-cell/nucleus transcriptomics</a></td>
-              <td class="citation-year"><time datetime="2024">2024</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include booeshaghi, enhance, filtering, furthermore, future, genomic, pipelines, preprocessing.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1093/bioinformatics/btae331" target="_blank" rel="noopener">Flexible parsing, interpretation, and editing of technical sequences with splitcode</a></td>
-              <td class="citation-year"><time datetime="2024">2024</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include adapters, barcodes, booeshaghi, constructs, contain, identifiers, including, indices.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1038/s41596-024-01057-0" target="_blank" rel="noopener">kallisto, bustools and kb-python for quantifying bulk, single-cell and single-nucleus RNA-seq</a></td>
-              <td class="citation-year"><time datetime="2024">2024</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include genomic, matrices, specification, kallisto, seqspec, abundance, assay, assays.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1002/ctm2.1604" target="_blank" rel="noopener">Reciprocal crosstalk between Th17 and mesothelial cells promotes metastasis‐associated adhesion of ovarian cancer cells</a></td>
-              <td class="citation-year"><time datetime="2024">2024</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include panel, targeted, 13766899704717, article, attachments, based, becton, below.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/2023.03.20.533521" target="_blank" rel="noopener">Flexible parsing, interpretation, and editing of technical sequences with splitcode</a></td>
-              <td class="citation-year"><time datetime="2023">2023</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/2023.11.21.568164" target="_blank" rel="noopener">kallisto, bustools, and kb-python for quantifying bulk, single-cell, and single-nucleus RNA-seq</a></td>
-              <td class="citation-year"><time datetime="2023">2023</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include assays, contains, machine-readable, option, range, seqspec, sequencing, specifications.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1093/bioinformatics/btad614" target="_blank" rel="noopener">simpleaf : a simple, flexible, and scalable framework for single-cell data processing using alevin-fry</a></td>
-              <td class="citation-year"><time datetime="2023">2023</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/2023.03.28.534653" target="_blank" rel="noopener">simpleaf: A simple, flexible, and scalable framework for single-cell transcriptomics data processing using alevin-fry</a></td>
-              <td class="citation-year"><time datetime="2023">2023</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include assays, categorizing, community, developing, documenting, efforts, existing, general.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/2023.09.14.543267" target="_blank" rel="noopener">Universal preprocessing of single-cell genomics data</a></td>
-              <td class="citation-year"><time datetime="2023">2023</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/2021.12.08.471788" target="_blank" rel="noopener">Assessing the multimodal tradeoff</a></td>
-              <td class="citation-year"><time datetime="2021">2021</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-          </tbody>
-        </table>
+        <aside class="evidence-panel relationship-detail" aria-live="polite">
+          <span class="study-label" data-relation-label>Relation</span>
+          <h2 data-relation-title></h2>
+          <p class="selected-relation-statement" data-relation-statement></p>
+          <section class="version-citation" data-version-citation hidden>
+            <h3>Citation</h3>
+            <div class="bibtex-box">
+              <button class="copy-bibtex-button" type="button" data-copy-bibtex>
+                Copy BibTeX
+              </button>
+              <pre><code data-bibtex-code></code></pre>
+            </div>
+          </section>
+          <details class="relationship-evidence" data-relation-evidence>
+            <summary>
+              <span>Evidence</span>
+              <span class="evidence-summary" data-evidence-summary></span>
+            </summary>
+            <table class="relationship-evidence-table">
+              <thead>
+                <tr>
+                  <th>Span</th>
+                  <th>Source</th>
+                </tr>
+              </thead>
+              <tbody data-evidence-rows></tbody>
+            </table>
+          </details>
+        </aside>
       </section>
+      <script id="workRelationData" type="application/json">{"work":{"id":"work:a-machine-readable-specification-for-genomics-assays","title":"A machine-readable specification for genomics assays","description":"Accurate preprocessing of genomics reads depends on knowing how biological and technical sequences are arranged in each library. The gap is that assay-specific scripts, divergent parameters, and non-machine-readable library descriptions make uniform processing, comparison, and reanalysis difficult. Seqspec contributes a YAML-based specification and command-line tool for annotating library regions, validating specifications, and generating tool-compatible preprocessing inputs for standardized genomics workflows."},"relationTypes":[{"id":"authors","label":"Authors"},{"id":"claims","label":"Claims"},{"id":"citations","label":"Citations"},{"id":"versions","label":"Versions"},{"id":"software","label":"Software"},{"id":"sources","label":"Sources"}],"connections":[{"id":"connection:version:a-machine-readable-specification-for-genomics-assays--2023-03-21-biorxiv--person:orcid:0000-0002-6442-4502--author-1","type":"authors","title":"A. Sina Booeshaghi","description":"A. Sina Booeshaghi is an author of A machine-readable specification for genomics assays.","statement":"A. Sina Booeshaghi is an author of A machine-readable specification for genomics assays.","evidence":[]},{"id":"connection:version:a-machine-readable-specification-for-genomics-assays--2023-03-21-biorxiv--person:orcid:0000-0003-2648-3146--author-2","type":"authors","title":"Xi Chen","description":"Xi Chen is an author of A machine-readable specification for genomics assays.","statement":"Xi Chen is an author of A machine-readable specification for genomics assays.","evidence":[]},{"id":"connection:version:a-machine-readable-specification-for-genomics-assays--2023-03-21-biorxiv--person:orcid:0000-0002-9164-6231--author-3","type":"authors","title":"Lior Pachter","description":"Lior Pachter is an author of A machine-readable specification for genomics assays.","statement":"Lior Pachter is an author of A machine-readable specification for genomics assays.","evidence":[]},{"id":"connection:version:a-machine-readable-specification-for-genomics-assays--2023-03-21-biorxiv--claim:version:a-machine-readable-specification-for-genomics-assays--2023-03-21-biorxiv--summary-0","type":"claims","title":"Genomics assays are only reusable and comparable when the structure of their sequenced reads is explicit. The obstacle i","description":"Genomics assays are only reusable and comparable when the structure of their sequenced reads is explicit. The obstacle is that complex library designs, assay-specific scripts, and existing formats leave barcodes, UMIs, biological inserts, and platform details under-specified for automated preprocessing. Seqspec addresses this by defining a human- and machine-readable YAML specification plus tooling that indexes read regions and emits preprocessing strings for kallisto bustools, simpleaf/alevin-fry, and STARsolo.","statement":"This publication contains the target grounded summary claim.","evidence":[{"source":"source:text:document:a-machine-readable-specification-for-genomics-assays--2023-03-21-biorxiv","span":"Understanding the structure of sequenced fragments from genomics libraries is essential for accurate read preprocessing.","page":1,"properties":{"document_id":"document:a-machine-readable-specification-for-genomics-assays--2023-03-21-biorxiv","char_start":833,"char_end":953}},{"source":"source:text:document:a-machine-readable-specification-for-genomics-assays--2023-03-21-biorxiv","span":"Frequently, custom scripts must be created and tailored to the specifics of assays, where developers reimplement solutions for common preprocessing tasks such as adapter trimming, barcode identification, error correction, and read alignment (Wu et al. 2022; Ma et al. 2020; Cheow et al. 2016; Healey, Bassham, and Cresko 2022).","page":1,"properties":{"document_id":"document:a-machine-readable-specification-for-genomics-assays--2023-03-21-biorxiv","char_start":1635,"char_end":1962}},{"source":"source:text:document:a-machine-readable-specification-for-genomics-assays--2023-03-21-biorxiv","span":"Many single-cell genomics assays introduce additional library complexity further complicating preprocessing.","page":3,"properties":{"document_id":"document:a-machine-readable-specification-for-genomics-assays--2023-03-21-biorxiv","char_start":337,"char_end":445}},{"source":"source:text:document:a-machine-readable-specification-for-genomics-assays--2023-03-21-biorxiv","span":"The seqspec specification defines a machine-readable file format, based on YAML, that enables sequence read annotation.","page":3,"properties":{"document_id":"document:a-machine-readable-specification-for-genomics-assays--2023-03-21-biorxiv","char_start":1426,"char_end":1545}},{"source":"source:text:document:a-machine-readable-specification-for-genomics-assays--2023-03-21-biorxiv","span":"Regions associated with barcodes, UMIs, and cDNA are extracted, positionally indexed and formatted on a per-tool basis. The modularity of seqspec makes it simple to produce tool-compatible technology strings for other assay types.","page":4,"properties":{"document_id":"document:a-machine-readable-specification-for-genomics-assays--2023-03-21-biorxiv","char_start":1061,"char_end":1291}}]},{"id":"connection:version:a-machine-readable-specification-for-genomics-assays--2024-03-29-bioinformatics--claim:version:a-machine-readable-specification-for-genomics-assays--2024-03-29-bioinformatics--summary-0","type":"claims","title":"Accurate preprocessing of genomics reads depends on knowing how biological and technical sequences are arranged in each ","description":"Accurate preprocessing of genomics reads depends on knowing how biological and technical sequences are arranged in each library. The gap is that assay-specific scripts, divergent parameters, and non-machine-readable library descriptions make uniform processing, comparison, and reanalysis difficult. Seqspec contributes a YAML-based specification and command-line tool for annotating library regions, validating specifications, and generating tool-compatible preprocessing inputs for standardized genomics workflows.","statement":"This publication contains the target grounded summary claim.","evidence":[{"source":"source:text:document:a-machine-readable-specification-for-genomics-assays--2024-03-29-bioinformatics","span":"Understanding the structure of sequenced fragments from genomics libraries is essential for accurate read preprocessing.","page":1,"properties":{"document_id":"document:a-machine-readable-specification-for-genomics-assays--2024-03-29-bioinformatics","char_start":766,"char_end":886}},{"source":"source:text:document:a-machine-readable-specification-for-genomics-assays--2024-03-29-bioinformatics","span":"Frequently, custom scripts must be created and tailored to the specifics of assays, where developers reimplement solutions for common preprocessing tasks such as adapter trimming, barcode identification, error correction, and read alignment (Cheow et al. 2016, Ma et al. 2020, Healey et al. 2022, Wu et al. 2022).","page":1,"properties":{"document_id":"document:a-machine-readable-specification-for-genomics-assays--2024-03-29-bioinformatics","char_start":1610,"char_end":1923}},{"source":"source:text:document:a-machine-readable-specification-for-genomics-assays--2024-03-29-bioinformatics","span":"The seqspec specification defines a machine-readable file format, based on YAML, that enables sequence library annotation.","page":1,"properties":{"document_id":"document:a-machine-readable-specification-for-genomics-assays--2024-03-29-bioinformatics","char_start":4354,"char_end":4476}},{"source":"source:text:document:a-machine-readable-specification-for-genomics-assays--2024-03-29-bioinformatics","span":"A key feature of seqspec files is that they are machinereadable, and Region data can be parsed, processed, and extracted with the seqspec command-line tool.","page":3,"properties":{"document_id":"document:a-machine-readable-specification-for-genomics-assays--2024-03-29-bioinformatics","char_start":4367,"char_end":4523}},{"source":"source:text:document:a-machine-readable-specification-for-genomics-assays--2024-03-29-bioinformatics","span":"In demonstrating that seqspec can be used to define options for preprocessing tools, we have shown that seqspec is immediately useful for uniform processing of genomics data.","page":4,"properties":{"document_id":"document:a-machine-readable-specification-for-genomics-assays--2024-03-29-bioinformatics","char_start":4258,"char_end":4432}}]},{"id":"connection:claim:citation:version-citing-2023-universal-preprocessing-of-single-cell-genomics-data-cites-version-a-machine-readable-specification-for-genomics-assays-2023-03-21-biorxiv-booeshaghi-de5cd86fee--version:a-machine-readable-specification-for-genomics-assays--2023-03-21-biorxiv","type":"citations","title":"Universal preprocessing of single-cell genomics data","description":"The paper presents cellatlas, a workflow for preprocessing diverse single-cell genomics data by using seqspec assay specifications to configure kb-python, kallisto, and bustools.","statement":"Cited for seqspec as a machine-readable assay specification that describes read structure and supports automatic universal preprocessing.","evidence":[{"source":"source:pdf:document:cited-by--2023-universal-preprocessing-of-single-cell-genomics-data","span":"The seqspec assay specification (Booeshaghi, Chen, and Pachter 2023) provides a machine-readable format for describing this structure, thereby translating the organizational themes of single-cell genomics into a medium that can, in principle, facilitate automatic and universal preprocessing of single-cell genomics data.","page":2,"properties":{"document_id":"document:cited-by--2023-universal-preprocessing-of-single-cell-genomics-data","char_start":null,"char_end":null}}]},{"id":"connection:claim:citation:version-citing-2024-algorithms-for-a-commons-cell-atlas-04a893eb73-cites-version-a-machine-readable-specification-for-genomics-assays-2023-03-21-biorxiv-sina-booeshaghi-5e38ef4f27--version:a-machine-readable-specification-for-genomics-assays--2023-03-21-biorxiv","type":"citations","title":"Algorithms for a Commons Cell Atlas","description":"The paper presents data, algorithms, and tools for automating cataloging and analysis of cell types across tissues, demonstrated in a human atlas.","statement":"The paper cites seqspec as a standard that can help automate preprocessing of different assays.","evidence":[{"source":"source:pdf:document:cited-by--2024-algorithms-for-a-commons-cell-atlas-04a893eb73","span":"The seqspec standard (Sina Booeshaghi, Chen, and Pachter 2023), which can help in automating preprocessing of different assays, can in principle help with this goal.","page":10,"properties":{"document_id":"document:cited-by--2024-algorithms-for-a-commons-cell-atlas-04a893eb73","char_start":null,"char_end":null}}]},{"id":"connection:claim:citation:version-citing-2025-reference-based-variant-detection-with-varseek-cites-version-a-machine-readable-specification-for-genomics-assays-2024-03-29-bioinformatics-42-0--version:a-machine-readable-specification-for-genomics-assays--2024-03-29-bioinformatics","type":"citations","title":"Reference-based variant detection with varseek","description":"The paper introduces varseek, a reference-based k-mer pseudoalignment approach for variant detection, and demonstrates its utility for single-cell transcriptomic detection of tumor-specific COSMIC variants in glioblastoma.","statement":"The paper cites this work in arguing that varseek is adaptable across assays and sequencing technologies thanks to kallisto.","evidence":[{"source":"source:pdf:document:cited-by--2025-reference-based-variant-detection-with-varseek","span":"The varseek method is a reference-based variant caller that enables single-cell resolution variant calling, is adaptable for use with a wide variety of assays and sequencing technolo- gies thanks to its use of kallisto (42), exhibits high sensitivity, including in indel calling, and is efficient in both runtime and memory usage.","page":5,"properties":{"document_id":"document:cited-by--2025-reference-based-variant-detection-with-varseek","char_start":null,"char_end":null}}]},{"id":"connection:version:a-machine-readable-specification-for-genomics-assays--2024-03-29-bioinformatics--work:a-machine-readable-specification-for-genomics-assays","type":"versions","title":"A machine-readable specification for genomics assays","description":"2024-03-29 · Bioinformatics","statement":"2024-03-29 is a version of A machine-readable specification for genomics assays.","evidence":[],"citation":{"doi":"10.1093/bioinformatics/btae168","url":"https://doi.org/10.1093/bioinformatics/btae168","date":"2024-03-29","venue":"Bioinformatics","authors":[{"name":"Ali Sina Booeshaghi","orcid":"https://orcid.org/0000-0002-6442-4502"},{"name":"Xi Chen","orcid":"https://orcid.org/0000-0003-2648-3146"},{"name":"Lior Pachter","orcid":"https://orcid.org/0000-0002-9164-6231"}]},"bibtex":"@article{Booeshaghi_2024,\n  TITLE     = {A machine-readable specification for genomics assays},\n  VOLUME    = {40},\n  ISSN      = {1367-4811},\n  URL       = {http://dx.doi.org/10.1093/bioinformatics/btae168},\n  DOI       = {10.1093/bioinformatics/btae168},\n  NUMBER    = {4},\n  JOURNAL   = {Bioinformatics},\n  PUBLISHER = {Oxford University Press (OUP)},\n  AUTHOR    = {Booeshaghi, Ali Sina and Chen, Xi and Pachter, Lior},\n  EDITOR    = {Kendziorski, Christina},\n  YEAR      = {2024}\n}"},{"id":"connection:version:a-machine-readable-specification-for-genomics-assays--2023-03-21-biorxiv--work:a-machine-readable-specification-for-genomics-assays","type":"versions","title":"A machine-readable specification for genomics assays","description":"2023-03-21 · bioRxiv","statement":"2023-03-21 is a version of A machine-readable specification for genomics assays.","evidence":[],"citation":{"doi":"10.1101/2023.03.17.533215","url":"https://doi.org/10.1101/2023.03.17.533215","date":"2023-03-21","venue":"bioRxiv","authors":[{"name":"A. Sina Booeshaghi","orcid":"https://orcid.org/0000-0002-6442-4502"},{"name":"Xi Chen","orcid":"https://orcid.org/0000-0003-2648-3146"},{"name":"Lior Pachter","orcid":"https://orcid.org/0000-0002-9164-6231"}]},"bibtex":"@article{Booeshaghi_2023,\n  TITLE     = {A machine-readable specification for genomics assays},\n  URL       = {http://dx.doi.org/10.1101/2023.03.17.533215},\n  DOI       = {10.1101/2023.03.17.533215},\n  PUBLISHER = {openRxiv},\n  AUTHOR    = {Booeshaghi, A. Sina and Chen, Xi and Pachter, Lior},\n  YEAR      = {2023}\n}"},{"id":"connection:document:a-machine-readable-specification-for-genomics-assays--2023-03-21-biorxiv--version:a-machine-readable-specification-for-genomics-assays--2023-03-21-biorxiv","type":"sources","title":"2023-03-21-biorxiv.pdf","description":"This source document provides local provenance for the target publication.","statement":"This source document provides local provenance for the target publication.","evidence":[]},{"id":"connection:document:a-machine-readable-specification-for-genomics-assays--2024-03-29-bioinformatics--version:a-machine-readable-specification-for-genomics-assays--2024-03-29-bioinformatics","type":"sources","title":"2024-03-29-bioinformatics.pdf","description":"This source document provides local provenance for the target publication.","statement":"This source document provides local provenance for the target publication.","evidence":[]}]}</script>
+      <script src="../work-relations.js"></script>
     </article>
   </body>
 </html>

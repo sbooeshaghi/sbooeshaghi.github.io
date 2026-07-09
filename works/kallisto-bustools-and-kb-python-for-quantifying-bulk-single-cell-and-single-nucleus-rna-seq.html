@@ -17,77 +17,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="This protocol describes how to use kallisto, bustools, and kb-python to quantify bulk, single-cell, and single-nucleus RNA-seq datasets with efficient and reproducible workflows." />
+    <meta name="description" content="RNA-seq preprocessing is central to turning sequencing reads into expression measurements for bulk tissues, single cells, and single nuclei. The challenge is that mapping, barcode correction, UMI handling, reference construction, and assay-specific settings require multiple coordinated steps. The protocol gives a reproducible kallisto, bustools, and kb-python workflow that reduces preprocessing to reference generation and quantification while supporting standard, nascent-and-cDNA, bulk, single-cell, and single-nucleus analyses." />
     <link rel="stylesheet" href="../styles.css" />
-    
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        document.querySelectorAll(".copy-bibtex-button").forEach((button) => {
-          button.addEventListener("click", async () => {
-            const box = button.closest(".bibtex-box");
-            const code = box ? box.querySelector("code") : null;
-            const bibtex = code ? code.textContent : "";
-            const previousText = button.textContent;
-            const markStatus = (text) => {
-              button.textContent = text;
-              window.setTimeout(() => {
-                button.textContent = previousText;
-              }, 1200);
-            };
-            const copyWithSelection = () => {
-              const textarea = document.createElement("textarea");
-              textarea.value = bibtex;
-              textarea.setAttribute("readonly", "");
-              textarea.style.position = "fixed";
-              textarea.style.left = "0";
-              textarea.style.top = "0";
-              textarea.style.width = "1px";
-              textarea.style.height = "1px";
-              textarea.style.opacity = "0";
-              textarea.style.pointerEvents = "none";
-              document.body.appendChild(textarea);
-              textarea.focus({ preventScroll: true });
-              textarea.select();
-              textarea.setSelectionRange(0, textarea.value.length);
-              const copied = document.execCommand("copy");
-              textarea.remove();
-              return copied;
-            };
-
-            try {
-              if (navigator.clipboard && navigator.clipboard.writeText) {
-                await navigator.clipboard.writeText(bibtex);
-                markStatus("Copied");
-                return;
-              }
-
-              if (copyWithSelection()) {
-                markStatus("Copied");
-                return;
-              }
-            } catch {
-              let copied = false;
-
-              try {
-                copied = copyWithSelection();
-              } catch {
-                copied = false;
-              }
-
-              if (copied) {
-                markStatus("Copied");
-                return;
-              }
-            }
-
-            markStatus("Copy failed");
-          });
-        });
-      });
-    </script>
     <title>kallisto, bustools and kb-python for quantifying bulk, single-cell and single-nucleus RNA-seq | Works | Sina Booeshaghi</title>
   </head>
-  <body>
+  <body class="work-detail-page">
     <nav class="breadcrumb" aria-label="Breadcrumb">
       <a href="../index.html">Home</a>
       <span aria-hidden="true">/</span>
@@ -95,568 +29,71 @@
       <span aria-hidden="true">/</span>
       <span class="breadcrumb-current" title="kallisto, bustools and kb-python for quantifying bulk, single-cell and single-nucleus RNA-seq">kallisto, bustools and kb-python for quantifying bulk, single-ce...</span>
     </nav>
-    <article class="work-page">
-      <h1>kallisto, bustools and kb-python for quantifying bulk, single-cell and single-nucleus RNA-seq</h1>
-      <div class="publication-versions work-versions" aria-label="Work versions">
-        <span class="publication-versions-label">Versions</span>
-        <div class="publication-version-cards">
-          
-        <a
-          class="publication-version-link is-current"
-          href="https://doi.org/10.1038/s41596-024-01057-0"
-          target="_blank"
-          rel="noopener"
-        >
-          <span class="publication-version-title">kallisto, bustools and kb-python for quantifying bulk, single-cell and single-nucleus RNA-seq</span>
-          <span class="publication-version-detail">Nature Protocols · 2024-10-10</span>
-        </a>
-        <a
-          class="publication-version-link"
-          href="https://doi.org/10.1101/2023.11.21.568164"
-          target="_blank"
-          rel="noopener"
-        >
-          <span class="publication-version-title">kallisto, bustools and kb-python for quantifying bulk, single-cell and single-nucleus RNA-seq</span>
-          <span class="publication-version-detail">bioRxiv · 2023-11-22</span>
-        </a>
+    <article class="work-page study-graph-page">
+      <section class="study-focus" aria-label="Selected work">
+        <div>
+          <h1>kallisto, bustools and kb-python for quantifying bulk, single-cell and single-nucleus RNA-seq</h1>
+          <p>RNA-seq preprocessing is central to turning sequencing reads into expression measurements for bulk tissues, single cells, and single nuclei. The challenge is that mapping, barcode correction, UMI handling, reference construction, and assay-specific settings require multiple coordinated steps. The protocol gives a reproducible kallisto, bustools, and kb-python workflow that reduces preprocessing to reference generation and quantification while supporting standard, nascent-and-cDNA, bulk, single-cell, and single-nucleus analyses.</p>
         </div>
-      </div>
-
-      <section>
-        <h2>Summary</h2>
-        <p>This protocol describes how to use kallisto, bustools, and kb-python to quantify bulk, single-cell, and single-nucleus RNA-seq datasets with efficient and reproducible workflows.</p>
+        <dl class="study-stats">
+          <div>
+            <dt>Citations</dt>
+            <dd>81</dd>
+          </div>
+          <div>
+            <dt>Relations</dt>
+            <dd>23</dd>
+          </div>
+        </dl>
       </section>
 
       
-      <section
-        class="authors-section"
-        data-author-version-count="2"
-      >
-        <h2>Authors</h2>
-        
-        <section
-          class="author-version"
-          data-author-count="12"
-        >
-          <h3>
-            <a href="https://doi.org/10.1038/s41596-024-01057-0" target="_blank" rel="noopener">Nature Protocols</a>
-            <time datetime="2024-10-10">2024-10-10</time>
-          </h3>
-          <ul class="author-list">
-            
-            <li><a href="https://orcid.org/0000-0002-8359-6705" target="_blank" rel="noopener" title="ORCID">Delaney K. Sullivan</a></li>
-            <li><a href="https://orcid.org/0000-0003-0894-4017" target="_blank" rel="noopener" title="ORCID">Kyung Hoi Min</a></li>
-            <li><a href="https://orcid.org/0000-0002-7851-1818" target="_blank" rel="noopener" title="ORCID">Kristján Eldjárn Hjörleifsson</a></li>
-            <li><a href="https://orcid.org/0000-0003-1379-2927" target="_blank" rel="noopener" title="ORCID">Laura Luebbert</a></li>
-            <li>Guillaume Holley</li>
-            <li><a href="https://orcid.org/0000-0002-7092-9427" target="_blank" rel="noopener" title="ORCID">Lambda Moses</a></li>
-            <li><a href="https://orcid.org/0000-0001-5072-2659" target="_blank" rel="noopener" title="ORCID">Johan Gustafsson</a></li>
-            <li><a href="https://orcid.org/0000-0002-4143-8194" target="_blank" rel="noopener" title="ORCID">Nicolas L. Bray</a></li>
-            <li><a href="https://orcid.org/0000-0001-8556-2499" target="_blank" rel="noopener" title="ORCID">Harold Pimentel</a></li>
-            <li><a href="https://orcid.org/0000-0002-6442-4502" target="_blank" rel="noopener" title="ORCID">A. Sina Booeshaghi</a></li>
-            <li><a href="https://orcid.org/0000-0002-8418-6724" target="_blank" rel="noopener" title="ORCID">Páll Melsted</a></li>
-            <li><a href="https://orcid.org/0000-0002-9164-6231" target="_blank" rel="noopener" title="ORCID">Lior Pachter</a></li>
-          </ul>
-        </section>
-        <section
-          class="author-version"
-          data-author-count="12"
-        >
-          <h3>
-            <a href="https://doi.org/10.1101/2023.11.21.568164" target="_blank" rel="noopener">bioRxiv</a>
-            <time datetime="2023-11-22">2023-11-22</time>
-          </h3>
-          <ul class="author-list">
-            
-            <li><a href="https://orcid.org/0000-0002-8359-6705" target="_blank" rel="noopener" title="ORCID">Delaney K. Sullivan</a></li>
-            <li><a href="https://orcid.org/0000-0003-0894-4017" target="_blank" rel="noopener" title="ORCID">Kyung Hoi (Joseph) Min</a></li>
-            <li><a href="https://orcid.org/0000-0002-7851-1818" target="_blank" rel="noopener" title="ORCID">Kristján Eldjárn Hjörleifsson</a></li>
-            <li><a href="https://orcid.org/0000-0003-1379-2927" target="_blank" rel="noopener" title="ORCID">Laura Luebbert</a></li>
-            <li>Guillaume Holley</li>
-            <li><a href="https://orcid.org/0000-0002-7092-9427" target="_blank" rel="noopener" title="ORCID">Lambda Moses</a></li>
-            <li><a href="https://orcid.org/0000-0001-5072-2659" target="_blank" rel="noopener" title="ORCID">Johan Gustafsson</a></li>
-            <li><a href="https://orcid.org/0000-0002-4143-8194" target="_blank" rel="noopener" title="ORCID">Nicolas L. Bray</a></li>
-            <li><a href="https://orcid.org/0000-0001-8556-2499" target="_blank" rel="noopener" title="ORCID">Harold Pimentel</a></li>
-            <li><a href="https://orcid.org/0000-0002-6442-4502" target="_blank" rel="noopener" title="ORCID">A. Sina Booeshaghi</a></li>
-            <li><a href="https://orcid.org/0000-0002-8418-6724" target="_blank" rel="noopener" title="ORCID">Páll Melsted</a></li>
-            <li><a href="https://orcid.org/0000-0002-9164-6231" target="_blank" rel="noopener" title="ORCID">Lior Pachter</a></li>
-          </ul>
-        </section>
-      </section>
-
-      <section>
-        <h2>BibTeX</h2>
-        
-        <section class="bibtex-entry">
-          <h3>Nature Protocols</h3>
-          <div class="bibtex-box">
-            <button
-              class="copy-bibtex-button"
-              type="button"
-              aria-label="Copy BibTeX for Nature Protocols"
-            >
-              Copy BibTeX
-            </button>
-            <pre><code>@article{Sullivan_2024,
-  TITLE     = {kallisto, bustools and kb-python for quantifying bulk, single-cell and single-nucleus RNA-seq},
-  VOLUME    = {20},
-  ISSN      = {1750-2799},
-  URL       = {http://dx.doi.org/10.1038/s41596-024-01057-0},
-  DOI       = {10.1038/s41596-024-01057-0},
-  NUMBER    = {3},
-  JOURNAL   = {Nature Protocols},
-  PUBLISHER = {Springer Science and Business Media LLC},
-  AUTHOR    = {Sullivan, Delaney K. and Min, Kyung Hoi and Hjörleifsson, Kristján Eldjárn and Luebbert, Laura and Holley, Guillaume and Moses, Lambda and Gustafsson, Johan and Bray, Nicolas L. and Pimentel, Harold and Booeshaghi, A. Sina and Melsted, Páll and Pachter, Lior},
-  YEAR      = {2024},
-  PAGES     = {587-607}
-}</code></pre>
+      <section class="relationship-inspector" aria-label="Indexed relations" data-work-relations>
+        <section class="relationship-list-panel" aria-label="Relations">
+          <div class="study-section-heading">
+            <h2>Relations</h2>
           </div>
+          <div
+            class="relation-tabs"
+            role="tablist"
+            aria-label="Relation types"
+            data-relation-tabs
+          ></div>
+          <div class="reason-list" data-relation-list></div>
         </section>
-        <section class="bibtex-entry">
-          <h3>bioRxiv</h3>
-          <div class="bibtex-box">
-            <button
-              class="copy-bibtex-button"
-              type="button"
-              aria-label="Copy BibTeX for bioRxiv"
-            >
-              Copy BibTeX
-            </button>
-            <pre><code>@article{Sullivan_2023,
-  TITLE     = {kallisto, bustools, and kb-python for quantifying bulk, single-cell, and single-nucleus RNA-seq},
-  URL       = {http://dx.doi.org/10.1101/2023.11.21.568164},
-  DOI       = {10.1101/2023.11.21.568164},
-  PUBLISHER = {openRxiv},
-  AUTHOR    = {Sullivan, Delaney K. and Min, Kyung Hoi (Joseph) and Hjörleifsson, Kristján Eldjárn and Luebbert, Laura and Holley, Guillaume and Moses, Lambda and Gustafsson, Johan and Bray, Nicolas L. and Pimentel, Harold and Booeshaghi, A. Sina and Melsted, Páll and Pachter, Lior},
-  YEAR      = {2023}
-}</code></pre>
-          </div>
-        </section>
-      </section>
 
-      <section>
-        <h2>Citing Works</h2>
-        <p class="citation-source-note">
-          81 citing works found in citation data generated 2026-07-06. Citation relationships are sourced from OpenAlex, Semantic Scholar, Google Scholar.
-        </p>
-        <table class="citation-table">
-          <thead>
-            <tr>
-              <th>Title</th>
-              <th>Year</th>
-              <th>Summary</th>
-            </tr>
-          </thead>
-          <tbody>
-            
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1016/j.ygeno.2026.111280" target="_blank" rel="noopener">A single-nucleus transcriptomic atlas of early marine shrimp embryogenesis reveals cell-type specification and eye pigment transport mechanisms</a></td>
-              <td class="citation-year"><time datetime="2026">2026</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1016/j.celrep.2026.117085" target="_blank" rel="noopener">Cellular and molecular landscapes of human tendons across the lifespan revealed by spatial and single-cell transcriptomics</a></td>
-              <td class="citation-year"><time datetime="2026">2026</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1016/j.celrep.2026.117407" target="_blank" rel="noopener">Consensus Pituitary Atlas, a scalable resource for annotation, novel marker discovery, and analyses in mouse pituitary gland research</a></td>
-              <td class="citation-year"><time datetime="2026">2026</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.64898/2026.01.21.700936" target="_blank" rel="noopener">cyto: ultra high-throughput processing of 10x-flex single cell sequencing</a></td>
-              <td class="citation-year"><time datetime="2026">2026</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.64898/2026.02.16.706223" target="_blank" rel="noopener">Differential analysis of genomics count data with edge*</a></td>
-              <td class="citation-year"><time datetime="2026">2026</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include kallisto, level, melsted, quantified, script, sullivan, three, transcripts.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.64898/2026.02.13.705850" target="_blank" rel="noopener">Empty drops in scRNA-seq uncover the surprising prevalence of sequestered neuropeptide mRNA and pervasive sequencing artifacts</a></td>
-              <td class="citation-year"><time datetime="2026">2026</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include contain, exclude, instance, k-mers, problematic, quantification, reads, straightforward.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.3390/genes17060613" target="_blank" rel="noopener">Genome-Wide Identification and Expression Analysis of the Xyloglucan Endotransglucosylase/Hydrolase Gene Family in Manihot esculenta</a></td>
-              <td class="citation-year"><time datetime="2026">2026</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.64898/2026.04.02.716195" target="_blank" rel="noopener">Hybrid crosses reveal a cell-type-specific landscape of mouse regulatory variation</a></td>
-              <td class="citation-year"><time datetime="2026">2026</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include allele-specific, concatenated, counts, kb-python, mapped, parental-f1, parents, quantify.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.3390/ijms27010487" target="_blank" rel="noopener">Long-Read Sequencing Reveals Cell- and State-Specific Alternative Splicing in 293T and A549 Cell Transcriptomes</a></td>
-              <td class="citation-year"><time datetime="2026">2026</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include analysis, alternative, angela, brooks, california, computational, designed, detection.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1016/j.celrep.2026.117027" target="_blank" rel="noopener">Nonsense-mediated mRNA decay orchestrates neuronal migration and cortical lamination while modulating Reelin and ciliary gene regulatory networks</a></td>
-              <td class="citation-year"><time datetime="2026">2026</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.64898/2026.06.08.730949" target="_blank" rel="noopener">Prenatal exposure to maternal stress drives sex-specific neurodevelopmental disruptions in the fetal hypothalamus</a></td>
-              <td class="citation-year"><time datetime="2026">2026</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1073/pnas.2512031123" target="_blank" rel="noopener">Regulatory logic underlying neural crest contributions to the head versus the heart.</a></td>
-              <td class="citation-year"><time datetime="2026">2026</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1038/s41418-026-01761-2" target="_blank" rel="noopener">Single cells and spatial RNA profiling reveal that inflammatory fibroblasts arise from Edil3 stromal cells in the colon after irradiation</a></td>
-              <td class="citation-year"><time datetime="2026">2026</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.7554/elife.105822.2" target="_blank" rel="noopener">Single-cell RNA-seq reveals trans-sialidase-like superfamily gene expression heterogeneity in Trypanosoma cruzi populations</a></td>
-              <td class="citation-year"><time datetime="2026">2026</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.7554/elife.105822.3" target="_blank" rel="noopener">Single-cell RNA-seq reveals trans-sialidase-like superfamily gene expression heterogeneity in Trypanosoma cruzi populations</a></td>
-              <td class="citation-year"><time datetime="2026">2026</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1016/j.isci.2026.114674" target="_blank" rel="noopener">Single-cell transcriptomics revealed molecular vulnerability in a human midbrain-like organoid model of Parkinson’s disease</a></td>
-              <td class="citation-year"><time datetime="2026">2026</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.18632/aging.206371" target="_blank" rel="noopener">Stage-dependent transcriptomic changes in human dermal fibroblast senescence model</a></td>
-              <td class="citation-year"><time datetime="2026">2026</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.64898/2026.05.01.716870" target="_blank" rel="noopener">Tissue-adapted NK cells shape pathogenic cDC1 niches in early arthritis</a></td>
-              <td class="citation-year"><time datetime="2026">2026</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1097/jcma.0000000000001361" target="_blank" rel="noopener">Tumor-suppressive circRNAs in colorectal cancer spheroids and patients</a></td>
-              <td class="citation-year"><time datetime="2026">2026</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.64898/2026.02.06.704502" target="_blank" rel="noopener">Verifying LLM-extracted text with token alignment</a></td>
-              <td class="citation-year"><time datetime="2026">2026</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include algorithms, alignment, despite, development, disparate, fields, history, strategies.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1038/s41587-025-02638-4" target="_blank" rel="noopener">Agnostic viral detection at single-cell resolution reveals novel viruses</a></td>
-              <td class="citation-year"><time datetime="2025">2025</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.3389/fimmu.2025.1596760" target="_blank" rel="noopener">An immune-focused supplemental alignment pipeline captures information missed from dominant single-cell RNA-seq analyses, including allele-specific MHC-I regulation</a></td>
-              <td class="citation-year"><time datetime="2025">2025</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include alignment, cation, expensive, genome, kallisto, performs, positional, process.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/2025.06.19.660575" target="_blank" rel="noopener">Cellular and molecular landscapes of human tendons across the lifespan revealed by spatial and single-cell transcriptomics</a></td>
-              <td class="citation-year"><time datetime="2025">2025</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/2025.10.28.685060" target="_blank" rel="noopener">Consensus Pituitary Atlas, a scalable resource for annotation, novel marker discovery and analyses in pituitary gland research</a></td>
-              <td class="citation-year"><time datetime="2025">2025</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.3389/fvets.2025.1558799" target="_blank" rel="noopener">Current status of transcriptome sequencing technology in ruminants</a></td>
-              <td class="citation-year"><time datetime="2025">2025</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1038/s41587-025-02614-y" target="_blank" rel="noopener">Detection of viral sequences at single-cell resolution identifies novel viruses associated with host gene expression changes</a></td>
-              <td class="citation-year"><time datetime="2025">2025</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include alignment, amino, reference, expanded, kallisto, nucleotide, rna-seq, sequences.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1093/molehr/gaaf038" target="_blank" rel="noopener">Discordant effects of maternal age on the human MII oocyte transcriptome</a></td>
-              <td class="citation-year"><time datetime="2025">2025</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include count, ensembl, grch38, index, kinsella, melsted, obtained, paired.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/2025.11.27.690682" target="_blank" rel="noopener">Error Correction Algorithms for Efficient Gene Expression Quantification in Single Cell Transcriptomics</a></td>
-              <td class="citation-year"><time datetime="2025">2025</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include alevin-fry, alignment-free, bustools, developed, kallisto, methods.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/2025.05.11.653373" target="_blank" rel="noopener">Extrinsic biological stochasticity and technical noise normalization of single-cell RNA sequencing data</a></td>
-              <td class="citation-year"><time datetime="2025">2025</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include cells, dataset, files, kb-python, consisting, downloaded, fastq, filtering.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.21203/rs.3.rs-6298254/v1" target="_blank" rel="noopener">High-Throughput Drug Discovery for a Rare Neurological Disorder: Uncovering a Novel Therapeutic Opportunity for the 19q12 Autism Spectrum Disorder</a></td>
-              <td class="citation-year"><time datetime="2025">2025</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1038/s41598-025-26015-y" target="_blank" rel="noopener">High-throughput transcriptomic screening reveals entrectinib as a repositioning opportunity in 19q12 autism spectrum disorder</a></td>
-              <td class="citation-year"><time datetime="2025">2025</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include 384-well, aligned, bustools, compound, demultiplexed, fastq, kallisto, plate.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/2025.11.24.690267" target="_blank" rel="noopener">Interspecific divergence of gene expression biophysics driven by both evolutionary systems drift and strong selective constraints on bursting rate</a></td>
-              <td class="citation-year"><time datetime="2025">2025</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include count, kallisto, matrices, obtain, processed, spliced, unspliced.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1371/journal.pcbi.1013692" target="_blank" rel="noopener">Long-read sequencing transcriptome quantification with lr-kallisto</a></td>
-              <td class="citation-year"><time datetime="2025">2025</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include kallisto, approach, benefits, builds, datasets, faster, importantly, low-memory.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1038/s41467-025-66096-x" target="_blank" rel="noopener">Long-read transcriptomics of a diverse human cohort reveals ancestry bias in gene annotation</a></td>
-              <td class="citation-year"><time datetime="2025">2025</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include expression, kb-python, lr-kallisto, quantify, transcript.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/2025.03.14.643250" target="_blank" rel="noopener">Long-read transcriptomics of a diverse human cohort reveals widespread ancestry bias in gene annotation</a></td>
-              <td class="citation-year"><time datetime="2025">2025</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1016/j.immuni.2025.04.006" target="_blank" rel="noopener">Monocytes can efficiently replace all brain macrophages and fetal liver monocytes can generate bona fide SALL1+ microglia</a></td>
-              <td class="citation-year"><time datetime="2025">2025</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1038/s41592-025-02832-x" target="_blank" rel="noopener">Monod: model-based discovery and integration through fitting stochastic transcriptional dynamics to single-cell sequencing data</a></td>
-              <td class="citation-year"><time datetime="2025">2025</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1016/j.stress.2025.101065" target="_blank" rel="noopener">Multi-omics analysis identifies Rch-miR156 as a regulator of salt tolerance in heterografted Rosa plants</a></td>
-              <td class="citation-year"><time datetime="2025">2025</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1007/978-3-031-96344-5_29" target="_blank" rel="noopener">Next-Generation Sequencing of Educated Platelets for Cancer Diagnosis and Beyond</a></td>
-              <td class="citation-year"><time datetime="2025">2025</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/2025.07.18.665549" target="_blank" rel="noopener">Population-scale sequencing resolves correlates and determinants of latent Epstein-Barr Virus infection</a></td>
-              <td class="citation-year"><time datetime="2025">2025</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/2025.05.11.653354" target="_blank" rel="noopener">Pseudoassembly of k-mers</a></td>
-              <td class="citation-year"><time datetime="2025">2025</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include strain, assignments, based, cell-level, contigs, determined, figure, kallisto.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.7554/elife.107683.3" target="_blank" rel="noopener">PTBP1 depletion in mature astrocytes reveals distinct splicing alterations without neuronal features</a></td>
-              <td class="citation-year"><time datetime="2025">2025</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.7554/elife.107683" target="_blank" rel="noopener">PTBP1 depletion in mature astrocytes reveals distinct splicing alterations without neuronal features</a></td>
-              <td class="citation-year"><time datetime="2025">2025</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/2025.05.30.657115" target="_blank" rel="noopener">PTBP1 Depletion in Mature Astrocytes Reveals Distinct Splicing Alterations Without Neuronal Features</a></td>
-              <td class="citation-year"><time datetime="2025">2025</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.7554/elife.107683.1" target="_blank" rel="noopener">PTBP1 Depletion in Mature Astrocytes Reveals Distinct Splicing Alterations Without Neuronal Features</a></td>
-              <td class="citation-year"><time datetime="2025">2025</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.7554/elife.107683.2" target="_blank" rel="noopener">PTBP1 Depletion in Mature Astrocytes Reveals Distinct Splicing Alterations Without Neuronal Features</a></td>
-              <td class="citation-year"><time datetime="2025">2025</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1073/pnas.2504410122" target="_blank" rel="noopener">Putative muscle stem cells promote Xenopus tail regeneration by modifying macrophage function via c1qtnf3</a></td>
-              <td class="citation-year"><time datetime="2025">2025</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1109/tse.2025.3641225" target="_blank" rel="noopener">Reaching Software Quality for Bioinformatics Applications: How Far Are We?</a></td>
-              <td class="citation-year"><time datetime="2025">2025</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include analysis, bustools, ccremover, dropest, kb-python, knn-smoothing, netsmooth, outrigger.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/2025.09.03.674039" target="_blank" rel="noopener">Reference-based variant detection with varseek</a></td>
-              <td class="citation-year"><time datetime="2025">2025</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/2025.06.16.659990" target="_blank" rel="noopener">REINDEER2: practical abundance index at scale</a></td>
-              <td class="citation-year"><time datetime="2025">2025</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include added, comparison, dataset, designed, established, kallisto, known, level.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1007/978-3-032-05228-5_14" target="_blank" rel="noopener">REINDEER2: Practical Abundance Index at Scale</a></td>
-              <td class="citation-year"><time datetime="2025">2025</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.64898/2025.12.12.694033" target="_blank" rel="noopener">Sequence and structural determinants of efficacious de novo chimeric antigen receptors</a></td>
-              <td class="citation-year"><time datetime="2025">2025</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include per-cell, annotated, antibodies, assignments, bustools, default, estimated, hashing.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/2025.01.14.633000" target="_blank" rel="noopener">Single-cell RNA-seq reveals trans-sialidase-like superfamily gene expression heterogeneity in Trypanosoma cruzi populations</a></td>
-              <td class="citation-year"><time datetime="2025">2025</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.7554/elife.105822.1" target="_blank" rel="noopener">Single-cell RNA-seq reveals trans-sialidase-like superfamily gene expression heterogeneity in Trypanosoma cruzi populations</a></td>
-              <td class="citation-year"><time datetime="2025">2025</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.7554/elife.105822" target="_blank" rel="noopener">Single-cell RNA-seq reveals trans-sialidase-like superfamily gene expression heterogeneity in Trypanosoma cruzi populations</a></td>
-              <td class="citation-year"><time datetime="2025">2025</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include algorithm, apply, bustools, environmental, expectation-maximization, expression, filter, kallisto.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1111/raq.70073" target="_blank" rel="noopener">Single‐Cell Sequencing: A Sharp Sword for Deciphering Biological Innovations and Evolutionary Adaptations in Lower Vertebrates and Invertebrates</a></td>
-              <td class="citation-year"><time datetime="2025">2025</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1016/j.xgen.2025.101108" target="_blank" rel="noopener">Systematic cell-type resolved transcriptomes of 8 tissues in 8 lab and wild-derived mouse strains capture global and local expression variation</a></td>
-              <td class="citation-year"><time datetime="2025">2025</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include across, autocrine, autophagy, cancer, consider, contexts, described, detect.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/2025.04.21.649844" target="_blank" rel="noopener">Systematic cell-type resolved transcriptomes of 8 tissues in 8 lab and wild-derived mouse strains captures global and local expression variation</a></td>
-              <td class="citation-year"><time datetime="2025">2025</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1038/s41587-025-02688-8" target="_blank" rel="noopener">Topological velocity inference from spatial transcriptomic data</a></td>
-              <td class="citation-year"><time datetime="2025">2025</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include bustools, counts, dataset, fastq, files, kallisto, obtain, original.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/2025.10.12.681832" target="_blank" rel="noopener">Transcriptional regulation of disease-relevant microglial activation programs</a></td>
-              <td class="citation-year"><time datetime="2025">2025</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include kallisto-bustools.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1016/b978-0-323-95502-7.00292-x" target="_blank" rel="noopener">Transcriptome Analysis</a></td>
-              <td class="citation-year"><time datetime="2025">2025</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.48130/opr-0025-0004" target="_blank" rel="noopener">Transcriptome analysis revealed the molecular mechanism by which Chrysanthemum naktongense roots respond to low-concentration lanthanum treatment</a></td>
-              <td class="citation-year"><time datetime="2025">2025</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1093/bioinformatics/btaf236" target="_blank" rel="noopener">Transcriptome assembly at single-cell resolution with Beaver</a></td>
-              <td class="citation-year"><time datetime="2025">2025</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/2025.07.11.664421" target="_blank" rel="noopener">Transcriptomic responses to endurance exercise training in rats</a></td>
-              <td class="citation-year"><time datetime="2025">2025</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include rna-seq, allows, analysis, counting, examine, kallisto-bustools, methods, molecules.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/2025.04.09.648005" target="_blank" rel="noopener">Unexpected XIST Expression in Male Hearts Associates with Disease</a></td>
-              <td class="citation-year"><time datetime="2025">2025</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include bustools, kallisto, configuration, generated, pseudoalignment, reference.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.64898/2025.12.04.692398" target="_blank" rel="noopener">Uniform pre-processing of bacterial single-cell RNA-seq</a></td>
-              <td class="citation-year"><time datetime="2025">2025</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/2024.03.23.586412" target="_blank" rel="noopener">A human commons cell atlas reveals cell type specificity for OAS1 isoforms</a></td>
-              <td class="citation-year"><time datetime="2024">2024</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include bustools, count, developed, generate, kallisto, kb-python, leveraged, matrices.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1093/nar/gkae1137" target="_blank" rel="noopener">Accurate quantification of nascent and mature RNAs from single-cell and single-nucleus RNA-seq</a></td>
-              <td class="citation-year"><time datetime="2024">2024</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include implemented, kallisto, mature, nascent, accounts, accurate, acknowledges, allows.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://www.semanticscholar.org/paper/c988eb653080ec6f24a2d5347efabf98fb1ac13f" target="_blank" rel="noopener">Advances in colored k-mer sets: essentials for the curious</a></td>
-              <td class="citation-year"><time datetime="2024">2024</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/2024.03.23.586413" target="_blank" rel="noopener">Algorithms for a Commons Cell Atlas</a></td>
-              <td class="citation-year"><time datetime="2024">2024</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include build, bustools, cellatlas, command, commands, count, fastq, files.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1038/s43588-024-00689-2" target="_blank" rel="noopener">Biophysically interpretable inference of cell types from multimodal sequencing data</a></td>
-              <td class="citation-year"><time datetime="2024">2024</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include aligning, although, ambiguous, annotations, biological, build, cellular, changes.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1038/s41598-024-71137-4" target="_blank" rel="noopener">Characterization of prostate macrophage heterogeneity, foam cell markers, and CXCL17 upregulation in a mouse model of steroid hormone imbalance</a></td>
-              <td class="citation-year"><time datetime="2024">2024</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/2024.07.19.604364" target="_blank" rel="noopener">Long-read sequencing transcriptome quantification with lr-kallisto</a></td>
-              <td class="citation-year"><time datetime="2024">2024</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include kallisto, approach, benefits, builds, faster, low-memory, requirements, tools.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1016/j.immuni.2024.10.003" target="_blank" rel="noopener">Maintenance and functional regulation of immune memory to COVID-19 vaccines in tissues</a></td>
-              <td class="citation-year"><time datetime="2024">2024</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/2024.04.24.590980" target="_blank" rel="noopener">PROSTATE CELL HETEROGENEITY AND CXCL17 UPREGULATION IN MOUSE STEROID HORMONE IMBALANCE</a></td>
-              <td class="citation-year"><time datetime="2024">2024</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/2024.09.30.615942" target="_blank" rel="noopener">Single-cell RNA-seq Reveals Early Transcriptional Programs of the Maternal to Zygote Transition in Mice and Rats</a></td>
-              <td class="citation-year"><time datetime="2024">2024</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include filtered, abundances, analysis, approximation, based, counts, default, deseq.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/2024.07.04.602131" target="_blank" rel="noopener">Stochastic Modeling of Biophysical Responses to Perturbation</a></td>
-              <td class="citation-year"><time datetime="2024">2024</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include counts, datasets, mature, nascent, scrna-seq, spliced, unspliced, analysis.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/2024.04.04.588111" target="_blank" rel="noopener">The impact of package selection and versioning on single-cell RNA-seq analysis</a></td>
-              <td class="citation-year"><time datetime="2024">2024</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include alternative, around, barcode, bustools, efficiency, identifier, kallisto, kb-python.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/2024.11.04.621958" target="_blank" rel="noopener">Transcriptome Assembly at Single-Cell Resolution with Beaver</a></td>
-              <td class="citation-year"><time datetime="2024">2024</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include gene-level, abundance, advances, alevin-fry, analyses, bustools, cells, challenging.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/2023.12.11.571168" target="_blank" rel="noopener">Efficient and accurate detection of viral sequences at single-cell resolution reveals putative novel viruses perturbing host gene expression</a></td>
-              <td class="citation-year"><time datetime="2023">2023</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include described, front-end, kallisto-bustools, previously, similar, workflows.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/2022.12.02.518832" target="_blank" rel="noopener">Accurate quantification of single-cell and single-nucleus RNA-seq transcripts using distinguishing flanking k-mers</a></td>
-              <td class="citation-year"><time datetime="2022">2022</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include implemented, kallisto, nascent, sullivan, accounts, accurate, acknowledges, allows.</td>
-            </tr>
-          </tbody>
-        </table>
+        <aside class="evidence-panel relationship-detail" aria-live="polite">
+          <span class="study-label" data-relation-label>Relation</span>
+          <h2 data-relation-title></h2>
+          <p class="selected-relation-statement" data-relation-statement></p>
+          <section class="version-citation" data-version-citation hidden>
+            <h3>Citation</h3>
+            <div class="bibtex-box">
+              <button class="copy-bibtex-button" type="button" data-copy-bibtex>
+                Copy BibTeX
+              </button>
+              <pre><code data-bibtex-code></code></pre>
+            </div>
+          </section>
+          <details class="relationship-evidence" data-relation-evidence>
+            <summary>
+              <span>Evidence</span>
+              <span class="evidence-summary" data-evidence-summary></span>
+            </summary>
+            <table class="relationship-evidence-table">
+              <thead>
+                <tr>
+                  <th>Span</th>
+                  <th>Source</th>
+                </tr>
+              </thead>
+              <tbody data-evidence-rows></tbody>
+            </table>
+          </details>
+        </aside>
       </section>
+      <script id="workRelationData" type="application/json">{"work":{"id":"work:kallisto-bustools-and-kb-python-for-quantifying-bulk-single-cell-and-single-nucleus-rna-seq","title":"kallisto, bustools and kb-python for quantifying bulk, single-cell and single-nucleus RNA-seq","description":"RNA-seq preprocessing is central to turning sequencing reads into expression measurements for bulk tissues, single cells, and single nuclei. The challenge is that mapping, barcode correction, UMI handling, reference construction, and assay-specific settings require multiple coordinated steps. The protocol gives a reproducible kallisto, bustools, and kb-python workflow that reduces preprocessing to reference generation and quantification while supporting standard, nascent-and-cDNA, bulk, single-cell, and single-nucleus analyses."},"relationTypes":[{"id":"authors","label":"Authors"},{"id":"claims","label":"Claims"},{"id":"citations","label":"Citations"},{"id":"versions","label":"Versions"},{"id":"software","label":"Software"},{"id":"sources","label":"Sources"}],"connections":[{"id":"connection:version:kallisto-bustools-and-kb-python-for-quantifying-bulk-single-cell-and-single-nucleus-rna-seq--2023-11-22-biorxiv--person:orcid:0000-0002-8359-6705--author-1","type":"authors","title":"Delaney K. Sullivan","description":"Delaney K. Sullivan is an author of kallisto, bustools and kb-python for quantifying bulk, single-cell and single-nucleus RNA-seq.","statement":"Delaney K. Sullivan is an author of kallisto, bustools and kb-python for quantifying bulk, single-cell and single-nucleus RNA-seq.","evidence":[]},{"id":"connection:version:kallisto-bustools-and-kb-python-for-quantifying-bulk-single-cell-and-single-nucleus-rna-seq--2023-11-22-biorxiv--person:orcid:0000-0003-0894-4017--author-2","type":"authors","title":"Kyung Hoi (Joseph) Min","description":"Kyung Hoi (Joseph) Min is an author of kallisto, bustools and kb-python for quantifying bulk, single-cell and single-nucleus RNA-seq.","statement":"Kyung Hoi (Joseph) Min is an author of kallisto, bustools and kb-python for quantifying bulk, single-cell and single-nucleus RNA-seq.","evidence":[]},{"id":"connection:version:kallisto-bustools-and-kb-python-for-quantifying-bulk-single-cell-and-single-nucleus-rna-seq--2023-11-22-biorxiv--person:orcid:0000-0002-7851-1818--author-3","type":"authors","title":"Kristján Eldjárn Hjörleifsson","description":"Kristján Eldjárn Hjörleifsson is an author of kallisto, bustools and kb-python for quantifying bulk, single-cell and single-nucleus RNA-seq.","statement":"Kristján Eldjárn Hjörleifsson is an author of kallisto, bustools and kb-python for quantifying bulk, single-cell and single-nucleus RNA-seq.","evidence":[]},{"id":"connection:version:kallisto-bustools-and-kb-python-for-quantifying-bulk-single-cell-and-single-nucleus-rna-seq--2023-11-22-biorxiv--person:orcid:0000-0003-1379-2927--author-4","type":"authors","title":"Laura Luebbert","description":"Laura Luebbert is an author of kallisto, bustools and kb-python for quantifying bulk, single-cell and single-nucleus RNA-seq.","statement":"Laura Luebbert is an author of kallisto, bustools and kb-python for quantifying bulk, single-cell and single-nucleus RNA-seq.","evidence":[]},{"id":"connection:version:kallisto-bustools-and-kb-python-for-quantifying-bulk-single-cell-and-single-nucleus-rna-seq--2023-11-22-biorxiv--person:local:guillaume-holley--author-5","type":"authors","title":"Guillaume Holley","description":"Guillaume Holley is an author of kallisto, bustools and kb-python for quantifying bulk, single-cell and single-nucleus RNA-seq.","statement":"Guillaume Holley is an author of kallisto, bustools and kb-python for quantifying bulk, single-cell and single-nucleus RNA-seq.","evidence":[]},{"id":"connection:version:kallisto-bustools-and-kb-python-for-quantifying-bulk-single-cell-and-single-nucleus-rna-seq--2023-11-22-biorxiv--person:orcid:0000-0002-7092-9427--author-6","type":"authors","title":"Lambda Moses","description":"Lambda Moses is an author of kallisto, bustools and kb-python for quantifying bulk, single-cell and single-nucleus RNA-seq.","statement":"Lambda Moses is an author of kallisto, bustools and kb-python for quantifying bulk, single-cell and single-nucleus RNA-seq.","evidence":[]},{"id":"connection:version:kallisto-bustools-and-kb-python-for-quantifying-bulk-single-cell-and-single-nucleus-rna-seq--2023-11-22-biorxiv--person:orcid:0000-0001-5072-2659--author-7","type":"authors","title":"Johan Gustafsson","description":"Johan Gustafsson is an author of kallisto, bustools and kb-python for quantifying bulk, single-cell and single-nucleus RNA-seq.","statement":"Johan Gustafsson is an author of kallisto, bustools and kb-python for quantifying bulk, single-cell and single-nucleus RNA-seq.","evidence":[]},{"id":"connection:version:kallisto-bustools-and-kb-python-for-quantifying-bulk-single-cell-and-single-nucleus-rna-seq--2023-11-22-biorxiv--person:orcid:0000-0002-4143-8194--author-8","type":"authors","title":"Nicolas Bray","description":"Nicolas L. Bray is an author of kallisto, bustools and kb-python for quantifying bulk, single-cell and single-nucleus RNA-seq.","statement":"Nicolas L. Bray is an author of kallisto, bustools and kb-python for quantifying bulk, single-cell and single-nucleus RNA-seq.","evidence":[]},{"id":"connection:version:kallisto-bustools-and-kb-python-for-quantifying-bulk-single-cell-and-single-nucleus-rna-seq--2023-11-22-biorxiv--person:orcid:0000-0001-8556-2499--author-9","type":"authors","title":"Harold Pimentel","description":"Harold Pimentel is an author of kallisto, bustools and kb-python for quantifying bulk, single-cell and single-nucleus RNA-seq.","statement":"Harold Pimentel is an author of kallisto, bustools and kb-python for quantifying bulk, single-cell and single-nucleus RNA-seq.","evidence":[]},{"id":"connection:version:kallisto-bustools-and-kb-python-for-quantifying-bulk-single-cell-and-single-nucleus-rna-seq--2023-11-22-biorxiv--person:orcid:0000-0002-6442-4502--author-10","type":"authors","title":"A. Sina Booeshaghi","description":"A. Sina Booeshaghi is an author of kallisto, bustools and kb-python for quantifying bulk, single-cell and single-nucleus RNA-seq.","statement":"A. Sina Booeshaghi is an author of kallisto, bustools and kb-python for quantifying bulk, single-cell and single-nucleus RNA-seq.","evidence":[]},{"id":"connection:version:kallisto-bustools-and-kb-python-for-quantifying-bulk-single-cell-and-single-nucleus-rna-seq--2023-11-22-biorxiv--person:orcid:0000-0002-8418-6724--author-11","type":"authors","title":"Páll Melsted","description":"Páll Melsted is an author of kallisto, bustools and kb-python for quantifying bulk, single-cell and single-nucleus RNA-seq.","statement":"Páll Melsted is an author of kallisto, bustools and kb-python for quantifying bulk, single-cell and single-nucleus RNA-seq.","evidence":[]},{"id":"connection:version:kallisto-bustools-and-kb-python-for-quantifying-bulk-single-cell-and-single-nucleus-rna-seq--2023-11-22-biorxiv--person:orcid:0000-0002-9164-6231--author-12","type":"authors","title":"Lior Pachter","description":"Lior Pachter is an author of kallisto, bustools and kb-python for quantifying bulk, single-cell and single-nucleus RNA-seq.","statement":"Lior Pachter is an author of kallisto, bustools and kb-python for quantifying bulk, single-cell and single-nucleus RNA-seq.","evidence":[]},{"id":"connection:version:kallisto-bustools-and-kb-python-for-quantifying-bulk-single-cell-and-single-nucleus-rna-seq--2023-11-22-biorxiv--claim:version:kallisto-bustools-and-kb-python-for-quantifying-bulk-single-cell-and-single-nucleus-rna-seq--2023-11-22-biorxiv--summary-0","type":"claims","title":"RNA-seq assays matter because they quantify RNA species across bulk samples, individual cells, and nuclei. The preproces","description":"RNA-seq assays matter because they quantify RNA species across bulk samples, individual cells, and nuclei. The preprocessing gap is that raw FASTQs, genome references, assay chemistries, barcodes, UMIs, and nascent transcript signals otherwise require many coordinated tool invocations and choices. This protocol describes how kallisto, bustools, and kb-python create efficient two-step workflows with standard and nascent/coding-DNA references, count matrices, bulk abundance outputs, and downstream interoperability.","statement":"This publication contains the target grounded summary claim.","evidence":[{"source":"source:text:document:kallisto-bustools-and-kb-python-for-quantifying-bulk-single-cell-and-single-nucleus-rna-seq--2023-11-22-biorxiv","span":"The preprocessing1,2 step of RNA-seq3 experiments involves mapping reads to a reference genome or transcriptome, followed by gene expression or transcript abundance quantification.4 Many open-source tools exist for bulk RNA-seq preprocessing5–14 as well as single-cell RNA-seq preprocessing.1,15–21","page":2,"properties":{"document_id":"document:kallisto-bustools-and-kb-python-for-quantifying-bulk-single-cell-and-single-nucleus-rna-seq--2023-11-22-biorxiv","char_start":362,"char_end":660}},{"source":"source:text:document:kallisto-bustools-and-kb-python-for-quantifying-bulk-single-cell-and-single-nucleus-rna-seq--2023-11-22-biorxiv","span":"While multiple steps are necessary to process input consisting of FASTQ sequencing files, a reference genome FASTA, and a GTF annotation26,27, to an output of quantifications using kallisto and bustools, these steps are greatly facilitated by the wrapper tool, kb-python.","page":2,"properties":{"document_id":"document:kallisto-bustools-and-kb-python-for-quantifying-bulk-single-cell-and-single-nucleus-rna-seq--2023-11-22-biorxiv","char_start":1244,"char_end":1515}},{"source":"source:text:document:kallisto-bustools-and-kb-python-for-quantifying-bulk-single-cell-and-single-nucleus-rna-seq--2023-11-22-biorxiv","span":"The kb-python tool simplifies the running of kallisto and bustools to the extent that all of this can be done in two steps: `kb ref` for generating a kallisto index from an annotated reference genome and `kb count` for mapping and quantification.","page":2,"properties":{"document_id":"document:kallisto-bustools-and-kb-python-for-quantifying-bulk-single-cell-and-single-nucleus-rna-seq--2023-11-22-biorxiv","char_start":1658,"char_end":1904}},{"source":"source:text:document:kallisto-bustools-and-kb-python-for-quantifying-bulk-single-cell-and-single-nucleus-rna-seq--2023-11-22-biorxiv","span":"The index created by --workflow=nac (nac: nascent and coding DNA) contains both the coding DNA and the nascent transcripts. The nascent transcript sequences consist of the full gene (both exons and introns).","page":3,"properties":{"document_id":"document:kallisto-bustools-and-kb-python-for-quantifying-bulk-single-cell-and-single-nucleus-rna-seq--2023-11-22-biorxiv","char_start":1743,"char_end":1950}},{"source":"source:text:document:kallisto-bustools-and-kb-python-for-quantifying-bulk-single-cell-and-single-nucleus-rna-seq--2023-11-22-biorxiv","span":"For the preprocessing of 800 million Illumina sequencing reads (stored in a single pair of fastq.gz files) produced by single-cell RNA-seq from 10x Genomics, kb count with the nac workflow can take under an hour on 8 threads and under 40 minutes on 16 threads, with an even lower runtime for the standard workflow.","page":19,"properties":{"document_id":"document:kallisto-bustools-and-kb-python-for-quantifying-bulk-single-cell-and-single-nucleus-rna-seq--2023-11-22-biorxiv","char_start":1424,"char_end":1738}}]},{"id":"connection:version:kallisto-bustools-and-kb-python-for-quantifying-bulk-single-cell-and-single-nucleus-rna-seq--2024-10-10-nature-protocols--claim:version:kallisto-bustools-and-kb-python-for-quantifying-bulk-single-cell-and-single-nucleus-rna-seq--2024-10-10-nature-protocols--summary-0","type":"claims","title":"RNA-seq preprocessing is central to turning sequencing reads into expression measurements for bulk tissues, single cells","description":"RNA-seq preprocessing is central to turning sequencing reads into expression measurements for bulk tissues, single cells, and single nuclei. The challenge is that mapping, barcode correction, UMI handling, reference construction, and assay-specific settings require multiple coordinated steps. The protocol gives a reproducible kallisto, bustools, and kb-python workflow that reduces preprocessing to reference generation and quantification while supporting standard, nascent-and-cDNA, bulk, single-cell, and single-nucleus analyses.","statement":"This publication contains the target grounded summary claim.","evidence":[{"source":"source:text:document:kallisto-bustools-and-kb-python-for-quantifying-bulk-single-cell-and-single-nucleus-rna-seq--2024-10-10-nature-protocols","span":"The preprocessing1,2 step of RNA-sequencing (RNA-seq)3 experiments involves mapping reads to a reference genome or transcriptome, followed by gene expression or transcript abundance quantification4.","page":2,"properties":{"document_id":"document:kallisto-bustools-and-kb-python-for-quantifying-bulk-single-cell-and-single-nucleus-rna-seq--2024-10-10-nature-protocols","char_start":50,"char_end":248}},{"source":"source:text:document:kallisto-bustools-and-kb-python-for-quantifying-bulk-single-cell-and-single-nucleus-rna-seq--2024-10-10-nature-protocols","span":"While multiple steps are necessary to process an input consisting of FASTQ sequencing files, a reference genome FASTA, and a GTF annotation26,27, to an output of quantifications using kallisto and bustools, these steps are greatly facilitated by the wrapper tool, kb-python.","page":2,"properties":{"document_id":"document:kallisto-bustools-and-kb-python-for-quantifying-bulk-single-cell-and-single-nucleus-rna-seq--2024-10-10-nature-protocols","char_start":949,"char_end":1223}},{"source":"source:text:document:kallisto-bustools-and-kb-python-for-quantifying-bulk-single-cell-and-single-nucleus-rna-seq--2024-10-10-nature-protocols","span":"The kb-python tool simplifies the running of kallisto and bustools to the extent that all of this can be done in two steps: 'kb ref' for generating a kallisto index from an annotated reference genome and 'kb count' for mapping and quantification.","page":2,"properties":{"document_id":"document:kallisto-bustools-and-kb-python-for-quantifying-bulk-single-cell-and-single-nucleus-rna-seq--2024-10-10-nature-protocols","char_start":1366,"char_end":1612}},{"source":"source:text:document:kallisto-bustools-and-kb-python-for-quantifying-bulk-single-cell-and-single-nucleus-rna-seq--2024-10-10-nature-protocols","span":"This protocol describes the application of kallisto, bustools and kb-python for bulk, singlecell and single-nucleus RNA-seq datasets.","page":2,"properties":{"document_id":"document:kallisto-bustools-and-kb-python-for-quantifying-bulk-single-cell-and-single-nucleus-rna-seq--2024-10-10-nature-protocols","char_start":2370,"char_end":2503}},{"source":"source:text:document:kallisto-bustools-and-kb-python-for-quantifying-bulk-single-cell-and-single-nucleus-rna-seq--2024-10-10-nature-protocols","span":"For the nac index type, one obtains three count matrices: (1) nascent, (2) mature and (3) ambiguous.","page":6,"properties":{"document_id":"document:kallisto-bustools-and-kb-python-for-quantifying-bulk-single-cell-and-single-nucleus-rna-seq--2024-10-10-nature-protocols","char_start":1977,"char_end":2077}}]},{"id":"connection:claim:citation:version-citing-2024-a-human-commons-cell-atlas-reveals-cell-type-specificity-for-oas1-isoforms-cites-version-kallisto-bustools-and-kb-python-for-quantifying-bulk-single-bc2a6a0cf8--version:kallisto-bustools-and-kb-python-for-quantifying-bulk-single-cell-and-single-nucleus-rna-seq--2023-11-22-biorxiv","type":"citations","title":"A human commons cell atlas reveals cell type specificity for OAS1 isoforms","description":"The paper presents an open-source Human Commons Cell Atlas of 2.9 million cells across 27 tissues and uses it to analyze OAS1 isoform cell-type specificity, finding OAS1 p44b specificity in round and elongating spermatids.","statement":"Cited for the kallisto bustools/kb-python programs used to generate gene count matrices.","evidence":[{"source":"source:pdf:document:cited-by--2024-a-human-commons-cell-atlas-reveals-cell-type-specificity-for-oas1-isoforms","span":"To that end, we leveraged the recently developed kallisto bustools (kb-python) programs (Melsted et al. 2021; Sullivan et al. 2023) to generate all 525 gene count matrices.","page":2,"properties":{"document_id":"document:cited-by--2024-a-human-commons-cell-atlas-reveals-cell-type-specificity-for-oas1-isoforms","char_start":null,"char_end":null}}]},{"id":"connection:claim:citation:version-citing-2024-algorithms-for-a-commons-cell-atlas-04a893eb73-cites-version-kallisto-bustools-and-kb-python-for-quantifying-bulk-single-cell-and-single-nucleus-rna-d9f67fad2c--version:kallisto-bustools-and-kb-python-for-quantifying-bulk-single-cell-and-single-nucleus-rna-seq--2023-11-22-biorxiv","type":"citations","title":"Algorithms for a Commons Cell Atlas","description":"The paper presents data, algorithms, and tools for automating cataloging and analysis of cell types across tissues, demonstrated in a human atlas.","statement":"The paper cites kb-python with kallisto and bustools as preprocessing FASTQ files into count matrices.","evidence":[{"source":"source:pdf:document:cited-by--2024-algorithms-for-a-commons-cell-atlas-04a893eb73","span":"The cellatlas build command produces a list of kb_python commands, which in turn utilizes kallisto and bustools (Bray et al. 2016; Melsted et al. 2021; Sullivan et al. 2023) to preprocess FASTQ files into count matrices.","page":11,"properties":{"document_id":"document:cited-by--2024-algorithms-for-a-commons-cell-atlas-04a893eb73","char_start":null,"char_end":null}}]},{"id":"connection:claim:citation:version-citing-2025-reference-based-variant-detection-with-varseek-cites-version-kallisto-bustools-and-kb-python-for-quantifying-bulk-single-cell-and-single-nucleus-rna-58ce762d25--version:kallisto-bustools-and-kb-python-for-quantifying-bulk-single-cell-and-single-nucleus-rna-seq--2023-11-22-biorxiv","type":"citations","title":"Reference-based variant detection with varseek","description":"The paper introduces varseek, a reference-based k-mer pseudoalignment approach for variant detection, and demonstrates its utility for single-cell transcriptomic detection of tumor-specific COSMIC variants in glioblastoma.","statement":"The paper cites this work as part of the kallisto-based k-mer matching workflow underlying varseek.","evidence":[{"source":"source:pdf:document:cited-by--2025-reference-based-variant-detection-with-varseek","span":"We describe the workflow underlying varseek, involving the creation of a reference of variant-containing sequences and the identification of vari- ants to this reference via k-mer matching using kallisto (26– 29) followed by filtering.","page":2,"properties":{"document_id":"document:cited-by--2025-reference-based-variant-detection-with-varseek","char_start":null,"char_end":null}}]},{"id":"connection:claim:citation:version-citing-2025-detection-of-viral-sequences-at-single-cell-resolution-identifies-novel-viruses-eae304e5f7-cites-version-kallisto-bustools-and-kb-python-for-quantify-ac9369cad3--version:kallisto-bustools-and-kb-python-for-quantifying-bulk-single-cell-and-single-nucleus-rna-seq--2024-10-10-nature-protocols","type":"citations","title":"Detection of viral sequences at single-cell resolution identifies novel viruses associated with host gene expression changes","description":"The paper introduces a translated kallisto/PalmDB workflow for rapidly detecting viral sequences in bulk and single-cell transcriptomics and linking viral presence to host gene expression at single-cell resolution.","statement":"The paper cites kallisto and related tooling as the preprocessing framework expanded for translated viral alignment.","evidence":[{"source":"source:pdf:document:cited-by--2025-detection-of-viral-sequences-at-single-cell-resolution-identifies-novel-viruses-eae304e5f7","span":"WeexpandedtheRNA-seqpreprocessingtoolkallisto30,31\ntoallowtrans-\nlatedalignmentofnucleotidesequencestoanaminoacidreferenceand\nvalidateditsuseincombinationwiththePalmDBaminoacidreference","page":2,"properties":{"document_id":"document:cited-by--2025-detection-of-viral-sequences-at-single-cell-resolution-identifies-novel-viruses-eae304e5f7","char_start":null,"char_end":null}}]},{"id":"connection:claim:citation:version-citing-2025-reference-based-variant-detection-with-varseek-cites-version-kallisto-bustools-and-kb-python-for-quantifying-bulk-single-cell-and-single-nucleus-rna-278c88b181--version:kallisto-bustools-and-kb-python-for-quantifying-bulk-single-cell-and-single-nucleus-rna-seq--2024-10-10-nature-protocols","type":"citations","title":"Reference-based variant detection with varseek","description":"The paper introduces varseek, a reference-based k-mer pseudoalignment approach for variant detection, and demonstrates its utility for single-cell transcriptomic detection of tumor-specific COSMIC variants in glioblastoma.","statement":"The paper cites this work for the kb-python pseudoalignment algorithm used for efficient k-mer matching.","evidence":[{"source":"source:pdf:document:cited-by--2025-reference-based-variant-detection-with-varseek","span":"varseek utilizes the pseudoalign- ment algorithm from kb, implemented in kb-python, for effi- cient k-mer matching (29).","page":8,"properties":{"document_id":"document:cited-by--2025-reference-based-variant-detection-with-varseek","char_start":null,"char_end":null}}]},{"id":"connection:version:kallisto-bustools-and-kb-python-for-quantifying-bulk-single-cell-and-single-nucleus-rna-seq--2024-10-10-nature-protocols--work:kallisto-bustools-and-kb-python-for-quantifying-bulk-single-cell-and-single-nucleus-rna-seq","type":"versions","title":"kallisto, bustools and kb-python for quantifying bulk, single-cell and single-nucleus RNA-seq","description":"2024-10-10 · Nature Protocols","statement":"2024-10-10 is a version of kallisto, bustools and kb-python for quantifying bulk, single-cell and single-nucleus RNA-seq.","evidence":[],"citation":{"doi":"10.1038/s41596-024-01057-0","url":"https://doi.org/10.1038/s41596-024-01057-0","date":"2024-10-10","venue":"Nature Protocols","authors":[{"name":"Delaney K. Sullivan","orcid":"https://orcid.org/0000-0002-8359-6705"},{"name":"Kyung Hoi Min","orcid":"https://orcid.org/0000-0003-0894-4017"},{"name":"Kristján Eldjárn Hjörleifsson","orcid":"https://orcid.org/0000-0002-7851-1818"},{"name":"Laura Luebbert","orcid":"https://orcid.org/0000-0003-1379-2927"},{"name":"Guillaume Holley","orcid":""},{"name":"Lambda Moses","orcid":"https://orcid.org/0000-0002-7092-9427"},{"name":"Johan Gustafsson","orcid":"https://orcid.org/0000-0001-5072-2659"},{"name":"Nicolas L. Bray","orcid":"https://orcid.org/0000-0002-4143-8194"},{"name":"Harold Pimentel","orcid":"https://orcid.org/0000-0001-8556-2499"},{"name":"A. Sina Booeshaghi","orcid":"https://orcid.org/0000-0002-6442-4502"},{"name":"Páll Melsted","orcid":"https://orcid.org/0000-0002-8418-6724"},{"name":"Lior Pachter","orcid":"https://orcid.org/0000-0002-9164-6231"}]},"bibtex":"@article{Sullivan_2024,\n  TITLE     = {kallisto, bustools and kb-python for quantifying bulk, single-cell and single-nucleus RNA-seq},\n  VOLUME    = {20},\n  ISSN      = {1750-2799},\n  URL       = {http://dx.doi.org/10.1038/s41596-024-01057-0},\n  DOI       = {10.1038/s41596-024-01057-0},\n  NUMBER    = {3},\n  JOURNAL   = {Nature Protocols},\n  PUBLISHER = {Springer Science and Business Media LLC},\n  AUTHOR    = {Sullivan, Delaney K. and Min, Kyung Hoi and Hjörleifsson, Kristján Eldjárn and Luebbert, Laura and Holley, Guillaume and Moses, Lambda and Gustafsson, Johan and Bray, Nicolas L. and Pimentel, Harold and Booeshaghi, A. Sina and Melsted, Páll and Pachter, Lior},\n  YEAR      = {2024},\n  PAGES     = {587-607}\n}"},{"id":"connection:version:kallisto-bustools-and-kb-python-for-quantifying-bulk-single-cell-and-single-nucleus-rna-seq--2023-11-22-biorxiv--work:kallisto-bustools-and-kb-python-for-quantifying-bulk-single-cell-and-single-nucleus-rna-seq","type":"versions","title":"kallisto, bustools and kb-python for quantifying bulk, single-cell and single-nucleus RNA-seq","description":"2023-11-22 · bioRxiv","statement":"2023-11-22 is a version of kallisto, bustools and kb-python for quantifying bulk, single-cell and single-nucleus RNA-seq.","evidence":[],"citation":{"doi":"10.1101/2023.11.21.568164","url":"https://doi.org/10.1101/2023.11.21.568164","date":"2023-11-22","venue":"bioRxiv","authors":[{"name":"Delaney K. Sullivan","orcid":"https://orcid.org/0000-0002-8359-6705"},{"name":"Kyung Hoi (Joseph) Min","orcid":"https://orcid.org/0000-0003-0894-4017"},{"name":"Kristján Eldjárn Hjörleifsson","orcid":"https://orcid.org/0000-0002-7851-1818"},{"name":"Laura Luebbert","orcid":"https://orcid.org/0000-0003-1379-2927"},{"name":"Guillaume Holley","orcid":""},{"name":"Lambda Moses","orcid":"https://orcid.org/0000-0002-7092-9427"},{"name":"Johan Gustafsson","orcid":"https://orcid.org/0000-0001-5072-2659"},{"name":"Nicolas L. Bray","orcid":"https://orcid.org/0000-0002-4143-8194"},{"name":"Harold Pimentel","orcid":"https://orcid.org/0000-0001-8556-2499"},{"name":"A. Sina Booeshaghi","orcid":"https://orcid.org/0000-0002-6442-4502"},{"name":"Páll Melsted","orcid":"https://orcid.org/0000-0002-8418-6724"},{"name":"Lior Pachter","orcid":"https://orcid.org/0000-0002-9164-6231"}]},"bibtex":"@article{Sullivan_2023,\n  TITLE     = {kallisto, bustools, and kb-python for quantifying bulk, single-cell, and single-nucleus RNA-seq},\n  URL       = {http://dx.doi.org/10.1101/2023.11.21.568164},\n  DOI       = {10.1101/2023.11.21.568164},\n  PUBLISHER = {openRxiv},\n  AUTHOR    = {Sullivan, Delaney K. and Min, Kyung Hoi (Joseph) and Hjörleifsson, Kristján Eldjárn and Luebbert, Laura and Holley, Guillaume and Moses, Lambda and Gustafsson, Johan and Bray, Nicolas L. and Pimentel, Harold and Booeshaghi, A. Sina and Melsted, Páll and Pachter, Lior},\n  YEAR      = {2023}\n}"},{"id":"connection:document:kallisto-bustools-and-kb-python-for-quantifying-bulk-single-cell-and-single-nucleus-rna-seq--2023-11-22-biorxiv--version:kallisto-bustools-and-kb-python-for-quantifying-bulk-single-cell-and-single-nucleus-rna-seq--2023-11-22-biorxiv","type":"sources","title":"2023-11-22-biorxiv.pdf","description":"This source document provides local provenance for the target publication.","statement":"This source document provides local provenance for the target publication.","evidence":[]},{"id":"connection:document:kallisto-bustools-and-kb-python-for-quantifying-bulk-single-cell-and-single-nucleus-rna-seq--2024-10-10-nature-protocols--version:kallisto-bustools-and-kb-python-for-quantifying-bulk-single-cell-and-single-nucleus-rna-seq--2024-10-10-nature-protocols","type":"sources","title":"2024-10-10-nature-protocols.pdf","description":"This source document provides local provenance for the target publication.","statement":"This source document provides local provenance for the target publication.","evidence":[]}]}</script>
+      <script src="../work-relations.js"></script>
     </article>
   </body>
 </html>

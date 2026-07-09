@@ -18,7 +18,14 @@ const publicationAuthorsPath = path.join(
   "publication-authors.json"
 );
 const worksDir = path.join(rootDir, "works");
-const allowedRowKeys = new Set(["title", "link", "year", "summary"]);
+const allowedRowKeys = new Set([
+  "title",
+  "link",
+  "year",
+  "summary",
+  "citation_context",
+]);
+const requiredRowKeys = new Set(["title", "link", "year", "summary"]);
 const allowedAuthorVersionKeys = new Set(["name", "doi", "date", "authors"]);
 const allowedAuthorKeys = new Set(["name", "orcid"]);
 
@@ -71,6 +78,36 @@ function sourceCitationKeys(slug) {
   return keys;
 }
 
+function verifyCitationContext(slug, index, context) {
+  if (!context || typeof context !== "object" || Array.isArray(context)) {
+    errors.push(`${slug}[${index}].citation_context: must be object`);
+    return;
+  }
+
+  if (!context.paper_summary) {
+    errors.push(`${slug}[${index}].citation_context: missing paper_summary`);
+  }
+
+  if (!Array.isArray(context.uses) || !context.uses.length) {
+    errors.push(`${slug}[${index}].citation_context: missing uses`);
+    return;
+  }
+
+  for (const [useIndex, use] of context.uses.entries()) {
+    if (!use.statement) {
+      errors.push(
+        `${slug}[${index}].citation_context.uses[${useIndex}]: missing statement`
+      );
+    }
+
+    if (!Array.isArray(use.evidence) || !use.evidence.length) {
+      errors.push(
+        `${slug}[${index}].citation_context.uses[${useIndex}]: missing evidence`
+      );
+    }
+  }
+}
+
 function htmlCitationCount(slug) {
   const pagePath = path.join(worksDir, `${slug}.html`);
 
@@ -80,29 +117,10 @@ function htmlCitationCount(slug) {
   }
 
   const html = fs.readFileSync(pagePath, "utf8");
-  const match = html.match(/<p class="citation-source-note">\s*(\d+) citing work/);
+  const match = html.match(/<dt>Citations<\/dt>\s*<dd>(\d+)<\/dd>/);
 
   if (!match) {
     errors.push(`${slug}: missing citation count in generated page`);
-    return null;
-  }
-
-  return Number(match[1]);
-}
-
-function htmlAuthorVersionCount(slug) {
-  const pagePath = path.join(worksDir, `${slug}.html`);
-
-  if (!fs.existsSync(pagePath)) {
-    errors.push(`${slug}: missing work page`);
-    return null;
-  }
-
-  const html = fs.readFileSync(pagePath, "utf8");
-  const match = html.match(/data-author-version-count="(\d+)"/);
-
-  if (!match) {
-    errors.push(`${slug}: missing author version count in generated page`);
     return null;
   }
 
@@ -127,7 +145,6 @@ for (const publication of publications) {
   const rows = work.cited_by || [];
   const authorVersions = authorWork.versions || [];
   const renderedCount = htmlCitationCount(slug);
-  const renderedAuthorVersionCount = htmlAuthorVersionCount(slug);
   const sourceKeys = sourceCitationKeys(slug);
   const hasApiSource = Boolean(citationData.works?.[slug]);
   const hasGoogleScholarSource = Boolean(googleScholarCitationData.works?.[slug]);
@@ -138,12 +155,6 @@ for (const publication of publications) {
 
   if (renderedCount !== null && renderedCount !== rows.length) {
     errors.push(`${slug}: rendered ${renderedCount} rows, expected ${rows.length}`);
-  }
-
-  if (renderedAuthorVersionCount !== null && renderedAuthorVersionCount !== authorVersions.length) {
-    errors.push(
-      `${slug}: rendered ${renderedAuthorVersionCount} author versions, expected ${authorVersions.length}`
-    );
   }
 
   if (authorVersions.length !== (publication.links || []).length) {
@@ -218,7 +229,7 @@ for (const publication of publications) {
   for (const [index, row] of rows.entries()) {
     const keys = Object.keys(row);
     const extraKeys = keys.filter((key) => !allowedRowKeys.has(key));
-    const missingKeys = [...allowedRowKeys].filter((key) => !(key in row));
+    const missingKeys = [...requiredRowKeys].filter((key) => !(key in row));
 
     if (extraKeys.length) {
       errors.push(`${slug}[${index}]: extra keys ${extraKeys.join(", ")}`);
@@ -250,6 +261,10 @@ for (const publication of publications) {
 
     if (!sourceKeys.has(citationTraceKey(row))) {
       errors.push(`${slug}[${index}]: row does not trace to API or Google Scholar source data`);
+    }
+
+    if (row.citation_context) {
+      verifyCitationContext(slug, index, row.citation_context);
     }
   }
 }

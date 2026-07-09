@@ -803,7 +803,37 @@
           "title": "Detection of viral sequences at single-cell resolution identifies novel viruses associated with host gene expression changes",
           "link": "https://doi.org/10.1038/s41587-025-02614-y",
           "year": 2025,
-          "summary": "Semantic Scholar provides citation context; prominent terms include alignment, amino, reference, expanded, kallisto, nucleotide, rna-seq, sequences."
+          "summary": "Semantic Scholar provides citation context; prominent terms include alignment, amino, reference, expanded, kallisto, nucleotide, rna-seq, sequences.",
+          "citation_context": {
+            "source": "citation-context",
+            "batch_id": "citation-context-batch-002",
+            "paper_summary": "The paper introduces a translated kallisto/PalmDB workflow for rapidly detecting viral sequences in bulk and single-cell transcriptomics and linking viral presence to host gene expression at single-cell resolution.",
+            "paper_evidence": [
+              {
+                "span": "Weintroduceamethodthataccuratelyand\nrapidlydetectsviralsequencesinbulkandsingle-celltranscriptomicsdata\nbasedonthehighlyconservedRdRPprotein,enablingthedetectionofover\n100,000RNAvirusspecies.Theanalysisofviralpresenceandhostgene\nexpressioninparallelatsingle-cellresolutionallowsforthecharacterization\nofhostviromesandtheidentificationofviraltropismandhostresponses.",
+                "page": 1
+              }
+            ],
+            "uses": [
+              {
+                "cited_doi": "10.1038/s41596-024-01057-0",
+                "cited_doi_url": "https://doi.org/10.1038/s41596-024-01057-0",
+                "cited_ref": "Sullivan et al. 2024",
+                "cited_title": "kallisto, bustools and kb-python for quantifying bulk, single-cell and single-nucleus RNA-seq",
+                "cited_work_slug": "kallisto-bustools-and-kb-python-for-quantifying-bulk-single-cell-and-single-nucleus-rna-seq",
+                "cited_work_title": "kallisto, bustools and kb-python for quantifying bulk, single-cell and single-nucleus RNA-seq",
+                "cited_version_name": "Nature Protocols",
+                "cited_version_date": "2024-10-10",
+                "statement": "The paper cites kallisto and related tooling as the preprocessing framework expanded for translated viral alignment.",
+                "evidence": [
+                  {
+                    "span": "WeexpandedtheRNA-seqpreprocessingtoolkallisto30,31\ntoallowtrans-\nlatedalignmentofnucleotidesequencestoanaminoacidreferenceand\nvalidateditsuseincombinationwiththePalmDBaminoacidreference",
+                    "page": 2
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "title": "Discordant effects of maternal age on the human MII oocyte transcriptome",
@@ -941,7 +971,54 @@
           "title": "Reference-based variant detection with varseek",
           "link": "https://doi.org/10.1101/2025.09.03.674039",
           "year": 2025,
-          "summary": ""
+          "summary": "",
+          "citation_context": {
+            "source": "citation-context",
+            "batch_id": "citation-context-batch-002",
+            "paper_summary": "The paper introduces varseek, a reference-based k-mer pseudoalignment approach for variant detection, and demonstrates its utility for single-cell transcriptomic detection of tumor-specific COSMIC variants in glioblastoma.",
+            "paper_evidence": [
+              {
+                "span": "We introduce varseek, a reference-based approach to variant detection that provides large improvements in per- formance in these challenging cases. The varseek approach utilizes a k-mer pseudoalignment approach, which provides the ability to identify variants at single-cell resolution in single-cell transcriptomics data. We showcase the versatility and performance of varseek for detecting tumor-specific COSMIC variants in glioblastoma single-cell sequencing.",
+                "page": 1
+              }
+            ],
+            "uses": [
+              {
+                "cited_doi": "10.1101/2023.11.21.568164",
+                "cited_doi_url": "https://doi.org/10.1101/2023.11.21.568164",
+                "cited_ref": "[28]",
+                "cited_title": "kallisto, bustools, and kb-python for quantifying bulk, single-cell, and single-nucleus RNA-seq",
+                "cited_work_slug": "kallisto-bustools-and-kb-python-for-quantifying-bulk-single-cell-and-single-nucleus-rna-seq",
+                "cited_work_title": "kallisto, bustools and kb-python for quantifying bulk, single-cell and single-nucleus RNA-seq",
+                "cited_version_name": "bioRxiv",
+                "cited_version_date": "2023-11-22",
+                "statement": "The paper cites this work as part of the kallisto-based k-mer matching workflow underlying varseek.",
+                "evidence": [
+                  {
+                    "span": "We describe the workflow underlying varseek, involving the creation of a reference of variant-containing sequences and the identification of vari- ants to this reference via k-mer matching using kallisto (26– 29) followed by filtering.",
+                    "page": 2
+                  }
+                ]
+              },
+              {
+                "cited_doi": "10.1038/s41596-024-01057-0",
+                "cited_doi_url": "https://doi.org/10.1038/s41596-024-01057-0",
+                "cited_ref": "[29]",
+                "cited_title": "kallisto, bustools and kb-python for quantifying bulk, single-cell and single-nucleus RNA-seq",
+                "cited_work_slug": "kallisto-bustools-and-kb-python-for-quantifying-bulk-single-cell-and-single-nucleus-rna-seq",
+                "cited_work_title": "kallisto, bustools and kb-python for quantifying bulk, single-cell and single-nucleus RNA-seq",
+                "cited_version_name": "bioRxiv",
+                "cited_version_date": "2023-11-22",
+                "statement": "The paper cites this work for the kb-python pseudoalignment algorithm used for efficient k-mer matching.",
+                "evidence": [
+                  {
+                    "span": "varseek utilizes the pseudoalign- ment algorithm from kb, implemented in kb-python, for effi- cient k-mer matching (29).",
+                    "page": 8
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "title": "REINDEER2: practical abundance index at scale",
@@ -1049,7 +1126,37 @@
           "title": "A human commons cell atlas reveals cell type specificity for OAS1 isoforms",
           "link": "https://doi.org/10.1101/2024.03.23.586412",
           "year": 2024,
-          "summary": "Semantic Scholar provides citation context; prominent terms include bustools, count, developed, generate, kallisto, kb-python, leveraged, matrices."
+          "summary": "Semantic Scholar provides citation context; prominent terms include bustools, count, developed, generate, kallisto, kb-python, leveraged, matrices.",
+          "citation_context": {
+            "source": "citation-context",
+            "batch_id": "citation-context-batch-002",
+            "paper_summary": "The paper presents an open-source Human Commons Cell Atlas of 2.9 million cells across 27 tissues and uses it to analyze OAS1 isoform cell-type specificity, finding OAS1 p44b specificity in round and elongating spermatids.",
+            "paper_evidence": [
+              {
+                "span": "We describe an open source Human Commons Cell Atlas comprising 2.9 million cells across 27 tissues that can be easily updated and that is structured to facilitate custom analyses. To showcase the flexibility of the atlas, we demonstrate that it can be used to study isoforms of genes at cell resolution. In particular, we study cell type specificity of isoforms of OAS1, which has been shown to offer SARS-CoV-2 protection in certain individuals that display higher expression of the p46 isoform. Using our commons cell atlas we localize the OAS1 p44b isoform to the testis, and find that it is specific to round and elongating spermatids.",
+                "page": 1
+              }
+            ],
+            "uses": [
+              {
+                "cited_doi": "10.1101/2023.11.21.568164",
+                "cited_doi_url": "https://doi.org/10.1101/2023.11.21.568164",
+                "cited_ref": "Sullivan et al. 2023",
+                "cited_title": "Kallisto, Bustools, and Kb-Python for Quantifying Bulk, Single-Cell, and Single-Nucleus RNA-Seq",
+                "cited_work_slug": "kallisto-bustools-and-kb-python-for-quantifying-bulk-single-cell-and-single-nucleus-rna-seq",
+                "cited_work_title": "kallisto, bustools and kb-python for quantifying bulk, single-cell and single-nucleus RNA-seq",
+                "cited_version_name": "bioRxiv",
+                "cited_version_date": "2023-11-22",
+                "statement": "Cited for the kallisto bustools/kb-python programs used to generate gene count matrices.",
+                "evidence": [
+                  {
+                    "span": "To that end, we leveraged the recently developed kallisto bustools (kb-python) programs (Melsted et al. 2021; Sullivan et al. 2023) to generate all 525 gene count matrices.",
+                    "page": 2
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "title": "Accurate quantification of nascent and mature RNAs from single-cell and single-nucleus RNA-seq",
@@ -1067,7 +1174,37 @@
           "title": "Algorithms for a Commons Cell Atlas",
           "link": "https://doi.org/10.1101/2024.03.23.586413",
           "year": 2024,
-          "summary": "Semantic Scholar provides citation context; prominent terms include build, bustools, cellatlas, command, commands, count, fastq, files."
+          "summary": "Semantic Scholar provides citation context; prominent terms include build, bustools, cellatlas, command, commands, count, fastq, files.",
+          "citation_context": {
+            "source": "citation-context",
+            "batch_id": "citation-context-batch-002",
+            "paper_summary": "The paper presents data, algorithms, and tools for automating cataloging and analysis of cell types across tissues, demonstrated in a human atlas.",
+            "paper_evidence": [
+              {
+                "span": "To overcome these challenges, we present a collection of data, algorithms, and tools to automate cataloging and analyzing cell types across tissues in an organism, and demonstrate its utility in building a human atlas.",
+                "page": 1
+              }
+            ],
+            "uses": [
+              {
+                "cited_doi": "10.1101/2023.11.21.568164",
+                "cited_doi_url": "https://doi.org/10.1101/2023.11.21.568164",
+                "cited_ref": "Sullivan et al. 2023",
+                "cited_title": "Kallisto, Bustools, and Kb-Python for Quantifying Bulk, Single-Cell, and Single-Nucleus RNA-Seq",
+                "cited_work_slug": "kallisto-bustools-and-kb-python-for-quantifying-bulk-single-cell-and-single-nucleus-rna-seq",
+                "cited_work_title": "kallisto, bustools and kb-python for quantifying bulk, single-cell and single-nucleus RNA-seq",
+                "cited_version_name": "bioRxiv",
+                "cited_version_date": "2023-11-22",
+                "statement": "The paper cites kb-python with kallisto and bustools as preprocessing FASTQ files into count matrices.",
+                "evidence": [
+                  {
+                    "span": "The cellatlas build command produces a list of kb_python commands, which in turn utilizes kallisto and bustools (Bray et al. 2016; Melsted et al. 2021; Sullivan et al. 2023) to preprocess FASTQ files into count matrices.",
+                    "page": 11
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "title": "Biophysically interpretable inference of cell types from multimodal sequencing data",
@@ -1839,13 +1976,73 @@
           "title": "Reference-based variant detection with varseek",
           "link": "https://doi.org/10.1101/2025.09.03.674039",
           "year": 2025,
-          "summary": ""
+          "summary": "",
+          "citation_context": {
+            "source": "citation-context",
+            "batch_id": "citation-context-batch-002",
+            "paper_summary": "The paper introduces varseek, a reference-based k-mer pseudoalignment approach for variant detection, and demonstrates its utility for single-cell transcriptomic detection of tumor-specific COSMIC variants in glioblastoma.",
+            "paper_evidence": [
+              {
+                "span": "We introduce varseek, a reference-based approach to variant detection that provides large improvements in per- formance in these challenging cases. The varseek approach utilizes a k-mer pseudoalignment approach, which provides the ability to identify variants at single-cell resolution in single-cell transcriptomics data. We showcase the versatility and performance of varseek for detecting tumor-specific COSMIC variants in glioblastoma single-cell sequencing.",
+                "page": 1
+              }
+            ],
+            "uses": [
+              {
+                "cited_doi": "10.1093/bioinformatics/btae168",
+                "cited_doi_url": "https://doi.org/10.1093/bioinformatics/btae168",
+                "cited_ref": "[42]",
+                "cited_title": "A machine-readable specification for genomics assays",
+                "cited_work_slug": "a-machine-readable-specification-for-genomics-assays",
+                "cited_work_title": "A machine-readable specification for genomics assays",
+                "cited_version_name": "Bioinformatics",
+                "cited_version_date": "2024-03-29",
+                "statement": "The paper cites this work in arguing that varseek is adaptable across assays and sequencing technologies thanks to kallisto.",
+                "evidence": [
+                  {
+                    "span": "The varseek method is a reference-based variant caller that enables single-cell resolution variant calling, is adaptable for use with a wide variety of assays and sequencing technolo- gies thanks to its use of kallisto (42), exhibits high sensitivity, including in indel calling, and is efficient in both runtime and memory usage.",
+                    "page": 5
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "title": "Algorithms for a Commons Cell Atlas",
           "link": "https://doi.org/10.1101/2024.03.23.586413",
           "year": 2024,
-          "summary": ""
+          "summary": "",
+          "citation_context": {
+            "source": "citation-context",
+            "batch_id": "citation-context-batch-002",
+            "paper_summary": "The paper presents data, algorithms, and tools for automating cataloging and analysis of cell types across tissues, demonstrated in a human atlas.",
+            "paper_evidence": [
+              {
+                "span": "To overcome these challenges, we present a collection of data, algorithms, and tools to automate cataloging and analyzing cell types across tissues in an organism, and demonstrate its utility in building a human atlas.",
+                "page": 1
+              }
+            ],
+            "uses": [
+              {
+                "cited_doi": "10.1101/2023.03.17.533215",
+                "cited_doi_url": "https://doi.org/10.1101/2023.03.17.533215",
+                "cited_ref": "Sina Booeshaghi, Chen, and Pachter 2023",
+                "cited_title": "A Machine-Readable Specification for Genomics Assays",
+                "cited_work_slug": "a-machine-readable-specification-for-genomics-assays",
+                "cited_work_title": "A machine-readable specification for genomics assays",
+                "cited_version_name": "bioRxiv",
+                "cited_version_date": "2023-03-21",
+                "statement": "The paper cites seqspec as a standard that can help automate preprocessing of different assays.",
+                "evidence": [
+                  {
+                    "span": "The seqspec standard (Sina Booeshaghi, Chen, and Pachter 2023), which can help in automating preprocessing of different assays, can in principle help with this goal.",
+                    "page": 10
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "title": "Best practices for the execution, analysis, and data storage of plant single-cell/nucleus transcriptomics",
@@ -1899,7 +2096,37 @@
           "title": "Universal preprocessing of single-cell genomics data",
           "link": "https://doi.org/10.1101/2023.09.14.543267",
           "year": 2023,
-          "summary": ""
+          "summary": "",
+          "citation_context": {
+            "source": "citation-context",
+            "batch_id": "citation-context-batch-002",
+            "paper_summary": "The paper presents cellatlas, a workflow for preprocessing diverse single-cell genomics data by using seqspec assay specifications to configure kb-python, kallisto, and bustools.",
+            "paper_evidence": [
+              {
+                "span": "We describe a workflow for preprocessing a wide variety of single-cell genomics data types. The approach is based on parsing of machine-readable seqspec assay specifications to customize inputs for kb-python, which uses kallisto and bustools to catalog reads, error correct barcodes, and count reads. The universal preprocessing method is implemented in the Python package cellatlas that is available for download at: https://github.com/cellatlas/cellatlas/.",
+                "page": 1
+              }
+            ],
+            "uses": [
+              {
+                "cited_doi": "10.1101/2023.03.17.533215",
+                "cited_doi_url": "https://doi.org/10.1101/2023.03.17.533215",
+                "cited_ref": "Booeshaghi, Chen, and Pachter 2023",
+                "cited_title": "A Machine-Readable Specification for Genomics Assays",
+                "cited_work_slug": "a-machine-readable-specification-for-genomics-assays",
+                "cited_work_title": "A machine-readable specification for genomics assays",
+                "cited_version_name": "bioRxiv",
+                "cited_version_date": "2023-03-21",
+                "statement": "Cited for seqspec as a machine-readable assay specification that describes read structure and supports automatic universal preprocessing.",
+                "evidence": [
+                  {
+                    "span": "The seqspec assay specification (Booeshaghi, Chen, and Pachter 2023) provides a machine-readable format for describing this structure, thereby translating the organizational themes of single-cell genomics into a medium that can, in principle, facilitate automatic and universal preprocessing of single-cell genomics data.",
+                    "page": 2
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "title": "Assessing the multimodal tradeoff",
@@ -2142,7 +2369,37 @@
           "title": "Universal preprocessing of single-cell genomics data",
           "link": "https://doi.org/10.1101/2023.09.14.543267",
           "year": 2023,
-          "summary": ""
+          "summary": "",
+          "citation_context": {
+            "source": "citation-context",
+            "batch_id": "citation-context-batch-002",
+            "paper_summary": "The paper presents cellatlas, a workflow for preprocessing diverse single-cell genomics data by using seqspec assay specifications to configure kb-python, kallisto, and bustools.",
+            "paper_evidence": [
+              {
+                "span": "We describe a workflow for preprocessing a wide variety of single-cell genomics data types. The approach is based on parsing of machine-readable seqspec assay specifications to customize inputs for kb-python, which uses kallisto and bustools to catalog reads, error correct barcodes, and count reads. The universal preprocessing method is implemented in the Python package cellatlas that is available for download at: https://github.com/cellatlas/cellatlas/.",
+                "page": 1
+              }
+            ],
+            "uses": [
+              {
+                "cited_doi": "10.1101/2022.10.09.511501",
+                "cited_doi_url": "https://doi.org/10.1101/2022.10.09.511501",
+                "cited_ref": "Sina Booeshaghi et al. 2022",
+                "cited_title": "Quantifying Orthogonal Barcodes for Sequence Census Assays",
+                "cited_work_slug": "quantifying-orthogonal-barcodes-for-sequence-census-assays",
+                "cited_work_title": "Quantifying orthogonal barcodes for sequence census assays",
+                "cited_version_name": "bioRxiv",
+                "cited_version_date": "2022-10-10",
+                "statement": "Cited for kITE as one of the tools combined with seqspec and kallisto bustools for preprocessing single-cell genomics assays.",
+                "evidence": [
+                  {
+                    "span": "While several tools have been developed for preprocessing data from different single-cell RNA-seq assays (He et al. 2022; Battenberg et al. 2022; Melsted et al. 2021), we demonstrate that seqspec (Booeshaghi, Chen, and Pachter 2023), along with kallisto bustools (Melsted et al. 2021), kITE (Sina Booeshaghi et al. 2022) and snATAK (Sina Booeshaghi, Gao, and Pachter 2023), can in principle be used for preprocessing data from any single-cell genomics assay.",
+                    "page": 2
+                  }
+                ]
+              }
+            ]
+          }
         }
       ]
     },
@@ -2159,7 +2416,37 @@
           "title": "Algorithms for a Commons Cell Atlas",
           "link": "https://doi.org/10.1101/2024.03.23.586413",
           "year": 2024,
-          "summary": ""
+          "summary": "",
+          "citation_context": {
+            "source": "citation-context",
+            "batch_id": "citation-context-batch-002",
+            "paper_summary": "The paper presents data, algorithms, and tools for automating cataloging and analysis of cell types across tissues, demonstrated in a human atlas.",
+            "paper_evidence": [
+              {
+                "span": "To overcome these challenges, we present a collection of data, algorithms, and tools to automate cataloging and analyzing cell types across tissues in an organism, and demonstrate its utility in building a human atlas.",
+                "page": 1
+              }
+            ],
+            "uses": [
+              {
+                "cited_doi": "10.1101/2023.09.14.543267",
+                "cited_doi_url": "https://doi.org/10.1101/2023.09.14.543267",
+                "cited_ref": "Booeshaghi, Sullivan, and Pachter 2023",
+                "cited_title": "Universal Preprocessing of Single-Cell Genomics Data",
+                "cited_work_slug": "universal-preprocessing-of-single-cell-genomics-data",
+                "cited_work_title": "Universal preprocessing of single-cell genomics data",
+                "cited_version_name": "bioRxiv",
+                "cited_version_date": "2023-09-15",
+                "statement": "The paper cites this work among uniform preprocessing tools used with mx and ec.",
+                "evidence": [
+                  {
+                    "span": "To facilitate the generation of reference maps from single-cell genomics data, we developed a collection of tools, mx and ec, that operate on cell by feature (gene/isoform/protein/peak) matrices and marker equivalence class files respectively and work together with uniform preprocessing tools kallisto, bustools, kb-python, and cellatlas (Booeshaghi, Sullivan, and Pachter 2023; Melsted et al. 2021; Melsted, Ntranos, and Pachter 2019; Bray et al. 2016) (Methods).",
+                    "page": 4
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "title": "kallisto, bustools and kb-python for quantifying bulk, single-cell and single-nucleus RNA-seq",
@@ -2631,7 +2918,37 @@
           "title": "A human commons cell atlas reveals cell type specificity for OAS1 isoforms",
           "link": "https://doi.org/10.1101/2024.03.23.586412",
           "year": 2024,
-          "summary": ""
+          "summary": "",
+          "citation_context": {
+            "source": "citation-context",
+            "batch_id": "citation-context-batch-002",
+            "paper_summary": "The paper presents an open-source Human Commons Cell Atlas of 2.9 million cells across 27 tissues and uses it to analyze OAS1 isoform cell-type specificity, finding OAS1 p44b specificity in round and elongating spermatids.",
+            "paper_evidence": [
+              {
+                "span": "We describe an open source Human Commons Cell Atlas comprising 2.9 million cells across 27 tissues that can be easily updated and that is structured to facilitate custom analyses. To showcase the flexibility of the atlas, we demonstrate that it can be used to study isoforms of genes at cell resolution. In particular, we study cell type specificity of isoforms of OAS1, which has been shown to offer SARS-CoV-2 protection in certain individuals that display higher expression of the p46 isoform. Using our commons cell atlas we localize the OAS1 p44b isoform to the testis, and find that it is specific to round and elongating spermatids.",
+                "page": 1
+              }
+            ],
+            "uses": [
+              {
+                "cited_doi": "10.1101/2023.06.28.546949",
+                "cited_doi_url": "https://doi.org/10.1101/2023.06.28.546949",
+                "cited_ref": "Jackson et al. 2023",
+                "cited_title": "Quantitative Assessment of Single-Cell RNA-Seq Clustering with CONCORDEX",
+                "cited_work_slug": "characterization-of-spatial-homogeneous-regions-in-tissues-with-concordex",
+                "cited_work_title": "Characterization of spatial homogeneous regions in tissues with concordex",
+                "cited_version_name": "bioRxiv",
+                "cited_version_date": "2023-06-30",
+                "statement": "Cited as the prior description of the CONCORDEX ratio metric used for Human CCA samples.",
+                "evidence": [
+                  {
+                    "span": "The metric was calculated as previously shown (Jackson et al. 2023) for each sample of the human CCA where gene markers were available.",
+                    "page": 11
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "title": "spacedeconv: deconvolution of tissue architecture from spatial transcriptomics",
@@ -2732,7 +3049,37 @@
           "title": "Universal preprocessing of single-cell genomics data",
           "link": "https://doi.org/10.1101/2023.09.14.543267",
           "year": 2023,
-          "summary": ""
+          "summary": "",
+          "citation_context": {
+            "source": "citation-context",
+            "batch_id": "citation-context-batch-002",
+            "paper_summary": "The paper presents cellatlas, a workflow for preprocessing diverse single-cell genomics data by using seqspec assay specifications to configure kb-python, kallisto, and bustools.",
+            "paper_evidence": [
+              {
+                "span": "We describe a workflow for preprocessing a wide variety of single-cell genomics data types. The approach is based on parsing of machine-readable seqspec assay specifications to customize inputs for kb-python, which uses kallisto and bustools to catalog reads, error correct barcodes, and count reads. The universal preprocessing method is implemented in the Python package cellatlas that is available for download at: https://github.com/cellatlas/cellatlas/.",
+                "page": 1
+              }
+            ],
+            "uses": [
+              {
+                "cited_doi": "10.1101/2021.12.08.471788",
+                "cited_doi_url": "https://doi.org/10.1101/2021.12.08.471788",
+                "cited_ref": "Sina Booeshaghi, Gao, and Pachter 2023",
+                "cited_title": "Assessing the Multimodal Tradeoff",
+                "cited_work_slug": "assessing-the-multimodal-tradeoff",
+                "cited_work_title": "Assessing the multimodal tradeoff",
+                "cited_version_name": "bioRxiv",
+                "cited_version_date": "2023-04-18",
+                "statement": "Cited as evidence that universal preprocessing can help reveal cross-platform tradeoffs during assay development.",
+                "evidence": [
+                  {
+                    "span": "In addition to facilitating uniform analysis across many data types and studies, we anticipate that universal preprocessing methods will be useful in the development of new single-cell genomics assays, for example by helping to reveal cross-platform tradeoffs (Sina Booeshaghi, Gao, and Pachter 2023).",
+                    "page": 6
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "title": "Accurate quantification of single-cell and single-nucleus RNA-seq transcripts using distinguishing flanking k-mers",
@@ -2797,7 +3144,37 @@
           "title": "Detection of viral sequences at single-cell resolution identifies novel viruses associated with host gene expression changes",
           "link": "https://doi.org/10.1038/s41587-025-02614-y",
           "year": 2025,
-          "summary": "Semantic Scholar provides citation context; prominent terms include archive, available, download, european, gse158390, links, nucleotide, obtained."
+          "summary": "Semantic Scholar provides citation context; prominent terms include archive, available, download, european, gse158390, links, nucleotide, obtained.",
+          "citation_context": {
+            "source": "citation-context",
+            "batch_id": "citation-context-batch-002",
+            "paper_summary": "The paper introduces a translated kallisto/PalmDB workflow for rapidly detecting viral sequences in bulk and single-cell transcriptomics and linking viral presence to host gene expression at single-cell resolution.",
+            "paper_evidence": [
+              {
+                "span": "Weintroduceamethodthataccuratelyand\nrapidlydetectsviralsequencesinbulkandsingle-celltranscriptomicsdata\nbasedonthehighlyconservedRdRPprotein,enablingthedetectionofover\n100,000RNAvirusspecies.Theanalysisofviralpresenceandhostgene\nexpressioninparallelatsingle-cellresolutionallowsforthecharacterization\nofhostviromesandtheidentificationofviraltropismandhostresponses.",
+                "page": 1
+              }
+            ],
+            "uses": [
+              {
+                "cited_doi": "10.1093/bioinformatics/btac667",
+                "cited_doi_url": "https://doi.org/10.1093/bioinformatics/btac667",
+                "cited_ref": "Galvez-Merchan et al. 2023",
+                "cited_title": "Metadata retrieval from sequence databases with ffq",
+                "cited_work_slug": "metadata-retrieval-from-sequence-databases-with-ffq",
+                "cited_work_title": "Metadata retrieval from sequence databases with ffq",
+                "cited_version_name": "Bioinformatics",
+                "cited_version_date": "2023-01-05",
+                "statement": "The paper cites ffq as the tool used to obtain raw sequencing data from the European Nucleotide Archive.",
+                "evidence": [
+                  {
+                    "span": "using\nSeq-Well35\nwiththeS3protocol74\n.AsubsetofPBMCsampleswerespiked\nwithMDCKcells.ThedataareavailableatGSE158390,andweobtained\ntherawsequencingdatafromtheEuropeanNucleotideArchiveusing\nFTPdownloadlinksandffq(v.0.3.0)75",
+                    "page": 12
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "title": "Effect of single-cell RNA sequencing parameters on cluster stability",
@@ -2857,13 +3234,73 @@
           "title": "A human commons cell atlas reveals cell type specificity for OAS1 isoforms",
           "link": "https://doi.org/10.1101/2024.03.23.586412",
           "year": 2024,
-          "summary": ""
+          "summary": "",
+          "citation_context": {
+            "source": "citation-context",
+            "batch_id": "citation-context-batch-002",
+            "paper_summary": "The paper presents an open-source Human Commons Cell Atlas of 2.9 million cells across 27 tissues and uses it to analyze OAS1 isoform cell-type specificity, finding OAS1 p44b specificity in round and elongating spermatids.",
+            "paper_evidence": [
+              {
+                "span": "We describe an open source Human Commons Cell Atlas comprising 2.9 million cells across 27 tissues that can be easily updated and that is structured to facilitate custom analyses. To showcase the flexibility of the atlas, we demonstrate that it can be used to study isoforms of genes at cell resolution. In particular, we study cell type specificity of isoforms of OAS1, which has been shown to offer SARS-CoV-2 protection in certain individuals that display higher expression of the p46 isoform. Using our commons cell atlas we localize the OAS1 p44b isoform to the testis, and find that it is specific to round and elongating spermatids.",
+                "page": 1
+              }
+            ],
+            "uses": [
+              {
+                "cited_doi": "10.1101/2022.05.18.492548",
+                "cited_doi_url": "https://doi.org/10.1101/2022.05.18.492548",
+                "cited_ref": "Gálvez-Merchán et al. 2022",
+                "cited_title": "Metadata Retrieval from Sequence Databases with Ffq",
+                "cited_work_slug": "metadata-retrieval-from-sequence-databases-with-ffq",
+                "cited_work_title": "Metadata retrieval from sequence databases with ffq",
+                "cited_version_name": "bioRxiv",
+                "cited_version_date": "2022-05-26",
+                "statement": "Cited for using the ffq program to collect metadata and raw-data links.",
+                "evidence": [
+                  {
+                    "span": "Metadata and links to raw data were collected using the ffq program (Gálvez-Merchán et al. 2022) version 0.2.1 (available at https://github.com/pachterlab/ffq) by running 'ffq DATASETID' where DATASETID is the sample ID (GSM, SRS, etc.).",
+                    "page": 7
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "title": "Algorithms for a Commons Cell Atlas",
           "link": "https://doi.org/10.1101/2024.03.23.586413",
           "year": 2024,
-          "summary": ""
+          "summary": "",
+          "citation_context": {
+            "source": "citation-context",
+            "batch_id": "citation-context-batch-002",
+            "paper_summary": "The paper presents data, algorithms, and tools for automating cataloging and analysis of cell types across tissues, demonstrated in a human atlas.",
+            "paper_evidence": [
+              {
+                "span": "To overcome these challenges, we present a collection of data, algorithms, and tools to automate cataloging and analyzing cell types across tissues in an organism, and demonstrate its utility in building a human atlas.",
+                "page": 1
+              }
+            ],
+            "uses": [
+              {
+                "cited_doi": "10.1101/2022.05.18.492548",
+                "cited_doi_url": "https://doi.org/10.1101/2022.05.18.492548",
+                "cited_ref": "Gálvez-Merchán et al. 2022",
+                "cited_title": "Metadata Retrieval from Sequence Databases with Ffq",
+                "cited_work_slug": "metadata-retrieval-from-sequence-databases-with-ffq",
+                "cited_work_title": "Metadata retrieval from sequence databases with ffq",
+                "cited_version_name": "bioRxiv",
+                "cited_version_date": "2022-05-26",
+                "statement": "The paper cites ffq as the source of GEO metadata objects associated with observations.",
+                "evidence": [
+                  {
+                    "span": "An observation is associated with various metadata, for example the GEO metadata object returned by ffq (Gálvez-Merchán et al. 2022) as well as the tissue of origin and species.",
+                    "page": 12
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "title": "BioInformatics Agent (BIA): Unleashing the Power of Large Language Models to Reshape Bioinformatics Workflow",
@@ -3025,7 +3462,37 @@
           "title": "Universal preprocessing of single-cell genomics data",
           "link": "https://doi.org/10.1101/2023.09.14.543267",
           "year": 2023,
-          "summary": ""
+          "summary": "",
+          "citation_context": {
+            "source": "citation-context",
+            "batch_id": "citation-context-batch-002",
+            "paper_summary": "The paper presents cellatlas, a workflow for preprocessing diverse single-cell genomics data by using seqspec assay specifications to configure kb-python, kallisto, and bustools.",
+            "paper_evidence": [
+              {
+                "span": "We describe a workflow for preprocessing a wide variety of single-cell genomics data types. The approach is based on parsing of machine-readable seqspec assay specifications to customize inputs for kb-python, which uses kallisto and bustools to catalog reads, error correct barcodes, and count reads. The universal preprocessing method is implemented in the Python package cellatlas that is available for download at: https://github.com/cellatlas/cellatlas/.",
+                "page": 1
+              }
+            ],
+            "uses": [
+              {
+                "cited_doi": "10.1101/2022.05.18.492548",
+                "cited_doi_url": "https://doi.org/10.1101/2022.05.18.492548",
+                "cited_ref": "Gálvez-Merchán et al. 2022",
+                "cited_title": "Metadata Retrieval from Sequence Databases with Ffq",
+                "cited_work_slug": "metadata-retrieval-from-sequence-databases-with-ffq",
+                "cited_work_title": "Metadata retrieval from sequence databases with ffq",
+                "cited_version_name": "bioRxiv",
+                "cited_version_date": "2022-05-26",
+                "statement": "Cited for using ffq to obtain FTP links to SRA and FASTQ files for DOGMA-seq data.",
+                "evidence": [
+                  {
+                    "span": "FTP links to SRA and FASTQ files were obtained with ffq (Gálvez-Merchán et al. 2022) by running ffq –ftp GSE200417.",
+                    "page": 6
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "title": "A bipartite function of ESRRB can integrate signaling over time to balance self-renewal and differentiation",
@@ -3221,7 +3688,37 @@
           "title": "A human commons cell atlas reveals cell type specificity for OAS1 isoforms",
           "link": "https://doi.org/10.1101/2024.03.23.586412",
           "year": 2024,
-          "summary": ""
+          "summary": "",
+          "citation_context": {
+            "source": "citation-context",
+            "batch_id": "citation-context-batch-002",
+            "paper_summary": "The paper presents an open-source Human Commons Cell Atlas of 2.9 million cells across 27 tissues and uses it to analyze OAS1 isoform cell-type specificity, finding OAS1 p44b specificity in round and elongating spermatids.",
+            "paper_evidence": [
+              {
+                "span": "We describe an open source Human Commons Cell Atlas comprising 2.9 million cells across 27 tissues that can be easily updated and that is structured to facilitate custom analyses. To showcase the flexibility of the atlas, we demonstrate that it can be used to study isoforms of genes at cell resolution. In particular, we study cell type specificity of isoforms of OAS1, which has been shown to offer SARS-CoV-2 protection in certain individuals that display higher expression of the p46 isoform. Using our commons cell atlas we localize the OAS1 p44b isoform to the testis, and find that it is specific to round and elongating spermatids.",
+                "page": 1
+              }
+            ],
+            "uses": [
+              {
+                "cited_doi": "10.1101/2022.05.06.490859",
+                "cited_doi_url": "https://doi.org/10.1101/2022.05.06.490859",
+                "cited_ref": "Sina Booeshaghi et al. 2022",
+                "cited_title": "Depth Normalization for Single-Cell Genomics Count Data",
+                "cited_work_slug": "normalization-for-sampled-count-data",
+                "cited_work_title": "Normalization for sampled count data",
+                "cited_version_name": "bioRxiv",
+                "cited_version_date": "2022-05-06",
+                "statement": "Cited for the log1pPF method used by mx norm to normalize gene count matrices.",
+                "evidence": [
+                  {
+                    "span": "Gene count matrices were normalized using 'mx norm', which uses the log1pPF method (Sina Booeshaghi et al. 2022).",
+                    "page": 9
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "title": "A systematic evaluation of highly variable gene selection methods for single-cell RNA-sequencing",
@@ -3245,7 +3742,37 @@
           "title": "Algorithms for a Commons Cell Atlas",
           "link": "https://doi.org/10.1101/2024.03.23.586413",
           "year": 2024,
-          "summary": ""
+          "summary": "",
+          "citation_context": {
+            "source": "citation-context",
+            "batch_id": "citation-context-batch-002",
+            "paper_summary": "The paper presents data, algorithms, and tools for automating cataloging and analysis of cell types across tissues, demonstrated in a human atlas.",
+            "paper_evidence": [
+              {
+                "span": "To overcome these challenges, we present a collection of data, algorithms, and tools to automate cataloging and analyzing cell types across tissues in an organism, and demonstrate its utility in building a human atlas.",
+                "page": 1
+              }
+            ],
+            "uses": [
+              {
+                "cited_doi": "10.1101/2022.05.06.490859",
+                "cited_doi_url": "https://doi.org/10.1101/2022.05.06.490859",
+                "cited_ref": "Sina Booeshaghi et al. 2022",
+                "cited_title": "Depth Normalization for Single-Cell Genomics Count Data",
+                "cited_work_slug": "normalization-for-sampled-count-data",
+                "cited_work_title": "Normalization for sampled count data",
+                "cited_version_name": "bioRxiv",
+                "cited_version_date": "2022-05-06",
+                "statement": "The paper cites PFlog1pPF normalization as removing the mean-variance relationship while preserving depth normalization.",
+                "evidence": [
+                  {
+                    "span": "We chose the PFlog1pPF normalization (Sina Booeshaghi et al. 2022) as it effectively removes the mean-variance relationship while preserving depth normalization (Figure 1d,e,f).",
+                    "page": 4
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "title": "Analytical Workflows for Single‐Cell Multiomic Data Using the BD Rhapsody Platform",
@@ -4912,7 +5439,37 @@
           "title": "A guide to the BRAIN Initiative Cell Census Network data ecosystem",
           "link": "https://doi.org/10.1371/journal.pbio.3002133",
           "year": 2023,
-          "summary": "Semantic Scholar provides citation context; prominent terms include single-cell, biccn, single-nucleus, types, atac-seq, bar-seq, defined, epi-retro-seq."
+          "summary": "Semantic Scholar provides citation context; prominent terms include single-cell, biccn, single-nucleus, types, atac-seq, bar-seq, defined, epi-retro-seq.",
+          "citation_context": {
+            "source": "citation-context",
+            "batch_id": "citation-context-batch-002",
+            "paper_summary": "The paper guides readers through BICCN cellular and spatial approaches, data access, resources, and the BCDC-managed data ecosystem.",
+            "paper_evidence": [
+              {
+                "span": "Here, we pro- vide a guide to the cellular and spatial approaches employed by the BICCN, and to accessing and using these data and extensive resources, including the BRAIN Cell Data Center (BCDC), which serves to manage and integrate data across the ecosystem.",
+                "page": 2
+              }
+            ],
+            "uses": [
+              {
+                "cited_doi": "10.1038/s41586-021-03500-8",
+                "cited_doi_url": "https://doi.org/10.1038/s41586-021-03500-8",
+                "cited_ref": "Yao et al. 2021",
+                "cited_title": "A transcriptomic and epigenomic cell atlas of the mouse primary motor cortex",
+                "cited_work_slug": "a-transcriptomic-and-epigenomic-cell-atlas-of-the-mouse-primary-motor-cortex",
+                "cited_work_title": "A transcriptomic and epigenomic cell atlas of the mouse primary motor cortex",
+                "cited_version_name": "Nature",
+                "cited_version_date": "2021-10-06",
+                "statement": "Cited as part of the coordinated single-cell transcriptome analyses in the primary motor cortex atlas.",
+                "evidence": [
+                  {
+                    "span": "This project involved coordinated large-scale analyses of single-cell transcriptomes [8,9], chromatin accessibility [10], DNA methylomes [11], spatially resolved single-cell transcriptomes [12], anatomic characterization with morphological and electrophysiological properties [13,14], and cellular resolution input– output mapping [10,15].",
+                    "page": 3
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "title": "A high-resolution transcriptomic and spatial atlas of cell types in the whole mouse brain",
@@ -6957,7 +7514,37 @@
           "title": "Algorithms for a Commons Cell Atlas",
           "link": "https://doi.org/10.1101/2024.03.23.586413",
           "year": 2024,
-          "summary": ""
+          "summary": "",
+          "citation_context": {
+            "source": "citation-context",
+            "batch_id": "citation-context-batch-002",
+            "paper_summary": "The paper presents data, algorithms, and tools for automating cataloging and analysis of cell types across tissues, demonstrated in a human atlas.",
+            "paper_evidence": [
+              {
+                "span": "To overcome these challenges, we present a collection of data, algorithms, and tools to automate cataloging and analyzing cell types across tissues in an organism, and demonstrate its utility in building a human atlas.",
+                "page": 1
+              }
+            ],
+            "uses": [
+              {
+                "cited_doi": "10.1038/s41586-021-03950-0",
+                "cited_doi_url": "https://doi.org/10.1038/s41586-021-03950-0",
+                "cited_ref": "BRAIN Initiative Cell Census Network (BICCN) 2021",
+                "cited_title": "A Multimodal Cell Census and Atlas of the Mammalian Primary Motor Cortex",
+                "cited_work_slug": "a-multimodal-cell-census-and-atlas-of-the-mammalian-primary-motor-cortex",
+                "cited_work_title": "A multimodal cell census and atlas of the mammalian primary motor cortex",
+                "cited_version_name": "Nature",
+                "cited_version_date": "2021-10-06",
+                "statement": "The paper cites this consortium atlas as an atlas-building project that could use CCA tools.",
+                "evidence": [
+                  {
+                    "span": "We anticipate they will be useful for consortium-level atlas building projects such as those being undertaken by the BICCN (BRAIN Initiative Cell Census Network (BICCN) 2021), BICAN (Kwon 2023), HUBMAP (Jain et al. 2023), IGVF (IGVF Consortium 2023), HCA (Regev et al. 2017), and Tabula Sapiens (Tabula Sapiens Consortium* et al. 2022).",
+                    "page": 10
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "title": "ALS molecular subtypes are a combination of cellular, genetic, and pathological features learned by deep multiomics classifiers",
@@ -7755,7 +8342,37 @@
           "title": "A guide to the BRAIN Initiative Cell Census Network data ecosystem",
           "link": "https://doi.org/10.1371/journal.pbio.3002133",
           "year": 2023,
-          "summary": ""
+          "summary": "",
+          "citation_context": {
+            "source": "citation-context",
+            "batch_id": "citation-context-batch-002",
+            "paper_summary": "The paper guides readers through BICCN cellular and spatial approaches, data access, resources, and the BCDC-managed data ecosystem.",
+            "paper_evidence": [
+              {
+                "span": "Here, we pro- vide a guide to the cellular and spatial approaches employed by the BICCN, and to accessing and using these data and extensive resources, including the BRAIN Cell Data Center (BCDC), which serves to manage and integrate data across the ecosystem.",
+                "page": 2
+              }
+            ],
+            "uses": [
+              {
+                "cited_doi": "10.1038/s41586-021-03950-0",
+                "cited_doi_url": "https://doi.org/10.1038/s41586-021-03950-0",
+                "cited_ref": "BICCN 2021",
+                "cited_title": "A multimodal cell census and atlas of the mammalian primary motor cortex",
+                "cited_work_slug": "a-multimodal-cell-census-and-atlas-of-the-mammalian-primary-motor-cortex",
+                "cited_work_title": "A multimodal cell census and atlas of the mammalian primary motor cortex",
+                "cited_version_name": "Nature",
+                "cited_version_date": "2021-10-06",
+                "statement": "Cited as the first-phase BICCN multimodal cell census and atlas of mammalian primary motor cortex.",
+                "evidence": [
+                  {
+                    "span": "The first phase of the BICCN generated a comprehensive multimodal cell census and atlas of the mammalian primary motor cortex (MOp or M1) [7].",
+                    "page": 3
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "title": "A high-resolution transcriptomic and spatial atlas of cell types in the whole mouse brain",
@@ -10064,7 +10681,45 @@
           "title": "A human commons cell atlas reveals cell type specificity for OAS1 isoforms",
           "link": "https://doi.org/10.1101/2024.03.23.586412",
           "year": 2024,
-          "summary": "Semantic Scholar provides citation context; prominent terms include methods, booeshaghi, expression, profiles, cell-types, concordance, counts, genes."
+          "summary": "Semantic Scholar provides citation context; prominent terms include methods, booeshaghi, expression, profiles, cell-types, concordance, counts, genes.",
+          "citation_context": {
+            "source": "citation-context",
+            "batch_id": "citation-context-batch-002",
+            "paper_summary": "The paper presents an open-source Human Commons Cell Atlas of 2.9 million cells across 27 tissues and uses it to analyze OAS1 isoform cell-type specificity, finding OAS1 p44b specificity in round and elongating spermatids.",
+            "paper_evidence": [
+              {
+                "span": "We describe an open source Human Commons Cell Atlas comprising 2.9 million cells across 27 tissues that can be easily updated and that is structured to facilitate custom analyses. To showcase the flexibility of the atlas, we demonstrate that it can be used to study isoforms of genes at cell resolution. In particular, we study cell type specificity of isoforms of OAS1, which has been shown to offer SARS-CoV-2 protection in certain individuals that display higher expression of the p46 isoform. Using our commons cell atlas we localize the OAS1 p44b isoform to the testis, and find that it is specific to round and elongating spermatids.",
+                "page": 1
+              }
+            ],
+            "uses": [
+              {
+                "cited_doi": "10.1038/s41586-021-03969-3",
+                "cited_doi_url": "https://doi.org/10.1038/s41586-021-03969-3",
+                "cited_ref": "Booeshaghi et al. 2021",
+                "cited_title": "Isoform Cell-Type Specificity in the Mouse Primary Motor Cortex",
+                "cited_work_slug": "isoform-cell-type-specificity-in-the-mouse-primary-motor-cortex",
+                "cited_work_title": "Isoform cell-type specificity in the mouse primary motor cortex",
+                "cited_version_name": "Nature",
+                "cited_version_date": "2021-10-06",
+                "statement": "Cited as evidence that isoform expression can vary independently of gene expression and help identify cell types, and as support for transcript compatibility count analysis.",
+                "evidence": [
+                  {
+                    "span": "This deficiency is not minor, as evidenced by the growing body of literature supporting the critical role of isoform expression in major biological processes (E. T. Wang et al. 2008; Chaponnier and Gabbiani 2004; Warren et al. 2003; Mincarelli et al. 2023), as well as in the identification and definition of cell-types (Booeshaghi et al. 2021).",
+                    "page": 2
+                  },
+                  {
+                    "span": "The expression of isoforms within genes can vary greatly, even when the overall gene expression remains unchanged (Booeshaghi et al. 2021).",
+                    "page": 4
+                  },
+                  {
+                    "span": "To test this hypothesis, we rebuilt our atlas at the isoform level leveraging transcript compatibility counts (See Methods) (Booeshaghi et al. 2021; Ntranos et al. 2019).",
+                    "page": 5
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "title": "Adaptive circuits for action and value information in rodent operant learning",
@@ -10076,7 +10731,37 @@
           "title": "Algorithms for a Commons Cell Atlas",
           "link": "https://doi.org/10.1101/2024.03.23.586413",
           "year": 2024,
-          "summary": "Semantic Scholar provides citation context; prominent terms include analyses, analysis, booeshaghi, furthermore, gene-level, gorin, isoform-level, joglekar."
+          "summary": "Semantic Scholar provides citation context; prominent terms include analyses, analysis, booeshaghi, furthermore, gene-level, gorin, isoform-level, joglekar.",
+          "citation_context": {
+            "source": "citation-context",
+            "batch_id": "citation-context-batch-002",
+            "paper_summary": "The paper presents data, algorithms, and tools for automating cataloging and analysis of cell types across tissues, demonstrated in a human atlas.",
+            "paper_evidence": [
+              {
+                "span": "To overcome these challenges, we present a collection of data, algorithms, and tools to automate cataloging and analyzing cell types across tissues in an organism, and demonstrate its utility in building a human atlas.",
+                "page": 1
+              }
+            ],
+            "uses": [
+              {
+                "cited_doi": "10.1038/s41586-021-03969-3",
+                "cited_doi_url": "https://doi.org/10.1038/s41586-021-03969-3",
+                "cited_ref": "Booeshaghi et al. 2021",
+                "cited_title": "Isoform Cell-Type Specificity in the Mouse Primary Motor Cortex",
+                "cited_work_slug": "isoform-cell-type-specificity-in-the-mouse-primary-motor-cortex",
+                "cited_work_title": "Isoform cell-type specificity in the mouse primary motor cortex",
+                "cited_version_name": "Nature",
+                "cited_version_date": "2021-10-06",
+                "statement": "The paper cites this work as an example of isoform-level analysis limited by gene-level HCA quantifications.",
+                "evidence": [
+                  {
+                    "span": "Furthermore, most of the HCA quantifications are provided at the gene-level, precluding isoform-level analysis of results (Joglekar et al. 2021; Booeshaghi et al. 2021) or analyses requiring separate quantification of nascent and mature molecules (Gorin, Vastola, and Pachter 2023).",
+                    "page": 2
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "title": "Alternative splicing across the C. elegans nervous system",
@@ -10172,7 +10857,37 @@
           "title": "A guide to the BRAIN Initiative Cell Census Network data ecosystem",
           "link": "https://doi.org/10.1371/journal.pbio.3002133",
           "year": 2023,
-          "summary": "Semantic Scholar provides citation context; prominent terms include across, addressing, analysis, biccn, collaborative, highly, laboratories, modalities."
+          "summary": "Semantic Scholar provides citation context; prominent terms include across, addressing, analysis, biccn, collaborative, highly, laboratories, modalities.",
+          "citation_context": {
+            "source": "citation-context",
+            "batch_id": "citation-context-batch-002",
+            "paper_summary": "The paper guides readers through BICCN cellular and spatial approaches, data access, resources, and the BCDC-managed data ecosystem.",
+            "paper_evidence": [
+              {
+                "span": "Here, we pro- vide a guide to the cellular and spatial approaches employed by the BICCN, and to accessing and using these data and extensive resources, including the BRAIN Cell Data Center (BCDC), which serves to manage and integrate data across the ecosystem.",
+                "page": 2
+              }
+            ],
+            "uses": [
+              {
+                "cited_doi": "10.1038/s41586-021-03969-3",
+                "cited_doi_url": "https://doi.org/10.1038/s41586-021-03969-3",
+                "cited_ref": "Booeshaghi et al. 2021",
+                "cited_title": "Isoform cell-type specificity in the mouse primary motor cortex",
+                "cited_work_slug": "isoform-cell-type-specificity-in-the-mouse-primary-motor-cortex",
+                "cited_work_title": "Isoform cell-type specificity in the mouse primary motor cortex",
+                "cited_version_name": "Nature",
+                "cited_version_date": "2021-10-06",
+                "statement": "Cited in describing BICCN collaboration on multimodal analysis and cell type reproducibility.",
+                "evidence": [
+                  {
+                    "span": "BICCN has a highly collaborative network for addressing multimodal analysis and cell type reproducibility across modalities and laboratories [7,36] (Fig 4D).",
+                    "page": 10
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "title": "Analysis of RNA processing directly from spatial transcriptomics data reveals previously unknown regulation",
@@ -10346,7 +11061,37 @@
           "title": "Universal preprocessing of single-cell genomics data",
           "link": "https://doi.org/10.1101/2023.09.14.543267",
           "year": 2023,
-          "summary": ""
+          "summary": "",
+          "citation_context": {
+            "source": "citation-context",
+            "batch_id": "citation-context-batch-002",
+            "paper_summary": "The paper presents cellatlas, a workflow for preprocessing diverse single-cell genomics data by using seqspec assay specifications to configure kb-python, kallisto, and bustools.",
+            "paper_evidence": [
+              {
+                "span": "We describe a workflow for preprocessing a wide variety of single-cell genomics data types. The approach is based on parsing of machine-readable seqspec assay specifications to customize inputs for kb-python, which uses kallisto and bustools to catalog reads, error correct barcodes, and count reads. The universal preprocessing method is implemented in the Python package cellatlas that is available for download at: https://github.com/cellatlas/cellatlas/.",
+                "page": 1
+              }
+            ],
+            "uses": [
+              {
+                "cited_doi": "10.1038/s41586-021-03969-3",
+                "cited_doi_url": "https://doi.org/10.1038/s41586-021-03969-3",
+                "cited_ref": "Booeshaghi et al. 2021",
+                "cited_title": "Isoform Cell-Type Specificity in the Mouse Primary Motor Cortex",
+                "cited_work_slug": "isoform-cell-type-specificity-in-the-mouse-primary-motor-cortex",
+                "cited_work_title": "Isoform cell-type specificity in the mouse primary motor cortex",
+                "cited_version_name": "Nature",
+                "cited_version_date": "2021-10-06",
+                "statement": "Cited as an example of studying cell-type isoform specificity in single-cell RNA-seq.",
+                "evidence": [
+                  {
+                    "span": "For example, in the case of single-cell RNA-seq it may be interesting to study cell-type isoform specificity (Booeshaghi et al. 2021), whereas for single-cell ATAC-seq the notion of isoforms is meaningless because the assay is based on genomic DNA, not cDNA, sequencing (Cusanovich et al. 2015).",
+                    "page": 1
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "title": "A global view of aging and Alzheimer’s pathogenesis-associated cell population dynamics and molecular signatures in the human and mouse brains",
@@ -11135,7 +11880,37 @@
           "title": "[HTML] Detection of viral sequences at single-cell resolution identifies novel viruses associated with host gene expression changes",
           "link": "https://idp.nature.com/authorize/casa?redirect_uri=https://www.nature.com/articles/s41587-025-02614-y&casa_token=JaA6ZAV7rscAAAAA:DZ0i5IBJF-UrgtDrUNlcyGEas0F8hxABi5U3MajeYQHPwIIMWdFrqPgDLHazXet2PaTz1a6B2HcDKsc7",
           "year": 2026,
-          "summary": ""
+          "summary": "",
+          "citation_context": {
+            "source": "citation-context",
+            "batch_id": "citation-context-batch-002",
+            "paper_summary": "The paper introduces a translated kallisto/PalmDB workflow for rapidly detecting viral sequences in bulk and single-cell transcriptomics and linking viral presence to host gene expression at single-cell resolution.",
+            "paper_evidence": [
+              {
+                "span": "Weintroduceamethodthataccuratelyand\nrapidlydetectsviralsequencesinbulkandsingle-celltranscriptomicsdata\nbasedonthehighlyconservedRdRPprotein,enablingthedetectionofover\n100,000RNAvirusspecies.Theanalysisofviralpresenceandhostgene\nexpressioninparallelatsingle-cellresolutionallowsforthecharacterization\nofhostviromesandtheidentificationofviraltropismandhostresponses.",
+                "page": 1
+              }
+            ],
+            "uses": [
+              {
+                "cited_doi": "10.1038/s41587-021-00870-2",
+                "cited_doi_url": "https://doi.org/10.1038/s41587-021-00870-2",
+                "cited_ref": "Melsted et al. 2021",
+                "cited_title": "Modular, efficient and constant-memory single-cell RNA-seq preprocessing",
+                "cited_work_slug": "modular-efficient-and-constant-memory-single-cell-rna-seq-preprocessing",
+                "cited_work_title": "Modular, efficient and constant-memory single-cell RNA-seq preprocessing",
+                "cited_version_name": "Nature Biotechnology",
+                "cited_version_date": "2021-04-01",
+                "statement": "The paper cites kallisto as the RNA-seq preprocessing tool that was expanded for translated viral alignment.",
+                "evidence": [
+                  {
+                    "span": "WeexpandedtheRNA-seqpreprocessingtoolkallisto30,31\ntoallowtrans-\nlatedalignmentofnucleotidesequencestoanaminoacidreferenceand\nvalidateditsuseincombinationwiththePalmDBaminoacidreference",
+                    "page": 2
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "title": "[HTML] Research briefing",
@@ -12083,7 +12858,37 @@
           "title": "Reference-based variant detection with varseek",
           "link": "https://doi.org/10.1101/2025.09.03.674039",
           "year": 2025,
-          "summary": ""
+          "summary": "",
+          "citation_context": {
+            "source": "citation-context",
+            "batch_id": "citation-context-batch-002",
+            "paper_summary": "The paper introduces varseek, a reference-based k-mer pseudoalignment approach for variant detection, and demonstrates its utility for single-cell transcriptomic detection of tumor-specific COSMIC variants in glioblastoma.",
+            "paper_evidence": [
+              {
+                "span": "We introduce varseek, a reference-based approach to variant detection that provides large improvements in per- formance in these challenging cases. The varseek approach utilizes a k-mer pseudoalignment approach, which provides the ability to identify variants at single-cell resolution in single-cell transcriptomics data. We showcase the versatility and performance of varseek for detecting tumor-specific COSMIC variants in glioblastoma single-cell sequencing.",
+                "page": 1
+              }
+            ],
+            "uses": [
+              {
+                "cited_doi": "10.1038/s41587-021-00870-2",
+                "cited_doi_url": "https://doi.org/10.1038/s41587-021-00870-2",
+                "cited_ref": "[27]",
+                "cited_title": "Modular, efficient and constant-memory single-cell RNA-seq preprocessing",
+                "cited_work_slug": "modular-efficient-and-constant-memory-single-cell-rna-seq-preprocessing",
+                "cited_work_title": "Modular, efficient and constant-memory single-cell RNA-seq preprocessing",
+                "cited_version_name": "Nature Biotechnology",
+                "cited_version_date": "2021-04-01",
+                "statement": "The paper cites this work as part of the kallisto-based k-mer matching workflow underlying varseek.",
+                "evidence": [
+                  {
+                    "span": "We describe the workflow underlying varseek, involving the creation of a reference of variant-containing sequences and the identification of vari- ants to this reference via k-mer matching using kallisto (26– 29) followed by filtering.",
+                    "page": 2
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "title": "ScIsoX: a multidimensional framework for measuring isoform-level transcriptomic complexity in single cells",
@@ -12365,7 +13170,37 @@
           "title": "A human commons cell atlas reveals cell type specificity for OAS1 isoforms",
           "link": "https://doi.org/10.1101/2024.03.23.586412",
           "year": 2024,
-          "summary": "Semantic Scholar provides citation context; prominent terms include bustools, count, developed, generate, kallisto, kb-python, leveraged, matrices."
+          "summary": "Semantic Scholar provides citation context; prominent terms include bustools, count, developed, generate, kallisto, kb-python, leveraged, matrices.",
+          "citation_context": {
+            "source": "citation-context",
+            "batch_id": "citation-context-batch-002",
+            "paper_summary": "The paper presents an open-source Human Commons Cell Atlas of 2.9 million cells across 27 tissues and uses it to analyze OAS1 isoform cell-type specificity, finding OAS1 p44b specificity in round and elongating spermatids.",
+            "paper_evidence": [
+              {
+                "span": "We describe an open source Human Commons Cell Atlas comprising 2.9 million cells across 27 tissues that can be easily updated and that is structured to facilitate custom analyses. To showcase the flexibility of the atlas, we demonstrate that it can be used to study isoforms of genes at cell resolution. In particular, we study cell type specificity of isoforms of OAS1, which has been shown to offer SARS-CoV-2 protection in certain individuals that display higher expression of the p46 isoform. Using our commons cell atlas we localize the OAS1 p44b isoform to the testis, and find that it is specific to round and elongating spermatids.",
+                "page": 1
+              }
+            ],
+            "uses": [
+              {
+                "cited_doi": "10.1038/s41587-021-00870-2",
+                "cited_doi_url": "https://doi.org/10.1038/s41587-021-00870-2",
+                "cited_ref": "Melsted et al. 2021",
+                "cited_title": "Modular, Efficient and Constant-Memory Single-Cell RNA-Seq Preprocessing",
+                "cited_work_slug": "modular-efficient-and-constant-memory-single-cell-rna-seq-preprocessing",
+                "cited_work_title": "Modular, efficient and constant-memory single-cell RNA-seq preprocessing",
+                "cited_version_name": "Nature Biotechnology",
+                "cited_version_date": "2021-04-01",
+                "statement": "Cited for the kallisto bustools/kb-python programs used to generate gene count matrices.",
+                "evidence": [
+                  {
+                    "span": "To that end, we leveraged the recently developed kallisto bustools (kb-python) programs (Melsted et al. 2021; Sullivan et al. 2023) to generate all 525 gene count matrices.",
+                    "page": 2
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "title": "A machine-readable specification for genomics assays",
@@ -12449,7 +13284,37 @@
           "title": "Algorithms for a Commons Cell Atlas",
           "link": "https://doi.org/10.1101/2024.03.23.586413",
           "year": 2024,
-          "summary": "Semantic Scholar provides citation context; prominent terms include melsted, bustools, cellatlas, files, kallisto, matrices, pachter, sullivan."
+          "summary": "Semantic Scholar provides citation context; prominent terms include melsted, bustools, cellatlas, files, kallisto, matrices, pachter, sullivan.",
+          "citation_context": {
+            "source": "citation-context",
+            "batch_id": "citation-context-batch-002",
+            "paper_summary": "The paper presents data, algorithms, and tools for automating cataloging and analysis of cell types across tissues, demonstrated in a human atlas.",
+            "paper_evidence": [
+              {
+                "span": "To overcome these challenges, we present a collection of data, algorithms, and tools to automate cataloging and analyzing cell types across tissues in an organism, and demonstrate its utility in building a human atlas.",
+                "page": 1
+              }
+            ],
+            "uses": [
+              {
+                "cited_doi": "10.1038/s41587-021-00870-2",
+                "cited_doi_url": "https://doi.org/10.1038/s41587-021-00870-2",
+                "cited_ref": "Melsted et al. 2021",
+                "cited_title": "Modular, Efficient and Constant-Memory Single-Cell RNA-Seq Preprocessing",
+                "cited_work_slug": "modular-efficient-and-constant-memory-single-cell-rna-seq-preprocessing",
+                "cited_work_title": "Modular, efficient and constant-memory single-cell RNA-seq preprocessing",
+                "cited_version_name": "Nature Biotechnology",
+                "cited_version_date": "2021-04-01",
+                "statement": "The paper cites this work as part of the kallisto and bustools preprocessing used by cellatlas.",
+                "evidence": [
+                  {
+                    "span": "The cellatlas build command produces a list of kb_python commands, which in turn utilizes kallisto and bustools (Bray et al. 2016; Melsted et al. 2021; Sullivan et al. 2023) to preprocess FASTQ files into count matrices.",
+                    "page": 11
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "title": "An exhausted-like microglial population accumulates in aged and APOE4 genotype Alzheimer's brains",
@@ -14009,7 +14874,37 @@
           "title": "Universal preprocessing of single-cell genomics data",
           "link": "https://doi.org/10.1101/2023.09.14.543267",
           "year": 2023,
-          "summary": ""
+          "summary": "",
+          "citation_context": {
+            "source": "citation-context",
+            "batch_id": "citation-context-batch-002",
+            "paper_summary": "The paper presents cellatlas, a workflow for preprocessing diverse single-cell genomics data by using seqspec assay specifications to configure kb-python, kallisto, and bustools.",
+            "paper_evidence": [
+              {
+                "span": "We describe a workflow for preprocessing a wide variety of single-cell genomics data types. The approach is based on parsing of machine-readable seqspec assay specifications to customize inputs for kb-python, which uses kallisto and bustools to catalog reads, error correct barcodes, and count reads. The universal preprocessing method is implemented in the Python package cellatlas that is available for download at: https://github.com/cellatlas/cellatlas/.",
+                "page": 1
+              }
+            ],
+            "uses": [
+              {
+                "cited_doi": "10.1038/s41587-021-00870-2",
+                "cited_doi_url": "https://doi.org/10.1038/s41587-021-00870-2",
+                "cited_ref": "Melsted et al. 2021",
+                "cited_title": "Modular, Efficient and Constant-Memory Single-Cell RNA-Seq Preprocessing",
+                "cited_work_slug": "modular-efficient-and-constant-memory-single-cell-rna-seq-preprocessing",
+                "cited_work_title": "Modular, efficient and constant-memory single-cell RNA-seq preprocessing",
+                "cited_version_name": "Nature Biotechnology",
+                "cited_version_date": "2021-04-01",
+                "statement": "Cited for the kallisto bustools workflow's speed, memory, and barcode recovery tradeoff in Hamming-1 barcode error correction.",
+                "evidence": [
+                  {
+                    "span": "The kallisto bustools workflow achieves a good tradeoff between speed, memory, and barcode recovery for the Hamming-1 distance barcode error correction strategy and can be consistently applied to barcodes from multiple assays (Melsted et al. 2021).",
+                    "page": 4
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "title": "Vector-borne Trypanosoma brucei parasites develop in artificial human skin and persist as skin tissue forms",
@@ -15867,7 +16762,37 @@
           "title": "Detection of viral sequences at single-cell resolution identifies novel viruses associated with host gene expression changes",
           "link": "https://doi.org/10.1038/s41587-025-02614-y",
           "year": 2025,
-          "summary": ""
+          "summary": "",
+          "citation_context": {
+            "source": "citation-context",
+            "batch_id": "citation-context-batch-002",
+            "paper_summary": "The paper introduces a translated kallisto/PalmDB workflow for rapidly detecting viral sequences in bulk and single-cell transcriptomics and linking viral presence to host gene expression at single-cell resolution.",
+            "paper_evidence": [
+              {
+                "span": "Weintroduceamethodthataccuratelyand\nrapidlydetectsviralsequencesinbulkandsingle-celltranscriptomicsdata\nbasedonthehighlyconservedRdRPprotein,enablingthedetectionofover\n100,000RNAvirusspecies.Theanalysisofviralpresenceandhostgene\nexpressioninparallelatsingle-cellresolutionallowsforthecharacterization\nofhostviromesandtheidentificationofviraltropismandhostresponses.",
+                "page": 1
+              }
+            ],
+            "uses": [
+              {
+                "cited_doi": "10.1093/bioinformatics/btab085",
+                "cited_doi_url": "https://doi.org/10.1093/bioinformatics/btab085",
+                "cited_ref": "Booeshaghi & Pachter 2021",
+                "cited_title": "Normalization of single-cell RNA-seq counts by log(x + 1) or log(1 + x)",
+                "cited_work_slug": "normalization-of-single-cell-rna-seq-counts-by-log-x-1-or-log-1-x",
+                "cited_work_title": "Normalization of single-cell RNA-seq counts by log (x+ 1) or log (1+ x)",
+                "cited_version_name": "Bioinformatics",
+                "cited_version_date": "2021-03-02",
+                "statement": "The paper cites this work to support that the binary virus-count approach is robust to normalization-related biases.",
+                "evidence": [
+                  {
+                    "span": "Thisapproachhas\nbeenpreviouslyvalidatedforsparsesingle-cellRNA;specifically,viral\nsequencing data24,78\n. Furthermore, this approach is robust to biases\nthatmaybeintroducedbynormalizationmethods42,79",
+                    "page": 13
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "title": "Exploring ln(1 + x ) Bounds: A Case Study on the Cellular Network Average Data Rate Bounds",
@@ -17540,5 +18465,6 @@
         }
       ]
     }
-  }
+  },
+  "contextUpdatedAt": "2026-07-07T22:02:38.146Z"
 }

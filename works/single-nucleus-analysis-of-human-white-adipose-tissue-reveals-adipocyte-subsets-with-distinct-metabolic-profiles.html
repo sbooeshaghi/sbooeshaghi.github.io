@@ -17,77 +17,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Single-nucleus profiling of human white adipose tissue is used to identify adipocyte subsets and relate those subsets to distinct metabolic profiles." />
+    <meta name="description" content="Human white adipose tissue contributes to metabolic disease, but depot-level measurements can miss functionally distinct adipocyte states. The challenge is resolving adipocyte heterogeneity and linking those states to obesity, glycemia, diabetes, and regulators of adipogenesis. Single-nucleus profiling identifies ADIPOMAThi and ADIPOMATlo adipocytes with distinct metabolic profiles and implicates TSHZ3 as an in vivo regulator of adipose tissue development." />
     <link rel="stylesheet" href="../styles.css" />
-    
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        document.querySelectorAll(".copy-bibtex-button").forEach((button) => {
-          button.addEventListener("click", async () => {
-            const box = button.closest(".bibtex-box");
-            const code = box ? box.querySelector("code") : null;
-            const bibtex = code ? code.textContent : "";
-            const previousText = button.textContent;
-            const markStatus = (text) => {
-              button.textContent = text;
-              window.setTimeout(() => {
-                button.textContent = previousText;
-              }, 1200);
-            };
-            const copyWithSelection = () => {
-              const textarea = document.createElement("textarea");
-              textarea.value = bibtex;
-              textarea.setAttribute("readonly", "");
-              textarea.style.position = "fixed";
-              textarea.style.left = "0";
-              textarea.style.top = "0";
-              textarea.style.width = "1px";
-              textarea.style.height = "1px";
-              textarea.style.opacity = "0";
-              textarea.style.pointerEvents = "none";
-              document.body.appendChild(textarea);
-              textarea.focus({ preventScroll: true });
-              textarea.select();
-              textarea.setSelectionRange(0, textarea.value.length);
-              const copied = document.execCommand("copy");
-              textarea.remove();
-              return copied;
-            };
-
-            try {
-              if (navigator.clipboard && navigator.clipboard.writeText) {
-                await navigator.clipboard.writeText(bibtex);
-                markStatus("Copied");
-                return;
-              }
-
-              if (copyWithSelection()) {
-                markStatus("Copied");
-                return;
-              }
-            } catch {
-              let copied = false;
-
-              try {
-                copied = copyWithSelection();
-              } catch {
-                copied = false;
-              }
-
-              if (copied) {
-                markStatus("Copied");
-                return;
-              }
-            }
-
-            markStatus("Copy failed");
-          });
-        });
-      });
-    </script>
     <title>Single-Nucleus Analysis of Human White Adipose Tissue Reveals Adipocyte Subsets with Distinct Metabolic Profiles | Works | Sina Booeshaghi</title>
   </head>
-  <body>
+  <body class="work-detail-page">
     <nav class="breadcrumb" aria-label="Breadcrumb">
       <a href="../index.html">Home</a>
       <span aria-hidden="true">/</span>
@@ -95,126 +29,71 @@
       <span aria-hidden="true">/</span>
       <span class="breadcrumb-current" title="Single-Nucleus Analysis of Human White Adipose Tissue Reveals Adipocyte Subsets with Distinct Metabolic Profiles">Single-Nucleus Analysis of Human White Adipose Tissue Reveals Ad...</span>
     </nav>
-    <article class="work-page">
-      <h1>Single-Nucleus Analysis of Human White Adipose Tissue Reveals Adipocyte Subsets with Distinct Metabolic Profiles</h1>
-      <div class="publication-versions work-versions" aria-label="Work versions">
-        <span class="publication-versions-label">Versions</span>
-        <div class="publication-version-cards">
-          
-        <a
-          class="publication-version-link is-current"
-          href="https://doi.org/10.1101/2025.09.14.673351"
-          target="_blank"
-          rel="noopener"
-        >
-          <span class="publication-version-title">Single-Nucleus Analysis of Human White Adipose Tissue Reveals Adipocyte Subsets with Distinct Metabolic Profiles</span>
-          <span class="publication-version-detail">bioRxiv · 2025-09-16</span>
-        </a>
+    <article class="work-page study-graph-page">
+      <section class="study-focus" aria-label="Selected work">
+        <div>
+          <h1>Single-Nucleus Analysis of Human White Adipose Tissue Reveals Adipocyte Subsets with Distinct Metabolic Profiles</h1>
+          <p>Human white adipose tissue contributes to metabolic disease, but depot-level measurements can miss functionally distinct adipocyte states. The challenge is resolving adipocyte heterogeneity and linking those states to obesity, glycemia, diabetes, and regulators of adipogenesis. Single-nucleus profiling identifies ADIPOMAThi and ADIPOMATlo adipocytes with distinct metabolic profiles and implicates TSHZ3 as an in vivo regulator of adipose tissue development.</p>
         </div>
-      </div>
-
-      <section>
-        <h2>Summary</h2>
-        <p>Single-nucleus profiling of human white adipose tissue is used to identify adipocyte subsets and relate those subsets to distinct metabolic profiles.</p>
+        <dl class="study-stats">
+          <div>
+            <dt>Citations</dt>
+            <dd>3</dd>
+          </div>
+          <div>
+            <dt>Relations</dt>
+            <dd>21</dd>
+          </div>
+        </dl>
       </section>
 
       
-      <section
-        class="authors-section"
-        data-author-version-count="1"
-      >
-        <h2>Authors</h2>
-        
-        <section
-          class="author-version"
-          data-author-count="18"
-        >
-          <h3>
-            <a href="https://doi.org/10.1101/2025.09.14.673351" target="_blank" rel="noopener">bioRxiv</a>
-            <time datetime="2025-09-16">2025-09-16</time>
-          </h3>
-          <ul class="author-list">
-            
-            <li><a href="https://orcid.org/0000-0003-4327-7977" target="_blank" rel="noopener" title="ORCID">Vissarion Efthymiou</a></li>
-            <li>Adhideb Ghosh</li>
-            <li>Sean D. Kodani</li>
-            <li>Xavier Caubit</li>
-            <li>Laurent Fasano</li>
-            <li>Waqar Ali</li>
-            <li>Lindsay S. Poulos</li>
-            <li><a href="https://orcid.org/0000-0001-7300-1416" target="_blank" rel="noopener" title="ORCID">Henrique Camara</a></li>
-            <li>Anushka Gupta</li>
-            <li>Yasmine Belaidouni</li>
-            <li><a href="https://orcid.org/0000-0002-6442-4502" target="_blank" rel="noopener" title="ORCID">A. Sina Booeshaghi</a></li>
-            <li>Shiyi Yang</li>
-            <li>Ruchir Rastogi</li>
-            <li>Farnaz Shamsi</li>
-            <li>Ashley Vernon</li>
-            <li><a href="https://orcid.org/0000-0002-3909-8389" target="_blank" rel="noopener" title="ORCID">Aaron Streets</a></li>
-            <li><a href="https://orcid.org/0000-0003-2053-9559" target="_blank" rel="noopener" title="ORCID">Yu-Hua Tseng</a></li>
-            <li>Mary Elizabeth Patti</li>
-          </ul>
-        </section>
-      </section>
-
-      <section>
-        <h2>BibTeX</h2>
-        
-        <section class="bibtex-entry">
-          <h3>bioRxiv</h3>
-          <div class="bibtex-box">
-            <button
-              class="copy-bibtex-button"
-              type="button"
-              aria-label="Copy BibTeX for bioRxiv"
-            >
-              Copy BibTeX
-            </button>
-            <pre><code>@article{Efthymiou_2025,
-  TITLE     = {Single-Nucleus Analysis of Human White Adipose Tissue Reveals Adipocyte Subsets with Distinct Metabolic Profiles},
-  URL       = {http://dx.doi.org/10.1101/2025.09.14.673351},
-  DOI       = {10.1101/2025.09.14.673351},
-  PUBLISHER = {openRxiv},
-  AUTHOR    = {Efthymiou, Vissarion and Ghosh, Adhideb and Kodani, Sean D. and Caubit, Xavier and Fasano, Laurent and Ali, Waqar and Poulos, Lindsay S. and Camara, Henrique and Gupta, Anushka and Belaidouni, Yasmine and Booeshaghi, A. Sina and Yang, Shiyi and Rastogi, Ruchir and Shamsi, Farnaz and Vernon, Ashley and Streets, Aaron and Tseng, Yu-Hua and Patti, Mary Elizabeth},
-  YEAR      = {2025}
-}</code></pre>
+      <section class="relationship-inspector" aria-label="Indexed relations" data-work-relations>
+        <section class="relationship-list-panel" aria-label="Relations">
+          <div class="study-section-heading">
+            <h2>Relations</h2>
           </div>
+          <div
+            class="relation-tabs"
+            role="tablist"
+            aria-label="Relation types"
+            data-relation-tabs
+          ></div>
+          <div class="reason-list" data-relation-list></div>
         </section>
-      </section>
 
-      <section>
-        <h2>Citing Works</h2>
-        <p class="citation-source-note">
-          3 citing works found in citation data generated 2026-07-06. Citation relationships are sourced from OpenAlex, Semantic Scholar, Google Scholar.
-        </p>
-        <table class="citation-table">
-          <thead>
-            <tr>
-              <th>Title</th>
-              <th>Year</th>
-              <th>Summary</th>
-            </tr>
-          </thead>
-          <tbody>
-            
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.64898/2026.05.16.725005" target="_blank" rel="noopener">Global cell-state and gene-program representations reveal conserved and context-specific perturbation responses of cells</a></td>
-              <td class="citation-year"><time datetime="2026">2026</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.64898/2026.06.23.734002" target="_blank" rel="noopener">Legacy Effects of Early β-Adrenergic Stimulation Program Adipose Plasticity and Confer Metabolic Resilience in Obesity</a></td>
-              <td class="citation-year"><time datetime="2026">2026</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include adipocyte, enriched, metabolic, metabolically, adipocytes, analyses, obesity, reinisch.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1038/s41366-026-02132-0" target="_blank" rel="noopener">The regulatory effects of growth hormone on adipose tissue at physiological and pathological levels and its relationship with obesity</a></td>
-              <td class="citation-year"><time datetime="2026">2026</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-          </tbody>
-        </table>
+        <aside class="evidence-panel relationship-detail" aria-live="polite">
+          <span class="study-label" data-relation-label>Relation</span>
+          <h2 data-relation-title></h2>
+          <p class="selected-relation-statement" data-relation-statement></p>
+          <section class="version-citation" data-version-citation hidden>
+            <h3>Citation</h3>
+            <div class="bibtex-box">
+              <button class="copy-bibtex-button" type="button" data-copy-bibtex>
+                Copy BibTeX
+              </button>
+              <pre><code data-bibtex-code></code></pre>
+            </div>
+          </section>
+          <details class="relationship-evidence" data-relation-evidence>
+            <summary>
+              <span>Evidence</span>
+              <span class="evidence-summary" data-evidence-summary></span>
+            </summary>
+            <table class="relationship-evidence-table">
+              <thead>
+                <tr>
+                  <th>Span</th>
+                  <th>Source</th>
+                </tr>
+              </thead>
+              <tbody data-evidence-rows></tbody>
+            </table>
+          </details>
+        </aside>
       </section>
+      <script id="workRelationData" type="application/json">{"work":{"id":"work:single-nucleus-analysis-of-human-white-adipose-tissue-reveals-adipocyte-subsets-with-distinct-metabolic-profiles","title":"Single-Nucleus Analysis of Human White Adipose Tissue Reveals Adipocyte Subsets with Distinct Metabolic Profiles","description":"Human white adipose tissue contributes to metabolic disease, but depot-level measurements can miss functionally distinct adipocyte states. The challenge is resolving adipocyte heterogeneity and linking those states to obesity, glycemia, diabetes, and regulators of adipogenesis. Single-nucleus profiling identifies ADIPOMAThi and ADIPOMATlo adipocytes with distinct metabolic profiles and implicates TSHZ3 as an in vivo regulator of adipose tissue development."},"relationTypes":[{"id":"authors","label":"Authors"},{"id":"claims","label":"Claims"},{"id":"citations","label":"Citations"},{"id":"versions","label":"Versions"},{"id":"software","label":"Software"},{"id":"sources","label":"Sources"}],"connections":[{"id":"connection:version:single-nucleus-analysis-of-human-white-adipose-tissue-reveals-adipocyte-subsets-with-distinct-metabolic-profiles--2025-09-16-biorxiv--person:orcid:0000-0003-4327-7977--author-1","type":"authors","title":"Vissarion Efthymiou","description":"Vissarion Efthymiou is an author of Single-Nucleus Analysis of Human White Adipose Tissue Reveals Adipocyte Subsets with Distinct Metabolic Profiles.","statement":"Vissarion Efthymiou is an author of Single-Nucleus Analysis of Human White Adipose Tissue Reveals Adipocyte Subsets with Distinct Metabolic Profiles.","evidence":[]},{"id":"connection:version:single-nucleus-analysis-of-human-white-adipose-tissue-reveals-adipocyte-subsets-with-distinct-metabolic-profiles--2025-09-16-biorxiv--person:local:adhideb-ghosh--author-2","type":"authors","title":"Adhideb Ghosh","description":"Adhideb Ghosh is an author of Single-Nucleus Analysis of Human White Adipose Tissue Reveals Adipocyte Subsets with Distinct Metabolic Profiles.","statement":"Adhideb Ghosh is an author of Single-Nucleus Analysis of Human White Adipose Tissue Reveals Adipocyte Subsets with Distinct Metabolic Profiles.","evidence":[]},{"id":"connection:version:single-nucleus-analysis-of-human-white-adipose-tissue-reveals-adipocyte-subsets-with-distinct-metabolic-profiles--2025-09-16-biorxiv--person:local:sean-d-kodani--author-3","type":"authors","title":"Sean D. Kodani","description":"Sean D. Kodani is an author of Single-Nucleus Analysis of Human White Adipose Tissue Reveals Adipocyte Subsets with Distinct Metabolic Profiles.","statement":"Sean D. Kodani is an author of Single-Nucleus Analysis of Human White Adipose Tissue Reveals Adipocyte Subsets with Distinct Metabolic Profiles.","evidence":[]},{"id":"connection:version:single-nucleus-analysis-of-human-white-adipose-tissue-reveals-adipocyte-subsets-with-distinct-metabolic-profiles--2025-09-16-biorxiv--person:local:xavier-caubit--author-4","type":"authors","title":"Xavier Caubit","description":"Xavier Caubit is an author of Single-Nucleus Analysis of Human White Adipose Tissue Reveals Adipocyte Subsets with Distinct Metabolic Profiles.","statement":"Xavier Caubit is an author of Single-Nucleus Analysis of Human White Adipose Tissue Reveals Adipocyte Subsets with Distinct Metabolic Profiles.","evidence":[]},{"id":"connection:version:single-nucleus-analysis-of-human-white-adipose-tissue-reveals-adipocyte-subsets-with-distinct-metabolic-profiles--2025-09-16-biorxiv--person:local:laurent-fasano--author-5","type":"authors","title":"Laurent Fasano","description":"Laurent Fasano is an author of Single-Nucleus Analysis of Human White Adipose Tissue Reveals Adipocyte Subsets with Distinct Metabolic Profiles.","statement":"Laurent Fasano is an author of Single-Nucleus Analysis of Human White Adipose Tissue Reveals Adipocyte Subsets with Distinct Metabolic Profiles.","evidence":[]},{"id":"connection:version:single-nucleus-analysis-of-human-white-adipose-tissue-reveals-adipocyte-subsets-with-distinct-metabolic-profiles--2025-09-16-biorxiv--person:local:waqar-ali--author-6","type":"authors","title":"Waqar Ali","description":"Waqar Ali is an author of Single-Nucleus Analysis of Human White Adipose Tissue Reveals Adipocyte Subsets with Distinct Metabolic Profiles.","statement":"Waqar Ali is an author of Single-Nucleus Analysis of Human White Adipose Tissue Reveals Adipocyte Subsets with Distinct Metabolic Profiles.","evidence":[]},{"id":"connection:version:single-nucleus-analysis-of-human-white-adipose-tissue-reveals-adipocyte-subsets-with-distinct-metabolic-profiles--2025-09-16-biorxiv--person:local:lindsay-s-poulos--author-7","type":"authors","title":"Lindsay S. Poulos","description":"Lindsay S. Poulos is an author of Single-Nucleus Analysis of Human White Adipose Tissue Reveals Adipocyte Subsets with Distinct Metabolic Profiles.","statement":"Lindsay S. Poulos is an author of Single-Nucleus Analysis of Human White Adipose Tissue Reveals Adipocyte Subsets with Distinct Metabolic Profiles.","evidence":[]},{"id":"connection:version:single-nucleus-analysis-of-human-white-adipose-tissue-reveals-adipocyte-subsets-with-distinct-metabolic-profiles--2025-09-16-biorxiv--person:orcid:0000-0001-7300-1416--author-8","type":"authors","title":"Henrique Camara","description":"Henrique Camara is an author of Single-Nucleus Analysis of Human White Adipose Tissue Reveals Adipocyte Subsets with Distinct Metabolic Profiles.","statement":"Henrique Camara is an author of Single-Nucleus Analysis of Human White Adipose Tissue Reveals Adipocyte Subsets with Distinct Metabolic Profiles.","evidence":[]},{"id":"connection:version:single-nucleus-analysis-of-human-white-adipose-tissue-reveals-adipocyte-subsets-with-distinct-metabolic-profiles--2025-09-16-biorxiv--person:local:anushka-gupta--author-9","type":"authors","title":"Anushka Gupta","description":"Anushka Gupta is an author of Single-Nucleus Analysis of Human White Adipose Tissue Reveals Adipocyte Subsets with Distinct Metabolic Profiles.","statement":"Anushka Gupta is an author of Single-Nucleus Analysis of Human White Adipose Tissue Reveals Adipocyte Subsets with Distinct Metabolic Profiles.","evidence":[]},{"id":"connection:version:single-nucleus-analysis-of-human-white-adipose-tissue-reveals-adipocyte-subsets-with-distinct-metabolic-profiles--2025-09-16-biorxiv--person:local:yasmine-belaidouni--author-10","type":"authors","title":"Yasmine Belaidouni","description":"Yasmine Belaidouni is an author of Single-Nucleus Analysis of Human White Adipose Tissue Reveals Adipocyte Subsets with Distinct Metabolic Profiles.","statement":"Yasmine Belaidouni is an author of Single-Nucleus Analysis of Human White Adipose Tissue Reveals Adipocyte Subsets with Distinct Metabolic Profiles.","evidence":[]},{"id":"connection:version:single-nucleus-analysis-of-human-white-adipose-tissue-reveals-adipocyte-subsets-with-distinct-metabolic-profiles--2025-09-16-biorxiv--person:orcid:0000-0002-6442-4502--author-11","type":"authors","title":"A. Sina Booeshaghi","description":"A. Sina Booeshaghi is an author of Single-Nucleus Analysis of Human White Adipose Tissue Reveals Adipocyte Subsets with Distinct Metabolic Profiles.","statement":"A. Sina Booeshaghi is an author of Single-Nucleus Analysis of Human White Adipose Tissue Reveals Adipocyte Subsets with Distinct Metabolic Profiles.","evidence":[]},{"id":"connection:version:single-nucleus-analysis-of-human-white-adipose-tissue-reveals-adipocyte-subsets-with-distinct-metabolic-profiles--2025-09-16-biorxiv--person:local:shiyi-yang--author-12","type":"authors","title":"Shiyi Yang","description":"Shiyi Yang is an author of Single-Nucleus Analysis of Human White Adipose Tissue Reveals Adipocyte Subsets with Distinct Metabolic Profiles.","statement":"Shiyi Yang is an author of Single-Nucleus Analysis of Human White Adipose Tissue Reveals Adipocyte Subsets with Distinct Metabolic Profiles.","evidence":[]},{"id":"connection:version:single-nucleus-analysis-of-human-white-adipose-tissue-reveals-adipocyte-subsets-with-distinct-metabolic-profiles--2025-09-16-biorxiv--person:local:ruchir-rastogi--author-13","type":"authors","title":"Ruchir Rastogi","description":"Ruchir Rastogi is an author of Single-Nucleus Analysis of Human White Adipose Tissue Reveals Adipocyte Subsets with Distinct Metabolic Profiles.","statement":"Ruchir Rastogi is an author of Single-Nucleus Analysis of Human White Adipose Tissue Reveals Adipocyte Subsets with Distinct Metabolic Profiles.","evidence":[]},{"id":"connection:version:single-nucleus-analysis-of-human-white-adipose-tissue-reveals-adipocyte-subsets-with-distinct-metabolic-profiles--2025-09-16-biorxiv--person:local:farnaz-shamsi--author-14","type":"authors","title":"Farnaz Shamsi","description":"Farnaz Shamsi is an author of Single-Nucleus Analysis of Human White Adipose Tissue Reveals Adipocyte Subsets with Distinct Metabolic Profiles.","statement":"Farnaz Shamsi is an author of Single-Nucleus Analysis of Human White Adipose Tissue Reveals Adipocyte Subsets with Distinct Metabolic Profiles.","evidence":[]},{"id":"connection:version:single-nucleus-analysis-of-human-white-adipose-tissue-reveals-adipocyte-subsets-with-distinct-metabolic-profiles--2025-09-16-biorxiv--person:local:ashley-vernon--author-15","type":"authors","title":"Ashley Vernon","description":"Ashley Vernon is an author of Single-Nucleus Analysis of Human White Adipose Tissue Reveals Adipocyte Subsets with Distinct Metabolic Profiles.","statement":"Ashley Vernon is an author of Single-Nucleus Analysis of Human White Adipose Tissue Reveals Adipocyte Subsets with Distinct Metabolic Profiles.","evidence":[]},{"id":"connection:version:single-nucleus-analysis-of-human-white-adipose-tissue-reveals-adipocyte-subsets-with-distinct-metabolic-profiles--2025-09-16-biorxiv--person:orcid:0000-0002-3909-8389--author-16","type":"authors","title":"Aaron Streets","description":"Aaron Streets is an author of Single-Nucleus Analysis of Human White Adipose Tissue Reveals Adipocyte Subsets with Distinct Metabolic Profiles.","statement":"Aaron Streets is an author of Single-Nucleus Analysis of Human White Adipose Tissue Reveals Adipocyte Subsets with Distinct Metabolic Profiles.","evidence":[]},{"id":"connection:version:single-nucleus-analysis-of-human-white-adipose-tissue-reveals-adipocyte-subsets-with-distinct-metabolic-profiles--2025-09-16-biorxiv--person:orcid:0000-0003-2053-9559--author-17","type":"authors","title":"Yu-Hua Tseng","description":"Yu-Hua Tseng is an author of Single-Nucleus Analysis of Human White Adipose Tissue Reveals Adipocyte Subsets with Distinct Metabolic Profiles.","statement":"Yu-Hua Tseng is an author of Single-Nucleus Analysis of Human White Adipose Tissue Reveals Adipocyte Subsets with Distinct Metabolic Profiles.","evidence":[]},{"id":"connection:version:single-nucleus-analysis-of-human-white-adipose-tissue-reveals-adipocyte-subsets-with-distinct-metabolic-profiles--2025-09-16-biorxiv--person:local:mary-elizabeth-patti--author-18","type":"authors","title":"Mary Elizabeth Patti","description":"Mary Elizabeth Patti is an author of Single-Nucleus Analysis of Human White Adipose Tissue Reveals Adipocyte Subsets with Distinct Metabolic Profiles.","statement":"Mary Elizabeth Patti is an author of Single-Nucleus Analysis of Human White Adipose Tissue Reveals Adipocyte Subsets with Distinct Metabolic Profiles.","evidence":[]},{"id":"connection:version:single-nucleus-analysis-of-human-white-adipose-tissue-reveals-adipocyte-subsets-with-distinct-metabolic-profiles--2025-09-16-biorxiv--claim:version:single-nucleus-analysis-of-human-white-adipose-tissue-reveals-adipocyte-subsets-with-distinct-metabolic-profiles--2025-09-16-biorxiv--summary-0","type":"claims","title":"Human white adipose tissue contributes to metabolic disease, but depot-level measurements can miss functionally distinct","description":"Human white adipose tissue contributes to metabolic disease, but depot-level measurements can miss functionally distinct adipocyte states. The challenge is resolving adipocyte heterogeneity and linking those states to obesity, glycemia, diabetes, and regulators of adipogenesis. Single-nucleus profiling identifies ADIPOMAThi and ADIPOMATlo adipocytes with distinct metabolic profiles and implicates TSHZ3 as an in vivo regulator of adipose tissue development.","statement":"This publication contains the target grounded summary claim.","evidence":[{"source":"source:text:document:single-nucleus-analysis-of-human-white-adipose-tissue-reveals-adipocyte-subsets-with-distinct-metabolic-profiles--2025-09-16-biorxiv","span":"To understand differences within/between adipose depots, we generated 65,668 single-nucleus transcriptomes from human subcutaneous or intraabdominal adipose tissue (SAT/IAT).","page":2,"properties":{"document_id":"document:single-nucleus-analysis-of-human-white-adipose-tissue-reveals-adipocyte-subsets-with-distinct-metabolic-profiles--2025-09-16-biorxiv","char_start":358,"char_end":532}},{"source":"source:text:document:single-nucleus-analysis-of-human-white-adipose-tissue-reveals-adipocyte-subsets-with-distinct-metabolic-profiles--2025-09-16-biorxiv","span":"ADIPOMATlo adipocytes demonstrate a low-differentiation, proinflammatory, and pro-fibrotic transcriptome.","page":2,"properties":{"document_id":"document:single-nucleus-analysis-of-human-white-adipose-tissue-reveals-adipocyte-subsets-with-distinct-metabolic-profiles--2025-09-16-biorxiv","char_start":749,"char_end":854}},{"source":"source:text:document:single-nucleus-analysis-of-human-white-adipose-tissue-reveals-adipocyte-subsets-with-distinct-metabolic-profiles--2025-09-16-biorxiv","span":"Together, these findings indicate that the abundance of ADIPOMATlo adipocytes may be associated with obesity, T2D, and increasing glycemia and may contribute to impaired adipose metabolic function in this setting.","page":8,"properties":{"document_id":"document:single-nucleus-analysis-of-human-white-adipose-tissue-reveals-adipocyte-subsets-with-distinct-metabolic-profiles--2025-09-16-biorxiv","char_start":3090,"char_end":3303}},{"source":"source:text:document:single-nucleus-analysis-of-human-white-adipose-tissue-reveals-adipocyte-subsets-with-distinct-metabolic-profiles--2025-09-16-biorxiv","span":"These findings indicate that heterozygous whole-body deletion of Tshz3 can significantly impair development of adipose tissue - independent of anatomical location, revealing TSHZ3 as a crucial regulator of adipogenesis in vivo.","page":10,"properties":{"document_id":"document:single-nucleus-analysis-of-human-white-adipose-tissue-reveals-adipocyte-subsets-with-distinct-metabolic-profiles--2025-09-16-biorxiv","char_start":1316,"char_end":1543}}]},{"id":"connection:version:single-nucleus-analysis-of-human-white-adipose-tissue-reveals-adipocyte-subsets-with-distinct-metabolic-profiles--2025-09-16-biorxiv--work:single-nucleus-analysis-of-human-white-adipose-tissue-reveals-adipocyte-subsets-with-distinct-metabolic-profiles","type":"versions","title":"Single-Nucleus Analysis of Human White Adipose Tissue Reveals Adipocyte Subsets with Distinct Metabolic Profiles","description":"2025-09-16 · bioRxiv","statement":"2025-09-16 is a version of Single-Nucleus Analysis of Human White Adipose Tissue Reveals Adipocyte Subsets with Distinct Metabolic Profiles.","evidence":[],"citation":{"doi":"10.1101/2025.09.14.673351","url":"https://doi.org/10.1101/2025.09.14.673351","date":"2025-09-16","venue":"bioRxiv","authors":[{"name":"Vissarion Efthymiou","orcid":"https://orcid.org/0000-0003-4327-7977"},{"name":"Adhideb Ghosh","orcid":""},{"name":"Sean D. Kodani","orcid":""},{"name":"Xavier Caubit","orcid":""},{"name":"Laurent Fasano","orcid":""},{"name":"Waqar Ali","orcid":""},{"name":"Lindsay S. Poulos","orcid":""},{"name":"Henrique Camara","orcid":"https://orcid.org/0000-0001-7300-1416"},{"name":"Anushka Gupta","orcid":""},{"name":"Yasmine Belaidouni","orcid":""},{"name":"A. Sina Booeshaghi","orcid":"https://orcid.org/0000-0002-6442-4502"},{"name":"Shiyi Yang","orcid":""},{"name":"Ruchir Rastogi","orcid":""},{"name":"Farnaz Shamsi","orcid":""},{"name":"Ashley Vernon","orcid":""},{"name":"Aaron Streets","orcid":"https://orcid.org/0000-0002-3909-8389"},{"name":"Yu-Hua Tseng","orcid":"https://orcid.org/0000-0003-2053-9559"},{"name":"Mary Elizabeth Patti","orcid":""}]},"bibtex":"@article{Efthymiou_2025,\n  TITLE     = {Single-Nucleus Analysis of Human White Adipose Tissue Reveals Adipocyte Subsets with Distinct Metabolic Profiles},\n  URL       = {http://dx.doi.org/10.1101/2025.09.14.673351},\n  DOI       = {10.1101/2025.09.14.673351},\n  PUBLISHER = {openRxiv},\n  AUTHOR    = {Efthymiou, Vissarion and Ghosh, Adhideb and Kodani, Sean D. and Caubit, Xavier and Fasano, Laurent and Ali, Waqar and Poulos, Lindsay S. and Camara, Henrique and Gupta, Anushka and Belaidouni, Yasmine and Booeshaghi, A. Sina and Yang, Shiyi and Rastogi, Ruchir and Shamsi, Farnaz and Vernon, Ashley and Streets, Aaron and Tseng, Yu-Hua and Patti, Mary Elizabeth},\n  YEAR      = {2025}\n}"},{"id":"connection:document:single-nucleus-analysis-of-human-white-adipose-tissue-reveals-adipocyte-subsets-with-distinct-metabolic-profiles--2025-09-16-biorxiv--version:single-nucleus-analysis-of-human-white-adipose-tissue-reveals-adipocyte-subsets-with-distinct-metabolic-profiles--2025-09-16-biorxiv","type":"sources","title":"2025-09-16-biorxiv.pdf","description":"This source document provides local provenance for the target publication.","statement":"This source document provides local provenance for the target publication.","evidence":[]}]}</script>
+      <script src="../work-relations.js"></script>
     </article>
   </body>
 </html>

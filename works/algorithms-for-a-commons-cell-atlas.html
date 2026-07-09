@@ -17,77 +17,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="This preprint outlines computational ideas and algorithms for constructing and querying a commons cell atlas from large-scale single-cell data." />
+    <meta name="description" content="Cell atlases are valuable because they organize single-cell datasets into reference maps of tissues, cell types, and marker genes. Current atlas projects remain difficult to update or jointly analyze because preprocessing is inconsistent, marker curation is manual, and compatible reanalysis tools are limited. The work introduces mx, ec, cellatlas, and Commons Cell Atlas infrastructure for automated filtering, normalization, cell-type assignment, marker updating, and reproducible atlas construction." />
     <link rel="stylesheet" href="../styles.css" />
-    
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        document.querySelectorAll(".copy-bibtex-button").forEach((button) => {
-          button.addEventListener("click", async () => {
-            const box = button.closest(".bibtex-box");
-            const code = box ? box.querySelector("code") : null;
-            const bibtex = code ? code.textContent : "";
-            const previousText = button.textContent;
-            const markStatus = (text) => {
-              button.textContent = text;
-              window.setTimeout(() => {
-                button.textContent = previousText;
-              }, 1200);
-            };
-            const copyWithSelection = () => {
-              const textarea = document.createElement("textarea");
-              textarea.value = bibtex;
-              textarea.setAttribute("readonly", "");
-              textarea.style.position = "fixed";
-              textarea.style.left = "0";
-              textarea.style.top = "0";
-              textarea.style.width = "1px";
-              textarea.style.height = "1px";
-              textarea.style.opacity = "0";
-              textarea.style.pointerEvents = "none";
-              document.body.appendChild(textarea);
-              textarea.focus({ preventScroll: true });
-              textarea.select();
-              textarea.setSelectionRange(0, textarea.value.length);
-              const copied = document.execCommand("copy");
-              textarea.remove();
-              return copied;
-            };
-
-            try {
-              if (navigator.clipboard && navigator.clipboard.writeText) {
-                await navigator.clipboard.writeText(bibtex);
-                markStatus("Copied");
-                return;
-              }
-
-              if (copyWithSelection()) {
-                markStatus("Copied");
-                return;
-              }
-            } catch {
-              let copied = false;
-
-              try {
-                copied = copyWithSelection();
-              } catch {
-                copied = false;
-              }
-
-              if (copied) {
-                markStatus("Copied");
-                return;
-              }
-            }
-
-            markStatus("Copy failed");
-          });
-        });
-      });
-    </script>
     <title>Algorithms for a Commons Cell Atlas | Works | Sina Booeshaghi</title>
   </head>
-  <body>
+  <body class="work-detail-page">
     <nav class="breadcrumb" aria-label="Breadcrumb">
       <a href="../index.html">Home</a>
       <span aria-hidden="true">/</span>
@@ -95,141 +29,71 @@
       <span aria-hidden="true">/</span>
       <span class="breadcrumb-current" title="Algorithms for a Commons Cell Atlas">Algorithms for a Commons Cell Atlas</span>
     </nav>
-    <article class="work-page">
-      <h1>Algorithms for a Commons Cell Atlas</h1>
-      <div class="publication-versions work-versions" aria-label="Work versions">
-        <span class="publication-versions-label">Versions</span>
-        <div class="publication-version-cards">
-          
-        <a
-          class="publication-version-link is-current"
-          href="https://doi.org/10.1101/2024.03.23.586413"
-          target="_blank"
-          rel="noopener"
-        >
-          <span class="publication-version-title">Algorithms for a Commons Cell Atlas</span>
-          <span class="publication-version-detail">bioRxiv · 2024-03-26</span>
-        </a>
+    <article class="work-page study-graph-page">
+      <section class="study-focus" aria-label="Selected work">
+        <div>
+          <h1>Algorithms for a Commons Cell Atlas</h1>
+          <p>Cell atlases are valuable because they organize single-cell datasets into reference maps of tissues, cell types, and marker genes. Current atlas projects remain difficult to update or jointly analyze because preprocessing is inconsistent, marker curation is manual, and compatible reanalysis tools are limited. The work introduces mx, ec, cellatlas, and Commons Cell Atlas infrastructure for automated filtering, normalization, cell-type assignment, marker updating, and reproducible atlas construction.</p>
         </div>
-      </div>
-
-      <section>
-        <h2>Summary</h2>
-        <p>This preprint outlines computational ideas and algorithms for constructing and querying a commons cell atlas from large-scale single-cell data.</p>
+        <dl class="study-stats">
+          <div>
+            <dt>Citations</dt>
+            <dd>9</dd>
+          </div>
+          <div>
+            <dt>Relations</dt>
+            <dd>6</dd>
+          </div>
+        </dl>
       </section>
 
       
-      <section
-        class="authors-section"
-        data-author-version-count="1"
-      >
-        <h2>Authors</h2>
-        
-        <section
-          class="author-version"
-          data-author-count="3"
-        >
-          <h3>
-            <a href="https://doi.org/10.1101/2024.03.23.586413" target="_blank" rel="noopener">bioRxiv</a>
-            <time datetime="2024-03-26">2024-03-26</time>
-          </h3>
-          <ul class="author-list">
-            
-            <li><a href="https://orcid.org/0000-0002-6442-4502" target="_blank" rel="noopener" title="ORCID">A. Sina Booeshaghi</a></li>
-            <li><a href="https://orcid.org/0000-0001-7420-8697" target="_blank" rel="noopener" title="ORCID">Ángel Galvez-Merchán</a></li>
-            <li><a href="https://orcid.org/0000-0002-9164-6231" target="_blank" rel="noopener" title="ORCID">Lior Pachter</a></li>
-          </ul>
-        </section>
-      </section>
-
-      <section>
-        <h2>BibTeX</h2>
-        
-        <section class="bibtex-entry">
-          <h3>bioRxiv</h3>
-          <div class="bibtex-box">
-            <button
-              class="copy-bibtex-button"
-              type="button"
-              aria-label="Copy BibTeX for bioRxiv"
-            >
-              Copy BibTeX
-            </button>
-            <pre><code>@article{Booeshaghi_2024,
-  TITLE     = {Algorithms for a Commons Cell Atlas},
-  URL       = {http://dx.doi.org/10.1101/2024.03.23.586413},
-  DOI       = {10.1101/2024.03.23.586413},
-  PUBLISHER = {openRxiv},
-  AUTHOR    = {Booeshaghi, A. Sina and Galvez-Merchán, Ángel and Pachter, Lior},
-  YEAR      = {2024}
-}</code></pre>
+      <section class="relationship-inspector" aria-label="Indexed relations" data-work-relations>
+        <section class="relationship-list-panel" aria-label="Relations">
+          <div class="study-section-heading">
+            <h2>Relations</h2>
           </div>
+          <div
+            class="relation-tabs"
+            role="tablist"
+            aria-label="Relation types"
+            data-relation-tabs
+          ></div>
+          <div class="reason-list" data-relation-list></div>
         </section>
-      </section>
 
-      <section>
-        <h2>Citing Works</h2>
-        <p class="citation-source-note">
-          9 citing works found in citation data generated 2026-07-06. Citation relationships are sourced from OpenAlex, Semantic Scholar, Google Scholar.
-        </p>
-        <table class="citation-table">
-          <thead>
-            <tr>
-              <th>Title</th>
-              <th>Year</th>
-              <th>Summary</th>
-            </tr>
-          </thead>
-          <tbody>
-            
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1038/s41587-026-03199-w" target="_blank" rel="noopener">A genome-scale CRISPRi perturbation atlas of human induced pluripotent stem cells</a></td>
-              <td class="citation-year"><time datetime="2026">2026</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1016/j.celrep.2026.117407" target="_blank" rel="noopener">Consensus Pituitary Atlas, a scalable resource for annotation, novel marker discovery, and analyses in mouse pituitary gland research.</a></td>
-              <td class="citation-year"><time datetime="2026">2026</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1038/s41576-026-00939-1" target="_blank" rel="noopener">Gene regulatory networks: from correlative models to causal explanations</a></td>
-              <td class="citation-year"><time datetime="2026">2026</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include captures, description, enhancers, explicit, factors, genetic, implementational, instance.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/2025.10.28.685060" target="_blank" rel="noopener">Consensus Pituitary Atlas, a scalable resource for annotation, novel marker discovery and analyses in pituitary gland research</a></td>
-              <td class="citation-year"><time datetime="2025">2025</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1152/physiol.00010.2025" target="_blank" rel="noopener">From Cells to Selves and Back: Human Neurodiversity at Single-Cell Resolution</a></td>
-              <td class="citation-year"><time datetime="2025">2025</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/2025.04.09.648005" target="_blank" rel="noopener">Unexpected XIST Expression in Male Hearts Associates with Disease</a></td>
-              <td class="citation-year"><time datetime="2025">2025</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include accession, atlas, commons, erx4319109, expression, h0026, litvi, nukov.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1038/d41586-024-01217-y" target="_blank" rel="noopener">85 million cells — and counting — at your fingertips</a></td>
-              <td class="citation-year"><time datetime="2024">2024</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/2024.11.03.621734" target="_blank" rel="noopener">A Perturbation Cell Atlas of Human Induced Pluripotent Stem Cells</a></td>
-              <td class="citation-year"><time datetime="2024">2024</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1038/s41592-024-02532-y" target="_blank" rel="noopener">Considerations for building and using integrated single-cell atlases</a></td>
-              <td class="citation-year"><time datetime="2024">2024</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-          </tbody>
-        </table>
+        <aside class="evidence-panel relationship-detail" aria-live="polite">
+          <span class="study-label" data-relation-label>Relation</span>
+          <h2 data-relation-title></h2>
+          <p class="selected-relation-statement" data-relation-statement></p>
+          <section class="version-citation" data-version-citation hidden>
+            <h3>Citation</h3>
+            <div class="bibtex-box">
+              <button class="copy-bibtex-button" type="button" data-copy-bibtex>
+                Copy BibTeX
+              </button>
+              <pre><code data-bibtex-code></code></pre>
+            </div>
+          </section>
+          <details class="relationship-evidence" data-relation-evidence>
+            <summary>
+              <span>Evidence</span>
+              <span class="evidence-summary" data-evidence-summary></span>
+            </summary>
+            <table class="relationship-evidence-table">
+              <thead>
+                <tr>
+                  <th>Span</th>
+                  <th>Source</th>
+                </tr>
+              </thead>
+              <tbody data-evidence-rows></tbody>
+            </table>
+          </details>
+        </aside>
       </section>
+      <script id="workRelationData" type="application/json">{"work":{"id":"work:algorithms-for-a-commons-cell-atlas","title":"Algorithms for a Commons Cell Atlas","description":"Cell atlases are valuable because they organize single-cell datasets into reference maps of tissues, cell types, and marker genes. Current atlas projects remain difficult to update or jointly analyze because preprocessing is inconsistent, marker curation is manual, and compatible reanalysis tools are limited. The work introduces mx, ec, cellatlas, and Commons Cell Atlas infrastructure for automated filtering, normalization, cell-type assignment, marker updating, and reproducible atlas construction."},"relationTypes":[{"id":"authors","label":"Authors"},{"id":"claims","label":"Claims"},{"id":"citations","label":"Citations"},{"id":"versions","label":"Versions"},{"id":"software","label":"Software"},{"id":"sources","label":"Sources"}],"connections":[{"id":"connection:version:algorithms-for-a-commons-cell-atlas--2024-03-26-biorxiv--person:orcid:0000-0002-6442-4502--author-1","type":"authors","title":"A. Sina Booeshaghi","description":"A. Sina Booeshaghi is an author of Algorithms for a Commons Cell Atlas.","statement":"A. Sina Booeshaghi is an author of Algorithms for a Commons Cell Atlas.","evidence":[]},{"id":"connection:version:algorithms-for-a-commons-cell-atlas--2024-03-26-biorxiv--person:orcid:0000-0001-7420-8697--author-2","type":"authors","title":"Ángel Gálvez-Merchán","description":"Ángel Galvez-Merchán is an author of Algorithms for a Commons Cell Atlas.","statement":"Ángel Galvez-Merchán is an author of Algorithms for a Commons Cell Atlas.","evidence":[]},{"id":"connection:version:algorithms-for-a-commons-cell-atlas--2024-03-26-biorxiv--person:orcid:0000-0002-9164-6231--author-3","type":"authors","title":"Lior Pachter","description":"Lior Pachter is an author of Algorithms for a Commons Cell Atlas.","statement":"Lior Pachter is an author of Algorithms for a Commons Cell Atlas.","evidence":[]},{"id":"connection:version:algorithms-for-a-commons-cell-atlas--2024-03-26-biorxiv--claim:version:algorithms-for-a-commons-cell-atlas--2024-03-26-biorxiv--summary-0","type":"claims","title":"Cell atlases are valuable because they organize single-cell datasets into reference maps of tissues, cell types, and mar","description":"Cell atlases are valuable because they organize single-cell datasets into reference maps of tissues, cell types, and marker genes. Current atlas projects remain difficult to update or jointly analyze because preprocessing is inconsistent, marker curation is manual, and compatible reanalysis tools are limited. The work introduces mx, ec, cellatlas, and Commons Cell Atlas infrastructure for automated filtering, normalization, cell-type assignment, marker updating, and reproducible atlas construction.","statement":"This publication contains the target grounded summary claim.","evidence":[{"source":"source:text:document:algorithms-for-a-commons-cell-atlas--2024-03-26-biorxiv","span":"Cell atlas projects such as the Human Cell Atlas (HCA) aim to produce \"reference maps\" for all cells in the human body.","page":1,"properties":{"document_id":"document:algorithms-for-a-commons-cell-atlas--2024-03-26-biorxiv","char_start":1454,"char_end":1573}},{"source":"source:text:document:algorithms-for-a-commons-cell-atlas--2024-03-26-biorxiv","span":"Because the HCA data is not processed uniformly, joint analysis of the data would be very challenging (Tyler, Guccione, and Schadt 2023; Antonsson and Melsted 2024), and the HCA provides neither tools nor recommendations for how to jointly analyze samples (Supplementary Table 1).","page":2,"properties":{"document_id":"document:algorithms-for-a-commons-cell-atlas--2024-03-26-biorxiv","char_start":1596,"char_end":1876}},{"source":"source:text:document:algorithms-for-a-commons-cell-atlas--2024-03-26-biorxiv","span":"In order to overcome these drawbacks in current atlas design, we introduce a set of algorithms, tools, and infrastructure that enables uniform preprocessing with tools that are data-compatible, and with infrastructure that can easily incorporate updated cell-type definitions, references, and which is readily extensible to other modalities.","page":2,"properties":{"document_id":"document:algorithms-for-a-commons-cell-atlas--2024-03-26-biorxiv","char_start":3016,"char_end":3357}},{"source":"source:text:document:algorithms-for-a-commons-cell-atlas--2024-03-26-biorxiv","span":"We developed 'mx assign' which takes in a single-cell matrix and a marker gene file and performs cell-type assignment using a modified Gaussian Mixture Model.","page":4,"properties":{"document_id":"document:algorithms-for-a-commons-cell-atlas--2024-03-26-biorxiv","char_start":2890,"char_end":3048}},{"source":"source:text:document:algorithms-for-a-commons-cell-atlas--2024-03-26-biorxiv","span":"The final output of the workflow; the filtered, normalized and assigned matrix, constitutes the unit of the Commons Cell Atlas, which can be constantly modified by the automated and continuous running of the tools.","page":6,"properties":{"document_id":"document:algorithms-for-a-commons-cell-atlas--2024-03-26-biorxiv","char_start":2660,"char_end":2874}}]},{"id":"connection:version:algorithms-for-a-commons-cell-atlas--2024-03-26-biorxiv--work:algorithms-for-a-commons-cell-atlas","type":"versions","title":"Algorithms for a Commons Cell Atlas","description":"2024-03-26 · bioRxiv","statement":"2024-03-26 is a version of Algorithms for a Commons Cell Atlas.","evidence":[],"citation":{"doi":"10.1101/2024.03.23.586413","url":"https://doi.org/10.1101/2024.03.23.586413","date":"2024-03-26","venue":"bioRxiv","authors":[{"name":"A. Sina Booeshaghi","orcid":"https://orcid.org/0000-0002-6442-4502"},{"name":"Ángel Galvez-Merchán","orcid":"https://orcid.org/0000-0001-7420-8697"},{"name":"Lior Pachter","orcid":"https://orcid.org/0000-0002-9164-6231"}]},"bibtex":"@article{Booeshaghi_2024,\n  TITLE     = {Algorithms for a Commons Cell Atlas},\n  URL       = {http://dx.doi.org/10.1101/2024.03.23.586413},\n  DOI       = {10.1101/2024.03.23.586413},\n  PUBLISHER = {openRxiv},\n  AUTHOR    = {Booeshaghi, A. Sina and Galvez-Merchán, Ángel and Pachter, Lior},\n  YEAR      = {2024}\n}"},{"id":"connection:document:algorithms-for-a-commons-cell-atlas--2024-03-26-biorxiv--version:algorithms-for-a-commons-cell-atlas--2024-03-26-biorxiv","type":"sources","title":"2024-03-26-biorxiv.pdf","description":"This source document provides local provenance for the target publication.","statement":"This source document provides local provenance for the target publication.","evidence":[]}]}</script>
+      <script src="../work-relations.js"></script>
     </article>
   </body>
 </html>

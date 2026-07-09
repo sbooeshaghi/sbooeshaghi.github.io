@@ -17,77 +17,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Spatial omics data can contain regions of tissue with distinct molecular organization. This work extends the concordex framework to characterize spatially homogeneous regions in tissues by measuring neighborhood concordance in spatial genomics data." />
+    <meta name="description" content="Spatial transcriptomics can reveal tissue organization, but spatially variable gene calls are hard to interpret when cell-type composition and location are entangled. Existing domain methods may identify regions without separating cell-type effects from spatial effects or their interactions. concordex defines spatial homogeneous regions from kNN neighborhood composition, works with discrete or continuous labels across SRT platforms, and pairs those regions with a negative-binomial GLM to identify subtle spatial and cell-type interaction patterns." />
     <link rel="stylesheet" href="../styles.css" />
-    
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        document.querySelectorAll(".copy-bibtex-button").forEach((button) => {
-          button.addEventListener("click", async () => {
-            const box = button.closest(".bibtex-box");
-            const code = box ? box.querySelector("code") : null;
-            const bibtex = code ? code.textContent : "";
-            const previousText = button.textContent;
-            const markStatus = (text) => {
-              button.textContent = text;
-              window.setTimeout(() => {
-                button.textContent = previousText;
-              }, 1200);
-            };
-            const copyWithSelection = () => {
-              const textarea = document.createElement("textarea");
-              textarea.value = bibtex;
-              textarea.setAttribute("readonly", "");
-              textarea.style.position = "fixed";
-              textarea.style.left = "0";
-              textarea.style.top = "0";
-              textarea.style.width = "1px";
-              textarea.style.height = "1px";
-              textarea.style.opacity = "0";
-              textarea.style.pointerEvents = "none";
-              document.body.appendChild(textarea);
-              textarea.focus({ preventScroll: true });
-              textarea.select();
-              textarea.setSelectionRange(0, textarea.value.length);
-              const copied = document.execCommand("copy");
-              textarea.remove();
-              return copied;
-            };
-
-            try {
-              if (navigator.clipboard && navigator.clipboard.writeText) {
-                await navigator.clipboard.writeText(bibtex);
-                markStatus("Copied");
-                return;
-              }
-
-              if (copyWithSelection()) {
-                markStatus("Copied");
-                return;
-              }
-            } catch {
-              let copied = false;
-
-              try {
-                copied = copyWithSelection();
-              } catch {
-                copied = false;
-              }
-
-              if (copied) {
-                markStatus("Copied");
-                return;
-              }
-            }
-
-            markStatus("Copy failed");
-          });
-        });
-      });
-    </script>
     <title>Characterization of spatial homogeneous regions in tissues with concordex | Works | Sina Booeshaghi</title>
   </head>
-  <body>
+  <body class="work-detail-page">
     <nav class="breadcrumb" aria-label="Breadcrumb">
       <a href="../index.html">Home</a>
       <span aria-hidden="true">/</span>
@@ -95,169 +29,71 @@
       <span aria-hidden="true">/</span>
       <span class="breadcrumb-current" title="Characterization of spatial homogeneous regions in tissues with concordex">Characterization of spatial homogeneous regions in tissues with...</span>
     </nav>
-    <article class="work-page">
-      <h1>Characterization of spatial homogeneous regions in tissues with concordex</h1>
-      <div class="publication-versions work-versions" aria-label="Work versions">
-        <span class="publication-versions-label">Versions</span>
-        <div class="publication-version-cards">
-          
-        <a
-          class="publication-version-link is-current"
-          href="https://www.biorxiv.org/content/10.1101/2023.06.28.546949v3"
-          target="_blank"
-          rel="noopener"
-        >
-          <span class="publication-version-title">Characterization of spatial homogeneous regions in tissues with concordex</span>
-          <span class="publication-version-detail">bioRxiv v3 · 2025-06-19</span>
-        </a>
-        <a
-          class="publication-version-link"
-          href="https://www.biorxiv.org/content/10.1101/2023.06.28.546949v2?versioned=true"
-          target="_blank"
-          rel="noopener"
-        >
-          <span class="publication-version-title">Quantitative assessment of single-cell RNA-seq clustering with CONCORDEX</span>
-          <span class="publication-version-detail">bioRxiv v2 · 2024-07-18</span>
-        </a>
-        <a
-          class="publication-version-link"
-          href="https://www.biorxiv.org/content/10.1101/2023.06.28.546949v1?versioned=true"
-          target="_blank"
-          rel="noopener"
-        >
-          <span class="publication-version-title">Quantitative assessment of single-cell RNA-seq clustering with CONCORDEX</span>
-          <span class="publication-version-detail">bioRxiv v1 · 2023-06-30</span>
-        </a>
+    <article class="work-page study-graph-page">
+      <section class="study-focus" aria-label="Selected work">
+        <div>
+          <h1>Characterization of spatial homogeneous regions in tissues with concordex</h1>
+          <p>Spatial transcriptomics can reveal tissue organization, but spatially variable gene calls are hard to interpret when cell-type composition and location are entangled. Existing domain methods may identify regions without separating cell-type effects from spatial effects or their interactions. concordex defines spatial homogeneous regions from kNN neighborhood composition, works with discrete or continuous labels across SRT platforms, and pairs those regions with a negative-binomial GLM to identify subtle spatial and cell-type interaction patterns.</p>
         </div>
-      </div>
-
-      <section>
-        <h2>Summary</h2>
-        <p>Spatial omics data can contain regions of tissue with distinct molecular organization. This work extends the concordex framework to characterize spatially homogeneous regions in tissues by measuring neighborhood concordance in spatial genomics data.</p>
+        <dl class="study-stats">
+          <div>
+            <dt>Citations</dt>
+            <dd>10</dd>
+          </div>
+          <div>
+            <dt>Relations</dt>
+            <dd>18</dd>
+          </div>
+        </dl>
       </section>
 
       
-      <section
-        class="authors-section"
-        data-author-version-count="1"
-      >
-        <h2>Authors</h2>
-        
-        <section
-          class="author-version"
-          data-author-count="8"
-        >
-          <h3>
-            <a href="https://doi.org/10.1101/2023.06.28.546949" target="_blank" rel="noopener">bioRxiv</a>
-            <time datetime="2023-06-30">2023-06-30</time>
-          </h3>
-          <ul class="author-list">
-            
-            <li><a href="https://orcid.org/0000-0001-6483-0108" target="_blank" rel="noopener" title="ORCID">Kayla C. Jackson</a></li>
-            <li><a href="https://orcid.org/0000-0002-6442-4502" target="_blank" rel="noopener" title="ORCID">A. Sina Booeshaghi</a></li>
-            <li><a href="https://orcid.org/0000-0001-7420-8697" target="_blank" rel="noopener" title="ORCID">Ángel Gálvez-Merchán</a></li>
-            <li><a href="https://orcid.org/0000-0002-7092-9427" target="_blank" rel="noopener" title="ORCID">Lambda Moses</a></li>
-            <li><a href="https://orcid.org/0000-0002-6953-4313" target="_blank" rel="noopener" title="ORCID">Tara Chari</a></li>
-            <li>Alexandra Kim</li>
-            <li><a href="https://orcid.org/0009-0002-7959-929X" target="_blank" rel="noopener" title="ORCID">Orhan Hosten-Mittermaier</a></li>
-            <li><a href="https://orcid.org/0000-0002-9164-6231" target="_blank" rel="noopener" title="ORCID">Lior Pachter</a></li>
-          </ul>
-        </section>
-      </section>
-
-      <section>
-        <h2>BibTeX</h2>
-        
-        <section class="bibtex-entry">
-          <h3>bioRxiv</h3>
-          <div class="bibtex-box">
-            <button
-              class="copy-bibtex-button"
-              type="button"
-              aria-label="Copy BibTeX for bioRxiv"
-            >
-              Copy BibTeX
-            </button>
-            <pre><code>@article{Jackson_2023,
-  TITLE     = {Characterization of spatial homogeneous regions in tissues with concordex},
-  URL       = {http://dx.doi.org/10.1101/2023.06.28.546949},
-  DOI       = {10.1101/2023.06.28.546949},
-  PUBLISHER = {openRxiv},
-  AUTHOR    = {Jackson, Kayla C. and Booeshaghi, A. Sina and Gálvez-Merchán, Ángel and Moses, Lambda and Chari, Tara and Kim, Alexandra and Hosten-Mittermaier, Orhan and Pachter, Lior},
-  YEAR      = {2023}
-}</code></pre>
+      <section class="relationship-inspector" aria-label="Indexed relations" data-work-relations>
+        <section class="relationship-list-panel" aria-label="Relations">
+          <div class="study-section-heading">
+            <h2>Relations</h2>
           </div>
+          <div
+            class="relation-tabs"
+            role="tablist"
+            aria-label="Relation types"
+            data-relation-tabs
+          ></div>
+          <div class="reason-list" data-relation-list></div>
         </section>
-      </section>
 
-      <section>
-        <h2>Citing Works</h2>
-        <p class="citation-source-note">
-          10 citing works found in citation data generated 2026-07-06. Citation relationships are sourced from OpenAlex, Semantic Scholar, Google Scholar.
-        </p>
-        <table class="citation-table">
-          <thead>
-            <tr>
-              <th>Title</th>
-              <th>Year</th>
-              <th>Summary</th>
-            </tr>
-          </thead>
-          <tbody>
-            
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.64898/2025.12.31.697063" target="_blank" rel="noopener">Progenitor Diversity and Architecture of the Human Ganglionic Eminences Shaping the Basal Ganglia</a></td>
-              <td class="citation-year"><time datetime="2026">2026</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12262716/" target="_blank" rel="noopener">Beyond benchmarking: an expert-guided consensus approach to spatially aware clustering</a></td>
-              <td class="citation-year"><time datetime="2025">2025</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://academic.oup.com/bioinformatics/article-abstract/41/Supplement_1/i523/8199348" target="_blank" rel="noopener">GASTON-Mix: a unified model of spatial gradients and domains using spatial mixture-of-experts</a></td>
-              <td class="citation-year"><time datetime="2025">2025</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/2025.02.17.638195" target="_blank" rel="noopener">Joint imputation and deconvolution of gene expression across spatial transcriptomics platforms</a></td>
-              <td class="citation-year"><time datetime="2025">2025</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/gr.280555.125" target="_blank" rel="noopener">Joint imputation and deconvolution of gene expression across spatial transcriptomics platforms</a></td>
-              <td class="citation-year"><time datetime="2025">2025</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1093/nar/gkaf921" target="_blank" rel="noopener">On metrics for subpopulation detection in single-cell and spatial omics data</a></td>
-              <td class="citation-year"><time datetime="2025">2025</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12393424/" target="_blank" rel="noopener">TissueFormer: a neural network for labeling tissue from grouped single-cell RNA profiles</a></td>
-              <td class="citation-year"><time datetime="2025">2025</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/2024.03.23.586412" target="_blank" rel="noopener">A human commons cell atlas reveals cell type specificity for OAS1 isoforms</a></td>
-              <td class="citation-year"><time datetime="2024">2024</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.21203/rs.3.rs-5102166/v1" target="_blank" rel="noopener">spacedeconv: deconvolution of tissue architecture from spatial transcriptomics</a></td>
-              <td class="citation-year"><time datetime="2024">2024</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/2023.07.20.549945" target="_blank" rel="noopener">Voyager: exploratory single-cell genomics data analysis with geospatial statistics</a></td>
-              <td class="citation-year"><time datetime="2023">2023</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-          </tbody>
-        </table>
+        <aside class="evidence-panel relationship-detail" aria-live="polite">
+          <span class="study-label" data-relation-label>Relation</span>
+          <h2 data-relation-title></h2>
+          <p class="selected-relation-statement" data-relation-statement></p>
+          <section class="version-citation" data-version-citation hidden>
+            <h3>Citation</h3>
+            <div class="bibtex-box">
+              <button class="copy-bibtex-button" type="button" data-copy-bibtex>
+                Copy BibTeX
+              </button>
+              <pre><code data-bibtex-code></code></pre>
+            </div>
+          </section>
+          <details class="relationship-evidence" data-relation-evidence>
+            <summary>
+              <span>Evidence</span>
+              <span class="evidence-summary" data-evidence-summary></span>
+            </summary>
+            <table class="relationship-evidence-table">
+              <thead>
+                <tr>
+                  <th>Span</th>
+                  <th>Source</th>
+                </tr>
+              </thead>
+              <tbody data-evidence-rows></tbody>
+            </table>
+          </details>
+        </aside>
       </section>
+      <script id="workRelationData" type="application/json">{"work":{"id":"work:characterization-of-spatial-homogeneous-regions-in-tissues-with-concordex","title":"Characterization of spatial homogeneous regions in tissues with concordex","description":"Spatial transcriptomics can reveal tissue organization, but spatially variable gene calls are hard to interpret when cell-type composition and location are entangled. Existing domain methods may identify regions without separating cell-type effects from spatial effects or their interactions. concordex defines spatial homogeneous regions from kNN neighborhood composition, works with discrete or continuous labels across SRT platforms, and pairs those regions with a negative-binomial GLM to identify subtle spatial and cell-type interaction patterns."},"relationTypes":[{"id":"authors","label":"Authors"},{"id":"claims","label":"Claims"},{"id":"citations","label":"Citations"},{"id":"versions","label":"Versions"},{"id":"software","label":"Software"},{"id":"sources","label":"Sources"}],"connections":[{"id":"connection:version:characterization-of-spatial-homogeneous-regions-in-tissues-with-concordex--2023-06-30-biorxiv-v1--person:orcid:0000-0001-6483-0108--author-1","type":"authors","title":"Kayla Jackson","description":"Kayla C. Jackson is an author of Quantitative assessment of single-cell RNA-seq clustering with CONCORDEX.","statement":"Kayla C. Jackson is an author of Quantitative assessment of single-cell RNA-seq clustering with CONCORDEX.","evidence":[]},{"id":"connection:version:characterization-of-spatial-homogeneous-regions-in-tissues-with-concordex--2023-06-30-biorxiv-v1--person:orcid:0000-0002-6442-4502--author-2","type":"authors","title":"A. Sina Booeshaghi","description":"A. Sina Booeshaghi is an author of Quantitative assessment of single-cell RNA-seq clustering with CONCORDEX.","statement":"A. Sina Booeshaghi is an author of Quantitative assessment of single-cell RNA-seq clustering with CONCORDEX.","evidence":[]},{"id":"connection:version:characterization-of-spatial-homogeneous-regions-in-tissues-with-concordex--2023-06-30-biorxiv-v1--person:orcid:0000-0001-7420-8697--author-3","type":"authors","title":"Ángel Gálvez-Merchán","description":"Ángel Gálvez-Merchán is an author of Quantitative assessment of single-cell RNA-seq clustering with CONCORDEX.","statement":"Ángel Gálvez-Merchán is an author of Quantitative assessment of single-cell RNA-seq clustering with CONCORDEX.","evidence":[]},{"id":"connection:version:characterization-of-spatial-homogeneous-regions-in-tissues-with-concordex--2023-06-30-biorxiv-v1--person:orcid:0000-0002-7092-9427--author-4","type":"authors","title":"Lambda Moses","description":"Lambda Moses is an author of Quantitative assessment of single-cell RNA-seq clustering with CONCORDEX.","statement":"Lambda Moses is an author of Quantitative assessment of single-cell RNA-seq clustering with CONCORDEX.","evidence":[]},{"id":"connection:version:characterization-of-spatial-homogeneous-regions-in-tissues-with-concordex--2023-06-30-biorxiv-v1--person:orcid:0000-0002-6953-4313--author-5","type":"authors","title":"Tara Chari","description":"Tara Chari is an author of Quantitative assessment of single-cell RNA-seq clustering with CONCORDEX.","statement":"Tara Chari is an author of Quantitative assessment of single-cell RNA-seq clustering with CONCORDEX.","evidence":[]},{"id":"connection:version:characterization-of-spatial-homogeneous-regions-in-tissues-with-concordex--2023-06-30-biorxiv-v1--person:local:alexandra-kim--author-6","type":"authors","title":"Alexandra Kim","description":"Alexandra Kim is an author of Quantitative assessment of single-cell RNA-seq clustering with CONCORDEX.","statement":"Alexandra Kim is an author of Quantitative assessment of single-cell RNA-seq clustering with CONCORDEX.","evidence":[]},{"id":"connection:version:characterization-of-spatial-homogeneous-regions-in-tissues-with-concordex--2023-06-30-biorxiv-v1--person:orcid:0009-0002-7959-929X--author-7","type":"authors","title":"Orhan Hosten-Mittermaier","description":"Orhan Hosten-Mittermaier is an author of Quantitative assessment of single-cell RNA-seq clustering with CONCORDEX.","statement":"Orhan Hosten-Mittermaier is an author of Quantitative assessment of single-cell RNA-seq clustering with CONCORDEX.","evidence":[]},{"id":"connection:version:characterization-of-spatial-homogeneous-regions-in-tissues-with-concordex--2023-06-30-biorxiv-v1--person:orcid:0000-0002-9164-6231--author-8","type":"authors","title":"Lior Pachter","description":"Lior Pachter is an author of Quantitative assessment of single-cell RNA-seq clustering with CONCORDEX.","statement":"Lior Pachter is an author of Quantitative assessment of single-cell RNA-seq clustering with CONCORDEX.","evidence":[]},{"id":"connection:version:characterization-of-spatial-homogeneous-regions-in-tissues-with-concordex--2023-06-30-biorxiv-v1--claim:version:characterization-of-spatial-homogeneous-regions-in-tissues-with-concordex--2023-06-30-biorxiv-v1--summary-0","type":"claims","title":"Single-cell RNA-seq analyses often use labels, clusters, and integration assessments derived from kNN graphs, but two-di","description":"Single-cell RNA-seq analyses often use labels, clusters, and integration assessments derived from kNN graphs, but two-dimensional embeddings can distort the graph while inviting visual overinterpretation. The gap is a direct, quantitative way to test whether categorical labels agree with local neighborhoods without depending on UMAP aesthetics or hyperparameters. CONCORDEX computes same-label and different-label neighbor fractions, compares concordance with random labelings, and shows strong agreement with simulated assignment accuracy while exposing misleading integration and cluster views.","statement":"This publication contains the target grounded summary claim.","evidence":[{"source":"source:text:document:characterization-of-spatial-homogeneous-regions-in-tissues-with-concordex--2023-06-30-biorxiv-v1","span":"Many single cell RNA-sequencing (scRNA-seq) data analysis workflows rely on methods that embed and visualize the properties of a k-nearest neighbor (kNN) graph in two-dimensions.","page":1,"properties":{"document_id":"document:characterization-of-spatial-homogeneous-regions-in-tissues-with-concordex--2023-06-30-biorxiv-v1","char_start":892,"char_end":1070}},{"source":"source:text:document:characterization-of-spatial-homogeneous-regions-in-tissues-with-concordex--2023-06-30-biorxiv-v1","span":"Rather than relying on a twodimensional visualization, we introduce a method for quantitatively assessing the concordance between a set of labels and the k-nearest neighbor graph.","page":1,"properties":{"document_id":"document:characterization-of-spatial-homogeneous-regions-in-tissues-with-concordex--2023-06-30-biorxiv-v1","char_start":1323,"char_end":1502}},{"source":"source:text:document:characterization-of-spatial-homogeneous-regions-in-tissues-with-concordex--2023-06-30-biorxiv-v1","span":"CONCORDEX can be used for any categorical label and can be interpreted via an intuitive heatmap visualization.","page":1,"properties":{"document_id":"document:characterization-of-spatial-homogeneous-regions-in-tissues-with-concordex--2023-06-30-biorxiv-v1","char_start":1696,"char_end":1806}},{"source":"source:text:document:characterization-of-spatial-homogeneous-regions-in-tissues-with-concordex--2023-06-30-biorxiv-v1","span":"Figure 2 shows that CONCORDEX is strongly correlated with the performance of CellAssign (Spearman ρ = 0.99, p \u003c 2.2×10−16 ).","page":4,"properties":{"document_id":"document:characterization-of-spatial-homogeneous-regions-in-tissues-with-concordex--2023-06-30-biorxiv-v1","char_start":1350,"char_end":1474}},{"source":"source:text:document:characterization-of-spatial-homogeneous-regions-in-tissues-with-concordex--2023-06-30-biorxiv-v1","span":"This observation reflects a significant limitation of UMAP embeddings and supports the notion that they can not be used as reliable representations of the underlying structure of the data.","page":8,"properties":{"document_id":"document:characterization-of-spatial-homogeneous-regions-in-tissues-with-concordex--2023-06-30-biorxiv-v1","char_start":1926,"char_end":2114}}]},{"id":"connection:version:characterization-of-spatial-homogeneous-regions-in-tissues-with-concordex--2024-07-18-biorxiv-v2--claim:version:characterization-of-spatial-homogeneous-regions-in-tissues-with-concordex--2024-07-18-biorxiv-v2--summary-0","type":"claims","title":"Spatial transcriptomics aims to organize cells into tissue regions whose composition reflects biology rather than plotti","description":"Spatial transcriptomics aims to organize cells into tissue regions whose composition reflects biology rather than plotting artifacts. Existing spatial-domain methods often rely on gene expression smoothing or neural networks, leaving the definition of a region ambiguous and sometimes conflating cell type with tissue domain. concordex builds neighborhood consolidation matrices on kNN graphs to identify spatial homogeneous regions across liver, cerebellum, and simulations, while also quantifying cluster and integration relationships in non-spatial transcriptomics.","statement":"This publication contains the target grounded summary claim.","evidence":[{"source":"source:text:document:characterization-of-spatial-homogeneous-regions-in-tissues-with-concordex--2024-07-18-biorxiv-v2","span":"A major goal of spatial trancriptomics data analysis is the partitioning of assayed tissues into regions that constitute domains of functional or compositional homogeneity.","page":1,"properties":{"document_id":"document:characterization-of-spatial-homogeneous-regions-in-tissues-with-concordex--2024-07-18-biorxiv-v2","char_start":2329,"char_end":2501}},{"source":"source:text:document:characterization-of-spatial-homogeneous-regions-in-tissues-with-concordex--2024-07-18-biorxiv-v2","span":"Although many of these methods consider local gene expression, their criteria for aggregating cells into a spatial domain remains ambiguous, and regions are often defined by the procedure used to generate them rather than the underlying interpretation of their relationship to the tissue architecture.","page":1,"properties":{"document_id":"document:characterization-of-spatial-homogeneous-regions-in-tissues-with-concordex--2024-07-18-biorxiv-v2","char_start":4117,"char_end":4418}},{"source":"source:text:document:characterization-of-spatial-homogeneous-regions-in-tissues-with-concordex--2024-07-18-biorxiv-v2","span":"The key to our approach is a method we develop for assessing the neighborhood composition of nodes in a kNN graph built from spatial or non-spatial attributes, which we implement in a tool called concordex.","page":1,"properties":{"document_id":"document:characterization-of-spatial-homogeneous-regions-in-tissues-with-concordex--2024-07-18-biorxiv-v2","char_start":5168,"char_end":5374}},{"source":"source:text:document:characterization-of-spatial-homogeneous-regions-in-tissues-with-concordex--2024-07-18-biorxiv-v2","span":"The periportal and pericentral blood vessel regions can be readily identified by concordex (Figure 2A).","page":3,"properties":{"document_id":"document:characterization-of-spatial-homogeneous-regions-in-tissues-with-concordex--2024-07-18-biorxiv-v2","char_start":1476,"char_end":1579}},{"source":"source:text:document:characterization-of-spatial-homogeneous-regions-in-tissues-with-concordex--2024-07-18-biorxiv-v2","span":"concordex directly visualizes the cluster relationships in the PCA-embedded data and reduces the need to embed the data in fewer dimensions.","page":6,"properties":{"document_id":"document:characterization-of-spatial-homogeneous-regions-in-tissues-with-concordex--2024-07-18-biorxiv-v2","char_start":1228,"char_end":1368}}]},{"id":"connection:version:characterization-of-spatial-homogeneous-regions-in-tissues-with-concordex--2025-06-19-biorxiv-v3--claim:version:characterization-of-spatial-homogeneous-regions-in-tissues-with-concordex--2025-06-19-biorxiv-v3--summary-0","type":"claims","title":"Spatial transcriptomics can reveal tissue organization, but spatially variable gene calls are hard to interpret when cel","description":"Spatial transcriptomics can reveal tissue organization, but spatially variable gene calls are hard to interpret when cell-type composition and location are entangled. Existing domain methods may identify regions without separating cell-type effects from spatial effects or their interactions. concordex defines spatial homogeneous regions from kNN neighborhood composition, works with discrete or continuous labels across SRT platforms, and pairs those regions with a negative-binomial GLM to identify subtle spatial and cell-type interaction patterns.","statement":"This publication contains the target grounded summary claim.","evidence":[{"source":"source:text:document:characterization-of-spatial-homogeneous-regions-in-tissues-with-concordex--2025-06-19-biorxiv-v3","span":"The rapid advancement of spatially resolved transcriptomics 41 (SRT) technologies has facilitated exploration of how gene 42 expression varies across tissues.","page":1,"properties":{"document_id":"document:characterization-of-spatial-homogeneous-regions-in-tissues-with-concordex--2025-06-19-biorxiv-v3","char_start":1331,"char_end":1489}},{"source":"source:text:document:characterization-of-spatial-homogeneous-regions-in-tissues-with-concordex--2025-06-19-biorxiv-v3","span":"The regions identified by these methods have been used in downstream analysis pipelines to detect spatial differentially expressed genes (sp-DEGs), but it is unclear how this analysis partitions variability into cell type and spatial effects.","page":1,"properties":{"document_id":"document:characterization-of-spatial-homogeneous-regions-in-tissues-with-concordex--2025-06-19-biorxiv-v3","char_start":5112,"char_end":5354}},{"source":"source:text:document:characterization-of-spatial-homogeneous-regions-in-tissues-with-concordex--2025-06-19-biorxiv-v3","span":"The key to our approach is a method 138 we develop for assessing the neighborhood composition of 139 nodes in a kNN graph built from spatial or non-spatial at- 140 tributes, which we implement in a tool called concordex.","page":2,"properties":{"document_id":"document:characterization-of-spatial-homogeneous-regions-in-tissues-with-concordex--2025-06-19-biorxiv-v3","char_start":610,"char_end":830}},{"source":"source:text:document:characterization-of-spatial-homogeneous-regions-in-tissues-with-concordex--2025-06-19-biorxiv-v3","span":"Clustering the rows in the neighbor- 179 hood consolidation matrix assembles cells into SHRs, where 180 cells within an SHR can be thought of as having similar 181 neighborhood composition.","page":2,"properties":{"document_id":"document:characterization-of-spatial-homogeneous-regions-in-tissues-with-concordex--2025-06-19-biorxiv-v3","char_start":3255,"char_end":3444}},{"source":"source:text:document:characterization-of-spatial-homogeneous-regions-in-tissues-with-concordex--2025-06-19-biorxiv-v3","span":"To identify spatial DE genes, we used a Negative Binomial generalized linear model (NBGLM) that includes an offset term for sequencing depth and an interaction term between cell type and SHR.","page":4,"properties":{"document_id":"document:characterization-of-spatial-homogeneous-regions-in-tissues-with-concordex--2025-06-19-biorxiv-v3","char_start":5550,"char_end":5741}}]},{"id":"connection:claim:citation:version-citing-2024-a-human-commons-cell-atlas-reveals-cell-type-specificity-for-oas1-isoforms-cites-version-characterization-of-spatial-homogeneous-regions-in-tissues-w-afb88b5464--version:characterization-of-spatial-homogeneous-regions-in-tissues-with-concordex--2023-06-30-biorxiv-v1","type":"citations","title":"A human commons cell atlas reveals cell type specificity for OAS1 isoforms","description":"The paper presents an open-source Human Commons Cell Atlas of 2.9 million cells across 27 tissues and uses it to analyze OAS1 isoform cell-type specificity, finding OAS1 p44b specificity in round and elongating spermatids.","statement":"Cited as the prior description of the CONCORDEX ratio metric used for Human CCA samples.","evidence":[{"source":"source:pdf:document:cited-by--2024-a-human-commons-cell-atlas-reveals-cell-type-specificity-for-oas1-isoforms","span":"The metric was calculated as previously shown (Jackson et al. 2023) for each sample of the human CCA where gene markers were available.","page":11,"properties":{"document_id":"document:cited-by--2024-a-human-commons-cell-atlas-reveals-cell-type-specificity-for-oas1-isoforms","char_start":null,"char_end":null}}]},{"id":"connection:version:characterization-of-spatial-homogeneous-regions-in-tissues-with-concordex--2025-06-19-biorxiv-v3--work:characterization-of-spatial-homogeneous-regions-in-tissues-with-concordex","type":"versions","title":"Characterization of spatial homogeneous regions in tissues with concordex","description":"2025-06-19 · bioRxiv v3","statement":"2025-06-19 is a version of Characterization of spatial homogeneous regions in tissues with concordex.","evidence":[],"citation":{"doi":"10.1101/2023.06.28.546949","url":"https://www.biorxiv.org/content/10.1101/2023.06.28.546949v3","date":"2025-06-19","venue":"bioRxiv v3","authors":[{"name":"Kayla C. Jackson","orcid":"https://orcid.org/0000-0001-6483-0108"},{"name":"A. Sina Booeshaghi","orcid":"https://orcid.org/0000-0002-6442-4502"},{"name":"Ángel Gálvez-Merchán","orcid":"https://orcid.org/0000-0001-7420-8697"},{"name":"Lambda Moses","orcid":"https://orcid.org/0000-0002-7092-9427"},{"name":"Tara Chari","orcid":"https://orcid.org/0000-0002-6953-4313"},{"name":"Alexandra Kim","orcid":""},{"name":"Orhan Hosten-Mittermaier","orcid":"https://orcid.org/0009-0002-7959-929X"},{"name":"Lior Pachter","orcid":"https://orcid.org/0000-0002-9164-6231"}]},"bibtex":"@misc{characterization_of_spatial_homogeneous_regions_in_tissues_with_concordex_2025_06_19,\n  title = {Characterization of spatial homogeneous regions in tissues with concordex},\n  author = {Kayla C. Jackson and A. Sina Booeshaghi and Ángel Gálvez-Merchán and Lambda Moses and Tara Chari and Alexandra Kim and Orhan Hosten-Mittermaier and Lior Pachter},\n  year = {2025},\n  doi = {10.1101/2023.06.28.546949},\n  url = {https://www.biorxiv.org/content/10.1101/2023.06.28.546949v3},\n  note = {bioRxiv v3, 2025-06-19}\n}"},{"id":"connection:version:characterization-of-spatial-homogeneous-regions-in-tissues-with-concordex--2024-07-18-biorxiv-v2--work:characterization-of-spatial-homogeneous-regions-in-tissues-with-concordex","type":"versions","title":"Quantitative assessment of single-cell RNA-seq clustering with CONCORDEX","description":"2024-07-18 · bioRxiv v2","statement":"2024-07-18 is a version of Quantitative assessment of single-cell RNA-seq clustering with CONCORDEX.","evidence":[],"citation":{"doi":"10.1101/2023.06.28.546949","url":"https://www.biorxiv.org/content/10.1101/2023.06.28.546949v2?versioned=true","date":"2024-07-18","venue":"bioRxiv v2","authors":[{"name":"Kayla C. Jackson","orcid":"https://orcid.org/0000-0001-6483-0108"},{"name":"A. Sina Booeshaghi","orcid":"https://orcid.org/0000-0002-6442-4502"},{"name":"Ángel Gálvez-Merchán","orcid":"https://orcid.org/0000-0001-7420-8697"},{"name":"Lambda Moses","orcid":"https://orcid.org/0000-0002-7092-9427"},{"name":"Tara Chari","orcid":"https://orcid.org/0000-0002-6953-4313"},{"name":"Alexandra Kim","orcid":""},{"name":"Orhan Hosten-Mittermaier","orcid":"https://orcid.org/0009-0002-7959-929X"},{"name":"Lior Pachter","orcid":"https://orcid.org/0000-0002-9164-6231"}]},"bibtex":"@misc{quantitative_assessment_of_single_cell_rna_seq_clustering_with_concordex_2024_07_18,\n  title = {Quantitative assessment of single-cell RNA-seq clustering with CONCORDEX},\n  author = {Kayla C. Jackson and A. Sina Booeshaghi and Ángel Gálvez-Merchán and Lambda Moses and Tara Chari and Alexandra Kim and Orhan Hosten-Mittermaier and Lior Pachter},\n  year = {2024},\n  doi = {10.1101/2023.06.28.546949},\n  url = {https://www.biorxiv.org/content/10.1101/2023.06.28.546949v2?versioned=true},\n  note = {bioRxiv v2, 2024-07-18}\n}"},{"id":"connection:version:characterization-of-spatial-homogeneous-regions-in-tissues-with-concordex--2023-06-30-biorxiv-v1--work:characterization-of-spatial-homogeneous-regions-in-tissues-with-concordex","type":"versions","title":"Quantitative assessment of single-cell RNA-seq clustering with CONCORDEX","description":"2023-06-30 · bioRxiv v1","statement":"2023-06-30 is a version of Quantitative assessment of single-cell RNA-seq clustering with CONCORDEX.","evidence":[],"citation":{"doi":"10.1101/2023.06.28.546949","url":"https://www.biorxiv.org/content/10.1101/2023.06.28.546949v1?versioned=true","date":"2023-06-30","venue":"bioRxiv v1","authors":[{"name":"Kayla C. Jackson","orcid":"https://orcid.org/0000-0001-6483-0108"},{"name":"A. Sina Booeshaghi","orcid":"https://orcid.org/0000-0002-6442-4502"},{"name":"Ángel Gálvez-Merchán","orcid":"https://orcid.org/0000-0001-7420-8697"},{"name":"Lambda Moses","orcid":"https://orcid.org/0000-0002-7092-9427"},{"name":"Tara Chari","orcid":"https://orcid.org/0000-0002-6953-4313"},{"name":"Alexandra Kim","orcid":""},{"name":"Orhan Hosten-Mittermaier","orcid":"https://orcid.org/0009-0002-7959-929X"},{"name":"Lior Pachter","orcid":"https://orcid.org/0000-0002-9164-6231"}]},"bibtex":"@misc{quantitative_assessment_of_single_cell_rna_seq_clustering_with_concordex_2023_06_30,\n  title = {Quantitative assessment of single-cell RNA-seq clustering with CONCORDEX},\n  author = {Kayla C. Jackson and A. Sina Booeshaghi and Ángel Gálvez-Merchán and Lambda Moses and Tara Chari and Alexandra Kim and Orhan Hosten-Mittermaier and Lior Pachter},\n  year = {2023},\n  doi = {10.1101/2023.06.28.546949},\n  url = {https://www.biorxiv.org/content/10.1101/2023.06.28.546949v1?versioned=true},\n  note = {bioRxiv v1, 2023-06-30}\n}"},{"id":"connection:document:characterization-of-spatial-homogeneous-regions-in-tissues-with-concordex--2023-06-30-biorxiv-v1--version:characterization-of-spatial-homogeneous-regions-in-tissues-with-concordex--2023-06-30-biorxiv-v1","type":"sources","title":"2023-06-30-biorxiv-v1.pdf","description":"This source document provides local provenance for the target publication.","statement":"This source document provides local provenance for the target publication.","evidence":[]},{"id":"connection:document:characterization-of-spatial-homogeneous-regions-in-tissues-with-concordex--2024-07-18-biorxiv-v2--version:characterization-of-spatial-homogeneous-regions-in-tissues-with-concordex--2024-07-18-biorxiv-v2","type":"sources","title":"2024-07-18-biorxiv-v2.pdf","description":"This source document provides local provenance for the target publication.","statement":"This source document provides local provenance for the target publication.","evidence":[]},{"id":"connection:document:characterization-of-spatial-homogeneous-regions-in-tissues-with-concordex--2025-06-19-biorxiv-v3--version:characterization-of-spatial-homogeneous-regions-in-tissues-with-concordex--2025-06-19-biorxiv-v3","type":"sources","title":"2025-06-19-biorxiv-v3.pdf","description":"This source document provides local provenance for the target publication.","statement":"This source document provides local provenance for the target publication.","evidence":[]}]}</script>
+      <script src="../work-relations.js"></script>
     </article>
   </body>
 </html>

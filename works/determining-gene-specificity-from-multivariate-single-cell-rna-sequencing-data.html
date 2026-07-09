@@ -17,77 +17,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="This preprint develops methods for determining gene specificity from multivariate single-cell RNA sequencing data, addressing how genes vary across cell types and biological contexts." />
+    <meta name="description" content="Single-cell atlases can reveal where genes are specific, but marker interpretation becomes complicated when variation spans cell types, tissues, strains, and individuals. Existing specificity measures do not always satisfy clear information-theoretic properties or handle multivariate context. ember introduces entropy-based metrics for gene specificity and applies them to mouse and human datasets, revealing context-dependent markers, housekeeping genes, strain effects, and PBMC variation localized to classical monocytes." />
     <link rel="stylesheet" href="../styles.css" />
-    
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        document.querySelectorAll(".copy-bibtex-button").forEach((button) => {
-          button.addEventListener("click", async () => {
-            const box = button.closest(".bibtex-box");
-            const code = box ? box.querySelector("code") : null;
-            const bibtex = code ? code.textContent : "";
-            const previousText = button.textContent;
-            const markStatus = (text) => {
-              button.textContent = text;
-              window.setTimeout(() => {
-                button.textContent = previousText;
-              }, 1200);
-            };
-            const copyWithSelection = () => {
-              const textarea = document.createElement("textarea");
-              textarea.value = bibtex;
-              textarea.setAttribute("readonly", "");
-              textarea.style.position = "fixed";
-              textarea.style.left = "0";
-              textarea.style.top = "0";
-              textarea.style.width = "1px";
-              textarea.style.height = "1px";
-              textarea.style.opacity = "0";
-              textarea.style.pointerEvents = "none";
-              document.body.appendChild(textarea);
-              textarea.focus({ preventScroll: true });
-              textarea.select();
-              textarea.setSelectionRange(0, textarea.value.length);
-              const copied = document.execCommand("copy");
-              textarea.remove();
-              return copied;
-            };
-
-            try {
-              if (navigator.clipboard && navigator.clipboard.writeText) {
-                await navigator.clipboard.writeText(bibtex);
-                markStatus("Copied");
-                return;
-              }
-
-              if (copyWithSelection()) {
-                markStatus("Copied");
-                return;
-              }
-            } catch {
-              let copied = false;
-
-              try {
-                copied = copyWithSelection();
-              } catch {
-                copied = false;
-              }
-
-              if (copied) {
-                markStatus("Copied");
-                return;
-              }
-            }
-
-            markStatus("Copy failed");
-          });
-        });
-      });
-    </script>
     <title>Determining gene specificity from multivariate single-cell RNA sequencing data | Works | Sina Booeshaghi</title>
   </head>
-  <body>
+  <body class="work-detail-page">
     <nav class="breadcrumb" aria-label="Breadcrumb">
       <a href="../index.html">Home</a>
       <span aria-hidden="true">/</span>
@@ -95,109 +29,71 @@
       <span aria-hidden="true">/</span>
       <span class="breadcrumb-current" title="Determining gene specificity from multivariate single-cell RNA sequencing data">Determining gene specificity from multivariate single-cell RNA s...</span>
     </nav>
-    <article class="work-page">
-      <h1>Determining gene specificity from multivariate single-cell RNA sequencing data</h1>
-      <div class="publication-versions work-versions" aria-label="Work versions">
-        <span class="publication-versions-label">Versions</span>
-        <div class="publication-version-cards">
-          
-        <a
-          class="publication-version-link is-current"
-          href="https://doi.org/10.1101/2025.11.21.689845"
-          target="_blank"
-          rel="noopener"
-        >
-          <span class="publication-version-title">Determining gene specificity from multivariate single-cell RNA sequencing data</span>
-          <span class="publication-version-detail">bioRxiv · 2025-11-24</span>
-        </a>
+    <article class="work-page study-graph-page">
+      <section class="study-focus" aria-label="Selected work">
+        <div>
+          <h1>Determining gene specificity from multivariate single-cell RNA sequencing data</h1>
+          <p>Single-cell atlases can reveal where genes are specific, but marker interpretation becomes complicated when variation spans cell types, tissues, strains, and individuals. Existing specificity measures do not always satisfy clear information-theoretic properties or handle multivariate context. ember introduces entropy-based metrics for gene specificity and applies them to mouse and human datasets, revealing context-dependent markers, housekeeping genes, strain effects, and PBMC variation localized to classical monocytes.</p>
         </div>
-      </div>
-
-      <section>
-        <h2>Summary</h2>
-        <p>This preprint develops methods for determining gene specificity from multivariate single-cell RNA sequencing data, addressing how genes vary across cell types and biological contexts.</p>
+        <dl class="study-stats">
+          <div>
+            <dt>Citations</dt>
+            <dd>1</dd>
+          </div>
+          <div>
+            <dt>Relations</dt>
+            <dd>14</dd>
+          </div>
+        </dl>
       </section>
 
       
-      <section
-        class="authors-section"
-        data-author-version-count="1"
-      >
-        <h2>Authors</h2>
-        
-        <section
-          class="author-version"
-          data-author-count="11"
-        >
-          <h3>
-            <a href="https://doi.org/10.1101/2025.11.21.689845" target="_blank" rel="noopener">bioRxiv</a>
-            <time datetime="2025-11-24">2025-11-24</time>
-          </h3>
-          <ul class="author-list">
-            
-            <li><a href="https://orcid.org/0000-0003-3300-0114" target="_blank" rel="noopener" title="ORCID">Nikhila P. Swarna</a></li>
-            <li><a href="https://orcid.org/0000-0002-6442-4502" target="_blank" rel="noopener" title="ORCID">A. Sina Booeshaghi</a></li>
-            <li><a href="https://orcid.org/0000-0003-2273-0189" target="_blank" rel="noopener" title="ORCID">Elisabeth Rebboah</a></li>
-            <li><a href="https://orcid.org/0000-0003-4321-9187" target="_blank" rel="noopener" title="ORCID">M. Grace Gordon</a></li>
-            <li><a href="https://orcid.org/0000-0001-8860-0753" target="_blank" rel="noopener" title="ORCID">Pooja Kathail</a></li>
-            <li><a href="https://orcid.org/0000-0002-6624-9293" target="_blank" rel="noopener" title="ORCID">Taibo Li</a></li>
-            <li>Marcus Alvarez</li>
-            <li><a href="https://orcid.org/0000-0001-6560-3783" target="_blank" rel="noopener" title="ORCID">Chun Jimmie Ye</a></li>
-            <li><a href="https://orcid.org/0000-0003-3235-8130" target="_blank" rel="noopener" title="ORCID">Barbara Wold</a></li>
-            <li><a href="https://orcid.org/0000-0002-4259-6362" target="_blank" rel="noopener" title="ORCID">Ali Mortazavi</a></li>
-            <li><a href="https://orcid.org/0000-0002-9164-6231" target="_blank" rel="noopener" title="ORCID">Lior Pachter</a></li>
-          </ul>
-        </section>
-      </section>
-
-      <section>
-        <h2>BibTeX</h2>
-        
-        <section class="bibtex-entry">
-          <h3>bioRxiv</h3>
-          <div class="bibtex-box">
-            <button
-              class="copy-bibtex-button"
-              type="button"
-              aria-label="Copy BibTeX for bioRxiv"
-            >
-              Copy BibTeX
-            </button>
-            <pre><code>@article{Swarna_2025,
-  TITLE     = {Determining gene specificity from multivariate single-cell RNA sequencing data},
-  URL       = {http://dx.doi.org/10.1101/2025.11.21.689845},
-  DOI       = {10.1101/2025.11.21.689845},
-  PUBLISHER = {openRxiv},
-  AUTHOR    = {Swarna, Nikhila P. and Booeshaghi, A. Sina and Rebboah, Elisabeth and Gordon, M. Grace and Kathail, Pooja and Li, Taibo and Alvarez, Marcus and Ye, Chun Jimmie and Wold, Barbara and Mortazavi, Ali and Pachter, Lior},
-  YEAR      = {2025}
-}</code></pre>
+      <section class="relationship-inspector" aria-label="Indexed relations" data-work-relations>
+        <section class="relationship-list-panel" aria-label="Relations">
+          <div class="study-section-heading">
+            <h2>Relations</h2>
           </div>
+          <div
+            class="relation-tabs"
+            role="tablist"
+            aria-label="Relation types"
+            data-relation-tabs
+          ></div>
+          <div class="reason-list" data-relation-list></div>
         </section>
-      </section>
 
-      <section>
-        <h2>Citing Works</h2>
-        <p class="citation-source-note">
-          1 citing work found in citation data generated 2026-07-06. Citation relationships are sourced from OpenAlex, Semantic Scholar, Google Scholar.
-        </p>
-        <table class="citation-table">
-          <thead>
-            <tr>
-              <th>Title</th>
-              <th>Year</th>
-              <th>Summary</th>
-            </tr>
-          </thead>
-          <tbody>
-            
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.64898/2026.04.02.716195" target="_blank" rel="noopener">Hybrid crosses reveal a cell-type-specific landscape of mouse regulatory variation</a></td>
-              <td class="citation-year"><time datetime="2026">2026</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-          </tbody>
-        </table>
+        <aside class="evidence-panel relationship-detail" aria-live="polite">
+          <span class="study-label" data-relation-label>Relation</span>
+          <h2 data-relation-title></h2>
+          <p class="selected-relation-statement" data-relation-statement></p>
+          <section class="version-citation" data-version-citation hidden>
+            <h3>Citation</h3>
+            <div class="bibtex-box">
+              <button class="copy-bibtex-button" type="button" data-copy-bibtex>
+                Copy BibTeX
+              </button>
+              <pre><code data-bibtex-code></code></pre>
+            </div>
+          </section>
+          <details class="relationship-evidence" data-relation-evidence>
+            <summary>
+              <span>Evidence</span>
+              <span class="evidence-summary" data-evidence-summary></span>
+            </summary>
+            <table class="relationship-evidence-table">
+              <thead>
+                <tr>
+                  <th>Span</th>
+                  <th>Source</th>
+                </tr>
+              </thead>
+              <tbody data-evidence-rows></tbody>
+            </table>
+          </details>
+        </aside>
       </section>
+      <script id="workRelationData" type="application/json">{"work":{"id":"work:determining-gene-specificity-from-multivariate-single-cell-rna-sequencing-data","title":"Determining gene specificity from multivariate single-cell RNA sequencing data","description":"Single-cell atlases can reveal where genes are specific, but marker interpretation becomes complicated when variation spans cell types, tissues, strains, and individuals. Existing specificity measures do not always satisfy clear information-theoretic properties or handle multivariate context. ember introduces entropy-based metrics for gene specificity and applies them to mouse and human datasets, revealing context-dependent markers, housekeeping genes, strain effects, and PBMC variation localized to classical monocytes."},"relationTypes":[{"id":"authors","label":"Authors"},{"id":"claims","label":"Claims"},{"id":"citations","label":"Citations"},{"id":"versions","label":"Versions"},{"id":"software","label":"Software"},{"id":"sources","label":"Sources"}],"connections":[{"id":"connection:version:determining-gene-specificity-from-multivariate-single-cell-rna-sequencing-data--2025-11-24-biorxiv--person:orcid:0000-0003-3300-0114--author-1","type":"authors","title":"Nikhila Swarna","description":"Nikhila P. Swarna is an author of Determining gene specificity from multivariate single-cell RNA sequencing data.","statement":"Nikhila P. Swarna is an author of Determining gene specificity from multivariate single-cell RNA sequencing data.","evidence":[]},{"id":"connection:version:determining-gene-specificity-from-multivariate-single-cell-rna-sequencing-data--2025-11-24-biorxiv--person:orcid:0000-0002-6442-4502--author-2","type":"authors","title":"A. Sina Booeshaghi","description":"A. Sina Booeshaghi is an author of Determining gene specificity from multivariate single-cell RNA sequencing data.","statement":"A. Sina Booeshaghi is an author of Determining gene specificity from multivariate single-cell RNA sequencing data.","evidence":[]},{"id":"connection:version:determining-gene-specificity-from-multivariate-single-cell-rna-sequencing-data--2025-11-24-biorxiv--person:orcid:0000-0003-2273-0189--author-3","type":"authors","title":"Elisabeth Rebboah","description":"Elisabeth Rebboah is an author of Determining gene specificity from multivariate single-cell RNA sequencing data.","statement":"Elisabeth Rebboah is an author of Determining gene specificity from multivariate single-cell RNA sequencing data.","evidence":[]},{"id":"connection:version:determining-gene-specificity-from-multivariate-single-cell-rna-sequencing-data--2025-11-24-biorxiv--person:orcid:0000-0003-4321-9187--author-4","type":"authors","title":"M. Grace Gordon","description":"M. Grace Gordon is an author of Determining gene specificity from multivariate single-cell RNA sequencing data.","statement":"M. Grace Gordon is an author of Determining gene specificity from multivariate single-cell RNA sequencing data.","evidence":[]},{"id":"connection:version:determining-gene-specificity-from-multivariate-single-cell-rna-sequencing-data--2025-11-24-biorxiv--person:orcid:0000-0001-8860-0753--author-5","type":"authors","title":"Pooja Kathail","description":"Pooja Kathail is an author of Determining gene specificity from multivariate single-cell RNA sequencing data.","statement":"Pooja Kathail is an author of Determining gene specificity from multivariate single-cell RNA sequencing data.","evidence":[]},{"id":"connection:version:determining-gene-specificity-from-multivariate-single-cell-rna-sequencing-data--2025-11-24-biorxiv--person:orcid:0000-0002-6624-9293--author-6","type":"authors","title":"Taibo Li","description":"Taibo Li is an author of Determining gene specificity from multivariate single-cell RNA sequencing data.","statement":"Taibo Li is an author of Determining gene specificity from multivariate single-cell RNA sequencing data.","evidence":[]},{"id":"connection:version:determining-gene-specificity-from-multivariate-single-cell-rna-sequencing-data--2025-11-24-biorxiv--person:local:marcus-alvarez--author-7","type":"authors","title":"Marcus Alvarez","description":"Marcus Alvarez is an author of Determining gene specificity from multivariate single-cell RNA sequencing data.","statement":"Marcus Alvarez is an author of Determining gene specificity from multivariate single-cell RNA sequencing data.","evidence":[]},{"id":"connection:version:determining-gene-specificity-from-multivariate-single-cell-rna-sequencing-data--2025-11-24-biorxiv--person:orcid:0000-0001-6560-3783--author-8","type":"authors","title":"Chun Jimmie Ye","description":"Chun Jimmie Ye is an author of Determining gene specificity from multivariate single-cell RNA sequencing data.","statement":"Chun Jimmie Ye is an author of Determining gene specificity from multivariate single-cell RNA sequencing data.","evidence":[]},{"id":"connection:version:determining-gene-specificity-from-multivariate-single-cell-rna-sequencing-data--2025-11-24-biorxiv--person:orcid:0000-0003-3235-8130--author-9","type":"authors","title":"Barbara J. Wold","description":"Barbara Wold is an author of Determining gene specificity from multivariate single-cell RNA sequencing data.","statement":"Barbara Wold is an author of Determining gene specificity from multivariate single-cell RNA sequencing data.","evidence":[]},{"id":"connection:version:determining-gene-specificity-from-multivariate-single-cell-rna-sequencing-data--2025-11-24-biorxiv--person:orcid:0000-0002-4259-6362--author-10","type":"authors","title":"Ali Mortazavi","description":"Ali Mortazavi is an author of Determining gene specificity from multivariate single-cell RNA sequencing data.","statement":"Ali Mortazavi is an author of Determining gene specificity from multivariate single-cell RNA sequencing data.","evidence":[]},{"id":"connection:version:determining-gene-specificity-from-multivariate-single-cell-rna-sequencing-data--2025-11-24-biorxiv--person:orcid:0000-0002-9164-6231--author-11","type":"authors","title":"Lior Pachter","description":"Lior Pachter is an author of Determining gene specificity from multivariate single-cell RNA sequencing data.","statement":"Lior Pachter is an author of Determining gene specificity from multivariate single-cell RNA sequencing data.","evidence":[]},{"id":"connection:version:determining-gene-specificity-from-multivariate-single-cell-rna-sequencing-data--2025-11-24-biorxiv--claim:version:determining-gene-specificity-from-multivariate-single-cell-rna-sequencing-data--2025-11-24-biorxiv--summary-0","type":"claims","title":"Single-cell atlases can reveal where genes are specific, but marker interpretation becomes complicated when variation sp","description":"Single-cell atlases can reveal where genes are specific, but marker interpretation becomes complicated when variation spans cell types, tissues, strains, and individuals. Existing specificity measures do not always satisfy clear information-theoretic properties or handle multivariate context. ember introduces entropy-based metrics for gene specificity and applies them to mouse and human datasets, revealing context-dependent markers, housekeeping genes, strain effects, and PBMC variation localized to classical monocytes.","statement":"This publication contains the target grounded summary claim.","evidence":[{"source":"source:text:document:determining-gene-specificity-from-multivariate-single-cell-rna-sequencing-data--2025-11-24-biorxiv","span":"This leads us to develop ember (Entropy Metrics for Biological ExploRation), which we show is the only method satisfying four key desired properties for a specificity measure.","page":1,"properties":{"document_id":"document:determining-gene-specificity-from-multivariate-single-cell-rna-sequencing-data--2025-11-24-biorxiv","char_start":2555,"char_end":2730}},{"source":"source:text:document:determining-gene-specificity-from-multivariate-single-cell-rna-sequencing-data--2025-11-24-biorxiv","span":"We propose a set of three biologically informative entropy metrics: Ψ (Psi): fraction of information explained by a partition , ψblock (psi_block): specificity to a block, and ζ (Zeta): specificity to a partition.","page":2,"properties":{"document_id":"document:determining-gene-specificity-from-multivariate-single-cell-rna-sequencing-data--2025-11-24-biorxiv","char_start":1086,"char_end":1299}},{"source":"source:text:document:determining-gene-specificity-from-multivariate-single-cell-rna-sequencing-data--2025-11-24-biorxiv","span":"Applying ember to eight tissues from eight founder mouse strains, we find that gene specificity is often unintuitive: canonical markers can be supplanted, housekeeping genes are context-dependent, and mouse strain can drive unexpected cell type switching.","page":1,"properties":{"document_id":"document:determining-gene-specificity-from-multivariate-single-cell-rna-sequencing-data--2025-11-24-biorxiv","char_start":2731,"char_end":2986}},{"source":"source:text:document:determining-gene-specificity-from-multivariate-single-cell-rna-sequencing-data--2025-11-24-biorxiv","span":"Extending ember to a human PBMC dataset collected from 255 diverse individuals, we find that variation in PBMCs is largely localized to classical monocytes.","page":1,"properties":{"document_id":"document:determining-gene-specificity-from-multivariate-single-cell-rna-sequencing-data--2025-11-24-biorxiv","char_start":3330,"char_end":3486}}]},{"id":"connection:version:determining-gene-specificity-from-multivariate-single-cell-rna-sequencing-data--2025-11-24-biorxiv--work:determining-gene-specificity-from-multivariate-single-cell-rna-sequencing-data","type":"versions","title":"Determining gene specificity from multivariate single-cell RNA sequencing data","description":"2025-11-24 · bioRxiv","statement":"2025-11-24 is a version of Determining gene specificity from multivariate single-cell RNA sequencing data.","evidence":[],"citation":{"doi":"10.1101/2025.11.21.689845","url":"https://doi.org/10.1101/2025.11.21.689845","date":"2025-11-24","venue":"bioRxiv","authors":[{"name":"Nikhila P. Swarna","orcid":"https://orcid.org/0000-0003-3300-0114"},{"name":"A. Sina Booeshaghi","orcid":"https://orcid.org/0000-0002-6442-4502"},{"name":"Elisabeth Rebboah","orcid":"https://orcid.org/0000-0003-2273-0189"},{"name":"M. Grace Gordon","orcid":"https://orcid.org/0000-0003-4321-9187"},{"name":"Pooja Kathail","orcid":"https://orcid.org/0000-0001-8860-0753"},{"name":"Taibo Li","orcid":"https://orcid.org/0000-0002-6624-9293"},{"name":"Marcus Alvarez","orcid":""},{"name":"Chun Jimmie Ye","orcid":"https://orcid.org/0000-0001-6560-3783"},{"name":"Barbara Wold","orcid":"https://orcid.org/0000-0003-3235-8130"},{"name":"Ali Mortazavi","orcid":"https://orcid.org/0000-0002-4259-6362"},{"name":"Lior Pachter","orcid":"https://orcid.org/0000-0002-9164-6231"}]},"bibtex":"@article{Swarna_2025,\n  TITLE     = {Determining gene specificity from multivariate single-cell RNA sequencing data},\n  URL       = {http://dx.doi.org/10.1101/2025.11.21.689845},\n  DOI       = {10.1101/2025.11.21.689845},\n  PUBLISHER = {openRxiv},\n  AUTHOR    = {Swarna, Nikhila P. and Booeshaghi, A. Sina and Rebboah, Elisabeth and Gordon, M. Grace and Kathail, Pooja and Li, Taibo and Alvarez, Marcus and Ye, Chun Jimmie and Wold, Barbara and Mortazavi, Ali and Pachter, Lior},\n  YEAR      = {2025}\n}"},{"id":"connection:document:determining-gene-specificity-from-multivariate-single-cell-rna-sequencing-data--2025-11-24-biorxiv--version:determining-gene-specificity-from-multivariate-single-cell-rna-sequencing-data--2025-11-24-biorxiv","type":"sources","title":"2025-11-24-biorxiv.pdf","description":"This source document provides local provenance for the target publication.","statement":"This source document provides local provenance for the target publication.","evidence":[]}]}</script>
+      <script src="../work-relations.js"></script>
     </article>
   </body>
 </html>

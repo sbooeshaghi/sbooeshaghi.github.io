@@ -17,77 +17,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Orthogonal barcoding in single-cell genomics has made it possible to simultaneously measure numerous attributes of cells. We extended kallisto bustools to quantify orthogonal barcoding assays such as 10x Feature Barcoding, CiteSeq, Multiseq, and single-cell CRISPR screens. Our tool, called kite, is accurate and 48 times faster than state-of-the-art methods while requiring only a fifth of the memory. It has already been used in numerous projects by others. We also introduced a set of quality control metrics, and accompanying tool (qcbc), for validating barcode designs. qcbc provides a method for assay developers to address the problem of ambiguous mapping barcodes prior to experimentation." />
+    <meta name="description" content="Multimodal and perturbation assays increasingly depend on short orthogonal barcodes to connect sequencing reads with proteins, samples, guides, and other features. Assay-specific tools and barcode design failures can introduce ambiguous assignment, runtime costs, and inconsistent processing across technologies. kITE uses kallisto/bustools mismatch-index pseudoalignment to quantify diverse barcode assays efficiently, and qcbc adds design diagnostics that expose shared subsequences, homopolymers, distance issues, and other error modes." />
     <link rel="stylesheet" href="../styles.css" />
-    
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        document.querySelectorAll(".copy-bibtex-button").forEach((button) => {
-          button.addEventListener("click", async () => {
-            const box = button.closest(".bibtex-box");
-            const code = box ? box.querySelector("code") : null;
-            const bibtex = code ? code.textContent : "";
-            const previousText = button.textContent;
-            const markStatus = (text) => {
-              button.textContent = text;
-              window.setTimeout(() => {
-                button.textContent = previousText;
-              }, 1200);
-            };
-            const copyWithSelection = () => {
-              const textarea = document.createElement("textarea");
-              textarea.value = bibtex;
-              textarea.setAttribute("readonly", "");
-              textarea.style.position = "fixed";
-              textarea.style.left = "0";
-              textarea.style.top = "0";
-              textarea.style.width = "1px";
-              textarea.style.height = "1px";
-              textarea.style.opacity = "0";
-              textarea.style.pointerEvents = "none";
-              document.body.appendChild(textarea);
-              textarea.focus({ preventScroll: true });
-              textarea.select();
-              textarea.setSelectionRange(0, textarea.value.length);
-              const copied = document.execCommand("copy");
-              textarea.remove();
-              return copied;
-            };
-
-            try {
-              if (navigator.clipboard && navigator.clipboard.writeText) {
-                await navigator.clipboard.writeText(bibtex);
-                markStatus("Copied");
-                return;
-              }
-
-              if (copyWithSelection()) {
-                markStatus("Copied");
-                return;
-              }
-            } catch {
-              let copied = false;
-
-              try {
-                copied = copyWithSelection();
-              } catch {
-                copied = false;
-              }
-
-              if (copied) {
-                markStatus("Copied");
-                return;
-              }
-            }
-
-            markStatus("Copy failed");
-          });
-        });
-      });
-    </script>
     <title>Quantifying orthogonal barcodes for sequence census assays | Works | Sina Booeshaghi</title>
   </head>
-  <body>
+  <body class="work-detail-page">
     <nav class="breadcrumb" aria-label="Breadcrumb">
       <a href="../index.html">Home</a>
       <span aria-hidden="true">/</span>
@@ -95,237 +29,71 @@
       <span aria-hidden="true">/</span>
       <span class="breadcrumb-current" title="Quantifying orthogonal barcodes for sequence census assays">Quantifying orthogonal barcodes for sequence census assays</span>
     </nav>
-    <article class="work-page">
-      <h1>Quantifying orthogonal barcodes for sequence census assays</h1>
-      <div class="publication-versions work-versions" aria-label="Work versions">
-        <span class="publication-versions-label">Versions</span>
-        <div class="publication-version-cards">
-          
-        <a
-          class="publication-version-link is-current"
-          href="https://doi.org/10.1093/bioadv/vbad181"
-          target="_blank"
-          rel="noopener"
-        >
-          <span class="publication-version-title">Quantifying orthogonal barcodes for sequence census assays</span>
-          <span class="publication-version-detail">Bioinformatics Advances · 2024-01-05</span>
-        </a>
-        <a
-          class="publication-version-link"
-          href="https://doi.org/10.1101/2022.10.09.511501"
-          target="_blank"
-          rel="noopener"
-        >
-          <span class="publication-version-title">Quantifying orthogonal barcodes for sequence census assays</span>
-          <span class="publication-version-detail">bioRxiv · 2022-10-10</span>
-        </a>
+    <article class="work-page study-graph-page">
+      <section class="study-focus" aria-label="Selected work">
+        <div>
+          <h1>Quantifying orthogonal barcodes for sequence census assays</h1>
+          <p>Multimodal and perturbation assays increasingly depend on short orthogonal barcodes to connect sequencing reads with proteins, samples, guides, and other features. Assay-specific tools and barcode design failures can introduce ambiguous assignment, runtime costs, and inconsistent processing across technologies. kITE uses kallisto/bustools mismatch-index pseudoalignment to quantify diverse barcode assays efficiently, and qcbc adds design diagnostics that expose shared subsequences, homopolymers, distance issues, and other error modes.</p>
         </div>
-      </div>
-
-      <section>
-        <h2>Summary</h2>
-        <p>Orthogonal barcoding in single-cell genomics has made it possible to simultaneously measure numerous attributes of cells. We extended kallisto bustools to quantify orthogonal barcoding assays such as 10x Feature Barcoding, CiteSeq, Multiseq, and single-cell CRISPR screens. Our tool, called kite, is accurate and 48 times faster than state-of-the-art methods while requiring only a fifth of the memory. It has already been used in numerous projects by others. We also introduced a set of quality control metrics, and accompanying tool (qcbc), for validating barcode designs. qcbc provides a method for assay developers to address the problem of ambiguous mapping barcodes prior to experimentation.</p>
+        <dl class="study-stats">
+          <div>
+            <dt>Citations</dt>
+            <dd>18</dd>
+          </div>
+          <div>
+            <dt>Relations</dt>
+            <dd>11</dd>
+          </div>
+        </dl>
       </section>
 
       
-      <section
-        class="authors-section"
-        data-author-version-count="2"
-      >
-        <h2>Authors</h2>
-        
-        <section
-          class="author-version"
-          data-author-count="4"
-        >
-          <h3>
-            <a href="https://doi.org/10.1093/bioadv/vbad181" target="_blank" rel="noopener">Bioinformatics Advances</a>
-            <time datetime="2024-01-05">2024-01-05</time>
-          </h3>
-          <ul class="author-list">
-            
-            <li><a href="https://orcid.org/0000-0002-6442-4502" target="_blank" rel="noopener" title="ORCID">A Sina Booeshaghi</a></li>
-            <li><a href="https://orcid.org/0000-0003-0894-4017" target="_blank" rel="noopener" title="ORCID">Kyung Hoi (Joseph) Min</a></li>
-            <li><a href="https://orcid.org/0000-0002-3894-9495" target="_blank" rel="noopener" title="ORCID">Jase Gehring</a></li>
-            <li><a href="https://orcid.org/0000-0002-9164-6231" target="_blank" rel="noopener" title="ORCID">Lior Pachter</a></li>
-          </ul>
-        </section>
-        <section
-          class="author-version"
-          data-author-count="4"
-        >
-          <h3>
-            <a href="https://doi.org/10.1101/2022.10.09.511501" target="_blank" rel="noopener">bioRxiv</a>
-            <time datetime="2022-10-10">2022-10-10</time>
-          </h3>
-          <ul class="author-list">
-            
-            <li><a href="https://orcid.org/0000-0002-6442-4502" target="_blank" rel="noopener" title="ORCID">A. Sina Booeshaghi</a></li>
-            <li><a href="https://orcid.org/0000-0003-0894-4017" target="_blank" rel="noopener" title="ORCID">Kyung Hoi (Joseph) Min</a></li>
-            <li><a href="https://orcid.org/0000-0002-3894-9495" target="_blank" rel="noopener" title="ORCID">Jase Gehring</a></li>
-            <li><a href="https://orcid.org/0000-0002-9164-6231" target="_blank" rel="noopener" title="ORCID">Lior Pachter</a></li>
-          </ul>
-        </section>
-      </section>
-
-      <section>
-        <h2>BibTeX</h2>
-        
-        <section class="bibtex-entry">
-          <h3>Bioinformatics Advances</h3>
-          <div class="bibtex-box">
-            <button
-              class="copy-bibtex-button"
-              type="button"
-              aria-label="Copy BibTeX for Bioinformatics Advances"
-            >
-              Copy BibTeX
-            </button>
-            <pre><code>@article{Booeshaghi_2023,
-  TITLE     = {Quantifying orthogonal barcodes for sequence census assays},
-  VOLUME    = {4},
-  ISSN      = {2635-0041},
-  URL       = {http://dx.doi.org/10.1093/bioadv/vbad181},
-  DOI       = {10.1093/bioadv/vbad181},
-  NUMBER    = {1},
-  JOURNAL   = {Bioinformatics Advances},
-  PUBLISHER = {Oxford University Press (OUP)},
-  AUTHOR    = {Booeshaghi, A Sina and Min, Kyung Hoi (Joseph) and Gehring, Jase and Pachter, Lior},
-  EDITOR    = {Bateman, Alex},
-  YEAR      = {2023}
-}</code></pre>
+      <section class="relationship-inspector" aria-label="Indexed relations" data-work-relations>
+        <section class="relationship-list-panel" aria-label="Relations">
+          <div class="study-section-heading">
+            <h2>Relations</h2>
           </div>
+          <div
+            class="relation-tabs"
+            role="tablist"
+            aria-label="Relation types"
+            data-relation-tabs
+          ></div>
+          <div class="reason-list" data-relation-list></div>
         </section>
-        <section class="bibtex-entry">
-          <h3>bioRxiv</h3>
-          <div class="bibtex-box">
-            <button
-              class="copy-bibtex-button"
-              type="button"
-              aria-label="Copy BibTeX for bioRxiv"
-            >
-              Copy BibTeX
-            </button>
-            <pre><code>@article{Booeshaghi_2022,
-  TITLE     = {Quantifying orthogonal barcodes for sequence census assays},
-  URL       = {http://dx.doi.org/10.1101/2022.10.09.511501},
-  DOI       = {10.1101/2022.10.09.511501},
-  PUBLISHER = {openRxiv},
-  AUTHOR    = {Booeshaghi, A. Sina and Min, Kyung Hoi (Joseph) and Gehring, Jase and Pachter, Lior},
-  YEAR      = {2022}
-}</code></pre>
-          </div>
-        </section>
-      </section>
 
-      <section>
-        <h2>Citing Works</h2>
-        <p class="citation-source-note">
-          18 citing works found in citation data generated 2026-07-06. Citation relationships are sourced from OpenAlex, Semantic Scholar, Google Scholar.
-        </p>
-        <table class="citation-table">
-          <thead>
-            <tr>
-              <th>Title</th>
-              <th>Year</th>
-              <th>Summary</th>
-            </tr>
-          </thead>
-          <tbody>
-            
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.64898/2026.03.04.709594" target="_blank" rel="noopener">ESGI: Efficient splitting of generic indices in single-cell sequencing data</a></td>
-              <td class="citation-year"><time datetime="2026">2026</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include barcode, framework, accommodates, arbitrary, assays, authors, bustools, combinatorial.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.64898/2026.04.23.720450" target="_blank" rel="noopener">Single-nucleus multiome sequencing identifies candidate regulators of mouse gastric epithelial homeostasis</a></td>
-              <td class="citation-year"><time datetime="2026">2026</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1109/pcs65673.2025.11417598" target="_blank" rel="noopener">Adaptive Sampling For Storage Of Progressive Images On Dna</a></td>
-              <td class="citation-year"><time datetime="2025">2025</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include amplification, architecture, careful, design, ensure, non-specific, orthogonality, prevent.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://search.proquest.com/openview/4829446377c2ddf0bac1eca2315a197d/1?pq-origsite=gscholar&amp;cbl=18750&amp;diss=y" target="_blank" rel="noopener">Learning from high-dimensional measurements</a></td>
-              <td class="citation-year"><time datetime="2025">2025</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1038/s41467-025-67424-x" target="_blank" rel="noopener">Mapping cis- and trans-regulatory target genes of human-specific deletions</a></td>
-              <td class="citation-year"><time datetime="2025">2025</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include generated, hdel-v3, hdel-v4, indexed, kallisto, mismatch.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/2025.10.17.682671" target="_blank" rel="noopener">Molecular and cellular dynamics of measurable residual disease progression in myelodysplastic syndromes</a></td>
-              <td class="citation-year"><time datetime="2025">2025</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1038/s41586-025-09313-3" target="_blank" rel="noopener">Precisely defining disease variant effects in CRISPR-edited single cells</a></td>
-              <td class="citation-year"><time datetime="2025">2025</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include values, align, analysed, biolegend, build, corresponding, exported, files.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/2024.03.28.587175" target="_blank" rel="noopener">Defining the function of disease variants with CRISPR editing and multimodal single cell sequencing</a></td>
-              <td class="citation-year"><time datetime="2024">2024</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1038/s41596-024-01057-0" target="_blank" rel="noopener">kallisto, bustools and kb-python for quantifying bulk, single-cell and single-nucleus RNA-seq</a></td>
-              <td class="citation-year"><time datetime="2024">2024</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include matrix, analysis, assays, detection, alignment, applications, atac-seq, barcode-based.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1038/s43588-024-00646-z" target="_blank" rel="noopener">Scalable design of orthogonal DNA barcode libraries</a></td>
-              <td class="citation-year"><time datetime="2024">2024</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include barcode, barcodes, sequence, symmetry, alternative, ambiguity, artifacts, assigning.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/2024.02.23.581433" target="_blank" rel="noopener">SIGNAL-seq: Multimodal Single-cell Inter- and Intra-cellular Signalling Analysis</a></td>
-              <td class="citation-year"><time datetime="2024">2024</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include barcodes, aligned, antibody-barcode, bustools, github, https, index, kallisto.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/2023.05.18.541358" target="_blank" rel="noopener">An interwoven network of transcription factors, with divergent influences from FoxP3, underlies Treg diversity</a></td>
-              <td class="citation-year"><time datetime="2023">2023</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1073/pnas.2311566120" target="_blank" rel="noopener">Homeostatic, repertoire and transcriptional relationships between colon T regulatory cell subsets</a></td>
-              <td class="citation-year"><time datetime="2023">2023</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/2023.05.17.541199" target="_blank" rel="noopener">Homeostatic, repertoire and transcriptional relationships between colon T regulatory cell subsets</a></td>
-              <td class="citation-year"><time datetime="2023">2023</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/2023.11.21.568164" target="_blank" rel="noopener">kallisto, bustools, and kb-python for quantifying bulk, single-cell, and single-nucleus RNA-seq</a></td>
-              <td class="citation-year"><time datetime="2023">2023</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include matrix, barcodes, cells, classes, columns, equivalence, extension, features.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/2023.12.27.573461" target="_blank" rel="noopener">Mapping cis - and trans -regulatory target genes of human-specific deletions</a></td>
-              <td class="citation-year"><time datetime="2023">2023</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include generated, hdel-v3, hdel-v4, indexed, kallisto, mismatch, workflow.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1016/j.celrep.2023.113018" target="_blank" rel="noopener">Mutations from patients with IPEX ported to mice reveal different patterns of FoxP3 and Treg dysfunction</a></td>
-              <td class="citation-year"><time datetime="2023">2023</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include function, htodemux, package, seurat.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/2023.09.14.543267" target="_blank" rel="noopener">Universal preprocessing of single-cell genomics data</a></td>
-              <td class="citation-year"><time datetime="2023">2023</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-          </tbody>
-        </table>
+        <aside class="evidence-panel relationship-detail" aria-live="polite">
+          <span class="study-label" data-relation-label>Relation</span>
+          <h2 data-relation-title></h2>
+          <p class="selected-relation-statement" data-relation-statement></p>
+          <section class="version-citation" data-version-citation hidden>
+            <h3>Citation</h3>
+            <div class="bibtex-box">
+              <button class="copy-bibtex-button" type="button" data-copy-bibtex>
+                Copy BibTeX
+              </button>
+              <pre><code data-bibtex-code></code></pre>
+            </div>
+          </section>
+          <details class="relationship-evidence" data-relation-evidence>
+            <summary>
+              <span>Evidence</span>
+              <span class="evidence-summary" data-evidence-summary></span>
+            </summary>
+            <table class="relationship-evidence-table">
+              <thead>
+                <tr>
+                  <th>Span</th>
+                  <th>Source</th>
+                </tr>
+              </thead>
+              <tbody data-evidence-rows></tbody>
+            </table>
+          </details>
+        </aside>
       </section>
+      <script id="workRelationData" type="application/json">{"work":{"id":"work:quantifying-orthogonal-barcodes-for-sequence-census-assays","title":"Quantifying orthogonal barcodes for sequence census assays","description":"Multimodal and perturbation assays increasingly depend on short orthogonal barcodes to connect sequencing reads with proteins, samples, guides, and other features. Assay-specific tools and barcode design failures can introduce ambiguous assignment, runtime costs, and inconsistent processing across technologies. kITE uses kallisto/bustools mismatch-index pseudoalignment to quantify diverse barcode assays efficiently, and qcbc adds design diagnostics that expose shared subsequences, homopolymers, distance issues, and other error modes."},"relationTypes":[{"id":"authors","label":"Authors"},{"id":"claims","label":"Claims"},{"id":"citations","label":"Citations"},{"id":"versions","label":"Versions"},{"id":"software","label":"Software"},{"id":"sources","label":"Sources"}],"connections":[{"id":"connection:version:quantifying-orthogonal-barcodes-for-sequence-census-assays--2022-10-10-biorxiv--person:orcid:0000-0002-6442-4502--author-1","type":"authors","title":"A. Sina Booeshaghi","description":"A. Sina Booeshaghi is an author of Quantifying orthogonal barcodes for sequence census assays.","statement":"A. Sina Booeshaghi is an author of Quantifying orthogonal barcodes for sequence census assays.","evidence":[]},{"id":"connection:version:quantifying-orthogonal-barcodes-for-sequence-census-assays--2022-10-10-biorxiv--person:orcid:0000-0003-0894-4017--author-2","type":"authors","title":"Kyung Hoi (Joseph) Min","description":"Kyung Hoi (Joseph) Min is an author of Quantifying orthogonal barcodes for sequence census assays.","statement":"Kyung Hoi (Joseph) Min is an author of Quantifying orthogonal barcodes for sequence census assays.","evidence":[]},{"id":"connection:version:quantifying-orthogonal-barcodes-for-sequence-census-assays--2022-10-10-biorxiv--person:orcid:0000-0002-3894-9495--author-3","type":"authors","title":"Jase Gehring","description":"Jase Gehring is an author of Quantifying orthogonal barcodes for sequence census assays.","statement":"Jase Gehring is an author of Quantifying orthogonal barcodes for sequence census assays.","evidence":[]},{"id":"connection:version:quantifying-orthogonal-barcodes-for-sequence-census-assays--2022-10-10-biorxiv--person:orcid:0000-0002-9164-6231--author-4","type":"authors","title":"Lior Pachter","description":"Lior Pachter is an author of Quantifying orthogonal barcodes for sequence census assays.","statement":"Lior Pachter is an author of Quantifying orthogonal barcodes for sequence census assays.","evidence":[]},{"id":"connection:version:quantifying-orthogonal-barcodes-for-sequence-census-assays--2022-10-10-biorxiv--claim:version:quantifying-orthogonal-barcodes-for-sequence-census-assays--2022-10-10-biorxiv--summary-0","type":"claims","title":"Barcode-based multimodal assays broaden what can be measured in single cells, but short feature barcodes and assay-speci","description":"Barcode-based multimodal assays broaden what can be measured in single cells, but short feature barcodes and assay-specific workflows make quantification fragile and difficult to standardize. kITE builds a mismatched kallisto index to pseudoalign and error-collapse barcode reads across feature barcoding, sample hashing, and perturbation assays. The preprint also introduces qcbc to diagnose barcode designs and simulations showing how shared subsequences and low diversity lead to ambiguous assignments.","statement":"This publication contains the target grounded summary claim.","evidence":[{"source":"source:text:document:quantifying-orthogonal-barcodes-for-sequence-census-assays--2022-10-10-biorxiv","span":"Barcode-based sequence census assays utilize custom or random oligonucloetide sequences to label various biological features, such as cell-surface proteins or CRISPR perturbations.","page":1,"properties":{"document_id":"document:quantifying-orthogonal-barcodes-for-sequence-census-assays--2022-10-10-biorxiv","char_start":943,"char_end":1123}},{"source":"source:text:document:quantifying-orthogonal-barcodes-for-sequence-census-assays--2022-10-10-biorxiv","span":"These assays all rely on barcode quantification, a task that is complicated by barcode design and technical noise.","page":1,"properties":{"document_id":"document:quantifying-orthogonal-barcodes-for-sequence-census-assays--2022-10-10-biorxiv","char_start":1124,"char_end":1238}},{"source":"source:text:document:quantifying-orthogonal-barcodes-for-sequence-census-assays--2022-10-10-biorxiv","span":"In this way, kallisto will effectively scan the entire sequencing read for barcodes present in the mismatch index allowing for barcode pseudoalignment despite variability in barcode position.","page":3,"properties":{"document_id":"document:quantifying-orthogonal-barcodes-for-sequence-census-assays--2022-10-10-biorxiv","char_start":2364,"char_end":2555}},{"source":"source:text:document:quantifying-orthogonal-barcodes-for-sequence-census-assays--2022-10-10-biorxiv","span":"kITE was 48 times faster and required only a quarter to a fifth of the RAM (Figure 2h,i).","page":4,"properties":{"document_id":"document:quantifying-orthogonal-barcodes-for-sequence-census-assays--2022-10-10-biorxiv","char_start":1884,"char_end":1973}},{"source":"source:text:document:quantifying-orthogonal-barcodes-for-sequence-census-assays--2022-10-10-biorxiv","span":"With qcbc we are able to identify the 16 bp shared subsequence with EZR-2 and PPIB-1 sgRNAs in the 10xCRISPR that result in improper quantification.","page":6,"properties":{"document_id":"document:quantifying-orthogonal-barcodes-for-sequence-census-assays--2022-10-10-biorxiv","char_start":2111,"char_end":2259}}]},{"id":"connection:version:quantifying-orthogonal-barcodes-for-sequence-census-assays--2024-01-05-bioinformatics-advances--claim:version:quantifying-orthogonal-barcodes-for-sequence-census-assays--2024-01-05-bioinformatics-advances--summary-0","type":"claims","title":"Multimodal and perturbation assays increasingly depend on short orthogonal barcodes to connect sequencing reads with pro","description":"Multimodal and perturbation assays increasingly depend on short orthogonal barcodes to connect sequencing reads with proteins, samples, guides, and other features. Assay-specific tools and barcode design failures can introduce ambiguous assignment, runtime costs, and inconsistent processing across technologies. kITE uses kallisto/bustools mismatch-index pseudoalignment to quantify diverse barcode assays efficiently, and qcbc adds design diagnostics that expose shared subsequences, homopolymers, distance issues, and other error modes.","statement":"This publication contains the target grounded summary claim.","evidence":[{"source":"source:text:document:quantifying-orthogonal-barcodes-for-sequence-census-assays--2024-01-05-bioinformatics-advances","span":"Single-cell RNA sequencing assays rely on unique sequences of nucleotides (\"barcodes\") to associate sequences from mRNA molecules with individual cells. This strategy has been extended to quantify orthogonal biological or technical information in what is known as \"multimodal\" genomics.","page":1,"properties":{"document_id":"document:quantifying-orthogonal-barcodes-for-sequence-census-assays--2024-01-05-bioinformatics-advances","char_start":1707,"char_end":1993}},{"source":"source:text:document:quantifying-orthogonal-barcodes-for-sequence-census-assays--2024-01-05-bioinformatics-advances","span":"The processing of data from these assays has required the development of custom tools, resulting in a proliferation of application- and assay-specific software (Roelli et al. 2019, Johnson et al. 2023).","page":1,"properties":{"document_id":"document:quantifying-orthogonal-barcodes-for-sequence-census-assays--2024-01-05-bioinformatics-advances","char_start":2746,"char_end":2948}},{"source":"source:text:document:quantifying-orthogonal-barcodes-for-sequence-census-assays--2024-01-05-bioinformatics-advances","span":"We introduce a broadly applicable framework, which we term \"kITE\" for kallisto Indexing and Tag Extraction, for uniformly quantifying orthogonal barcode-based sequence census assays that has several advantages over assay-specific tools.","page":1,"properties":{"document_id":"document:quantifying-orthogonal-barcodes-for-sequence-census-assays--2024-01-05-bioinformatics-advances","char_start":2949,"char_end":3185}},{"source":"source:text:document:quantifying-orthogonal-barcodes-for-sequence-census-assays--2024-01-05-bioinformatics-advances","span":"We found high concordance with an average Pearson correlation of 0.99, for all three datasets, between kITE and CITE-seq-Count (Roelli et al. 2019), a tool for counting antibody tags from a CiteSeq or Cell Hashing experiments (Fig. 2g).","page":2,"properties":{"document_id":"document:quantifying-orthogonal-barcodes-for-sequence-census-assays--2024-01-05-bioinformatics-advances","char_start":1537,"char_end":1773}},{"source":"source:text:document:quantifying-orthogonal-barcodes-for-sequence-census-assays--2024-01-05-bioinformatics-advances","span":"qcbc computes multiple metrics for barcode quality control: 1) diversity of barcodes (subject to distance constraints) (Fig. 3a), 2) number of barcodes that share a subsequence of a given length (Fig. 3b), 3) distribution of Hamming distances between pairwise barcodes (Fig. 3c and d), 4) distribution of homopolymers of a given length (Fig. 3e), and 5) per position and barcode nucleotide distribution (Fig. 3f, Supplementary Fig. S7).","page":3,"properties":{"document_id":"document:quantifying-orthogonal-barcodes-for-sequence-census-assays--2024-01-05-bioinformatics-advances","char_start":1261,"char_end":1697}}]},{"id":"connection:claim:citation:version-citing-2023-universal-preprocessing-of-single-cell-genomics-data-cites-version-quantifying-orthogonal-barcodes-for-sequence-census-assays-2022-10-10-biorxiv-sina-8472ef4d4b--version:quantifying-orthogonal-barcodes-for-sequence-census-assays--2022-10-10-biorxiv","type":"citations","title":"Universal preprocessing of single-cell genomics data","description":"The paper presents cellatlas, a workflow for preprocessing diverse single-cell genomics data by using seqspec assay specifications to configure kb-python, kallisto, and bustools.","statement":"Cited for kITE as one of the tools combined with seqspec and kallisto bustools for preprocessing single-cell genomics assays.","evidence":[{"source":"source:pdf:document:cited-by--2023-universal-preprocessing-of-single-cell-genomics-data","span":"While several tools have been developed for preprocessing data from different single-cell RNA-seq assays (He et al. 2022; Battenberg et al. 2022; Melsted et al. 2021), we demonstrate that seqspec (Booeshaghi, Chen, and Pachter 2023), along with kallisto bustools (Melsted et al. 2021), kITE (Sina Booeshaghi et al. 2022) and snATAK (Sina Booeshaghi, Gao, and Pachter 2023), can in principle be used for preprocessing data from any single-cell genomics assay.","page":2,"properties":{"document_id":"document:cited-by--2023-universal-preprocessing-of-single-cell-genomics-data","char_start":null,"char_end":null}}]},{"id":"connection:version:quantifying-orthogonal-barcodes-for-sequence-census-assays--2024-01-05-bioinformatics-advances--work:quantifying-orthogonal-barcodes-for-sequence-census-assays","type":"versions","title":"Quantifying orthogonal barcodes for sequence census assays","description":"2024-01-05 · Bioinformatics Advances","statement":"2024-01-05 is a version of Quantifying orthogonal barcodes for sequence census assays.","evidence":[],"citation":{"doi":"10.1093/bioadv/vbad181","url":"https://doi.org/10.1093/bioadv/vbad181","date":"2024-01-05","venue":"Bioinformatics Advances","authors":[{"name":"A Sina Booeshaghi","orcid":"https://orcid.org/0000-0002-6442-4502"},{"name":"Kyung Hoi (Joseph) Min","orcid":"https://orcid.org/0000-0003-0894-4017"},{"name":"Jase Gehring","orcid":"https://orcid.org/0000-0002-3894-9495"},{"name":"Lior Pachter","orcid":"https://orcid.org/0000-0002-9164-6231"}]},"bibtex":"@article{Booeshaghi_2023,\n  TITLE     = {Quantifying orthogonal barcodes for sequence census assays},\n  VOLUME    = {4},\n  ISSN      = {2635-0041},\n  URL       = {http://dx.doi.org/10.1093/bioadv/vbad181},\n  DOI       = {10.1093/bioadv/vbad181},\n  NUMBER    = {1},\n  JOURNAL   = {Bioinformatics Advances},\n  PUBLISHER = {Oxford University Press (OUP)},\n  AUTHOR    = {Booeshaghi, A Sina and Min, Kyung Hoi (Joseph) and Gehring, Jase and Pachter, Lior},\n  EDITOR    = {Bateman, Alex},\n  YEAR      = {2023}\n}"},{"id":"connection:version:quantifying-orthogonal-barcodes-for-sequence-census-assays--2022-10-10-biorxiv--work:quantifying-orthogonal-barcodes-for-sequence-census-assays","type":"versions","title":"Quantifying orthogonal barcodes for sequence census assays","description":"2022-10-10 · bioRxiv","statement":"2022-10-10 is a version of Quantifying orthogonal barcodes for sequence census assays.","evidence":[],"citation":{"doi":"10.1101/2022.10.09.511501","url":"https://doi.org/10.1101/2022.10.09.511501","date":"2022-10-10","venue":"bioRxiv","authors":[{"name":"A. Sina Booeshaghi","orcid":"https://orcid.org/0000-0002-6442-4502"},{"name":"Kyung Hoi (Joseph) Min","orcid":"https://orcid.org/0000-0003-0894-4017"},{"name":"Jase Gehring","orcid":"https://orcid.org/0000-0002-3894-9495"},{"name":"Lior Pachter","orcid":"https://orcid.org/0000-0002-9164-6231"}]},"bibtex":"@article{Booeshaghi_2022,\n  TITLE     = {Quantifying orthogonal barcodes for sequence census assays},\n  URL       = {http://dx.doi.org/10.1101/2022.10.09.511501},\n  DOI       = {10.1101/2022.10.09.511501},\n  PUBLISHER = {openRxiv},\n  AUTHOR    = {Booeshaghi, A. Sina and Min, Kyung Hoi (Joseph) and Gehring, Jase and Pachter, Lior},\n  YEAR      = {2022}\n}"},{"id":"connection:document:quantifying-orthogonal-barcodes-for-sequence-census-assays--2022-10-10-biorxiv--version:quantifying-orthogonal-barcodes-for-sequence-census-assays--2022-10-10-biorxiv","type":"sources","title":"2022-10-10-biorxiv.pdf","description":"This source document provides local provenance for the target publication.","statement":"This source document provides local provenance for the target publication.","evidence":[]},{"id":"connection:document:quantifying-orthogonal-barcodes-for-sequence-census-assays--2024-01-05-bioinformatics-advances--version:quantifying-orthogonal-barcodes-for-sequence-census-assays--2024-01-05-bioinformatics-advances","type":"sources","title":"2024-01-05-bioinformatics-advances.pdf","description":"This source document provides local provenance for the target publication.","statement":"This source document provides local provenance for the target publication.","evidence":[]}]}</script>
+      <script src="../work-relations.js"></script>
     </article>
   </body>
 </html>

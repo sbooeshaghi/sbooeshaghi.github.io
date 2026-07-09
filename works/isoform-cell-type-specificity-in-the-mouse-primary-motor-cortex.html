@@ -17,77 +17,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="The proliferation of single-cell modalities necessitates computational techniques for integrative analysis. Using spatial, gene, and isoform single-cell RNA-sequencing, we validated an integration approach and applied it to produce the first-ever spatially-resolved isoform atlas of the mouse primary motor cortex as part of the BRAIN Initiative Cell Census Network (BICCN). Our results highlight the use of multiple RNA- seq modalities to describe the complex molecular composition of cell types in the brain and provide a reference for further functional analysis." />
+    <meta name="description" content="Isoform regulation is central to neuronal differentiation and disease, but most single-cell brain atlases collapse transcripts to gene-level counts. That gene-level view can miss cell-type-specific isoform switches and spatial patterns that matter for interpreting neuronal diversity. By linking SMART-seq isoform quantification with 10x cell-type assignments and MERFISH spatial data, the study builds a mouse MOp isoform atlas and identifies isoform markers, shifts, and regulatory programs hidden from gene-level analysis." />
     <link rel="stylesheet" href="../styles.css" />
-    
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        document.querySelectorAll(".copy-bibtex-button").forEach((button) => {
-          button.addEventListener("click", async () => {
-            const box = button.closest(".bibtex-box");
-            const code = box ? box.querySelector("code") : null;
-            const bibtex = code ? code.textContent : "";
-            const previousText = button.textContent;
-            const markStatus = (text) => {
-              button.textContent = text;
-              window.setTimeout(() => {
-                button.textContent = previousText;
-              }, 1200);
-            };
-            const copyWithSelection = () => {
-              const textarea = document.createElement("textarea");
-              textarea.value = bibtex;
-              textarea.setAttribute("readonly", "");
-              textarea.style.position = "fixed";
-              textarea.style.left = "0";
-              textarea.style.top = "0";
-              textarea.style.width = "1px";
-              textarea.style.height = "1px";
-              textarea.style.opacity = "0";
-              textarea.style.pointerEvents = "none";
-              document.body.appendChild(textarea);
-              textarea.focus({ preventScroll: true });
-              textarea.select();
-              textarea.setSelectionRange(0, textarea.value.length);
-              const copied = document.execCommand("copy");
-              textarea.remove();
-              return copied;
-            };
-
-            try {
-              if (navigator.clipboard && navigator.clipboard.writeText) {
-                await navigator.clipboard.writeText(bibtex);
-                markStatus("Copied");
-                return;
-              }
-
-              if (copyWithSelection()) {
-                markStatus("Copied");
-                return;
-              }
-            } catch {
-              let copied = false;
-
-              try {
-                copied = copyWithSelection();
-              } catch {
-                copied = false;
-              }
-
-              if (copied) {
-                markStatus("Copied");
-                return;
-              }
-            }
-
-            markStatus("Copy failed");
-          });
-        });
-      });
-    </script>
     <title>Isoform cell-type specificity in the mouse primary motor cortex | Works | Sina Booeshaghi</title>
   </head>
-  <body>
+  <body class="work-detail-page">
     <nav class="breadcrumb" aria-label="Breadcrumb">
       <a href="../index.html">Home</a>
       <span aria-hidden="true">/</span>
@@ -95,590 +29,71 @@
       <span aria-hidden="true">/</span>
       <span class="breadcrumb-current" title="Isoform cell-type specificity in the mouse primary motor cortex">Isoform cell-type specificity in the mouse primary motor cortex</span>
     </nav>
-    <article class="work-page">
-      <h1>Isoform cell-type specificity in the mouse primary motor cortex</h1>
-      <div class="publication-versions work-versions" aria-label="Work versions">
-        <span class="publication-versions-label">Versions</span>
-        <div class="publication-version-cards">
-          
-        <a
-          class="publication-version-link is-current"
-          href="https://doi.org/10.1038/s41586-021-03969-3"
-          target="_blank"
-          rel="noopener"
-        >
-          <span class="publication-version-title">Isoform cell-type specificity in the mouse primary motor cortex</span>
-          <span class="publication-version-detail">Nature · 2021-10-06</span>
-        </a>
+    <article class="work-page study-graph-page">
+      <section class="study-focus" aria-label="Selected work">
+        <div>
+          <h1>Isoform cell-type specificity in the mouse primary motor cortex</h1>
+          <p>Isoform regulation is central to neuronal differentiation and disease, but most single-cell brain atlases collapse transcripts to gene-level counts. That gene-level view can miss cell-type-specific isoform switches and spatial patterns that matter for interpreting neuronal diversity. By linking SMART-seq isoform quantification with 10x cell-type assignments and MERFISH spatial data, the study builds a mouse MOp isoform atlas and identifies isoform markers, shifts, and regulatory programs hidden from gene-level analysis.</p>
         </div>
-      </div>
-
-      <section>
-        <h2>Summary</h2>
-        <p>The proliferation of single-cell modalities necessitates computational techniques for integrative analysis. Using spatial, gene, and isoform single-cell RNA-sequencing, we validated an integration approach and applied it to produce the first-ever spatially-resolved isoform atlas of the mouse primary motor cortex as part of the BRAIN Initiative Cell Census Network (BICCN). Our results highlight the use of multiple RNA- seq modalities to describe the complex molecular composition of cell types in the brain and provide a reference for further functional analysis.</p>
+        <dl class="study-stats">
+          <div>
+            <dt>Citations</dt>
+            <dd>97</dd>
+          </div>
+          <div>
+            <dt>Relations</dt>
+            <dd>14</dd>
+          </div>
+        </dl>
       </section>
 
       
-      <section
-        class="authors-section"
-        data-author-version-count="1"
-      >
-        <h2>Authors</h2>
-        
-        <section
-          class="author-version"
-          data-author-count="7"
-        >
-          <h3>
-            <a href="https://doi.org/10.1038/s41586-021-03969-3" target="_blank" rel="noopener">Nature</a>
-            <time datetime="2021-10-06">2021-10-06</time>
-          </h3>
-          <ul class="author-list">
-            
-            <li><a href="https://orcid.org/0000-0002-6442-4502" target="_blank" rel="noopener" title="ORCID">A. Sina Booeshaghi</a></li>
-            <li><a href="https://orcid.org/0000-0002-9361-5607" target="_blank" rel="noopener" title="ORCID">Zizhen Yao</a></li>
-            <li><a href="https://orcid.org/0000-0001-5120-4546" target="_blank" rel="noopener" title="ORCID">Cindy van Velthoven</a></li>
-            <li><a href="https://orcid.org/0000-0002-3142-1970" target="_blank" rel="noopener" title="ORCID">Kimberly Smith</a></li>
-            <li><a href="https://orcid.org/0000-0002-6861-4506" target="_blank" rel="noopener" title="ORCID">Bosiljka Tasic</a></li>
-            <li><a href="https://orcid.org/0000-0002-0326-5878" target="_blank" rel="noopener" title="ORCID">Hongkui Zeng</a></li>
-            <li><a href="https://orcid.org/0000-0002-9164-6231" target="_blank" rel="noopener" title="ORCID">Lior Pachter</a></li>
-          </ul>
-        </section>
-      </section>
-
-      <section>
-        <h2>BibTeX</h2>
-        
-        <section class="bibtex-entry">
-          <h3>Nature</h3>
-          <div class="bibtex-box">
-            <button
-              class="copy-bibtex-button"
-              type="button"
-              aria-label="Copy BibTeX for Nature"
-            >
-              Copy BibTeX
-            </button>
-            <pre><code>@article{Booeshaghi_2021,
-  TITLE     = {Isoform cell-type specificity in the mouse primary motor cortex},
-  VOLUME    = {598},
-  ISSN      = {1476-4687},
-  URL       = {http://dx.doi.org/10.1038/s41586-021-03969-3},
-  DOI       = {10.1038/s41586-021-03969-3},
-  NUMBER    = {7879},
-  JOURNAL   = {Nature},
-  PUBLISHER = {Springer Science and Business Media LLC},
-  AUTHOR    = {Booeshaghi, A. Sina and Yao, Zizhen and van Velthoven, Cindy and Smith, Kimberly and Tasic, Bosiljka and Zeng, Hongkui and Pachter, Lior},
-  YEAR      = {2021},
-  PAGES     = {195-199}
-}</code></pre>
+      <section class="relationship-inspector" aria-label="Indexed relations" data-work-relations>
+        <section class="relationship-list-panel" aria-label="Relations">
+          <div class="study-section-heading">
+            <h2>Relations</h2>
           </div>
+          <div
+            class="relation-tabs"
+            role="tablist"
+            aria-label="Relation types"
+            data-relation-tabs
+          ></div>
+          <div class="reason-list" data-relation-list></div>
         </section>
-      </section>
 
-      <section>
-        <h2>Citing Works</h2>
-        <p class="citation-source-note">
-          97 citing works found in citation data generated 2026-07-06. Citation relationships are sourced from OpenAlex, Semantic Scholar, Google Scholar.
-        </p>
-        <table class="citation-table">
-          <thead>
-            <tr>
-              <th>Title</th>
-              <th>Year</th>
-              <th>Summary</th>
-            </tr>
-          </thead>
-          <tbody>
-            
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1016/j.gde.2026.102497" target="_blank" rel="noopener">Beyond the gene: isoform diversity as a key contributor to human brain disorders</a></td>
-              <td class="citation-year"><time datetime="2026">2026</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1038/s41587-025-02965-6" target="_blank" rel="noopener">Mapping isoforms and regulatory mechanisms from spatial transcriptomics data with SPLISOSM</a></td>
-              <td class="citation-year"><time datetime="2026">2026</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1038/s41586-026-10118-1" target="_blank" rel="noopener">Single-cell and isoform-specific translational profiling of the mouse brain</a></td>
-              <td class="citation-year"><time datetime="2026">2026</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1093/bioinformatics/btag075" target="_blank" rel="noopener">umite: fast quantification of Smart-seq3 libraries with improved UMI retrieval</a></td>
-              <td class="citation-year"><time datetime="2026">2026</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include booeshaghi, coverage, daugelaite, experiments, foerster, hagemann-jensen, higher, index.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1002/imt2.70084" target="_blank" rel="noopener">A comprehensive benchmarking for spatially resolved transcriptomics clustering methods across variable technologies, organs, and replicates</a></td>
-              <td class="citation-year"><time datetime="2025">2025</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include caltech, cortex, downloaded, dzqt6ryytmjbgyai356s1z0phtnsbaol, https, merfish, motor, mouse.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/2025.05.02.651907" target="_blank" rel="noopener">A computational framework for mapping isoform landscape and regulatory mechanisms from spatial transcriptomics data</a></td>
-              <td class="citation-year"><time datetime="2025">2025</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include 40-42, advantages, agnostic, approach, cell-type, challenging, complementing, contexts.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1002/smtd.202401171" target="_blank" rel="noopener">Advances in Spatial Omics Technologies</a></td>
-              <td class="citation-year"><time datetime="2025">2025</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.64898/2025.12.30.697080" target="_blank" rel="noopener">Aging-associated alternative splicing programs conserved between human and mouse tissues</a></td>
-              <td class="citation-year"><time datetime="2025">2025</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1038/s41467-025-58293-5" target="_blank" rel="noopener">Alternative splicing across the C. elegans nervous system</a></td>
-              <td class="citation-year"><time datetime="2025">2025</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include examined, level, nervous, organisms, single-cell, studies, system, tissue.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.64898/2025.12.08.693027" target="_blank" rel="noopener">IsoformSwitchAnalyzeR v2: Analysis of Functional Isoform Changes in Long-read and Single-cell Sequencing Data</a></td>
-              <td class="citation-year"><time datetime="2025">2025</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include isoforms, single-cell, along, analysis, cannot, current, datasets, discovering.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1093/g3journal/jkaf052" target="_blank" rel="noopener">Mutations in the microexon splicing regulator srrm4 have minor phenotypic effects on zebrafish neural development</a></td>
-              <td class="citation-year"><time datetime="2025">2025</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.3389/fnmol.2025.1716825" target="_blank" rel="noopener">One RNA-binding protein, many decisions: integrating the transcript life cycle into neuronal regulation</a></td>
-              <td class="citation-year"><time datetime="2025">2025</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1038/s42003-025-07850-1" target="_blank" rel="noopener">Perturbations in the microbiota-gut-brain axis shaped by social status loss</a></td>
-              <td class="citation-year"><time datetime="2025">2025</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1186/s13059-025-03744-x" target="_blank" rel="noopener">Predicting the structural impact of human alternative splicing</a></td>
-              <td class="citation-year"><time datetime="2025">2025</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include contexts, different, differential, expression, isoform, scrna-seq, transcript, usage.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1016/j.celrep.2025.115898" target="_blank" rel="noopener">Reverse engineering neuron-type-specific and type-orthogonal splicing-regulatory networks using diverse cellular transcriptomes</a></td>
-              <td class="citation-year"><time datetime="2025">2025</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include elavl2, inclusion, activated, adult, esc-mge, figure, higher, interneurons.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1038/s41380-025-03088-9" target="_blank" rel="noopener">Single-cell transcriptomics reveals Sox6 positive interneurons enriched in the prefrontal cortex of female mice vulnerable to chronic social stress</a></td>
-              <td class="citation-year"><time datetime="2025">2025</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include annotated, astrocytes, cells, csf3r, cx3cr1, excitatory, expressions, hs3st4.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1093/brain/awaf060" target="_blank" rel="noopener">Single-nucleus transcriptome atlas of the basal forebrain reveals diverse ageing-related pathways</a></td>
-              <td class="citation-year"><time datetime="2025">2025</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include neurons, basal, comprises, excitatory, forebrain, however, inhibitory, lower.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1016/j.cub.2025.04.014" target="_blank" rel="noopener">The cellular substrate of evolutionary novelty</a></td>
-              <td class="citation-year"><time datetime="2025">2025</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/2024.03.23.586412" target="_blank" rel="noopener">A human commons cell atlas reveals cell type specificity for OAS1 isoforms</a></td>
-              <td class="citation-year"><time datetime="2024">2024</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include methods, booeshaghi, expression, profiles, cell-types, concordance, counts, genes.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1016/j.neures.2024.09.003" target="_blank" rel="noopener">Adaptive circuits for action and value information in rodent operant learning</a></td>
-              <td class="citation-year"><time datetime="2024">2024</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include region, booeshaghi, brain, classified, diverse, expression, neurons, patterns.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/2024.03.23.586413" target="_blank" rel="noopener">Algorithms for a Commons Cell Atlas</a></td>
-              <td class="citation-year"><time datetime="2024">2024</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include analyses, analysis, booeshaghi, furthermore, gene-level, gorin, isoform-level, joglekar.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/2024.05.16.594567" target="_blank" rel="noopener">Alternative splicing across the C. elegans nervous system</a></td>
-              <td class="citation-year"><time datetime="2024">2024</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1073/pnas.2320064121" target="_blank" rel="noopener">Decoding transcriptomic signatures of cysteine string protein alpha–mediated synapse maintenance</a></td>
-              <td class="citation-year"><time datetime="2024">2024</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1126/science.adh7688" target="_blank" rel="noopener">Developmental isoform diversity in the human neocortex informs neuropsychiatric risk mechanisms</a></td>
-              <td class="citation-year"><time datetime="2024">2024</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include across, adult, brain, different, disorders, expression, genes, implications.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/2024.11.02.621624" target="_blank" rel="noopener">Generalized cell phenotyping for spatial proteomics with language-informed vision models</a></td>
-              <td class="citation-year"><time datetime="2024">2024</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include latent, space, allowed, approach, effective, model, organization, overfitting.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1165/rcmb.2024-0166ed" target="_blank" rel="noopener">Long Story Short: Understanding Isoform-Specific Expression of FAM13A</a></td>
-              <td class="citation-year"><time datetime="2024">2024</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include expression, biology, cell-line, completely, critical, demonstrating, further, investigation.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1186/s12943-024-01941-z" target="_blank" rel="noopener">Mapping cancer biology in space: applications and perspectives on spatial omics for oncology</a></td>
-              <td class="citation-year"><time datetime="2024">2024</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include actively, analysis, barcoding, based, capturing, conducted, counts, depth.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/2024.11.29.626094" target="_blank" rel="noopener">Mutations in the microexon splicing regulator srrm4 have minor phenotypic effects on zebrafish neural development</a></td>
-              <td class="citation-year"><time datetime="2024">2024</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/2024.06.13.597128" target="_blank" rel="noopener">Reverse engineering neuron type-specific and type-orthogonal splicing-regulatory networks using single-cell transcriptomes</a></td>
-              <td class="citation-year"><time datetime="2024">2024</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include elavl2, inclusion, 31-33, adult, agreement, catalog, esc-mge, figure.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1016/j.xgen.2024.100723" target="_blank" rel="noopener">scTrends: A living review of commercial single-cell and spatial &#39;omic technologies</a></td>
-              <td class="citation-year"><time datetime="2024">2024</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1038/s41593-024-01616-4" target="_blank" rel="noopener">Single-cell long-read sequencing-based mapping reveals specialized splicing patterns in developing and adult mouse and human brain</a></td>
-              <td class="citation-year"><time datetime="2024">2024</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1093/bioinformatics/btae253" target="_blank" rel="noopener">SPRITE: improving spatial gene expression imputation with gene and cell networks</a></td>
-              <td class="citation-year"><time datetime="2024">2024</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include booeshaghi, gyllborg, joglekar, lohoff, nitzan, compiled, earlier, hodge.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/2024.01.31.578269" target="_blank" rel="noopener">SPRITE: improving spatial gene expression imputation with gene and cell networks</a></td>
-              <td class="citation-year"><time datetime="2024">2024</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.7554/elife.87517.2" target="_blank" rel="noopener">Statistical analysis supports pervasive RNA subcellular localization and alternative 3&#39; UTR regulation</a></td>
-              <td class="citation-year"><time datetime="2024">2024</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1007/978-1-0716-3742-5_9" target="_blank" rel="noopener">Studying the Role of Astrocytes at Synapses Using Single-Cell Transcriptomics</a></td>
-              <td class="citation-year"><time datetime="2024">2024</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1038/s41592-024-02184-y" target="_blank" rel="noopener">TISSUE: uncertainty-calibrated prediction of single-cell spatial transcriptomics improves downstream analyses</a></td>
-              <td class="citation-year"><time datetime="2024">2024</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include chromium, datasets, drop-seq, organism, paired, regions, rnaseq, single-cell.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1371/journal.pbio.3002133" target="_blank" rel="noopener">A guide to the BRAIN Initiative Cell Census Network data ecosystem</a></td>
-              <td class="citation-year"><time datetime="2023">2023</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include across, addressing, analysis, biccn, collaborative, highly, laboratories, modalities.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/2023.03.13.532412" target="_blank" rel="noopener">Analysis of RNA processing directly from spatial transcriptomics data reveals previously unknown regulation</a></td>
-              <td class="citation-year"><time datetime="2023">2023</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include algorithmically, booeshaghi, full-length-coverage, integration, joglekar, lebrigand, locations, long-read.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.7554/elife.87211.1" target="_blank" rel="noopener">Analysis of RNA processing directly from spatial transcriptomics data reveals previously unknown regulation</a></td>
-              <td class="citation-year"><time datetime="2023">2023</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.7554/elife.87211" target="_blank" rel="noopener">Analysis of RNA processing directly from spatial transcriptomics data reveals previously unknown regulation</a></td>
-              <td class="citation-year"><time datetime="2023">2023</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1038/s41583-023-00677-x" target="_blank" rel="noopener">Basal forebrain cholinergic signalling: development, connectivity and roles in cognition</a></td>
-              <td class="citation-year"><time datetime="2023">2023</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/2023.01.13.523995" target="_blank" rel="noopener">Biophysical modeling with variational autoencoders for bimodal, single-cell RNA sequencing data</a></td>
-              <td class="citation-year"><time datetime="2023">2023</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1038/s41592-024-02365-9" target="_blank" rel="noopener">Biophysical modeling with variational autoencoders for bimodal, single-cell RNA sequencing data</a></td>
-              <td class="citation-year"><time datetime="2023">2023</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/2023.10.02.560611" target="_blank" rel="noopener">Decoding transcriptomic signatures of Cysteine String Protein alpha-mediated synapse maintenance</a></td>
-              <td class="citation-year"><time datetime="2023">2023</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include cells, neurons, oligodendrocytes, 32-34, astro, astrocytes, clustering, cortical.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/2023.01.24.525264" target="_blank" rel="noopener">Delineating genotypes and phenotypes of individual cells from long-read single cell transcriptomes</a></td>
-              <td class="citation-year"><time datetime="2023">2023</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/2023.03.25.534016" target="_blank" rel="noopener">Developmental isoform diversity in the human neocortex informs neuropsychiatric risk mechanisms</a></td>
-              <td class="citation-year"><time datetime="2023">2023</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1186/s12915-023-01724-w" target="_blank" rel="noopener">Expression and splicing mediate distinct biological signals</a></td>
-              <td class="citation-year"><time datetime="2023">2023</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include splicing, novel, types, analysis, analyze, datasets, defining, essential.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1080/21541264.2023.2213514" target="_blank" rel="noopener">From words to complete phrases: insight into single-cell isoforms using short and long reads</a></td>
-              <td class="citation-year"><time datetime="2023">2023</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include sequencing, short-read, thousands, achieved, barcoded, booeshaghi, cdnas, cells.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1073/pnas.2217868120" target="_blank" rel="noopener">Generation and analysis of context-specific genome-scale metabolic models derived from single-cell RNA-Seq data</a></td>
-              <td class="citation-year"><time datetime="2023">2023</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include assess, available, context-specific, cortex, dataset, deeply, different, generated.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1038/s41467-023-39813-7" target="_blank" rel="noopener">High throughput single cell long-read sequencing analyses of same-cell genotypes and phenotypes in human tumors</a></td>
-              <td class="citation-year"><time datetime="2023">2023</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1002/advs.202305449" target="_blank" rel="noopener">Mapping Cell Atlases at the Single‐Cell Level</a></td>
-              <td class="citation-year"><time datetime="2023">2023</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.3390/ijms241512153" target="_blank" rel="noopener">New Approach for Studying of Isoforms and High-Homology Proteins in Mammalian Cells</a></td>
-              <td class="citation-year"><time datetime="2023">2023</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/2023.12.21.572928" target="_blank" rel="noopener">Predicting the Structural Impact of Human Alternative Splicing</a></td>
-              <td class="citation-year"><time datetime="2023">2023</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include contexts, different, differential, expression, isoform, scrna-seq, transcript, usage.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1038/s41592-023-02003-w" target="_blank" rel="noopener">Recovery of missing single-cell RNA-sequencing data with optimized transcriptomic references</a></td>
-              <td class="citation-year"><time datetime="2023">2023</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include across, alternative, cell-type-specific, findings, important, light, manner, mapping.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1038/s41586-023-06805-y" target="_blank" rel="noopener">Single-cell DNA methylome and 3D multi-omic atlas of the adult mouse brain</a></td>
-              <td class="citation-year"><time datetime="2023">2023</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/2023.04.16.536509" target="_blank" rel="noopener">Single-cell DNA Methylome and 3D Multi-omic Atlas of the Adult Mouse Brain</a></td>
-              <td class="citation-year"><time datetime="2023">2023</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/2023.04.02.535281" target="_blank" rel="noopener">Single-cell long-read mRNA isoform regulation is pervasive across mammalian brain regions, cell types, and development</a></td>
-              <td class="citation-year"><time datetime="2023">2023</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1038/s12276-023-01093-y" target="_blank" rel="noopener">Spatial transcriptomics in neuroscience</a></td>
-              <td class="citation-year"><time datetime="2023">2023</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include merfish, mouse, spatial, brain, genes, isoform, types, allowed.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1002/advs.202206939" target="_blank" rel="noopener">Spatial Transcriptomics: Technical Aspects of Recent Developments and Their Applications in Neuroscience and Cancer Research</a></td>
-              <td class="citation-year"><time datetime="2023">2023</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1016/j.jgg.2023.03.011" target="_blank" rel="noopener">Spatially resolved transcriptomics: a comprehensive review of their technological advances, applications, and challenges</a></td>
-              <td class="citation-year"><time datetime="2023">2023</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1093/nar/gkad955" target="_blank" rel="noopener">STAB2: an updated spatio-temporal cell atlas of the human and mouse brain</a></td>
-              <td class="citation-year"><time datetime="2023">2023</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.7554/elife.87517" target="_blank" rel="noopener">Statistical analysis supports pervasive RNA subcellular localization and alternative 3&#39; UTR regulation</a></td>
-              <td class="citation-year"><time datetime="2023">2023</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.7554/elife.87517.1" target="_blank" rel="noopener">Statistical analysis supports pervasive RNA subcellular localization and alternative 3’ UTR regulation</a></td>
-              <td class="citation-year"><time datetime="2023">2023</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1038/s41380-023-02017-y" target="_blank" rel="noopener">The gut microbiome modulates the transformation of microglial subtypes</a></td>
-              <td class="citation-year"><time datetime="2023">2023</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include annotated, based, expression, genes, major, marker, regions, types.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/2023.04.25.538326" target="_blank" rel="noopener">TISSUE: uncertainty-calibrated prediction of single-cell spatial transcriptomics improves downstream analyses</a></td>
-              <td class="citation-year"><time datetime="2023">2023</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/2023.09.14.543267" target="_blank" rel="noopener">Universal preprocessing of single-cell genomics data</a></td>
-              <td class="citation-year"><time datetime="2023">2023</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/2022.09.28.509825" target="_blank" rel="noopener">A global view of aging and Alzheimer’s pathogenesis-associated cell population dynamics and molecular signatures in the human and mouse brains</a></td>
-              <td class="citation-year"><time datetime="2022">2022</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1038/s41467-022-29497-w" target="_blank" rel="noopener">acorde unravels functionally interpretable networks of isoform co-usage from single cell data</a></td>
-              <td class="citation-year"><time datetime="2022">2022</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://www.semanticscholar.org/paper/a7a99dd1e2fc9cdc59f834d969de12841619a29d" target="_blank" rel="noopener">analysis supports pervasive RNA subcellular localization and alternative 3’ UTR regulation.</a></td>
-              <td class="citation-year"><time datetime="2022">2022</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1038/s41592-022-01480-9" target="_blank" rel="noopener">Benchmarking spatial and single-cell transcriptomics integration methods for transcript distribution prediction and cell type deconvolution</a></td>
-              <td class="citation-year"><time datetime="2022">2022</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/2022.09.08.506493" target="_blank" rel="noopener">Cocaine addiction-like behaviors are associated with long-term changes in gene regulation, energy metabolism, and GABAergic inhibition within the amygdala</a></td>
-              <td class="citation-year"><time datetime="2022">2022</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/2022.04.26.489449" target="_blank" rel="noopener">Enhanced recovery of single-cell RNA-sequencing reads for missing gene expression data</a></td>
-              <td class="citation-year"><time datetime="2022">2022</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/cshperspect.a039099" target="_blank" rel="noopener">Epigenetic Mechanisms of Brain Sexual Differentiation</a></td>
-              <td class="citation-year"><time datetime="2022">2022</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/2022.08.29.505720" target="_blank" rel="noopener">Expression and Splicing Mediate Distinct Biological Signals</a></td>
-              <td class="citation-year"><time datetime="2022">2022</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1152/jn.00424.2022" target="_blank" rel="noopener">Glutamatergic neurons in lateral hypothalamus play a vital role in acupuncture preconditioning to alleviate MIRI</a></td>
-              <td class="citation-year"><time datetime="2022">2022</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1038/s41467-022-34857-7" target="_blank" rel="noopener">Interpretable and tractable models of transcriptional noise for the rational design of single-molecule quantification experiments</a></td>
-              <td class="citation-year"><time datetime="2022">2022</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1016/j.bpr.2022.100097" target="_blank" rel="noopener">Length biases in single-cell RNA sequencing of pre-mRNA</a></td>
-              <td class="citation-year"><time datetime="2022">2022</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include generated, analyzed, atlas, biological, brain, datasets, differential, eight.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1021/acs.chemrev.2c00212" target="_blank" rel="noopener">Microfluidics for Neuronal Cell and Circuit Engineering</a></td>
-              <td class="citation-year"><time datetime="2022">2022</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/2022.05.06.490859" target="_blank" rel="noopener">Normalization for sampled count data</a></td>
-              <td class="citation-year"><time datetime="2022">2022</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1371/journal.pcbi.1010492" target="_blank" rel="noopener">RNA velocity unraveled</a></td>
-              <td class="citation-year"><time datetime="2022">2022</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/2022.02.12.480214" target="_blank" rel="noopener">RNA velocity unraveled</a></td>
-              <td class="citation-year"><time datetime="2022">2022</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.7554/elife.73520" target="_blank" rel="noopener">Robust and annotation-free analysis of alternative splicing across diverse cell types in mice</a></td>
-              <td class="citation-year"><time datetime="2022">2022</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1111/apha.13848" target="_blank" rel="noopener">Single cell‐ and spatial ‘Omics revolutionize physiology</a></td>
-              <td class="citation-year"><time datetime="2022">2022</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.3389/fcell.2022.822934" target="_blank" rel="noopener">Single-Cell Transcriptomics Reveals Splicing Features of Adult Neural Stem Cells in the Subventricular Zone</a></td>
-              <td class="citation-year"><time datetime="2022">2022</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include booeshaghi, cell-type-specific, cells, gupta, karlsson, linnarsson, motor, mouse.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1016/j.tig.2022.03.016" target="_blank" rel="noopener">Singling out motor neurons in the age of single-cell transcriptomics</a></td>
-              <td class="citation-year"><time datetime="2022">2022</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1038/s41467-022-34824-2" target="_blank" rel="noopener">Spatially resolved proteomics via tissue expansion</a></td>
-              <td class="citation-year"><time datetime="2022">2022</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include association, brain, expression, however, literature, reporting, studies, stxbp2.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/2022.10.26.513902" target="_blank" rel="noopener">Statistical analysis supports pervasive RNA subcellular localization and alternative 3’ UTR regulation</a></td>
-              <td class="citation-year"><time datetime="2022">2022</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include booeshaghi, called, correlated, coupled, genes, identify, length, localization.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/2022.10.26.513573" target="_blank" rel="noopener">The BRAIN Initiative Cell Census Network Data Ecosystem: A User’s Guide</a></td>
-              <td class="citation-year"><time datetime="2022">2022</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include biccn, types, defined, highly, network, neuron, velthoven, across.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1016/j.cell.2022.06.031" target="_blank" rel="noopener">What is a cell type and how to define it?</a></td>
-              <td class="citation-year"><time datetime="2022">2022</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1016/j.ydbio.2021.06.005" target="_blank" rel="noopener">A single-cell guide to retinal development: Cell fate decisions of multipotent retinal progenitors in scRNA-seq</a></td>
-              <td class="citation-year"><time datetime="2021">2021</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include ability, across, aligners, available, booeshaghi, capture, continued, details.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/2021.05.07.441841" target="_blank" rel="noopener">Acorde: unraveling functionally-interpretable networks of isoform co-usage from single cell data</a></td>
-              <td class="citation-year"><time datetime="2021">2021</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.7554/elife.63930" target="_blank" rel="noopener">An in vitro stem cell model of human epiblast and yolk sac interaction</a></td>
-              <td class="citation-year"><time datetime="2021">2021</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/2021.04.27.441683" target="_blank" rel="noopener">Robust and annotation-free analysis of alternative splicing across diverse cell types in mice</a></td>
-              <td class="citation-year"><time datetime="2021">2021</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/2021.12.03.471115" target="_blank" rel="noopener">TRAWLING: a Transcriptome Reference Aware of spLIciNG events</a></td>
-              <td class="citation-year"><time datetime="2021">2021</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/2020.12.12.422514" target="_blank" rel="noopener">Isoform-specific regulation of rhythmic gene expression by alternative polyadenylation</a></td>
-              <td class="citation-year"><time datetime="2020">2020</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include isoforms, booeshaghi, contributes, differential, figure, lianoglou, liver, moderately.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://www.semanticscholar.org/paper/540ebbec703884433d894a4f3504ba66fb20c8e3" target="_blank" rel="noopener">Monod : mechanistic analysis of single-cell RNA sequencing count data</a></td>
-              <td class="citation-year"></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://www.semanticscholar.org/paper/f690e94c757ba6af58366f05b1bcdaa1a37bfc4c" target="_blank" rel="noopener">Robust and annotation-free analysis 1 of alternative splicing across diverse 2 cell types in mice 3</a></td>
-              <td class="citation-year"></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include biccn, cortex, expression, booeshaghi, coverage, motor, mouse, muris.</td>
-            </tr>
-          </tbody>
-        </table>
+        <aside class="evidence-panel relationship-detail" aria-live="polite">
+          <span class="study-label" data-relation-label>Relation</span>
+          <h2 data-relation-title></h2>
+          <p class="selected-relation-statement" data-relation-statement></p>
+          <section class="version-citation" data-version-citation hidden>
+            <h3>Citation</h3>
+            <div class="bibtex-box">
+              <button class="copy-bibtex-button" type="button" data-copy-bibtex>
+                Copy BibTeX
+              </button>
+              <pre><code data-bibtex-code></code></pre>
+            </div>
+          </section>
+          <details class="relationship-evidence" data-relation-evidence>
+            <summary>
+              <span>Evidence</span>
+              <span class="evidence-summary" data-evidence-summary></span>
+            </summary>
+            <table class="relationship-evidence-table">
+              <thead>
+                <tr>
+                  <th>Span</th>
+                  <th>Source</th>
+                </tr>
+              </thead>
+              <tbody data-evidence-rows></tbody>
+            </table>
+          </details>
+        </aside>
       </section>
+      <script id="workRelationData" type="application/json">{"work":{"id":"work:isoform-cell-type-specificity-in-the-mouse-primary-motor-cortex","title":"Isoform cell-type specificity in the mouse primary motor cortex","description":"Isoform regulation is central to neuronal differentiation and disease, but most single-cell brain atlases collapse transcripts to gene-level counts. That gene-level view can miss cell-type-specific isoform switches and spatial patterns that matter for interpreting neuronal diversity. By linking SMART-seq isoform quantification with 10x cell-type assignments and MERFISH spatial data, the study builds a mouse MOp isoform atlas and identifies isoform markers, shifts, and regulatory programs hidden from gene-level analysis."},"relationTypes":[{"id":"authors","label":"Authors"},{"id":"claims","label":"Claims"},{"id":"citations","label":"Citations"},{"id":"versions","label":"Versions"},{"id":"software","label":"Software"},{"id":"sources","label":"Sources"}],"connections":[{"id":"connection:version:isoform-cell-type-specificity-in-the-mouse-primary-motor-cortex--2021-10-06-nature--person:orcid:0000-0002-6442-4502--author-1","type":"authors","title":"A. Sina Booeshaghi","description":"A. Sina Booeshaghi is an author of Isoform cell-type specificity in the mouse primary motor cortex.","statement":"A. Sina Booeshaghi is an author of Isoform cell-type specificity in the mouse primary motor cortex.","evidence":[]},{"id":"connection:version:isoform-cell-type-specificity-in-the-mouse-primary-motor-cortex--2021-10-06-nature--person:orcid:0000-0002-9361-5607--author-2","type":"authors","title":"Zizhen Yao","description":"Zizhen Yao is an author of Isoform cell-type specificity in the mouse primary motor cortex.","statement":"Zizhen Yao is an author of Isoform cell-type specificity in the mouse primary motor cortex.","evidence":[]},{"id":"connection:version:isoform-cell-type-specificity-in-the-mouse-primary-motor-cortex--2021-10-06-nature--person:orcid:0000-0001-5120-4546--author-3","type":"authors","title":"Cindy van Velthoven","description":"Cindy van Velthoven is an author of Isoform cell-type specificity in the mouse primary motor cortex.","statement":"Cindy van Velthoven is an author of Isoform cell-type specificity in the mouse primary motor cortex.","evidence":[]},{"id":"connection:version:isoform-cell-type-specificity-in-the-mouse-primary-motor-cortex--2021-10-06-nature--person:orcid:0000-0002-3142-1970--author-4","type":"authors","title":"Kimberly Smith","description":"Kimberly Smith is an author of Isoform cell-type specificity in the mouse primary motor cortex.","statement":"Kimberly Smith is an author of Isoform cell-type specificity in the mouse primary motor cortex.","evidence":[]},{"id":"connection:version:isoform-cell-type-specificity-in-the-mouse-primary-motor-cortex--2021-10-06-nature--person:orcid:0000-0002-6861-4506--author-5","type":"authors","title":"Bosiljka Tasic","description":"Bosiljka Tasic is an author of Isoform cell-type specificity in the mouse primary motor cortex.","statement":"Bosiljka Tasic is an author of Isoform cell-type specificity in the mouse primary motor cortex.","evidence":[]},{"id":"connection:version:isoform-cell-type-specificity-in-the-mouse-primary-motor-cortex--2021-10-06-nature--person:orcid:0000-0002-0326-5878--author-6","type":"authors","title":"Hongkui Zeng","description":"Hongkui Zeng is an author of Isoform cell-type specificity in the mouse primary motor cortex.","statement":"Hongkui Zeng is an author of Isoform cell-type specificity in the mouse primary motor cortex.","evidence":[]},{"id":"connection:version:isoform-cell-type-specificity-in-the-mouse-primary-motor-cortex--2021-10-06-nature--person:orcid:0000-0002-9164-6231--author-7","type":"authors","title":"Lior Pachter","description":"Lior Pachter is an author of Isoform cell-type specificity in the mouse primary motor cortex.","statement":"Lior Pachter is an author of Isoform cell-type specificity in the mouse primary motor cortex.","evidence":[]},{"id":"connection:version:isoform-cell-type-specificity-in-the-mouse-primary-motor-cortex--2021-10-06-nature--claim:version:isoform-cell-type-specificity-in-the-mouse-primary-motor-cortex--2021-10-06-nature--summary-0","type":"claims","title":"Isoform regulation is central to neuronal differentiation and disease, but most single-cell brain atlases collapse trans","description":"Isoform regulation is central to neuronal differentiation and disease, but most single-cell brain atlases collapse transcripts to gene-level counts. That gene-level view can miss cell-type-specific isoform switches and spatial patterns that matter for interpreting neuronal diversity. By linking SMART-seq isoform quantification with 10x cell-type assignments and MERFISH spatial data, the study builds a mouse MOp isoform atlas and identifies isoform markers, shifts, and regulatory programs hidden from gene-level analysis.","statement":"This publication contains the target grounded summary claim.","evidence":[{"source":"source:text:document:isoform-cell-type-specificity-in-the-mouse-primary-motor-cortex--2021-10-06-nature","span":"Transcriptional and post-transcriptional control of individual isoforms of genes is crucial for neuronal differentiation4–8, and isoforms of genes have been shown to be specific to cell types in mouse and human brains9–14.","page":1,"properties":{"document_id":"document:isoform-cell-type-specificity-in-the-mouse-primary-motor-cortex--2021-10-06-nature","char_start":1425,"char_end":1647}},{"source":"source:text:document:isoform-cell-type-specificity-in-the-mouse-primary-motor-cortex--2021-10-06-nature","span":"Nevertheless, current single-cell studies aiming to characterize cell types in the brain using single-cell RNA sequencing (scRNA-seq) have relied mostly on gene-level analysis.","page":1,"properties":{"document_id":"document:isoform-cell-type-specificity-in-the-mouse-primary-motor-cortex--2021-10-06-nature","char_start":1913,"char_end":2089}},{"source":"source:text:document:isoform-cell-type-specificity-in-the-mouse-primary-motor-cortex--2021-10-06-nature","span":"Here, in a comprehensive analysis of 6,160 mouse primary motor cortex cells assayed with SMART-seq, 280,327 cells assayed with MERFISH2 and 94,162 cells assayed with 10x Genomics sequencing3, we find examples of isoform specificity in cell types—including isoform shifts between cell types that are masked in gene-level analysis—as well as examples of transcriptional regulation.","page":1,"properties":{"document_id":"document:isoform-cell-type-specificity-in-the-mouse-primary-motor-cortex--2021-10-06-nature","char_start":716,"char_end":1095}},{"source":"source:text:document:isoform-cell-type-specificity-in-the-mouse-primary-motor-cortex--2021-10-06-nature","span":"At the cluster level, we found 923 isoforms from 823 genes exhibiting isoform shifts among the 48 clusters passing filter despite constant gene abundance (Supplementary Table 3).","page":3,"properties":{"document_id":"document:isoform-cell-type-specificity-in-the-mouse-primary-motor-cortex--2021-10-06-nature","char_start":2719,"char_end":2897}},{"source":"source:text:document:isoform-cell-type-specificity-in-the-mouse-primary-motor-cortex--2021-10-06-nature","span":"Our spatially resolved isoform atlas of the mouse MOp expands on previously identified gene markers, extending the catalogue to isoform markers for cell types characterized by the BICCN22.","page":5,"properties":{"document_id":"document:isoform-cell-type-specificity-in-the-mouse-primary-motor-cortex--2021-10-06-nature","char_start":11,"char_end":199}}]},{"id":"connection:claim:citation:version-citing-2023-a-guide-to-the-brain-initiative-cell-census-network-data-ecosystem-cites-version-isoform-cell-type-specificity-in-the-mouse-primary-motor-cortex-2021-12e017a3c9--version:isoform-cell-type-specificity-in-the-mouse-primary-motor-cortex--2021-10-06-nature","type":"citations","title":"A guide to the BRAIN Initiative Cell Census Network data ecosystem","description":"The paper guides readers through BICCN cellular and spatial approaches, data access, resources, and the BCDC-managed data ecosystem.","statement":"Cited in describing BICCN collaboration on multimodal analysis and cell type reproducibility.","evidence":[{"source":"source:pdf:document:cited-by--2023-a-guide-to-the-brain-initiative-cell-census-network-data-ecosystem","span":"BICCN has a highly collaborative network for addressing multimodal analysis and cell type reproducibility across modalities and laboratories [7,36] (Fig 4D).","page":10,"properties":{"document_id":"document:cited-by--2023-a-guide-to-the-brain-initiative-cell-census-network-data-ecosystem","char_start":null,"char_end":null}}]},{"id":"connection:claim:citation:version-citing-2023-universal-preprocessing-of-single-cell-genomics-data-cites-version-isoform-cell-type-specificity-in-the-mouse-primary-motor-cortex-2021-10-06-nature-f6170fbb0f--version:isoform-cell-type-specificity-in-the-mouse-primary-motor-cortex--2021-10-06-nature","type":"citations","title":"Universal preprocessing of single-cell genomics data","description":"The paper presents cellatlas, a workflow for preprocessing diverse single-cell genomics data by using seqspec assay specifications to configure kb-python, kallisto, and bustools.","statement":"Cited as an example of studying cell-type isoform specificity in single-cell RNA-seq.","evidence":[{"source":"source:pdf:document:cited-by--2023-universal-preprocessing-of-single-cell-genomics-data","span":"For example, in the case of single-cell RNA-seq it may be interesting to study cell-type isoform specificity (Booeshaghi et al. 2021), whereas for single-cell ATAC-seq the notion of isoforms is meaningless because the assay is based on genomic DNA, not cDNA, sequencing (Cusanovich et al. 2015).","page":1,"properties":{"document_id":"document:cited-by--2023-universal-preprocessing-of-single-cell-genomics-data","char_start":null,"char_end":null}}]},{"id":"connection:claim:citation:version-citing-2024-a-human-commons-cell-atlas-reveals-cell-type-specificity-for-oas1-isoforms-cites-version-isoform-cell-type-specificity-in-the-mouse-primary-motor-cor-40a0ec1fed--version:isoform-cell-type-specificity-in-the-mouse-primary-motor-cortex--2021-10-06-nature","type":"citations","title":"A human commons cell atlas reveals cell type specificity for OAS1 isoforms","description":"The paper presents an open-source Human Commons Cell Atlas of 2.9 million cells across 27 tissues and uses it to analyze OAS1 isoform cell-type specificity, finding OAS1 p44b specificity in round and elongating spermatids.","statement":"Cited as evidence that isoform expression can vary independently of gene expression and help identify cell types, and as support for transcript compatibility count analysis.","evidence":[{"source":"source:pdf:document:cited-by--2024-a-human-commons-cell-atlas-reveals-cell-type-specificity-for-oas1-isoforms","span":"This deficiency is not minor, as evidenced by the growing body of literature supporting the critical role of isoform expression in major biological processes (E. T. Wang et al. 2008; Chaponnier and Gabbiani 2004; Warren et al. 2003; Mincarelli et al. 2023), as well as in the identification and definition of cell-types (Booeshaghi et al. 2021).","page":2,"properties":{"document_id":"document:cited-by--2024-a-human-commons-cell-atlas-reveals-cell-type-specificity-for-oas1-isoforms","char_start":null,"char_end":null}},{"source":"source:pdf:document:cited-by--2024-a-human-commons-cell-atlas-reveals-cell-type-specificity-for-oas1-isoforms","span":"The expression of isoforms within genes can vary greatly, even when the overall gene expression remains unchanged (Booeshaghi et al. 2021).","page":4,"properties":{"document_id":"document:cited-by--2024-a-human-commons-cell-atlas-reveals-cell-type-specificity-for-oas1-isoforms","char_start":null,"char_end":null}},{"source":"source:pdf:document:cited-by--2024-a-human-commons-cell-atlas-reveals-cell-type-specificity-for-oas1-isoforms","span":"To test this hypothesis, we rebuilt our atlas at the isoform level leveraging transcript compatibility counts (See Methods) (Booeshaghi et al. 2021; Ntranos et al. 2019).","page":5,"properties":{"document_id":"document:cited-by--2024-a-human-commons-cell-atlas-reveals-cell-type-specificity-for-oas1-isoforms","char_start":null,"char_end":null}}]},{"id":"connection:claim:citation:version-citing-2024-algorithms-for-a-commons-cell-atlas-04a893eb73-cites-version-isoform-cell-type-specificity-in-the-mouse-primary-motor-cortex-2021-10-06-nature-booesh-f2746dfd9e--version:isoform-cell-type-specificity-in-the-mouse-primary-motor-cortex--2021-10-06-nature","type":"citations","title":"Algorithms for a Commons Cell Atlas","description":"The paper presents data, algorithms, and tools for automating cataloging and analysis of cell types across tissues, demonstrated in a human atlas.","statement":"The paper cites this work as an example of isoform-level analysis limited by gene-level HCA quantifications.","evidence":[{"source":"source:pdf:document:cited-by--2024-algorithms-for-a-commons-cell-atlas-04a893eb73","span":"Furthermore, most of the HCA quantifications are provided at the gene-level, precluding isoform-level analysis of results (Joglekar et al. 2021; Booeshaghi et al. 2021) or analyses requiring separate quantification of nascent and mature molecules (Gorin, Vastola, and Pachter 2023).","page":2,"properties":{"document_id":"document:cited-by--2024-algorithms-for-a-commons-cell-atlas-04a893eb73","char_start":null,"char_end":null}}]},{"id":"connection:version:isoform-cell-type-specificity-in-the-mouse-primary-motor-cortex--2021-10-06-nature--work:isoform-cell-type-specificity-in-the-mouse-primary-motor-cortex","type":"versions","title":"Isoform cell-type specificity in the mouse primary motor cortex","description":"2021-10-06 · Nature","statement":"2021-10-06 is a version of Isoform cell-type specificity in the mouse primary motor cortex.","evidence":[],"citation":{"doi":"10.1038/s41586-021-03969-3","url":"https://doi.org/10.1038/s41586-021-03969-3","date":"2021-10-06","venue":"Nature","authors":[{"name":"A. Sina Booeshaghi","orcid":"https://orcid.org/0000-0002-6442-4502"},{"name":"Zizhen Yao","orcid":"https://orcid.org/0000-0002-9361-5607"},{"name":"Cindy van Velthoven","orcid":"https://orcid.org/0000-0001-5120-4546"},{"name":"Kimberly Smith","orcid":"https://orcid.org/0000-0002-3142-1970"},{"name":"Bosiljka Tasic","orcid":"https://orcid.org/0000-0002-6861-4506"},{"name":"Hongkui Zeng","orcid":"https://orcid.org/0000-0002-0326-5878"},{"name":"Lior Pachter","orcid":"https://orcid.org/0000-0002-9164-6231"}]},"bibtex":"@article{Booeshaghi_2021,\n  TITLE     = {Isoform cell-type specificity in the mouse primary motor cortex},\n  VOLUME    = {598},\n  ISSN      = {1476-4687},\n  URL       = {http://dx.doi.org/10.1038/s41586-021-03969-3},\n  DOI       = {10.1038/s41586-021-03969-3},\n  NUMBER    = {7879},\n  JOURNAL   = {Nature},\n  PUBLISHER = {Springer Science and Business Media LLC},\n  AUTHOR    = {Booeshaghi, A. Sina and Yao, Zizhen and van Velthoven, Cindy and Smith, Kimberly and Tasic, Bosiljka and Zeng, Hongkui and Pachter, Lior},\n  YEAR      = {2021},\n  PAGES     = {195-199}\n}"},{"id":"connection:document:isoform-cell-type-specificity-in-the-mouse-primary-motor-cortex--2021-10-06-nature--version:isoform-cell-type-specificity-in-the-mouse-primary-motor-cortex--2021-10-06-nature","type":"sources","title":"2021-10-06-nature.pdf","description":"This source document provides local provenance for the target publication.","statement":"This source document provides local provenance for the target publication.","evidence":[]}]}</script>
+      <script src="../work-relations.js"></script>
     </article>
   </body>
 </html>

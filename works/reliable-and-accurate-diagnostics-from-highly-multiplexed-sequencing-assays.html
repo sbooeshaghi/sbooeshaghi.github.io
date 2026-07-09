@@ -17,77 +17,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="The COVID-19 pandemic resulted in the development of numerous high-throughput assays that leveraged next generation sequencing for diagnostics. These assays require fast data preprocessing for fast turnaround times. To achieve this, we developed and validated a computational workflow based on kallisto bustools to quickly, accurately and reliably process high-throughput sequencing data. We showed that our workflow is effective at processing data from all recently proposed COVID-19 sequencing-based diagnostic tests, and is generally applicable to any diagnostic multiplexed sequencing assay. This workflow was used at the University of Arizona to process their COVID-19 diagnostic data." />
+    <meta name="description" content="Scalable infectious-disease testing depends on software that can turn multiplexed sequencing reads into reliable clinical calls. Sequencing-based SARS-CoV-2 assays promise high throughput, but they require transparent, portable, statistically sound analysis pipelines. The kallisto-bustools HMSA workflow processes SwabSeq and related assays quickly, validates sample classification and viral-load estimation, and generalizes to multiple diagnostic sequencing designs." />
     <link rel="stylesheet" href="../styles.css" />
-    
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        document.querySelectorAll(".copy-bibtex-button").forEach((button) => {
-          button.addEventListener("click", async () => {
-            const box = button.closest(".bibtex-box");
-            const code = box ? box.querySelector("code") : null;
-            const bibtex = code ? code.textContent : "";
-            const previousText = button.textContent;
-            const markStatus = (text) => {
-              button.textContent = text;
-              window.setTimeout(() => {
-                button.textContent = previousText;
-              }, 1200);
-            };
-            const copyWithSelection = () => {
-              const textarea = document.createElement("textarea");
-              textarea.value = bibtex;
-              textarea.setAttribute("readonly", "");
-              textarea.style.position = "fixed";
-              textarea.style.left = "0";
-              textarea.style.top = "0";
-              textarea.style.width = "1px";
-              textarea.style.height = "1px";
-              textarea.style.opacity = "0";
-              textarea.style.pointerEvents = "none";
-              document.body.appendChild(textarea);
-              textarea.focus({ preventScroll: true });
-              textarea.select();
-              textarea.setSelectionRange(0, textarea.value.length);
-              const copied = document.execCommand("copy");
-              textarea.remove();
-              return copied;
-            };
-
-            try {
-              if (navigator.clipboard && navigator.clipboard.writeText) {
-                await navigator.clipboard.writeText(bibtex);
-                markStatus("Copied");
-                return;
-              }
-
-              if (copyWithSelection()) {
-                markStatus("Copied");
-                return;
-              }
-            } catch {
-              let copied = false;
-
-              try {
-                copied = copyWithSelection();
-              } catch {
-                copied = false;
-              }
-
-              if (copied) {
-                markStatus("Copied");
-                return;
-              }
-            }
-
-            markStatus("Copy failed");
-          });
-        });
-      });
-    </script>
     <title>Reliable and accurate diagnostics from highly multiplexed sequencing assays | Works | Sina Booeshaghi</title>
   </head>
-  <body>
+  <body class="work-detail-page">
     <nav class="breadcrumb" aria-label="Breadcrumb">
       <a href="../index.html">Home</a>
       <span aria-hidden="true">/</span>
@@ -95,211 +29,71 @@
       <span aria-hidden="true">/</span>
       <span class="breadcrumb-current" title="Reliable and accurate diagnostics from highly multiplexed sequencing assays">Reliable and accurate diagnostics from highly multiplexed sequen...</span>
     </nav>
-    <article class="work-page">
-      <h1>Reliable and accurate diagnostics from highly multiplexed sequencing assays</h1>
-      <div class="publication-versions work-versions" aria-label="Work versions">
-        <span class="publication-versions-label">Versions</span>
-        <div class="publication-version-cards">
-          
-        <a
-          class="publication-version-link is-current"
-          href="https://doi.org/10.1038/s41598-020-78942-7"
-          target="_blank"
-          rel="noopener"
-        >
-          <span class="publication-version-title">Reliable and accurate diagnostics from highly multiplexed sequencing assays</span>
-          <span class="publication-version-detail">Nature Scientific Reports · 2020-12-10</span>
-        </a>
+    <article class="work-page study-graph-page">
+      <section class="study-focus" aria-label="Selected work">
+        <div>
+          <h1>Reliable and accurate diagnostics from highly multiplexed sequencing assays</h1>
+          <p>Scalable infectious-disease testing depends on software that can turn multiplexed sequencing reads into reliable clinical calls. Sequencing-based SARS-CoV-2 assays promise high throughput, but they require transparent, portable, statistically sound analysis pipelines. The kallisto-bustools HMSA workflow processes SwabSeq and related assays quickly, validates sample classification and viral-load estimation, and generalizes to multiple diagnostic sequencing designs.</p>
         </div>
-      </div>
-
-      <section>
-        <h2>Summary</h2>
-        <p>The COVID-19 pandemic resulted in the development of numerous high-throughput assays that leveraged next generation sequencing for diagnostics. These assays require fast data preprocessing for fast turnaround times. To achieve this, we developed and validated a computational workflow based on kallisto bustools to quickly, accurately and reliably process high-throughput sequencing data. We showed that our workflow is effective at processing data from all recently proposed COVID-19 sequencing-based diagnostic tests, and is generally applicable to any diagnostic multiplexed sequencing assay. This workflow was used at the University of Arizona to process their COVID-19 diagnostic data.</p>
+        <dl class="study-stats">
+          <div>
+            <dt>Citations</dt>
+            <dd>21</dd>
+          </div>
+          <div>
+            <dt>Relations</dt>
+            <dd>12</dd>
+          </div>
+        </dl>
       </section>
 
       
-      <section
-        class="authors-section"
-        data-author-version-count="1"
-      >
-        <h2>Authors</h2>
-        
-        <section
-          class="author-version"
-          data-author-count="9"
-        >
-          <h3>
-            <a href="https://doi.org/10.1038/s41598-020-78942-7" target="_blank" rel="noopener">Nature Scientific Reports</a>
-            <time datetime="2020-12-10">2020-12-10</time>
-          </h3>
-          <ul class="author-list">
-            
-            <li><a href="https://orcid.org/0000-0002-6442-4502" target="_blank" rel="noopener" title="ORCID">A. Sina Booeshaghi</a></li>
-            <li>Nathan B. Lubock</li>
-            <li>Aaron R. Cooper</li>
-            <li><a href="https://orcid.org/0000-0002-5997-2838" target="_blank" rel="noopener" title="ORCID">Scott W. Simpkins</a></li>
-            <li><a href="https://orcid.org/0000-0002-7241-1648" target="_blank" rel="noopener" title="ORCID">Joshua S. Bloom</a></li>
-            <li><a href="https://orcid.org/0000-0002-3894-9495" target="_blank" rel="noopener" title="ORCID">Jase Gehring</a></li>
-            <li><a href="https://orcid.org/0000-0003-1379-2927" target="_blank" rel="noopener" title="ORCID">Laura Luebbert</a></li>
-            <li>Sri Kosuri</li>
-            <li><a href="https://orcid.org/0000-0002-9164-6231" target="_blank" rel="noopener" title="ORCID">Lior Pachter</a></li>
-          </ul>
-        </section>
-      </section>
-
-      <section>
-        <h2>BibTeX</h2>
-        
-        <section class="bibtex-entry">
-          <h3>Nature Scientific Reports</h3>
-          <div class="bibtex-box">
-            <button
-              class="copy-bibtex-button"
-              type="button"
-              aria-label="Copy BibTeX for Nature Scientific Reports"
-            >
-              Copy BibTeX
-            </button>
-            <pre><code>@article{Booeshaghi_2020,
-  TITLE     = {Reliable and accurate diagnostics from highly multiplexed sequencing assays},
-  VOLUME    = {10},
-  ISSN      = {2045-2322},
-  URL       = {http://dx.doi.org/10.1038/s41598-020-78942-7},
-  DOI       = {10.1038/s41598-020-78942-7},
-  NUMBER    = {1},
-  JOURNAL   = {Scientific Reports},
-  PUBLISHER = {Springer Science and Business Media LLC},
-  AUTHOR    = {Booeshaghi, A. Sina and Lubock, Nathan B. and Cooper, Aaron R. and Simpkins, Scott W. and Bloom, Joshua S. and Gehring, Jase and Luebbert, Laura and Kosuri, Sri and Pachter, Lior},
-  YEAR      = {2020}
-}</code></pre>
+      <section class="relationship-inspector" aria-label="Indexed relations" data-work-relations>
+        <section class="relationship-list-panel" aria-label="Relations">
+          <div class="study-section-heading">
+            <h2>Relations</h2>
           </div>
+          <div
+            class="relation-tabs"
+            role="tablist"
+            aria-label="Relation types"
+            data-relation-tabs
+          ></div>
+          <div class="reason-list" data-relation-list></div>
         </section>
-      </section>
 
-      <section>
-        <h2>Citing Works</h2>
-        <p class="citation-source-note">
-          21 citing works found in citation data generated 2026-07-06. Citation relationships are sourced from OpenAlex, Semantic Scholar, Google Scholar.
-        </p>
-        <table class="citation-table">
-          <thead>
-            <tr>
-              <th>Title</th>
-              <th>Year</th>
-              <th>Summary</th>
-            </tr>
-          </thead>
-          <tbody>
-            
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1016/j.diagmicrobio.2026.117519" target="_blank" rel="noopener">Automated implementation of the SwabSeq COVID-19 diagnostic assay on the opentrons flex liquid-handling robot</a></td>
-              <td class="citation-year"><time datetime="2026">2026</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://search.proquest.com/openview/b48499dca1d8ff86860f77da740ffff5/1?pq-origsite=gscholar&amp;cbl=18750&amp;diss=y" target="_blank" rel="noopener">Empowering Science with the World&#39;s First High Accuracy and High Throughput Functional Assay</a></td>
-              <td class="citation-year"><time datetime="2025">2025</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.2139/ssrn.5251898" target="_blank" rel="noopener">The Gigaassay: A Combined High Throughput and Highly Accurate Platform for Variant Classification</a></td>
-              <td class="citation-year"><time datetime="2025">2025</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1109/jsait.2023.3294423" target="_blank" rel="noopener">Bee Identification Problem for DNA Strands</a></td>
-              <td class="citation-year"><time datetime="2023">2023</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include approach, barcode, codebook, demonstrating, different, experiments, feasibility, later.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://openaccess.uoc.edu/handle/10609/148591" target="_blank" rel="noopener">Benchmark of pre-processing pipelines of single cell RNA sequencing data</a></td>
-              <td class="citation-year"><time datetime="2023">2023</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1109/jsait.2023.3296077" target="_blank" rel="noopener">Efficient Algorithms for the Bee-Identification Problem</a></td>
-              <td class="citation-year"><time datetime="2023">2023</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include experiments, groups, later, performed, procedures, similar, validated.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1021/acssensors.3c00857" target="_blank" rel="noopener">Highly Flexible Deep-Learning-Based Automatic Analysis for Graphically Encoded Hydrogel Microparticles</a></td>
-              <td class="citation-year"><time datetime="2023">2023</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1016/b978-0-12-822824-1.00011-0" target="_blank" rel="noopener">Molecular testing in emerging infectious diseases</a></td>
-              <td class="citation-year"><time datetime="2023">2023</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1093/bioadv/vbad181" target="_blank" rel="noopener">Quantifying orthogonal barcodes for sequence census assays</a></td>
-              <td class="citation-year"><time datetime="2023">2023</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1109/isit50566.2022.9834414" target="_blank" rel="noopener">Bee Identification Problem for DNA Strands</a></td>
-              <td class="citation-year"><time datetime="2022">2022</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include applications, based, interest, pooled, storage, survey, testing, viral.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1038/s41598-022-06901-5" target="_blank" rel="noopener">Evaluation of Swab-Seq as a scalable, sensitive assay for community surveillance of SARS-CoV-2 infection</a></td>
-              <td class="citation-year"><time datetime="2022">2022</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/2022.10.09.511501" target="_blank" rel="noopener">Quantifying orthogonal barcodes for sequence census assays</a></td>
-              <td class="citation-year"><time datetime="2022">2022</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1126/scitranslmed.abj2266" target="_blank" rel="noopener">Early sample tagging and pooling enables simultaneous SARS-CoV-2 detection and variant sequencing</a></td>
-              <td class="citation-year"><time datetime="2021">2021</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1109/isit45174.2021.9518112" target="_blank" rel="noopener">Efficient Bee Identification</a></td>
-              <td class="citation-year"><time datetime="2021">2021</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1038/s41587-021-00966-9" target="_blank" rel="noopener">LAMP-Seq enables sensitive, multiplexed COVID-19 diagnostics using molecular barcoding</a></td>
-              <td class="citation-year"><time datetime="2021">2021</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1038/s41551-021-00754-5" target="_blank" rel="noopener">Massively scaled-up testing for SARS-CoV-2 RNA via next-generation sequencing of pooled and barcoded nasal and saliva samples</a></td>
-              <td class="citation-year"><time datetime="2021">2021</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include swabseq, analysis, anticipate, bustools, computationally, continued, development, efficient.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10810734/" target="_blank" rel="noopener">SwabSeq: A sequencing-based platform for high-throughput SARS-CoV-2 testing</a></td>
-              <td class="citation-year"><time datetime="2021">2021</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1038/s41467-020-19258-y" target="_blank" rel="noopener">An enhanced isothermal amplification assay for viral detection</a></td>
-              <td class="citation-year"><time datetime="2020">2020</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://www.medrxiv.org/content/10.1101/2020.08.08.20170746.abstract" target="_blank" rel="noopener">ApharSeq: an extraction-free early-pooling protocol for massively multiplexed SARS-CoV-2 detection</a></td>
-              <td class="citation-year"><time datetime="2020">2020</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/2020.04.06.025635" target="_blank" rel="noopener">LAMP-Seq: population-scale COVID-19 diagnostics using combinatorial barcoding</a></td>
-              <td class="citation-year"><time datetime="2020">2020</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1101/2020.08.04.20167874" target="_blank" rel="noopener">Swab-Seq: A high-throughput platform for massively scaled up SARS-CoV-2 testing</a></td>
-              <td class="citation-year"><time datetime="2020">2020</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-          </tbody>
-        </table>
+        <aside class="evidence-panel relationship-detail" aria-live="polite">
+          <span class="study-label" data-relation-label>Relation</span>
+          <h2 data-relation-title></h2>
+          <p class="selected-relation-statement" data-relation-statement></p>
+          <section class="version-citation" data-version-citation hidden>
+            <h3>Citation</h3>
+            <div class="bibtex-box">
+              <button class="copy-bibtex-button" type="button" data-copy-bibtex>
+                Copy BibTeX
+              </button>
+              <pre><code data-bibtex-code></code></pre>
+            </div>
+          </section>
+          <details class="relationship-evidence" data-relation-evidence>
+            <summary>
+              <span>Evidence</span>
+              <span class="evidence-summary" data-evidence-summary></span>
+            </summary>
+            <table class="relationship-evidence-table">
+              <thead>
+                <tr>
+                  <th>Span</th>
+                  <th>Source</th>
+                </tr>
+              </thead>
+              <tbody data-evidence-rows></tbody>
+            </table>
+          </details>
+        </aside>
       </section>
+      <script id="workRelationData" type="application/json">{"work":{"id":"work:reliable-and-accurate-diagnostics-from-highly-multiplexed-sequencing-assays","title":"Reliable and accurate diagnostics from highly multiplexed sequencing assays","description":"Scalable infectious-disease testing depends on software that can turn multiplexed sequencing reads into reliable clinical calls. Sequencing-based SARS-CoV-2 assays promise high throughput, but they require transparent, portable, statistically sound analysis pipelines. The kallisto-bustools HMSA workflow processes SwabSeq and related assays quickly, validates sample classification and viral-load estimation, and generalizes to multiple diagnostic sequencing designs."},"relationTypes":[{"id":"authors","label":"Authors"},{"id":"claims","label":"Claims"},{"id":"citations","label":"Citations"},{"id":"versions","label":"Versions"},{"id":"software","label":"Software"},{"id":"sources","label":"Sources"}],"connections":[{"id":"connection:version:reliable-and-accurate-diagnostics-from-highly-multiplexed-sequencing-assays--2020-12-10-nature-scientific-reports--person:orcid:0000-0002-6442-4502--author-1","type":"authors","title":"A. Sina Booeshaghi","description":"A. Sina Booeshaghi is an author of Reliable and accurate diagnostics from highly multiplexed sequencing assays.","statement":"A. Sina Booeshaghi is an author of Reliable and accurate diagnostics from highly multiplexed sequencing assays.","evidence":[]},{"id":"connection:version:reliable-and-accurate-diagnostics-from-highly-multiplexed-sequencing-assays--2020-12-10-nature-scientific-reports--person:local:nathan-b-lubock--author-2","type":"authors","title":"Nathan B. Lubock","description":"Nathan B. Lubock is an author of Reliable and accurate diagnostics from highly multiplexed sequencing assays.","statement":"Nathan B. Lubock is an author of Reliable and accurate diagnostics from highly multiplexed sequencing assays.","evidence":[]},{"id":"connection:version:reliable-and-accurate-diagnostics-from-highly-multiplexed-sequencing-assays--2020-12-10-nature-scientific-reports--person:local:aaron-r-cooper--author-3","type":"authors","title":"Aaron R. Cooper","description":"Aaron R. Cooper is an author of Reliable and accurate diagnostics from highly multiplexed sequencing assays.","statement":"Aaron R. Cooper is an author of Reliable and accurate diagnostics from highly multiplexed sequencing assays.","evidence":[]},{"id":"connection:version:reliable-and-accurate-diagnostics-from-highly-multiplexed-sequencing-assays--2020-12-10-nature-scientific-reports--person:orcid:0000-0002-5997-2838--author-4","type":"authors","title":"Scott W. Simpkins","description":"Scott W. Simpkins is an author of Reliable and accurate diagnostics from highly multiplexed sequencing assays.","statement":"Scott W. Simpkins is an author of Reliable and accurate diagnostics from highly multiplexed sequencing assays.","evidence":[]},{"id":"connection:version:reliable-and-accurate-diagnostics-from-highly-multiplexed-sequencing-assays--2020-12-10-nature-scientific-reports--person:orcid:0000-0002-7241-1648--author-5","type":"authors","title":"Joshua S. Bloom","description":"Joshua S. Bloom is an author of Reliable and accurate diagnostics from highly multiplexed sequencing assays.","statement":"Joshua S. Bloom is an author of Reliable and accurate diagnostics from highly multiplexed sequencing assays.","evidence":[]},{"id":"connection:version:reliable-and-accurate-diagnostics-from-highly-multiplexed-sequencing-assays--2020-12-10-nature-scientific-reports--person:orcid:0000-0002-3894-9495--author-6","type":"authors","title":"Jase Gehring","description":"Jase Gehring is an author of Reliable and accurate diagnostics from highly multiplexed sequencing assays.","statement":"Jase Gehring is an author of Reliable and accurate diagnostics from highly multiplexed sequencing assays.","evidence":[]},{"id":"connection:version:reliable-and-accurate-diagnostics-from-highly-multiplexed-sequencing-assays--2020-12-10-nature-scientific-reports--person:orcid:0000-0003-1379-2927--author-7","type":"authors","title":"Laura Luebbert","description":"Laura Luebbert is an author of Reliable and accurate diagnostics from highly multiplexed sequencing assays.","statement":"Laura Luebbert is an author of Reliable and accurate diagnostics from highly multiplexed sequencing assays.","evidence":[]},{"id":"connection:version:reliable-and-accurate-diagnostics-from-highly-multiplexed-sequencing-assays--2020-12-10-nature-scientific-reports--person:local:sri-kosuri--author-8","type":"authors","title":"Sri Kosuri","description":"Sri Kosuri is an author of Reliable and accurate diagnostics from highly multiplexed sequencing assays.","statement":"Sri Kosuri is an author of Reliable and accurate diagnostics from highly multiplexed sequencing assays.","evidence":[]},{"id":"connection:version:reliable-and-accurate-diagnostics-from-highly-multiplexed-sequencing-assays--2020-12-10-nature-scientific-reports--person:orcid:0000-0002-9164-6231--author-9","type":"authors","title":"Lior Pachter","description":"Lior Pachter is an author of Reliable and accurate diagnostics from highly multiplexed sequencing assays.","statement":"Lior Pachter is an author of Reliable and accurate diagnostics from highly multiplexed sequencing assays.","evidence":[]},{"id":"connection:version:reliable-and-accurate-diagnostics-from-highly-multiplexed-sequencing-assays--2020-12-10-nature-scientific-reports--claim:version:reliable-and-accurate-diagnostics-from-highly-multiplexed-sequencing-assays--2020-12-10-nature-scientific-reports--summary-0","type":"claims","title":"Scalable infectious-disease testing depends on software that can turn multiplexed sequencing reads into reliable clinica","description":"Scalable infectious-disease testing depends on software that can turn multiplexed sequencing reads into reliable clinical calls. Sequencing-based SARS-CoV-2 assays promise high throughput, but they require transparent, portable, statistically sound analysis pipelines. The kallisto-bustools HMSA workflow processes SwabSeq and related assays quickly, validates sample classification and viral-load estimation, and generalizes to multiple diagnostic sequencing designs.","statement":"This publication contains the target grounded summary claim.","evidence":[{"source":"source:text:document:reliable-and-accurate-diagnostics-from-highly-multiplexed-sequencing-assays--2020-12-10-nature-scientific-reports","span":"Scalable, inexpensive, and secure testing for SARS-CoV-2 infection is crucial for control of the novel coronavirus pandemic.","page":1,"properties":{"document_id":"document:reliable-and-accurate-diagnostics-from-highly-multiplexed-sequencing-assays--2020-12-10-nature-scientific-reports","char_start":275,"char_end":399}},{"source":"source:text:document:reliable-and-accurate-diagnostics-from-highly-multiplexed-sequencing-assays--2020-12-10-nature-scientific-reports","span":"It is crucial that the software used to report infection status for each sample is reliable, well-documented, portable, and open source. These features of diagnostic software instill confidence in healthcare providers and patients, and ensure transparency and reproducibility in a setting where software errors can be deadly.","page":1,"properties":{"document_id":"document:reliable-and-accurate-diagnostics-from-highly-multiplexed-sequencing-assays--2020-12-10-nature-scientific-reports","char_start":2668,"char_end":2993}},{"source":"source:text:document:reliable-and-accurate-diagnostics-from-highly-multiplexed-sequencing-assays--2020-12-10-nature-scientific-reports","span":"To validate our workflow, we analyzed 307,494,992 SwabSeq reads (see Methods). This dataset consisted of two 384-well plates each with a titration series of viral RNA from two companies, Twist and ATCC, for a total of 768 uniquely barcoded samples. HEK293 lysate, nasopharyngeal (NP) lysate, and controls were included in all of the wells of each plate. The first plate was used to test primers bound to the SARS-CoV-2 N gene and the second plate was used to test primers bound to the SARS-CoV-2 S gene (Supplementary Fig. 1). Reads were aligned to a custom set of reference sequences (see Methods) using kallisto, and sample indices were corrected to a barcode whitelist. Finally, the counts of genes per sample were collated to make a sample by gene matrix (see Methods) and this was used to determine, for each sample, whether it contained viral RNA.","page":2,"properties":{"document_id":"document:reliable-and-accurate-diagnostics-from-highly-multiplexed-sequencing-assays--2020-12-10-nature-scientific-reports","char_start":1124,"char_end":1977}},{"source":"source:text:document:reliable-and-accurate-diagnostics-from-highly-multiplexed-sequencing-assays--2020-12-10-nature-scientific-reports","span":"We found a strong correlation between kallisto|bustools estimates and actual viral titer (Fig. 2d). Estimation of viral load in the course of testing could help in determining time since infection17.","page":3,"properties":{"document_id":"document:reliable-and-accurate-diagnostics-from-highly-multiplexed-sequencing-assays--2020-12-10-nature-scientific-reports","char_start":1977,"char_end":2176}},{"source":"source:text:document:reliable-and-accurate-diagnostics-from-highly-multiplexed-sequencing-assays--2020-12-10-nature-scientific-reports","span":"We have demonstrated a fast, accurate, and statistically rigorous approach to process highly multiplexed sequencing assays, and have validated an intuitive and interpretable method for obtaining diagnostic results from the data.","page":4,"properties":{"document_id":"document:reliable-and-accurate-diagnostics-from-highly-multiplexed-sequencing-assays--2020-12-10-nature-scientific-reports","char_start":3103,"char_end":3331}}]},{"id":"connection:version:reliable-and-accurate-diagnostics-from-highly-multiplexed-sequencing-assays--2020-12-10-nature-scientific-reports--work:reliable-and-accurate-diagnostics-from-highly-multiplexed-sequencing-assays","type":"versions","title":"Reliable and accurate diagnostics from highly multiplexed sequencing assays","description":"2020-12-10 · Nature Scientific Reports","statement":"2020-12-10 is a version of Reliable and accurate diagnostics from highly multiplexed sequencing assays.","evidence":[],"citation":{"doi":"10.1038/s41598-020-78942-7","url":"https://doi.org/10.1038/s41598-020-78942-7","date":"2020-12-10","venue":"Nature Scientific Reports","authors":[{"name":"A. Sina Booeshaghi","orcid":"https://orcid.org/0000-0002-6442-4502"},{"name":"Nathan B. Lubock","orcid":""},{"name":"Aaron R. Cooper","orcid":""},{"name":"Scott W. Simpkins","orcid":"https://orcid.org/0000-0002-5997-2838"},{"name":"Joshua S. Bloom","orcid":"https://orcid.org/0000-0002-7241-1648"},{"name":"Jase Gehring","orcid":"https://orcid.org/0000-0002-3894-9495"},{"name":"Laura Luebbert","orcid":"https://orcid.org/0000-0003-1379-2927"},{"name":"Sri Kosuri","orcid":""},{"name":"Lior Pachter","orcid":"https://orcid.org/0000-0002-9164-6231"}]},"bibtex":"@article{Booeshaghi_2020,\n  TITLE     = {Reliable and accurate diagnostics from highly multiplexed sequencing assays},\n  VOLUME    = {10},\n  ISSN      = {2045-2322},\n  URL       = {http://dx.doi.org/10.1038/s41598-020-78942-7},\n  DOI       = {10.1038/s41598-020-78942-7},\n  NUMBER    = {1},\n  JOURNAL   = {Scientific Reports},\n  PUBLISHER = {Springer Science and Business Media LLC},\n  AUTHOR    = {Booeshaghi, A. Sina and Lubock, Nathan B. and Cooper, Aaron R. and Simpkins, Scott W. and Bloom, Joshua S. and Gehring, Jase and Luebbert, Laura and Kosuri, Sri and Pachter, Lior},\n  YEAR      = {2020}\n}"},{"id":"connection:document:reliable-and-accurate-diagnostics-from-highly-multiplexed-sequencing-assays--2020-12-10-nature-scientific-reports--version:reliable-and-accurate-diagnostics-from-highly-multiplexed-sequencing-assays--2020-12-10-nature-scientific-reports","type":"sources","title":"2020-12-10-nature-scientific-reports.pdf","description":"This source document provides local provenance for the target publication.","statement":"This source document provides local provenance for the target publication.","evidence":[]}]}</script>
+      <script src="../work-relations.js"></script>
     </article>
   </body>
 </html>

@@ -17,77 +17,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Heat exchangers cool industrial systems by rejecting waste heat to a thermal reservoir despite the heat&#39;&#39;s energetic potential. To convert waste heat into useable electric energy, we develop, build, and test a liquid-cooling heat exchanger that uses thermelectrics to convert waste heat into electricity." />
+    <meta name="description" content="Recovering low-grade waste heat matters because data centers and other liquid-cooled systems spend substantial energy removing heat that is otherwise unused. Conventional thermoelectric approaches face material, geometry, and transport limitations, especially at low temperatures. The flow thermo-electrochemical cell couples liquid cooling with redox-based energy harvesting, demonstrating convective cooling, measurable power output, and a path toward temperature monitoring and recycled power in liquid-cooled infrastructure." />
     <link rel="stylesheet" href="../styles.css" />
-    
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        document.querySelectorAll(".copy-bibtex-button").forEach((button) => {
-          button.addEventListener("click", async () => {
-            const box = button.closest(".bibtex-box");
-            const code = box ? box.querySelector("code") : null;
-            const bibtex = code ? code.textContent : "";
-            const previousText = button.textContent;
-            const markStatus = (text) => {
-              button.textContent = text;
-              window.setTimeout(() => {
-                button.textContent = previousText;
-              }, 1200);
-            };
-            const copyWithSelection = () => {
-              const textarea = document.createElement("textarea");
-              textarea.value = bibtex;
-              textarea.setAttribute("readonly", "");
-              textarea.style.position = "fixed";
-              textarea.style.left = "0";
-              textarea.style.top = "0";
-              textarea.style.width = "1px";
-              textarea.style.height = "1px";
-              textarea.style.opacity = "0";
-              textarea.style.pointerEvents = "none";
-              document.body.appendChild(textarea);
-              textarea.focus({ preventScroll: true });
-              textarea.select();
-              textarea.setSelectionRange(0, textarea.value.length);
-              const copied = document.execCommand("copy");
-              textarea.remove();
-              return copied;
-            };
-
-            try {
-              if (navigator.clipboard && navigator.clipboard.writeText) {
-                await navigator.clipboard.writeText(bibtex);
-                markStatus("Copied");
-                return;
-              }
-
-              if (copyWithSelection()) {
-                markStatus("Copied");
-                return;
-              }
-            } catch {
-              let copied = false;
-
-              try {
-                copied = copyWithSelection();
-              } catch {
-                copied = false;
-              }
-
-              if (copied) {
-                markStatus("Copied");
-                return;
-              }
-            }
-
-            markStatus("Copy failed");
-          });
-        });
-      });
-    </script>
     <title>Thermo-electrochemical generator: energy harvesting &amp; thermoregulation for liquid cooling applications | Works | Sina Booeshaghi</title>
   </head>
-  <body>
+  <body class="work-detail-page">
     <nav class="breadcrumb" aria-label="Breadcrumb">
       <a href="../index.html">Home</a>
       <span aria-hidden="true">/</span>
@@ -95,407 +29,71 @@
       <span aria-hidden="true">/</span>
       <span class="breadcrumb-current" title="Thermo-electrochemical generator: energy harvesting &amp; thermoregulation for liquid cooling applications">Thermo-electrochemical generator: energy harvesting &amp; thermoregu...</span>
     </nav>
-    <article class="work-page">
-      <h1>Thermo-electrochemical generator: energy harvesting &amp; thermoregulation for liquid cooling applications</h1>
-      <div class="publication-versions work-versions" aria-label="Work versions">
-        <span class="publication-versions-label">Versions</span>
-        <div class="publication-version-cards">
-          
-        <a
-          class="publication-version-link is-current"
-          href="https://doi.org/10.1039/C7SE00161D"
-          target="_blank"
-          rel="noopener"
-        >
-          <span class="publication-version-title">Thermo-electrochemical generator: energy harvesting &amp; thermoregulation for liquid cooling applications</span>
-          <span class="publication-version-detail">Sustainable Energy &amp; Fuels · 2017-06-08</span>
-        </a>
+    <article class="work-page study-graph-page">
+      <section class="study-focus" aria-label="Selected work">
+        <div>
+          <h1>Thermo-electrochemical generator: energy harvesting &amp; thermoregulation for liquid cooling applications</h1>
+          <p>Recovering low-grade waste heat matters because data centers and other liquid-cooled systems spend substantial energy removing heat that is otherwise unused. Conventional thermoelectric approaches face material, geometry, and transport limitations, especially at low temperatures. The flow thermo-electrochemical cell couples liquid cooling with redox-based energy harvesting, demonstrating convective cooling, measurable power output, and a path toward temperature monitoring and recycled power in liquid-cooled infrastructure.</p>
         </div>
-      </div>
-
-      <section>
-        <h2>Summary</h2>
-        <p>Heat exchangers cool industrial systems by rejecting waste heat to a thermal reservoir despite the heat&#39;&#39;s energetic potential. To convert waste heat into useable electric energy, we develop, build, and test a liquid-cooling heat exchanger that uses thermelectrics to convert waste heat into electricity.</p>
+        <dl class="study-stats">
+          <div>
+            <dt>Citations</dt>
+            <dd>61</dd>
+          </div>
+          <div>
+            <dt>Relations</dt>
+            <dd>7</dd>
+          </div>
+        </dl>
       </section>
 
       
-      <section
-        class="authors-section"
-        data-author-version-count="1"
-      >
-        <h2>Authors</h2>
-        
-        <section
-          class="author-version"
-          data-author-count="4"
-        >
-          <h3>
-            <a href="https://doi.org/10.1039/C7SE00161D" target="_blank" rel="noopener">Sustainable Energy &amp; Fuels</a>
-            <time datetime="2017-06-08">2017-06-08</time>
-          </h3>
-          <ul class="author-list">
-            
-            <li>Ali Hussain Kazim</li>
-            <li><a href="https://orcid.org/0000-0002-6442-4502" target="_blank" rel="noopener" title="ORCID">A. Sina Booeshaghi</a></li>
-            <li>Sai T. Stephens</li>
-            <li><a href="https://orcid.org/0000-0003-1268-9573" target="_blank" rel="noopener" title="ORCID">Baratunde A. Cola</a></li>
-          </ul>
-        </section>
-      </section>
-
-      <section>
-        <h2>BibTeX</h2>
-        
-        <section class="bibtex-entry">
-          <h3>Sustainable Energy &amp; Fuels</h3>
-          <div class="bibtex-box">
-            <button
-              class="copy-bibtex-button"
-              type="button"
-              aria-label="Copy BibTeX for Sustainable Energy &amp; Fuels"
-            >
-              Copy BibTeX
-            </button>
-            <pre><code>@article{Kazim_2017,
-  TITLE     = {Thermo-electrochemical generator: energy harvesting &amp;amp; thermoregulation for liquid cooling applications},
-  VOLUME    = {1},
-  ISSN      = {2398-4902},
-  URL       = {http://dx.doi.org/10.1039/C7SE00161D},
-  DOI       = {10.1039/c7se00161d},
-  NUMBER    = {6},
-  JOURNAL   = {Sustainable Energy &amp;amp; Fuels},
-  PUBLISHER = {Royal Society of Chemistry (RSC)},
-  AUTHOR    = {Kazim, Ali Hussain and Booeshaghi, A. Sina and Stephens, Sai T. and Cola, Baratunde A.},
-  YEAR      = {2017},
-  PAGES     = {1381-1389}
-}</code></pre>
+      <section class="relationship-inspector" aria-label="Indexed relations" data-work-relations>
+        <section class="relationship-list-panel" aria-label="Relations">
+          <div class="study-section-heading">
+            <h2>Relations</h2>
           </div>
+          <div
+            class="relation-tabs"
+            role="tablist"
+            aria-label="Relation types"
+            data-relation-tabs
+          ></div>
+          <div class="reason-list" data-relation-list></div>
         </section>
-      </section>
 
-      <section>
-        <h2>Citing Works</h2>
-        <p class="citation-source-note">
-          61 citing works found in citation data generated 2026-07-06. Citation relationships are sourced from OpenAlex, Semantic Scholar, Google Scholar.
-        </p>
-        <table class="citation-table">
-          <thead>
-            <tr>
-              <th>Title</th>
-              <th>Year</th>
-              <th>Summary</th>
-            </tr>
-          </thead>
-          <tbody>
-            
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1016/j.jpowsour.2026.240422" target="_blank" rel="noopener">A novel flow-recuperative thermocell with decoupled heat–mass transport for enhanced low-grade waste heat harvesting</a></td>
-              <td class="citation-year"><time datetime="2026">2026</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.2139/ssrn.6830522" target="_blank" rel="noopener">Convection-driven divergence between apparent and operational efficiency in thermogalvanic cells</a></td>
-              <td class="citation-year"><time datetime="2026">2026</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.2139/ssrn.6830523" target="_blank" rel="noopener">Convection-driven divergence between apparent and operational efficiency in thermogalvanic cells</a></td>
-              <td class="citation-year"><time datetime="2026">2026</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1201/9781003671466-2" target="_blank" rel="noopener">Energy harvesting techniques for low-powered IoT and WSN devices</a></td>
-              <td class="citation-year"><time datetime="2026">2026</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1016/j.applthermaleng.2025.129232" target="_blank" rel="noopener">A critical review of electrochemical heat pump technologies: Status, challenges, and perspectives</a></td>
-              <td class="citation-year"><time datetime="2025">2025</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://arxiv.org/abs/2502.10664" target="_blank" rel="noopener">Multi-Carrier Thermal Transport in Electronic and Energy Conversion Devices</a></td>
-              <td class="citation-year"><time datetime="2025">2025</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1063/5.0265763" target="_blank" rel="noopener">Thermal-driven multi-carrier transport in electronic and energy materials</a></td>
-              <td class="citation-year"><time datetime="2025">2025</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1016/j.apenergy.2024.123033" target="_blank" rel="noopener">A novel concentrated photovoltaic and ionic thermocells hybrid system for full-spectrum solar cascade utilization</a></td>
-              <td class="citation-year"><time datetime="2024">2024</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1016/j.enconman.2024.119422" target="_blank" rel="noopener">A thermodynamic study and numerical analysis of Ericsson, Brayton, and Carnot cycles for the thermally regenerative electrochemical refrigerator</a></td>
-              <td class="citation-year"><time datetime="2024">2024</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1016/j.nanoen.2024.109992" target="_blank" rel="noopener">Liquid-flow thermocells with high hybrid entropy for low-grade heat harvesting</a></td>
-              <td class="citation-year"><time datetime="2024">2024</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1016/j.energy.2024.133872" target="_blank" rel="noopener">Performance enhancement in a novel concentrated photovoltaic and liquid-flow thermocells hybrid system through optimal photovoltaic cells</a></td>
-              <td class="citation-year"><time datetime="2024">2024</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1016/j.ensm.2024.103902" target="_blank" rel="noopener">Thermo-electrochemical cells enable efficient and flexible power supplies: From materials to applications</a></td>
-              <td class="citation-year"><time datetime="2024">2024</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1021/acsenergylett.3c02448" target="_blank" rel="noopener">Thermodynamics of Ionic Thermoelectrics for Low-Grade Heat Harvesting</a></td>
-              <td class="citation-year"><time datetime="2024">2024</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1039/d4se01498g" target="_blank" rel="noopener">Thermogalvanic bricks: optimising large dimension thermocells for air and water valorisation</a></td>
-              <td class="citation-year"><time datetime="2024">2024</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1002/adma.202303341" target="_blank" rel="noopener">Direct Conversion of Phase‐Transition Entropy into Electrochemical Thermopower and the Peltier Effect</a></td>
-              <td class="citation-year"><time datetime="2023">2023</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.2139/ssrn.4273245" target="_blank" rel="noopener">Electrochemically Driven Phase Transformation for High Efficiency Heat Pumping</a></td>
-              <td class="citation-year"><time datetime="2023">2023</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1016/j.xcrp.2023.101369" target="_blank" rel="noopener">Electrochemically driven phase transformation for high-efficiency heat pumping</a></td>
-              <td class="citation-year"><time datetime="2023">2023</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1016/j.jpowsour.2023.232819" target="_blank" rel="noopener">Energy harvesting from liquid cooling systems using thermo-electrochemical flow cells</a></td>
-              <td class="citation-year"><time datetime="2023">2023</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1039/d3sc04955h" target="_blank" rel="noopener">Exploring the local solvation structure of redox molecules in a mixed solvent for increasing the Seebeck coefficient of thermocells</a></td>
-              <td class="citation-year"><time datetime="2023">2023</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.3390/nano13162290" target="_blank" rel="noopener">High-Power-Density Thermoelectrochemical Cell Based on Ni/NiO Nanostructured Microsphere Electrodes with Alkaline Electrolyte</a></td>
-              <td class="citation-year"><time datetime="2023">2023</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1149/1945-7111/acd4ed" target="_blank" rel="noopener">Investigation of the Effective Voltage and Performance of Thermocells</a></td>
-              <td class="citation-year"><time datetime="2023">2023</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1021/acs.iecr.3c01177" target="_blank" rel="noopener">Multiphysics Modeling of Mass and Heat Transfer in a Thermo-Electrochemical Cell</a></td>
-              <td class="citation-year"><time datetime="2023">2023</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1615/ihtc17.450-10" target="_blank" rel="noopener">NUMERICAL INVESTIGATIONS OF THERMO-FLUIDICS IN THE INTER-ELECTRODE CHANNEL OF FORCED-FLOW THERMOCELLS</a></td>
-              <td class="citation-year"><time datetime="2023">2023</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1016/j.sna.2023.114604" target="_blank" rel="noopener">Self-powered physiological monitoring strategy enabled by adaptive dual-network thermogalvanic hydrogels</a></td>
-              <td class="citation-year"><time datetime="2023">2023</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1039/d3ra01463k" target="_blank" rel="noopener">Simulation of a thermo-electrochemical cell with graphite rod electrodes</a></td>
-              <td class="citation-year"><time datetime="2023">2023</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1016/j.applthermaleng.2023.121004" target="_blank" rel="noopener">Synergistic improvement of Seebeck coefficient and power density of an aqueous thermocell using natural convection for low-grade heat utilization</a></td>
-              <td class="citation-year"><time datetime="2023">2023</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1016/j.nanoen.2022.108077" target="_blank" rel="noopener">Thermogalvanic hydrogel electrolyte for harvesting biothermal energy enabled by a novel redox couple of SO4/32- ions</a></td>
-              <td class="citation-year"><time datetime="2023">2023</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1002/anie.202213449" target="_blank" rel="noopener">Advancement of Electrochemical Thermoelectric Conversion with Molecular Technology</a></td>
-              <td class="citation-year"><time datetime="2022">2022</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1002/ange.202213449" target="_blank" rel="noopener">Advancement of Electrochemical Thermoelectric Conversion with Molecular Technology</a></td>
-              <td class="citation-year"><time datetime="2022">2022</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1016/b978-0-12-823690-1.00008-3" target="_blank" rel="noopener">Liquid-state thermocells for low-grade heat harvesting</a></td>
-              <td class="citation-year"><time datetime="2022">2022</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1016/j.jobe.2022.104796" target="_blank" rel="noopener">Performance and economic evaluation of a solar-air hybrid source energy heating system installed in cold region of China</a></td>
-              <td class="citation-year"><time datetime="2022">2022</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1039/d2ta05742e" target="_blank" rel="noopener">Redox-induced thermocells for low-grade heat harvesting: mechanism, progress, and their applications</a></td>
-              <td class="citation-year"><time datetime="2022">2022</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1002/batt.202200036" target="_blank" rel="noopener">Thermally Chargeable Ammonium‐Ion Capacitor for Energy Storage and Low‐Grade Heat Harvesting</a></td>
-              <td class="citation-year"><time datetime="2022">2022</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://search.proquest.com/openview/ba7355f4bb26810a71158daed5c1c6a5/1?pq-origsite=gscholar&amp;cbl=18750&amp;diss=y" target="_blank" rel="noopener">Conceptualization, Thermodynamics, Kinetics, and Prototyping of Continuous Electrochemical Refrigeration</a></td>
-              <td class="citation-year"><time datetime="2021">2021</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://www.semanticscholar.org/paper/0d1a07095f1a786c1d3f38dac62655a04c3ac009" target="_blank" rel="noopener">Experimental investigation of a U-tube thermocell 1 under various Fe(CN) 63-/4- concentration 2</a></td>
-              <td class="citation-year"><time datetime="2021">2021</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1016/j.matchemphys.2021.125450" target="_blank" rel="noopener">Hierarchical porous carbon derived from elm bark mucus for efficient energy storage and conversion</a></td>
-              <td class="citation-year"><time datetime="2021">2021</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1016/j.ijhydene.2021.03.189" target="_blank" rel="noopener">High-efficiency thermoelectrochemical conversion system based on H+-ion concentration cell stack</a></td>
-              <td class="citation-year"><time datetime="2021">2021</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1016/j.apenergy.2021.117334" target="_blank" rel="noopener">Hybrid thermo-electrochemical energy harvesters for conversion of low-grade thermal energy into electricity via tungsten electrodes</a></td>
-              <td class="citation-year"><time datetime="2021">2021</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1016/j.joule.2021.02.009" target="_blank" rel="noopener">Liquid-state thermocells: Opportunities and challenges for low-grade heat harvesting</a></td>
-              <td class="citation-year"><time datetime="2021">2021</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.3390/nano11041031" target="_blank" rel="noopener">Multifunctional Magnetic Nanocolloids for Hybrid Solar-Thermoelectric Energy Harvesting</a></td>
-              <td class="citation-year"><time datetime="2021">2021</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1115/1.4051622" target="_blank" rel="noopener">Optimization of Thermophotovoltaic Power System With a Spectrally Controlled Multi-Concentric Emitter</a></td>
-              <td class="citation-year"><time datetime="2021">2021</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1007/s11837-021-04976-5" target="_blank" rel="noopener">The quest for high-efficiency thermoelectric generators for extracting electricity from waste heat</a></td>
-              <td class="citation-year"><time datetime="2021">2021</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1021/acsaem.1c02060" target="_blank" rel="noopener">Thermogalvanic and Thermocapacitive Behavior of Superabsorbent Hydrogels for Combined Low-Temperature Thermal Energy Conversion and Harvesting</a></td>
-              <td class="citation-year"><time datetime="2021">2021</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1039/d1se01264a" target="_blank" rel="noopener">Thermogalvanic energy harvesting from forced convection cooling of 100–200 °C surfaces generating high power density</a></td>
-              <td class="citation-year"><time datetime="2021">2021</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1016/j.matpr.2020.04.200" target="_blank" rel="noopener">Effect of transient low-grade solar heat on liquid thermogalvanic cells</a></td>
-              <td class="citation-year"><time datetime="2020">2020</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1016/j.enconman.2020.113005" target="_blank" rel="noopener">Experimental investigation of a U-tube thermocell under various Fe(CN)63−/4− concentration</a></td>
-              <td class="citation-year"><time datetime="2020">2020</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1007/s00339-020-03902-x" target="_blank" rel="noopener">Highly efficient thermo-electrochemical energy harvesting from graphene–carbon nanotube ‘hybrid’ aerogels</a></td>
-              <td class="citation-year"><time datetime="2020">2020</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://search.proquest.com/openview/1bbacb19b1d14cac202813a0943fd918/1?pq-origsite=gscholar&amp;cbl=18750&amp;diss=y" target="_blank" rel="noopener">Multifunctional Electrochemistry and Molecular Designs for Energy Storage and Conversion</a></td>
-              <td class="citation-year"><time datetime="2020">2020</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://www.jstage.jst.go.jp/article/tse/28/3/28_15/_article/-char/ja/" target="_blank" rel="noopener">熱電気化学発電の強制対流冷却への統合</a></td>
-              <td class="citation-year"><time datetime="2020">2020</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.34133/2019/2460953" target="_blank" rel="noopener">All-Day Thermogalvanic Cells for Environmental Thermal Energy Harvesting</a></td>
-              <td class="citation-year"><time datetime="2019">2019</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include ambient, environment, mostly, operated, practical, scenarios, sources, yielded.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1109/elma.2019.8771646" target="_blank" rel="noopener">Electric Power Supply of Wireless Sensors by Thermo-Electrochemical Cells</a></td>
-              <td class="citation-year"><time datetime="2019">2019</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include energy, harvesting, production, prospect, waste.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1016/j.desal.2019.114242" target="_blank" rel="noopener">Foldable multiple-energies harvester consisting of a thin ion-exchange membrane prepared by a two-step interfacial polymerization</a></td>
-              <td class="citation-year"><time datetime="2019">2019</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1039/c9cp05028k" target="_blank" rel="noopener">Integration of thermo-electrochemical conversion into forced convection cooling</a></td>
-              <td class="citation-year"><time datetime="2019">2019</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="http://t2r2.star.titech.ac.jp/cgi-bin/publicationinfo.cgi?q_publication_content_number=CTT100810560" target="_blank" rel="noopener">Integration of thermo-electrochemical conversion into forced convection cooling</a></td>
-              <td class="citation-year"><time datetime="2019">2019</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1109/hitech48507.2019.9128262" target="_blank" rel="noopener">Synthesis and Study on Waste Heat Thermoelectric Generator</a></td>
-              <td class="citation-year"><time datetime="2019">2019</time></td>
-              <td class="citation-summary">Semantic Scholar provides citation context; prominent terms include activities, anthropogenic, different, industrial, natural, obtained, productions, sources.</td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://www.sstu.ru/upload/medialibrary/ee2/Voprosy-elektrotekhnologii-_2_23_-2019-.pdf.pdf#page=58" target="_blank" rel="noopener">ПРИМЕНЕНИЕ ТЕРМОЭЛЕКТРОХИМИЧЕСКИХ ЯЧЕЕК ДЛЯ ЭЛЕКТРОПИТАНИЯ БЕСПРОВОДНЫХ ДАТЧИКОВ</a></td>
-              <td class="citation-year"><time datetime="2019">2019</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://www.semanticscholar.org/paper/7bad00fb51b5310e605345f5fa3481e1e0385782" target="_blank" rel="noopener">High Seebeck Coe ffi cient Electrochemical Thermocells for E ffi cient Waste Heat Recovery</a></td>
-              <td class="citation-year"><time datetime="2018">2018</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1021/acsaem.8b00247" target="_blank" rel="noopener">High Seebeck Coefficient Electrochemical Thermocells for Efficient Waste Heat Recovery</a></td>
-              <td class="citation-year"><time datetime="2018">2018</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.1115/1.4040819" target="_blank" rel="noopener">Nanostructured Carbon Electrodes for Increased Power Density in Flow Thermo-Electrochemical Generator Heat Sinks</a></td>
-              <td class="citation-year"><time datetime="2018">2018</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://www.semanticscholar.org/paper/0786c078d211cc4a366eedd1e6ef2a7a755105b4" target="_blank" rel="noopener">The thermo-electrochemical flow cell</a></td>
-              <td class="citation-year"><time datetime="2018">2018</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-            <tr>
-              <td class="citation-title"><a href="https://doi.org/10.3390/e20060405" target="_blank" rel="noopener">Thermoelectricity and Thermodiffusion in Magnetic Nanofluids: Entropic Analysis</a></td>
-              <td class="citation-year"><time datetime="2018">2018</time></td>
-              <td class="citation-summary"></td>
-            </tr>
-          </tbody>
-        </table>
+        <aside class="evidence-panel relationship-detail" aria-live="polite">
+          <span class="study-label" data-relation-label>Relation</span>
+          <h2 data-relation-title></h2>
+          <p class="selected-relation-statement" data-relation-statement></p>
+          <section class="version-citation" data-version-citation hidden>
+            <h3>Citation</h3>
+            <div class="bibtex-box">
+              <button class="copy-bibtex-button" type="button" data-copy-bibtex>
+                Copy BibTeX
+              </button>
+              <pre><code data-bibtex-code></code></pre>
+            </div>
+          </section>
+          <details class="relationship-evidence" data-relation-evidence>
+            <summary>
+              <span>Evidence</span>
+              <span class="evidence-summary" data-evidence-summary></span>
+            </summary>
+            <table class="relationship-evidence-table">
+              <thead>
+                <tr>
+                  <th>Span</th>
+                  <th>Source</th>
+                </tr>
+              </thead>
+              <tbody data-evidence-rows></tbody>
+            </table>
+          </details>
+        </aside>
       </section>
+      <script id="workRelationData" type="application/json">{"work":{"id":"work:thermo-electrochemical-generator-energy-harvesting-and-thermoregulation-for-liquid-cooling-applications","title":"Thermo-electrochemical generator: energy harvesting & thermoregulation for liquid cooling applications","description":"Recovering low-grade waste heat matters because data centers and other liquid-cooled systems spend substantial energy removing heat that is otherwise unused. Conventional thermoelectric approaches face material, geometry, and transport limitations, especially at low temperatures. The flow thermo-electrochemical cell couples liquid cooling with redox-based energy harvesting, demonstrating convective cooling, measurable power output, and a path toward temperature monitoring and recycled power in liquid-cooled infrastructure."},"relationTypes":[{"id":"authors","label":"Authors"},{"id":"claims","label":"Claims"},{"id":"citations","label":"Citations"},{"id":"versions","label":"Versions"},{"id":"software","label":"Software"},{"id":"sources","label":"Sources"}],"connections":[{"id":"connection:version:thermo-electrochemical-generator-energy-harvesting-and-thermoregulation-for-liquid-cooling-applications--2017-06-08-sustainable-energy-and-fuels--person:local:ali-hussain-kazim--author-1","type":"authors","title":"Ali Hussain Kazim","description":"Ali Hussain Kazim is an author of Thermo-electrochemical generator: energy harvesting & thermoregulation for liquid cooling applications.","statement":"Ali Hussain Kazim is an author of Thermo-electrochemical generator: energy harvesting & thermoregulation for liquid cooling applications.","evidence":[]},{"id":"connection:version:thermo-electrochemical-generator-energy-harvesting-and-thermoregulation-for-liquid-cooling-applications--2017-06-08-sustainable-energy-and-fuels--person:orcid:0000-0002-6442-4502--author-2","type":"authors","title":"A. Sina Booeshaghi","description":"A. Sina Booeshaghi is an author of Thermo-electrochemical generator: energy harvesting & thermoregulation for liquid cooling applications.","statement":"A. Sina Booeshaghi is an author of Thermo-electrochemical generator: energy harvesting & thermoregulation for liquid cooling applications.","evidence":[]},{"id":"connection:version:thermo-electrochemical-generator-energy-harvesting-and-thermoregulation-for-liquid-cooling-applications--2017-06-08-sustainable-energy-and-fuels--person:local:sai-t-stephens--author-3","type":"authors","title":"Sai T. Stephens","description":"Sai T. Stephens is an author of Thermo-electrochemical generator: energy harvesting & thermoregulation for liquid cooling applications.","statement":"Sai T. Stephens is an author of Thermo-electrochemical generator: energy harvesting & thermoregulation for liquid cooling applications.","evidence":[]},{"id":"connection:version:thermo-electrochemical-generator-energy-harvesting-and-thermoregulation-for-liquid-cooling-applications--2017-06-08-sustainable-energy-and-fuels--person:orcid:0000-0003-1268-9573--author-4","type":"authors","title":"Baratunde A. Cola","description":"Baratunde A. Cola is an author of Thermo-electrochemical generator: energy harvesting & thermoregulation for liquid cooling applications.","statement":"Baratunde A. Cola is an author of Thermo-electrochemical generator: energy harvesting & thermoregulation for liquid cooling applications.","evidence":[]},{"id":"connection:version:thermo-electrochemical-generator-energy-harvesting-and-thermoregulation-for-liquid-cooling-applications--2017-06-08-sustainable-energy-and-fuels--claim:version:thermo-electrochemical-generator-energy-harvesting-and-thermoregulation-for-liquid-cooling-applications--2017-06-08-sustainable-energy-and-fuels--summary-0","type":"claims","title":"Recovering low-grade waste heat matters because data centers and other liquid-cooled systems spend substantial energy re","description":"Recovering low-grade waste heat matters because data centers and other liquid-cooled systems spend substantial energy removing heat that is otherwise unused. Conventional thermoelectric approaches face material, geometry, and transport limitations, especially at low temperatures. The flow thermo-electrochemical cell couples liquid cooling with redox-based energy harvesting, demonstrating convective cooling, measurable power output, and a path toward temperature monitoring and recycled power in liquid-cooled infrastructure.","statement":"This publication contains the target grounded summary claim.","evidence":[{"source":"source:text:document:thermo-electrochemical-generator-energy-harvesting-and-thermoregulation-for-liquid-cooling-applications--2017-06-08-sustainable-energy-and-fuels","span":"Waste heat is a by-product of all energy conversion mechanisms. Of the various grades, low-grade waste heat (\u003c230 ◦ C) is the most ubiquitous and at the same time most difficult to recover due to challenges such as material limitation, sizing issues and finding end use for recovered heat.","page":2,"properties":{"document_id":"document:thermo-electrochemical-generator-energy-harvesting-and-thermoregulation-for-liquid-cooling-applications--2017-06-08-sustainable-energy-and-fuels","char_start":1742,"char_end":2031}},{"source":"source:text:document:thermo-electrochemical-generator-energy-harvesting-and-thermoregulation-for-liquid-cooling-applications--2017-06-08-sustainable-energy-and-fuels","span":"The focus of this work is to develop and understand a flow thermo-electrochemical cell (fTEC) (fig. 1) that both converts thermal energy into electrical energy while, in parallel, providing thermoregulation to devices that emit waste-heat, in the form of liquid cooling. In this paper, we focus on a specific case for this technology: waste-heat and thermoregulation of CPUs in Data centers.","page":2,"properties":{"document_id":"document:thermo-electrochemical-generator-energy-harvesting-and-thermoregulation-for-liquid-cooling-applications--2017-06-08-sustainable-energy-and-fuels","char_start":3356,"char_end":3747}},{"source":"source:text:document:thermo-electrochemical-generator-energy-harvesting-and-thermoregulation-for-liquid-cooling-applications--2017-06-08-sustainable-energy-and-fuels","span":"This type of liquid electrochemical TECs couples the thermoelectric energy generation of traditional solid-state TECs with that of liquid cooling technology.","page":3,"properties":{"document_id":"document:thermo-electrochemical-generator-energy-harvesting-and-thermoregulation-for-liquid-cooling-applications--2017-06-08-sustainable-energy-and-fuels","char_start":2384,"char_end":2541}},{"source":"source:text:document:thermo-electrochemical-generator-energy-harvesting-and-thermoregulation-for-liquid-cooling-applications--2017-06-08-sustainable-energy-and-fuels","span":"Our research focused on reducing these mass transfer resistances by designing and testing an fTEC where redox ions are driven from one electrode to another by forced convection in addition to migration and diffusion, fig. 1.","page":4,"properties":{"document_id":"document:thermo-electrochemical-generator-energy-harvesting-and-thermoregulation-for-liquid-cooling-applications--2017-06-08-sustainable-energy-and-fuels","char_start":3325,"char_end":3549}},{"source":"source:text:document:thermo-electrochemical-generator-energy-harvesting-and-thermoregulation-for-liquid-cooling-applications--2017-06-08-sustainable-energy-and-fuels","span":"The fTEC has been shown to cool convect heat and harvest electrical energy from a waste-heat source, in parallel.","page":8,"properties":{"document_id":"document:thermo-electrochemical-generator-energy-harvesting-and-thermoregulation-for-liquid-cooling-applications--2017-06-08-sustainable-energy-and-fuels","char_start":3003,"char_end":3116}}]},{"id":"connection:version:thermo-electrochemical-generator-energy-harvesting-and-thermoregulation-for-liquid-cooling-applications--2017-06-08-sustainable-energy-and-fuels--work:thermo-electrochemical-generator-energy-harvesting-and-thermoregulation-for-liquid-cooling-applications","type":"versions","title":"Thermo-electrochemical generator: energy harvesting & thermoregulation for liquid cooling applications","description":"2017-06-08 · Sustainable Energy & Fuels","statement":"2017-06-08 is a version of Thermo-electrochemical generator: energy harvesting & thermoregulation for liquid cooling applications.","evidence":[],"citation":{"doi":"10.1039/c7se00161d","url":"https://doi.org/10.1039/C7SE00161D","date":"2017-06-08","venue":"Sustainable Energy & Fuels","authors":[{"name":"Ali Hussain Kazim","orcid":""},{"name":"A. Sina Booeshaghi","orcid":"https://orcid.org/0000-0002-6442-4502"},{"name":"Sai T. Stephens","orcid":""},{"name":"Baratunde A. Cola","orcid":"https://orcid.org/0000-0003-1268-9573"}]},"bibtex":"@article{Kazim_2017,\n  TITLE     = {Thermo-electrochemical generator: energy harvesting &amp; thermoregulation for liquid cooling applications},\n  VOLUME    = {1},\n  ISSN      = {2398-4902},\n  URL       = {http://dx.doi.org/10.1039/c7se00161d},\n  DOI       = {10.1039/c7se00161d},\n  NUMBER    = {6},\n  JOURNAL   = {Sustainable Energy &amp; Fuels},\n  PUBLISHER = {Royal Society of Chemistry (RSC)},\n  AUTHOR    = {Kazim, Ali Hussain and Booeshaghi, A. Sina and Stephens, Sai T. and Cola, Baratunde A.},\n  YEAR      = {2017},\n  PAGES     = {1381-1389}\n}"},{"id":"connection:document:thermo-electrochemical-generator-energy-harvesting-and-thermoregulation-for-liquid-cooling-applications--2017-06-08-sustainable-energy-and-fuels--version:thermo-electrochemical-generator-energy-harvesting-and-thermoregulation-for-liquid-cooling-applications--2017-06-08-sustainable-energy-and-fuels","type":"sources","title":"2017-06-08-sustainable-energy-and-fuels.pdf","description":"This source document provides local provenance for the target publication.","statement":"This source document provides local provenance for the target publication.","evidence":[]}]}</script>
+      <script src="../work-relations.js"></script>
     </article>
   </body>
 </html>
