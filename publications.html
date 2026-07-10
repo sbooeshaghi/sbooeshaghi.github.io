@@ -25,6 +25,14 @@
     <link rel="stylesheet" href="styles.css" />
     <title>Works | Sina Booeshaghi</title>
     <script>
+      const SELF_ORCID = "0000-0002-6442-4502";
+      const SELF_NAMES = new Set([
+        "a sina booeshaghi",
+        "ali s booeshaghi",
+        "sina booeshaghi",
+        "ali sina booeshaghi",
+      ]);
+
       function escapeHTML(value) {
         return String(value)
           .replace(/&/g, "&amp;")
@@ -44,9 +52,112 @@
           .replace(/^-+|-+$/g, "");
       }
 
-      function formatPublication(publication) {
+      function formatYear(value) {
+        const match = String(value || "").match(/\d{4}/);
+        return match ? match[0] : "n.d.";
+      }
+
+      function citationCountFor(publication, citedByData) {
+        return (
+          citedByData.works?.[slugify(publication.title)]?.cited_by?.length || 0
+        );
+      }
+
+      function normalizeAuthorName(value) {
+        return String(value || "")
+          .normalize("NFKD")
+          .replace(/[\u0300-\u036f]/g, "")
+          .toLowerCase()
+          .replace(/[^a-z0-9]+/g, " ")
+          .trim();
+      }
+
+      function coauthorCountFor(publicationAuthors) {
+        const coauthors = new Set();
+
+        Object.values(publicationAuthors.works || {}).forEach((work) => {
+          (work.versions || []).forEach((version) => {
+            (version.authors || []).forEach((author) => {
+              const orcid = String(author.orcid || "").match(
+                /\d{4}-\d{4}-\d{4}-[\dX]{4}/i
+              )?.[0];
+              const name = normalizeAuthorName(author.name);
+              if (orcid?.toUpperCase() === SELF_ORCID || SELF_NAMES.has(name)) {
+                return;
+              }
+              const key = orcid ? `orcid:${orcid.toUpperCase()}` : `name:${name}`;
+              if (name) coauthors.add(key);
+            });
+          });
+        });
+
+        return coauthors.size;
+      }
+
+      function hIndexFor(citationCounts) {
+        return [...citationCounts]
+          .sort((a, b) => b - a)
+          .filter((count, index) => count >= index + 1).length;
+      }
+
+      function formatNumber(value) {
+        return value.toLocaleString("en-US");
+      }
+
+      function formatWorksSummary(publications, citedByData, publicationAuthors) {
+        const citationCounts = publications.map((publication) =>
+          citationCountFor(publication, citedByData)
+        );
+        const metrics = [
+          [publications.length, "works"],
+          [coauthorCountFor(publicationAuthors), "coauthors"],
+          [citationCounts.reduce((total, count) => total + count, 0), "citations"],
+          [hIndexFor(citationCounts), "h-index"],
+        ];
+
+        return metrics
+          .map(
+            ([value, label]) => `
+              <div class="works-summary-item">
+                <span class="works-summary-number">${formatNumber(value)}</span>
+                <span class="works-summary-label">${label}</span>
+              </div>
+            `
+          )
+          .join("");
+      }
+
+      function formatVersions(publication) {
+        const versions = publication.versions?.length
+          ? publication.versions
+          : publication.links || [];
+
+        if (!versions.length) return "";
+
+        const items = versions.map((version) => {
+          const label = `${version.name || "Version"} (${formatYear(
+            version.date
+          )})`;
+          const href = version.url || version.doi || "";
+          return href
+            ? `<a class="publication-card-version-link" href="${escapeHTML(
+                href
+              )}">${escapeHTML(label)}</a>`
+            : escapeHTML(label);
+        });
+
+        return `
+          <div class="publication-card-versions">
+            <span class="publication-card-versions-label">Versions:</span>
+            ${items.join(", ")}
+          </div>
+        `;
+      }
+
+      function formatPublication(publication, citedByData) {
         const summary = publication.summary.trim();
         const pageHref = `works/${slugify(publication.title)}.html`;
+        const citationCount = citationCountFor(publication, citedByData);
 
         return `
           <li class="publication-item">
@@ -56,26 +167,46 @@
                   pageHref
                 )}">${escapeHTML(publication.title)}</a>
               </h2>
+              <div
+                class="publication-citation-metric"
+                aria-label="${citationCount} citations"
+              >
+                <span class="publication-citation-number">${formatNumber(
+                  citationCount
+                )}</span>
+                <span class="publication-citation-label">citations</span>
+              </div>
               <p class="publication-summary">
                 ${escapeHTML(summary)}
               </p>
+              ${formatVersions(publication)}
             </article>
           </li>
         `;
       }
 
-      function formatPublications(publications) {
+      function formatPublications(publications, citedByData) {
         return publications
-          .map((publication) => formatPublication(publication))
+          .map((publication) => formatPublication(publication, citedByData))
           .join("");
       }
 
       document.addEventListener("DOMContentLoaded", () => {
-        fetch("db/publications.json", { cache: "no-store" })
-          .then((response) => response.json())
-          .then((publications) => {
+        Promise.all([
+          fetch("db/publications.json", { cache: "no-store" }).then(
+            (response) => response.json()
+          ),
+          fetch("db/cited-by.json", { cache: "no-store" }).then((response) =>
+            response.json()
+          ),
+          fetch("db/publication-authors.json", { cache: "no-store" }).then(
+            (response) => response.json()
+          ),
+        ]).then(([publications, citedByData, publicationAuthors]) => {
+          document.getElementById("worksSummary").innerHTML =
+            formatWorksSummary(publications, citedByData, publicationAuthors);
           document.getElementById("publicationList").innerHTML =
-            formatPublications(publications);
+            formatPublications(publications, citedByData);
         });
       });
     </script>
@@ -87,6 +218,11 @@
       <span class="breadcrumb-current">Works</span>
     </nav>
     <h1>Works</h1>
-    <ol reversed class="publication-list" id="publicationList"></ol>
+    <section
+      class="works-summary"
+      id="worksSummary"
+      aria-label="Works summary"
+    ></section>
+    <ul class="publication-list" id="publicationList"></ul>
   </body>
 </html>

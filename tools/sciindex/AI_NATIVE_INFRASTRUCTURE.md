@@ -69,9 +69,49 @@ Code performs checks that can be made exact: schema shape, file hashes,
 identifier namespaces, endpoint existence, allowed connection patterns, and
 literal evidence matching.
 
+## Multiple producers
+
+The same canonical object or connection may be discovered by several tasks. An
+author may come from structured manuscript metadata or from an LLM reading the
+paper. A gene may be observed in prose and in a differential-expression table.
+Those are different production paths, not different graph entities.
+
+Each task keeps its observations, method details, source locations, and
+source-specific validation in its accepted artifact. The graph stores only the
+canonical object or connection plus a compact list in
+`properties.provenance`:
+
+```json
+{
+  "provenance": [
+    "artifact:paper:sha256:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"
+  ]
+}
+```
+
+An artifact ID identifies a validated producer output by content. When several
+accepted artifacts resolve to the same record, the dataset adapter merges their
+artifact IDs. It does not add a `support`, `observation`, or `extraction`
+object. Conflicting canonical values are resolver errors or review items; the
+adapter must not silently create duplicate identities.
+
+Verification therefore has two levels:
+
+1. A task validator checks the source-specific path that produced a candidate,
+   such as exact text spans, table cells, metadata shape, or API identifiers.
+2. The index verifier checks only graph-wide invariants, including canonical
+   IDs, endpoints, allowed patterns, and well-formed provenance artifact IDs.
+
+Canonical resolution is independent of extraction. For example, prose and a
+table may both yield the label `BRCA2`; each observation is verified where it
+was found, then a resolver maps both to one gene object carrying accepted
+identifiers such as Ensembl and HGNC. Study-specific differential-expression
+values belong on a claim grounded in the study, not on the canonical gene.
+
 ## Portable bundle
 
-A bundle contains one recipe and self-contained tasks. A task contains a
+A bundle contains one recipe and self-contained tasks. Multiple tasks may
+produce candidates for the same object or connection kind. A task contains a
 manifest, prompt, candidate schema, source preparer, and validator. It must not
 contain paths or joins specific to one dataset.
 

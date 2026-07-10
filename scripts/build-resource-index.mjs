@@ -10,6 +10,12 @@ import {
   taskHash,
   titlesPlausiblyMatch,
 } from "../tools/sciindex/bundles/scientific-literature/tasks/paper/lib/common.mjs";
+import {
+  artifactRef,
+  mergeProvenanceProperties,
+  provenanceRefs,
+  withProvenance,
+} from "../tools/sciindex/provenance.mjs";
 import { sourceWorkCatalogByDoi } from "./lib/source-work-catalog.mjs";
 
 const rootDir = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
@@ -141,6 +147,25 @@ const accepted = fs.existsSync(acceptedPath)
   ? JSON.parse(fs.readFileSync(acceptedPath, "utf8"))
   : null;
 
+const artifacts = {
+  publications: artifactRef("publication-metadata", sha256File("db/publications.json")),
+  citations: artifactRef("citation-metadata", sha256File("db/cited-by.json")),
+  authors: artifactRef("author-metadata", sha256File("db/publication-authors.json")),
+  pdfManifest: artifactRef("pdf-manifest", sha256File("db/pdf-manifest.local.json")),
+  citedChecklist: artifactRef(
+    "citation-checklist",
+    sha256File("local/citation-context/cited-by-pdf-checklist.local.json")
+  ),
+};
+
+function paperArtifact(paper) {
+  const expected = artifactRef("paper", paper?.provenance?.output_sha256 || "");
+  if (paper?.provenance?.artifact_id && paper.provenance.artifact_id !== expected) {
+    throw new Error(`Accepted paper ${paper.id} has a mismatched artifact id`);
+  }
+  return expected;
+}
+
 if (accepted) {
   if (
     accepted.schema_version !== "sciindex-accepted-v0" ||
@@ -154,8 +179,70 @@ if (accepted) {
 const objects = new Map();
 const connections = new Map();
 const sources = new Map();
-const addObject = (value) => objects.set(value.id, value);
-const addConnection = (value) => connections.set(value.id, value);
+function mergeEvidence(left = [], right = []) {
+  const items = new Map();
+  for (const item of [...left, ...right]) items.set(JSON.stringify(item), item);
+  return [...items.values()];
+}
+
+function mergeUnique(left = [], right = []) {
+  const items = new Map();
+  for (const item of [...left, ...right]) items.set(JSON.stringify(item), item);
+  return [...items.values()];
+}
+
+function requireCompatible(existing, value, fields, recordType) {
+  for (const field of fields) {
+    if (existing[field] && value[field] && existing[field] !== value[field]) {
+      throw new Error(`${recordType} ${value.id} has conflicting ${field}`);
+    }
+  }
+}
+
+function addObject(value) {
+  const existing = objects.get(value.id);
+  if (!existing) {
+    objects.set(value.id, value);
+    return;
+  }
+  requireCompatible(existing, value, ["kind"], "Object");
+  if (existing.kind !== "person") {
+    requireCompatible(existing, value, ["description"], "Object");
+  }
+  existing.properties = mergeProvenanceProperties(existing.properties, value.properties);
+  const alternateLabels = existing.label !== value.label ? [value.label] : [];
+  for (const field of ["identifiers", "aliases"]) {
+    if (
+      existing.properties[field] ||
+      value.properties[field] ||
+      (field === "aliases" && alternateLabels.length)
+    ) {
+      existing.properties[field] = mergeUnique(
+        existing.properties[field] || [],
+        [
+          ...(value.properties[field] || []),
+          ...(field === "aliases" ? alternateLabels : []),
+        ]
+      );
+    }
+  }
+}
+
+function addConnection(value) {
+  const existing = connections.get(value.id);
+  if (!existing) {
+    connections.set(value.id, value);
+    return;
+  }
+  requireCompatible(
+    existing,
+    value,
+    ["source", "target", "statement"],
+    "Connection"
+  );
+  existing.evidence = mergeEvidence(existing.evidence, value.evidence);
+  existing.properties = mergeProvenanceProperties(existing.properties, value.properties);
+}
 const addSource = (value) => sources.set(value.id, value);
 
 const authorVersions = new Map();
@@ -228,9 +315,8 @@ function onlyCandidate(index, key) {
   return candidates.length === 1 ? candidates[0] : null;
 }
 
-function addPerson(author) {
+function addPerson(author, provenance) {
   const id = personId(author);
-  if (objects.has(id)) return id;
   const name = String(author.name || "").trim();
   const orcid = normalizeOrcid(author.orcid);
   addObject({
@@ -238,18 +324,28 @@ function addPerson(author) {
     kind: "person",
     label: name,
     description: name,
-    properties: {
+    properties: withProvenance({
       identifiers: [
         orcid ? { namespace: "orcid", value: `https://orcid.org/${orcid}` } : null,
         { namespace: "local", value: id },
       ].filter(Boolean),
       aliases: [name],
-    },
+    }, provenance),
   });
   return id;
 }
 
-function addDocument({ id, publicationId, kind, pdfPath, pdfSha256, textPath, textSha256, pageCount }) {
+function addDocument({
+  id,
+  publicationId,
+  kind,
+  pdfPath,
+  pdfSha256,
+  textPath,
+  textSha256,
+  pageCount,
+  provenance,
+}) {
   pdfPath = existingPath(pdfPath);
   textPath = existingPath(textPath);
   if (!pdfPath && !textPath) return null;
@@ -261,7 +357,7 @@ function addDocument({ id, publicationId, kind, pdfPath, pdfSha256, textPath, te
     kind: "source_document",
     label: path.basename(pdfPath || textPath),
     description: textPath || pdfPath,
-    properties: {
+    properties: withProvenance({
       version_id: publicationId,
       document_kind: kind,
       pdf_path: pdfPath || "",
@@ -271,7 +367,7 @@ function addDocument({ id, publicationId, kind, pdfPath, pdfSha256, textPath, te
       text_sha256: finalTextHash,
       local_only: true,
       identifiers: [{ namespace: "local", value: documentId }],
-    },
+    }, provenance),
   });
   addConnection({
     id: `connection:${documentId}--${publicationId}`,
@@ -279,7 +375,7 @@ function addDocument({ id, publicationId, kind, pdfPath, pdfSha256, textPath, te
     target: publicationId,
     statement: "This source document provides local provenance for the publication.",
     evidence: [],
-    properties: {},
+    properties: withProvenance({}, provenance),
   });
   if (pdfPath) {
     addSource({
@@ -341,12 +437,11 @@ function addSummaryClaim(publicationId, statement, evidence, provenance) {
     kind: "claim",
     label: statement.slice(0, 120),
     description: statement,
-    properties: {
+    properties: withProvenance({
       source_publication_id: publicationId,
       evidence,
-      provenance,
       identifiers: [{ namespace: "local", value: claimId }],
-    },
+    }, provenance),
   });
   addConnection({
     id: `connection:${publicationId}--${claimId}`,
@@ -354,7 +449,7 @@ function addSummaryClaim(publicationId, statement, evidence, provenance) {
     target: claimId,
     statement: "This publication contains this grounded claim.",
     evidence,
-    properties: { provenance },
+    properties: withProvenance({}, provenance),
   });
 }
 
@@ -380,6 +475,12 @@ for (const publication of publications) {
       `${workSlug}--${slugify([version.date, version.name].filter(Boolean).join(" "))}`;
     const publicationId = `version:${rawVersionId}`;
     const acceptedPaper = acceptedByVersion.get(rawVersionId);
+    const acceptedArtifact = paperArtifact(acceptedPaper);
+    const versionProvenance = provenanceRefs(
+      artifacts.publications,
+      manifest ? artifacts.pdfManifest : "",
+      acceptedArtifact
+    );
     const source = acceptedPaper?.source || {};
     const documentId = addDocument({
       id: rawVersionId,
@@ -390,6 +491,7 @@ for (const publication of publications) {
       textPath: source.text_path || manifest?.text?.path || "",
       textSha256: source.text_sha256 || "",
       pageCount: manifest?.pdf?.pages || manifest?.text?.pages || null,
+      provenance: versionProvenance,
     });
     const summary =
       acceptedPaper?.paper?.statement || version.summary || "";
@@ -401,7 +503,7 @@ for (const publication of publications) {
       kind: "publication",
       label: version.title || publication.title,
       description: summary,
-      properties: {
+      properties: withProvenance({
         work_id: workId,
         year: yearFrom(version.date),
         date: version.date || "",
@@ -416,7 +518,7 @@ for (const publication of publications) {
           versionURL(version) ? { namespace: "url", value: versionURL(version) } : null,
           { namespace: "local", value: publicationId },
         ].filter(Boolean),
-      },
+      }, versionProvenance),
     });
     addConnection({
       id: `connection:${publicationId}--${workId}`,
@@ -424,20 +526,21 @@ for (const publication of publications) {
       target: workId,
       statement: `${version.date || "This publication"} is a version of ${publication.title}.`,
       evidence: [],
-      properties: {},
+      properties: withProvenance({}, versionProvenance),
     });
-    addSummaryClaim(publicationId, summary, evidence, {
-      task: "paper",
-    });
+    addSummaryClaim(publicationId, summary, evidence, acceptedArtifact);
     authors.forEach((author, index) => {
-      const target = addPerson(author);
+      const target = addPerson(author, artifacts.authors);
       addConnection({
         id: `connection:${publicationId}--${target}--author-${index + 1}`,
         source: publicationId,
         target,
         statement: `${author.name} is an author of ${version.title || publication.title}.`,
         evidence: [],
-        properties: { author_position: index + 1 },
+        properties: withProvenance(
+          { author_position: index + 1 },
+          artifacts.authors
+        ),
       });
     });
     versionIds.push(publicationId);
@@ -457,13 +560,13 @@ for (const publication of publications) {
     kind: "work",
     label: publication.title,
     description: publication.summary || "",
-    properties: {
+    properties: withProvenance({
       collection: "my_work",
       slug: workSlug,
       aliases: [workSlug],
       version_ids: versionIds,
       identifiers: [{ namespace: "local", value: workId }],
-    },
+    }, artifacts.publications),
   });
   ownedWorkBySlug.set(workSlug, workId);
   ownedVersionsByTitle.set(titleKey(publication.title), versionIds);
@@ -546,6 +649,12 @@ function ensureCiting(row) {
   const workId = `work:citing:${slug}`;
   const publicationId = `version:citing:${slug}`;
   const source = acceptedPaper?.source || {};
+  const acceptedArtifact = paperArtifact(acceptedPaper);
+  const citingProvenance = provenanceRefs(
+    artifacts.citations,
+    checklist ? artifacts.citedChecklist : "",
+    acceptedArtifact
+  );
   const pdfPath =
     source.pdf_path ||
     checklist?.available_pdf_path ||
@@ -561,6 +670,7 @@ function ensureCiting(row) {
     textPath,
     textSha256: source.text_sha256 || "",
     pageCount: null,
+    provenance: citingProvenance,
   });
   const summary = acceptedPaper?.paper?.statement || row.summary || "";
   const evidence = groundedEvidence(acceptedPaper?.paper?.evidence || [], documentId);
@@ -569,20 +679,20 @@ function ensureCiting(row) {
     kind: "work",
     label: cleanTitle(row.title),
     description: summary,
-    properties: {
+    properties: withProvenance({
       collection: "citing_work",
       slug,
       aliases: [slug],
       version_ids: [publicationId],
       identifiers: [{ namespace: "local", value: workId }],
-    },
+    }, citingProvenance),
   });
   addObject({
     id: publicationId,
     kind: "publication",
     label: cleanTitle(row.title),
     description: summary,
-    properties: {
+    properties: withProvenance({
       work_id: workId,
       year: Number.isInteger(row.year) ? row.year : yearFrom(row.year),
       date: row.year ? String(row.year) : "",
@@ -597,7 +707,7 @@ function ensureCiting(row) {
         row.link ? { namespace: "url", value: row.link } : null,
         { namespace: "local", value: publicationId },
       ].filter(Boolean),
-    },
+    }, citingProvenance),
   });
   addConnection({
     id: `connection:${publicationId}--${workId}`,
@@ -605,9 +715,9 @@ function ensureCiting(row) {
     target: workId,
     statement: "This publication is the indexed version of the citing work.",
     evidence: [],
-    properties: {},
+    properties: withProvenance({}, citingProvenance),
   });
-  addSummaryClaim(publicationId, summary, evidence, { task: acceptedPaper ? "paper" : "" });
+  addSummaryClaim(publicationId, summary, evidence, acceptedArtifact);
 
   const result = { workId, publicationId, documentId, acceptedPaper };
   citingByKey.set(key, result);
@@ -627,13 +737,17 @@ for (const [targetSlug, work] of Object.entries(citedBy.works || {})) {
       target: targetWorkId,
       statement: `${objects.get(citing.workId).label} cites ${objects.get(targetWorkId).label}.`,
       evidence: [],
-      properties: { source_work_id: citing.workId },
+      properties: withProvenance(
+        { source_work_id: citing.workId },
+        artifacts.citations
+      ),
     });
   }
 }
 
 const sourceCatalog = sourceWorkCatalogByDoi();
 for (const paper of accepted?.papers || []) {
+  const acceptedArtifact = paperArtifact(paper);
   const citing = paper.input.version_id
     ? ownedPublicationByVersionId.get(paper.input.version_id)
     : citingByAcceptedId.get(paper.id);
@@ -657,7 +771,10 @@ for (const paper of accepted?.papers || []) {
       target: targetWorkId,
       statement: `${objects.get(citing.workId).label} cites ${objects.get(targetWorkId).label}.`,
       evidence: [],
-      properties: { source_work_id: citing.workId },
+      properties: withProvenance(
+        { source_work_id: citing.workId },
+        acceptedArtifact
+      ),
     });
     const candidateVersions = ownedVersionsByDoi.get(doi) || [];
     const targetId = candidateVersions.length === 1 ? candidateVersions[0] : targetWorkId;
@@ -676,13 +793,12 @@ for (const paper of accepted?.papers || []) {
         kind: "claim",
         label: statement.slice(0, 120),
         description: statement,
-        properties: {
+        properties: withProvenance({
           source_work_id: citing.workId,
           source_publication_id: citing.publicationId,
           evidence,
-          provenance: { task: "paper", output_sha256: paper.provenance.output_sha256 },
           identifiers: [{ namespace: "local", value: claimId }],
-        },
+        }, acceptedArtifact),
       };
       addObject(object);
       addConnection({
@@ -691,7 +807,10 @@ for (const paper of accepted?.papers || []) {
         target: claimId,
         statement: "This publication contains this grounded citation-context claim.",
         evidence,
-        properties: { source_work_id: citing.workId },
+        properties: withProvenance(
+          { source_work_id: citing.workId },
+          acceptedArtifact
+        ),
       });
       claim = { id: claimId, object };
       claimsByEvidence.set(signature, claim);
@@ -709,13 +828,13 @@ for (const paper of accepted?.papers || []) {
         target: targetId,
         statement: reference.statement,
         evidence,
-        properties: {
+        properties: withProvenance({
           source_work_id: citing.workId,
           source_publication_id: citing.publicationId,
           target_work_id: targetWorkId,
           cited_as: [reference.ref || String(index + 1)],
           cited_dois: doi ? [doi] : [],
-        },
+        }, acceptedArtifact),
       });
     }
   }

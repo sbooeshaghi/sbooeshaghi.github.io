@@ -23,10 +23,23 @@ The accepted shape is deliberately small:
 ```json
 {
   "objects": [
-    { "id": "...", "kind": "...", "label": "...", "description": "...", "properties": {} }
+    {
+      "id": "...",
+      "kind": "...",
+      "label": "...",
+      "description": "...",
+      "properties": { "provenance": ["artifact:<producer>:sha256:<hash>"] }
+    }
   ],
   "connections": [
-    { "id": "...", "source": "...", "target": "...", "statement": "...", "evidence": [], "properties": {} }
+    {
+      "id": "...",
+      "source": "...",
+      "target": "...",
+      "statement": "...",
+      "evidence": [],
+      "properties": { "provenance": ["artifact:<producer>:sha256:<hash>"] }
+    }
   ],
   "sources": [
     { "id": "...", "kind": "...", "label": "...", "locator": "...", "properties": {} }
@@ -36,6 +49,9 @@ The accepted shape is deliberately small:
 
 Connections are untyped. Their statements and evidence explain their meaning.
 Objects may carry multiple public or local identifiers in `properties`.
+Every object and connection carries one or more content-addressed accepted
+artifact IDs in `properties.provenance`. Full extraction and verification
+details remain in those artifacts rather than becoming graph entities.
 
 Default CLI output is compact. `--verbose` exposes properties and evidence.
 These are query projections over one stored shape, not separate schemas.
@@ -63,7 +79,15 @@ needed to prepare an agent input and validate its candidate output.
 Every input packet records recipe, task, PDF, and retained-text hashes. A
 validator report records the input and output hashes and fails when any check
 fails. Only that report may be ingested. Agent output is never accepted
-directly, and accepted artifacts are immutable inputs to dataset adapters.
+directly, and accepted artifacts are immutable inputs to dataset adapters. A
+task validates how its candidate was produced; the generic index verifier
+validates the canonical graph after resolution.
+
+Several tasks may produce the same object or connection kind. Structured
+metadata extraction, text extraction, and table extraction can therefore use
+different schemas and validators while resolving into one canonical record.
+The adapter merges their artifact IDs and rejects incompatible identities; it
+does not create extraction-method objects in the graph.
 
 The current bundle is
 `bundles/scientific-literature/`. Its `paper` task reads a complete paper,
@@ -134,6 +158,10 @@ Callers can then fetch a stable object ID or version-specific URL.
 - Keep dataset paths and joins in a dataset adapter.
 - Use LLMs for semantic extraction and linking.
 - Use deterministic checks for hashes, identifiers, shape, and literal evidence.
+- Keep production details in accepted artifacts and only their content-addressed
+  IDs on canonical graph records.
+- Let source-specific tasks use different validators, then resolve their output
+  into shared canonical identities.
 - Preserve ungrounded known connections; do not invent reasons for them.
 - Give grouping objects such as `work` stable identity when they organize real
   concrete objects.

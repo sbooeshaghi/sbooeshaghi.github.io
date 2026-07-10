@@ -4,6 +4,7 @@ import fs from "node:fs";
 import crypto from "node:crypto";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { isArtifactRef } from "../tools/sciindex/provenance.mjs";
 
 const rootDir = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const indexPath = path.resolve(rootDir, process.argv[2] || "db/resource-index.json");
@@ -68,6 +69,20 @@ function identifierFormatValid(namespace, value) {
   }
 }
 
+function verifyProvenance(properties, context) {
+  const provenance = properties?.provenance;
+  if (!Array.isArray(provenance) || !provenance.length) {
+    fail(`${context}: at least one provenance artifact is required`);
+    return;
+  }
+  if (new Set(provenance).size !== provenance.length) {
+    fail(`${context}: provenance artifacts must be unique`);
+  }
+  for (const ref of provenance) {
+    if (!isArtifactRef(ref)) fail(`${context}: invalid provenance artifact ${ref}`);
+  }
+}
+
 function indexById(items, label) {
   const records = new Map();
   for (const [position, item] of (items || []).entries()) {
@@ -107,6 +122,7 @@ for (const [id, object] of objects) {
   if (!object.properties || Array.isArray(object.properties) || typeof object.properties !== "object") {
     fail(`${id}: properties must be an object`);
   }
+  verifyProvenance(object.properties, id);
   const identifiers = object.properties?.identifiers;
   if (!Array.isArray(identifiers) || !identifiers.length) {
     fail(`${id}: at least one identifier is required`);
@@ -196,6 +212,7 @@ for (const [id, connection] of connections) {
   requireString(connection, "source", id);
   requireString(connection, "target", id);
   requireString(connection, "statement", id);
+  verifyProvenance(connection.properties, id);
   const sourceObject = objects.get(connection.source);
   const targetObject = objects.get(connection.target);
   if (!sourceObject) fail(`${id}: missing source object ${connection.source}`);

@@ -11,6 +11,7 @@ import {
   taskHash,
   writeJSON,
 } from "../tools/sciindex/bundles/scientific-literature/tasks/paper/lib/common.mjs";
+import { artifactRef } from "../tools/sciindex/provenance.mjs";
 
 const rootDir = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 
@@ -101,6 +102,7 @@ const papers = report.results.map((result) => {
     paper: output.paper,
     references: output.references,
     provenance: {
+      artifact_id: artifactRef("paper", result.output_sha256),
       input_sha256: result.input_sha256,
       output_sha256: result.output_sha256,
     },

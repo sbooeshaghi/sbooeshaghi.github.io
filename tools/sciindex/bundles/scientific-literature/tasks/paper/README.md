@@ -77,3 +77,10 @@ When several reference rows reuse the same evidence, a dataset adapter should
 emit one claim object for that grounded context and connect it to each resolved
 reference. The repeated rows are an extraction convenience, not separate
 scientific claims.
+
+Ingestion assigns each accepted paper output a content-addressed artifact ID.
+Canonical objects and connections retain that ID in `properties.provenance`;
+the complete task input, candidate, source hashes, and validation report remain
+outside the graph. Another task may discover the same canonical record through
+metadata or tables and contribute another artifact ID after its own validator
+passes.

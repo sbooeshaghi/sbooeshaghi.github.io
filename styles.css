@@ -264,24 +264,56 @@ span[style*="width"] {
   border: 1px solid #d8d8d8;
 }
 
+.works-summary {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  margin: 1rem 0 1.2rem;
+  background: #f7f7f7;
+  border: 1px solid #d8d8d8;
+}
+
+.works-summary-item {
+  min-width: 0;
+  padding: 0.7rem 0.35rem;
+  text-align: center;
+}
+
+.works-summary-item + .works-summary-item {
+  border-left: 1px solid #ddd;
+}
+
+.works-summary-number,
+.works-summary-label {
+  display: block;
+}
+
+.works-summary-number {
+  color: #222;
+  font-size: 1.3rem;
+  font-weight: 700;
+  line-height: 1.05;
+}
+
+.works-summary-label {
+  margin-top: 0.25rem;
+  color: #666;
+  font-size: 0.68rem;
+  line-height: 1;
+}
+
 .publication-list {
   display: grid;
   gap: 0.8rem;
   margin: 1rem 0 0;
-  padding-left: 1.5rem;
-}
-
-.publication-item {
-  padding-left: 0.15rem;
-}
-
-.publication-item::marker {
-  color: #777;
-  font-size: 0.82rem;
-  font-weight: 700;
+  padding: 0;
+  list-style: none;
 }
 
 .publication-card {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  column-gap: 0.7rem;
+  align-items: start;
   padding: 0.8rem 0.85rem;
   background: #fafafa;
   border-top: 1px solid #ddd;
@@ -294,6 +326,34 @@ span[style*="width"] {
   margin: 0;
   font-size: 1rem;
   line-height: 1.35;
+}
+
+.publication-citation-metric {
+  min-width: 3.75rem;
+  padding: 0.4rem 0.45rem;
+  text-align: center;
+  background: #fff;
+  border: 1px solid #d8d8d8;
+  border-radius: 4px;
+}
+
+.publication-citation-number,
+.publication-citation-label {
+  display: block;
+}
+
+.publication-citation-number {
+  color: #222;
+  font-size: 1.15rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.publication-citation-label {
+  margin-top: 0.2rem;
+  color: #666;
+  font-size: 0.65rem;
+  line-height: 1;
 }
 
 .publication-page-link {
@@ -402,10 +462,38 @@ span[style*="width"] {
 }
 
 .publication-summary {
+  grid-column: 1 / -1;
   margin: 0.6rem 0 0;
   color: #333;
   font-size: 0.92rem;
   line-height: 1.45;
+}
+
+.publication-card-versions {
+  grid-column: 1 / -1;
+  margin-top: 0.75rem;
+  padding-top: 0.55rem;
+  color: #555;
+  font-size: 0.78rem;
+  line-height: 1.45;
+  border-top: 1px solid #ddd;
+}
+
+.publication-card-versions-label {
+  color: #444;
+  font-weight: 700;
+}
+
+.publication-card-version-link {
+  color: #0645ad;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.1em;
+}
+
+.publication-card-version-link:hover {
+  color: red;
+  border-bottom: 0;
 }
 
 .publication-word-count {
@@ -1692,10 +1780,6 @@ body.graph-mock-page {
 
   .post-card {
     padding: 0.65rem 0.7rem;
-  }
-
-  .publication-list {
-    padding-left: 1.15rem;
   }
 
   .publication-card {
