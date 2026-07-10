@@ -64,6 +64,7 @@ A bundle is the portable domain unit:
 bundles/<domain>/
   bundle.json
   recipe.json
+  lib/                 # deterministic source packaging
   tasks/<task>/
     task.json
     prompt.md
@@ -74,12 +75,15 @@ bundles/<domain>/
 
 The recipe defines accepted object kinds, identifier namespaces, connection
 patterns, source kinds, and deterministic checks. A task contains everything
-needed to prepare an agent input and validate its candidate output.
+needed to prepare an agent input and validate its candidate output. Source
+packets are deterministic inputs, not agent tasks.
 
 Every input packet records recipe, task, PDF, and retained-text hashes. A
 validator report records the input and output hashes and fails when any check
 fails. Only that report may be ingested. Agent output is never accepted
-directly, and accepted artifacts are immutable inputs to dataset adapters. A
+directly. Accepted artifact IDs address the transformed record, including its
+paper identity and input provenance, rather than only the raw candidate.
+Accepted artifacts are immutable inputs to dataset adapters. A
 task validates how its candidate was produced; the generic index verifier
 validates the canonical graph after resolution.
 
@@ -89,19 +93,28 @@ different schemas and validators while resolving into one canonical record.
 The adapter merges their artifact IDs and rejects incompatible identities; it
 does not create extraction-method objects in the graph.
 
-The current bundle is
-`bundles/scientific-literature/`. Its `paper` task reads a complete paper,
-produces one grounded summary and one flat reference inventory, and exact-matches
-every evidence span against retained text.
+The current bundle is `bundles/scientific-literature/`. Scientific interpretation
+is split into four small tasks:
 
-The flat inventory intentionally repeats a shared span once for every reference
-used in that span because this is easy for an agent to produce and verify. The
-dataset adapter normalizes those rows into one grounded claim object connected
-to every cited publication. Extraction stays simple while the accepted graph
-preserves the many-reference scientific structure.
+1. `claims` reads the complete manuscript and extracts every explicit atomic
+   claim with exact evidence spans.
+2. `results` groups accepted claims into coherent reported findings. Each
+   result is supported by at least two claim IDs and copies no source spans.
+   A non-empirical paper may validly produce an empty result list when none of
+   its claims form a multi-claim finding.
+3. `summary` reads only accepted claim IDs and statements, then writes one
+   concise paper description grounded in the selected claims.
+4. `references` reads the complete manuscript plus accepted claims, inventories
+   the bibliography, and links each used reference to the claims it supports.
 
-A claim displays the agent's concise statement. Its evidence retains the exact
-source spans verbatim; evidence text is never substituted for the claim summary.
+This separation prevents a short paper summary from becoming the claim
+inventory. Claims are reusable graph objects; results are reusable groupings
+over claims; a summary is a projection over accepted claims; reference links
+connect cited publications to those same claims. Grounding therefore follows
+`source span -> claim -> result` without copying evidence.
+
+A claim displays the agent's concise statement. Its evidence retains exact
+source spans verbatim; evidence text is never substituted for the claim.
 
 ```bash
 node tools/sciindex/verify-bundle.mjs
@@ -112,17 +125,58 @@ node tools/sciindex/verify-bundle.mjs
 From the repository root:
 
 ```bash
-# Prepare all downloaded versions of the author's works
-node scripts/prepare-paper-task.mjs --works
+# Prepare all downloaded versions as deterministic source packets
+node scripts/prepare-source-packets.mjs --works
 
-# After agents write JSON outputs
-node tools/sciindex/bundles/scientific-literature/tasks/paper/validate.mjs \
-  --input-dir=local/sciindex/paper/inputs \
-  --output-dir=local/sciindex/paper/outputs
+# Prepare claim packets from complete paper packets
+node tools/sciindex/bundles/scientific-literature/tasks/claims/prepare.mjs \
+  --input-dir=local/sciindex/source/inputs
 
-# Create the immutable accepted task artifact
-node scripts/ingest-paper-task.mjs \
-  --validation-report=local/sciindex/paper/reports/validation.json
+# A model-agnostic orchestrator can distribute these balanced packet manifests
+node tools/sciindex/make-batches.mjs \
+  --index=local/sciindex/claims/inputs/index.json \
+  --out-dir=local/sciindex/claims/batches \
+  --batches=4
+
+# After agents write claim candidates
+node tools/sciindex/bundles/scientific-literature/tasks/claims/validate.mjs \
+  --input-dir=local/sciindex/claims/inputs \
+  --output-dir=local/sciindex/claims/outputs
+
+# Create the immutable accepted claim artifact
+node scripts/ingest-claims-task.mjs \
+  --validation-report=local/sciindex/claims/reports/validation.json
+
+# Prepare downstream results, summaries, and reference links from accepted claims
+node tools/sciindex/bundles/scientific-literature/tasks/results/prepare.mjs \
+  --claims=local/sciindex/claims/accepted.json
+node tools/sciindex/bundles/scientific-literature/tasks/summary/prepare.mjs \
+  --claims=local/sciindex/claims/accepted.json
+node tools/sciindex/bundles/scientific-literature/tasks/references/prepare.mjs \
+  --source-input-dir=local/sciindex/source/inputs \
+  --claims=local/sciindex/claims/accepted.json
+
+# Validate and accept the downstream agent candidates
+node tools/sciindex/bundles/scientific-literature/tasks/results/validate.mjs \
+  --input-dir=local/sciindex/results/inputs \
+  --output-dir=local/sciindex/results/outputs
+node scripts/ingest-results-task.mjs \
+  --validation-report=local/sciindex/results/reports/validation.json
+
+node tools/sciindex/bundles/scientific-literature/tasks/summary/validate.mjs \
+  --input-dir=local/sciindex/summary/inputs \
+  --output-dir=local/sciindex/summary/outputs
+node scripts/ingest-summary-task.mjs \
+  --validation-report=local/sciindex/summary/reports/validation.json
+
+node tools/sciindex/bundles/scientific-literature/tasks/references/validate.mjs \
+  --input-dir=local/sciindex/references/inputs \
+  --output-dir=local/sciindex/references/outputs
+node scripts/ingest-references-task.mjs \
+  --validation-report=local/sciindex/references/reports/validation.json
+
+# Refuse partial or mismatched four-task corpora before graph construction
+node scripts/verify-sciindex-cutover.mjs
 
 # Build and verify the generic graph
 node scripts/build-resource-index.mjs
@@ -130,7 +184,15 @@ node scripts/verify-resource-index.mjs
 ```
 
 The dataset adapter is intentionally outside the bundle because it knows about
-this repository's publication metadata and citation exports.
+this repository's publication metadata and citation exports. Complete accepted
+task sets for cited papers are projected as citing publications using the same
+claim and result objects as owned works.
+
+Agent orchestration is intentionally model-agnostic: an orchestrator reads a
+task input index or balanced batch manifest, sends each self-contained packet
+to a model, and writes one candidate beside the other task outputs. Validators,
+not the orchestrator, define acceptance. The cutover verifier requires exact
+paper coverage and claims lineage across all four accepted artifacts.
 
 ## Query CLI
 

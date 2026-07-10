@@ -30,13 +30,21 @@ can carry ORCID. A claim can be identified by its source and content. Contextual
 roles such as author or citation use are connections, not new object kinds.
 
 A claim is a concise LLM-generated statement grounded by one or more verbatim
-source spans. The summary is the claim's label and description; the spans stay
-in its evidence. A claim belongs to the publication that contains its grounded
-text. When one claim cites several publications, the graph stores one claim
-object and one outgoing connection from that claim to each cited publication. The shared
-evidence stays on the claim and its connections; each connection statement can
-still explain the distinct role of that cited publication. This represents a
-many-reference citation context without inventing a `citation_use` object.
+source spans. A claim belongs to the publication that contains its grounded
+text. A result is a coherent reported finding supported by at least two
+accepted claims. It stores only a concise statement and claim connections, so
+its grounding remains transitive rather than duplicating source spans. A paper
+summary is neither a claim nor a result: it is a publication description
+generated from accepted claim IDs and statements. This preserves an exhaustive
+claim inventory while supporting both result-level retrieval and short,
+purpose-specific summaries.
+
+When one claim cites several publications, the graph stores one claim object
+and one outgoing connection from that claim to each cited publication. The
+shared evidence stays on the claim and its connections; each connection
+statement can still explain the distinct role of that cited publication. This
+represents a many-reference citation context without inventing a
+`citation_use` object.
 If a cited item cannot yet be resolved to an indexed object, its verified
 reference record remains in the accepted task artifact, but the adapter does
 not fabricate a graph endpoint or connection.
@@ -49,11 +57,12 @@ relation vocabulary.
 ## Operational contract
 
 ```text
-source
-  -> hashed task input
-  -> agent candidate
-  -> deterministic validation report
-  -> immutable accepted artifact
+deterministic source packet
+  -> claims candidate -> verified accepted claims
+  -> results candidate over accepted claim IDs
+  -> summary candidate over accepted claim IDs
+  -> reference candidate linking accepted claims
+  -> immutable accepted artifacts
   -> dataset adapter
   -> resource index
   -> search / fetch / relations / site
@@ -68,6 +77,12 @@ reference identification, semantic linking, and concise connection statements.
 Code performs checks that can be made exact: schema shape, file hashes,
 identifier namespaces, endpoint existence, allowed connection patterns, and
 literal evidence matching.
+
+Packet distribution is deliberately model-agnostic. An orchestrator may be a
+human, subagent pool, queue, or hosted service; it only maps self-contained
+inputs to candidate outputs. Balanced batch manifests make fan-out repeatable,
+while validators and a full-corpus lineage gate determine whether a run may be
+published.
 
 ## Multiple producers
 
@@ -84,7 +99,7 @@ canonical object or connection plus a compact list in
 ```json
 {
   "provenance": [
-    "artifact:paper:sha256:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"
+    "artifact:claims:sha256:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"
   ]
 }
 ```

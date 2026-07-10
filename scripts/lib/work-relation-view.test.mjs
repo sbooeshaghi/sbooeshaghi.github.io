@@ -11,13 +11,13 @@ const resourceIndex = JSON.parse(
 );
 const projectWork = createWorkRelationProjector(resourceIndex);
 
-test("projects graph objects into the six work-page tabs", () => {
+test("projects graph objects into the seven work-page tabs", () => {
   const view = projectWork(
     "modular-efficient-and-constant-memory-single-cell-rna-seq-preprocessing"
   );
   assert.deepEqual(
     view.relationTypes.map((type) => type.id),
-    ["authors", "claims", "citations", "versions", "software", "sources"]
+    ["authors", "results", "claims", "citations", "versions", "software", "sources"]
   );
   assert.equal(view.connections.filter((item) => item.type === "authors").length, 10);
   assert.ok(view.connections.some((item) => item.type === "citations"));
@@ -92,4 +92,54 @@ test("projects direct ungrounded publication citations without treating them as 
   const view = createWorkRelationProjector(index)("target");
   assert.deepEqual(view.connections.filter((item) => item.type === "versions").map((item) => item.id), ["version"]);
   assert.deepEqual(view.connections.filter((item) => item.type === "citations").map((item) => item.id), ["citation"]);
+});
+
+test("orders accepted claims by manuscript position", () => {
+  const index = {
+    objects: [
+      { id: "work:ordered", kind: "work", label: "Ordered", description: "", properties: {} },
+      { id: "version:ordered", kind: "publication", label: "Ordered v1", description: "", properties: { work_id: "work:ordered" } },
+      { id: "claim:second", kind: "claim", label: "Second", description: "Second", properties: {} },
+      { id: "claim:first", kind: "claim", label: "First", description: "First", properties: {} },
+    ],
+    connections: [
+      { id: "version", source: "version:ordered", target: "work:ordered", statement: "Version", evidence: [], properties: {} },
+      { id: "second", source: "version:ordered", target: "claim:second", statement: "Contains", evidence: [], properties: { claim_position: 2 } },
+      { id: "first", source: "version:ordered", target: "claim:first", statement: "Contains", evidence: [], properties: { claim_position: 1 } },
+    ],
+  };
+
+  const claims = createWorkRelationProjector(index)("ordered").connections.filter(
+    (item) => item.type === "claims"
+  );
+  assert.deepEqual(claims.map((item) => item.title), ["First", "Second"]);
+});
+
+test("projects results with their supporting claims", () => {
+  const index = {
+    objects: [
+      { id: "work:results", kind: "work", label: "Results", description: "", properties: {} },
+      { id: "version:results", kind: "publication", label: "Results v1", description: "", properties: { work_id: "work:results" } },
+      { id: "result:one", kind: "result", label: "Grouped result", description: "Grouped result", properties: {} },
+      { id: "claim:one", kind: "claim", label: "One", description: "Claim one", properties: { claim_position: 1 } },
+      { id: "claim:two", kind: "claim", label: "Two", description: "Claim two", properties: { claim_position: 2 } },
+    ],
+    connections: [
+      { id: "version", source: "version:results", target: "work:results", statement: "Version", evidence: [], properties: {} },
+      { id: "result", source: "version:results", target: "result:one", statement: "Reports", evidence: [], properties: { result_position: 1 } },
+      { id: "claim-one", source: "version:results", target: "claim:one", statement: "Contains", evidence: [], properties: { claim_position: 1 } },
+      { id: "claim-two", source: "version:results", target: "claim:two", statement: "Contains", evidence: [], properties: { claim_position: 2 } },
+      { id: "support-two", source: "result:one", target: "claim:two", statement: "Supports", evidence: [], properties: {} },
+      { id: "support-one", source: "result:one", target: "claim:one", statement: "Supports", evidence: [], properties: {} },
+    ],
+  };
+
+  const result = createWorkRelationProjector(index)("results").connections.find(
+    (item) => item.type === "results"
+  );
+  assert.equal(result.description, "Grouped result");
+  assert.deepEqual(result.supportingClaims, [
+    { objectId: "claim:one", statement: "Claim one" },
+    { objectId: "claim:two", statement: "Claim two" },
+  ]);
 });

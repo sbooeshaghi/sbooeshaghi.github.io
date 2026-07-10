@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://sbooeshaghi.github.io/schemas/sciindex-claims-task.schema.json",
+  "title": "sciindex claims task candidate",
+  "type": "object",
+  "required": ["claims"],
+  "additionalProperties": false,
+  "properties": {
+    "claims": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["statement", "evidence"],
+        "additionalProperties": false,
+        "properties": {
+          "statement": {"type": "string", "minLength": 1},
+          "evidence": {
+            "type": "array",
+            "minItems": 1,
+            "items": {"$ref": "#/$defs/evidence"}
+          }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "evidence": {
+      "type": "object",
+      "required": ["span", "page"],
+      "additionalProperties": false,
+      "properties": {
+        "span": {"type": "string", "minLength": 1},
+        "page": {"type": "integer", "minimum": 1}
+      }
+    }
+  }
+}

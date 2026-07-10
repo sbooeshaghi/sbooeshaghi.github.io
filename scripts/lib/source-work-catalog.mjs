@@ -4,7 +4,7 @@ import {
   readJSON,
   rootPath,
   slugify,
-} from "../../tools/sciindex/bundles/scientific-literature/tasks/paper/lib/common.mjs";
+} from "../../tools/sciindex/bundles/scientific-literature/lib/common.mjs";
 
 export function sourceWorkDoiCatalog({
   publicationsPath = rootPath("db", "publications.json"),

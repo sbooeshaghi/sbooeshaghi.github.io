@@ -108,6 +108,10 @@ if (index.recipe?.sha256 !== recipeSha256()) {
 const objects = indexById(index.objects, "objects");
 const connections = indexById(index.connections, "connections");
 const sources = indexById(index.sources, "sources");
+const outgoing = new Map();
+for (const connection of connections.values()) {
+  outgoing.set(connection.source, [...(outgoing.get(connection.source) || []), connection]);
+}
 const allowedObjectKinds = new Set(Object.keys(recipe.object_kinds || {}));
 const allowedSourceKinds = new Set(Object.keys(recipe.source_kinds || {}));
 const allowedPatterns = new Set(
@@ -222,6 +226,17 @@ for (const [id, connection] of connections) {
     if (!allowedPatterns.has(pattern)) fail(`${id}: connection pattern ${pattern} is not in the recipe`);
   }
   verifyEvidenceArray(connection.evidence, id);
+}
+
+for (const [id, object] of objects) {
+  if (object.kind !== "result") continue;
+  const supportingClaims = (outgoing.get(id) || []).filter(
+    (connection) =>
+      connection.source === id && objects.get(connection.target)?.kind === "claim"
+  );
+  if (supportingClaims.length < 2) {
+    fail(`${id}: result must be supported by at least two claims`);
+  }
 }
 
 if (errors.length) {

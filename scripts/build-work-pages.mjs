@@ -163,6 +163,10 @@ function renderRelationInspector(relationData) {
           <span class="study-label" data-relation-label>Relation</span>
           <h2 data-relation-title></h2>
           <p class="selected-relation-statement" data-relation-statement></p>
+          <section class="supporting-claims" data-supporting-claims hidden>
+            <h3>Supporting claims</h3>
+            <ul data-supporting-claim-list></ul>
+          </section>
           <section class="version-citation" data-version-citation hidden>
             <h3>Citation</h3>
             <div class="bibtex-box">
@@ -198,11 +202,11 @@ function renderRelationInspector(relationData) {
 function renderPage(publication) {
   const slug = slugify(publication.title);
   const title = escapeHTML(publication.title);
-  const summary = escapeHTML(publication.summary);
+  const relationData = projectWorkRelations(slug);
+  const summary = escapeHTML(relationData.work?.description || publication.summary);
   const breadcrumbLabel = escapeHTML(truncateBreadcrumbLabel(publication.title));
   const citations = citedByRows(slug);
   const citationCount = citations.length;
-  const relationData = projectWorkRelations(slug);
   addVersionBibTeX(relationData);
   const relationCount = relationData.connections.length;
 

@@ -21,6 +21,8 @@
   const detailLabel = root.querySelector("[data-relation-label]");
   const detailTitle = root.querySelector("[data-relation-title]");
   const detailStatement = root.querySelector("[data-relation-statement]");
+  const supportingClaims = root.querySelector("[data-supporting-claims]");
+  const supportingClaimList = root.querySelector("[data-supporting-claim-list]");
   const evidenceDetails = root.querySelector("[data-relation-evidence]");
   const evidenceSummary = root.querySelector("[data-evidence-summary]");
   const evidenceRows = root.querySelector("[data-evidence-rows]");
@@ -115,7 +117,7 @@
       ? visible
           .map((connection) => {
             const content =
-              connection.type === "claims"
+              ["claims", "results"].includes(connection.type)
                 ? `<span class="reason-card-reason">${escapeHTML(connection.description)}</span>`
                 : `
                   <span class="reason-card-title">${escapeHTML(connection.title)}</span>
@@ -152,6 +154,7 @@
       detailTitle.textContent = "Nothing indexed yet";
       detailStatement.hidden = false;
       detailStatement.textContent = "This relation type will appear as the index gains verified objects and connections.";
+      supportingClaims.hidden = true;
       evidenceDetails.hidden = true;
       versionCitation.hidden = true;
       return;
@@ -159,13 +162,41 @@
 
     const evidence = connection.evidence || [];
     const isClaim = connection.type === "claims";
-    detailTitle.textContent = isClaim
+    const isResult = connection.type === "results";
+    detailTitle.textContent = isClaim || isResult
       ? truncateText(connection.description)
       : connection.title;
     detailStatement.hidden = isClaim;
     detailStatement.textContent = isClaim
       ? ""
-      : connection.statement || connection.description;
+      : isResult
+        ? connection.description
+        : connection.statement || connection.description;
+    const claims = connection.supportingClaims || [];
+    supportingClaims.hidden = !(isResult && claims.length);
+    supportingClaimList.innerHTML = claims
+      .map(
+        (claim) => `
+          <li>
+            <button type="button" data-supporting-claim-id="${escapeHTML(claim.objectId)}">
+              ${escapeHTML(claim.statement)}
+            </button>
+          </li>`
+      )
+      .join("");
+    supportingClaimList.querySelectorAll("[data-supporting-claim-id]").forEach((button) => {
+      button.addEventListener("click", () => {
+        const claim = connections.find(
+          (candidate) =>
+            candidate.type === "claims" && candidate.objectId === button.dataset.supportingClaimId
+        );
+        if (!claim) return;
+        selectedType = "claims";
+        selectedId = claim.id;
+        render();
+        document.getElementById(`relation-card-${selectedId}`)?.focus({ preventScroll: true });
+      });
+    });
     versionCitation.hidden = !(connection.type === "versions" && connection.bibtex);
     bibtexCode.textContent = connection.bibtex || "";
     evidenceSummary.textContent = evidence.length === 1 ? "1 span" : `${evidence.length} spans`;
@@ -189,7 +220,7 @@
         document.getElementById(`relation-card-${selectedId}`)?.focus({ preventScroll: true });
       });
     });
-    evidenceDetails.hidden = false;
+    evidenceDetails.hidden = isResult;
   }
 
   function render() {

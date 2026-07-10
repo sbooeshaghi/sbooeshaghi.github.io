@@ -124,7 +124,8 @@ Add `--missing` to show only PDFs not present locally, `--json` for structured
 output, `--mkdir` to create the corresponding local directories, and `--quiet`
 to create directories without printing the target list.
 
-Each publication version is a first-class paper-task target. Prepared inputs,
-retained normalized text, model outputs, validation reports, and the immutable
-accepted artifact live under `local/sciindex/paper/`. The validation report is
-the only allowed input to `scripts/ingest-paper-task.mjs`.
+Each publication version is packaged deterministically under
+`local/sciindex/source/`. The four agent tasks write candidates and accepted
+artifacts under `local/sciindex/{claims,results,summary,references}/`. Only
+validated reports may be ingested, and `scripts/verify-sciindex-cutover.mjs`
+requires complete matching coverage before the public index is rebuilt.

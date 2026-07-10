@@ -1,7 +1,7 @@
 {
   "schema_version": "resource-recipe-v0",
   "id": "scientific-literature",
-  "version": 1,
+  "version": 2,
   "identifier_namespaces": {
     "doi": ["identifier_format_valid"],
     "pmid": ["identifier_format_valid"],
@@ -28,6 +28,10 @@
       "identifiers": ["local"],
       "verifiers": ["evidence_exact_matches"]
     },
+    "result": {
+      "identifiers": ["local"],
+      "verifiers": ["result_has_claim_support"]
+    },
     "person": {
       "identifiers": ["orcid", "local"]
     },
@@ -50,6 +54,16 @@
       "source": "publication",
       "target": "claim",
       "verifiers": ["endpoints_exist", "evidence_exact_matches"]
+    },
+    {
+      "source": "publication",
+      "target": "result",
+      "verifiers": ["endpoints_exist"]
+    },
+    {
+      "source": "result",
+      "target": "claim",
+      "verifiers": ["endpoints_exist"]
     },
     {
       "source": "claim",
@@ -86,6 +100,7 @@
     "source_exists": "Local source path exists.",
     "source_hash_matches": "Local source content matches its recorded hash.",
     "endpoints_exist": "Connection endpoints exist and use an allowed object-kind pattern.",
+    "result_has_claim_support": "A result is supported by at least two claim objects.",
     "evidence_exact_matches": "Evidence exact-matches retained local text."
   }
 }

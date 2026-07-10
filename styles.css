@@ -1541,6 +1541,47 @@ body.graph-mock-page {
   overflow-wrap: anywhere;
 }
 
+.supporting-claims {
+  margin-top: 0.85rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid #d8d8d8;
+}
+
+.supporting-claims h3 {
+  margin: 0 0 0.35rem;
+  font-size: 0.82rem;
+}
+
+.supporting-claims ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.supporting-claims li + li {
+  border-top: 1px solid #e5e5e5;
+}
+
+.supporting-claims button {
+  width: 100%;
+  padding: 0.5rem 0;
+  color: #333;
+  background: transparent;
+  border: 0;
+  font: inherit;
+  font-size: 0.82rem;
+  line-height: 1.4;
+  text-align: left;
+  cursor: pointer;
+}
+
+.supporting-claims button:hover,
+.supporting-claims button:focus-visible {
+  color: #1558a6;
+  text-decoration: underline;
+  text-underline-offset: 0.16em;
+}
+
 .version-citation {
   margin-top: 0.85rem;
 }

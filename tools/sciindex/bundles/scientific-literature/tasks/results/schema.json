@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://sbooeshaghi.github.io/schemas/sciindex-results-task.schema.json",
+  "title": "sciindex results task candidate",
+  "type": "object",
+  "required": ["results"],
+  "additionalProperties": false,
+  "properties": {
+    "results": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["statement", "claims"],
+        "additionalProperties": false,
+        "properties": {
+          "statement": {"type": "string", "minLength": 1},
+          "claims": {
+            "type": "array",
+            "minItems": 2,
+            "uniqueItems": true,
+            "items": {"type": "string", "minLength": 1}
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,22 +1,15 @@
 import fs from "node:fs";
 import path from "node:path";
 import {
-  modulePath,
   recipeHash,
-  readText,
   resolveRootPath,
   rootPath,
   sha256,
   sha256File,
   stableSlug,
-  taskHash,
   writeJSON,
 } from "./common.mjs";
 import { extractPages } from "./pdf-text.mjs";
-
-export function citationContextPrompt() {
-  return readText(modulePath("prompt.md")).trim();
-}
 
 export function paperFromPdf(pdf) {
   const pdfPath = resolveRootPath(pdf);
@@ -61,17 +54,14 @@ export function packagePaper(paper, { sourceDir }) {
 export function buildInputPacket(paper, options = {}) {
   const packaged = packagePaper(paper, options);
   return {
-    schema_version: "sciindex-task-input-v0",
+    schema_version: "sciindex-source-packet-v0",
     provenance: {
       bundle_id: "scientific-literature",
       recipe_sha256: recipeHash(),
-      task_id: "paper",
-      task_sha256: taskHash(),
       source_pdf_sha256: packaged.pdf_sha256,
       source_text_sha256: packaged.text_sha256,
       source_text_path: packaged.text_path,
     },
-    llm_prompt: citationContextPrompt(),
     source_work_dois: options.catalog || [],
     paper: packaged,
   };
@@ -84,9 +74,10 @@ export function inputFileNameForPaper(paper) {
 export function writeInputPackets(
   papers,
   {
-    outDir = "local/sciindex/paper/inputs",
-    sourceDir = "local/sciindex/paper/sources",
+    outDir = "local/sciindex/source/inputs",
+    sourceDir = "local/sciindex/source/text",
     catalog = [],
+    replaceIndex = false,
   } = {}
 ) {
   const packets = papers.map((paper) => buildInputPacket(paper, { sourceDir, catalog }));
@@ -101,18 +92,18 @@ export function writeInputPackets(
       written.push(filePath);
     }
 
-    const inputs = fs
-      .readdirSync(outputDir)
-      .filter((name) => name.endsWith(".input.json"))
-      .sort()
-      .map((name) => path.relative(rootPath(), path.join(outputDir, name)));
-    writeJSON(path.join(outputDir, "index.json"), {
-      schema_version: "sciindex-task-input-index-v0",
+    const indexPath = path.join(outputDir, "index.json");
+    const existingInputs = replaceIndex || !fs.existsSync(indexPath)
+      ? []
+      : JSON.parse(fs.readFileSync(indexPath, "utf8")).inputs || [];
+    writeJSON(indexPath, {
+      schema_version: "sciindex-source-index-v0",
       bundle_id: "scientific-literature",
       recipe_sha256: recipeHash(),
-      task_id: "paper",
-      task_sha256: taskHash(),
-      inputs,
+      inputs: [...new Set([
+        ...existingInputs,
+        ...written.map((filePath) => path.relative(rootPath(), filePath)),
+      ])].sort(),
     });
   }
 

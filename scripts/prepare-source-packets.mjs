@@ -6,21 +6,21 @@ import {
   normalizeDoi,
   readJSON,
   rootPath,
-} from "../tools/sciindex/bundles/scientific-literature/tasks/paper/lib/common.mjs";
-import { writeInputPackets } from "../tools/sciindex/bundles/scientific-literature/tasks/paper/lib/packets.mjs";
+} from "../tools/sciindex/bundles/scientific-literature/lib/common.mjs";
+import { writeInputPackets } from "../tools/sciindex/bundles/scientific-literature/lib/source-packets.mjs";
 import { sourceWorkDoiCatalog } from "./lib/source-work-catalog.mjs";
 
 const rootDir = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 
 function help() {
   console.log(`Usage:
-  node scripts/prepare-paper-task.mjs --works
-  node scripts/prepare-paper-task.mjs --work=VERSION_ID
-  node scripts/prepare-paper-task.mjs --cited-by-id=CHECKLIST_ID
+  node scripts/prepare-source-packets.mjs --works
+  node scripts/prepare-source-packets.mjs --work=VERSION_ID
+  node scripts/prepare-source-packets.mjs --cited-by-id=CHECKLIST_ID
 
 Options:
-  --out-dir=PATH      Default: local/sciindex/paper/inputs
-  --source-dir=PATH   Default: local/sciindex/paper/sources`);
+  --out-dir=PATH      Default: local/sciindex/source/inputs
+  --source-dir=PATH   Default: local/sciindex/source/text`);
 }
 
 function parseArgs(argv) {
@@ -94,9 +94,10 @@ if (!uniquePapers.length) {
 }
 
 const { written } = writeInputPackets(uniquePapers, {
-  outDir: args.outDir || "local/sciindex/paper/inputs",
-  sourceDir: args.sourceDir || "local/sciindex/paper/sources",
+  outDir: args.outDir || "local/sciindex/source/inputs",
+  sourceDir: args.sourceDir || "local/sciindex/source/text",
   catalog: sourceWorkDoiCatalog(),
+  replaceIndex: Boolean(args.works),
 });
 
 for (const filePath of written) {

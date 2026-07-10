@@ -121,5 +121,5 @@ if (errors.length) {
 }
 
 console.log(
-  `Verified bundle ${bundle.id}@${bundle.version}: ${Object.keys(recipe.object_kinds).length} object kinds, ${recipe.connection_patterns.length} connection patterns, ${bundle.tasks.length} task.`
+  `Verified bundle ${bundle.id}@${bundle.version}: ${Object.keys(recipe.object_kinds).length} object kinds, ${recipe.connection_patterns.length} connection patterns, ${bundle.tasks.length} tasks.`
 );

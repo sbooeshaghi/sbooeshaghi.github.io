@@ -1,5 +1,6 @@
 const relationTypes = [
   { id: "authors", label: "Authors" },
+  { id: "results", label: "Results" },
   { id: "claims", label: "Claims" },
   { id: "citations", label: "Citations" },
   { id: "versions", label: "Versions" },
@@ -84,6 +85,7 @@ export function createWorkRelationProjector(resourceIndex) {
       .sort((a, b) => b.description.localeCompare(a.description));
 
     const authorConnections = [];
+    const resultConnections = [];
     const claimConnections = [];
     const softwareConnections = [];
     const sourceConnections = [];
@@ -114,9 +116,28 @@ export function createWorkRelationProjector(resourceIndex) {
             order: connection.properties?.author_position ?? Number.MAX_SAFE_INTEGER,
             objectId: target.id,
           });
+        } else if (target.kind === "result") {
+          const supportingClaims = (outgoing.get(target.id) || [])
+            .map((candidate) => objectFor(candidate.target))
+            .filter((candidate) => candidate?.kind === "claim")
+            .sort(
+              (left, right) =>
+                (left.properties?.claim_position ?? Number.MAX_SAFE_INTEGER) -
+                  (right.properties?.claim_position ?? Number.MAX_SAFE_INTEGER) ||
+                left.id.localeCompare(right.id)
+            )
+            .map((claim) => ({ objectId: claim.id, statement: claim.description }));
+          resultConnections.push({
+            ...relationCard("results", target, connection, target.description),
+            statement: target.description,
+            order: connection.properties?.result_position ?? Number.MAX_SAFE_INTEGER,
+            objectId: target.id,
+            supportingClaims,
+          });
         } else if (target.kind === "claim") {
           claimConnections.push({
             ...relationCard("claims", target, connection, target.description),
+            order: connection.properties?.claim_position ?? Number.MAX_SAFE_INTEGER,
             objectId: target.id,
           });
         } else if (target.kind === "software") {
@@ -167,6 +188,7 @@ export function createWorkRelationProjector(resourceIndex) {
 
     for (const card of [
       ...claimConnections,
+      ...resultConnections,
       ...citationConnections,
       ...versionConnections,
       ...softwareConnections,
@@ -183,7 +205,14 @@ export function createWorkRelationProjector(resourceIndex) {
         authorConnections.sort((a, b) => a.order - b.order),
         (card) => card.objectId
       ),
-      ...uniqueBy(claimConnections, (card) => card.objectId),
+      ...uniqueBy(
+        resultConnections.sort((a, b) => a.order - b.order),
+        (card) => card.objectId
+      ),
+      ...uniqueBy(
+        claimConnections.sort((a, b) => a.order - b.order),
+        (card) => card.objectId
+      ),
       ...uniqueBy(citationConnections, (card) => card.objectId),
       ...versionConnections,
       ...uniqueBy(softwareConnections, (card) => card.objectId),

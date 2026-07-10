@@ -4,16 +4,11 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 
 export const libDir = path.dirname(fileURLToPath(import.meta.url));
-export const moduleDir = path.resolve(libDir, "..");
-export const bundleDir = path.resolve(moduleDir, "..", "..");
+export const bundleDir = path.resolve(libDir, "..");
 export const rootDir = path.resolve(process.env.SCIINDEX_ROOT || process.cwd());
 
 export function rootPath(...parts) {
   return path.join(rootDir, ...parts);
-}
-
-export function modulePath(...parts) {
-  return path.join(moduleDir, ...parts);
 }
 
 export function bundlePath(...parts) {
@@ -48,23 +43,6 @@ export function sha256File(filePath) {
 
 export function recipeHash() {
   return sha256File(bundlePath("recipe.json"));
-}
-
-export function taskHash() {
-  return sha256(
-    [
-      "task.json",
-      "prompt.md",
-      "schema.json",
-      "prepare.mjs",
-      "validate.mjs",
-      "lib/common.mjs",
-      "lib/packets.mjs",
-      "lib/pdf-text.mjs",
-    ]
-      .map((name) => fs.readFileSync(modulePath(name)))
-      .reduce((all, value) => Buffer.concat([all, value]), Buffer.alloc(0))
-  );
 }
 
 export function slugify(value) {
