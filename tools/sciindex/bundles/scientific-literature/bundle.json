@@ -1,0 +1,7 @@
+{
+  "schema_version": "sciindex-bundle-v0",
+  "id": "scientific-literature",
+  "version": 1,
+  "recipe": "recipe.json",
+  "tasks": ["tasks/paper/task.json"]
+}

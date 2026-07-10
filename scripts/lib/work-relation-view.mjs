@@ -63,7 +63,10 @@ export function createWorkRelationProjector(resourceIndex) {
     if (!work) return { work: null, relationTypes, connections: [] };
 
     const versionEdges = (incoming.get(workId) || []).filter(
-      (connection) => objectFor(connection.source)?.kind === "publication"
+      (connection) => {
+        const source = objectFor(connection.source);
+        return source?.kind === "publication" && source.properties?.work_id === workId;
+      }
     );
     const versionIds = new Set(versionEdges.map((connection) => connection.source));
     const versionConnections = versionEdges
@@ -129,13 +132,34 @@ export function createWorkRelationProjector(resourceIndex) {
       }
     }
 
+    for (const connection of incoming.get(workId) || []) {
+      const source = objectFor(connection.source);
+      if (!source) continue;
+
+      if (source.kind === "publication" && source.properties?.work_id !== workId) {
+        const citingWork = objectFor(source.properties?.work_id);
+        if (!citingWork) continue;
+        citationConnections.push({
+          ...relationCard("citations", citingWork, connection, citingWork.description),
+          objectId: citingWork.id,
+        });
+      } else if (source.kind === "claim" && source.properties?.source_work_id) {
+        const citingWork = objectFor(source.properties.source_work_id);
+        if (!citingWork) continue;
+        citationConnections.push({
+          ...relationCard("citations", citingWork, connection, citingWork.description),
+          objectId: citingWork.id,
+        });
+      }
+    }
+
     const connections = [
       ...uniqueBy(
         authorConnections.sort((a, b) => a.order - b.order),
         (card) => card.objectId
       ),
       ...uniqueBy(claimConnections, (card) => card.objectId),
-      ...citationConnections,
+      ...uniqueBy(citationConnections, (card) => card.objectId),
       ...versionConnections,
       ...uniqueBy(softwareConnections, (card) => card.objectId),
       ...uniqueBy(sourceConnections, (card) => card.objectId),

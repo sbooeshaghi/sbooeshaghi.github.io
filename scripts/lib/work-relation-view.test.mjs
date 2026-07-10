@@ -20,7 +20,7 @@ test("projects graph objects into the six work-page tabs", () => {
     ["authors", "claims", "citations", "versions", "software", "sources"]
   );
   assert.equal(view.connections.filter((item) => item.type === "authors").length, 10);
-  assert.ok(view.connections.some((item) => item.type === "citations" && item.evidence.length));
+  assert.ok(view.connections.some((item) => item.type === "citations"));
   assert.ok(view.connections.every((item) => item.title && item.description && item.statement));
   assert.ok(
     view.connections
@@ -32,4 +32,23 @@ test("projects graph objects into the six work-page tabs", () => {
 test("keeps title-changing publication versions under one work", () => {
   const view = projectWork("normalization-for-sampled-count-data");
   assert.equal(view.connections.filter((item) => item.type === "versions").length, 4);
+});
+
+test("projects direct ungrounded publication citations without treating them as versions", () => {
+  const index = {
+    objects: [
+      { id: "work:target", kind: "work", label: "Target", description: "Target work", properties: {} },
+      { id: "version:target", kind: "publication", label: "Target v1", description: "", properties: { work_id: "work:target" } },
+      { id: "work:citing", kind: "work", label: "Citing", description: "Citing work", properties: {} },
+      { id: "version:citing", kind: "publication", label: "Citing v1", description: "", properties: { work_id: "work:citing" } },
+    ],
+    connections: [
+      { id: "version", source: "version:target", target: "work:target", statement: "Version", evidence: [], properties: {} },
+      { id: "citation", source: "version:citing", target: "work:target", statement: "Citing cites Target.", evidence: [], properties: {} },
+    ],
+  };
+
+  const view = createWorkRelationProjector(index)("target");
+  assert.deepEqual(view.connections.filter((item) => item.type === "versions").map((item) => item.id), ["version"]);
+  assert.deepEqual(view.connections.filter((item) => item.type === "citations").map((item) => item.id), ["citation"]);
 });

@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "description": "Template for local-only PDF and text extraction metadata. Copy to db/pdf-manifest.local.json for local use; do not commit downloaded PDFs.",
+  "source_work_versions": [
+    {
+      "work_slug": "normalization-for-sampled-count-data",
+      "version_id": "normalization-for-sampled-count-data--2026-06-22-biorxiv-v4",
+      "title": "Normalization for sampled count data",
+      "source": "bioRxiv v4",
+      "date": "2026-06-22",
+      "version_url": "https://www.biorxiv.org/content/10.1101/2022.05.06.490859v4",
+      "pdf": {
+        "path": "local/papers/works/normalization-for-sampled-count-data/2026-06-22-biorxiv-v4.pdf",
+        "downloaded_from": "",
+        "downloaded_at": "",
+        "sha256": ""
+      },
+      "text": {
+        "path": "local/extracts/works/normalization-for-sampled-count-data/2026-06-22-biorxiv-v4.txt",
+        "extractor": "",
+        "extracted_at": ""
+      }
+    }
+  ],
+  "cited_by_works": [
+    {
+      "cited_by_id": "cited-by--example-citing-work",
+      "title": "Example citing work",
+      "year": 2026,
+      "source_url": "https://example.org/example-citing-work",
+      "cites": [
+        {
+          "work_slug": "normalization-for-sampled-count-data",
+          "version_id": "",
+          "version_assignment": "unknown"
+        }
+      ],
+      "pdf": {
+        "path": "local/papers/cited-by/example-citing-work.pdf",
+        "downloaded_from": "",
+        "downloaded_at": "",
+        "sha256": ""
+      },
+      "text": {
+        "path": "local/extracts/cited-by/example-citing-work.txt",
+        "extractor": "",
+        "extracted_at": ""
+      }
+    }
+  ]
+}

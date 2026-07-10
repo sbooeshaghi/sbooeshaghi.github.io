@@ -1,3 +1,14 @@
 .DS_Store
 **/.DS_Store
 *.log
+
+# Local-only paper PDFs, extracted text, and citation-context artifacts.
+local/papers/
+local/extracts/
+local/citation-context/
+local/sciindex/
+db/pdf-manifest.local.json
+db/cite-reasons.local.json
+
+# Rust build output for the local scientific-index CLI.
+tools/sciindex/target/
