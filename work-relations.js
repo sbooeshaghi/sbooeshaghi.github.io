@@ -6,6 +6,11 @@
   const data = JSON.parse(dataElement.textContent);
   const relationTypes = data.relationTypes || [];
   const connections = data.connections || [];
+  const sourceConnections = new Map(
+    connections
+      .filter((connection) => connection.type === "sources" && connection.objectId)
+      .map((connection) => [connection.objectId, connection])
+  );
   let selectedType =
     relationTypes.find((type) => connections.some((connection) => connection.type === type.id))
       ?.id || relationTypes[0]?.id || "";
@@ -32,6 +37,12 @@
       .replace(/'/g, "&#39;");
   }
 
+  function truncateText(value, maxLength = 96) {
+    const text = String(value || "").trim();
+    if (text.length <= maxLength) return text;
+    return `${text.slice(0, maxLength - 3).trimEnd()}...`;
+  }
+
   function visibleConnections() {
     return connections.filter((connection) => connection.type === selectedType);
   }
@@ -51,6 +62,23 @@
       .replace(/^document:/, "")
       .replaceAll("-", " ");
     return [page, source].filter(Boolean).join(" · ") || "Source text";
+  }
+
+  function sourceConnection(evidence) {
+    const sourceId = String(evidence.source || "");
+    const documentId =
+      evidence.properties?.document_id || sourceId.replace(/^source:(?:pdf|text):/, "");
+    return sourceConnections.get(documentId) || null;
+  }
+
+  function sourceCell(evidence) {
+    const connection = sourceConnection(evidence);
+    const label = escapeHTML(
+      connection ? connection.title : sourceLabel({ ...evidence, page: null })
+    );
+    if (!connection) return label;
+    const cardId = `relation-card-${connection.id}`;
+    return `<a class="evidence-source-link" href="#${escapeHTML(cardId)}" data-source-relation-id="${escapeHTML(connection.id)}">${label}</a>`;
   }
 
   function renderTabs() {
@@ -85,18 +113,24 @@
     const visible = visibleConnections();
     relationList.innerHTML = visible.length
       ? visible
-          .map(
-            (connection) => `
+          .map((connection) => {
+            const content =
+              connection.type === "claims"
+                ? `<span class="reason-card-reason">${escapeHTML(connection.description)}</span>`
+                : `
+                  <span class="reason-card-title">${escapeHTML(connection.title)}</span>
+                  <span class="reason-card-reason">${escapeHTML(connection.description)}</span>`;
+            return `
               <button
+                id="relation-card-${escapeHTML(connection.id)}"
                 class="reason-card${connection.id === selectedId ? " is-selected" : ""}"
                 type="button"
                 aria-pressed="${connection.id === selectedId}"
                 data-relation-id="${escapeHTML(connection.id)}"
               >
-                <span class="reason-card-title">${escapeHTML(connection.title)}</span>
-                <span class="reason-card-reason">${escapeHTML(connection.description)}</span>
-              </button>`
-          )
+                ${content}
+              </button>`;
+          })
           .join("")
       : '<p class="relation-empty">No indexed relations of this kind yet.</p>';
 
@@ -116,6 +150,7 @@
 
     if (!connection) {
       detailTitle.textContent = "Nothing indexed yet";
+      detailStatement.hidden = false;
       detailStatement.textContent = "This relation type will appear as the index gains verified objects and connections.";
       evidenceDetails.hidden = true;
       versionCitation.hidden = true;
@@ -123,8 +158,14 @@
     }
 
     const evidence = connection.evidence || [];
-    detailTitle.textContent = connection.title;
-    detailStatement.textContent = connection.statement || connection.description;
+    const isClaim = connection.type === "claims";
+    detailTitle.textContent = isClaim
+      ? truncateText(connection.description)
+      : connection.title;
+    detailStatement.hidden = isClaim;
+    detailStatement.textContent = isClaim
+      ? ""
+      : connection.statement || connection.description;
     versionCitation.hidden = !(connection.type === "versions" && connection.bibtex);
     bibtexCode.textContent = connection.bibtex || "";
     evidenceSummary.textContent = evidence.length === 1 ? "1 span" : `${evidence.length} spans`;
@@ -134,11 +175,20 @@
             (item) => `
               <tr>
                 <td>${escapeHTML(item.span)}</td>
-                <td>${escapeHTML(sourceLabel(item))}</td>
+                <td>${sourceCell(item)}</td>
               </tr>`
           )
           .join("")
       : '<tr class="relationship-evidence-empty"><td colspan="2">This connection is grounded in accepted metadata.</td></tr>';
+    evidenceRows.querySelectorAll("[data-source-relation-id]").forEach((link) => {
+      link.addEventListener("click", (event) => {
+        event.preventDefault();
+        selectedType = "sources";
+        selectedId = link.dataset.sourceRelationId;
+        render();
+        document.getElementById(`relation-card-${selectedId}`)?.focus({ preventScroll: true });
+      });
+    });
     evidenceDetails.hidden = false;
   }
 

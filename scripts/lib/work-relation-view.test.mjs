@@ -27,11 +27,52 @@ test("projects graph objects into the six work-page tabs", () => {
       .filter((item) => item.type === "versions")
       .every((item) => item.citation && item.citation.url)
   );
+  assert.ok(
+    view.connections
+      .filter((item) => item.type === "sources")
+      .every((item) => item.objectId?.startsWith("document:"))
+  );
+  const sourceObjectIds = new Set(
+    view.connections.filter((item) => item.type === "sources").map((item) => item.objectId)
+  );
+  for (const connection of view.connections) {
+    for (const evidence of connection.evidence || []) {
+      assert.ok(sourceObjectIds.has(evidence.properties?.document_id));
+    }
+  }
 });
 
 test("keeps title-changing publication versions under one work", () => {
   const view = projectWork("normalization-for-sampled-count-data");
   assert.equal(view.connections.filter((item) => item.type === "versions").length, 4);
+});
+
+test("represents one citation context as one claim with multiple cited targets", () => {
+  const objects = new Map(resourceIndex.objects.map((object) => [object.id, object]));
+  const sharedClaim = resourceIndex.objects.find((object) => {
+    if (object.kind !== "claim") return false;
+    return (
+      resourceIndex.connections.filter((connection) => {
+        if (connection.source !== object.id) return false;
+        return ["publication", "work"].includes(objects.get(connection.target)?.kind);
+      }).length > 1
+    );
+  });
+  assert.ok(sharedClaim);
+
+  const citationConnections = resourceIndex.connections.filter(
+    (connection) =>
+      connection.source === sharedClaim.id &&
+      ["publication", "work"].includes(objects.get(connection.target)?.kind)
+  );
+  assert.ok(citationConnections.length > 1);
+  assert.ok(
+    resourceIndex.connections.some(
+      (connection) =>
+        connection.source === sharedClaim.properties.source_publication_id &&
+        connection.target === sharedClaim.id
+    )
+  );
 });
 
 test("projects direct ungrounded publication citations without treating them as versions", () => {

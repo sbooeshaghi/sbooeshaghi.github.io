@@ -45,6 +45,7 @@ function versionCitation(version) {
 
 export function createWorkRelationProjector(resourceIndex) {
   const objects = new Map((resourceIndex.objects || []).map((object) => [object.id, object]));
+  const sources = new Map((resourceIndex.sources || []).map((source) => [source.id, source]));
   const incoming = new Map();
   const outgoing = new Map();
 
@@ -88,6 +89,20 @@ export function createWorkRelationProjector(resourceIndex) {
     const sourceConnections = [];
     const citationConnections = [];
 
+    function addSourceDocument(documentId) {
+      const document = objectFor(documentId);
+      if (document?.kind !== "source_document") return;
+      const connection = (outgoing.get(documentId) || []).find((candidate) => {
+        const target = objectFor(candidate.target);
+        return target?.kind === "publication";
+      });
+      if (!connection) return;
+      sourceConnections.push({
+        ...relationCard("sources", document, connection, connection.statement),
+        objectId: document.id,
+      });
+    }
+
     for (const versionId of versionIds) {
       for (const connection of outgoing.get(versionId) || []) {
         const target = objectFor(connection.target);
@@ -117,10 +132,7 @@ export function createWorkRelationProjector(resourceIndex) {
         if (!source) continue;
 
         if (source.kind === "source_document") {
-          sourceConnections.push({
-            ...relationCard("sources", source, connection, connection.statement),
-            objectId: source.id,
-          });
+          addSourceDocument(source.id);
         } else if (source.kind === "claim" && source.properties?.source_work_id) {
           const citingWork = objectFor(source.properties.source_work_id);
           if (!citingWork) continue;
@@ -153,6 +165,19 @@ export function createWorkRelationProjector(resourceIndex) {
       }
     }
 
+    for (const card of [
+      ...claimConnections,
+      ...citationConnections,
+      ...versionConnections,
+      ...softwareConnections,
+    ]) {
+      for (const evidence of card.evidence || []) {
+        const source = sources.get(evidence.source);
+        const documentId = evidence.properties?.document_id || source?.properties?.document_id;
+        if (documentId) addSourceDocument(documentId);
+      }
+    }
+
     const connections = [
       ...uniqueBy(
         authorConnections.sort((a, b) => a.order - b.order),
@@ -163,7 +188,7 @@ export function createWorkRelationProjector(resourceIndex) {
       ...versionConnections,
       ...uniqueBy(softwareConnections, (card) => card.objectId),
       ...uniqueBy(sourceConnections, (card) => card.objectId),
-    ].map(({ objectId, order, ...card }) => card);
+    ].map(({ order, ...card }) => card);
 
     return {
       work: {

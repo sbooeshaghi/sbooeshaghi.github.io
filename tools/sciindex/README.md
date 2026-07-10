@@ -70,6 +70,15 @@ The current bundle is
 produces one grounded summary and one flat reference inventory, and exact-matches
 every evidence span against retained text.
 
+The flat inventory intentionally repeats a shared span once for every reference
+used in that span because this is easy for an agent to produce and verify. The
+dataset adapter normalizes those rows into one grounded claim object connected
+to every cited publication. Extraction stays simple while the accepted graph
+preserves the many-reference scientific structure.
+
+A claim displays the agent's concise statement. Its evidence retains the exact
+source spans verbatim; evidence text is never substituted for the claim summary.
+
 ```bash
 node tools/sciindex/verify-bundle.mjs
 ```

@@ -314,6 +314,25 @@ function groundedEvidence(items, documentId) {
     }));
 }
 
+function evidenceSignature(evidence) {
+  return [...evidence]
+    .map((item) =>
+      [
+        item.source,
+        item.page ?? "",
+        String(item.span || "").replace(/\s+/g, " ").trim(),
+      ].join("\u0000")
+    )
+    .sort()
+    .join("\u0001");
+}
+
+function appendUnique(values, value) {
+  if (!value || values.includes(value)) return values;
+  values.push(value);
+  return values;
+}
+
 function addSummaryClaim(publicationId, statement, evidence, provenance) {
   if (!statement || !evidence.length) return;
   const claimId = `claim:${publicationId}--summary`;
@@ -620,6 +639,8 @@ for (const paper of accepted?.papers || []) {
     : citingByAcceptedId.get(paper.id);
   if (!citing) continue;
 
+  const claimsByEvidence = new Map();
+
   for (const [index, reference] of (paper.references || []).entries()) {
     if (reference.status !== "used" || !reference.statement) continue;
     const doi = normalizeDoi(reference.doi);
@@ -642,47 +663,61 @@ for (const paper of accepted?.papers || []) {
     const targetId = candidateVersions.length === 1 ? candidateVersions[0] : targetWorkId;
     const evidence = groundedEvidence(reference.evidence, citing.documentId);
     if (!evidence.length) continue;
-    const claimId = `claim:citation:${compactSlug(
-      `${citing.publicationId} ${targetId} ${reference.ref || index}`,
-      180
-    )}`;
-    addObject({
-      id: claimId,
-      kind: "claim",
-      label: reference.statement.slice(0, 120),
-      description: reference.statement,
-      properties: {
-        source_work_id: citing.workId,
-        source_publication_id: citing.publicationId,
-        target_work_id: targetWorkId,
-        target_publication_id: targetId === targetWorkId ? "" : targetId,
-        cited_as: reference.ref,
-        cited_doi: doi,
+    const signature = evidenceSignature(evidence);
+    let claim = claimsByEvidence.get(signature);
+    if (!claim) {
+      const statement = String(reference.statement || "").trim();
+      const claimId = `claim:citation:${compactSlug(
+        `${citing.publicationId} ${sha1(signature).slice(0, 16)}`,
+        180
+      )}`;
+      const object = {
+        id: claimId,
+        kind: "claim",
+        label: statement.slice(0, 120),
+        description: statement,
+        properties: {
+          source_work_id: citing.workId,
+          source_publication_id: citing.publicationId,
+          evidence,
+          provenance: { task: "paper", output_sha256: paper.provenance.output_sha256 },
+          identifiers: [{ namespace: "local", value: claimId }],
+        },
+      };
+      addObject(object);
+      addConnection({
+        id: `connection:${citing.publicationId}--${claimId}`,
+        source: citing.publicationId,
+        target: claimId,
+        statement: "This publication contains this grounded citation-context claim.",
         evidence,
-        provenance: { task: "paper", output_sha256: paper.provenance.output_sha256 },
-        identifiers: [{ namespace: "local", value: claimId }],
-      },
-    });
-    addConnection({
-      id: `connection:${citing.publicationId}--${claimId}`,
-      source: citing.publicationId,
-      target: claimId,
-      statement: "This publication contains this citation-context claim.",
-      evidence,
-      properties: { source_work_id: citing.workId },
-    });
-    addConnection({
-      id: `connection:${claimId}--${targetId}`,
-      source: claimId,
-      target: targetId,
-      statement: reference.statement,
-      evidence,
-      properties: {
-        source_work_id: citing.workId,
-        source_publication_id: citing.publicationId,
-        target_work_id: targetWorkId,
-      },
-    });
+        properties: { source_work_id: citing.workId },
+      });
+      claim = { id: claimId, object };
+      claimsByEvidence.set(signature, claim);
+    }
+
+    const connectionId = `connection:${claim.id}--${targetId}`;
+    const existingConnection = connections.get(connectionId);
+    if (existingConnection) {
+      appendUnique(existingConnection.properties.cited_as, reference.ref || String(index + 1));
+      appendUnique(existingConnection.properties.cited_dois, doi);
+    } else {
+      addConnection({
+        id: connectionId,
+        source: claim.id,
+        target: targetId,
+        statement: reference.statement,
+        evidence,
+        properties: {
+          source_work_id: citing.workId,
+          source_publication_id: citing.publicationId,
+          target_work_id: targetWorkId,
+          cited_as: [reference.ref || String(index + 1)],
+          cited_dois: doi ? [doi] : [],
+        },
+      });
+    }
   }
 }
 

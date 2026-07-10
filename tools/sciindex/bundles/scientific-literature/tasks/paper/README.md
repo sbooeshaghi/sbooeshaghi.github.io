@@ -72,3 +72,8 @@ hash, candidate shape, every evidence span, non-generic citation-use statements,
 and DOI/title consistency for known objects. It exits unsuccessfully when any
 paper fails. The resulting validation report is the only artifact a dataset
 adapter may import.
+
+When several reference rows reuse the same evidence, a dataset adapter should
+emit one claim object for that grounded context and connect it to each resolved
+reference. The repeated rows are an extraction convenience, not separate
+scientific claims.

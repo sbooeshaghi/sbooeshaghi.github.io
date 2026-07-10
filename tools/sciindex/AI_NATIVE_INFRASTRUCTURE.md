@@ -29,6 +29,18 @@ grouping identity. A `work` can group concrete publication versions. A `person`
 can carry ORCID. A claim can be identified by its source and content. Contextual
 roles such as author or citation use are connections, not new object kinds.
 
+A claim is a concise LLM-generated statement grounded by one or more verbatim
+source spans. The summary is the claim's label and description; the spans stay
+in its evidence. A claim belongs to the publication that contains its grounded
+text. When one claim cites several publications, the graph stores one claim
+object and one outgoing connection from that claim to each cited publication. The shared
+evidence stays on the claim and its connections; each connection statement can
+still explain the distinct role of that cited publication. This represents a
+many-reference citation context without inventing a `citation_use` object.
+If a cited item cannot yet be resolved to an indexed object, its verified
+reference record remains in the accepted task artifact, but the adapter does
+not fabricate a graph endpoint or connection.
+
 Connections stay untyped until a demonstrated query requires otherwise. Their
 natural-language statement and evidence explain how the endpoints are related.
 This keeps LLM judgment useful without forcing every domain into a brittle
@@ -64,8 +76,9 @@ manifest, prompt, candidate schema, source preparer, and validator. It must not
 contain paths or joins specific to one dataset.
 
 A dataset adapter is separate. It knows how local metadata maps to the recipe,
-deduplicates objects, preserves known but ungrounded connections, and writes the
-generic resource index.
+deduplicates objects, normalizes repeated citation evidence into shared claim
+objects, preserves known but ungrounded connections, and writes the generic
+resource index.
 
 The query library is separate again. It reads only objects, connections, and
 sources. This makes the same binary usable for scientific papers, genes,
