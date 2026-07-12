@@ -1,8 +1,9 @@
 # Works and Scientific Index Data
 
 The Works listing reads citation totals from `db/cited-by.json`. Individual
-work pages render their relation tabs from the accepted generic graph in
-`db/resource-index.json`.
+work pages render their relation tabs from the JSON export in
+`db/resource-index.json`. The generated local query index is
+`db/resource-index.sqlite`.
 
 `db/cited-by.json` is generated. Do not edit it by hand. It is built from:
 
@@ -40,8 +41,10 @@ verifies that every work page has author metadata for each listed DOI version.
 
 ## Resource Index
 
-`db/resource-index.json` is the accepted object/connection/source graph used by
-the website and the `sciindex` CLI. It has one public shape:
+The bundle builds an accepted object/connection/source graph. The Rust CLI
+indexes that graph in `db/resource-index.sqlite` and exports
+`db/resource-index.json` for the website. Both representations have one public
+shape:
 
 - `objects`: anything searchable and fetchable.
 - `connections`: directed links between objects, explained by statements and
@@ -54,21 +57,36 @@ correction, thesis, or other manifestation. Citation-use explanations should be
 encoded as grounded `claim -> publication` or `claim -> work` connections, not
 as separate conceptual objects.
 
-Build and verify it directly:
+The generic runtime, bundle, and query CLI live in the private
+[`IndexScience/scidx`](https://github.com/IndexScience/scidx) repository. Point
+`SCIDX` at a local checkout, then build, index, export, and verify this corpus:
 
 ```sh
-node scripts/build-resource-index.mjs
-node scripts/verify-resource-index.mjs
+export SCIDX=/path/to/scidx
+node "$SCIDX/runtime/run-bundle.mjs" --project=. --workspace=local/sciindex verify
+node "$SCIDX/runtime/run-bundle.mjs" --project=. --workspace=local/sciindex build
+cargo run --manifest-path "$SCIDX/Cargo.toml" -- \
+  index local/sciindex/resource-index.json db/resource-index.sqlite
+cargo run --manifest-path "$SCIDX/Cargo.toml" -- \
+  export db/resource-index.sqlite db/resource-index.json
+node "$SCIDX/runtime/verify-index.mjs" \
+  --index=db/resource-index.json \
+  --recipe="$SCIDX/bundles/scientific-literature/recipe.json"
 SKIP_DOI2BIB=1 node scripts/build-work-pages.mjs
 ```
+
+The SQLite index is generated and ignored by Git. The JSON export is tracked
+because the static site loads it without a server.
 
 The generic index is the accepted tool-facing shape. The website relation view
 is a compact projection of that graph; it does not maintain a separate set of
 authors, claims, citation reasons, versions, software, or source relationships.
 
-The builder is the dataset-specific adapter for the portable scientific
-literature bundle under `tools/sciindex/bundles/`. It imports semantic
-extractions only from validated task artifacts. Known metadata and citations
+The builder belongs to the portable scientific-literature bundle in `scidx`.
+This project declares its structured catalog inputs in `scidx.catalog.json`;
+the bundle itself contains no website paths. It
+imports semantic extractions and structured catalog data only from accepted
+artifacts. Known metadata and citations
 remain in the graph without fabricated reasons; grounded claim connections
 appear after paper-task evidence is accepted.
 
@@ -125,7 +143,8 @@ output, `--mkdir` to create the corresponding local directories, and `--quiet`
 to create directories without printing the target list.
 
 Each publication version is packaged deterministically under
-`local/sciindex/source/`. The four agent tasks write candidates and accepted
-artifacts under `local/sciindex/{claims,results,summary,references}/`. Only
-validated reports may be ingested, and `scripts/verify-sciindex-cutover.mjs`
-requires complete matching coverage before the public index is rebuilt.
+`local/sciindex/source/`. Agent and module tasks write candidates, DOI caches,
+verification reports, and accepted artifacts under `local/sciindex/`. Only
+verified reports may be accepted, and
+`$SCIDX/bundles/scientific-literature/verify.mjs` requires complete
+matching coverage and artifact lineage before the public index is rebuilt.

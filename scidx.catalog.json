@@ -1,0 +1,10 @@
+{
+  "schema_version": "sciindex-literature-catalog-sources-v0",
+  "sources": {
+    "publications": "db/publications.json",
+    "authors": "db/publication-authors.json",
+    "pdf_manifest": "db/pdf-manifest.local.json",
+    "citations": "db/cited-by.json",
+    "citation_checklist": "local/citation-context/cited-by-pdf-checklist.local.json"
+  }
+}

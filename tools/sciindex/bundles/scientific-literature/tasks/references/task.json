@@ -1,9 +1,0 @@
-{
-  "schema_version": "sciindex-task-v0",
-  "id": "references",
-  "version": 1,
-  "prompt": "prompt.md",
-  "output_schema": "schema.json",
-  "prepare": "prepare.mjs",
-  "validate": "validate.mjs"
-}

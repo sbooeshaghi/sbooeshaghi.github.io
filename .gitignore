@@ -10,5 +10,7 @@ local/sciindex/
 db/pdf-manifest.local.json
 db/cite-reasons.local.json
 
-# Rust build output for the local scientific-index CLI.
-tools/sciindex/target/
+# Generated query indexes.
+db/resource-index.sqlite
+.scidx/
+scidx.sqlite
