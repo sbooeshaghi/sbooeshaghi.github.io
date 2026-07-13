@@ -10,10 +10,17 @@ const publicationAuthorsPath = path.join(
   "db",
   "publication-authors.json"
 );
+const authorOrcidsPath = path.join(rootDir, "db", "author-orcids.json");
 const crossrefUserAgent =
   "sbooeshaghi.github.io citation metadata build (mailto:sina@caltech.edu)";
 
 const publications = JSON.parse(fs.readFileSync(publicationsPath, "utf8"));
+const existingPublicationAuthors = fs.existsSync(publicationAuthorsPath)
+  ? JSON.parse(fs.readFileSync(publicationAuthorsPath, "utf8"))
+  : null;
+const authorOrcidOverrides = fs.existsSync(authorOrcidsPath)
+  ? JSON.parse(fs.readFileSync(authorOrcidsPath, "utf8"))
+  : { authors: [] };
 
 function slugify(value) {
   return String(value)
@@ -227,9 +234,46 @@ function backfillORCIDsAcrossWorks(works) {
   }
 }
 
+function applyAuthorOrcidOverrides(works) {
+  const byName = new Map();
+
+  for (const author of authorOrcidOverrides.authors || []) {
+    const key = normalizeName(author.name);
+    const orcid = normalizeORCID(author.orcid);
+
+    if (!key || key !== author.normalizedName || !orcid) {
+      throw new Error(
+        `Invalid author ORCID override: ${author.name || "<unnamed>"}`
+      );
+    }
+
+    const existing = byName.get(key);
+    if (existing && existing !== orcid) {
+      throw new Error(`Conflicting author ORCID overrides for ${author.name}`);
+    }
+    byName.set(key, orcid);
+  }
+
+  for (const author of allVersionAuthors(works)) {
+    const override = byName.get(normalizeName(author.name));
+    if (!override) {
+      continue;
+    }
+    if (author.orcid && author.orcid !== override) {
+      throw new Error(
+        `Author ORCID override conflicts with Crossref for ${author.name}`
+      );
+    }
+    author.orcid = override;
+  }
+}
+
 const output = {
   generatedAt: new Date().toISOString(),
-  sources: ["Crossref DOI metadata with cross-version and cross-work ORCID backfill"],
+  sources: [
+    "Crossref DOI metadata with cross-version and cross-work ORCID backfill",
+    "Authorlink unique exact-name ORCID overrides",
+  ],
   works: {},
 };
 const failures = [];
@@ -271,11 +315,7 @@ for (const publication of publications) {
 }
 
 backfillORCIDsAcrossWorks(output.works);
-
-fs.writeFileSync(
-  publicationAuthorsPath,
-  `${JSON.stringify(output, null, 2)}\n`
-);
+applyAuthorOrcidOverrides(output.works);
 
 const authorCount = Object.values(output.works).reduce(
   (sum, work) =>
@@ -285,6 +325,24 @@ const authorCount = Object.values(output.works).reduce(
       0
     ),
   0
+);
+
+if (
+  failures.length &&
+  existingPublicationAuthors &&
+  process.env.AUTHOR_FETCH_ALLOW_PARTIAL !== "1"
+) {
+  console.error(failures.join("\n"));
+  console.error(
+    "Refusing to overwrite publication-authors.json with a partial Crossref result. " +
+      "Set AUTHOR_FETCH_ALLOW_PARTIAL=1 to override."
+  );
+  process.exit(1);
+}
+
+fs.writeFileSync(
+  publicationAuthorsPath,
+  `${JSON.stringify(output, null, 2)}\n`
 );
 const orcidCount = Object.values(output.works).reduce(
   (sum, work) =>

@@ -1,7 +1,8 @@
 {
   "generatedAt": "2026-07-05T00:58:53.068Z",
   "sources": [
-    "Crossref DOI metadata with cross-version and cross-work ORCID backfill"
+    "Crossref DOI metadata with cross-version and cross-work ORCID backfill",
+    "Authorlink unique exact-name ORCID overrides"
   ],
   "works": {
     "the-impact-of-package-selection-and-versioning-on-single-cell-rna-seq-analysis": {
@@ -572,7 +573,8 @@
               "orcid": "https://orcid.org/0000-0002-6624-9293"
             },
             {
-              "name": "Marcus Alvarez"
+              "name": "Marcus Alvarez",
+              "orcid": "https://orcid.org/0000-0002-6369-5028"
             },
             {
               "name": "Chun Jimmie Ye",
@@ -607,16 +609,19 @@
               "orcid": "https://orcid.org/0000-0003-4327-7977"
             },
             {
-              "name": "Adhideb Ghosh"
+              "name": "Adhideb Ghosh",
+              "orcid": "https://orcid.org/0000-0002-5160-4571"
             },
             {
               "name": "Sean D. Kodani"
             },
             {
-              "name": "Xavier Caubit"
+              "name": "Xavier Caubit",
+              "orcid": "https://orcid.org/0000-0003-0064-5231"
             },
             {
-              "name": "Laurent Fasano"
+              "name": "Laurent Fasano",
+              "orcid": "https://orcid.org/0000-0003-2307-8428"
             },
             {
               "name": "Waqar Ali"
@@ -632,7 +637,8 @@
               "name": "Anushka Gupta"
             },
             {
-              "name": "Yasmine Belaidouni"
+              "name": "Yasmine Belaidouni",
+              "orcid": "https://orcid.org/0000-0002-1897-5127"
             },
             {
               "name": "A. Sina Booeshaghi",
@@ -642,13 +648,16 @@
               "name": "Shiyi Yang"
             },
             {
-              "name": "Ruchir Rastogi"
+              "name": "Ruchir Rastogi",
+              "orcid": "https://orcid.org/0000-0001-7288-1714"
             },
             {
-              "name": "Farnaz Shamsi"
+              "name": "Farnaz Shamsi",
+              "orcid": "https://orcid.org/0000-0003-1753-727X"
             },
             {
-              "name": "Ashley Vernon"
+              "name": "Ashley Vernon",
+              "orcid": "https://orcid.org/0009-0003-9311-1710"
             },
             {
               "name": "Aaron Streets",
@@ -850,7 +859,8 @@
               "name": "Lea M. Starita"
             },
             {
-              "name": "Gary C. Hon"
+              "name": "Gary C. Hon",
+              "orcid": "https://orcid.org/0000-0002-5728-4433"
             },
             {
               "name": "Hannah Carter"
@@ -859,10 +869,12 @@
               "name": "Nidhi Sahni"
             },
             {
-              "name": "Timothy E. Reddy"
+              "name": "Timothy E. Reddy",
+              "orcid": "https://orcid.org/0000-0002-7629-061X"
             },
             {
-              "name": "Xihong Lin"
+              "name": "Xihong Lin",
+              "orcid": "https://orcid.org/0000-0001-7067-7752"
             },
             {
               "name": "Yun Li"
@@ -874,7 +886,8 @@
               "name": "Maria H. Chahrour"
             },
             {
-              "name": "Alan P. Boyle"
+              "name": "Alan P. Boyle",
+              "orcid": "https://orcid.org/0000-0002-2081-1105"
             },
             {
               "name": "Benjamin C. Hitz"
@@ -890,7 +903,8 @@
               "name": "Karen L. Mohlke"
             },
             {
-              "name": "Luca Pinello"
+              "name": "Luca Pinello",
+              "orcid": "https://orcid.org/0000-0003-1109-3823"
             },
             {
               "name": "Ting Wang"
@@ -899,7 +913,8 @@
               "name": "Steering Committee Co-Chairs (alphabetical by last name)"
             },
             {
-              "name": "Anshul Kundaje"
+              "name": "Anshul Kundaje",
+              "orcid": "https://orcid.org/0000-0003-3084-2287"
             },
             {
               "name": "Feng Yue"
@@ -908,13 +923,15 @@
               "name": "Code of Conduct Committee (alphabetical by last name)"
             },
             {
-              "name": "Sarah Cody"
+              "name": "Sarah Cody",
+              "orcid": "https://orcid.org/0009-0003-5535-9395"
             },
             {
               "name": "Nina P. Farrell"
             },
             {
-              "name": "Michael I. Love"
+              "name": "Michael I. Love",
+              "orcid": "https://orcid.org/0000-0001-8401-0545"
             },
             {
               "name": "Lara A. Muffley"
@@ -927,7 +944,8 @@
               "orcid": "https://orcid.org/0000-0002-9240-0102"
             },
             {
-              "name": "Eric Van Buren"
+              "name": "Eric Van Buren",
+              "orcid": "https://orcid.org/0000-0003-4256-8705"
             },
             {
               "name": "Working Group and Focus Group Co-Chairs (alphabetical by last name)"
@@ -942,7 +960,8 @@
               "name": "Characterization"
             },
             {
-              "name": "Martin Kircher"
+              "name": "Martin Kircher",
+              "orcid": "https://orcid.org/0000-0001-9278-5471"
             },
             {
               "name": "Computational Analysis, Modeling, and Prediction"
@@ -951,13 +970,15 @@
               "name": "Jian Ma"
             },
             {
-              "name": "Predrag Radivojac"
+              "name": "Predrag Radivojac",
+              "orcid": "https://orcid.org/0000-0002-6769-0793"
             },
             {
               "name": "Project Design"
             },
             {
-              "name": "Brunilda Balliu"
+              "name": "Brunilda Balliu",
+              "orcid": "https://orcid.org/0000-0001-8953-804X"
             },
             {
               "name": "Mapping"
@@ -970,7 +991,8 @@
               "name": "Networks"
             },
             {
-              "name": "Danwei Huangfu"
+              "name": "Danwei Huangfu",
+              "orcid": "https://orcid.org/0000-0002-1145-6199"
             },
             {
               "name": "Standards and Pipelines"
@@ -982,7 +1004,8 @@
               "name": "Chong Y. Park"
             },
             {
-              "name": "Thomas Quertermous"
+              "name": "Thomas Quertermous",
+              "orcid": "https://orcid.org/0000-0002-7645-9067"
             },
             {
               "name": "Cellular Programs and Networks"
@@ -997,7 +1020,8 @@
               "name": "Michael A. Calderwood"
             },
             {
-              "name": "Douglas M. Fowler"
+              "name": "Douglas M. Fowler",
+              "orcid": "https://orcid.org/0000-0001-7614-1713"
             },
             {
               "name": "Marc Vidal"
@@ -1012,10 +1036,12 @@
               "name": "Defining and Systematizing Function"
             },
             {
-              "name": "Sean D. Mooney"
+              "name": "Sean D. Mooney",
+              "orcid": "https://orcid.org/0000-0003-2654-0833"
             },
             {
-              "name": "Vikas Pejaver"
+              "name": "Vikas Pejaver",
+              "orcid": "https://orcid.org/0000-0002-1943-0284"
             },
             {
               "name": "Enumerating Variants"
@@ -1036,13 +1062,15 @@
               "name": "Steven K. Reilly"
             },
             {
-              "name": "Shamil Sunyaev"
+              "name": "Shamil Sunyaev",
+              "orcid": "https://orcid.org/0000-0001-5715-5677"
             },
             {
               "name": "Imaging"
             },
             {
-              "name": "Anne E. Carpenter"
+              "name": "Anne E. Carpenter",
+              "orcid": "https://orcid.org/0000-0003-1555-8261"
             },
             {
               "name": "Immune"
@@ -1060,16 +1088,19 @@
               "name": "Impact on Diverse Populations"
             },
             {
-              "name": "Stefanija Giric"
+              "name": "Stefanija Giric",
+              "orcid": "https://orcid.org/0009-0005-2751-3978"
             },
             {
               "name": "iPSC"
             },
             {
-              "name": "Chongyuan Luo"
+              "name": "Chongyuan Luo",
+              "orcid": "https://orcid.org/0000-0002-8541-0695"
             },
             {
-              "name": "Kathrin Plath"
+              "name": "Kathrin Plath",
+              "orcid": "https://orcid.org/0000-0001-7796-3372"
             },
             {
               "name": "MPRA"
@@ -1078,7 +1109,8 @@
               "name": "Alejandro Barrera"
             },
             {
-              "name": "Max Schubach"
+              "name": "Max Schubach",
+              "orcid": "https://orcid.org/0000-0002-2032-6679"
             },
             {
               "name": "Noncoding Variants"
@@ -1087,13 +1119,15 @@
               "name": "Andreas R. Gschwind"
             },
             {
-              "name": "Jill E. Moore"
+              "name": "Jill E. Moore",
+              "orcid": "https://orcid.org/0000-0002-3023-0806"
             },
             {
               "name": "Neuro"
             },
             {
-              "name": "Nadav Ahituv"
+              "name": "Nadav Ahituv",
+              "orcid": "https://orcid.org/0000-0002-7434-8144"
             },
             {
               "name": "Phenotypic Impact and Function"
@@ -1112,7 +1146,8 @@
               "name": "Kyle J. Gaulton"
             },
             {
-              "name": "Saori Sakaue"
+              "name": "Saori Sakaue",
+              "orcid": "https://orcid.org/0000-0003-3618-9717"
             },
             {
               "name": "Single Cell"
@@ -1122,10 +1157,12 @@
               "orcid": "https://orcid.org/0000-0002-6442-4502"
             },
             {
-              "name": "Eugenio Mattei"
+              "name": "Eugenio Mattei",
+              "orcid": "https://orcid.org/0000-0002-8889-658X"
             },
             {
-              "name": "Surag Nair"
+              "name": "Surag Nair",
+              "orcid": "https://orcid.org/0000-0002-6216-2457"
             },
             {
               "name": "Lior Pachter",
@@ -1141,7 +1178,8 @@
               "name": "UM1HG011966"
             },
             {
-              "name": "Jay Shendure"
+              "name": "Jay Shendure",
+              "orcid": "https://orcid.org/0000-0002-1516-1865"
             },
             {
               "name": "Vikram Agarwal"
@@ -1150,7 +1188,8 @@
               "name": "Andrew Blair"
             },
             {
-              "name": "Theofilos Chalkiadakis"
+              "name": "Theofilos Chalkiadakis",
+              "orcid": "https://orcid.org/0000-0001-7582-458X"
             },
             {
               "name": "Florence M. Chardon"
@@ -1162,28 +1201,34 @@
               "name": "Chengyu Deng"
             },
             {
-              "name": "Nobuhiko Hamazaki"
+              "name": "Nobuhiko Hamazaki",
+              "orcid": "https://orcid.org/0000-0001-9228-233X"
             },
             {
               "name": "Pia Keukeleire"
             },
             {
-              "name": "Connor Kubo"
+              "name": "Connor Kubo",
+              "orcid": "https://orcid.org/0000-0001-9579-2917"
             },
             {
-              "name": "Jean-Benoît Lalanne"
+              "name": "Jean-Benoît Lalanne",
+              "orcid": "https://orcid.org/0000-0001-8753-0669"
             },
             {
-              "name": "Thorben Maass"
+              "name": "Thorben Maass",
+              "orcid": "https://orcid.org/0000-0003-4764-2740"
             },
             {
               "name": "Beth Martin"
             },
             {
-              "name": "Troy A. McDiarmid"
+              "name": "Troy A. McDiarmid",
+              "orcid": "https://orcid.org/0000-0002-4893-9733"
             },
             {
-              "name": "Mai Nobuhara"
+              "name": "Mai Nobuhara",
+              "orcid": "https://orcid.org/0009-0007-3434-8397"
             },
             {
               "name": "Nicholas F. Page"
@@ -1192,10 +1237,12 @@
               "name": "Sam Regalado"
             },
             {
-              "name": "Jasmine Sims"
+              "name": "Jasmine Sims",
+              "orcid": "https://orcid.org/0000-0001-8180-2520"
             },
             {
-              "name": "Aki Ushiki"
+              "name": "Aki Ushiki",
+              "orcid": "https://orcid.org/0000-0002-0889-4577"
             },
             {
               "name": "UM1HG011969"
@@ -1210,22 +1257,26 @@
               "name": "Nathan Camp"
             },
             {
-              "name": "Silvia Casadei"
+              "name": "Silvia Casadei",
+              "orcid": "https://orcid.org/0000-0003-2619-5662"
             },
             {
               "name": "Estelle Y. Da"
             },
             {
-              "name": "Moez Dawood"
+              "name": "Moez Dawood",
+              "orcid": "https://orcid.org/0000-0003-0192-1277"
             },
             {
               "name": "Samantha C. Dawson"
             },
             {
-              "name": "Shawn Fayer"
+              "name": "Shawn Fayer",
+              "orcid": "https://orcid.org/0000-0003-1883-9069"
             },
             {
-              "name": "Audrey Hamm"
+              "name": "Audrey Hamm",
+              "orcid": "https://orcid.org/0009-0009-1146-6002"
             },
             {
               "name": "Richard G. James"
@@ -1240,16 +1291,19 @@
               "name": "Nick Moore"
             },
             {
-              "name": "Sriram Pendyala"
+              "name": "Sriram Pendyala",
+              "orcid": "https://orcid.org/0000-0003-3395-3417"
             },
             {
               "name": "Nicholas A. Popp"
             },
             {
-              "name": "Mason Post"
+              "name": "Mason Post",
+              "orcid": "https://orcid.org/0009-0006-4768-662X"
             },
             {
-              "name": "Alan F. Rubin"
+              "name": "Alan F. Rubin",
+              "orcid": "https://orcid.org/0000-0003-1474-605X"
             },
             {
               "name": "Nahum T. Smith"
@@ -1258,16 +1312,19 @@
               "name": "Jeremy Stone"
             },
             {
-              "name": "Malvika Tejura"
+              "name": "Malvika Tejura",
+              "orcid": "https://orcid.org/0000-0001-5356-1977"
             },
             {
               "name": "Ziyu R. Wang"
             },
             {
-              "name": "Melinda K. Wheelock"
+              "name": "Melinda K. Wheelock",
+              "orcid": "https://orcid.org/0009-0002-9825-6276"
             },
             {
-              "name": "Ivan Woo"
+              "name": "Ivan Woo",
+              "orcid": "https://orcid.org/0009-0003-0945-8851"
             },
             {
               "name": "Brendan D. Zapp"
@@ -1276,34 +1333,41 @@
               "name": "UM1HG011972"
             },
             {
-              "name": "Dulguun Amgalan"
+              "name": "Dulguun Amgalan",
+              "orcid": "https://orcid.org/0000-0001-6398-3372"
             },
             {
-              "name": "Aradhana Aradhana"
+              "name": "Aradhana Aradhana",
+              "orcid": "https://orcid.org/0009-0005-2092-9794"
             },
             {
               "name": "Sophia M. Arana"
             },
             {
-              "name": "Michael C. Bassik"
+              "name": "Michael C. Bassik",
+              "orcid": "https://orcid.org/0000-0001-5185-8427"
             },
             {
               "name": "Julia R. Bauman"
             },
             {
-              "name": "Asmita Bhattacharya"
+              "name": "Asmita Bhattacharya",
+              "orcid": "https://orcid.org/0000-0002-5669-8036"
             },
             {
-              "name": "Xiangmeng Shawn Cai"
+              "name": "Xiangmeng Shawn Cai",
+              "orcid": "https://orcid.org/0000-0002-2466-4210"
             },
             {
               "name": "Ziwei Chen"
             },
             {
-              "name": "Stephanie Conley"
+              "name": "Stephanie Conley",
+              "orcid": "https://orcid.org/0000-0002-0462-8343"
             },
             {
-              "name": "Salil Deshpande"
+              "name": "Salil Deshpande",
+              "orcid": "https://orcid.org/0009-0009-5776-8428"
             },
             {
               "name": "Benjamin R. Doughty"
@@ -1324,31 +1388,37 @@
               "name": "Katherine Guo"
             },
             {
-              "name": "Revant Gupta"
+              "name": "Revant Gupta",
+              "orcid": "https://orcid.org/0000-0002-0881-5074"
             },
             {
-              "name": "Sarasa Isobe"
+              "name": "Sarasa Isobe",
+              "orcid": "https://orcid.org/0000-0002-7405-0903"
             },
             {
-              "name": "Evelyn Jagoda"
+              "name": "Evelyn Jagoda",
+              "orcid": "https://orcid.org/0000-0001-9425-8106"
             },
             {
               "name": "Nimit Jain"
             },
             {
-              "name": "Hank Jones"
+              "name": "Hank Jones",
+              "orcid": "https://orcid.org/0009-0007-3220-3098"
             },
             {
               "name": "Helen Y. Kang"
             },
             {
-              "name": "Samuel H. Kim"
+              "name": "Samuel H. Kim",
+              "orcid": "https://orcid.org/0000-0001-8003-2050"
             },
             {
               "name": "YeEun Kim"
             },
             {
-              "name": "Sandy Klemm"
+              "name": "Sandy Klemm",
+              "orcid": "https://orcid.org/0000-0001-7556-6795"
             },
             {
               "name": "Ramen Kundu"
@@ -1369,7 +1439,8 @@
               "name": "Daniel Y. Li"
             },
             {
-              "name": "Dominik Lindenhofer"
+              "name": "Dominik Lindenhofer",
+              "orcid": "https://orcid.org/0000-0001-8838-7163"
             },
             {
               "name": "X. Rosa Ma"
@@ -1384,22 +1455,27 @@
               "name": "Chloe V. McCreery"
             },
             {
-              "name": "Eyal Metzl-Raz"
+              "name": "Eyal Metzl-Raz",
+              "orcid": "https://orcid.org/0000-0002-7111-2822"
             },
             {
-              "name": "Joao P. Monteiro"
+              "name": "Joao P. Monteiro",
+              "orcid": "https://orcid.org/0000-0001-6481-6875"
             },
             {
-              "name": "Michael T. Montgomery"
+              "name": "Michael T. Montgomery",
+              "orcid": "https://orcid.org/0000-0002-6748-2329"
             },
             {
               "name": "Kristy S. Mualim"
             },
             {
-              "name": "Chad Munger"
+              "name": "Chad Munger",
+              "orcid": "https://orcid.org/0000-0003-1906-1164"
             },
             {
-              "name": "Glen Munson"
+              "name": "Glen Munson",
+              "orcid": "https://orcid.org/0000-0001-9383-9806"
             },
             {
               "name": "Tri C. Nguyen"
@@ -1408,19 +1484,24 @@
               "name": "Trieu Nguyen"
             },
             {
-              "name": "Brian T. Palmisano"
+              "name": "Brian T. Palmisano",
+              "orcid": "https://orcid.org/0000-0002-2140-1060"
             },
             {
-              "name": "Anusri Pampari"
+              "name": "Anusri Pampari",
+              "orcid": "https://orcid.org/0000-0002-6579-4070"
             },
             {
-              "name": "Marlene Rabinovitch"
+              "name": "Marlene Rabinovitch",
+              "orcid": "https://orcid.org/0000-0001-7886-7104"
             },
             {
-              "name": "Markus Ramste"
+              "name": "Markus Ramste",
+              "orcid": "https://orcid.org/0000-0003-4048-4591"
             },
             {
-              "name": "Judhajeet Ray"
+              "name": "Judhajeet Ray",
+              "orcid": "https://orcid.org/0000-0003-1524-2603"
             },
             {
               "name": "Kevin R. Roy"
@@ -1432,7 +1513,8 @@
               "name": "Julia M. Schaepe"
             },
             {
-              "name": "Gavin Schnitzler"
+              "name": "Gavin Schnitzler",
+              "orcid": "https://orcid.org/0000-0001-5814-6991"
             },
             {
               "name": "Jacob Schreiber"
@@ -1462,22 +1544,26 @@
               "name": "Anthony Tan"
             },
             {
-              "name": "Josh Tycko"
+              "name": "Josh Tycko",
+              "orcid": "https://orcid.org/0000-0002-4108-0575"
             },
             {
               "name": "Raeline C. Valbuena"
             },
             {
-              "name": "Valeh Valiollah Pour Amiri"
+              "name": "Valeh Valiollah Pour Amiri",
+              "orcid": "https://orcid.org/0000-0002-2008-5297"
             },
             {
               "name": "Mariëlle J. F. M. van Kooten"
             },
             {
-              "name": "Alun Vaughan-Jackson"
+              "name": "Alun Vaughan-Jackson",
+              "orcid": "https://orcid.org/0000-0001-7334-3803"
             },
             {
-              "name": "Anthony Venida"
+              "name": "Anthony Venida",
+              "orcid": "https://orcid.org/0000-0001-6119-2999"
             },
             {
               "name": "Chad S. Weldy"
@@ -1495,10 +1581,12 @@
               "name": "Tony Zeng"
             },
             {
-              "name": "Quanyi Zhao"
+              "name": "Quanyi Zhao",
+              "orcid": "https://orcid.org/0000-0001-9849-4528"
             },
             {
-              "name": "Ronghao Zhou"
+              "name": "Ronghao Zhou",
+              "orcid": "https://orcid.org/0000-0002-3917-0694"
             },
             {
               "name": "UM1HG011989"
@@ -1510,13 +1598,15 @@
               "name": "Beth A. Cimini"
             },
             {
-              "name": "Georges Coppin"
+              "name": "Georges Coppin",
+              "orcid": "https://orcid.org/0000-0001-7647-3240"
             },
             {
               "name": "Atina G. Coté"
             },
             {
-              "name": "Marzieh Haghighi"
+              "name": "Marzieh Haghighi",
+              "orcid": "https://orcid.org/0000-0002-2291-2356"
             },
             {
               "name": "Tong Hao"
@@ -1525,16 +1615,20 @@
               "name": "David E. Hill"
             },
             {
-              "name": "Jessica Lacoste"
+              "name": "Jessica Lacoste",
+              "orcid": "https://orcid.org/0000-0002-7222-4957"
             },
             {
-              "name": "Florent Laval"
+              "name": "Florent Laval",
+              "orcid": "https://orcid.org/0000-0001-7744-6199"
             },
             {
-              "name": "Chloe Reno"
+              "name": "Chloe Reno",
+              "orcid": "https://orcid.org/0009-0009-9332-0831"
             },
             {
-              "name": "Frederick P. Roth"
+              "name": "Frederick P. Roth",
+              "orcid": "https://orcid.org/0000-0002-6628-649X"
             },
             {
               "name": "Shantanu Singh"
@@ -1546,10 +1640,12 @@
               "name": "Mikko Taipale"
             },
             {
-              "name": "Tanisha Teelucksingh"
+              "name": "Tanisha Teelucksingh",
+              "orcid": "https://orcid.org/0000-0002-1151-8433"
             },
             {
-              "name": "Maxime Tixhon"
+              "name": "Maxime Tixhon",
+              "orcid": "https://orcid.org/0009-0004-4289-6842"
             },
             {
               "name": "Anupama Yadav"
@@ -1561,7 +1657,8 @@
               "name": "UM1HG011996"
             },
             {
-              "name": "W. Lee Kraus"
+              "name": "W. Lee Kraus",
+              "orcid": "https://orcid.org/0000-0002-8786-2986"
             },
             {
               "name": "Daniel A. Armendariz"
@@ -1570,10 +1667,12 @@
               "name": "Ashley E. Dederich"
             },
             {
-              "name": "Ashlesha Gogate"
+              "name": "Ashlesha Gogate",
+              "orcid": "https://orcid.org/0009-0002-6081-1289"
             },
             {
-              "name": "Lauretta El Hayek"
+              "name": "Lauretta El Hayek",
+              "orcid": "https://orcid.org/0000-0002-6820-9316"
             },
             {
               "name": "Sean C. Goetsch"
@@ -1582,7 +1681,8 @@
               "name": "Kiran Kaur"
             },
             {
-              "name": "Hyung Bum Kim"
+              "name": "Hyung Bum Kim",
+              "orcid": "https://orcid.org/0000-0003-1682-4998"
             },
             {
               "name": "Melissa K. McCoy"
@@ -1600,7 +1700,8 @@
               "name": "Daniel A. Schmitz"
             },
             {
-              "name": "Sushama Sivakumar"
+              "name": "Sushama Sivakumar",
+              "orcid": "https://orcid.org/0000-0001-7877-4821"
             },
             {
               "name": "Anjana Sundarrajan"
@@ -1621,7 +1722,8 @@
               "name": "Jian Xu"
             },
             {
-              "name": "Leqian Yu"
+              "name": "Leqian Yu",
+              "orcid": "https://orcid.org/0000-0003-2060-463X"
             },
             {
               "name": "Yanfeng Zhang"
@@ -1642,7 +1744,8 @@
               "name": "Jessica L. Bell"
             },
             {
-              "name": "K. Alaine Broadaway"
+              "name": "K. Alaine Broadaway",
+              "orcid": "https://orcid.org/0000-0001-7469-1041"
             },
             {
               "name": "Katherine N. Degner"
@@ -1654,10 +1757,12 @@
               "name": "Beverly H. Koller"
             },
             {
-              "name": "Won Mah"
+              "name": "Won Mah",
+              "orcid": "https://orcid.org/0000-0002-8857-3887"
             },
             {
-              "name": "Wancen Mu"
+              "name": "Wancen Mu",
+              "orcid": "https://orcid.org/0000-0002-5061-7581"
             },
             {
               "name": "Kimberly D. Ritola"
@@ -1678,13 +1783,15 @@
               "name": "Daniel Bauer"
             },
             {
-              "name": "Guillaume Lettre"
+              "name": "Guillaume Lettre",
+              "orcid": "https://orcid.org/0000-0002-7740-3399"
             },
             {
               "name": "Richard Sherwood"
             },
             {
-              "name": "Basheer Becerra"
+              "name": "Basheer Becerra",
+              "orcid": "https://orcid.org/0000-0003-4403-7959"
             },
             {
               "name": "Logan J. Blaine"
@@ -1708,7 +1815,8 @@
               "name": "Benjamin P. Kleinstiver"
             },
             {
-              "name": "Estelle Lecluze"
+              "name": "Estelle Lecluze",
+              "orcid": "https://orcid.org/0000-0002-2940-8339"
             },
             {
               "name": "Zhijian Li"
@@ -1717,10 +1825,12 @@
               "name": "Zain M. Patel"
             },
             {
-              "name": "Quang Vinh Phan"
+              "name": "Quang Vinh Phan",
+              "orcid": "https://orcid.org/0000-0002-0406-5085"
             },
             {
-              "name": "Jayoung Ryu"
+              "name": "Jayoung Ryu",
+              "orcid": "https://orcid.org/0000-0001-8710-8898"
             },
             {
               "name": "Marlena L. Starr"
@@ -1735,7 +1845,8 @@
               "name": "Charles A. Gersbach"
             },
             {
-              "name": "Gregory E. Crawford"
+              "name": "Gregory E. Crawford",
+              "orcid": "https://orcid.org/0000-0001-6106-2772"
             },
             {
               "name": "Andrew S. Allen"
@@ -1744,19 +1855,23 @@
               "name": "William H. Majoros"
             },
             {
-              "name": "Nahid Iglesias"
+              "name": "Nahid Iglesias",
+              "orcid": "https://orcid.org/0000-0001-5185-846X"
             },
             {
-              "name": "Ruhi Rai"
+              "name": "Ruhi Rai",
+              "orcid": "https://orcid.org/0000-0003-3897-0312"
             },
             {
-              "name": "Revathy Venukuttan"
+              "name": "Revathy Venukuttan",
+              "orcid": "https://orcid.org/0009-0005-6697-3854"
             },
             {
               "name": "Boxun Li"
             },
             {
-              "name": "Taylor Anglen"
+              "name": "Taylor Anglen",
+              "orcid": "https://orcid.org/0000-0003-4451-3046"
             },
             {
               "name": "Lexi R. Bounds"
@@ -1774,7 +1889,8 @@
               "name": "Christian D. McRoberts Amador"
             },
             {
-              "name": "Samuel J. Reisman"
+              "name": "Samuel J. Reisman",
+              "orcid": "https://orcid.org/0000-0002-3657-874X"
             },
             {
               "name": "Maria A. ter Weele"
@@ -1786,10 +1902,12 @@
               "name": "Helen L. Streff"
             },
             {
-              "name": "Keith Siklenka"
+              "name": "Keith Siklenka",
+              "orcid": "https://orcid.org/0000-0002-4663-6456"
             },
             {
-              "name": "Kari Strouse"
+              "name": "Kari Strouse",
+              "orcid": "https://orcid.org/0000-0001-8748-4527"
             },
             {
               "name": "Mapping Awards (contact PI, MPIs (alphabetical by last name), other members (alphabetical by last name))"
@@ -1801,10 +1919,12 @@
               "name": "Bradley E. Bernstein"
             },
             {
-              "name": "Juliana Babu"
+              "name": "Juliana Babu",
+              "orcid": "https://orcid.org/0009-0001-8559-0729"
             },
             {
-              "name": "Guillermo Barreto Corona"
+              "name": "Guillermo Barreto Corona",
+              "orcid": "https://orcid.org/0000-0002-9289-7681"
             },
             {
               "name": "Kevin Dong"
@@ -1816,13 +1936,15 @@
               "name": "Neva C. Durand"
             },
             {
-              "name": "Charles B. Epstein"
+              "name": "Charles B. Epstein",
+              "orcid": "https://orcid.org/0000-0001-8358-8345"
             },
             {
               "name": "Kaili Fan"
             },
             {
-              "name": "Elizabeth Gaskell"
+              "name": "Elizabeth Gaskell",
+              "orcid": "https://orcid.org/0000-0001-6497-6211"
             },
             {
               "name": "Amelia W. Hall"
@@ -1834,13 +1956,16 @@
               "name": "Mei K. Knudson"
             },
             {
-              "name": "Noam Shoresh"
+              "name": "Noam Shoresh",
+              "orcid": "https://orcid.org/0000-0002-5482-5046"
             },
             {
-              "name": "Siddarth Wekhande"
+              "name": "Siddarth Wekhande",
+              "orcid": "https://orcid.org/0009-0008-7539-8718"
             },
             {
-              "name": "Cassandra M. White"
+              "name": "Cassandra M. White",
+              "orcid": "https://orcid.org/0000-0002-6697-4321"
             },
             {
               "name": "Wang Xi"
@@ -1852,16 +1977,19 @@
               "name": "Ansuman T. Satpathy"
             },
             {
-              "name": "M. Ryan Corces"
+              "name": "M. Ryan Corces",
+              "orcid": "https://orcid.org/0000-0001-7465-7652"
             },
             {
               "name": "Serena H. Chang"
             },
             {
-              "name": "Iris M. Chin"
+              "name": "Iris M. Chin",
+              "orcid": "https://orcid.org/0000-0002-2621-3042"
             },
             {
-              "name": "James M. Gardner"
+              "name": "James M. Gardner",
+              "orcid": "https://orcid.org/0000-0002-4782-4969"
             },
             {
               "name": "Zachary A. Gardell"
@@ -1870,13 +1998,16 @@
               "name": "Jacob C. Gutierrez"
             },
             {
-              "name": "Alia W. Johnson"
+              "name": "Alia W. Johnson",
+              "orcid": "https://orcid.org/0009-0002-9444-275X"
             },
             {
-              "name": "Lucas Kampman"
+              "name": "Lucas Kampman",
+              "orcid": "https://orcid.org/0000-0002-2008-549X"
             },
             {
-              "name": "Maya Kasowski"
+              "name": "Maya Kasowski",
+              "orcid": "https://orcid.org/0000-0001-6583-0759"
             },
             {
               "name": "Caleb A. Lareau"
@@ -1885,7 +2016,8 @@
               "name": "Vincent Liu"
             },
             {
-              "name": "Leif S. Ludwig"
+              "name": "Leif S. Ludwig",
+              "orcid": "https://orcid.org/0000-0002-2916-2164"
             },
             {
               "name": "Christopher S. McGinnis"
@@ -1894,7 +2026,8 @@
               "name": "Shreya Menon"
             },
             {
-              "name": "Anita Qualls"
+              "name": "Anita Qualls",
+              "orcid": "https://orcid.org/0000-0003-0576-8863"
             },
             {
               "name": "Katalin Sandor"
@@ -1924,7 +2057,8 @@
               "orcid": "https://orcid.org/0000-0002-8977-7224"
             },
             {
-              "name": "Dayeon Cheong"
+              "name": "Dayeon Cheong",
+              "orcid": "https://orcid.org/0009-0003-3315-8496"
             },
             {
               "name": "Ghassan Filibam"
@@ -1983,7 +2117,8 @@
               "orcid": "https://orcid.org/0000-0002-4928-5532"
             },
             {
-              "name": "Sean Upchurch"
+              "name": "Sean Upchurch",
+              "orcid": "https://orcid.org/0000-0002-3119-8975"
             },
             {
               "name": "Ryan Weber",
@@ -1999,7 +2134,8 @@
               "name": "Christopher P. Castro"
             },
             {
-              "name": "Elysia Chou"
+              "name": "Elysia Chou",
+              "orcid": "https://orcid.org/0000-0002-1007-4455"
             },
             {
               "name": "Fan Feng"
@@ -2020,7 +2156,8 @@
               "name": "Ryan E. Mills"
             },
             {
-              "name": "Weizhou Qian"
+              "name": "Weizhou Qian",
+              "orcid": "https://orcid.org/0000-0003-3884-7920"
             },
             {
               "name": "Tingting Qin"
@@ -2029,7 +2166,8 @@
               "name": "Maureen A. Sartor"
             },
             {
-              "name": "Rintsen N. Sherpa"
+              "name": "Rintsen N. Sherpa",
+              "orcid": "https://orcid.org/0000-0001-9957-1919"
             },
             {
               "name": "Jinhao Wang"
@@ -2063,16 +2201,20 @@
               "name": "Richard W. Doty"
             },
             {
-              "name": "Yuncheng Duan"
+              "name": "Yuncheng Duan",
+              "orcid": "https://orcid.org/0000-0002-6568-0081"
             },
             {
-              "name": "Raluca Gordan"
+              "name": "Raluca Gordan",
+              "orcid": "https://orcid.org/0000-0002-6404-6556"
             },
             {
-              "name": "Kuei-Yueh Ko"
+              "name": "Kuei-Yueh Ko",
+              "orcid": "https://orcid.org/0000-0001-8564-8524"
             },
             {
-              "name": "Shengyu Li"
+              "name": "Shengyu Li",
+              "orcid": "https://orcid.org/0009-0006-9768-1739"
             },
             {
               "name": "Boyao Li"
@@ -2084,19 +2226,23 @@
               "name": "U01HG012009"
             },
             {
-              "name": "Soumya Raychaudhuri"
+              "name": "Soumya Raychaudhuri",
+              "orcid": "https://orcid.org/0000-0002-1901-8265"
             },
             {
-              "name": "Alkes Price"
+              "name": "Alkes Price",
+              "orcid": "https://orcid.org/0000-0002-2971-7975"
             },
             {
               "name": "Thahmina A. Ali"
             },
             {
-              "name": "Arun Durvasula"
+              "name": "Arun Durvasula",
+              "orcid": "https://orcid.org/0000-0003-0631-3238"
             },
             {
-              "name": "Manolis Kellis"
+              "name": "Manolis Kellis",
+              "orcid": "https://orcid.org/0000-0001-7113-9630"
             },
             {
               "name": "U01HG012022"
@@ -2105,22 +2251,26 @@
               "name": "Lilia M. Iakoucheva"
             },
             {
-              "name": "Tulika Kakati"
+              "name": "Tulika Kakati",
+              "orcid": "https://orcid.org/0000-0002-6234-7443"
             },
             {
               "name": "Yile Chen"
             },
             {
-              "name": "Mariam Benazouz"
+              "name": "Mariam Benazouz",
+              "orcid": "https://orcid.org/0000-0001-8561-296X"
             },
             {
               "name": "Shantanu Jain"
             },
             {
-              "name": "Daniel Zeiberg"
+              "name": "Daniel Zeiberg",
+              "orcid": "https://orcid.org/0000-0002-6919-7572"
             },
             {
-              "name": "M. Clara De Paolis Kaluza"
+              "name": "M. Clara De Paolis Kaluza",
+              "orcid": "https://orcid.org/0000-0003-2376-6669"
             },
             {
               "name": "Michelle Velyunskiy"
@@ -2129,16 +2279,19 @@
               "name": "U01HG012039"
             },
             {
-              "name": "Audrey Gasch"
+              "name": "Audrey Gasch",
+              "orcid": "https://orcid.org/0000-0002-8182-257X"
             },
             {
-              "name": "Kunling Huang"
+              "name": "Kunling Huang",
+              "orcid": "https://orcid.org/0000-0001-5958-5136"
             },
             {
               "name": "Yiyang Jin"
             },
             {
-              "name": "Qiongshi Lu"
+              "name": "Qiongshi Lu",
+              "orcid": "https://orcid.org/0000-0002-4514-0969"
             },
             {
               "name": "Jiacheng Miao"
@@ -2147,13 +2300,15 @@
               "name": "Michael Ohtake"
             },
             {
-              "name": "Eduardo Scopel"
+              "name": "Eduardo Scopel",
+              "orcid": "https://orcid.org/0000-0002-0064-3466"
             },
             {
               "name": "Robert D. Steiner"
             },
             {
-              "name": "Yuriy Sverchkov"
+              "name": "Yuriy Sverchkov",
+              "orcid": "https://orcid.org/0000-0002-9851-8582"
             },
             {
               "name": "U01HG012064"
@@ -2162,25 +2317,29 @@
               "name": "Zhiping Weng"
             },
             {
-              "name": "Manuel Garber"
+              "name": "Manuel Garber",
+              "orcid": "https://orcid.org/0000-0001-8732-1293"
             },
             {
               "name": "Yu Fu"
             },
             {
-              "name": "Natalie Haas"
+              "name": "Natalie Haas",
+              "orcid": "https://orcid.org/0000-0002-5549-5704"
             },
             {
               "name": "Xihao Li"
             },
             {
-              "name": "Nishigandha Phalke"
+              "name": "Nishigandha Phalke",
+              "orcid": "https://orcid.org/0000-0003-3980-6450"
             },
             {
               "name": "Shuo C. Shan"
             },
             {
-              "name": "Nicole Shedd"
+              "name": "Nicole Shedd",
+              "orcid": "https://orcid.org/0000-0003-2272-5398"
             },
             {
               "name": "Tianxiong Yu"
@@ -2189,19 +2348,23 @@
               "name": "Yi Zhang"
             },
             {
-              "name": "Hufeng Zhou"
+              "name": "Hufeng Zhou",
+              "orcid": "https://orcid.org/0000-0001-9382-5674"
             },
             {
               "name": "U01HG012069"
             },
             {
-              "name": "Alexis Battle"
+              "name": "Alexis Battle",
+              "orcid": "https://orcid.org/0000-0002-5287-627X"
             },
             {
-              "name": "Livnat Jerby"
+              "name": "Livnat Jerby",
+              "orcid": "https://orcid.org/0000-0002-4037-386X"
             },
             {
-              "name": "Eran Kotler"
+              "name": "Eran Kotler",
+              "orcid": "https://orcid.org/0000-0002-1463-7462"
             },
             {
               "name": "Andrew R. Marderstein"
@@ -2210,7 +2373,8 @@
               "name": "Stephen B. Montgomery"
             },
             {
-              "name": "AkshatKumar Nigam"
+              "name": "AkshatKumar Nigam",
+              "orcid": "https://orcid.org/0000-0002-5152-2082"
             },
             {
               "name": "Evin M. Padhi"
@@ -2225,10 +2389,12 @@
               "name": "Ivy Raine"
             },
             {
-              "name": "Vivekanandan Ramalingam"
+              "name": "Vivekanandan Ramalingam",
+              "orcid": "https://orcid.org/0000-0002-3631-8913"
             },
             {
-              "name": "Kameron B. Rodrigues"
+              "name": "Kameron B. Rodrigues",
+              "orcid": "https://orcid.org/0000-0002-0270-3688"
             },
             {
               "name": "Jacob M. Schreiber"
@@ -2243,31 +2409,36 @@
               "name": "U01HG012041"
             },
             {
-              "name": "Marisa Abundis"
+              "name": "Marisa Abundis",
+              "orcid": "https://orcid.org/0009-0001-6904-0196"
             },
             {
               "name": "Deepa Bisht"
             },
             {
-              "name": "Trirupa Chakraborty"
+              "name": "Trirupa Chakraborty",
+              "orcid": "https://orcid.org/0000-0002-9145-247X"
             },
             {
               "name": "Jingyu Fan"
             },
             {
-              "name": "David R. Hall"
+              "name": "David R. Hall",
+              "orcid": "https://orcid.org/0000-0002-7887-466X"
             },
             {
               "name": "Zarifeh H. Rarani"
             },
             {
-              "name": "Abhinav K. Jain"
+              "name": "Abhinav K. Jain",
+              "orcid": "https://orcid.org/0000-0003-3268-514X"
             },
             {
               "name": "Babita Kaundal"
             },
             {
-              "name": "Swapnil Keshari"
+              "name": "Swapnil Keshari",
+              "orcid": "https://orcid.org/0000-0001-6451-9432"
             },
             {
               "name": "Daniel McGrail"
@@ -2285,7 +2456,8 @@
               "name": "Hao Wu"
             },
             {
-              "name": "Sreeram Kannan"
+              "name": "Sreeram Kannan",
+              "orcid": "https://orcid.org/0000-0001-8843-2964"
             },
             {
               "name": "Hongjun Song"
@@ -2297,7 +2469,8 @@
               "name": "Ziyue Gao"
             },
             {
-              "name": "Ronni Kurzion"
+              "name": "Ronni Kurzion",
+              "orcid": "https://orcid.org/0000-0002-4111-8377"
             },
             {
               "name": "Julia I. Leu"
@@ -2309,10 +2482,12 @@
               "name": "Dongming Liang"
             },
             {
-              "name": "Guo-li Ming"
+              "name": "Guo-li Ming",
+              "orcid": "https://orcid.org/0000-0002-2517-6075"
             },
             {
-              "name": "Kiran Musunuru"
+              "name": "Kiran Musunuru",
+              "orcid": "https://orcid.org/0000-0003-3298-0368"
             },
             {
               "name": "Qi Qiu"
@@ -2324,7 +2499,8 @@
               "name": "Yijing Su"
             },
             {
-              "name": "Sarah Tishkoff"
+              "name": "Sarah Tishkoff",
+              "orcid": "https://orcid.org/0000-0002-1339-5959"
             },
             {
               "name": "Ning Xie"
@@ -2345,10 +2521,12 @@
               "name": "U01HG012051"
             },
             {
-              "name": "Michael A. Beer"
+              "name": "Michael A. Beer",
+              "orcid": "https://orcid.org/0000-0001-9955-3809"
             },
             {
-              "name": "Anna-Katerina Hadjantonakis"
+              "name": "Anna-Katerina Hadjantonakis",
+              "orcid": "https://orcid.org/0000-0002-7580-5124"
             },
             {
               "name": "Sharon Adeniyi"
@@ -2369,10 +2547,12 @@
               "name": "Nan Hu"
             },
             {
-              "name": "Svetlana Jovanic"
+              "name": "Svetlana Jovanic",
+              "orcid": "https://orcid.org/0000-0003-3002-1307"
             },
             {
-              "name": "Renhe Luo"
+              "name": "Renhe Luo",
+              "orcid": "https://orcid.org/0009-0008-1470-4726"
             },
             {
               "name": "Jin Woo Oh"
@@ -2381,13 +2561,16 @@
               "name": "Milad Razavi-Mohseni"
             },
             {
-              "name": "Dustin Shigaki"
+              "name": "Dustin Shigaki",
+              "orcid": "https://orcid.org/0000-0002-0234-382X"
             },
             {
-              "name": "Simone Sidoli"
+              "name": "Simone Sidoli",
+              "orcid": "https://orcid.org/0000-0001-9073-6641"
             },
             {
-              "name": "Thomas Vierbuchen"
+              "name": "Thomas Vierbuchen",
+              "orcid": "https://orcid.org/0000-0002-5690-5680"
             },
             {
               "name": "Xianming Wang"
@@ -2396,7 +2579,8 @@
               "name": "Breanna Williams"
             },
             {
-              "name": "Jielin Yan"
+              "name": "Jielin Yan",
+              "orcid": "https://orcid.org/0000-0001-9305-3942"
             },
             {
               "name": "Dapeng Yang"
@@ -2408,26 +2592,31 @@
               "name": "U01HG012059"
             },
             {
-              "name": "Maike Sander"
+              "name": "Maike Sander",
+              "orcid": "https://orcid.org/0000-0001-5308-7785"
             },
             {
               "name": "Bing Ren",
               "orcid": "https://orcid.org/0000-0002-5435-1127"
             },
             {
-              "name": "Weronika Bartosik"
+              "name": "Weronika Bartosik",
+              "orcid": "https://orcid.org/0009-0007-7724-5216"
             },
             {
               "name": "Hannah S. Indralingam"
             },
             {
-              "name": "Adam Klie"
+              "name": "Adam Klie",
+              "orcid": "https://orcid.org/0000-0002-7600-3086"
             },
             {
-              "name": "Hannah Mummey"
+              "name": "Hannah Mummey",
+              "orcid": "https://orcid.org/0000-0002-7663-8559"
             },
             {
-              "name": "Mei-Lin Okino"
+              "name": "Mei-Lin Okino",
+              "orcid": "https://orcid.org/0000-0002-6177-9092"
             },
             {
               "name": "Gaowei Wang"
@@ -2445,13 +2634,15 @@
               "name": "U01HG012079"
             },
             {
-              "name": "Noah Zaitlen"
+              "name": "Noah Zaitlen",
+              "orcid": "https://orcid.org/0000-0002-3553-3670"
             },
             {
               "name": "Jason Ernst"
             },
             {
-              "name": "Justin Langerman"
+              "name": "Justin Langerman",
+              "orcid": "https://orcid.org/0009-0003-8376-614X"
             },
             {
               "name": "Terence Li"
@@ -2481,7 +2672,8 @@
               "name": "Laura T. Donlin"
             },
             {
-              "name": "Amit Lakhanpal"
+              "name": "Amit Lakhanpal",
+              "orcid": "https://orcid.org/0000-0003-4171-4790"
             },
             {
               "name": "Kaden M. Southard"
@@ -2508,25 +2700,32 @@
               "name": "Pedro R. Assis"
             },
             {
-              "name": "Beatrice Borsari"
+              "name": "Beatrice Borsari",
+              "orcid": "https://orcid.org/0000-0003-4357-3557"
             },
             {
-              "name": "Eric Douglass"
+              "name": "Eric Douglass",
+              "orcid": "https://orcid.org/0000-0001-6946-1807"
             },
             {
-              "name": "Shengcheng Dong"
+              "name": "Shengcheng Dong",
+              "orcid": "https://orcid.org/0000-0001-5728-8090"
             },
             {
-              "name": "Idan Gabdank"
+              "name": "Idan Gabdank",
+              "orcid": "https://orcid.org/0000-0001-5025-5886"
             },
             {
-              "name": "Keenan Graham"
+              "name": "Keenan Graham",
+              "orcid": "https://orcid.org/0000-0002-3327-6164"
             },
             {
-              "name": "Otto Jolanki"
+              "name": "Otto Jolanki",
+              "orcid": "https://orcid.org/0000-0001-8601-4849"
             },
             {
-              "name": "Jennifer Jou"
+              "name": "Jennifer Jou",
+              "orcid": "https://orcid.org/0000-0003-3065-9183"
             },
             {
               "name": "Meenakshi S. Kagda"
@@ -2544,10 +2743,12 @@
               "name": "Stuart R. Miyasato"
             },
             {
-              "name": "Joel Rozowsky"
+              "name": "Joel Rozowsky",
+              "orcid": "https://orcid.org/0000-0002-3565-0762"
             },
             {
-              "name": "Corinn Small"
+              "name": "Corinn Small",
+              "orcid": "https://orcid.org/0000-0002-2336-2552"
             },
             {
               "name": "Emma Spragins"
@@ -2574,22 +2775,26 @@
               "name": "Xintong Chen"
             },
             {
-              "name": "Rex L. Chisholm"
+              "name": "Rex L. Chisholm",
+              "orcid": "https://orcid.org/0000-0002-5638-3990"
             },
             {
               "name": "Patricia Dickson"
             },
             {
-              "name": "Changxu Fan"
+              "name": "Changxu Fan",
+              "orcid": "https://orcid.org/0000-0002-4375-4019"
             },
             {
-              "name": "Lucinda Fulton"
+              "name": "Lucinda Fulton",
+              "orcid": "https://orcid.org/0000-0001-6429-4288"
             },
             {
               "name": "Daofeng Li"
             },
             {
-              "name": "Tina Lindsay"
+              "name": "Tina Lindsay",
+              "orcid": "https://orcid.org/0000-0002-0409-891X"
             },
             {
               "name": "Yu Luan"
@@ -2598,7 +2803,8 @@
               "name": "Yuan Luo"
             },
             {
-              "name": "Huijue Lyu"
+              "name": "Huijue Lyu",
+              "orcid": "https://orcid.org/0009-0000-8564-0530"
             },
             {
               "name": "Xiaowen Ma"
@@ -2610,16 +2816,19 @@
               "name": "Karen H. Miga"
             },
             {
-              "name": "Kara Quaid"
+              "name": "Kara Quaid",
+              "orcid": "https://orcid.org/0000-0002-4725-322X"
             },
             {
-              "name": "Nathan Stitziel"
+              "name": "Nathan Stitziel",
+              "orcid": "https://orcid.org/0000-0002-4963-8211"
             },
             {
               "name": "Barbara E. Stranger"
             },
             {
-              "name": "Chad Tomlinson"
+              "name": "Chad Tomlinson",
+              "orcid": "https://orcid.org/0000-0001-9905-6159"
             },
             {
               "name": "Juan Wang"
@@ -2643,13 +2852,15 @@
               "name": "Brennand lab"
             },
             {
-              "name": "Kristen Brennand"
+              "name": "Kristen Brennand",
+              "orcid": "https://orcid.org/0000-0003-0993-5956"
             },
             {
               "name": "Ciccia lab"
             },
             {
-              "name": "Alberto Ciccia"
+              "name": "Alberto Ciccia",
+              "orcid": "https://orcid.org/0000-0003-4789-6564"
             },
             {
               "name": "Samuel B. Hayward"
@@ -2658,16 +2869,20 @@
               "name": "Jen-Wei Huang"
             },
             {
-              "name": "Giuseppe Leuzzi"
+              "name": "Giuseppe Leuzzi",
+              "orcid": "https://orcid.org/0000-0002-2211-790X"
             },
             {
-              "name": "Angelo Taglialatela"
+              "name": "Angelo Taglialatela",
+              "orcid": "https://orcid.org/0000-0001-5391-8518"
             },
             {
-              "name": "Tanay Thakar"
+              "name": "Tanay Thakar",
+              "orcid": "https://orcid.org/0000-0001-5261-458X"
             },
             {
-              "name": "Alina Vaitsiankova"
+              "name": "Alina Vaitsiankova",
+              "orcid": "https://orcid.org/0000-0002-9355-0903"
             },
             {
               "name": "Dey lab"
@@ -2682,7 +2897,8 @@
               "name": "Grimes lab"
             },
             {
-              "name": "H. Leighton Grimes"
+              "name": "H. Leighton Grimes",
+              "orcid": "https://orcid.org/0000-0001-8162-6758"
             },
             {
               "name": "Nathan Salomonis"
@@ -2697,16 +2913,19 @@
               "name": "Shi Fang"
             },
             {
-              "name": "Vivian Lee-Kim"
+              "name": "Vivian Lee-Kim",
+              "orcid": "https://orcid.org/0000-0003-0578-7781"
             },
             {
               "name": "Heinig lab"
             },
             {
-              "name": "Matthias Heinig"
+              "name": "Matthias Heinig",
+              "orcid": "https://orcid.org/0000-0002-5612-1720"
             },
             {
-              "name": "Corinna Losert"
+              "name": "Corinna Losert",
+              "orcid": "https://orcid.org/0000-0002-5997-4702"
             },
             {
               "name": "Jones lab"
@@ -2715,7 +2934,8 @@
               "name": "Thouis R. Jones"
             },
             {
-              "name": "Elisa Donnard"
+              "name": "Elisa Donnard",
+              "orcid": "https://orcid.org/0000-0002-8834-8110"
             },
             {
               "name": "Maddie Murphy"
@@ -2739,28 +2959,35 @@
               "name": "Alexander Sasse"
             },
             {
-              "name": "Anna Spiro"
+              "name": "Anna Spiro",
+              "orcid": "https://orcid.org/0000-0002-3465-4606"
             },
             {
               "name": "Pennacchio and Visel lab"
             },
             {
-              "name": "Len A. Pennacchio"
+              "name": "Len A. Pennacchio",
+              "orcid": "https://orcid.org/0000-0002-8748-3732"
             },
             {
-              "name": "Momoe Kato"
+              "name": "Momoe Kato",
+              "orcid": "https://orcid.org/0000-0002-1161-5233"
             },
             {
-              "name": "Michael Kosicki"
+              "name": "Michael Kosicki",
+              "orcid": "https://orcid.org/0000-0001-7173-8852"
             },
             {
-              "name": "Brandon Mannion"
+              "name": "Brandon Mannion",
+              "orcid": "https://orcid.org/0000-0002-1149-3790"
             },
             {
-              "name": "Neil Slaven"
+              "name": "Neil Slaven",
+              "orcid": "https://orcid.org/0000-0003-4794-9806"
             },
             {
-              "name": "Axel Visel"
+              "name": "Axel Visel",
+              "orcid": "https://orcid.org/0000-0002-4130-7784"
             },
             {
               "name": "Pollard lab"
@@ -2769,7 +2996,8 @@
               "name": "Katherine S. Pollard"
             },
             {
-              "name": "Shiron Drusinsky"
+              "name": "Shiron Drusinsky",
+              "orcid": "https://orcid.org/0000-0003-1184-8835"
             },
             {
               "name": "Sean Whalen"
@@ -2784,7 +3012,8 @@
               "name": "Ingrid A. Harten"
             },
             {
-              "name": "Ching-Huang Ho"
+              "name": "Ching-Huang Ho",
+              "orcid": "https://orcid.org/0000-0001-8359-8068"
             },
             {
               "name": "Reilly lab"
@@ -2796,7 +3025,8 @@
               "name": "Neville E. Sanjana"
             },
             {
-              "name": "Christina Caragine"
+              "name": "Christina Caragine",
+              "orcid": "https://orcid.org/0000-0002-5958-7200"
             },
             {
               "name": "John A. Morris"
@@ -2805,13 +3035,16 @@
               "name": "Seruggia lab"
             },
             {
-              "name": "Davide Seruggia"
+              "name": "Davide Seruggia",
+              "orcid": "https://orcid.org/0000-0001-5014-0499"
             },
             {
-              "name": "Ana Patricia Kutschat"
+              "name": "Ana Patricia Kutschat",
+              "orcid": "https://orcid.org/0000-0002-6360-873X"
             },
             {
-              "name": "Sandra Wittibschlager"
+              "name": "Sandra Wittibschlager",
+              "orcid": "https://orcid.org/0009-0006-6973-5293"
             },
             {
               "name": "Xu lab"
@@ -2841,7 +3074,8 @@
               "name": "Zo Bly"
             },
             {
-              "name": "Stephanie Calluori"
+              "name": "Stephanie Calluori",
+              "orcid": "https://orcid.org/0000-0002-2495-5608"
             },
             {
               "name": "Daniel A. Gilchrist"
@@ -3273,7 +3507,8 @@
               "orcid": "https://orcid.org/0000-0001-6443-7509"
             },
             {
-              "name": "Anna Bartlett"
+              "name": "Anna Bartlett",
+              "orcid": "https://orcid.org/0000-0001-7059-4033"
             },
             {
               "name": "M. Margarita Behrens",
@@ -3283,7 +3518,8 @@
               "name": "Koen Van den Berge"
             },
             {
-              "name": "Darren Bertagnolli"
+              "name": "Darren Bertagnolli",
+              "orcid": "https://orcid.org/0000-0002-6626-1567"
             },
             {
               "name": "Hector Roux de Bézieux",
@@ -3298,13 +3534,16 @@
               "orcid": "https://orcid.org/0000-0002-6442-4502"
             },
             {
-              "name": "Héctor Corrada Bravo"
+              "name": "Héctor Corrada Bravo",
+              "orcid": "https://orcid.org/0000-0002-1255-4444"
             },
             {
-              "name": "Tamara Casper"
+              "name": "Tamara Casper",
+              "orcid": "https://orcid.org/0000-0003-1638-3651"
             },
             {
-              "name": "Carlo Colantuoni"
+              "name": "Carlo Colantuoni",
+              "orcid": "https://orcid.org/0000-0001-6818-6380"
             },
             {
               "name": "Jonathan Crabtree",
@@ -3315,14 +3554,16 @@
               "orcid": "https://orcid.org/0000-0002-1369-6882"
             },
             {
-              "name": "Kirsten Crichton"
+              "name": "Kirsten Crichton",
+              "orcid": "https://orcid.org/0000-0002-7869-1492"
             },
             {
               "name": "Megan Crow",
               "orcid": "https://orcid.org/0000-0002-1172-5897"
             },
             {
-              "name": "Nick Dee"
+              "name": "Nick Dee",
+              "orcid": "https://orcid.org/0000-0002-2831-9254"
             },
             {
               "name": "Elizabeth L. Dougherty"
@@ -3341,14 +3582,16 @@
               "name": "Victor Felix"
             },
             {
-              "name": "Olivia Fong"
+              "name": "Olivia Fong",
+              "orcid": "https://orcid.org/0000-0002-7091-9667"
             },
             {
               "name": "Michelle Giglio",
               "orcid": "https://orcid.org/0000-0001-7628-5565"
             },
             {
-              "name": "Jeff Goldy"
+              "name": "Jeff Goldy",
+              "orcid": "https://orcid.org/0000-0001-5140-6922"
             },
             {
               "name": "Mike Hawrylycz",
@@ -3358,7 +3601,8 @@
               "name": "Brian R. Herb"
             },
             {
-              "name": "Ronna Hertzano"
+              "name": "Ronna Hertzano",
+              "orcid": "https://orcid.org/0000-0002-8093-6567"
             },
             {
               "name": "Xiaomeng Hou"
@@ -3367,13 +3611,16 @@
               "name": "Qiwen Hu"
             },
             {
-              "name": "Jayaram Kancherla"
+              "name": "Jayaram Kancherla",
+              "orcid": "https://orcid.org/0000-0001-5855-5031"
             },
             {
-              "name": "Matthew Kroll"
+              "name": "Matthew Kroll",
+              "orcid": "https://orcid.org/0009-0000-9391-9777"
             },
             {
-              "name": "Kanan Lathia"
+              "name": "Kanan Lathia",
+              "orcid": "https://orcid.org/0000-0003-0080-1951"
             },
             {
               "name": "Yang Eric Li",
@@ -3383,14 +3630,16 @@
               "name": "Jacinta D. Lucero"
             },
             {
-              "name": "Chongyuan Luo"
+              "name": "Chongyuan Luo",
+              "orcid": "https://orcid.org/0000-0002-8541-0695"
             },
             {
               "name": "Anup Mahurkar",
               "orcid": "https://orcid.org/0000-0002-4999-2296"
             },
             {
-              "name": "Delissa McMillen"
+              "name": "Delissa McMillen",
+              "orcid": "https://orcid.org/0000-0002-3413-4424"
             },
             {
               "name": "Naeem M. Nadaf"
@@ -3407,10 +3656,12 @@
               "name": "Sheng-Yong Niu"
             },
             {
-              "name": "Vasilis Ntranos"
+              "name": "Vasilis Ntranos",
+              "orcid": "https://orcid.org/0000-0002-2477-0670"
             },
             {
-              "name": "Joshua Orvis"
+              "name": "Joshua Orvis",
+              "orcid": "https://orcid.org/0000-0002-5705-5710"
             },
             {
               "name": "Julia K. Osteen",
@@ -3425,7 +3676,8 @@
               "orcid": "https://orcid.org/0000-0002-2215-7653"
             },
             {
-              "name": "Olivier Poirion"
+              "name": "Olivier Poirion",
+              "orcid": "https://orcid.org/0000-0002-0429-7003"
             },
             {
               "name": "Sebastian Preissl",
@@ -3436,7 +3688,8 @@
               "orcid": "https://orcid.org/0000-0001-9455-7990"
             },
             {
-              "name": "Christine Rimorin"
+              "name": "Christine Rimorin",
+              "orcid": "https://orcid.org/0000-0003-1491-8552"
             },
             {
               "name": "Davide Risso"
@@ -3449,19 +3702,24 @@
               "orcid": "https://orcid.org/0000-0002-3142-1970"
             },
             {
-              "name": "Kelly Street"
+              "name": "Kelly Street",
+              "orcid": "https://orcid.org/0000-0001-6379-5013"
             },
             {
-              "name": "Josef Sulc"
+              "name": "Josef Sulc",
+              "orcid": "https://orcid.org/0000-0002-4928-7183"
             },
             {
-              "name": "Valentine Svensson"
+              "name": "Valentine Svensson",
+              "orcid": "https://orcid.org/0000-0002-9217-2330"
             },
             {
-              "name": "Michael Tieu"
+              "name": "Michael Tieu",
+              "orcid": "https://orcid.org/0000-0001-9286-5623"
             },
             {
-              "name": "Amy Torkelson"
+              "name": "Amy Torkelson",
+              "orcid": "https://orcid.org/0000-0002-9465-4202"
             },
             {
               "name": "Herman Tung",
@@ -3498,7 +3756,8 @@
               "orcid": "https://orcid.org/0000-0002-9164-6231"
             },
             {
-              "name": "John Ngai"
+              "name": "John Ngai",
+              "orcid": "https://orcid.org/0000-0002-1191-8971"
             },
             {
               "name": "Aviv Regev",
@@ -3513,7 +3772,8 @@
               "orcid": "https://orcid.org/0000-0002-5869-2391"
             },
             {
-              "name": "Jesse Gillis"
+              "name": "Jesse Gillis",
+              "orcid": "https://orcid.org/0000-0002-0936-9774"
             },
             {
               "name": "Evan Z. Macosko",
@@ -3557,7 +3817,8 @@
               "name": "Edward M. Callaway"
             },
             {
-              "name": "Hong-Wei Dong"
+              "name": "Hong-Wei Dong",
+              "orcid": "https://orcid.org/0000-0003-1036-9939"
             },
             {
               "name": "Joseph R. Ecker",
@@ -3574,7 +3835,8 @@
               "name": "Ed S. Lein"
             },
             {
-              "name": "John Ngai"
+              "name": "John Ngai",
+              "orcid": "https://orcid.org/0000-0002-1191-8971"
             },
             {
               "name": "Pavel Osten"
@@ -3607,7 +3869,8 @@
               "orcid": "https://orcid.org/0000-0002-7168-8186"
             },
             {
-              "name": "Jerold Chun"
+              "name": "Jerold Chun",
+              "orcid": "https://orcid.org/0000-0003-3964-0921"
             },
             {
               "name": "Guoping Feng"
@@ -3622,7 +3885,8 @@
               "name": "Yaroslav O. Halchenko"
             },
             {
-              "name": "Ronna Hertzano"
+              "name": "Ronna Hertzano",
+              "orcid": "https://orcid.org/0000-0002-8093-6567"
             },
             {
               "name": "Byung Kook Lim"
@@ -3644,7 +3908,8 @@
               "name": "Timothy L. Tickle"
             },
             {
-              "name": "X. William Yang"
+              "name": "X. William Yang",
+              "orcid": "https://orcid.org/0000-0003-3705-7935"
             },
             {
               "name": "Kun Zhang"
@@ -3656,7 +3921,8 @@
               "name": "Manuscript writing and figure generation"
             },
             {
-              "name": "Trygve E. Bakken"
+              "name": "Trygve E. Bakken",
+              "orcid": "https://orcid.org/0000-0003-3373-7386"
             },
             {
               "name": "Philipp Berens"
@@ -3674,7 +3940,8 @@
               "name": "Brian E. Kalmbach"
             },
             {
-              "name": "Dmitry Kobak"
+              "name": "Dmitry Kobak",
+              "orcid": "https://orcid.org/0000-0002-5639-7209"
             },
             {
               "name": "Yang Eric Li",
@@ -3691,10 +3958,12 @@
               "orcid": "https://orcid.org/0000-0003-3203-9535"
             },
             {
-              "name": "Maitham Naeemi"
+              "name": "Maitham Naeemi",
+              "orcid": "https://orcid.org/0000-0001-9139-3548"
             },
             {
-              "name": "Federico Scala"
+              "name": "Federico Scala",
+              "orcid": "https://orcid.org/0000-0002-2680-8572"
             },
             {
               "name": "Pengcheng Tan"
@@ -3715,7 +3984,8 @@
               "name": "Jingtian Zhou"
             },
             {
-              "name": "Brian Zingg"
+              "name": "Brian Zingg",
+              "orcid": "https://orcid.org/0000-0001-8657-8863"
             },
             {
               "name": "Analysis coordination"
@@ -3724,7 +3994,8 @@
               "name": "Integrated data analysis"
             },
             {
-              "name": "Ethan Armand"
+              "name": "Ethan Armand",
+              "orcid": "https://orcid.org/0000-0002-4516-6317"
             },
             {
               "name": "Zizhen Yao",
@@ -3734,37 +4005,46 @@
               "name": "scRNA-seq and snRNA-seq data generation and processing"
             },
             {
-              "name": "Darren Bertagnolli"
+              "name": "Darren Bertagnolli",
+              "orcid": "https://orcid.org/0000-0002-6626-1567"
             },
             {
-              "name": "Tamara Casper"
+              "name": "Tamara Casper",
+              "orcid": "https://orcid.org/0000-0003-1638-3651"
             },
             {
-              "name": "Kirsten Crichton"
+              "name": "Kirsten Crichton",
+              "orcid": "https://orcid.org/0000-0002-7869-1492"
             },
             {
-              "name": "Nick Dee"
+              "name": "Nick Dee",
+              "orcid": "https://orcid.org/0000-0002-2831-9254"
             },
             {
-              "name": "Dinh Diep"
+              "name": "Dinh Diep",
+              "orcid": "https://orcid.org/0000-0001-6057-4119"
             },
             {
-              "name": "Song-Lin Ding"
+              "name": "Song-Lin Ding",
+              "orcid": "https://orcid.org/0000-0002-7072-5272"
             },
             {
-              "name": "Weixiu Dong"
+              "name": "Weixiu Dong",
+              "orcid": "https://orcid.org/0000-0003-1059-5653"
             },
             {
               "name": "Elizabeth L. Dougherty"
             },
             {
-              "name": "Olivia Fong"
+              "name": "Olivia Fong",
+              "orcid": "https://orcid.org/0000-0002-7091-9667"
             },
             {
               "name": "Melissa Goldman"
             },
             {
-              "name": "Jeff Goldy"
+              "name": "Jeff Goldy",
+              "orcid": "https://orcid.org/0000-0001-5140-6922"
             },
             {
               "name": "Rebecca D. Hodge"
@@ -3779,16 +4059,19 @@
               "name": "Fenna M. Krienen"
             },
             {
-              "name": "Matthew Kroll"
+              "name": "Matthew Kroll",
+              "orcid": "https://orcid.org/0009-0000-9391-9777"
             },
             {
               "name": "Blue B. Lake"
             },
             {
-              "name": "Kanan Lathia"
+              "name": "Kanan Lathia",
+              "orcid": "https://orcid.org/0000-0003-0080-1951"
             },
             {
-              "name": "Sten Linnarsson"
+              "name": "Sten Linnarsson",
+              "orcid": "https://orcid.org/0000-0002-3491-3444"
             },
             {
               "name": "Christine S. Liu"
@@ -3801,7 +4084,8 @@
               "name": "Steven A. McCarroll"
             },
             {
-              "name": "Delissa McMillen"
+              "name": "Delissa McMillen",
+              "orcid": "https://orcid.org/0000-0002-3413-4424"
             },
             {
               "name": "Naeem M. Nadaf"
@@ -3818,17 +4102,20 @@
               "orcid": "https://orcid.org/0000-0002-4738-5062"
             },
             {
-              "name": "Nongluk Plongthongkum"
+              "name": "Nongluk Plongthongkum",
+              "orcid": "https://orcid.org/0000-0002-1305-285X"
             },
             {
-              "name": "Nora M. Reed"
+              "name": "Nora M. Reed",
+              "orcid": "https://orcid.org/0000-0003-0408-1568"
             },
             {
               "name": "Aviv Regev",
               "orcid": "https://orcid.org/0000-0003-3293-3158"
             },
             {
-              "name": "Christine Rimorin"
+              "name": "Christine Rimorin",
+              "orcid": "https://orcid.org/0000-0003-1491-8552"
             },
             {
               "name": "William J. Romanow"
@@ -3837,24 +4124,28 @@
               "name": "Steven Savoia"
             },
             {
-              "name": "Kimberly Siletti"
+              "name": "Kimberly Siletti",
+              "orcid": "https://orcid.org/0000-0001-7620-8973"
             },
             {
               "name": "Kimberly Smith",
               "orcid": "https://orcid.org/0000-0002-3142-1970"
             },
             {
-              "name": "Josef Sulc"
+              "name": "Josef Sulc",
+              "orcid": "https://orcid.org/0000-0002-4928-7183"
             },
             {
               "name": "Bosiljka Tasic",
               "orcid": "https://orcid.org/0000-0002-6861-4506"
             },
             {
-              "name": "Michael Tieu"
+              "name": "Michael Tieu",
+              "orcid": "https://orcid.org/0000-0001-9286-5623"
             },
             {
-              "name": "Amy Torkelson"
+              "name": "Amy Torkelson",
+              "orcid": "https://orcid.org/0000-0002-9465-4202"
             },
             {
               "name": "Herman Tung",
@@ -3868,7 +4159,8 @@
               "name": "Charles R. Vanderburg"
             },
             {
-              "name": "Anna Marie Yanny"
+              "name": "Anna Marie Yanny",
+              "orcid": "https://orcid.org/0000-0001-7250-8450"
             },
             {
               "name": "ATAC-seq data generation and processing"
@@ -3891,7 +4183,8 @@
               "orcid": "https://orcid.org/0000-0002-2215-7653"
             },
             {
-              "name": "Olivier Poirion"
+              "name": "Olivier Poirion",
+              "orcid": "https://orcid.org/0000-0002-0429-7003"
             },
             {
               "name": "Sebastian Preissl",
@@ -3909,7 +4202,8 @@
               "orcid": "https://orcid.org/0000-0003-1962-8802"
             },
             {
-              "name": "Anna Bartlett"
+              "name": "Anna Bartlett",
+              "orcid": "https://orcid.org/0000-0001-7059-4033"
             },
             {
               "name": "Lara Boggeman"
@@ -3927,7 +4221,8 @@
               "name": "Conor Fitzpatrick"
             },
             {
-              "name": "Chongyuan Luo"
+              "name": "Chongyuan Luo",
+              "orcid": "https://orcid.org/0000-0002-8541-0695"
             },
             {
               "name": "Joseph R. Nery",
@@ -3946,10 +4241,12 @@
               "name": "Epi-retro-seq data generation and processing"
             },
             {
-              "name": "Bertha Dominguez"
+              "name": "Bertha Dominguez",
+              "orcid": "https://orcid.org/0000-0002-9470-7300"
             },
             {
-              "name": "Tony Ito-Cole"
+              "name": "Tony Ito-Cole",
+              "orcid": "https://orcid.org/0000-0001-5898-3108"
             },
             {
               "name": "Matthew Jacobs"
@@ -3961,10 +4258,12 @@
               "name": "Cheng-Ta Lee"
             },
             {
-              "name": "Kuo-Fen Lee"
+              "name": "Kuo-Fen Lee",
+              "orcid": "https://orcid.org/0000-0003-2224-2708"
             },
             {
-              "name": "Paula Assakura Miyazaki"
+              "name": "Paula Assakura Miyazaki",
+              "orcid": "https://orcid.org/0000-0003-1295-8710"
             },
             {
               "name": "Yan Pang"
@@ -3973,13 +4272,15 @@
               "name": "Mohammad Rashid"
             },
             {
-              "name": "Jared B. Smith"
+              "name": "Jared B. Smith",
+              "orcid": "https://orcid.org/0000-0002-0273-4898"
             },
             {
               "name": "Minh Vu"
             },
             {
-              "name": "Elora Williams"
+              "name": "Elora Williams",
+              "orcid": "https://orcid.org/0000-0002-0178-5511"
             },
             {
               "name": "‘Omics data analysis"
@@ -4004,7 +4305,8 @@
               "name": "Stephan Fischer"
             },
             {
-              "name": "Jesse Gillis"
+              "name": "Jesse Gillis",
+              "orcid": "https://orcid.org/0000-0002-0936-9774"
             },
             {
               "name": "Qiwen Hu"
@@ -4017,7 +4319,8 @@
               "name": "Sheng-Yong Niu"
             },
             {
-              "name": "Vasilis Ntranos"
+              "name": "Vasilis Ntranos",
+              "orcid": "https://orcid.org/0000-0002-2477-0670"
             },
             {
               "name": "Elizabeth Purdom",
@@ -4031,13 +4334,16 @@
               "orcid": "https://orcid.org/0000-0002-1489-8339"
             },
             {
-              "name": "Saroja Somasundaram"
+              "name": "Saroja Somasundaram",
+              "orcid": "https://orcid.org/0000-0002-3729-9849"
             },
             {
-              "name": "Kelly Street"
+              "name": "Kelly Street",
+              "orcid": "https://orcid.org/0000-0001-6379-5013"
             },
             {
-              "name": "Valentine Svensson"
+              "name": "Valentine Svensson",
+              "orcid": "https://orcid.org/0000-0002-9217-2330"
             },
             {
               "name": "Eeshit Dhaval Vaishnav",
@@ -4063,37 +4369,43 @@
               "name": "Ian Bowman"
             },
             {
-              "name": "Rebecca K. Chance"
+              "name": "Rebecca K. Chance",
+              "orcid": "https://orcid.org/0000-0001-7059-6119"
             },
             {
               "name": "Nicholas N. Foster"
             },
             {
-              "name": "William Galbavy"
+              "name": "William Galbavy",
+              "orcid": "https://orcid.org/0000-0003-0948-9538"
             },
             {
               "name": "Hui Gong"
             },
             {
-              "name": "Lin Gou"
+              "name": "Lin Gou",
+              "orcid": "https://orcid.org/0009-0006-6119-1164"
             },
             {
               "name": "Joshua T. Hatfield"
             },
             {
-              "name": "Houri Hintiryan"
+              "name": "Houri Hintiryan",
+              "orcid": "https://orcid.org/0000-0002-9721-6785"
             },
             {
               "name": "Karla E. Hirokawa"
             },
             {
-              "name": "Gukhan Kim"
+              "name": "Gukhan Kim",
+              "orcid": "https://orcid.org/0000-0002-3338-5045"
             },
             {
               "name": "Daniel J. Kramer"
             },
             {
-              "name": "Anan Li"
+              "name": "Anan Li",
+              "orcid": "https://orcid.org/0000-0002-5877-4813"
             },
             {
               "name": "Xiangning Li"
@@ -4102,10 +4414,12 @@
               "name": "Qingming Luo"
             },
             {
-              "name": "Rodrigo Muñoz-Castañeda"
+              "name": "Rodrigo Muñoz-Castañeda",
+              "orcid": "https://orcid.org/0000-0002-1176-7421"
             },
             {
-              "name": "David A. Stafford"
+              "name": "David A. Stafford",
+              "orcid": "https://orcid.org/0000-0002-3310-5402"
             },
             {
               "name": "Morphology data generation and reconstruction"
@@ -4117,19 +4431,23 @@
               "name": "Xueyan Jia"
             },
             {
-              "name": "Shengdian Jiang"
+              "name": "Shengdian Jiang",
+              "orcid": "https://orcid.org/0000-0002-2277-263X"
             },
             {
               "name": "Tao Jiang"
             },
             {
-              "name": "Xiuli Kuang"
+              "name": "Xiuli Kuang",
+              "orcid": "https://orcid.org/0000-0001-7569-7605"
             },
             {
-              "name": "Rachael Larsen"
+              "name": "Rachael Larsen",
+              "orcid": "https://orcid.org/0000-0003-0178-003X"
             },
             {
-              "name": "Phil Lesnar"
+              "name": "Phil Lesnar",
+              "orcid": "https://orcid.org/0000-0002-2152-604X"
             },
             {
               "name": "Yaoyao Li"
@@ -4141,7 +4459,8 @@
               "name": "Lijuan Liu"
             },
             {
-              "name": "Hanchuan Peng"
+              "name": "Hanchuan Peng",
+              "orcid": "https://orcid.org/0000-0002-3478-3942"
             },
             {
               "name": "Lei Qu"
@@ -4150,7 +4469,8 @@
               "name": "Miao Ren"
             },
             {
-              "name": "Zongcai Ruan"
+              "name": "Zongcai Ruan",
+              "orcid": "https://orcid.org/0000-0003-1547-165X"
             },
             {
               "name": "Elise Shen"
@@ -4159,7 +4479,8 @@
               "name": "Yuanyuan Song"
             },
             {
-              "name": "Wayne Wakeman"
+              "name": "Wayne Wakeman",
+              "orcid": "https://orcid.org/0000-0002-3693-3609"
             },
             {
               "name": "Peng Wang"
@@ -4186,10 +4507,12 @@
               "name": "OLST/STPT and other data generation"
             },
             {
-              "name": "Arun Narasimhan"
+              "name": "Arun Narasimhan",
+              "orcid": "https://orcid.org/0000-0002-0246-6301"
             },
             {
-              "name": "Ramesh Palaniswamy"
+              "name": "Ramesh Palaniswamy",
+              "orcid": "https://orcid.org/0000-0003-4322-2407"
             },
             {
               "name": "Morphology, connectivity and imaging analysis"
@@ -4201,7 +4524,8 @@
               "name": "Liya Ding"
             },
             {
-              "name": "Dhananjay Huilgol"
+              "name": "Dhananjay Huilgol",
+              "orcid": "https://orcid.org/0000-0003-4393-7242"
             },
             {
               "name": "Bingxing Huo"
@@ -4210,7 +4534,8 @@
               "name": "Hsien-Chi Kuo"
             },
             {
-              "name": "Sophie Laturnus"
+              "name": "Sophie Laturnus",
+              "orcid": "https://orcid.org/0000-0001-9532-788X"
             },
             {
               "name": "Xu Li"
@@ -4219,7 +4544,8 @@
               "name": "Partha P. Mitra"
             },
             {
-              "name": "Judith Mizrachi"
+              "name": "Judith Mizrachi",
+              "orcid": "https://orcid.org/0000-0003-2195-8210"
             },
             {
               "name": "Quanxin Wang"
@@ -4243,13 +4569,16 @@
               "name": "Multimodal profiling (Patch-seq)"
             },
             {
-              "name": "Jim Berg"
+              "name": "Jim Berg",
+              "orcid": "https://orcid.org/0000-0002-3300-5399"
             },
             {
-              "name": "Matteo Bernabucci"
+              "name": "Matteo Bernabucci",
+              "orcid": "https://orcid.org/0000-0003-4458-117X"
             },
             {
-              "name": "Yves Bernaerts"
+              "name": "Yves Bernaerts",
+              "orcid": "https://orcid.org/0000-0003-4948-0423"
             },
             {
               "name": "Cathryn René Cadwell"
@@ -4258,13 +4587,16 @@
               "name": "Jesus Ramon Castro"
             },
             {
-              "name": "Rachel Dalley"
+              "name": "Rachel Dalley",
+              "orcid": "https://orcid.org/0000-0001-7461-7845"
             },
             {
-              "name": "Leonard Hartmanis"
+              "name": "Leonard Hartmanis",
+              "orcid": "https://orcid.org/0000-0002-4922-8781"
             },
             {
-              "name": "Gregory D. Horwitz"
+              "name": "Gregory D. Horwitz",
+              "orcid": "https://orcid.org/0000-0001-5130-5259"
             },
             {
               "name": "Xiaolong Jiang"
@@ -4273,16 +4605,19 @@
               "name": "Andrew L. Ko"
             },
             {
-              "name": "Elanine Miranda"
+              "name": "Elanine Miranda",
+              "orcid": "https://orcid.org/0000-0002-1633-9303"
             },
             {
-              "name": "Shalaka Mulherkar"
+              "name": "Shalaka Mulherkar",
+              "orcid": "https://orcid.org/0000-0001-8736-527X"
             },
             {
               "name": "Philip R. Nicovich"
             },
             {
-              "name": "Scott F. Owen"
+              "name": "Scott F. Owen",
+              "orcid": "https://orcid.org/0000-0001-6294-7513"
             },
             {
               "name": "Rickard Sandberg"
@@ -4291,22 +4626,26 @@
               "name": "Staci A. Sorensen"
             },
             {
-              "name": "Zheng Huan Tan"
+              "name": "Zheng Huan Tan",
+              "orcid": "https://orcid.org/0000-0002-1886-2421"
             },
             {
               "name": "Transgenic tools"
             },
             {
-              "name": "Shona Allen"
+              "name": "Shona Allen",
+              "orcid": "https://orcid.org/0000-0003-0186-0574"
             },
             {
-              "name": "Dirk Hockemeyer"
+              "name": "Dirk Hockemeyer",
+              "orcid": "https://orcid.org/0000-0002-5598-5092"
             },
             {
               "name": "Angus Y. Lee"
             },
             {
-              "name": "Matthew B. Veldman"
+              "name": "Matthew B. Veldman",
+              "orcid": "https://orcid.org/0000-0002-0328-5916"
             },
             {
               "name": "NeMO archive and analytics"
@@ -4320,16 +4659,19 @@
               "orcid": "https://orcid.org/0000-0001-6443-7509"
             },
             {
-              "name": "Héctor Corrada Bravo"
+              "name": "Héctor Corrada Bravo",
+              "orcid": "https://orcid.org/0000-0002-1255-4444"
             },
             {
               "name": "Robert Carter"
             },
             {
-              "name": "Apaala Chatterjee"
+              "name": "Apaala Chatterjee",
+              "orcid": "https://orcid.org/0000-0003-1170-8971"
             },
             {
-              "name": "Carlo Colantuoni"
+              "name": "Carlo Colantuoni",
+              "orcid": "https://orcid.org/0000-0001-6818-6380"
             },
             {
               "name": "Jonathan Crabtree",
@@ -4350,26 +4692,31 @@
               "name": "Brian R. Herb"
             },
             {
-              "name": "Jayaram Kancherla"
+              "name": "Jayaram Kancherla",
+              "orcid": "https://orcid.org/0000-0001-5855-5031"
             },
             {
               "name": "Anup Mahurkar",
               "orcid": "https://orcid.org/0000-0002-4999-2296"
             },
             {
-              "name": "Carrie McCracken"
+              "name": "Carrie McCracken",
+              "orcid": "https://orcid.org/0000-0002-8038-9727"
             },
             {
               "name": "Lance Nickel"
             },
             {
-              "name": "Dustin Olley"
+              "name": "Dustin Olley",
+              "orcid": "https://orcid.org/0000-0001-8685-0839"
             },
             {
-              "name": "Joshua Orvis"
+              "name": "Joshua Orvis",
+              "orcid": "https://orcid.org/0000-0002-5705-5710"
             },
             {
-              "name": "Michael Schor"
+              "name": "Michael Schor",
+              "orcid": "https://orcid.org/0000-0002-4493-7992"
             },
             {
               "name": "Brain Image Library (BIL) archive"
@@ -4381,40 +4728,49 @@
               "name": "DANDI archive"
             },
             {
-              "name": "Benjamin Dichter"
+              "name": "Benjamin Dichter",
+              "orcid": "https://orcid.org/0000-0001-5725-6910"
             },
             {
               "name": "Michael Grauer"
             },
             {
-              "name": "Brian Helba"
+              "name": "Brian Helba",
+              "orcid": "https://orcid.org/0000-0003-2628-805X"
             },
             {
               "name": "Brain Cell Data Center (BCDC)"
             },
             {
-              "name": "Anita Bandrowski"
+              "name": "Anita Bandrowski",
+              "orcid": "https://orcid.org/0000-0003-0279-6594"
             },
             {
-              "name": "Nikolaos Barkas"
+              "name": "Nikolaos Barkas",
+              "orcid": "https://orcid.org/0000-0002-4675-0718"
             },
             {
-              "name": "Benjamin Carlin"
+              "name": "Benjamin Carlin",
+              "orcid": "https://orcid.org/0000-0002-9360-9143"
             },
             {
-              "name": "Florence D. D’Orazi"
+              "name": "Florence D. D’Orazi",
+              "orcid": "https://orcid.org/0000-0002-7354-4725"
             },
             {
-              "name": "Kylee Degatano"
+              "name": "Kylee Degatano",
+              "orcid": "https://orcid.org/0000-0002-0945-3300"
             },
             {
               "name": "Thomas H. Gillespie"
             },
             {
-              "name": "Farzaneh Khajouei"
+              "name": "Farzaneh Khajouei",
+              "orcid": "https://orcid.org/0000-0002-0148-9122"
             },
             {
-              "name": "Kishori Konwar"
+              "name": "Kishori Konwar",
+              "orcid": "https://orcid.org/0000-0001-5152-4777"
             },
             {
               "name": "Carol Thompson"
@@ -4429,7 +4785,8 @@
               "name": "Stephanie Mok"
             },
             {
-              "name": "Susan Sunkin"
+              "name": "Susan Sunkin",
+              "orcid": "https://orcid.org/0000-0001-9893-3834"
             }
           ]
         }
@@ -4492,13 +4849,15 @@
               "orcid": "https://orcid.org/0000-0003-1016-3295"
             },
             {
-              "name": "Chetan Munugala"
+              "name": "Chetan Munugala",
+              "orcid": "https://orcid.org/0000-0002-5835-7825"
             },
             {
               "name": "Eric M. Jones"
             },
             {
-              "name": "Molly Gasperini"
+              "name": "Molly Gasperini",
+              "orcid": "https://orcid.org/0000-0003-4559-8432"
             },
             {
               "name": "Nathan B. Lubock"
@@ -4508,10 +4867,12 @@
               "orcid": "https://orcid.org/0000-0002-2512-6182"
             },
             {
-              "name": "Erin M. Thompson"
+              "name": "Erin M. Thompson",
+              "orcid": "https://orcid.org/0000-0002-6085-3051"
             },
             {
-              "name": "Kyle M. Kovary"
+              "name": "Kyle M. Kovary",
+              "orcid": "https://orcid.org/0000-0002-7616-2968"
             },
             {
               "name": "Jimin Park"
@@ -4540,20 +4901,24 @@
               "name": "Longhua Guo"
             },
             {
-              "name": "James Boocock"
+              "name": "James Boocock",
+              "orcid": "https://orcid.org/0000-0003-0323-8818"
             },
             {
-              "name": "Myles Hochman"
+              "name": "Myles Hochman",
+              "orcid": "https://orcid.org/0000-0001-5172-6395"
             },
             {
               "name": "Scott W. Simpkins",
               "orcid": "https://orcid.org/0000-0002-5997-2838"
             },
             {
-              "name": "Isabella Lin"
+              "name": "Isabella Lin",
+              "orcid": "https://orcid.org/0000-0002-7102-6879"
             },
             {
-              "name": "Nathan LaPierre"
+              "name": "Nathan LaPierre",
+              "orcid": "https://orcid.org/0009-0008-8889-4382"
             },
             {
               "name": "Duke Hong"
@@ -4569,20 +4934,24 @@
               "name": "Bianca Judy Choe"
             },
             {
-              "name": "Sukantha Chandrasekaran"
+              "name": "Sukantha Chandrasekaran",
+              "orcid": "https://orcid.org/0000-0002-6232-5535"
             },
             {
-              "name": "Evann E. Hilt"
+              "name": "Evann E. Hilt",
+              "orcid": "https://orcid.org/0000-0001-7787-1961"
             },
             {
               "name": "Manish J. Butte",
               "orcid": "https://orcid.org/0000-0002-4490-5595"
             },
             {
-              "name": "Robert Damoiseaux"
+              "name": "Robert Damoiseaux",
+              "orcid": "https://orcid.org/0000-0002-7611-7534"
             },
             {
-              "name": "Clifford Kravit"
+              "name": "Clifford Kravit",
+              "orcid": "https://orcid.org/0000-0002-0624-5514"
             },
             {
               "name": "Aaron R. Cooper"
@@ -4598,13 +4967,16 @@
               "name": "Omai B. Garner"
             },
             {
-              "name": "Jonathan Flint"
+              "name": "Jonathan Flint",
+              "orcid": "https://orcid.org/0000-0002-9427-4429"
             },
             {
-              "name": "Eleazar Eskin"
+              "name": "Eleazar Eskin",
+              "orcid": "https://orcid.org/0000-0003-1149-4758"
             },
             {
-              "name": "Chongyuan Luo"
+              "name": "Chongyuan Luo",
+              "orcid": "https://orcid.org/0000-0002-8541-0695"
             },
             {
               "name": "Sriram Kosuri",
@@ -4806,7 +5178,8 @@
               "orcid": "https://orcid.org/0000-0002-2160-5311"
             },
             {
-              "name": "Benjamin Renton"
+              "name": "Benjamin Renton",
+              "orcid": "https://orcid.org/0000-0001-9826-8141"
             },
             {
               "name": "Zackary Berger",
@@ -4857,7 +5230,8 @@
               "orcid": "https://orcid.org/0000-0002-1529-9207"
             },
             {
-              "name": "Dylan Bannon"
+              "name": "Dylan Bannon",
+              "orcid": "https://orcid.org/0009-0003-6791-8166"
             },
             {
               "name": "Jase Gehring",
@@ -4883,7 +5257,8 @@
               "orcid": "https://orcid.org/0000-0002-1529-9207"
             },
             {
-              "name": "Dylan Bannon"
+              "name": "Dylan Bannon",
+              "orcid": "https://orcid.org/0009-0003-6791-8166"
             },
             {
               "name": "Jase Gehring",
@@ -4906,7 +5281,8 @@
           "date": "2017-06-08",
           "authors": [
             {
-              "name": "Ali Hussain Kazim"
+              "name": "Ali Hussain Kazim",
+              "orcid": "https://orcid.org/0000-0002-2869-3983"
             },
             {
               "name": "A. Sina Booeshaghi",
@@ -4923,5 +5299,6 @@
         }
       ]
     }
-  }
+  },
+  "orcidEnrichedAt": "2026-07-13T14:35:47.614Z"
 }

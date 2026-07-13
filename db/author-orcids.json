@@ -1,0 +1,1742 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-13T14:35:47.614Z",
+  "source": {
+    "tool": "authorlink-cli",
+    "repository": "https://github.com/sbooeshaghi/authorlink-cli",
+    "matchPolicy": "unique_exact_name",
+    "mapping": "authorlink-pilot/mapping.json"
+  },
+  "authors": [
+    {
+      "name": "Abhinav K. Jain",
+      "normalizedName": "abhinav k jain",
+      "orcid": "0000-0003-3268-514X"
+    },
+    {
+      "name": "Adam Klie",
+      "normalizedName": "adam klie",
+      "orcid": "0000-0002-7600-3086"
+    },
+    {
+      "name": "Adhideb Ghosh",
+      "normalizedName": "adhideb ghosh",
+      "orcid": "0000-0002-5160-4571"
+    },
+    {
+      "name": "Aki Ushiki",
+      "normalizedName": "aki ushiki",
+      "orcid": "0000-0002-0889-4577"
+    },
+    {
+      "name": "AkshatKumar Nigam",
+      "normalizedName": "akshatkumar nigam",
+      "orcid": "0000-0002-5152-2082"
+    },
+    {
+      "name": "Alan F. Rubin",
+      "normalizedName": "alan f rubin",
+      "orcid": "0000-0003-1474-605X"
+    },
+    {
+      "name": "Alan P. Boyle",
+      "normalizedName": "alan p boyle",
+      "orcid": "0000-0002-2081-1105"
+    },
+    {
+      "name": "Alberto Ciccia",
+      "normalizedName": "alberto ciccia",
+      "orcid": "0000-0003-4789-6564"
+    },
+    {
+      "name": "Alexis Battle",
+      "normalizedName": "alexis battle",
+      "orcid": "0000-0002-5287-627X"
+    },
+    {
+      "name": "Ali Hussain Kazim",
+      "normalizedName": "ali hussain kazim",
+      "orcid": "0000-0002-2869-3983"
+    },
+    {
+      "name": "Alia W. Johnson",
+      "normalizedName": "alia w johnson",
+      "orcid": "0009-0002-9444-275X"
+    },
+    {
+      "name": "Alina Vaitsiankova",
+      "normalizedName": "alina vaitsiankova",
+      "orcid": "0000-0002-9355-0903"
+    },
+    {
+      "name": "Alkes Price",
+      "normalizedName": "alkes price",
+      "orcid": "0000-0002-2971-7975"
+    },
+    {
+      "name": "Alun Vaughan-Jackson",
+      "normalizedName": "alun vaughan jackson",
+      "orcid": "0000-0001-7334-3803"
+    },
+    {
+      "name": "Amit Lakhanpal",
+      "normalizedName": "amit lakhanpal",
+      "orcid": "0000-0003-4171-4790"
+    },
+    {
+      "name": "Amy Torkelson",
+      "normalizedName": "amy torkelson",
+      "orcid": "0000-0002-9465-4202"
+    },
+    {
+      "name": "Ana Patricia Kutschat",
+      "normalizedName": "ana patricia kutschat",
+      "orcid": "0000-0002-6360-873X"
+    },
+    {
+      "name": "Anan Li",
+      "normalizedName": "anan li",
+      "orcid": "0000-0002-5877-4813"
+    },
+    {
+      "name": "Angelo Taglialatela",
+      "normalizedName": "angelo taglialatela",
+      "orcid": "0000-0001-5391-8518"
+    },
+    {
+      "name": "Anita Bandrowski",
+      "normalizedName": "anita bandrowski",
+      "orcid": "0000-0003-0279-6594"
+    },
+    {
+      "name": "Anita Qualls",
+      "normalizedName": "anita qualls",
+      "orcid": "0000-0003-0576-8863"
+    },
+    {
+      "name": "Anna Bartlett",
+      "normalizedName": "anna bartlett",
+      "orcid": "0000-0001-7059-4033"
+    },
+    {
+      "name": "Anna Marie Yanny",
+      "normalizedName": "anna marie yanny",
+      "orcid": "0000-0001-7250-8450"
+    },
+    {
+      "name": "Anna Spiro",
+      "normalizedName": "anna spiro",
+      "orcid": "0000-0002-3465-4606"
+    },
+    {
+      "name": "Anna-Katerina Hadjantonakis",
+      "normalizedName": "anna katerina hadjantonakis",
+      "orcid": "0000-0002-7580-5124"
+    },
+    {
+      "name": "Anne E. Carpenter",
+      "normalizedName": "anne e carpenter",
+      "orcid": "0000-0003-1555-8261"
+    },
+    {
+      "name": "Anshul Kundaje",
+      "normalizedName": "anshul kundaje",
+      "orcid": "0000-0003-3084-2287"
+    },
+    {
+      "name": "Anthony Venida",
+      "normalizedName": "anthony venida",
+      "orcid": "0000-0001-6119-2999"
+    },
+    {
+      "name": "Anusri Pampari",
+      "normalizedName": "anusri pampari",
+      "orcid": "0000-0002-6579-4070"
+    },
+    {
+      "name": "Apaala Chatterjee",
+      "normalizedName": "apaala chatterjee",
+      "orcid": "0000-0003-1170-8971"
+    },
+    {
+      "name": "Aradhana Aradhana",
+      "normalizedName": "aradhana aradhana",
+      "orcid": "0009-0005-2092-9794"
+    },
+    {
+      "name": "Arun Durvasula",
+      "normalizedName": "arun durvasula",
+      "orcid": "0000-0003-0631-3238"
+    },
+    {
+      "name": "Arun Narasimhan",
+      "normalizedName": "arun narasimhan",
+      "orcid": "0000-0002-0246-6301"
+    },
+    {
+      "name": "Ashlesha Gogate",
+      "normalizedName": "ashlesha gogate",
+      "orcid": "0009-0002-6081-1289"
+    },
+    {
+      "name": "Ashley Vernon",
+      "normalizedName": "ashley vernon",
+      "orcid": "0009-0003-9311-1710"
+    },
+    {
+      "name": "Asmita Bhattacharya",
+      "normalizedName": "asmita bhattacharya",
+      "orcid": "0000-0002-5669-8036"
+    },
+    {
+      "name": "Audrey Gasch",
+      "normalizedName": "audrey gasch",
+      "orcid": "0000-0002-8182-257X"
+    },
+    {
+      "name": "Audrey Hamm",
+      "normalizedName": "audrey hamm",
+      "orcid": "0009-0009-1146-6002"
+    },
+    {
+      "name": "Axel Visel",
+      "normalizedName": "axel visel",
+      "orcid": "0000-0002-4130-7784"
+    },
+    {
+      "name": "Basheer Becerra",
+      "normalizedName": "basheer becerra",
+      "orcid": "0000-0003-4403-7959"
+    },
+    {
+      "name": "Beatrice Borsari",
+      "normalizedName": "beatrice borsari",
+      "orcid": "0000-0003-4357-3557"
+    },
+    {
+      "name": "Benjamin Carlin",
+      "normalizedName": "benjamin carlin",
+      "orcid": "0000-0002-9360-9143"
+    },
+    {
+      "name": "Benjamin Dichter",
+      "normalizedName": "benjamin dichter",
+      "orcid": "0000-0001-5725-6910"
+    },
+    {
+      "name": "Benjamin Renton",
+      "normalizedName": "benjamin renton",
+      "orcid": "0000-0001-9826-8141"
+    },
+    {
+      "name": "Bertha Dominguez",
+      "normalizedName": "bertha dominguez",
+      "orcid": "0000-0002-9470-7300"
+    },
+    {
+      "name": "Brandon Mannion",
+      "normalizedName": "brandon mannion",
+      "orcid": "0000-0002-1149-3790"
+    },
+    {
+      "name": "Brian Helba",
+      "normalizedName": "brian helba",
+      "orcid": "0000-0003-2628-805X"
+    },
+    {
+      "name": "Brian T. Palmisano",
+      "normalizedName": "brian t palmisano",
+      "orcid": "0000-0002-2140-1060"
+    },
+    {
+      "name": "Brian Zingg",
+      "normalizedName": "brian zingg",
+      "orcid": "0000-0001-8657-8863"
+    },
+    {
+      "name": "Brunilda Balliu",
+      "normalizedName": "brunilda balliu",
+      "orcid": "0000-0001-8953-804X"
+    },
+    {
+      "name": "Carlo Colantuoni",
+      "normalizedName": "carlo colantuoni",
+      "orcid": "0000-0001-6818-6380"
+    },
+    {
+      "name": "Carrie McCracken",
+      "normalizedName": "carrie mccracken",
+      "orcid": "0000-0002-8038-9727"
+    },
+    {
+      "name": "Cassandra M. White",
+      "normalizedName": "cassandra m white",
+      "orcid": "0000-0002-6697-4321"
+    },
+    {
+      "name": "Chad Munger",
+      "normalizedName": "chad munger",
+      "orcid": "0000-0003-1906-1164"
+    },
+    {
+      "name": "Chad Tomlinson",
+      "normalizedName": "chad tomlinson",
+      "orcid": "0000-0001-9905-6159"
+    },
+    {
+      "name": "Changxu Fan",
+      "normalizedName": "changxu fan",
+      "orcid": "0000-0002-4375-4019"
+    },
+    {
+      "name": "Charles B. Epstein",
+      "normalizedName": "charles b epstein",
+      "orcid": "0000-0001-8358-8345"
+    },
+    {
+      "name": "Chetan Munugala",
+      "normalizedName": "chetan munugala",
+      "orcid": "0000-0002-5835-7825"
+    },
+    {
+      "name": "Ching-Huang Ho",
+      "normalizedName": "ching huang ho",
+      "orcid": "0000-0001-8359-8068"
+    },
+    {
+      "name": "Chloe Reno",
+      "normalizedName": "chloe reno",
+      "orcid": "0009-0009-9332-0831"
+    },
+    {
+      "name": "Chongyuan Luo",
+      "normalizedName": "chongyuan luo",
+      "orcid": "0000-0002-8541-0695"
+    },
+    {
+      "name": "Christina Caragine",
+      "normalizedName": "christina caragine",
+      "orcid": "0000-0002-5958-7200"
+    },
+    {
+      "name": "Christine Rimorin",
+      "normalizedName": "christine rimorin",
+      "orcid": "0000-0003-1491-8552"
+    },
+    {
+      "name": "Clifford Kravit",
+      "normalizedName": "clifford kravit",
+      "orcid": "0000-0002-0624-5514"
+    },
+    {
+      "name": "Connor Kubo",
+      "normalizedName": "connor kubo",
+      "orcid": "0000-0001-9579-2917"
+    },
+    {
+      "name": "Corinn Small",
+      "normalizedName": "corinn small",
+      "orcid": "0000-0002-2336-2552"
+    },
+    {
+      "name": "Corinna Losert",
+      "normalizedName": "corinna losert",
+      "orcid": "0000-0002-5997-4702"
+    },
+    {
+      "name": "Daniel Zeiberg",
+      "normalizedName": "daniel zeiberg",
+      "orcid": "0000-0002-6919-7572"
+    },
+    {
+      "name": "Danwei Huangfu",
+      "normalizedName": "danwei huangfu",
+      "orcid": "0000-0002-1145-6199"
+    },
+    {
+      "name": "Darren Bertagnolli",
+      "normalizedName": "darren bertagnolli",
+      "orcid": "0000-0002-6626-1567"
+    },
+    {
+      "name": "David A. Stafford",
+      "normalizedName": "david a stafford",
+      "orcid": "0000-0002-3310-5402"
+    },
+    {
+      "name": "David R. Hall",
+      "normalizedName": "david r hall",
+      "orcid": "0000-0002-7887-466X"
+    },
+    {
+      "name": "Davide Seruggia",
+      "normalizedName": "davide seruggia",
+      "orcid": "0000-0001-5014-0499"
+    },
+    {
+      "name": "Dayeon Cheong",
+      "normalizedName": "dayeon cheong",
+      "orcid": "0009-0003-3315-8496"
+    },
+    {
+      "name": "Delissa McMillen",
+      "normalizedName": "delissa mcmillen",
+      "orcid": "0000-0002-3413-4424"
+    },
+    {
+      "name": "Dhananjay Huilgol",
+      "normalizedName": "dhananjay huilgol",
+      "orcid": "0000-0003-4393-7242"
+    },
+    {
+      "name": "Dinh Diep",
+      "normalizedName": "dinh diep",
+      "orcid": "0000-0001-6057-4119"
+    },
+    {
+      "name": "Dirk Hockemeyer",
+      "normalizedName": "dirk hockemeyer",
+      "orcid": "0000-0002-5598-5092"
+    },
+    {
+      "name": "Dmitry Kobak",
+      "normalizedName": "dmitry kobak",
+      "orcid": "0000-0002-5639-7209"
+    },
+    {
+      "name": "Dominik Lindenhofer",
+      "normalizedName": "dominik lindenhofer",
+      "orcid": "0000-0001-8838-7163"
+    },
+    {
+      "name": "Douglas M. Fowler",
+      "normalizedName": "douglas m fowler",
+      "orcid": "0000-0001-7614-1713"
+    },
+    {
+      "name": "Dulguun Amgalan",
+      "normalizedName": "dulguun amgalan",
+      "orcid": "0000-0001-6398-3372"
+    },
+    {
+      "name": "Dustin Olley",
+      "normalizedName": "dustin olley",
+      "orcid": "0000-0001-8685-0839"
+    },
+    {
+      "name": "Dustin Shigaki",
+      "normalizedName": "dustin shigaki",
+      "orcid": "0000-0002-0234-382X"
+    },
+    {
+      "name": "Dylan Bannon",
+      "normalizedName": "dylan bannon",
+      "orcid": "0009-0003-6791-8166"
+    },
+    {
+      "name": "Eduardo Scopel",
+      "normalizedName": "eduardo scopel",
+      "orcid": "0000-0002-0064-3466"
+    },
+    {
+      "name": "Elanine Miranda",
+      "normalizedName": "elanine miranda",
+      "orcid": "0000-0002-1633-9303"
+    },
+    {
+      "name": "Eleazar Eskin",
+      "normalizedName": "eleazar eskin",
+      "orcid": "0000-0003-1149-4758"
+    },
+    {
+      "name": "Elisa Donnard",
+      "normalizedName": "elisa donnard",
+      "orcid": "0000-0002-8834-8110"
+    },
+    {
+      "name": "Elizabeth Gaskell",
+      "normalizedName": "elizabeth gaskell",
+      "orcid": "0000-0001-6497-6211"
+    },
+    {
+      "name": "Elora Williams",
+      "normalizedName": "elora williams",
+      "orcid": "0000-0002-0178-5511"
+    },
+    {
+      "name": "Elysia Chou",
+      "normalizedName": "elysia chou",
+      "orcid": "0000-0002-1007-4455"
+    },
+    {
+      "name": "Eran Kotler",
+      "normalizedName": "eran kotler",
+      "orcid": "0000-0002-1463-7462"
+    },
+    {
+      "name": "Eric Douglass",
+      "normalizedName": "eric douglass",
+      "orcid": "0000-0001-6946-1807"
+    },
+    {
+      "name": "Eric Van Buren",
+      "normalizedName": "eric van buren",
+      "orcid": "0000-0003-4256-8705"
+    },
+    {
+      "name": "Erin M. Thompson",
+      "normalizedName": "erin m thompson",
+      "orcid": "0000-0002-6085-3051"
+    },
+    {
+      "name": "Estelle Lecluze",
+      "normalizedName": "estelle lecluze",
+      "orcid": "0000-0002-2940-8339"
+    },
+    {
+      "name": "Ethan Armand",
+      "normalizedName": "ethan armand",
+      "orcid": "0000-0002-4516-6317"
+    },
+    {
+      "name": "Eugenio Mattei",
+      "normalizedName": "eugenio mattei",
+      "orcid": "0000-0002-8889-658X"
+    },
+    {
+      "name": "Evann E. Hilt",
+      "normalizedName": "evann e hilt",
+      "orcid": "0000-0001-7787-1961"
+    },
+    {
+      "name": "Evelyn Jagoda",
+      "normalizedName": "evelyn jagoda",
+      "orcid": "0000-0001-9425-8106"
+    },
+    {
+      "name": "Eyal Metzl-Raz",
+      "normalizedName": "eyal metzl raz",
+      "orcid": "0000-0002-7111-2822"
+    },
+    {
+      "name": "Farnaz Shamsi",
+      "normalizedName": "farnaz shamsi",
+      "orcid": "0000-0003-1753-727X"
+    },
+    {
+      "name": "Farzaneh Khajouei",
+      "normalizedName": "farzaneh khajouei",
+      "orcid": "0000-0002-0148-9122"
+    },
+    {
+      "name": "Federico Scala",
+      "normalizedName": "federico scala",
+      "orcid": "0000-0002-2680-8572"
+    },
+    {
+      "name": "Florence D. D’Orazi",
+      "normalizedName": "florence d d orazi",
+      "orcid": "0000-0002-7354-4725"
+    },
+    {
+      "name": "Florent Laval",
+      "normalizedName": "florent laval",
+      "orcid": "0000-0001-7744-6199"
+    },
+    {
+      "name": "Frederick P. Roth",
+      "normalizedName": "frederick p roth",
+      "orcid": "0000-0002-6628-649X"
+    },
+    {
+      "name": "Gary C. Hon",
+      "normalizedName": "gary c hon",
+      "orcid": "0000-0002-5728-4433"
+    },
+    {
+      "name": "Gavin Schnitzler",
+      "normalizedName": "gavin schnitzler",
+      "orcid": "0000-0001-5814-6991"
+    },
+    {
+      "name": "Georges Coppin",
+      "normalizedName": "georges coppin",
+      "orcid": "0000-0001-7647-3240"
+    },
+    {
+      "name": "Giuseppe Leuzzi",
+      "normalizedName": "giuseppe leuzzi",
+      "orcid": "0000-0002-2211-790X"
+    },
+    {
+      "name": "Glen Munson",
+      "normalizedName": "glen munson",
+      "orcid": "0000-0001-9383-9806"
+    },
+    {
+      "name": "Gregory D. Horwitz",
+      "normalizedName": "gregory d horwitz",
+      "orcid": "0000-0001-5130-5259"
+    },
+    {
+      "name": "Gregory E. Crawford",
+      "normalizedName": "gregory e crawford",
+      "orcid": "0000-0001-6106-2772"
+    },
+    {
+      "name": "Guillaume Lettre",
+      "normalizedName": "guillaume lettre",
+      "orcid": "0000-0002-7740-3399"
+    },
+    {
+      "name": "Guillermo Barreto Corona",
+      "normalizedName": "guillermo barreto corona",
+      "orcid": "0000-0002-9289-7681"
+    },
+    {
+      "name": "Gukhan Kim",
+      "normalizedName": "gukhan kim",
+      "orcid": "0000-0002-3338-5045"
+    },
+    {
+      "name": "Guo-li Ming",
+      "normalizedName": "guo li ming",
+      "orcid": "0000-0002-2517-6075"
+    },
+    {
+      "name": "H. Leighton Grimes",
+      "normalizedName": "h leighton grimes",
+      "orcid": "0000-0001-8162-6758"
+    },
+    {
+      "name": "Hanchuan Peng",
+      "normalizedName": "hanchuan peng",
+      "orcid": "0000-0002-3478-3942"
+    },
+    {
+      "name": "Hank Jones",
+      "normalizedName": "hank jones",
+      "orcid": "0009-0007-3220-3098"
+    },
+    {
+      "name": "Hannah Mummey",
+      "normalizedName": "hannah mummey",
+      "orcid": "0000-0002-7663-8559"
+    },
+    {
+      "name": "Héctor Corrada Bravo",
+      "normalizedName": "hector corrada bravo",
+      "orcid": "0000-0002-1255-4444"
+    },
+    {
+      "name": "Hong-Wei Dong",
+      "normalizedName": "hong wei dong",
+      "orcid": "0000-0003-1036-9939"
+    },
+    {
+      "name": "Houri Hintiryan",
+      "normalizedName": "houri hintiryan",
+      "orcid": "0000-0002-9721-6785"
+    },
+    {
+      "name": "Hufeng Zhou",
+      "normalizedName": "hufeng zhou",
+      "orcid": "0000-0001-9382-5674"
+    },
+    {
+      "name": "Huijue Lyu",
+      "normalizedName": "huijue lyu",
+      "orcid": "0009-0000-8564-0530"
+    },
+    {
+      "name": "Hyung Bum Kim",
+      "normalizedName": "hyung bum kim",
+      "orcid": "0000-0003-1682-4998"
+    },
+    {
+      "name": "Idan Gabdank",
+      "normalizedName": "idan gabdank",
+      "orcid": "0000-0001-5025-5886"
+    },
+    {
+      "name": "Iris M. Chin",
+      "normalizedName": "iris m chin",
+      "orcid": "0000-0002-2621-3042"
+    },
+    {
+      "name": "Isabella Lin",
+      "normalizedName": "isabella lin",
+      "orcid": "0000-0002-7102-6879"
+    },
+    {
+      "name": "Ivan Woo",
+      "normalizedName": "ivan woo",
+      "orcid": "0009-0003-0945-8851"
+    },
+    {
+      "name": "James Boocock",
+      "normalizedName": "james boocock",
+      "orcid": "0000-0003-0323-8818"
+    },
+    {
+      "name": "James M. Gardner",
+      "normalizedName": "james m gardner",
+      "orcid": "0000-0002-4782-4969"
+    },
+    {
+      "name": "Jared B. Smith",
+      "normalizedName": "jared b smith",
+      "orcid": "0000-0002-0273-4898"
+    },
+    {
+      "name": "Jasmine Sims",
+      "normalizedName": "jasmine sims",
+      "orcid": "0000-0001-8180-2520"
+    },
+    {
+      "name": "Jay Shendure",
+      "normalizedName": "jay shendure",
+      "orcid": "0000-0002-1516-1865"
+    },
+    {
+      "name": "Jayaram Kancherla",
+      "normalizedName": "jayaram kancherla",
+      "orcid": "0000-0001-5855-5031"
+    },
+    {
+      "name": "Jayoung Ryu",
+      "normalizedName": "jayoung ryu",
+      "orcid": "0000-0001-8710-8898"
+    },
+    {
+      "name": "Jean-Benoît Lalanne",
+      "normalizedName": "jean benoit lalanne",
+      "orcid": "0000-0001-8753-0669"
+    },
+    {
+      "name": "Jeff Goldy",
+      "normalizedName": "jeff goldy",
+      "orcid": "0000-0001-5140-6922"
+    },
+    {
+      "name": "Jennifer Jou",
+      "normalizedName": "jennifer jou",
+      "orcid": "0000-0003-3065-9183"
+    },
+    {
+      "name": "Jerold Chun",
+      "normalizedName": "jerold chun",
+      "orcid": "0000-0003-3964-0921"
+    },
+    {
+      "name": "Jesse Gillis",
+      "normalizedName": "jesse gillis",
+      "orcid": "0000-0002-0936-9774"
+    },
+    {
+      "name": "Jessica Lacoste",
+      "normalizedName": "jessica lacoste",
+      "orcid": "0000-0002-7222-4957"
+    },
+    {
+      "name": "Jielin Yan",
+      "normalizedName": "jielin yan",
+      "orcid": "0000-0001-9305-3942"
+    },
+    {
+      "name": "Jill E. Moore",
+      "normalizedName": "jill e moore",
+      "orcid": "0000-0002-3023-0806"
+    },
+    {
+      "name": "Jim Berg",
+      "normalizedName": "jim berg",
+      "orcid": "0000-0002-3300-5399"
+    },
+    {
+      "name": "Joao P. Monteiro",
+      "normalizedName": "joao p monteiro",
+      "orcid": "0000-0001-6481-6875"
+    },
+    {
+      "name": "Joel Rozowsky",
+      "normalizedName": "joel rozowsky",
+      "orcid": "0000-0002-3565-0762"
+    },
+    {
+      "name": "John Ngai",
+      "normalizedName": "john ngai",
+      "orcid": "0000-0002-1191-8971"
+    },
+    {
+      "name": "Jonathan Flint",
+      "normalizedName": "jonathan flint",
+      "orcid": "0000-0002-9427-4429"
+    },
+    {
+      "name": "Josef Sulc",
+      "normalizedName": "josef sulc",
+      "orcid": "0000-0002-4928-7183"
+    },
+    {
+      "name": "Josh Tycko",
+      "normalizedName": "josh tycko",
+      "orcid": "0000-0002-4108-0575"
+    },
+    {
+      "name": "Joshua Orvis",
+      "normalizedName": "joshua orvis",
+      "orcid": "0000-0002-5705-5710"
+    },
+    {
+      "name": "Judhajeet Ray",
+      "normalizedName": "judhajeet ray",
+      "orcid": "0000-0003-1524-2603"
+    },
+    {
+      "name": "Judith Mizrachi",
+      "normalizedName": "judith mizrachi",
+      "orcid": "0000-0003-2195-8210"
+    },
+    {
+      "name": "Juliana Babu",
+      "normalizedName": "juliana babu",
+      "orcid": "0009-0001-8559-0729"
+    },
+    {
+      "name": "Justin Langerman",
+      "normalizedName": "justin langerman",
+      "orcid": "0009-0003-8376-614X"
+    },
+    {
+      "name": "K. Alaine Broadaway",
+      "normalizedName": "k alaine broadaway",
+      "orcid": "0000-0001-7469-1041"
+    },
+    {
+      "name": "Kameron B. Rodrigues",
+      "normalizedName": "kameron b rodrigues",
+      "orcid": "0000-0002-0270-3688"
+    },
+    {
+      "name": "Kanan Lathia",
+      "normalizedName": "kanan lathia",
+      "orcid": "0000-0003-0080-1951"
+    },
+    {
+      "name": "Kara Quaid",
+      "normalizedName": "kara quaid",
+      "orcid": "0000-0002-4725-322X"
+    },
+    {
+      "name": "Kari Strouse",
+      "normalizedName": "kari strouse",
+      "orcid": "0000-0001-8748-4527"
+    },
+    {
+      "name": "Kathrin Plath",
+      "normalizedName": "kathrin plath",
+      "orcid": "0000-0001-7796-3372"
+    },
+    {
+      "name": "Keenan Graham",
+      "normalizedName": "keenan graham",
+      "orcid": "0000-0002-3327-6164"
+    },
+    {
+      "name": "Keith Siklenka",
+      "normalizedName": "keith siklenka",
+      "orcid": "0000-0002-4663-6456"
+    },
+    {
+      "name": "Kelly Street",
+      "normalizedName": "kelly street",
+      "orcid": "0000-0001-6379-5013"
+    },
+    {
+      "name": "Kimberly Siletti",
+      "normalizedName": "kimberly siletti",
+      "orcid": "0000-0001-7620-8973"
+    },
+    {
+      "name": "Kiran Musunuru",
+      "normalizedName": "kiran musunuru",
+      "orcid": "0000-0003-3298-0368"
+    },
+    {
+      "name": "Kirsten Crichton",
+      "normalizedName": "kirsten crichton",
+      "orcid": "0000-0002-7869-1492"
+    },
+    {
+      "name": "Kishori Konwar",
+      "normalizedName": "kishori konwar",
+      "orcid": "0000-0001-5152-4777"
+    },
+    {
+      "name": "Kristen Brennand",
+      "normalizedName": "kristen brennand",
+      "orcid": "0000-0003-0993-5956"
+    },
+    {
+      "name": "Kuei-Yueh Ko",
+      "normalizedName": "kuei yueh ko",
+      "orcid": "0000-0001-8564-8524"
+    },
+    {
+      "name": "Kunling Huang",
+      "normalizedName": "kunling huang",
+      "orcid": "0000-0001-5958-5136"
+    },
+    {
+      "name": "Kuo-Fen Lee",
+      "normalizedName": "kuo fen lee",
+      "orcid": "0000-0003-2224-2708"
+    },
+    {
+      "name": "Kyle M. Kovary",
+      "normalizedName": "kyle m kovary",
+      "orcid": "0000-0002-7616-2968"
+    },
+    {
+      "name": "Kylee Degatano",
+      "normalizedName": "kylee degatano",
+      "orcid": "0000-0002-0945-3300"
+    },
+    {
+      "name": "Laurent Fasano",
+      "normalizedName": "laurent fasano",
+      "orcid": "0000-0003-2307-8428"
+    },
+    {
+      "name": "Lauretta El Hayek",
+      "normalizedName": "lauretta el hayek",
+      "orcid": "0000-0002-6820-9316"
+    },
+    {
+      "name": "Leif S. Ludwig",
+      "normalizedName": "leif s ludwig",
+      "orcid": "0000-0002-2916-2164"
+    },
+    {
+      "name": "Len A. Pennacchio",
+      "normalizedName": "len a pennacchio",
+      "orcid": "0000-0002-8748-3732"
+    },
+    {
+      "name": "Leonard Hartmanis",
+      "normalizedName": "leonard hartmanis",
+      "orcid": "0000-0002-4922-8781"
+    },
+    {
+      "name": "Leqian Yu",
+      "normalizedName": "leqian yu",
+      "orcid": "0000-0003-2060-463X"
+    },
+    {
+      "name": "Lin Gou",
+      "normalizedName": "lin gou",
+      "orcid": "0009-0006-6119-1164"
+    },
+    {
+      "name": "Livnat Jerby",
+      "normalizedName": "livnat jerby",
+      "orcid": "0000-0002-4037-386X"
+    },
+    {
+      "name": "Luca Pinello",
+      "normalizedName": "luca pinello",
+      "orcid": "0000-0003-1109-3823"
+    },
+    {
+      "name": "Lucas Kampman",
+      "normalizedName": "lucas kampman",
+      "orcid": "0000-0002-2008-549X"
+    },
+    {
+      "name": "Lucinda Fulton",
+      "normalizedName": "lucinda fulton",
+      "orcid": "0000-0001-6429-4288"
+    },
+    {
+      "name": "M. Clara De Paolis Kaluza",
+      "normalizedName": "m clara de paolis kaluza",
+      "orcid": "0000-0003-2376-6669"
+    },
+    {
+      "name": "M. Ryan Corces",
+      "normalizedName": "m ryan corces",
+      "orcid": "0000-0001-7465-7652"
+    },
+    {
+      "name": "Mai Nobuhara",
+      "normalizedName": "mai nobuhara",
+      "orcid": "0009-0007-3434-8397"
+    },
+    {
+      "name": "Maike Sander",
+      "normalizedName": "maike sander",
+      "orcid": "0000-0001-5308-7785"
+    },
+    {
+      "name": "Maitham Naeemi",
+      "normalizedName": "maitham naeemi",
+      "orcid": "0000-0001-9139-3548"
+    },
+    {
+      "name": "Malvika Tejura",
+      "normalizedName": "malvika tejura",
+      "orcid": "0000-0001-5356-1977"
+    },
+    {
+      "name": "Manolis Kellis",
+      "normalizedName": "manolis kellis",
+      "orcid": "0000-0001-7113-9630"
+    },
+    {
+      "name": "Manuel Garber",
+      "normalizedName": "manuel garber",
+      "orcid": "0000-0001-8732-1293"
+    },
+    {
+      "name": "Marcus Alvarez",
+      "normalizedName": "marcus alvarez",
+      "orcid": "0000-0002-6369-5028"
+    },
+    {
+      "name": "Mariam Benazouz",
+      "normalizedName": "mariam benazouz",
+      "orcid": "0000-0001-8561-296X"
+    },
+    {
+      "name": "Marisa Abundis",
+      "normalizedName": "marisa abundis",
+      "orcid": "0009-0001-6904-0196"
+    },
+    {
+      "name": "Markus Ramste",
+      "normalizedName": "markus ramste",
+      "orcid": "0000-0003-4048-4591"
+    },
+    {
+      "name": "Marlene Rabinovitch",
+      "normalizedName": "marlene rabinovitch",
+      "orcid": "0000-0001-7886-7104"
+    },
+    {
+      "name": "Martin Kircher",
+      "normalizedName": "martin kircher",
+      "orcid": "0000-0001-9278-5471"
+    },
+    {
+      "name": "Marzieh Haghighi",
+      "normalizedName": "marzieh haghighi",
+      "orcid": "0000-0002-2291-2356"
+    },
+    {
+      "name": "Mason Post",
+      "normalizedName": "mason post",
+      "orcid": "0009-0006-4768-662X"
+    },
+    {
+      "name": "Matteo Bernabucci",
+      "normalizedName": "matteo bernabucci",
+      "orcid": "0000-0003-4458-117X"
+    },
+    {
+      "name": "Matthew B. Veldman",
+      "normalizedName": "matthew b veldman",
+      "orcid": "0000-0002-0328-5916"
+    },
+    {
+      "name": "Matthew Kroll",
+      "normalizedName": "matthew kroll",
+      "orcid": "0009-0000-9391-9777"
+    },
+    {
+      "name": "Matthias Heinig",
+      "normalizedName": "matthias heinig",
+      "orcid": "0000-0002-5612-1720"
+    },
+    {
+      "name": "Max Schubach",
+      "normalizedName": "max schubach",
+      "orcid": "0000-0002-2032-6679"
+    },
+    {
+      "name": "Maxime Tixhon",
+      "normalizedName": "maxime tixhon",
+      "orcid": "0009-0004-4289-6842"
+    },
+    {
+      "name": "Maya Kasowski",
+      "normalizedName": "maya kasowski",
+      "orcid": "0000-0001-6583-0759"
+    },
+    {
+      "name": "Mei-Lin Okino",
+      "normalizedName": "mei lin okino",
+      "orcid": "0000-0002-6177-9092"
+    },
+    {
+      "name": "Melinda K. Wheelock",
+      "normalizedName": "melinda k wheelock",
+      "orcid": "0009-0002-9825-6276"
+    },
+    {
+      "name": "Michael A. Beer",
+      "normalizedName": "michael a beer",
+      "orcid": "0000-0001-9955-3809"
+    },
+    {
+      "name": "Michael C. Bassik",
+      "normalizedName": "michael c bassik",
+      "orcid": "0000-0001-5185-8427"
+    },
+    {
+      "name": "Michael I. Love",
+      "normalizedName": "michael i love",
+      "orcid": "0000-0001-8401-0545"
+    },
+    {
+      "name": "Michael Kosicki",
+      "normalizedName": "michael kosicki",
+      "orcid": "0000-0001-7173-8852"
+    },
+    {
+      "name": "Michael Schor",
+      "normalizedName": "michael schor",
+      "orcid": "0000-0002-4493-7992"
+    },
+    {
+      "name": "Michael T. Montgomery",
+      "normalizedName": "michael t montgomery",
+      "orcid": "0000-0002-6748-2329"
+    },
+    {
+      "name": "Michael Tieu",
+      "normalizedName": "michael tieu",
+      "orcid": "0000-0001-9286-5623"
+    },
+    {
+      "name": "Moez Dawood",
+      "normalizedName": "moez dawood",
+      "orcid": "0000-0003-0192-1277"
+    },
+    {
+      "name": "Molly Gasperini",
+      "normalizedName": "molly gasperini",
+      "orcid": "0000-0003-4559-8432"
+    },
+    {
+      "name": "Momoe Kato",
+      "normalizedName": "momoe kato",
+      "orcid": "0000-0002-1161-5233"
+    },
+    {
+      "name": "Myles Hochman",
+      "normalizedName": "myles hochman",
+      "orcid": "0000-0001-5172-6395"
+    },
+    {
+      "name": "Nadav Ahituv",
+      "normalizedName": "nadav ahituv",
+      "orcid": "0000-0002-7434-8144"
+    },
+    {
+      "name": "Nahid Iglesias",
+      "normalizedName": "nahid iglesias",
+      "orcid": "0000-0001-5185-846X"
+    },
+    {
+      "name": "Natalie Haas",
+      "normalizedName": "natalie haas",
+      "orcid": "0000-0002-5549-5704"
+    },
+    {
+      "name": "Nathan LaPierre",
+      "normalizedName": "nathan lapierre",
+      "orcid": "0009-0008-8889-4382"
+    },
+    {
+      "name": "Nathan Stitziel",
+      "normalizedName": "nathan stitziel",
+      "orcid": "0000-0002-4963-8211"
+    },
+    {
+      "name": "Neil Slaven",
+      "normalizedName": "neil slaven",
+      "orcid": "0000-0003-4794-9806"
+    },
+    {
+      "name": "Nick Dee",
+      "normalizedName": "nick dee",
+      "orcid": "0000-0002-2831-9254"
+    },
+    {
+      "name": "Nicole Shedd",
+      "normalizedName": "nicole shedd",
+      "orcid": "0000-0003-2272-5398"
+    },
+    {
+      "name": "Nikolaos Barkas",
+      "normalizedName": "nikolaos barkas",
+      "orcid": "0000-0002-4675-0718"
+    },
+    {
+      "name": "Nishigandha Phalke",
+      "normalizedName": "nishigandha phalke",
+      "orcid": "0000-0003-3980-6450"
+    },
+    {
+      "name": "Noah Zaitlen",
+      "normalizedName": "noah zaitlen",
+      "orcid": "0000-0002-3553-3670"
+    },
+    {
+      "name": "Noam Shoresh",
+      "normalizedName": "noam shoresh",
+      "orcid": "0000-0002-5482-5046"
+    },
+    {
+      "name": "Nobuhiko Hamazaki",
+      "normalizedName": "nobuhiko hamazaki",
+      "orcid": "0000-0001-9228-233X"
+    },
+    {
+      "name": "Nongluk Plongthongkum",
+      "normalizedName": "nongluk plongthongkum",
+      "orcid": "0000-0002-1305-285X"
+    },
+    {
+      "name": "Nora M. Reed",
+      "normalizedName": "nora m reed",
+      "orcid": "0000-0003-0408-1568"
+    },
+    {
+      "name": "Olivia Fong",
+      "normalizedName": "olivia fong",
+      "orcid": "0000-0002-7091-9667"
+    },
+    {
+      "name": "Olivier Poirion",
+      "normalizedName": "olivier poirion",
+      "orcid": "0000-0002-0429-7003"
+    },
+    {
+      "name": "Otto Jolanki",
+      "normalizedName": "otto jolanki",
+      "orcid": "0000-0001-8601-4849"
+    },
+    {
+      "name": "Paula Assakura Miyazaki",
+      "normalizedName": "paula assakura miyazaki",
+      "orcid": "0000-0003-1295-8710"
+    },
+    {
+      "name": "Phil Lesnar",
+      "normalizedName": "phil lesnar",
+      "orcid": "0000-0002-2152-604X"
+    },
+    {
+      "name": "Predrag Radivojac",
+      "normalizedName": "predrag radivojac",
+      "orcid": "0000-0002-6769-0793"
+    },
+    {
+      "name": "Qiongshi Lu",
+      "normalizedName": "qiongshi lu",
+      "orcid": "0000-0002-4514-0969"
+    },
+    {
+      "name": "Quang Vinh Phan",
+      "normalizedName": "quang vinh phan",
+      "orcid": "0000-0002-0406-5085"
+    },
+    {
+      "name": "Quanyi Zhao",
+      "normalizedName": "quanyi zhao",
+      "orcid": "0000-0001-9849-4528"
+    },
+    {
+      "name": "Rachael Larsen",
+      "normalizedName": "rachael larsen",
+      "orcid": "0000-0003-0178-003X"
+    },
+    {
+      "name": "Rachel Dalley",
+      "normalizedName": "rachel dalley",
+      "orcid": "0000-0001-7461-7845"
+    },
+    {
+      "name": "Raluca Gordan",
+      "normalizedName": "raluca gordan",
+      "orcid": "0000-0002-6404-6556"
+    },
+    {
+      "name": "Ramesh Palaniswamy",
+      "normalizedName": "ramesh palaniswamy",
+      "orcid": "0000-0003-4322-2407"
+    },
+    {
+      "name": "Rebecca K. Chance",
+      "normalizedName": "rebecca k chance",
+      "orcid": "0000-0001-7059-6119"
+    },
+    {
+      "name": "Renhe Luo",
+      "normalizedName": "renhe luo",
+      "orcid": "0009-0008-1470-4726"
+    },
+    {
+      "name": "Revant Gupta",
+      "normalizedName": "revant gupta",
+      "orcid": "0000-0002-0881-5074"
+    },
+    {
+      "name": "Revathy Venukuttan",
+      "normalizedName": "revathy venukuttan",
+      "orcid": "0009-0005-6697-3854"
+    },
+    {
+      "name": "Rex L. Chisholm",
+      "normalizedName": "rex l chisholm",
+      "orcid": "0000-0002-5638-3990"
+    },
+    {
+      "name": "Rintsen N. Sherpa",
+      "normalizedName": "rintsen n sherpa",
+      "orcid": "0000-0001-9957-1919"
+    },
+    {
+      "name": "Robert Damoiseaux",
+      "normalizedName": "robert damoiseaux",
+      "orcid": "0000-0002-7611-7534"
+    },
+    {
+      "name": "Rodrigo Muñoz-Castañeda",
+      "normalizedName": "rodrigo munoz castaneda",
+      "orcid": "0000-0002-1176-7421"
+    },
+    {
+      "name": "Ronghao Zhou",
+      "normalizedName": "ronghao zhou",
+      "orcid": "0000-0002-3917-0694"
+    },
+    {
+      "name": "Ronna Hertzano",
+      "normalizedName": "ronna hertzano",
+      "orcid": "0000-0002-8093-6567"
+    },
+    {
+      "name": "Ronni Kurzion",
+      "normalizedName": "ronni kurzion",
+      "orcid": "0000-0002-4111-8377"
+    },
+    {
+      "name": "Ruchir Rastogi",
+      "normalizedName": "ruchir rastogi",
+      "orcid": "0000-0001-7288-1714"
+    },
+    {
+      "name": "Ruhi Rai",
+      "normalizedName": "ruhi rai",
+      "orcid": "0000-0003-3897-0312"
+    },
+    {
+      "name": "Salil Deshpande",
+      "normalizedName": "salil deshpande",
+      "orcid": "0009-0009-5776-8428"
+    },
+    {
+      "name": "Samuel H. Kim",
+      "normalizedName": "samuel h kim",
+      "orcid": "0000-0001-8003-2050"
+    },
+    {
+      "name": "Samuel J. Reisman",
+      "normalizedName": "samuel j reisman",
+      "orcid": "0000-0002-3657-874X"
+    },
+    {
+      "name": "Sandra Wittibschlager",
+      "normalizedName": "sandra wittibschlager",
+      "orcid": "0009-0006-6973-5293"
+    },
+    {
+      "name": "Sandy Klemm",
+      "normalizedName": "sandy klemm",
+      "orcid": "0000-0001-7556-6795"
+    },
+    {
+      "name": "Saori Sakaue",
+      "normalizedName": "saori sakaue",
+      "orcid": "0000-0003-3618-9717"
+    },
+    {
+      "name": "Sarah Cody",
+      "normalizedName": "sarah cody",
+      "orcid": "0009-0003-5535-9395"
+    },
+    {
+      "name": "Sarah Tishkoff",
+      "normalizedName": "sarah tishkoff",
+      "orcid": "0000-0002-1339-5959"
+    },
+    {
+      "name": "Sarasa Isobe",
+      "normalizedName": "sarasa isobe",
+      "orcid": "0000-0002-7405-0903"
+    },
+    {
+      "name": "Saroja Somasundaram",
+      "normalizedName": "saroja somasundaram",
+      "orcid": "0000-0002-3729-9849"
+    },
+    {
+      "name": "Scott F. Owen",
+      "normalizedName": "scott f owen",
+      "orcid": "0000-0001-6294-7513"
+    },
+    {
+      "name": "Sean D. Mooney",
+      "normalizedName": "sean d mooney",
+      "orcid": "0000-0003-2654-0833"
+    },
+    {
+      "name": "Sean Upchurch",
+      "normalizedName": "sean upchurch",
+      "orcid": "0000-0002-3119-8975"
+    },
+    {
+      "name": "Shalaka Mulherkar",
+      "normalizedName": "shalaka mulherkar",
+      "orcid": "0000-0001-8736-527X"
+    },
+    {
+      "name": "Shamil Sunyaev",
+      "normalizedName": "shamil sunyaev",
+      "orcid": "0000-0001-5715-5677"
+    },
+    {
+      "name": "Shawn Fayer",
+      "normalizedName": "shawn fayer",
+      "orcid": "0000-0003-1883-9069"
+    },
+    {
+      "name": "Shengcheng Dong",
+      "normalizedName": "shengcheng dong",
+      "orcid": "0000-0001-5728-8090"
+    },
+    {
+      "name": "Shengdian Jiang",
+      "normalizedName": "shengdian jiang",
+      "orcid": "0000-0002-2277-263X"
+    },
+    {
+      "name": "Shengyu Li",
+      "normalizedName": "shengyu li",
+      "orcid": "0009-0006-9768-1739"
+    },
+    {
+      "name": "Shiron Drusinsky",
+      "normalizedName": "shiron drusinsky",
+      "orcid": "0000-0003-1184-8835"
+    },
+    {
+      "name": "Shona Allen",
+      "normalizedName": "shona allen",
+      "orcid": "0000-0003-0186-0574"
+    },
+    {
+      "name": "Siddarth Wekhande",
+      "normalizedName": "siddarth wekhande",
+      "orcid": "0009-0008-7539-8718"
+    },
+    {
+      "name": "Silvia Casadei",
+      "normalizedName": "silvia casadei",
+      "orcid": "0000-0003-2619-5662"
+    },
+    {
+      "name": "Simone Sidoli",
+      "normalizedName": "simone sidoli",
+      "orcid": "0000-0001-9073-6641"
+    },
+    {
+      "name": "Song-Lin Ding",
+      "normalizedName": "song lin ding",
+      "orcid": "0000-0002-7072-5272"
+    },
+    {
+      "name": "Sophie Laturnus",
+      "normalizedName": "sophie laturnus",
+      "orcid": "0000-0001-9532-788X"
+    },
+    {
+      "name": "Soumya Raychaudhuri",
+      "normalizedName": "soumya raychaudhuri",
+      "orcid": "0000-0002-1901-8265"
+    },
+    {
+      "name": "Sreeram Kannan",
+      "normalizedName": "sreeram kannan",
+      "orcid": "0000-0001-8843-2964"
+    },
+    {
+      "name": "Sriram Pendyala",
+      "normalizedName": "sriram pendyala",
+      "orcid": "0000-0003-3395-3417"
+    },
+    {
+      "name": "Stefanija Giric",
+      "normalizedName": "stefanija giric",
+      "orcid": "0009-0005-2751-3978"
+    },
+    {
+      "name": "Sten Linnarsson",
+      "normalizedName": "sten linnarsson",
+      "orcid": "0000-0002-3491-3444"
+    },
+    {
+      "name": "Stephanie Calluori",
+      "normalizedName": "stephanie calluori",
+      "orcid": "0000-0002-2495-5608"
+    },
+    {
+      "name": "Stephanie Conley",
+      "normalizedName": "stephanie conley",
+      "orcid": "0000-0002-0462-8343"
+    },
+    {
+      "name": "Sukantha Chandrasekaran",
+      "normalizedName": "sukantha chandrasekaran",
+      "orcid": "0000-0002-6232-5535"
+    },
+    {
+      "name": "Surag Nair",
+      "normalizedName": "surag nair",
+      "orcid": "0000-0002-6216-2457"
+    },
+    {
+      "name": "Susan Sunkin",
+      "normalizedName": "susan sunkin",
+      "orcid": "0000-0001-9893-3834"
+    },
+    {
+      "name": "Sushama Sivakumar",
+      "normalizedName": "sushama sivakumar",
+      "orcid": "0000-0001-7877-4821"
+    },
+    {
+      "name": "Svetlana Jovanic",
+      "normalizedName": "svetlana jovanic",
+      "orcid": "0000-0003-3002-1307"
+    },
+    {
+      "name": "Swapnil Keshari",
+      "normalizedName": "swapnil keshari",
+      "orcid": "0000-0001-6451-9432"
+    },
+    {
+      "name": "Tamara Casper",
+      "normalizedName": "tamara casper",
+      "orcid": "0000-0003-1638-3651"
+    },
+    {
+      "name": "Tanay Thakar",
+      "normalizedName": "tanay thakar",
+      "orcid": "0000-0001-5261-458X"
+    },
+    {
+      "name": "Tanisha Teelucksingh",
+      "normalizedName": "tanisha teelucksingh",
+      "orcid": "0000-0002-1151-8433"
+    },
+    {
+      "name": "Taylor Anglen",
+      "normalizedName": "taylor anglen",
+      "orcid": "0000-0003-4451-3046"
+    },
+    {
+      "name": "Theofilos Chalkiadakis",
+      "normalizedName": "theofilos chalkiadakis",
+      "orcid": "0000-0001-7582-458X"
+    },
+    {
+      "name": "Thomas Quertermous",
+      "normalizedName": "thomas quertermous",
+      "orcid": "0000-0002-7645-9067"
+    },
+    {
+      "name": "Thomas Vierbuchen",
+      "normalizedName": "thomas vierbuchen",
+      "orcid": "0000-0002-5690-5680"
+    },
+    {
+      "name": "Thorben Maass",
+      "normalizedName": "thorben maass",
+      "orcid": "0000-0003-4764-2740"
+    },
+    {
+      "name": "Timothy E. Reddy",
+      "normalizedName": "timothy e reddy",
+      "orcid": "0000-0002-7629-061X"
+    },
+    {
+      "name": "Tina Lindsay",
+      "normalizedName": "tina lindsay",
+      "orcid": "0000-0002-0409-891X"
+    },
+    {
+      "name": "Tony Ito-Cole",
+      "normalizedName": "tony ito cole",
+      "orcid": "0000-0001-5898-3108"
+    },
+    {
+      "name": "Trirupa Chakraborty",
+      "normalizedName": "trirupa chakraborty",
+      "orcid": "0000-0002-9145-247X"
+    },
+    {
+      "name": "Troy A. McDiarmid",
+      "normalizedName": "troy a mcdiarmid",
+      "orcid": "0000-0002-4893-9733"
+    },
+    {
+      "name": "Trygve E. Bakken",
+      "normalizedName": "trygve e bakken",
+      "orcid": "0000-0003-3373-7386"
+    },
+    {
+      "name": "Tulika Kakati",
+      "normalizedName": "tulika kakati",
+      "orcid": "0000-0002-6234-7443"
+    },
+    {
+      "name": "Valeh Valiollah Pour Amiri",
+      "normalizedName": "valeh valiollah pour amiri",
+      "orcid": "0000-0002-2008-5297"
+    },
+    {
+      "name": "Valentine Svensson",
+      "normalizedName": "valentine svensson",
+      "orcid": "0000-0002-9217-2330"
+    },
+    {
+      "name": "Vasilis Ntranos",
+      "normalizedName": "vasilis ntranos",
+      "orcid": "0000-0002-2477-0670"
+    },
+    {
+      "name": "Vikas Pejaver",
+      "normalizedName": "vikas pejaver",
+      "orcid": "0000-0002-1943-0284"
+    },
+    {
+      "name": "Vivekanandan Ramalingam",
+      "normalizedName": "vivekanandan ramalingam",
+      "orcid": "0000-0002-3631-8913"
+    },
+    {
+      "name": "Vivian Lee-Kim",
+      "normalizedName": "vivian lee kim",
+      "orcid": "0000-0003-0578-7781"
+    },
+    {
+      "name": "W. Lee Kraus",
+      "normalizedName": "w lee kraus",
+      "orcid": "0000-0002-8786-2986"
+    },
+    {
+      "name": "Wancen Mu",
+      "normalizedName": "wancen mu",
+      "orcid": "0000-0002-5061-7581"
+    },
+    {
+      "name": "Wayne Wakeman",
+      "normalizedName": "wayne wakeman",
+      "orcid": "0000-0002-3693-3609"
+    },
+    {
+      "name": "Weixiu Dong",
+      "normalizedName": "weixiu dong",
+      "orcid": "0000-0003-1059-5653"
+    },
+    {
+      "name": "Weizhou Qian",
+      "normalizedName": "weizhou qian",
+      "orcid": "0000-0003-3884-7920"
+    },
+    {
+      "name": "Weronika Bartosik",
+      "normalizedName": "weronika bartosik",
+      "orcid": "0009-0007-7724-5216"
+    },
+    {
+      "name": "William Galbavy",
+      "normalizedName": "william galbavy",
+      "orcid": "0000-0003-0948-9538"
+    },
+    {
+      "name": "Won Mah",
+      "normalizedName": "won mah",
+      "orcid": "0000-0002-8857-3887"
+    },
+    {
+      "name": "X. William Yang",
+      "normalizedName": "x william yang",
+      "orcid": "0000-0003-3705-7935"
+    },
+    {
+      "name": "Xavier Caubit",
+      "normalizedName": "xavier caubit",
+      "orcid": "0000-0003-0064-5231"
+    },
+    {
+      "name": "Xiangmeng Shawn Cai",
+      "normalizedName": "xiangmeng shawn cai",
+      "orcid": "0000-0002-2466-4210"
+    },
+    {
+      "name": "Xihong Lin",
+      "normalizedName": "xihong lin",
+      "orcid": "0000-0001-7067-7752"
+    },
+    {
+      "name": "Xiuli Kuang",
+      "normalizedName": "xiuli kuang",
+      "orcid": "0000-0001-7569-7605"
+    },
+    {
+      "name": "Yasmine Belaidouni",
+      "normalizedName": "yasmine belaidouni",
+      "orcid": "0000-0002-1897-5127"
+    },
+    {
+      "name": "Yuncheng Duan",
+      "normalizedName": "yuncheng duan",
+      "orcid": "0000-0002-6568-0081"
+    },
+    {
+      "name": "Yuriy Sverchkov",
+      "normalizedName": "yuriy sverchkov",
+      "orcid": "0000-0002-9851-8582"
+    },
+    {
+      "name": "Yves Bernaerts",
+      "normalizedName": "yves bernaerts",
+      "orcid": "0000-0003-4948-0423"
+    },
+    {
+      "name": "Zheng Huan Tan",
+      "normalizedName": "zheng huan tan",
+      "orcid": "0000-0002-1886-2421"
+    },
+    {
+      "name": "Zongcai Ruan",
+      "normalizedName": "zongcai ruan",
+      "orcid": "0000-0003-1547-165X"
+    }
+  ]
+}

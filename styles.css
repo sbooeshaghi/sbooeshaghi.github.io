@@ -1485,6 +1485,25 @@ body.graph-mock-page {
   font-size: 0.82rem !important;
 }
 
+.relation-identifiers {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 0.65rem;
+  margin: -0.15rem 0 0.7rem;
+  font-size: 0.78rem;
+}
+
+.relation-identifiers[hidden] {
+  display: none;
+}
+
+.relation-identifiers a,
+.relationship-detail h2 a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 0.16em;
+}
+
 .relationship-flow {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));

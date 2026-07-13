@@ -162,6 +162,7 @@ function renderRelationInspector(relationData) {
         <aside class="evidence-panel relationship-detail" aria-live="polite">
           <span class="study-label" data-relation-label>Relation</span>
           <h2 data-relation-title></h2>
+          <div class="relation-identifiers" data-relation-identifiers hidden></div>
           <p class="selected-relation-statement" data-relation-statement></p>
           <section class="supporting-claims" data-supporting-claims hidden>
             <h3>Supporting claims</h3>

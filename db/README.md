@@ -14,7 +14,10 @@ work pages render their relation tabs from the JSON export in
 stores per-version author lists for each work, with ORCID links when Crossref
 DOI metadata provides them. The author fetcher also reuses ORCID links across
 versions of the same work and across the full Works corpus when author names
-match unambiguously.
+match unambiguously. `db/author-orcids.json` is the persistent enrichment
+overlay. Its entries come from unique exact-name authorlink matches and are
+reapplied whenever publication author metadata is rebuilt; ambiguous matches
+are never included.
 
 Manual Google Scholar rows use this minimal shape:
 
@@ -105,7 +108,21 @@ node scripts/fetch-publication-authors.mjs
 ```
 
 This queries Crossref for each DOI in `db/publications.json` and rewrites
-`db/publication-authors.json`.
+`db/publication-authors.json`. It refuses to replace the existing file when any
+Crossref request fails. Set `AUTHOR_FETCH_ALLOW_PARTIAL=1` only when a partial
+refresh is intentional. To reapply the local ORCID overlay without querying
+Crossref, run:
+
+```sh
+node scripts/apply-author-orcids.mjs
+```
+
+Then ground matching person objects and author relations in the exported graph
+to their ORCID namespace identifiers:
+
+```sh
+node scripts/link-author-orcids.mjs
+```
 
 ## Local PDFs and Citation Context
 

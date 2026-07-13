@@ -20,6 +20,7 @@
   const relationList = root.querySelector("[data-relation-list]");
   const detailLabel = root.querySelector("[data-relation-label]");
   const detailTitle = root.querySelector("[data-relation-title]");
+  const detailIdentifiers = root.querySelector("[data-relation-identifiers]");
   const detailStatement = root.querySelector("[data-relation-statement]");
   const supportingClaims = root.querySelector("[data-supporting-claims]");
   const supportingClaimList = root.querySelector("[data-supporting-claim-list]");
@@ -43,6 +44,19 @@
     const text = String(value || "").trim();
     if (text.length <= maxLength) return text;
     return `${text.slice(0, maxLength - 3).trimEnd()}...`;
+  }
+
+  function identifierHref(identifier) {
+    if (identifier.namespace === "doi") return `https://doi.org/${identifier.value}`;
+    if (["orcid", "url"].includes(identifier.namespace)) return identifier.value;
+    return "";
+  }
+
+  function identifierLabel(identifier) {
+    const value = identifier.namespace === "orcid"
+      ? identifier.value.replace(/^https:\/\/orcid\.org\//, "")
+      : identifier.value;
+    return `${identifier.namespace.toUpperCase()}: ${value}`;
   }
 
   function visibleConnections() {
@@ -152,6 +166,7 @@
 
     if (!connection) {
       detailTitle.textContent = "Nothing indexed yet";
+      detailIdentifiers.hidden = true;
       detailStatement.hidden = false;
       detailStatement.textContent = "This relation type will appear as the index gains verified objects and connections.";
       supportingClaims.hidden = true;
@@ -163,9 +178,24 @@
     const evidence = connection.evidence || [];
     const isClaim = connection.type === "claims";
     const isResult = connection.type === "results";
-    detailTitle.textContent = isClaim || isResult
+    const title = isClaim || isResult
       ? truncateText(connection.description)
       : connection.title;
+    const identifiers = connection.identifiers || [];
+    const orcid = identifiers.find((identifier) => identifier.namespace === "orcid");
+    detailTitle.innerHTML = orcid
+      ? `<a href="${escapeHTML(identifierHref(orcid))}" target="_blank" rel="noopener noreferrer">${escapeHTML(title)}</a>`
+      : escapeHTML(title);
+    detailIdentifiers.hidden = !identifiers.length;
+    detailIdentifiers.innerHTML = identifiers
+      .map((identifier) => {
+        const label = escapeHTML(identifierLabel(identifier));
+        const href = identifierHref(identifier);
+        return href
+          ? `<a href="${escapeHTML(href)}" target="_blank" rel="noopener noreferrer">${label}</a>`
+          : `<span>${label}</span>`;
+      })
+      .join("");
     detailStatement.hidden = isClaim;
     detailStatement.textContent = isClaim
       ? ""

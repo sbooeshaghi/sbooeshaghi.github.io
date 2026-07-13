@@ -16,6 +16,9 @@ function relationCard(type, object, connection, description = object.description
     description: description || connection.statement,
     statement: connection.statement,
     evidence: connection.evidence || [],
+    identifiers: (object.properties?.identifiers || []).filter(
+      (identifier) => identifier.namespace !== "local"
+    ),
   };
 }
 

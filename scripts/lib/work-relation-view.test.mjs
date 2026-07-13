@@ -20,6 +20,17 @@ test("projects graph objects into the seven work-page tabs", () => {
     ["authors", "results", "claims", "citations", "versions", "software", "sources"]
   );
   assert.equal(view.connections.filter((item) => item.type === "authors").length, 10);
+  assert.ok(
+    view.connections
+      .filter((item) => item.type === "authors")
+      .some((item) =>
+        item.identifiers.some(
+          (identifier) =>
+            identifier.namespace === "orcid" &&
+            identifier.value.startsWith("https://orcid.org/")
+        )
+      )
+  );
   assert.ok(view.connections.some((item) => item.type === "citations"));
   assert.ok(view.connections.every((item) => item.title && item.description && item.statement));
   assert.ok(
