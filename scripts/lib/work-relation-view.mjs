@@ -80,6 +80,7 @@ export function createWorkRelationProjector(resourceIndex) {
         return version
           ? {
               ...relationCard("versions", version, connection, versionDescription(version)),
+              objectId: version.id,
               citation: versionCitation(version),
             }
           : null;

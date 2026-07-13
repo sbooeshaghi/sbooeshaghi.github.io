@@ -7,6 +7,7 @@ const rootDir = path.resolve(scriptDir, "..");
 const steps = [
   ["build-cited-by.mjs", "Build minimal cited_by data"],
   ["build-work-pages.mjs", "Regenerate work pages"],
+  ["build-object-data.mjs", "Regenerate object pages"],
   ["verify-cited-by.mjs", "Verify citation data and pages"],
 ];
 

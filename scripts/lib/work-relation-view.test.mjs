@@ -36,7 +36,7 @@ test("projects graph objects into the seven work-page tabs", () => {
   assert.ok(
     view.connections
       .filter((item) => item.type === "versions")
-      .every((item) => item.citation && item.citation.url)
+      .every((item) => item.citation && item.citation.url && item.objectId?.startsWith("version:"))
   );
   assert.ok(
     view.connections

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6P1ZQ0CC8F"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-6P1ZQ0CC8F");
+    </script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Explore an indexed scientific object and its grounded relations." />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Scientific object | Sina Booeshaghi</title>
+  </head>
+  <body class="object-detail-page">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="index.html">Home</a>
+      <span aria-hidden="true">/</span>
+      <span data-object-kind-breadcrumb>Object</span>
+      <span aria-hidden="true">/</span>
+      <span class="breadcrumb-current" data-object-breadcrumb>Object</span>
+    </nav>
+
+    <main class="object-page-status" data-object-status>Loading indexed object...</main>
+
+    <article class="work-page study-graph-page" data-object-content hidden>
+      <section class="study-focus" aria-label="Selected object">
+        <div>
+          <span class="study-label" data-object-kind>Object</span>
+          <h1 data-object-title></h1>
+          <p data-object-description></p>
+          <div
+            class="relation-identifiers study-object-identifiers"
+            data-object-identifiers
+            hidden
+          ></div>
+        </div>
+        <dl class="study-stats">
+          <div>
+            <dt>Relations</dt>
+            <dd data-object-relation-count>0</dd>
+          </div>
+          <div>
+            <dt>Kinds</dt>
+            <dd data-object-kind-count>0</dd>
+          </div>
+        </dl>
+      </section>
+
+      <section class="relationship-inspector" aria-label="Indexed relations">
+        <section class="relationship-list-panel" aria-label="Relations">
+          <div class="study-section-heading">
+            <h2>Relations</h2>
+          </div>
+          <div
+            class="relation-tabs"
+            role="tablist"
+            aria-label="Related object kinds"
+            data-object-tabs
+          ></div>
+          <div class="reason-list" data-object-relations></div>
+        </section>
+
+        <aside class="evidence-panel relationship-detail" aria-live="polite">
+          <span class="study-label" data-relation-kind>Relation</span>
+          <h2 data-relation-title></h2>
+          <div class="relation-identifiers" data-relation-identifiers hidden></div>
+          <p class="selected-relation-statement" data-relation-statement></p>
+          <details class="relationship-evidence" data-relation-evidence>
+            <summary>
+              <span>Evidence</span>
+              <span class="evidence-summary" data-evidence-summary></span>
+            </summary>
+            <table class="relationship-evidence-table">
+              <thead>
+                <tr>
+                  <th>Span</th>
+                  <th>Source</th>
+                </tr>
+              </thead>
+              <tbody data-evidence-rows></tbody>
+            </table>
+          </details>
+        </aside>
+      </section>
+    </article>
+
+    <script src="object-page.js"></script>
+  </body>
+</html>

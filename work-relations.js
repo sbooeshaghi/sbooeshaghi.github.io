@@ -59,6 +59,15 @@
     return `${identifier.namespace.toUpperCase()}: ${value}`;
   }
 
+  function objectHref(connection) {
+    if (connection.type === "citations" && connection.objectId?.startsWith("work:")) {
+      return `./${encodeURIComponent(connection.objectId.slice("work:".length))}.html`;
+    }
+    return connection.objectId
+      ? `../object.html?id=${encodeURIComponent(connection.objectId)}`
+      : "";
+  }
+
   function visibleConnections() {
     return connections.filter((connection) => connection.type === selectedType);
   }
@@ -182,9 +191,9 @@
       ? truncateText(connection.description)
       : connection.title;
     const identifiers = connection.identifiers || [];
-    const orcid = identifiers.find((identifier) => identifier.namespace === "orcid");
-    detailTitle.innerHTML = orcid
-      ? `<a href="${escapeHTML(identifierHref(orcid))}" target="_blank" rel="noopener noreferrer">${escapeHTML(title)}</a>`
+    const href = objectHref(connection);
+    detailTitle.innerHTML = href
+      ? `<a href="${escapeHTML(href)}">${escapeHTML(title)}</a>`
       : escapeHTML(title);
     detailIdentifiers.hidden = !identifiers.length;
     detailIdentifiers.innerHTML = identifiers
