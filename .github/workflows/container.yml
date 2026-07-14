@@ -1,0 +1,45 @@
+name: Container
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+      - name: Build image
+        run: docker build --tag sina-bio:test .
+      - name: Run smoke tests
+        run: |
+          docker run --detach --name sina-bio-test \
+            --publish 127.0.0.1:8780:8080 sina-bio:test
+          for attempt in $(seq 1 30); do
+            if curl --fail --silent http://127.0.0.1:8780/healthz; then
+              break
+            fi
+            if [ "$attempt" -eq 30 ]; then
+              docker logs sina-bio-test
+              exit 1
+            fi
+            sleep 1
+          done
+          curl --fail --silent \
+            http://127.0.0.1:8780/api/objects/author/a-sina-booeshaghi \
+            | grep --quiet '0000-0002-6442-4502'
+          curl --fail --silent \
+            http://127.0.0.1:8780/work/a-machine-readable-specification-for-genomics-assays \
+            | grep --quiet 'work-relations.js'
+      - name: Container logs
+        if: always()
+        run: docker logs sina-bio-test 2>/dev/null || true
+      - name: Stop container
+        if: always()
+        run: docker rm --force sina-bio-test 2>/dev/null || true

@@ -60,11 +60,8 @@
   }
 
   function objectHref(connection) {
-    if (connection.type === "citations" && connection.objectId?.startsWith("work:")) {
-      return `./${encodeURIComponent(connection.objectId.slice("work:".length))}.html`;
-    }
     return connection.objectId
-      ? `../object.html?id=${encodeURIComponent(connection.objectId)}`
+      ? `/object.html?id=${encodeURIComponent(connection.objectId)}`
       : "";
   }
 

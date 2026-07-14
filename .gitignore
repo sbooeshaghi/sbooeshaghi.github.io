@@ -1,6 +1,10 @@
 .DS_Store
 **/.DS_Store
 *.log
+build/
+.venv/
+__pycache__/
+*.pyc
 
 # Local-only paper PDFs, extracted text, and citation-context artifacts.
 local/papers/

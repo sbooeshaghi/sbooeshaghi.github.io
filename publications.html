@@ -156,7 +156,7 @@
 
       function formatPublication(publication, citedByData) {
         const summary = publication.summary.trim();
-        const pageHref = `works/${slugify(publication.title)}.html`;
+        const pageHref = `/object.html?id=${encodeURIComponent(`work:${slugify(publication.title)}`)}`;
         const citationCount = citationCountFor(publication, citedByData);
 
         return `

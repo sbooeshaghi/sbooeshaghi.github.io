@@ -30,8 +30,10 @@
   const evidenceRows = document.querySelector("[data-evidence-rows]");
 
   let view;
+  let relationCounts = {};
   let selectedKind = "";
   let selectedRelationId = "";
+  let relationRequest = 0;
 
   function kindDetails(kind) {
     return KIND_DETAILS[kind] || {
@@ -42,20 +44,8 @@
     };
   }
 
-  function bucketForObjectId(id, bucketCount) {
-    let hash = 2166136261;
-    for (let index = 0; index < id.length; index += 1) {
-      hash ^= id.charCodeAt(index);
-      hash = Math.imul(hash, 16777619);
-    }
-    return (hash >>> 0) % bucketCount;
-  }
-
   function objectHref(object) {
-    if (object.kind === "work" && object.id.startsWith("work:")) {
-      return `works/${encodeURIComponent(object.id.slice("work:".length))}.html`;
-    }
-    return `object.html?id=${encodeURIComponent(object.id)}`;
+    return object.path || "";
   }
 
   function identifierHref(identifier) {
@@ -105,7 +95,7 @@
   }
 
   function renderTabs() {
-    const kinds = [...new Set(view.relations.map((relation) => relation.object.kind))].sort(
+    const kinds = Object.keys(relationCounts).sort(
       (left, right) => kindDetails(left).order - kindDetails(right).order
     );
     tabs.replaceChildren();
@@ -123,12 +113,17 @@
       label.textContent = kindDetails(kind).plural;
       const count = document.createElement("span");
       count.className = "relation-tab-count";
-      count.textContent = String(view.relations.filter((relation) => relation.object.kind === kind).length);
+      count.textContent = String(relationCounts[kind]);
       button.append(label, count);
-      button.addEventListener("click", () => {
+      button.addEventListener("click", async () => {
+        if (kind === selectedKind) return;
         selectedKind = kind;
-        selectedRelationId = visibleRelations()[0]?.id || "";
-        renderRelations();
+        selectedRelationId = "";
+        view.relations = [];
+        renderTabs();
+        relationList.textContent = "Loading relations...";
+        renderDetail();
+        await loadRelations(kind);
       });
       tabs.append(button);
     }
@@ -213,7 +208,7 @@
       const spanCell = document.createElement("td");
       spanCell.textContent = item.span;
       const sourceCell = document.createElement("td");
-      if (item.source?.id) {
+      if (item.source?.path) {
         const sourceLink = document.createElement("a");
         sourceLink.className = "evidence-source-link";
         sourceLink.href = objectHref({ ...item.source, kind: "source_document" });
@@ -233,13 +228,38 @@
     renderDetail();
   }
 
+  async function loadRelations(kind) {
+    const requestId = ++relationRequest;
+    const items = [];
+    let offset = 0;
+    let total = 0;
+
+    do {
+      const url = new URL(`/api/objects${window.location.pathname}/relations`, window.location.origin);
+      url.searchParams.set("kind", kind);
+      url.searchParams.set("limit", "200");
+      url.searchParams.set("offset", String(offset));
+      const response = await fetch(url, { cache: "no-store" });
+      if (!response.ok) throw new Error("The indexed relations are unavailable.");
+      const page = await response.json();
+      items.push(...page.items);
+      total = page.total;
+      offset += page.items.length;
+    } while (offset < total);
+
+    if (requestId !== relationRequest || kind !== selectedKind) return;
+    view.relations = items;
+    selectedRelationId = items[0]?.id || "";
+    renderRelations();
+  }
+
   function renderObject() {
     const object = view.object;
-    const kinds = new Set(view.relations.map((relation) => relation.object.kind));
+    const kinds = new Set(Object.keys(relationCounts));
     selectedKind = [...kinds].sort(
       (left, right) => kindDetails(left).order - kindDetails(right).order
     )[0] || "";
-    selectedRelationId = visibleRelations()[0]?.id || "";
+    selectedRelationId = "";
 
     document.title = `${object.label} | Scientific index | Sina Booeshaghi`;
     breadcrumb.textContent = object.label;
@@ -250,27 +270,25 @@
     objectDescription.textContent = object.description;
     objectDescription.hidden = !object.description;
     renderIdentifiers(objectIdentifiers, object.identifiers || []);
-    relationCount.textContent = String(view.relations.length);
+    relationCount.textContent = String(Object.values(relationCounts).reduce((sum, count) => sum + count, 0));
     kindCount.textContent = String(kinds.size);
-    renderRelations();
+    renderTabs();
+    relationList.textContent = selectedKind ? "Loading relations..." : "No indexed relations yet.";
+    renderDetail();
 
     status.hidden = true;
     content.hidden = false;
   }
 
   async function load() {
-    const id = new URLSearchParams(window.location.search).get("id");
-    if (!id) throw new Error("No object was selected.");
-    const manifestResponse = await fetch("object-data/manifest.json", { cache: "no-store" });
-    if (!manifestResponse.ok) throw new Error("The object index is unavailable.");
-    const manifest = await manifestResponse.json();
-    const bucket = bucketForObjectId(id, manifest.bucket_count).toString(16).padStart(2, "0");
-    const bucketResponse = await fetch(`object-data/${bucket}.json`, { cache: "no-store" });
-    if (!bucketResponse.ok) throw new Error("The object index is unavailable.");
-    const objects = await bucketResponse.json();
-    view = objects[id];
-    if (!view) throw new Error("This object is not in the current index.");
+    const response = await fetch(`/api/objects${window.location.pathname}`, { cache: "no-store" });
+    if (response.status === 404) throw new Error("This object is not in the current index.");
+    if (!response.ok) throw new Error("The object index is unavailable.");
+    const payload = await response.json();
+    view = { object: payload.object, relations: [] };
+    relationCounts = payload.relation_counts;
     renderObject();
+    if (selectedKind) await loadRelations(selectedKind);
   }
 
   load().catch((error) => {
