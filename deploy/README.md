@@ -58,7 +58,7 @@ Build first so a failed build does not replace the running container:
 ```sh
 docker compose config --quiet
 docker compose build --pull
-docker compose up --detach --no-build
+docker compose up --detach --no-build --wait --wait-timeout 60
 docker compose ps
 curl --fail http://127.0.0.1:8780/healthz
 ```
@@ -114,7 +114,7 @@ Switch to the previously recorded known-good commit and rebuild:
 ```sh
 git switch --detach <known-good-commit>
 docker compose build
-docker compose up --detach --no-build
+docker compose up --detach --no-build --wait --wait-timeout 60
 curl --fail http://127.0.0.1:8780/healthz
 ```
 

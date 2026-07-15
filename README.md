@@ -39,7 +39,8 @@ The complete agent-safe deployment and rollback procedure is in
 ```sh
 git clone https://github.com/sbooeshaghi/sbooeshaghi.github.io.git
 cd sbooeshaghi.github.io
-docker compose up --build -d
+docker compose build --pull
+docker compose up --detach --no-build --wait --wait-timeout 60
 curl --fail http://127.0.0.1:8780/healthz
 ```
 
@@ -62,7 +63,8 @@ To deploy an update:
 
 ```sh
 git pull --ff-only
-docker compose up --build -d
+docker compose build --pull
+docker compose up --detach --no-build --wait --wait-timeout 60
 curl --fail http://127.0.0.1:8780/healthz
 ```
 
