@@ -8,3 +8,4 @@ local
 *.sqlite
 *.db
 *.log
+.env*

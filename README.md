@@ -33,6 +33,8 @@ Run tests with:
 
 The container publishes only to the host loopback interface. Apache remains the
 public TLS endpoint and reverse proxies `sina.bio` to that private port.
+The complete agent-safe deployment and rollback procedure is in
+[`deploy/README.md`](deploy/README.md).
 
 ```sh
 git clone https://github.com/sbooeshaghi/sbooeshaghi.github.io.git

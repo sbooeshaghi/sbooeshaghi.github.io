@@ -5,6 +5,9 @@ build/
 .venv/
 __pycache__/
 *.pyc
+.env
+.env.*
+!.env.example
 
 # Local-only paper PDFs, extracted text, and citation-context artifacts.
 local/papers/
