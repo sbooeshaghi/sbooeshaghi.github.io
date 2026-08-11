@@ -211,7 +211,7 @@
 
   function cleanResultTitle(title) {
     return String(title || "")
-      .replace(/^\[[^\]]+\]\s*/, "")
+      .replace(/^(\s*\[[^\]]+\]\s*)+/, "")
       .replace(/\s+-\s+Google Scholar$/, "")
       .trim();
   }

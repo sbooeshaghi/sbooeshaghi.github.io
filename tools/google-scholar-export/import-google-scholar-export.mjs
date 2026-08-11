@@ -9,6 +9,7 @@ const scriptDir = path.dirname(fileURLToPath(import.meta.url));
 const root = path.resolve(scriptDir, "..", "..");
 const publicationsPath = path.join(root, "db", "publications.json");
 const overlayPath = path.join(root, "db", "google-scholar-citations.json");
+const exclusionsPath = path.join(scriptDir, "exclusions.json");
 const titleAliases = [
   [
     "Depth normalization for single-cell genomics count data",
@@ -91,6 +92,16 @@ const publications = readJSON(publicationsPath);
 const overlay = readJSON(overlayPath);
 if (!overlay.works) overlay.works = {};
 
+const exclusions = fs.existsSync(exclusionsPath)
+  ? readJSON(exclusionsPath)
+  : { global: [], works: {} };
+
+function isExcluded(slug, record) {
+  const title = normalizeTitle(record.title);
+  const prefixes = [...(exclusions.global || []), ...((exclusions.works || {})[slug] || [])];
+  return prefixes.some((prefix) => title.startsWith(normalizeTitle(prefix)));
+}
+
 const titleToPublication = new Map();
 for (const publication of publications) {
   titleToPublication.set(normalizeTitle(publication.title), publication);
@@ -113,6 +124,7 @@ for (const [aliasTitle, canonicalTitle] of titleAliases) {
 
 let imported = 0;
 let skipped = 0;
+let excluded = 0;
 let profileExports = 0;
 let batchExports = 0;
 
@@ -135,6 +147,10 @@ function importCitedByExport(exportData, sourceLabel) {
   for (const rawRecord of exportData.cited_by || []) {
     const record = minimalRecord(rawRecord);
     if (!record.title || !record.link) continue;
+    if (isExcluded(slug, record)) {
+      excluded += 1;
+      continue;
+    }
     const key = citationKey(record);
     if (seen.has(key)) continue;
     existing.push(record);
@@ -197,5 +213,5 @@ if (imported > 0 && !dryRun) {
 }
 
 console.log(
-  `Imported ${imported} cited-by records. Skipped ${skipped} entries. Profile exports seen: ${profileExports}. Batch exports seen: ${batchExports}.`
+  `Imported ${imported} cited-by records. Skipped ${skipped} entries. Excluded ${excluded} known-noise rows. Profile exports seen: ${profileExports}. Batch exports seen: ${batchExports}.`
 );

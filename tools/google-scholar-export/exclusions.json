@@ -1,0 +1,30 @@
+{
+  "note": "Citing-work rows the importer must skip (Scholar noise confirmed by hand). Titles are matched after the importer's normalizeTitle(); 'global' applies to every work, 'works' is slug-keyed. Prefix match.",
+  "global": [
+    "peer review file",
+    "research briefing",
+    "vending machines to deliver self testing kits"
+  ],
+  "works": {
+    "assessing-the-multimodal-tradeoff": [
+      "assessing the multimodal tradeoff"
+    ],
+    "thermo-electrochemical-generator-energy-harvesting-and-thermoregulation-for-liquid-cooling-applications": [
+      "sustainable energy and fuels"
+    ],
+    "normalization-of-single-cell-rna-seq-counts-by-log-x-1-or-log-1-x": [
+      "si s szabo"
+    ],
+    "deciphering-the-impact-of-genomic-variation-on-function": [
+      "how to participate in cagi6"
+    ],
+    "massively-scaled-up-testing-for-sars-cov-2-rna-via-next-generation-sequencing-of-pooled-and-barcoded-nasal-and-saliva-samples": [
+      "yayin tarihi publication date",
+      "review on public health and economic importance of bovine",
+      "503 robert grant avenue"
+    ],
+    "modular-efficient-and-constant-memory-single-cell-rna-seq-preprocessing": [
+      "how to choose the best genome aligner"
+    ]
+  }
+}

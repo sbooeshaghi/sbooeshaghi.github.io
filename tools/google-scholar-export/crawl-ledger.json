@@ -1,0 +1,330 @@
+{
+  "note": "Google Scholar crawl ledger. scholarCount = profile 'Cited by' at lastCrawled. On refresh: reload the profile, diff counts, crawl only changed works.",
+  "profile": "1das_jsAAAAJ",
+  "lastCrawled": "2026-08-11",
+  "works": {
+    "modular-efficient-and-constant-memory-single-cell-rna-seq-preprocessing": {
+      "scholarTitles": [
+        "Modular, efficient and constant-memory single-cell RNA-seq preprocessing"
+      ],
+      "clusterIds": [
+        "10787778041814609340,14735991082002798131,16240486425159219860,9665945590524048251,16690991289832286916"
+      ],
+      "scholarCount": 563
+    },
+    "a-multimodal-cell-census-and-atlas-of-the-mammalian-primary-motor-cortex": {
+      "scholarTitles": [
+        "A multimodal cell census and atlas of the mammalian primary motor cortex"
+      ],
+      "clusterIds": [
+        "6814641778066235234,14294710553632424994"
+      ],
+      "scholarCount": 501
+    },
+    "a-transcriptomic-and-epigenomic-cell-atlas-of-the-mouse-primary-motor-cortex": {
+      "scholarTitles": [
+        "A transcriptomic and epigenomic cell atlas of the mouse primary motor cortex"
+      ],
+      "clusterIds": [
+        "14994104943801524435,6227899991483677468"
+      ],
+      "scholarCount": 482
+    },
+    "massively-scaled-up-testing-for-sars-cov-2-rna-via-next-generation-sequencing-of-pooled-and-barcoded-nasal-and-saliva-samples": {
+      "scholarTitles": [
+        "Massively scaled-up testing for SARS-CoV-2 RNA via next-generation sequencing of pooled and barcoded nasal and saliva samples"
+      ],
+      "clusterIds": [
+        "13460984737472163952,5420425207341573776,8752516628874148774,6476872831504828460,4496002509529387349"
+      ],
+      "scholarCount": 141
+    },
+    "deciphering-the-impact-of-genomic-variation-on-function": {
+      "scholarTitles": [
+        "Deciphering the impact of genomic variation on function",
+        "The impact of genomic variation on function (IGVF) consortium"
+      ],
+      "clusterIds": [
+        "14742508692444770684,10790255355741671436",
+        "11961325372989817421"
+      ],
+      "scholarCount": 121
+    },
+    "isoform-cell-type-specificity-in-the-mouse-primary-motor-cortex": {
+      "scholarTitles": [
+        "Isoform cell-type specificity in the mouse primary motor cortex"
+      ],
+      "clusterIds": [
+        "11396213073062250822"
+      ],
+      "scholarCount": 103
+    },
+    "normalization-of-single-cell-rna-seq-counts-by-log-x-1-or-log-1-x": {
+      "scholarTitles": [
+        "Normalization of single-cell RNA-seq counts by log(x + 1) or log(1 + x)"
+      ],
+      "clusterIds": [
+        "8285944006049834549,11284833996032528424"
+      ],
+      "scholarCount": 89
+    },
+    "principles-of-open-source-bioinstrumentation-applied-to-the-poseidon-syringe-pump-system": {
+      "scholarTitles": [
+        "Principles of open source bioinstrumentation applied to the poseidon syringe pump system"
+      ],
+      "clusterIds": [
+        "7434175664982061622,14478678240240438657,12072544665642480386,18257824906704652465"
+      ],
+      "scholarCount": 87
+    },
+    "kallisto-bustools-and-kb-python-for-quantifying-bulk-single-cell-and-single-nucleus-rna-seq": {
+      "scholarTitles": [
+        "kallisto, bustools and kb-python for quantifying bulk, single-cell and single-nucleus RNA-seq"
+      ],
+      "clusterIds": [
+        "15990690327529989784"
+      ],
+      "scholarCount": 75
+    },
+    "voyager-exploratory-single-cell-genomics-data-analysis-with-geospatial-statistics": {
+      "scholarTitles": [
+        "Voyager: exploratory single-cell genomics data analysis with geospatial statistics"
+      ],
+      "clusterIds": [
+        "12179164435048303657"
+      ],
+      "scholarCount": 58
+    },
+    "thermo-electrochemical-generator-energy-harvesting-and-thermoregulation-for-liquid-cooling-applications": {
+      "scholarTitles": [
+        "Thermo-electrochemical generator: energy harvesting & thermoregulation for liquid cooling applications"
+      ],
+      "clusterIds": [
+        "10848849973878466270"
+      ],
+      "scholarCount": 58
+    },
+    "normalization-for-sampled-count-data": {
+      "scholarTitles": [
+        "Depth normalization for single-cell genomics count data",
+        "Normalization for sampled count data"
+      ],
+      "clusterIds": [
+        "15047168519304560436"
+      ],
+      "scholarCount": 53
+    },
+    "the-impact-of-package-selection-and-versioning-on-single-cell-rna-seq-analysis": {
+      "scholarTitles": [
+        "The impact of package selection and versioning on single-cell RNA-seq analysis"
+      ],
+      "clusterIds": [
+        "10324047097564133856"
+      ],
+      "scholarCount": 45
+    },
+    "metadata-retrieval-from-sequence-databases-with-ffq": {
+      "scholarTitles": [
+        "Metadata retrieval from sequence databases with ffq"
+      ],
+      "clusterIds": [
+        "11908346037521633040"
+      ],
+      "scholarCount": 42
+    },
+    "long-read-sequencing-transcriptome-quantification-with-lr-kallisto": {
+      "scholarTitles": [
+        "Long-read sequencing transcriptome quantification with lr-kallisto"
+      ],
+      "clusterIds": [
+        "4456334113767568786"
+      ],
+      "scholarCount": 24
+    },
+    "markedly-heterogeneous-covid-19-testing-plans-among-us-colleges-and-universities": {
+      "scholarTitles": [
+        "Markedly heterogeneous COVID-19 testing plans among US colleges and universities"
+      ],
+      "clusterIds": [
+        "2852612481537850986"
+      ],
+      "scholarCount": 24
+    },
+    "reliable-and-accurate-diagnostics-from-highly-multiplexed-sequencing-assays": {
+      "scholarTitles": [
+        "Reliable and accurate diagnostics from highly multiplexed sequencing assays"
+      ],
+      "clusterIds": [
+        "6465551471008340879,8565322052546729425"
+      ],
+      "scholarCount": 19
+    },
+    "decrease-in-ace2-mrna-expression-in-aged-mouse-lung": {
+      "scholarTitles": [
+        "Decrease in ACE2 mRNA expression in aged mouse lung"
+      ],
+      "clusterIds": [
+        "11085968111465454653"
+      ],
+      "scholarCount": 16
+    },
+    "a-machine-readable-specification-for-genomics-assays": {
+      "scholarTitles": [
+        "A machine-readable specification for genomics assays"
+      ],
+      "clusterIds": [
+        "12376684573651671634"
+      ],
+      "scholarCount": 15
+    },
+    "assessing-the-multimodal-tradeoff": {
+      "scholarTitles": [
+        "Assessing the multimodal tradeoff"
+      ],
+      "clusterIds": [
+        "4387787579395702913,14288695483125475306"
+      ],
+      "scholarCount": 15
+    },
+    "quantifying-orthogonal-barcodes-for-sequence-census-assays": {
+      "scholarTitles": [
+        "Quantifying orthogonal barcodes for sequence census assays"
+      ],
+      "clusterIds": [
+        "4168391298154517125"
+      ],
+      "scholarCount": 14
+    },
+    "low-cost-scalable-and-automated-fluid-sampling-for-fluidics-applications": {
+      "scholarTitles": [
+        "Low-cost, scalable, and automated fluid sampling for fluidics applications"
+      ],
+      "clusterIds": [
+        "8569812908120893121"
+      ],
+      "scholarCount": 13
+    },
+    "systematic-cell-type-resolved-transcriptomes-of-8-tissues-in-8-lab-and-wild-derived-mouse-strains-capture-global-and-local-expression-variation": {
+      "scholarTitles": [
+        "Systematic cell-type resolved transcriptomes of 8 tissues in 8 lab and wild-derived mouse strains capture global and local expression variation"
+      ],
+      "clusterIds": [
+        "3997156412331136300"
+      ],
+      "scholarCount": 10
+    },
+    "characterization-of-spatial-homogeneous-regions-in-tissues-with-concordex": {
+      "scholarTitles": [
+        "Characterization of spatial homogeneous regions in tissues with concordex",
+        "Quantitative assessment of single-cell RNA-seq clustering with CONCORDEX"
+      ],
+      "clusterIds": [
+        "17040518108923198240,16179512158660727579",
+        "4792747035005709517"
+      ],
+      "scholarCount": 11
+    },
+    "algorithms-for-a-commons-cell-atlas": {
+      "scholarTitles": [
+        "Algorithms for a commons cell atlas"
+      ],
+      "clusterIds": [
+        "10127452202109379491"
+      ],
+      "scholarCount": 8
+    },
+    "science-should-be-machine-readable": {
+      "scholarTitles": [
+        "Science should be machine-readable"
+      ],
+      "clusterIds": [
+        "12338047838977137345"
+      ],
+      "scholarCount": 5
+    },
+    "pseudoalignment-facilitates-assignment-of-error-prone-ultima-genomics-reads": {
+      "scholarTitles": [
+        "Pseudoalignment facilitates assignment of error-prone Ultima Genomics reads"
+      ],
+      "clusterIds": [
+        "10267525813866284001"
+      ],
+      "scholarCount": 5
+    },
+    "benchmarking-of-lightweight-mapping-based-single-cell-rna-seq-pre-processing": {
+      "scholarTitles": [
+        "Benchmarking of lightweight-mapping based single-cell RNA-seq pre-processing"
+      ],
+      "clusterIds": [
+        "12976614034464307781"
+      ],
+      "scholarCount": 5
+    },
+    "a-human-commons-cell-atlas-reveals-cell-type-specificity-for-oas1-isoforms": {
+      "scholarTitles": [
+        "A human commons cell atlas reveals cell type specificity for OAS1 isoforms"
+      ],
+      "clusterIds": [
+        "517076711043719692"
+      ],
+      "scholarCount": 4
+    },
+    "universal-preprocessing-of-single-cell-genomics-data": {
+      "scholarTitles": [
+        "Universal preprocessing of single-cell genomics data"
+      ],
+      "clusterIds": [
+        "13850574362903748886"
+      ],
+      "scholarCount": 3
+    },
+    "comparative-survey-based-study-of-noninvasive-saliva-collection-devices": {
+      "scholarTitles": [
+        "Comparative survey-based study of noninvasive saliva collection devices"
+      ],
+      "clusterIds": [
+        "13044788330483517843"
+      ],
+      "scholarCount": 2
+    },
+    "single-nucleus-analysis-of-human-white-adipose-tissue-reveals-adipocyte-subsets-with-distinct-metabolic-profiles": {
+      "scholarTitles": [
+        "Single-nucleus analysis of human white adipose tissue reveals adipocyte subsets with distinct metabolic profiles"
+      ],
+      "clusterIds": [
+        "10432033991481888041"
+      ],
+      "scholarCount": 1
+    },
+    "determining-gene-specificity-from-multivariate-single-cell-rna-sequencing-data": {
+      "scholarTitles": [
+        "Determining gene specificity from multivariate single-cell RNA sequencing data"
+      ],
+      "clusterIds": [
+        "16583759887416105166"
+      ],
+      "scholarCount": 1
+    },
+    "verifying-llm-extracted-text-with-token-alignment": {
+      "scholarTitles": [
+        "Verifying LLM-extracted text with token alignment"
+      ],
+      "clusterIds": [],
+      "scholarCount": 0
+    },
+    "principles-of-open-source-bioinstrumentation-applied-to-the-poseidon-syringe-pump-system-vol-9-12385-2019": {
+      "scholarTitles": [
+        "Principles of open source bioinstrumentation applied to the poseidon syringe pump system (vol 9, 12385, 2019)"
+      ],
+      "clusterIds": [],
+      "scholarCount": 0
+    },
+    "foundations-and-applications-of-single-cell-rna-sequencing": {
+      "scholarTitles": [
+        "Foundations and Applications of Single-Cell RNA Sequencing"
+      ],
+      "clusterIds": [],
+      "scholarCount": 0
+    }
+  }
+}

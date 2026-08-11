@@ -2,6 +2,8 @@
 
 Small browser-side helper for exporting a Google Scholar profile and cited-by pages into the site citation overlay.
 
+For incremental refreshes, start with [`REFRESH.md`](REFRESH.md): `crawl-ledger.json` records per-work Scholar counts from the last crawl (diff against the live profile to crawl only changed works), `exclusions.json` keeps known-noise rows out of imports, and `enrich-dois.py` rewrites overlay links to DOI form.
+
 This intentionally does not scrape Google Scholar from a server. It runs inside your normal browser session, on pages you open yourself, and writes JSON files you can inspect before importing.
 
 ## Install
