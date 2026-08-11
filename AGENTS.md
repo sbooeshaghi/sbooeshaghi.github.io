@@ -21,6 +21,14 @@ git diff --check
 Generated files under `build/` must remain untracked.
 Install the Python environment as described in `README.md` before running checks.
 
+## Citation refresh
+
+Google Scholar has no API; cited-by data is collected through a real browser
+session (human-run extension or agent-driven browser tooling). To refresh the
+citation index, follow `tools/google-scholar-export/REFRESH.md` — it is
+self-contained (incremental crawl ledger, importer exclusions, DOI enrichment,
+and a validated agent playbook). Do not scrape Scholar from the server.
+
 ## Deployment
 
 Follow `deploy/README.md`. The production contract is:
